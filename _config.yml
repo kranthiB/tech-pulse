@@ -1,0 +1,12 @@
+title: Kranthi Kumar Bitra
+theme: zendesk/jekyll-theme-zendesk-garden@v0.7.3
+sidebar:
+  - dev-sec-ops
+  - label: Industrial IoT
+    children:
+      - industrial-revolution
+      - nine-pillars-of-industry-4
+      - it-vs-ot-security
+      - smart-manufacturing
+      - industry-4-readiness
+      - iiot-reference-architectures
