@@ -1,5 +1,5 @@
 title: Kranthi Kumar Bitra
-theme: zendesk/jekyll-theme-zendesk-garden@v0.7.3
+theme: zendesk/jekyll-theme-zendesk-garden@main
 sidebar:
   - dev-sec-ops
   - label: Industrial IoT
