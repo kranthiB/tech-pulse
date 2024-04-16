@@ -2,15 +2,24 @@ title: Tech Pulse
 remote_theme: zendesk/jekyll-theme-zendesk-garden@main
 baseurl: /tech-pulse
 sidebar:
-  - dev-sec-ops
+  - label: Cloud Services
+    children:
+      - AWS
+      - Azure
+      - GCP
+  - label: DevSecOps
+    children:
+      - dev-sec-ops
   - label: Industrial IoT
     children:
-      - Industry 4.0
-        - industrial-revolution
-        - nine-pillars-of-industry-4
-        - it-vs-ot-security
-        - smart-manufacturing
-        - industry-4-readiness
-        - iiot-reference-architectures
-      - Industry 5.0
-        - industrial-5-revolution
+      - label: Industry 4.0
+        children:
+          - industrial-4-revolution
+          - nine-pillars-of-industry-4
+          - it-vs-ot-security
+          - smart-manufacturing
+          - industry-4-readiness
+          - iiot-reference-architectures
+      - label: Industry 5.0
+        children:
+          - industrial-5-revolution
