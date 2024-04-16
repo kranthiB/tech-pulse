@@ -10,7 +10,7 @@ next_page: ops-mastery/git-ops
 ## Foundations
 
 ### Secure Software Development Framework (SSDF)
-![SSDF](/images/ops-mastery/dev-sec-ops/0001-SSDF.png)
+![SSDF](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ops-mastery/dev-sec-ops/0001-SSDF.png)
 
 ### Software Supply Chain Continuum
 
