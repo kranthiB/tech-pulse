@@ -18,6 +18,5 @@ Additionally, I bring extensive experience in creating sustainable platforms tha
 # Profile
 - [GitHub](https://github.com/kranthiB)
 - [LinkedIn](https://www.linkedin.com/in/kranthi-kumar-bitra/)
-- **E-mail:** kranthi.b76@gmail.com
 - [TechPulse](https://kranthib.github.io/tech-pulse)
 
