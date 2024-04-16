@@ -13,7 +13,7 @@ In addressing operational challenges, I have implemented solutions to detect eve
 
 Additionally, I bring extensive experience in creating sustainable platforms that empower businesses to implement data-driven operations. This involves strategically placing computation and data storage close to the source of data.
 
-## Personal Profile
+## Profile
 - [GitHub](https://github.com/kranthiB)
 - [LinkedIn](https://www.linkedin.com/in/kranthi-kumar-bitra/)
 - E-mail: kranthi.b76@gmail.com

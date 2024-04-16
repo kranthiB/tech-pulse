@@ -2,14 +2,38 @@ title: Tech Pulse
 remote_theme: zendesk/jekyll-theme-zendesk-garden@main
 baseurl: /tech-pulse
 sidebar:
+  - label: System Design
+    children:
+      - system-design/characteristics
+      - system-design/load-balancing
+      - system-design/api-gateway
+      - system-design/caching
+      - system-design/messaging-system
+      - system-design/communication-protocols
+      - system-design/patterns
+  - label: Cloud Native
+    children:
+      - cloud-native/app-definition-and-development
+      - cloud-native/orchestration-and-management
+      - cloud-native/observability-and-analysis
+      - cloud-native/provisioning
+      - cloud-native/runtime
+  - label: Ops Mastery  
+    children:
+      - ops-mastery/dev-sec-ops
+      - ops-mastery/git-ops
+      - ops-mastery/fin-ops
+      - ops-mastery/ml-ops
+      - ops-mastery/ai-ops
+      - ops-mastery/green-ops
   - label: Cloud Services
     children:
       - cloud-services/aws
       - cloud-services/azure
       - cloud-services/gcp
-  - label: DevSecOps
+  - label: GenAI
     children:
-      - dev-sec-ops/dev-sec-ops
+      - gen-ai/ai-driven-software-development
   - label: Industry 4.0
     children:
       - industry-4/industrial-4-revolution
