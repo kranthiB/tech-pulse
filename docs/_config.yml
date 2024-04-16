@@ -10,16 +10,14 @@ sidebar:
   - label: DevSecOps
     children:
       - dev-sec-ops/dev-sec-ops
-  - label: Industrial IoT
+  - label: Industry 4.0
     children:
-      - label: Industry 4.0
-        children:
-          - industry-4/industrial-4-revolution
-          - industry-4/nine-pillars-of-industry-4
-          - industry-4/it-vs-ot-security
-          - industry-4/smart-manufacturing
-          - industry-4/industry-4-readiness
-          - industry-4/iiot-reference-architectures
-      - label: Industry 5.0
-        children:
-          - industry-5/industrial-5-revolution
+      - industry-4/industrial-4-revolution
+      - industry-4/nine-pillars-of-industry-4
+      - industry-4/it-vs-ot-security
+      - industry-4/smart-manufacturing
+      - industry-4/industry-4-readiness
+      - industry-4/iiot-reference-architectures
+  - label: Industry 5.0
+    children:
+      - industry-5/industrial-5-revolution
