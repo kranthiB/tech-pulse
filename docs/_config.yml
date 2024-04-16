@@ -5,9 +5,12 @@ sidebar:
   - dev-sec-ops
   - label: Industrial IoT
     children:
-      - industrial-revolution
-      - nine-pillars-of-industry-4
-      - it-vs-ot-security
-      - smart-manufacturing
-      - industry-4-readiness
-      - iiot-reference-architectures
+      - Industry 4.0
+        - industrial-revolution
+        - nine-pillars-of-industry-4
+        - it-vs-ot-security
+        - smart-manufacturing
+        - industry-4-readiness
+        - iiot-reference-architectures
+      - Industry 5.0
+        - industrial-5-revolution
