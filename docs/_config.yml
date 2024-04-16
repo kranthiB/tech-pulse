@@ -14,12 +14,12 @@ sidebar:
     children:
       - label: Industry 4.0
         children:
-          - industry-4.0/industrial-4-revolution
-          - industry-4.0/nine-pillars-of-industry-4
-          - industry-4.0/it-vs-ot-security
-          - industry-4.0/smart-manufacturing
-          - industry-4.0/industry-4-readiness
-          - industry-4.0/iiot-reference-architectures
+          - industry-4/industrial-4-revolution
+          - industry-4/nine-pillars-of-industry-4
+          - industry-4/it-vs-ot-security
+          - industry-4/smart-manufacturing
+          - industry-4/industry-4-readiness
+          - industry-4/iiot-reference-architectures
       - label: Industry 5.0
         children:
-          - industry-5.0/industrial-5-revolution
+          - industry-5/industrial-5-revolution
