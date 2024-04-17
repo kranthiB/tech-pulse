@@ -55,38 +55,44 @@ Table of contents
 ![SSDF](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ops-mastery/dev-sec-ops/0001-SSDF.png)
 
 ### Software-Supply-Chain-Continuum
+![SSCC](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ops-mastery/dev-sec-ops/0002-SSCC.png)
 
 ### Evolution-of-Best-Practices
+![EBSD](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ops-mastery/dev-sec-ops/0003-EBSD.png)
 
 ### DORA-Capabilities
+![DORA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ops-mastery/dev-sec-ops/0004-DORA.png)
 
-DevSecOps
-=========
+## DevSecOps
 
-Conceptual Model
-----------------
+### Conceptual Model
+![CM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ops-mastery/dev-sec-ops/0005-CM.png)
 
-Core-Practices
---------------
+### Core-Practices
+![CM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ops-mastery/dev-sec-ops/0006-CP.png)
 
 #### Analyze
+![CM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ops-mastery/dev-sec-ops/0006A-CP.png)
 
 #### Secure
+![CM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ops-mastery/dev-sec-ops/0006B-CP.png)
 
 #### Verify
+![CM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ops-mastery/dev-sec-ops/0006C-CP.png)
 
 #### Defend
+![CM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ops-mastery/dev-sec-ops/0006D-CP.png)
 
 #### Additional Practices
+![CM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ops-mastery/dev-sec-ops/0006EA-CP.png)
 
-Lifecycle-Phases
-----------------
+![CM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ops-mastery/dev-sec-ops/0006EB-CP.png)
 
-Continuous-Feedback-Loops
--------------------------
+### Lifecycle-Phases
 
-Activities-N-Tools
-------------------
+### Continuous-Feedback-Loops
+
+### Activities-N-Tools
 
 #### Continuous Security
 
