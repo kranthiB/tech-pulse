@@ -37,7 +37,7 @@ Table of contents
    * [References](#references)
       * [Container Application Pipeline Reference](#container-application-pipeline-reference)
       * [Enterprise DevSecOps](#enterprise-devsecops)
-         * [cncf-certified-kubernetes](#cncf-certified-kubernetes)
+         * [CNCF Certified Kubernetes](#cncf-certified-kubernetes)
             * [Sidecar Container Security Stack (SCSS)](#sidecar-container-security-stack-scss)
          * [Multi-Cluster CNCF Kubernetes](#multi-cluster-cncf-kubernetes)
             * [K8s Global & Regional Control Plane](#k8s-global--regional-control-plane)
