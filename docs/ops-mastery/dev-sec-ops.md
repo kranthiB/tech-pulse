@@ -9,11 +9,11 @@ Table of contents
 =================
 
 <!--ts-->
-   * [Foundations](#Foundations)
-      * [Secure Software Development Framework](#Secure-Software-Development-Framework(SSDF))
-      * [Software Supply Chain Continuum](#Software-Supply-Chain-Continuum)
-      * [Evolution of Best Practices](#Evolution-of-Best-Practices)
-      * [DORA Capabilities](#DORA-Capabilities)
+   * [Foundations](##Foundations)
+      * [Secure Software Development Framework](###Secure-Software-Development-Framework(SSDF))
+      * [Software Supply Chain Continuum](###Software-Supply-Chain-Continuum)
+      * [Evolution of Best Practices](###Evolution-of-Best-Practices)
+      * [DORA Capabilities](###DORA-Capabilities)
    * [DevSecOps](#DevSecOps)
       * [Conceptual Model](#Conceptual-Model)
       * [Core Practices](#Core-Practices)
