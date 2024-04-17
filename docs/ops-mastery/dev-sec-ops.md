@@ -20,7 +20,6 @@ Table of contents
       * [Lifecycle Phases](#Lifecycle-Phases)
       * [Continuous Feedback Loops](#Continuous-Feedback-Loops)
       * [Activities & Tools](#Activities-N-Tools)
-      
       * [SMART Metrics](#SMART-Metrics)
    * [References](#References)
       * [Container Application Pipeline Reference](#Container-Application-Pipeline-Reference)
@@ -32,21 +31,16 @@ Table of contents
 <!--te-->
 
 
-Foundations
-===========
+## Foundations
 
-Secure-Software-Development-Framework(SSDF)
--------------------------------------------
+### Secure-Software-Development-Framework(SSDF)
 ![SSDF](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ops-mastery/dev-sec-ops/0001-SSDF.png)
 
-Software-Supply-Chain-Continuum
--------------------------------
+### Software-Supply-Chain-Continuum
 
-Evolution-of-Best-Practices
----------------------------
+### Evolution-of-Best-Practices
 
-DORA-Capabilities
------------------
+### DORA-Capabilities
 
 DevSecOps
 =========
