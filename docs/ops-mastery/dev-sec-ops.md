@@ -5,24 +5,57 @@ sidebar_label: DevSecOps
 next_page: ops-mastery/git-ops
 ---
 
-# DevSecOps
+Table of contents
+=================
 
-## Foundations
+<!--ts-->
+   * [Foundations](#Foundations)
+      * [Secure Software Development Framework](#Secure-Software-Development-Framework(SSDF))
+      * [Software Supply Chain Continuum](#Software-Supply-Chain-Continuum)
+      * [Evolution of Best Practices](#Evolution-of-Best-Practices)
+      * [DORA Capabilities](#DORA-Capabilities)
+   * [DevSecOps](#DevSecOps)
+      * [Conceptual Model](#Conceptual-Model)
+      * [Core Practices](#Core-Practices)
+      * [Lifecycle Phases](#Lifecycle-Phases)
+      * [Continuous Feedback Loops](#Continuous-Feedback-Loops)
+      * [Activities & Tools](#Activities-N-Tools)
+      
+      * [SMART Metrics](#SMART-Metrics)
+   * [References](#References)
+      * [Container Application Pipeline Reference](#Container-Application-Pipeline-Reference)
+      * [Enterprise DevSecOps](#Enterprise-DevSecOps)
+   * [Patterns & Anti-Patterns](#Patterns-AntiPatterns)
+      * [Continuous Integration](#Continuous-Integration)
+      * [Continuous Delivery](#Continuous-Delivery)
+      
+<!--te-->
 
-### Secure Software Development Framework (SSDF)
+
+Foundations
+===========
+
+Secure-Software-Development-Framework(SSDF)
+-------------------------------------------
 ![SSDF](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ops-mastery/dev-sec-ops/0001-SSDF.png)
 
-### Software Supply Chain Continuum
+Software-Supply-Chain-Continuum
+-------------------------------
 
-### Evolution of Best Practices
+Evolution-of-Best-Practices
+---------------------------
 
-### DORA Capabilities
+DORA-Capabilities
+-----------------
 
-## DevSecOps
+DevSecOps
+=========
 
-### Conceptual Model
+Conceptual Model
+----------------
 
-### Core Practices
+Core-Practices
+--------------
 
 #### Analyze
 
@@ -34,11 +67,14 @@ next_page: ops-mastery/git-ops
 
 #### Additional Practices
 
-### Lifecycle Phases
+Lifecycle-Phases
+----------------
 
-### Continuous Feedback Loops
+Continuous-Feedback-Loops
+-------------------------
 
-### Activities & Tools
+Activities-N-Tools
+------------------
 
 #### Continuous Security
 
@@ -46,7 +82,8 @@ next_page: ops-mastery/git-ops
 
 #### Configuration Management
 
-### SMART Metrics
+SMART-Metrics
+-------------
 
 #### Specific
 
@@ -58,11 +95,14 @@ next_page: ops-mastery/git-ops
 
 #### Time Bound
 
-## References
+References
+==========
 
-### Container Application Pipeline Reference
+Container Application Pipeline Reference
+----------------------------------------
 
-### Enterprise DevSecOps
+Enterprise-DevSecOps
+--------------------
 
 #### CNCF Certified Kubernetes
 
@@ -76,8 +116,11 @@ next_page: ops-mastery/git-ops
 
 #### Container Monitoring Reference
 
-## Patterns & Anti-Patterns
+Patterns-AntiPatterns
+=====================
 
-### Continuous Integration
+Continuous-Integration
+----------------------
 
-### Continuous Delivery
+Continuous-Delivery
+-------------------
