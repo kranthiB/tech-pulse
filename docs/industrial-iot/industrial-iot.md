@@ -21,15 +21,15 @@ Table of contents
       * [Standard Opportunities](#standard-opportunities)
    * [Nine Pillars](#nine-pillars)
       * [Additive Manufacturing](#additive-manufacturing)
-      * [AR / VR / MR / Haptics](#ar-vr-mr-haptics)
+      * [AR / VR / MR / Haptics](#ar--vr--mr--haptics)
       * [Autonomous Robots](#autonomous-robots)
       * [The Cloud](#the-cloud)
-      * [Big Data & Analytics](#big-data-and-analytics)
-      * [Cybersecurity](#cyber-security)
+      * [Big Data & Analytics](#big-data--analytics)
+      * [Cybersecurity](#cybersecurity)
       * [IIOT](#iiot)
       * [Simulation](#simulation)
       * [Horizontal and Vertical Integration](#horizontal-and-vertical-integration)
-   * [Reference Architectures](#reference-architecture)
+   * [Reference Architectures](#reference-architectures)
       * [RAMI 4.0](#rami-4.0)
       * [AWS Industrial](#aws-industrial)
       * [Azure Industrial](#azure-industrial)
@@ -99,31 +99,57 @@ Table of contents
 ![SP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0009-SP.png)
 
 ## Nine Pillars
-![SP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00010-NP.png)
+![SP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0010-NP.png)
 
 ### Additive Manufacturing
-![AM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00011-AM.png)
+![AM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0011-AM.png)
 
 ### AR / VR / MR / Haptics
-![AM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00012-IE.png)
+![AM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0012-IE.png)
 
 ### Autonomous Robots
-![AR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00013-AR.png)
+![AR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0013-AR.png)
 
 ### The Cloud
-![CL](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00014-CL.png)
+![CL](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0014-CL.png)
 
 ### Big Data & Analytics
-![BD](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00015-BD.png)
+![BD](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0015-BD.png)
 
 ### Cybersecurity
-![CS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00016-CS.png)
+![CS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0016-CS.png)
 
 ### IIOT
-![IIOT](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00017-IIOT.png)
+![IIOT](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0017-IIOT.png)
 
 ### Simulation
-![SM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00018-SM.png)
+![SM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0018-SM.png)
 
 ### Horizontal and Vertical Integration
-![HIVI](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00019-HIVI.png)
+![HIVI](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0019-HIVI.png)
+
+## Reference Architectures
+
+### RAMI 4.0
+![RAMI](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0020-RAMI.png)
+
+### AWS Industrial
+![AWS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0021-AWS.png)
+
+### Azure Industrial
+![AZURE](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0022-AWS.png)
+
+### Edge Compute
+![EC](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0023-EC.png)
+
+### Predictive Maintenance
+![PM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0024-PM.png)
+
+### Overall Equipment Effectiveness
+![OEE](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0025-OEE.png)
+
+### Plant Architecture
+![PA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0026-PA.png)
+
+#### Industrial Control System Components
+![ICS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0027-ICS.png)
