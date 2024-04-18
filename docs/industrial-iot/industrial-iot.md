@@ -76,3 +76,24 @@ Table of contents
 
 ### Manufacturing Paradigms
 ![IR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0002-MP.png)
+
+### Evolution of Digital Manufacturing
+![EDM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0003-EDM.png)
+
+### Discrete vs Process Manufacturing
+![DMPM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0004-DMPM.png)
+
+### Key Capabilities
+![KP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0005-KP.png)
+
+### Design Principles & Smart System Elements
+![DPSSE](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0006-DPSSE.png)
+
+### Ecosystem
+![ES](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0007-ES.png)
+
+### Landscape
+![LS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0008-LS.png)
+
+### Standard Opportunities
+![SP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0009-SP.png)
