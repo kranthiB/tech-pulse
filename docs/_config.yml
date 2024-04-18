@@ -34,14 +34,8 @@ sidebar:
   - label: GenAI
     children:
       - gen-ai/ai-driven-software-development
-  - label: Industry 4.0
+  - label: Industrial IoT
     children:
-      - industry-4/industrial-4-revolution
-      - industry-4/nine-pillars-of-industry-4
-      - industry-4/it-vs-ot-security
-      - industry-4/industry-4-readiness
-      - industry-4/iiot-reference-architectures
-      - industry-4/smart-manufacturing
-  - label: Industry 5.0
-    children:
-      - industry-5/industrial-5-revolution
+      - industrial-iot/industrial-iot
+      - industrial-iot/industry-5.0
+      - industrial-iot/edge-compute
