@@ -23,7 +23,7 @@ Table of contents
          * [Defend](#defend)
          * [Additional Practices](#additional-practices)
       * [Lifecycle Phases](#lifecycle-phases)
-      * [Continuous Feedback Loops](#Continuous-Feedback-Loops)
+      * [Continuous Feedback Loops](#continuous-feedback-loops)
       * [Activities & Tools](#activities-n-tools)
          * [Continuous Security](#continuous-security)
          * [Continuous Testing](#continuous-testing)
