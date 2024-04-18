@@ -56,7 +56,7 @@ Table of contents
       * [IT Security vs OT Security](#it-security-vs-ot-security)
          * [SCADA](#scada)
       * [Aligning IT & OT](#aligning-it-and-ot)
-      * [Events that Affect IoT / OT Networks ](#events-that-affect-iot-and-ot-networks)
+      * [Events that Affect IoT / OT Networks](#events-that-affect-iot-and-ot-networks)
       * [Microsoft Defender for IoT](#microsoft-defender-for-iot)
          * [Features](#features)
          * [Reference Architecture](#reference-architecture)
@@ -180,4 +180,64 @@ Table of contents
 ##### Virtual Andon
 ![VA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0035-CV.png)
 
-[![Virtual Andon](https://img.youtube.com/vi/_2Wfz4T_yP0/0.jpg)](https://www.youtube.com/watch?v=_2Wfz4T_yP0)
+[![Virtual Andon](https://img.youtube.com/vi/_2Wfz4T_yP0/maxresdefault.jpg)](https://www.youtube.com/watch?v=_2Wfz4T_yP0)
+
+## IT vs OT Security
+
+### Network Topologies in OT Environment
+![NT](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0036-NT.png)
+
+### IT and OT Networking Background
+![NB](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0037-NB.png)
+
+### Challenges
+![CL](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0038-CL.png)
+
+#### Business Risk
+![BR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0039-BR.png)
+
+#### TRITON Attack
+![TA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0040-BR1.png)
+
+### How Gartner Defines?
+![GT](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0041-GT.png)
+
+### IT Security vs OT Security
+![ITOT](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0042-ITOT.png)
+
+#### SCADA
+![SCADA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0043-SC.png)
+
+### Aligning IT & OT
+![OT](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0044-OT.png)
+
+### Events that Affect IoT / OT Networks
+![OT](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0045-ET.png)
+
+### Microsoft Defender for IoT
+
+#### Features
+![FR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0046-FR.png)
+
+#### Reference Architecture
+![AR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0047-AR.png)
+
+#### Unified, E2E Protection
+![UE](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0048-UE.png)
+
+#### Deployment Options
+![DP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0049-DP.png)
+
+##### Recommended Deployment Process
+![DPA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0050-DPA.png)
+
+##### 9 Steps Deployment Process
+![DPB](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0050-DPB.png)
+
+## Readniess
+
+### Model Dimensions
+![MR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0051-MR.png)
+
+### Maturity Models
+![MM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0052-MM.png)
