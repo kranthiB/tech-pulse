@@ -43,12 +43,12 @@ Table of contents
       * [Digitalization Journey](#digitalization-journey)
       * [Use cases](#use-cases)
       * [Demos](#demos)
-         * [OPC-UA Pipeline (On-Premise)](#OPC-UA-Pipeline)
+         * [OPC-UA Pipeline (On-Premise)](#opc-ua-pipeline-on-premise)
          * [Computer Vision at the Edge](#computer-vision-at-the-edge)
-            * [Virtual Andon](#virtual-andon-lean-manufacturing)
+            * [Virtual Andon](#virtual-andon)
    * [IT Vs OT Security](#it-vs-ot-security)
       * [Network Topologies in OT Environment](#network-topologies-in-ot-environment)
-      * [IT and OT Networking Backgr    ound](#it-and-ot-networking-background)
+      * [IT and OT Networking Background](#it-and-ot-networking-background)
       * [Challenges](#challenges)
          * [Business Risk](#business-risk)
          * [TRITON Attack](#triton-attack)
@@ -137,7 +137,7 @@ Table of contents
 ![AWS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0021-AWS.png)
 
 ### Azure Industrial
-![AZURE](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0022-AWS.png)
+![AZURE](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0022-AZURE.png)
 
 ### Edge Compute
 ![EC](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0023-EC.png)
@@ -180,4 +180,4 @@ Table of contents
 ##### Virtual Andon
 ![CV](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0035-CV.png)
 
-![CVD](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0035-CV.png)(https://youtu.be/_2Wfz4T_yP0)
+[![Watch the video](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0035-CV.png)](https://youtu.be/_2Wfz4T_yP0)
