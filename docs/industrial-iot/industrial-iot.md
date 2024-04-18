@@ -178,4 +178,6 @@ Table of contents
 #### Computer Vision at the Edge
 
 ##### Virtual Andon
-[![Watch the video](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0035-CV.png)](https://www.youtube.com/watch?v=_2Wfz4T_yP0)
+![VA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0035-CV.png)
+
+[![Virtual Andon](https://img.youtube.com/vi/_2Wfz4T_yP0/0.jpg)](https://www.youtube.com/watch?v=_2Wfz4T_yP0)
