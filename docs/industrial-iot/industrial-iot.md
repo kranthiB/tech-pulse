@@ -30,7 +30,7 @@ Table of contents
       * [Simulation](#simulation)
       * [Horizontal and Vertical Integration](#horizontal-and-vertical-integration)
    * [Reference Architectures](#reference-architectures)
-      * [RAMI 4.0](#rami-4.0)
+      * [RAMI 4.0](#rami-40)
       * [AWS Industrial](#aws-industrial)
       * [Azure Industrial](#azure-industrial)
       * [Edge Compute](#edge-compute)
@@ -48,7 +48,7 @@ Table of contents
             * [Virtual Andon](#virtual-andon-lean-manufacturing)
    * [IT Vs OT Security](#it-vs-ot-security)
       * [Network Topologies in OT Environment](#network-topologies-in-ot-environment)
-      * [IT and OT Networking Background](#it-and-ot-networking-background)
+      * [IT and OT Networking Backgr    ound](#it-and-ot-networking-background)
       * [Challenges](#challenges)
          * [Business Risk](#business-risk)
          * [TRITON Attack](#triton-attack)
@@ -153,3 +153,31 @@ Table of contents
 
 #### Industrial Control System Components
 ![ICS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0027-ICS.png)
+
+## Workloads
+
+### Key Enablers
+![KE](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0028-KE.png)
+
+### Digitalization Journey
+![DJ](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0029-DJ.png)
+
+### Use cases
+![IW1](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0030-IW1.png)
+![IW2](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0031-IW2.png)
+
+### Capabilities
+![CP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0032-CP.png)
+
+### Demos
+
+#### OPC-UA Pipeline (On-Premise)
+![OPCA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0033-OPCA.png)
+![OPCB](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0034-OPCB.png)
+
+#### Computer Vision at the Edge
+
+##### Virtual Andon
+![CV](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0035-CV.png)
+
+![CVD](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0035-CV.png)(https://youtu.be/_2Wfz4T_yP0)
