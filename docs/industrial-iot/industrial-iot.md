@@ -15,7 +15,7 @@ Table of contents
       * [Evolution of Digital Manufacturing](#evolution-of-digital-manufacturing)
       * [Discrete vs Process Manufacturing](#discrete-vs-process-manufacturing)
       * [Key Capabilities](#key-capabilities)
-      * [Design Principles & Smart System Elements](#design-principles-and-smart-system-elements)
+      * [Design Principles & Smart System Elements](#design-principles--smart-system-elements)
       * [Ecosystem](#ecosystem)
       * [Landscape](#landscape)
       * [Standard Opportunities](#standard-opportunities)
@@ -97,3 +97,33 @@ Table of contents
 
 ### Standard Opportunities
 ![SP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0009-SP.png)
+
+## Nine Pillars
+![SP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00010-NP.png)
+
+### Additive Manufacturing
+![AM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00011-AM.png)
+
+### AR / VR / MR / Haptics
+![AM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00012-IE.png)
+
+### Autonomous Robots
+![AR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00013-AR.png)
+
+### The Cloud
+![CL](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00014-CL.png)
+
+### Big Data & Analytics
+![BD](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00015-BD.png)
+
+### Cybersecurity
+![CS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00016-CS.png)
+
+### IIOT
+![IIOT](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00017-IIOT.png)
+
+### Simulation
+![SM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00018-SM.png)
+
+### Horizontal and Vertical Integration
+![HIVI](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/00019-HIVI.png)
