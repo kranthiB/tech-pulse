@@ -38,4 +38,4 @@ sidebar:
     children:
       - industrial-iot/industrial-iot
       - industrial-iot/industry-5.0
-      - industrial-iot/edge-compute
+      - industrial-iot/edge-gateway
