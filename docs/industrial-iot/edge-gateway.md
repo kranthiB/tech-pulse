@@ -5,16 +5,19 @@ sidebar_label: Edge Gateway
 previous_page: industrial-iot/industry-5.0
 ---
 
+Table of contents
+=================
+
 <!--ts-->
    * [Smart Edge Gateway Platform](#smart-edge-gateway-platform)
-   * [AWS Greengrass (V2)](#aws-greengrass--v2)
+   * [AWS Greengrass (V2)](#aws-greengrass-v2)
       * [AWS IoT Services](#aws-iot-services)
       * [Key Concepts](#key-concepts)
       * [Capabilities](#capabilities)
       * [Install Options](#install-options)
       * [Component Lifecycle](#component-lifecycle)
-         * [Components - AWS Provided](#components-aws-provided)
-      * [Inter Process Communication (IPC)](#inter-process-communicationipc)
+         * [Components - AWS Provided](#components---aws-provided)
+      * [Inter Process Communication (IPC)](#inter-process-communication-ipc)
       * [Manage Data Streams](#manage-data-streams)
       * [Security](#security)
          * [Shared Responsibility Model](#shared-responsibility-model)
@@ -34,7 +37,7 @@ previous_page: industrial-iot/industry-5.0
          * [Security Daemon Architecture](#security-daemon-architecture)
          * [Security Attestation](#security-attestation)
       * [Devops Tools](#devops-tools)
-      * [Logging and Monitoring](#logging-and-monitoring)
+      * [Logging & Monitoring](#logging-and-monitoring)
 <!--te-->
 
 ## Smart Edge Gateway Platform
