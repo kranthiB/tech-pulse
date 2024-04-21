@@ -583,6 +583,10 @@ Table of contents
 
 -----
 
+https://www.youtube.com/watch?v=_2Wfz4T_yP0
+
+-----
+
 ## IT vs OT Security
 
 ### Network Topologies in OT Environment
