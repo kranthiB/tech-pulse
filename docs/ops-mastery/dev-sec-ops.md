@@ -375,27 +375,27 @@ Table of contents
      * *Secure Transfer*: Secure transfer refers to the use of secure protocols such as HTTPS or SFTP to protect data in transit.
      * *Security Configuration*: Security configuration refers to the practice of configuring systems and applications securely by implementing appropriate security settings and policies.
    * *Operations (OPS)*
-     * Deployment : Deployment is the process of making software available for use by users or customers.
-     * Monitoring : Monitoring involves continuously observing system performance, resource utilization, and other metrics to ensure that everything is running smoothly.
-     * Operation : Operation refers to the ongoing maintenance and management of systems and applications after they have been deployed. 
+     * *Deployment*: Deployment is the process of making software available for use by users or customers.
+     * *Monitoring*: Monitoring involves continuously observing system performance, resource utilization, and other metrics to ensure that everything is running smoothly.
+     * *Operation*: Operation refers to the ongoing maintenance and management of systems and applications after they have been deployed. 
 
  * `Benefits`
-   * Minimized time to production
+   * *Minimized time to production*
      * Reduced manual errors and increased efficiency through automation
      * Faster iteration cycles enable quicker feedback and continuous improvement
-   * Increased deployment frequency
+   * *Increased deployment frequency*
      * Automated testing and validation reduce the risk of errors during deployments
      * Continuous integration/continuous delivery (CI/CD) pipelines streamline the deployment process, enabling more frequent releases
-   * Reduced time to recovery
+   * *Reduced time to recovery*
      * Automated incident response tools quickly identify and resolve issues
      * Real-time monitoring allows for prompt detection and mitigation of potential security threats 
-   * Reduced rate of change failures
+   * *Reduced rate of change failures*
      * Automated testing and validation ensure changes are thoroughly tested before deployment
      * Continuous integration/continuous delivery (CI/CD) pipelines enable rapid iteration and feedback, reducing the likelihood of errors 
-   * Fully automated risk management
+   * *Fully automated risk management*
      * Automation tools identify and prioritize security vulnerabilities in real-time
      * Integrated security testing ensures that potential risks are addressed early in the development process 
-   * Integrated cybersecurity
+   * *Integrated cybersecurity*
      * Security is incorporated into every stage of the software development lifecycle
      * Continuous monitoring and threat intelligence enable proactive mitigation of potential security threats
 
