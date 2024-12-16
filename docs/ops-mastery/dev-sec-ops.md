@@ -92,6 +92,7 @@ Table of contents
        * Explain the importance of having a incident response plan in place
        * Discuss various steps for responding to security incidents, such as containment and eradication
        * Provide tips for minimizing downtime and reducing the impact of security incidents
+
 -----
 
 ### Software-Supply-Chain-Continuum
