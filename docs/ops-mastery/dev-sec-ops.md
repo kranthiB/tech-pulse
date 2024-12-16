@@ -131,15 +131,37 @@ Table of contents
 ### Evolution-of-Best-Practices
 ![EBSD](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ops-mastery/dev-sec-ops/0003-EBSD.png)
 
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
+ * This represents evolution of best practices in software development, showcasing how various technologies and approached have transformed over time
+   * **Development Process**
+     * The traditional **waterfall** approach, which dominated in the past, is characterized by a linear sequence of phases with little overlap or iteration.
+     * As software development evolved, **agile** methodologies emerged as an alternative, emphasizing flexibility, collaboration, and rapid delivery of working software through iterative and incremental development.
+     * In recent years, the **devops** culture has gained popularity, focusing on bridging the gap between development and operations teams through collaboration, automation, and continuous delivery.
+   * **Application Architecture**
+     * In the past, **monolithic architecture** was prevalent, where a single unit contained all the functionality of an application.
+     * However, with the rise of **microservices-based architecture**, applications are now designed as collections of small services that communicate with each other to achieve specific goals. This approach allows for greater scalability and flexibility, enabling organizations to respond quickly to changing market conditions
+     * In recent years, **serverless computing** has gained popularity, allowing developers to focus on writing code without worrying about infrastructure management. This approach enables businesses to scale their applications more efficiently and reduce costs associated with managing servers
+   * **Deployment & Packaging**
+     * Historically, **physical deployments** were the standard practice, with applications being directly installed on hardware devices. However, the emergence of virtualization transformed this landscape by offering a cost-effective alternative.
+     * **Virtualization** brought forth numerous benefits, including enhanced resource utilization and reduced costs. By allowing multiple virtual machines to run on a single physical host, organizations could optimize their infrastructure without incurring significant capital expenditures.
+     * Fast-forwarding to recent years, **containers** have gained widespread adoption due to their lightweight and efficient nature. This innovation enables faster deployment cycles by providing a consistent and reliable environment for applications to operate within. The advent of containerization has significantly impacted the way organizations deploy and manage applications, empowering them to respond more quickly to shifting business requirements.
+     * The shift from physical deployments to virtualized environments, and subsequently to containerized solutions, reflects an ongoing quest for greater **efficiency** and **agility** in application delivery. As technology continues to evolve, it is likely that even newer approaches will emerge to further enhance the deployment experience.
+   * **Hosting Infrastructure**
+     * The transition from **on-premises** hosting to **cloud computing** has unlocked significant benefits for organizations. This shift has afforded them greater flexibility, scalability, and cost savings
+     * **Cloud computing's inherent agility** allows businesses to dynamically adjust their resource allocation according to demand, without the need for expensive hardware upgrades or large-scale IT investments. As a result, organizations can more effectively manage their resources and optimize their spending.
+     * In response to the evolving cloud landscape, many organizations are now adopting **multi-cloud strategies** as a means of mitigating vendor lock-in risks. This approach enables businesses to select the most suitable services from multiple providers, rather than being confined to a single platform. By diversifying their cloud footprint, organizations can enhance their resilience and adaptability, better equipping them to navigate the complexities of an ever-changing business environment.
+   * **Data Management**
+     * The traditional approach to managing vast amounts of data centered around **data warehousing**, which had been the dominant paradigm for decades. However, as the volume and complexity of data continued to grow exponentially, organizations began to seek out more innovative solutions.
+     * This led to the widespread adoption of **big data technologies** such as Hadoop and Spark, which enabled businesses to efficiently handle and process large volumes of structured and unstructured data. These tools revolutionized the way companies approached data management, empowering them to unlock new insights and drive business growth.
+     * In recent years, the landscape has continued to evolve with the emergence of **cloud-native data platforms**. These cutting-edge solutions offer unparalleled scalability and cost-effectiveness, allowing businesses to store, process, and analyze massive datasets with unprecedented ease and speed.
+     * Platforms such as Amazon Redshift and Google BigQuery have redefined the boundaries of data management, providing organizations with a flexible and efficient way to harness the power of their data. By leveraging these cloud-native solutions, companies can gain a deeper understanding of their operations, make more **informed decisions**, and stay ahead of the competition in an increasingly data-driven world.
+   * **Data Interchange**
+     * For decades, **XML** was the de facto standard for data exchange between applications, facilitating communication across disparate systems. However, as technology advanced, organizations began to seek out more streamlined alternatives.
+     * The rise of **JSON** as a lightweight and user-friendly format marked a significant shift in this landscape. Its simplicity and flexibility made it an attractive choice for developers, who appreciated its ease of implementation and integration with various platform
+     * In recent years, the evolution of data exchange has accelerated further with the advent of **GraphQL**. This innovative query language for APIs empowers clients to specify precisely what they need from the server, thereby optimizing resource utilization and minimizing data transfer.
+   * **Cybersecurity Posture**
+     * Historically, **traditional security measures** such as firewalls and intrusion detection systems were the norm for protecting against external threats. However, this approach was often static and reactive in nature, struggling to keep pace with the evolving threat landscape.
+     * The advent of **cloud-based security solutions** marked a significant shift towards more dynamic and adaptive security strategies. Organizations began to adopt scalable and user-friendly tools like AWS IAM and Azure Active Directory, which offered a more robust and secure way to manage user identities and access controls
+     * In recent years, **zero-trust architecture** has emerged as a critical component of modern cybersecurity strategies. This innovative approach assumes that all users and devices are potential threats, requiring verification and validation before granting access to sensitive resources. By adopting a zero-trust mindset, businesses can significantly reduce their attack surface and improve their overall cybersecurity posture.
 
 -----
 
