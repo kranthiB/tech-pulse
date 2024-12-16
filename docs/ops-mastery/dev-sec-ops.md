@@ -55,15 +55,19 @@ Table of contents
 ### Secure-Software-Development-Framework(SSDF)
 ![SSDF](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ops-mastery/dev-sec-ops/0001-SSDF.png)
 
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
+ * `The importance of Secure Software Development: A comprehensive guide`
+   * `Prepare the Organization`
+     * Laying the Foundation: Setting Up Your Team for Success
+     * Security is Not Just an IT problem, it's Everyone's Responsibility
+   * `Protect the Software`
+     * The First Line of Defense: Protecting Your Code from Threats
+     * Don't Let Bugs Bite: How to Secure Your Software from Within
+   * `Produce Well-Secured Software`
+     * Designing Security into Your Product: A Winning Strategy
+     * The Art of Secure Coding: Tips and Tricks for Writing Secure Code
+   * `Respond to Vulnerabilities`
+     * The Threat is Real: How to Respond to Vulnerabilities in Your Software
+     * Don't Panic! A Step-by-Step Guide to Responding to Security Incidents
 
 -----
 
