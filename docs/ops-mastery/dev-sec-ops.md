@@ -229,8 +229,8 @@ Table of contents
       * It *increases competitiveness* by staying ahead of industry trends, technologies, and best practices, giving the organization a competitive edge in the market.
       * This approach also *fosters adaptability* by enabling teams to pivot when necessary, ensuring that the organization remains agile and responsive to customer needs.
        
-   *  `Why Adopt Transformational Leadership?`
-     *  Essential for organizations that want to thrive in today's complex and rapidly changing business landscape. It enables teams to stay adaptable, innovative, and responsive to changing conditions, ultimately driving growth and success
+    * `Why Adopt Transformational Leadership?`
+      * Essential for organizations that want to thrive in today's complex and rapidly changing business landscape. It enables teams to stay adaptable, innovative, and responsive to changing conditions, ultimately driving growth and success
 
 -----
 
