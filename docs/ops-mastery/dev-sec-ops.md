@@ -252,8 +252,8 @@ Table of contents
      * *Reduces Waste*: Working in small batches reduces waste by eliminating unnecessary work and minimizing the impact of failures.
  * **Culture**
    *  `Why Develop a Generative Organizational Culture?`
-     * *Fosters Innovation*: A generative organizational culture fosters innovation by encouraging experimentation, creativity, and risk-taking.
-     * *Encourages Collaboration*: A generative organizational culture encourages collaboration by promoting open communication, mutual respect, and trust among team members.
+     *  *Fosters Innovation*: A generative organizational culture fosters innovation by encouraging experimentation, creativity, and risk-taking.
+     *  *Encourages Collaboration*: A generative organizational culture encourages collaboration by promoting open communication, mutual respect, and trust among team members.
      * *Increases Employee Engagement*: A generative organizational culture increases employee engagement by providing a sense of purpose, autonomy, and growth opportunities.
      * *Improves Adaptability*: A generative organizational culture improves adaptability by enabling teams to respond quickly to changing market conditions and customer needs. 
    *  `Why Focus on Job Satisfaction?`
