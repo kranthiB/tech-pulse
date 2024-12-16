@@ -279,15 +279,35 @@ Table of contents
 ### Conceptual Model
 ![CM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ops-mastery/dev-sec-ops/0005-CM.png)
 
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
+ * In today's fast-paced digital landscape, ensuring the security and resilience of software applications has become a top priority. This is where DevSecOps comes into play - an innovative approach that integrates cybersecurity practices into every stage of the software development lifecycle.
+ * *DevSecOps Ecosystem*
+   * The DevSecOps ecosystem is a comprehensive approach that integrates security into every stage of the software development lifecycle
+   * Emphasizes collaboration between developers, security teams, and operations teams to ensure the secure and resilient delivery of software applications. 
+ * *Software Hub*
+   * The Software Hub is the central point where software development takes place
+   * Provides a platform for developers to collaborate, manage code changes, and track progress. 
+ * *Pipeline*
+   * The Pipeline represents the CI/CD process that automates the building, testing, and deployment of software applications.
+   * Ensures that software applications are thoroughly tested for security vulnerabilities and bugs before they are deployed to production 
+ * *Application*
+   * The Application section highlights the final stage of the DevSecOps pipeline.
+   * Represents the deployed application, which is ready for use by end-users. 
+ * *Artifact Repository*
+   * The Artifact Repository is a centralized location where build artifacts, such as binaries, libraries, and configurations, are stored and managed.
+   * Provides a single source of truth for all build artifacts, ensuring that the correct versions are used in production 
+ * *Tool*
+   * The Tool refers to various software applications used in the DevSecOps pipeline to automate tasks, such as:
+     * Build tools like Maven, Gradle, or Ant
+     * Testing frameworks like JUnit, TestNG, or PyUnit
+     * Continuous integration servers like Jenkins, Travis CI, or CircleCI  
+ * *Environment*
+   * The Environment refers to the infrastructure and resources required to support the DevSecOps pipeline, such as
+     * Development environments for testing and debugging
+     * Staging environments for pre-production testing
+     * Production environments for deployment
+ * *Cyber Resiliency*
+   * Cyber Resiliency refers to the ability of software applications to withstand various types of attacks or disruptions
+   * Emphasizes the importance of continuous monitoring and feedback to ensure that software applications remain secure and resilient over time. 
 
 -----
 
