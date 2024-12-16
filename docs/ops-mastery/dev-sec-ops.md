@@ -104,7 +104,7 @@ Table of contents
      * **IoT (Internet of Things)**: This refers to the network of physical devices embedded with sensors, software, and connectivity, allowing them to collect and exchange data
      * **5G**: The fifth generation of wireless network technology, offering faster data rates, lower latency, and greater connectivity
        
-   * * **Software**
+   * **Software**
      * **Cloud Native Applications**: A set of principles and practices for building software applications that are designed to run on cloud infrastructure, including scalability, flexibility, and automation.
      * **DevSecOps (Development Security Operations)**: An approach that integrates security into the development process, enabling faster and more secure delivery of software applications.It involves using tools like Jenkins, Docker, and Kubernetes to automate the build, deployment, and monitoring of applications
      * **Artificial Intelligence (AI)**: AI refers to the development of computer systems that can perform tasks that typically require human intelligence, such as visual perception, speech recognition, decision-making, and language translation.
@@ -114,6 +114,17 @@ Table of contents
      * **Machine Learning (ML)**: ML is a subset of AI that involves training algorithms on data to enable them to make predictions or decisions without being explicitly programmed.
 
    * **Software Hub**: A centralized platform for managing software applications, including version control, deployment, and monitoring.
+     
+   * **CSP (Cloud Service Provider) Managed Service**
+     * A Cloud Service Provider (CSP) managed service is a type of cloud computing model where the provider manages the entire lifecycle of a software application, including development, deployment, and maintenance. This approach allows businesses to focus on their core competencies while leaving the technical aspects of software management to the CSP
+     * **Key Benefits**
+       * **Reduced Costs**: By outsourcing software management to a CSP, businesses can reduce their operational costs associated with managing in-house IT teams.
+       * **Improved Efficiency**: CSPs have extensive experience and expertise in managing complex software applications, ensuring that they are running smoothly and efficiently.
+       * **Enhanced Security**: CSPs typically have robust security measures in place to protect against cyber threats and data breaches.
+     * **Types of CSP Managed Services**
+       * **IaaS (Infrastructure as a Service)**: IaaS is a cloud computing model where the CSP provides virtualized computing resources, such as servers, storage, and networking.
+       * **PaaS (Platform as a Service)**: PaaS is a cloud computing model where the CSP provides a platform for developing, running, and managing applications without the need for underlying infrastructure.
+       * **SaaS (Software as a Service)**: SaaS is a cloud computing model where the CSP hosts software applications over the internet, eliminating the need for on-premises installation and maintenance.
 
 -----
 
