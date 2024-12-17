@@ -11,6 +11,16 @@ sidebar:
       - system-design/messaging-system
       - system-design/communication-protocols
       - system-design/patterns
+  - label: Computing Models
+    children:
+      - computing-models/cloud-computing
+      - computing-models/serverless-computing
+      - computing-models/edge-computing
+  - label: Cloud Services
+    children:
+      - cloud-services/aws
+      - cloud-services/azure
+      - cloud-services/gcp
   - label: Cloud Native
     children:
       - cloud-native/app-definition-and-development
@@ -26,11 +36,7 @@ sidebar:
       - ops-mastery/ml-ops
       - ops-mastery/ai-ops
       - ops-mastery/green-ops
-  - label: Cloud Services
-    children:
-      - cloud-services/aws
-      - cloud-services/azure
-      - cloud-services/gcp
+  - label: Data & AI
   - label: GenAI
     children:
       - gen-ai/ai-driven-software-development
