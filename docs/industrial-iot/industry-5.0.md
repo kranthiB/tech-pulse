@@ -5,3 +5,5 @@ sidebar_label: Industry 5.0
 previous_page: industrial-iot/industrial-iot
 next_page: industrial-iot/edge-gateway
 ---
+
+# Industry 5.0

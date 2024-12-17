@@ -195,7 +195,8 @@ Digital manufacturing has revolutionized the way products are designed, manufact
 
 ### Discrete vs Process Manufacturing
 ![DMPM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0004-DMPM.png)
- * `Discrete Manufacturing`
+
+`Discrete Manufacturing`
   * *Definition*
     * Discrete manufacturing involves creating products that are comprised of parts that can be easily touched, counted, sourced, or broken down at the end of their product lifecycle. This type of manufacturing is characterized by the production of individual units or components that are assembled together to form a final product.
   * *Characteristics*
@@ -213,7 +214,7 @@ Digital manufacturing has revolutionized the way products are designed, manufact
     * *Automotive industry:* discrete manufacturing is used to produce individual components such as engines, transmissions, and chassis.
     * *Electronics industry:* discrete manufacturing is used to produce individual components such as microprocessors, memory chips, and circuit boards.
 
- * `Process Manufacturing`
+`Process Manufacturing`
   * *Definition*
     * Process manufacturing involves transforming raw materials into intermediate goods through various processes. This type of manufacturing is characterized by the production of large quantities of standardized products using continuous processing techniques.
   * *Characteristics*
@@ -235,15 +236,30 @@ Digital manufacturing has revolutionized the way products are designed, manufact
 
 ### Key Capabilities
 ![KP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0005-KP.png)
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
+
+Smart Manufacturing is a multifaceted concept that encompasses various aspects of production, including cost control and differentiation through four key areas: Productivity, Quality, Agility, and Sustainability.
+These dimensions are interconnected and interdependent, working together to drive innovation, efficiency, and competitiveness in the manufacturing sector. By understanding these perspectives, businesses can better navigate the complexities of smart manufacturing and make informed decisions that align with their strategic goals
+ * `Cost Control`
+  * *Economic Benefits*: Customers are looking for cost-effective solutions that can help them save money on operational expenses.
+    * This includes reducing energy consumption, minimizing waste, and optimizing resource allocation.
+    * By implementing smart manufacturing technologies, customers can achieve significant cost savings and improve their bottom line.
+  * *Efficiency and Productivity*: Customers want to see improvements in efficiency and productivity, as this will enable them to produce more with less effort and resources.
+    * This includes streamlining processes, reducing downtime, and increasing throughput.
+    * By leveraging smart manufacturing technologies, customers can achieve greater efficiency and productivity, leading to increased competitiveness and profitability.
+  * *Innovation and Efficiency*: Customers are interested in innovative solutions that can help them stay ahead of the competition.
+    * This includes adopting new technologies such as artificial intelligence (AI), machine learning (ML), and the Internet of Things (IoT).
+    * By embracing these innovations, customers can gain a competitive edge and improve their overall performance.
+
+ * `Differentiation`
+  * *Quality and Reliability*: Customers place a high value on quality and reliability in their products.
+    * This includes ensuring that products meet or exceed customer expectations in terms of performance, durability, and safety.
+    * By implementing smart manufacturing technologies, customers can achieve higher levels of quality and reliability, leading to increased customer satisfaction and loyalty.
+  * *Customization and Flexibility*: Customers are looking for manufacturers who can offer customized solutions tailored to their specific needs.
+    * This includes providing flexible production processes that can accommodate changes in demand or product requirements.
+    * By leveraging smart manufacturing technologies, customers can achieve greater customization and flexibility, enabling them to respond quickly to changing market conditions.
+  * *Sustainability and Environmental Responsibility*: Customers are increasingly concerned about the environmental impact of their products and operations.
+    * This includes reducing waste, minimizing energy consumption, and using sustainable materials.
+    * By implementing smart manufacturing technologies, customers can achieve significant reductions in their environmental footprint, improving their reputation and competitiveness.
 
 -----
 
