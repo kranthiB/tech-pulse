@@ -195,15 +195,41 @@ Digital manufacturing has revolutionized the way products are designed, manufact
 
 ### Discrete vs Process Manufacturing
 ![DMPM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0004-DMPM.png)
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
+ * `Discrete Manufacturing`
+  * *Definition*
+    * Discrete manufacturing involves creating products that are comprised of parts that can be easily touched, counted, sourced, or broken down at the end of their product lifecycle. This type of manufacturing is characterized by the production of individual units or components that are assembled together to form a final product.
+  * *Characteristics*
+    * Products are made up of discrete components
+    * Parts can be broken down and recycled at the end of their product lifecycle
+  * *Benefits*
+    * Flexibility in production planning and scheduling
+    * Ability to produce complex products with multiple parts
+    * High level of control over the production process
+  * *Challenges*
+    * Higher upfront costs due to specialized equipment and training
+    * Increased risk of errors or defects during production
+    * Limited flexibility in responding to changes in market demand
+  * *Industry Examples*
+    * *Automotive industry:* discrete manufacturing is used to produce individual components such as engines, transmissions, and chassis.
+    * *Electronics industry:* discrete manufacturing is used to produce individual components such as microprocessors, memory chips, and circuit boards.
+
+ * `Process Manufacturing`
+  * *Definition*
+    * Process manufacturing involves transforming raw materials into intermediate goods through various processes. This type of manufacturing is characterized by the production of large quantities of standardized products using continuous processing techniques.
+  * *Characteristics*
+    * Products are created through a series of chemical or physical transformations
+    * Raw materials are transformed into intermediate goods through various processes
+  * *Benefits*
+    * High level of efficiency and productivity due to automation and continuous processing
+    * Ability to produce large quantities of standardized products quickly and efficiently
+    * Lower upfront costs compared to discrete manufacturing
+  * *Challenges*
+    * Limited flexibility in responding to changes in market demand
+    * Higher risk of errors or defects during production due to complex processes
+    * Dependence on raw materials and suppliers
+  * *Industry Examples*
+    * *Pharmaceutical industry:* process manufacturing is used to transform raw materials into intermediate goods such as APIs (Active Pharmaceutical Ingredients) and finished dosage forms.
+    * *Food processing industry:* process manufacturing is used to transform raw ingredients into final products such as beverages, snacks, and prepared meals.
 
 -----
 
