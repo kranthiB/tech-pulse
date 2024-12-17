@@ -71,15 +71,51 @@ Table of contents
 
 ## Industrial Revolution
 ![IR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0001-IR.png)
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
+ * The Industrial Revolution was a pivotal period in human history, marking a significant shift from manual labor to machine-based manufacturing. This transformation had far-reaching consequences, impacting various aspects of society and shaping the modern world as we know it today.
+   
+ * `First Industrial Revolution (18th Century)`
+   * *Automation of Physical Labor*
+     * Water/Stream Power
+       * The introduction of water-powered machinery marked a significant milestone in automation. 
+     * First Mechanical Loom
+       * The invention of the mechanical loom revolutionized textile production, increasing efficiency and output 
+     * Power - Coal
+       * Coal became a primary source of energy for industrial processes, driving growth and development. 
+     * Mobility - Rail/Ship Networks, Steam Engine
+       * Advances in transportation enabled rapid movement of goods and people, further facilitating economic expansion.
+          
+ * `Second Industrial Revolution (19th Century)`
+   * *Automation/Rationalization of Physical Labor*
+     * Electricity-Powered Mass Production
+       * The widespread adoption of electricity transformed manufacturing processes, allowing for faster and more efficient production 
+     * First Production Lines
+       * Assembly lines became a standard feature in factories, streamlining production and increasing productivity 
+     * Power - Oil/Gas
+       * Fossil fuels emerged as a primary source of energy, fueling further industrialization. 
+     * Mobility - Planes, Oil-Powered Ships, Automobiles
+       * Advances in transportation led to the development of new modes of travel, transforming global connectivity.
+
+ * `Third Industrial Revolution (20th Century)`
+   * *Automation of Individual Entities in an Organization*
+     * Computers/Sensors
+       * The rise of computers and sensors enabled automation within individual entities, enhancing efficiency and accuracy. 
+     * First Programmable Logic Controller (PLC)
+       * The introduction of PLCs revolutionized industrial control systems, allowing for greater flexibility and adaptability. 
+     * Power - Renewables
+       * Renewable energy sources began to gain prominence, reducing reliance on fossil fuels and promoting sustainability. 
+     * Mobility - Satellite-Based Navigational Aids
+       * Advances in satellite technology enabled precise navigation and communication, transforming industries such as aviation and maritime
+
+ * `Fourth Industrial Revolution`
+   * *Automation Across Entire Organizations*
+     * Autonomy Across Entire Organizations
+       * The integration of artificial intelligence and robotics has led to increased autonomy across entire organizations. 
+     * Based on Physical Systems
+       * Automation is now based on physical systems, leveraging the capabilities of sensors, actuators, and other devices. 
+     * Powered by Distributed Storage
+       * Distributed storage solutions have enabled efficient management of data and resources, supporting widespread automation. 
+     * Mobility - Autonomous Vehicles and Networks
+       * The development of autonomous vehicles and networks has transformed transportation systems, enhancing safety and efficiency.
 
 -----
 
