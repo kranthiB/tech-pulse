@@ -28,7 +28,12 @@ sidebar:
       - cloud-native/observability-and-analysis
       - cloud-native/provisioning
       - cloud-native/runtime
-  - label: Ops Mastery  
+  - label: Data & AI
+    children:
+      - data-ai/data-analyst
+      - data-ai/data-engineer
+      - data-ai/ml-engineer
+  - label: Ops Mastery
     children:
       - ops-mastery/dev-sec-ops
       - ops-mastery/git-ops
@@ -36,7 +41,6 @@ sidebar:
       - ops-mastery/ml-ops
       - ops-mastery/ai-ops
       - ops-mastery/green-ops
-  - label: Data & AI
   - label: GenAI
     children:
       - gen-ai/ai-driven-software-development
