@@ -1,7 +1,7 @@
 ---
 id: data-ai/ml-engineer
-title: Data Engineer
-sidebar_label: Data Analyst
+title: ML Engineer
+sidebar_label: Ml Engineer
 previous_page: data-ai/data-engineer
 ---
 
