@@ -352,15 +352,32 @@ A comprehensive framework for designing and implementing industrial production s
 
 ### Landscape
 ![LS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0008-LS.png)
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
+`Product Development Lifecycle`
+  * *Design*: The design phase involves creating detailed specifications for a product or system, including its functionality, performance, and aesthetics.
+  * *Manufacturing*: In the manufacturing stage, raw materials are transformed into the final product using various processes such as machining, assembly, and testing.
+  * *Installation*: Once the product is manufactured, it must be installed in the customer's facility. This may involve on-site installation, training, and commissioning.
+  * *Maintenance*: After installation, products require regular maintenance to ensure optimal performance and extend their lifespan.
+  * *Disposal*: Eventually, products reach the end of their life cycle and need to be disposed of responsibly.
+
+`Product System Lifecycle`
+  * *Design*: Similar to the product development lifecycle, design in the product system lifecycle focuses on creating specifications for a system or solution that meets specific needs.
+  * *Manufacturing*: Manufacturing involves producing the components or subsystems that make up the system.
+  * *Installation*: Installation is similar to the product development lifecycle, with a focus on setting up and configuring the system.
+  * *Maintenance*: Maintenance ensures the system operates efficiently and effectively over time
+  * *Disposal*: Disposal refers to the responsible removal of the system at the end of its useful life.
+
+`Supply Chain Cycle`
+  * *Planning*: Supply chain planning involves forecasting demand, managing inventory, and optimizing logistics to ensure timely delivery of products or services.
+  * Sourcing : Sourcing encompasses activities such as procurement, supplier management, and quality control to secure raw materials or components.
+  * *Production*: Production refers to the manufacturing process that transforms raw materials into finished goods.
+  * *Distribution*: Distribution involves transporting products from the manufacturer to customers through various channels such as wholesalers, retailers, or e-commerce platforms.
+  * *Returns*: Returns management ensures efficient handling of customer returns, including processing, inspection, and restocking
+
+`ISA95 Model`
+  * *Enterprise Level*: The enterprise level encompasses business processes, organizational structures, and systems that support overall operations.
+  * *Manufacturing Execution System (MES)*: MES manages the production floor, overseeing activities like batch management, quality control, and scheduling.
+  * *Control Systems*: Control systems monitor and control equipment, machines, and processes within the manufacturing environment.
+  * *Device Level*: Device level refers to individual devices or components used in production, such as sensors, actuators, and robots.
 
 -----
 
