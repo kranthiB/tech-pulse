@@ -495,13 +495,21 @@ Enhanced flexibility: M2M communication enables the easy reconfiguration of prod
 ## Nine Pillars
 ![SP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0010-NP.png)
 *Autonomous Robots*: These robots can operate independently without human intervention.
+
 *Simulation*: This pillar allows for the creation of digital models of physical systems, enabling simulations and analysis.
+
 *Horizontal & Vertical System Integration*: This involves integrating different layers of a system to improve efficiency and reduce costs.
+
 *Industrial Internet of Things (IIoT)*: IIoT enables real-time data collection and analysis from connected devices and sensors.
+
 *Cybersecurity*: This pillar ensures the protection of industrial systems and data from cyber threats
+
 *Cloud Computing*: Cloud computing allows for on-demand access to a shared pool of resources, such as servers, storage, and applications.
+
 *Additive Manufacturing*: Also known as 3D printing, this technology creates complex shapes and structures layer by layer.
+
 *Augmented Reality (AR)*: AR enhances the physical world by overlaying digital information onto it.
+
 *Big Data & Analytics*: This pillar involves collecting and analyzing large amounts of data to gain insights and make informed decisions.
 
 -----
@@ -509,34 +517,51 @@ Enhanced flexibility: M2M communication enables the easy reconfiguration of prod
 ### Additive Manufacturing
 ![AM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0011-AM.png)
 `Binder Jetting (3DP)`
-Binder jetting is a 3D printing process that uses a liquid binder to "glue" together powder particles. The process works by layering the powder and then using the binder to connect the layers. This method allows for complex geometries and can be used with various materials, including metals and ceramics.
+  * Binder jetting is a 3D printing process that uses a liquid binder to "glue" together powder particles. The process works by layering the powder and then using the binder to connect the layers. This method allows for complex geometries and can be used with various materials, including metals and ceramics.
+
 `Material Extrusion (FDM)`
-Material extrusion is a 3D printing process that uses melted plastic or other materials to create objects layer by layer. The material is fed through a heated nozzle, which extrudes the material onto a build platform. This method is commonly used for prototyping and production of parts with simple geometries.
+  * Material extrusion is a 3D printing process that uses melted plastic or other materials to create objects layer by layer. The material is fed through a heated nozzle, which extrudes the material onto a build platform. This method is commonly used for prototyping and production of parts with simple geometries.
+
 `Material Jetting (PJ)`
-Material jetting is a 3D printing process that uses droplets of liquid material to create objects layer by layer. The droplets are deposited through an inkjet printhead, which allows for high-resolution printing. This method is commonly used for printing complex geometries and can be used with various materials, including metals and ceramics.
+  * Material jetting is a 3D printing process that uses droplets of liquid material to create objects layer by layer. The droplets are deposited through an inkjet printhead, which allows for high-resolution printing. This method is commonly used for printing complex geometries and can be used with various materials, including metals and ceramics.
+
 `Directed Energy Deposition (LMD)`
-Directed energy deposition (DED) is a 3D printing process that uses a focused beam of energy to melt and deposit metal onto a substrate. The process works by layering the metal powder and then using the beam to fuse the layers together. This method allows for complex geometries and can be used with various metals.
+  * Directed energy deposition (DED) is a 3D printing process that uses a focused beam of energy to melt and deposit metal onto a substrate. The process works by layering the metal powder and then using the beam to fuse the layers together. This method allows for complex geometries and can be used with various metals.
+
 `Powder Bed Fusion (SLS)`
-Powder bed fusion is a 3D printing process that uses a laser or electron beam to fuse together metal powder layers. The process works by layering the powder and then using the beam to melt the powder particles, creating a solid bond between them. This method allows for complex geometries and can be used with various metals.
+  * Powder bed fusion is a 3D printing process that uses a laser or electron beam to fuse together metal powder layers. The process works by layering the powder and then using the beam to melt the powder particles, creating a solid bond between them. This method allows for complex geometries and can be used with various metals.
+
 `Vat Polymerization (SLA)`
-Vat polymerization is a 3D printing process that uses ultraviolet light to cure liquid resin layer by layer. The process works by exposing the resin to UV light, which causes it to solidify, creating a solid bond between layers. This method allows for high-resolution printing and can be used with various materials, including plastics and metals
+  * Vat polymerization is a 3D printing process that uses ultraviolet light to cure liquid resin layer by layer. The process works by exposing the resin to UV light, which causes it to solidify, creating a solid bond between layers. This method allows for high-resolution printing and can be used with various materials, including plastics and metals
+
 `Layer Lamination (LOM)`
-Layer lamination is a 3D printing process that uses sheets of material, such as paper or plastic, to create objects layer by layer. The process works by stacking the sheets and then bonding them together using adhesives or heat. This method allows for complex geometries and can be used with various materials, including papers and plastics.
+  * Layer lamination is a 3D printing process that uses sheets of material, such as paper or plastic, to create objects layer by layer. The process works by stacking the sheets and then bonding them together using adhesives or heat. This method allows for complex geometries and can be used with various materials, including papers and plastics.
+
 
 -----
 
 ### AR / VR / MR / Haptics
 ![AM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0012-IE.png)
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
+`Augmented Reality (AR)`
+  * AR enhances the real world by overlaying digital information onto it.
+  * It uses visual displays such as smartphones or tablets to project virtual objects or text onto the real environment.
+  * AR has applications in fields like education, entertainment, and retail.
 
+`Virtual Reality (VR)`
+  * VR creates a completely immersive digital environment that simulates reality.
+  * Users wear special headsets or use other devices to experience virtual worlds.
+  * VR is used in gaming, training simulations, and therapy
+
+`Mixed Reality (MR)`
+  * MR combines elements of both AR and VR to create an interactive environment where the physical world is overlaid with digital information.
+  * It allows users to interact with virtual objects as if they were real.
+  * MR has applications in fields like education, healthcare, and manufacturing.
+
+`Haptics`
+  * Haptics refers to the sense of touch or feel.
+  * In the context of AR/VR/MR, haptic technology provides tactile feedback to users, allowing them to interact with virtual objects as if they were real.
+  * It enhances the overall experience by providing a more realistic and immersive interaction.
+  
 -----
 
 ### Autonomous Robots
