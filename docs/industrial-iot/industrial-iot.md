@@ -739,15 +739,25 @@ The IIoT architecture consists of four layers:
 
 ### Simulation
 ![SM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0018-SM.png)
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
+`Simulation Techniques`
+  * *Discrete Event Simulation (DES)*: This technique models complex systems by dividing them into discrete events or stages. It's particularly useful for analyzing production lines and supply chains.
+  * *System Dynamics (SD)*: SD focuses on the dynamic behavior of complex systems over time. It helps analyze how different variables interact within a system.
+  * *Agent-Based Modeling (ABM)*: ABM simulates the behavior of individual agents or entities in a system. This technique is useful for modeling human decision-making and social interactions
+  * *Intelligent Simulation*: Intelligent simulation uses artificial intelligence and machine learning algorithms to simulate complex systems. It enables the analysis of dynamic behavior and adaptation to changing conditions.
+  * *Petri-net*: Petri-net is a visual representation of processes and their interactions. It helps model complex systems and analyze their behavior.
+  * *Monte Carlo Simulation*: Monte Carlo simulation uses random sampling to estimate probabilities and outcomes in complex systems. It's particularly useful for analyzing risks and uncertainties.
+  * *Virtual Simulation*: Virtual simulation creates virtual environments that mimic real-world conditions. It allows for the testing and validation of new products, processes, and systems without physical prototypes.
+  * *Hybrid Techniques*: Hybrid techniques combine multiple simulation methods to analyze complex systems from different perspectives. They provide a more comprehensive understanding of system behavior and interactions
+
+`Digital Twin`
+A digital twin is a virtual representation of a physical system or process, enabling real-time monitoring, prediction, and optimization. It provides a detailed model of the system's behavior, allowing for simulation and analysis under various conditions.
+
+  * *Characteristics*
+      * *Digital Traces*: Digital twins provide real-time data on production processes, enabling continuous monitoring and optimization.
+      * *Modularity*: Modular digital twins allow for easy integration with existing systems and flexibility to adapt to changing requirements.
+      * *Connectivity*: Connectivity enables seamless communication between different digital twin tools and models, facilitating the exchange of data and insights.
+      * *Homogenisation*: Homogenization ensures that all data is standardized, making it easier to analyze and compare results.
+      * *Reprogrammable & Smart*: Digital twins can be reprogrammed and optimized in real-time, enabling quick adaptation to changing conditions.
 
 -----
 
