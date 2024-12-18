@@ -586,15 +586,33 @@ Enhanced flexibility: M2M communication enables the easy reconfiguration of prod
 
 ### The Cloud
 ![CL](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0014-CL.png)
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
+`Cloud Computing`
+  * *Application*: This layer includes various applications such as monitoring, collaboration, communication, finance, and desktops.
+  * *Platform*: The platform layer consists of infrastructure, identity management, runtime, queue, database, network, and block storage.
+  * *Infrastructure*: This layer encompasses laptops, phones, servers, and desktops.
+
+`Deployment Models`
+  * *Hybrid*: A hybrid model combines on-premises and off-premises environments to provide flexibility and scalability.
+  * *Public/External*: In a public cloud, resources are provided over the internet by third-party providers, offering scalability and cost-effectiveness.
+  * *Private/Internal*: Private clouds are dedicated to a single organization, providing control and security while still benefiting from economies of scale.
+  * *Community*: Community clouds serve multiple organizations with shared interests or objectives, promoting collaboration and resource sharing.
+
+`Service Models`
+  * *IaaS (Infrastructure as a Service)*: IaaS provides virtualized computing resources over the internet, allowing users to manage their own infrastructure.
+  * *PaaS (Platform as a Service)*: PaaS offers a platform for developing, running, and managing applications without worrying about underlying infrastructure.
+  * *SaaS (Software as a Service)*: SaaS delivers software applications over the internet, eliminating the need for local installation and maintenance.
+
+`Security & Privacy`
+  * *Supply*: This section highlights the importance of supply chain security in cloud computing, emphasizing the need to ensure that all components are secure.
+  * *Demand*: Demand refers to the customer's requirements and expectations from a cloud service provider, including aspects like performance, availability, and scalability.
+  * *Agreement*: An agreement is a legally binding contract between a cloud service provider and its customers, outlining terms and conditions for services rendered.
+
+`Characteristics`
+  * *On-demand self-service*: Cloud computing allows users to provision resources as needed without human intervention.
+  * *Broad network access*: Resources are accessible over the internet or private networks from any device with an internet connection.
+  * *Resource pooling*: Cloud providers pool their resources to provide a multi-tenant environment, where resources can be allocated and re-allocated efficiently.
+  * *Rapid elasticity*: Cloud computing enables rapid scaling up or down based on changing business needs.
+  * *Measured service*: Cloud services are metered by the provider, allowing customers to pay only for what they use.
 
 -----
 
