@@ -659,15 +659,46 @@ Big Data refers to the vast amounts of structured and unstructured data that org
 
 ### Cybersecurity
 ![CS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0016-CS.png)
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
+`Vulnerabilities & Attacks`
+  * *Backdoor*: A type of malware that allows unauthorized access to a computer system or network.
+  * *Denial of Service (DoS) Attacks*: A type of cyber attack where an attacker attempts to make a computer resource unavailable by overwhelming it with traffic.
+  * *Direct-Access Attacks*: A type of cyber attack where an attacker gains direct access to a computer system or network without authentication.
+  * *Tampering*: The act of modifying or altering data without authorization, often for malicious purposes.
+  * *Malicious Software (Malware)*: Any software that is designed to cause harm or damage to a computer system or network.
+  * *Eavesdropping*: The act of intercepting and monitoring communications between two parties without their consent.
+  * *Multi-vector, Polymorphic Attacks*: A type of cyber attack where an attacker uses multiple vectors (e.g., email, social media) and creates multiple variants of malware to evade detection.
+  * *Phishing*: A type of social engineering attack where an attacker sends fraudulent emails or messages that appear to be from a legitimate source in order to trick victims into divulging sensitive information.
+  * *Privilege Escalation*: The act of gaining elevated access rights on a computer system or network without authorization.
+  * *Reverse Engineering*: The process of analyzing and understanding the functionality of software by disassembling it back into its original code.
+  * *Side-channel Attacks*: A type of cyber attack where an attacker exploits information that is not intended to be accessible, such as timing or power consumption data.
+  * *Social Engineering*: The act of manipulating individuals into divulging sensitive information or performing certain actions that compromise security.
+  * *Spoofing*: The act of disguising a message or communication to make it appear as though it comes from a trusted source.
+
+`Security Measures`
+  * *Pre-evaluation*: A type of security measure where an organization assesses its current security posture and identifies areas for improvement.
+  * *Strategic Planning*: A type of security measure where an organization develops a comprehensive plan to address potential threats and vulnerabilities.
+  * *Operative Planning*: A type of security measure where an organization implements specific strategies and tactics to prevent or respond to cyber attacks.
+  * *Implementation*: The process of putting security measures into place, such as installing software or hardware solutions.
+  * *Post-evaluation*: It is a crucial component of the security measure process, involving reviewing and assessing the effectiveness of implemented security measures to ensure they meet their intended goals and objectives.
+
+`Security Counter Measures`
+  * *Security by Design*: A type of security countermeasure where an organization incorporates security considerations into the design and development phase of a system or application.
+  * *Security Architecture*: A type of security countermeasure where an organization designs and implements a secure architecture for its systems and applications.
+  * *Vulnerability Management*: A type of security countermeasure where an organization identifies, prioritizes, and remediates vulnerabilities in its systems and applications.
+  * *Reducing Vulnerabilities*: A type of security countermeasure where an organization takes steps to reduce the number of vulnerabilities in its systems and applications.
+  * *Hardware Protection*: A type of security countermeasure where an organization uses hardware solutions such as firewalls or intrusion detection systems to protect against cyber attacks.
+  * *Secure Coding Practices*: A type of security countermeasure where an organization follows secure coding practices, such as using secure protocols and encrypting sensitive data.
+  * *Capabilities & Access Control Lists*: This refers to the ability of an organization to define and manage access controls for its systems and data. Access control lists (ACLs) are used to grant or deny access to specific resources based on user identity, role, or other criteria.
+  * *End User Security Training*: This involves educating end-users about security best practices, such as how to identify and avoid phishing attacks, use strong passwords, and report suspicious activity. End-user training is critical in preventing human error from becoming a vulnerability.
+  * *Digital Hygiene*: Digital hygiene refers to the practices that individuals and organizations can follow to maintain good digital health. This includes keeping software up-to-date, using antivirus software, avoiding suspicious links or attachments, and regularly backing up data.
+  * *Response to Breaches*: A breach response plan outlines the procedures for responding to a security incident, including containment, eradication, recovery, and post-incident activities.
+
+`Incident Response Planning`
+  * *Preparation*: It involves developing and implementing plans, procedures, and protocols to respond effectively to potential incidents or breaches. This includes creating an incident response plan, conducting risk assessments, establishing communication protocols, identifying incident response teams, and developing incident response procedures to ensure timely and effective response to minimize downtime, damage, and reputational harm.
+  * *Detection & Analysis*: The process of detecting and analyzing a potential incident in order to determine the severity and impact.
+  * *Containment, Eradication & Recovery*: The process of containing the incident, eradicating the threat, and recovering from the incident.
+  * *Post-incident Activity*: The activities that take place after an incident has been resolved, including lessons learned and continuous improvement.
+  * 
 
 -----
 
