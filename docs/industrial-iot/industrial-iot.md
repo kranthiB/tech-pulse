@@ -508,15 +508,20 @@ Enhanced flexibility: M2M communication enables the easy reconfiguration of prod
 
 ### Additive Manufacturing
 ![AM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0011-AM.png)
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
+`Binder Jetting (3DP)`
+Binder jetting is a 3D printing process that uses a liquid binder to "glue" together powder particles. The process works by layering the powder and then using the binder to connect the layers. This method allows for complex geometries and can be used with various materials, including metals and ceramics.
+`Material Extrusion (FDM)`
+Material extrusion is a 3D printing process that uses melted plastic or other materials to create objects layer by layer. The material is fed through a heated nozzle, which extrudes the material onto a build platform. This method is commonly used for prototyping and production of parts with simple geometries.
+`Material Jetting (PJ)`
+Material jetting is a 3D printing process that uses droplets of liquid material to create objects layer by layer. The droplets are deposited through an inkjet printhead, which allows for high-resolution printing. This method is commonly used for printing complex geometries and can be used with various materials, including metals and ceramics.
+`Directed Energy Deposition (LMD)`
+Directed energy deposition (DED) is a 3D printing process that uses a focused beam of energy to melt and deposit metal onto a substrate. The process works by layering the metal powder and then using the beam to fuse the layers together. This method allows for complex geometries and can be used with various metals.
+`Powder Bed Fusion (SLS)`
+Powder bed fusion is a 3D printing process that uses a laser or electron beam to fuse together metal powder layers. The process works by layering the powder and then using the beam to melt the powder particles, creating a solid bond between them. This method allows for complex geometries and can be used with various metals.
+`Vat Polymerization (SLA)`
+Vat polymerization is a 3D printing process that uses ultraviolet light to cure liquid resin layer by layer. The process works by exposing the resin to UV light, which causes it to solidify, creating a solid bond between layers. This method allows for high-resolution printing and can be used with various materials, including plastics and metals
+`Layer Lamination (LOM)`
+Layer lamination is a 3D printing process that uses sheets of material, such as paper or plastic, to create objects layer by layer. The process works by stacking the sheets and then bonding them together using adhesives or heat. This method allows for complex geometries and can be used with various materials, including papers and plastics.
 
 -----
 
