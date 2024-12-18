@@ -494,15 +494,15 @@ Enhanced flexibility: M2M communication enables the easy reconfiguration of prod
 
 ## Nine Pillars
 ![SP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0010-NP.png)
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
+*Autonomous Robots*: These robots can operate independently without human intervention.
+*Simulation*: This pillar allows for the creation of digital models of physical systems, enabling simulations and analysis.
+*Horizontal & Vertical System Integration*: This involves integrating different layers of a system to improve efficiency and reduce costs.
+*Industrial Internet of Things (IIoT)*: IIoT enables real-time data collection and analysis from connected devices and sensors.
+*Cybersecurity*: This pillar ensures the protection of industrial systems and data from cyber threats
+*Cloud Computing*: Cloud computing allows for on-demand access to a shared pool of resources, such as servers, storage, and applications.
+*Additive Manufacturing*: Also known as 3D printing, this technology creates complex shapes and structures layer by layer.
+*Augmented Reality (AR)*: AR enhances the physical world by overlaying digital information onto it.
+*Big Data & Analytics*: This pillar involves collecting and analyzing large amounts of data to gain insights and make informed decisions.
 
 -----
 
