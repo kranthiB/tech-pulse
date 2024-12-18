@@ -124,14 +124,14 @@ The Industrial Revolution was a pivotal period in human history, marking a signi
 ### Manufacturing Paradigms
 ![IR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0002-MP.png)
 Smart manufacturing is an emerging trend that combines advanced technologies such as artificial intelligence, robotics, IoT, and big data analytics to transform traditional manufacturing processes into more efficient, agile, and sustainable systems
- * `Characteristics of Smart Manufacturing:`
+`Characteristics of Smart Manufacturing:`
    * *Digitization:* The integration of digital technologies to create a virtual representation of the physical world.
    * *Connected Devices and Distributed Intelligence for Real-Time Control:* The use of sensors, actuators, and control systems to monitor and control production processes in real-time.
    * *Collaborative Supply Chain Management:* The integration of supply chain management with manufacturing to optimize inventory levels, reduce lead times, and improve customer satisfaction.
    * *Energy and Resource Efficiency through Optimal Decision-Making:* The use of data analytics and machine learning algorithms to make informed decisions about energy consumption, resource allocation, and production planning.
    * *Advanced Sensors and Big Data Analytics Integrated into Product Lifecycle:* The integration of sensors and big data analytics to monitor product performance, predict maintenance needs, and optimize product design.
      
- * `Manufacturing Paradigms:`
+`Manufacturing Paradigms:`
    * *Lean Manufacturing:* A paradigm that focuses on minimizing waste and maximizing value-added activities through continuous improvement and elimination of non-value-added tasks.
    * *Cloud Manufacturing:* A paradigm that leverages cloud computing to enable flexible, scalable, and collaborative manufacturing processes.
    * *Intelligent Manufacturing:* A paradigm that incorporates artificial intelligence, machine learning, and data analytics to optimize production planning, quality control, and maintenance.
@@ -142,19 +142,19 @@ Smart manufacturing is an emerging trend that combines advanced technologies suc
    * *Flexible Manufacturing:* A paradigm that enables rapid changeover between different production runs through modularized designs, interoperability, and real-time visualization.
    * *Intelligent Manufacturing:* A paradigm that incorporates artificial intelligence, advanced sensing, control systems, optimization techniques, and knowledge management to optimize production processes.
      
- * `Benefits of Smart Manufacturing:`
+`Benefits of Smart Manufacturing:`
    * *Increased Efficiency:* Smart manufacturing enables automation, streamlines processes, and reduces labor costs.
    * *Improved Product Quality:* Advanced sensors and analytics ensure consistent product quality, reducing defects and rework.
    * *Enhanced Customer Experience:* Smart manufacturing allows for real-time monitoring, predictive maintenance, and personalized products tailored to customer needs.
    * *Reduced Costs:* Smart manufacturing optimizes resource allocation, reduces energy consumption, and minimizes waste.
    * *Increased Competitiveness:* Smart manufacturing enables businesses to stay competitive in the global market by offering innovative products, services, and experiences. 
- * `Challenges and Limitations:`
+`Challenges and Limitations:`
    * *High Initial Investment:* Implementing smart manufacturing technologies requires significant upfront investments in hardware, software, and training.
    * *Integration Challenges:* Integrating different systems, devices, and data sources can be complex and time-consuming.
    * *Cybersecurity Risks:* Smart manufacturing introduces new cybersecurity risks due to the increased connectivity and data exchange between devices and systems.
    * *Skills Gap:* The adoption of smart manufacturing requires a significant shift in workforce skills, which can be challenging for companies to implement.
      
- * `Future Directions:`
+`Future Directions:`
    * *Artificial Intelligence and Machine Learning:* AI and ML will play an increasingly important role in optimizing production processes, predicting maintenance needs, and improving product quality.
    * *Internet of Things (IoT):* IoT will continue to expand its presence in manufacturing, enabling real-time monitoring, remote access, and predictive maintenance.
    * *5G Networks:* 5G networks will provide faster data transfer rates, lower latency, and increased connectivity, enabling more widespread adoption of smart manufacturing technologies.
@@ -288,15 +288,65 @@ A comprehensive framework for designing and implementing industrial production s
 
 ### Ecosystem
 ![ES](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0007-ES.png)
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
+`Product Lifecycle Management (PLM)`
+  * PLM is a set of business processes and tools that enable companies to design, manufacture, and manage products throughout their lifecycle.
+  * *Capability Mapping*:
+      * *Agility*: PLM enables rapid product development and iteration, allowing companies to quickly respond to changing market conditions.
+      * *Quality*: PLM ensures that products meet quality standards by managing data across the entire product lifecycle.
+      * *Sustainability*: PLM helps reduce waste and improve resource efficiency by optimizing production processes and supply chains.
+
+`Supply Chain Management (SCM)`
+  * SCM is a set of activities involved in sourcing, producing, and delivering products to customers.
+  * *Capability Mapping*:
+      * *Productivity*: SCM optimizes the flow of goods, services, and related information from raw materials to end customers, improving productivity and efficiency.
+      * *Agility*: SCM enables rapid response to changing market conditions by streamlining supply chain operations.
+      * *Quality*: SCM ensures that products meet quality standards by managing data across the entire supply chain.
+
+`Design for Supply Chain Management (DFSCM)`
+  * DFSCM is a design approach that considers the impact of product design on supply chain operations and costs
+  * *Capability Mapping*:
+      * *Agility*: DFSCM enables rapid response to changing market conditions by designing products that are easy to manufacture and distribute.
+      * *Quality*: DFSCM ensures that products meet quality standards by considering the impact of design on supply chain operations.
+
+`Continuous Process Improvement (CPI)`
+  * CPI is a methodology for ongoing improvement of business processes based on data-driven insights.
+  * *Capability Mapping*:
+      * *Productivity*: CPI identifies areas for process optimization, leading to increased productivity and efficiency.
+      * *Quality*: CPI ensures that products meet quality standards by continuously monitoring and improving production processes.
+      * *Sustainability*: CPI helps reduce waste and improve resource efficiency by optimizing production processes and supply chains.
+
+`Continuous Commissioning (CCX)`
+  * CCX is a methodology for ongoing improvement of industrial operations based on data-driven insights
+  * *Capability Mapping*:
+      * *Productivity*: CCX identifies areas for process optimization, leading to increased productivity and efficiency.
+      * *Agility*: CCX enables rapid response to changing market conditions by streamlining production processes.
+      * *Quality*: CCX ensures that products meet quality standards by continuously monitoring and improving production processes.
+      * *Sustainability*: CCX helps reduce waste and improve resource efficiency by optimizing production processes and supply chains.
+
+`Design for Manufacturing and Assembly (DFMA)`
+  * DFMA is a design approach that considers the impact of product design on manufacturing and assembly operations and cost
+  * *Capability Mapping*:
+      * *Productivity*: DFMA enables rapid response to changing market conditions by designing products that are easy to manufacture and assemble.
+      * *Agility*: DFMA ensures that products meet quality standards by considering the impact of design on manufacturing and assembly operations.
+
+`Flexible / Reconfiguration Manufacturing System (FMS/RMS)`
+  * FMS/RMS is a system that enables rapid reconfiguration of production lines to respond to changing market conditions.
+  * *Capability Mapping*:
+      * *Agility*: FMS/RMS enables rapid response to changing market conditions by streamlining production processes.
+
+`Manufacturing Pyramid`
+  * Manufacturing pyramid is a framework for designing and implementing industrial production systems that are highly efficient, agile, and adaptable.
+  * *Capability Mapping*:
+      * *Productivity*: Manufacturing pyramid optimizes the flow of goods, services, and related information from raw materials to end customers, improving productivity and efficiency.
+      * *Agility*: Manufacturing pyramid enables rapid response to changing market conditions by streamlining production processes.
+      * *Quality*: Manufacturing pyramid ensures that products meet quality standards by managing data across the entire supply chain.
+      * *Sustainability*: Manufacturing pyramid helps reduce waste and improve resource efficiency by optimizing production processes and supply chains.
+
+`Fast Innovation Cycle`
+  * Fast innovation cycle is a methodology for rapid product development and iteration, enabling companies to quickly respond to changing market conditions.
+  * *Capability Mapping*:
+      * *Agility*: Fast innovation cycle enables rapid response to changing market conditions by streamlining production processes.
+      * *Quality*: Fast innovation cycle ensures that products meet quality standards by continuously monitoring and improving production processes.
 
 -----
 
