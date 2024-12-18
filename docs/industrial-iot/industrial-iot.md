@@ -73,7 +73,7 @@ Table of contents
 ![IR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0001-IR.png)
 The Industrial Revolution was a pivotal period in human history, marking a significant shift from manual labor to machine-based manufacturing. This transformation had far-reaching consequences, impacting various aspects of society and shaping the modern world as we know it today.
    
- * `First Industrial Revolution (18th Century)`
+`First Industrial Revolution (18th Century)`
    * *Automation of Physical Labor*
      * Water/Stream Power
        * The introduction of water-powered machinery marked a significant milestone in automation. 
@@ -84,7 +84,7 @@ The Industrial Revolution was a pivotal period in human history, marking a signi
      * Mobility - Rail/Ship Networks, Steam Engine
        * Advances in transportation enabled rapid movement of goods and people, further facilitating economic expansion.
           
- * `Second Industrial Revolution (19th Century)`
+`Second Industrial Revolution (19th Century)`
    * *Automation/Rationalization of Physical Labor*
      * Electricity-Powered Mass Production
        * The widespread adoption of electricity transformed manufacturing processes, allowing for faster and more efficient production 
@@ -95,7 +95,7 @@ The Industrial Revolution was a pivotal period in human history, marking a signi
      * Mobility - Planes, Oil-Powered Ships, Automobiles
        * Advances in transportation led to the development of new modes of travel, transforming global connectivity.
 
- * `Third Industrial Revolution (20th Century)`
+`Third Industrial Revolution (20th Century)`
    * *Automation of Individual Entities in an Organization*
      * Computers/Sensors
        * The rise of computers and sensors enabled automation within individual entities, enhancing efficiency and accuracy. 
@@ -106,7 +106,7 @@ The Industrial Revolution was a pivotal period in human history, marking a signi
      * Mobility - Satellite-Based Navigational Aids
        * Advances in satellite technology enabled precise navigation and communication, transforming industries such as aviation and maritime
 
- * `Fourth Industrial Revolution`
+`Fourth Industrial Revolution`
    * *Automation Across Entire Organizations*
      * Autonomy Across Entire Organizations
        * The integration of artificial intelligence and robotics has led to increased autonomy across entire organizations. 
@@ -166,7 +166,7 @@ Smart manufacturing is an emerging trend that combines advanced technologies suc
 ![EDM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0003-EDM.png)
 Digital manufacturing has revolutionized the way products are designed, manufactured, and delivered. From its humble beginnings in the 1970s to the present day, digital manufacturing has evolved significantly, driven by advances in technology, changing business needs, and shifting consumer demands.
 
- * `Notable Milestones`
+`Notable Milestones`
    * *The Early Days of Digital Manufacturing*
      * Digital manufacturing began in the 1970s with the introduction of computer-aided design (CAD) software. CAD allowed designers to create detailed designs on computers, replacing traditional drafting methods. This marked the beginning of a new era in product development, enabling faster and more accurate design iterations. 
    * *The Rise of Computer-Aided Manufacturing (CAM)*
@@ -178,14 +178,14 @@ Digital manufacturing has revolutionized the way products are designed, manufact
    * *The Internet of Things (IoT) and Industry 4.0*
      * The 2010s saw the rise of the Internet of Things (IoT) and Industry 4.0. IoT enabled the integration of sensors, actuators, and other devices into products and systems, creating a new level of connectivity and automation. Industry 4.0 built on this foundation, introducing advanced manufacturing technologies such as robotics, artificial intelligence, and cybersecurity.
 
- * `Impact on Industry`
+`Impact on Industry`
    * The evolution of digital manufacturing has had a profound impact on various industries, including:
      * *Reduced production costs:* Automation and digitalization have led to cost savings and increased efficiency.
      * *Improved product quality:* Digital tools enable precise design and manufacturing, resulting in higher-quality products.
      * *Enhanced collaboration:* Global teams can collaborate more effectively using digital mockups and collaborative design tools.
      * *Increased speed-to-market:* Rapid prototyping and testing capabilities have accelerated the development cycle.
 
- * `Future of Digital Manufacturing`
+`Future of Digital Manufacturing`
    * As we look to the future, digital manufacturing will continue to evolve rapidly. Emerging trends include:
      * *Artificial Intelligence (AI):* AI will play an increasingly important role in product development, enabling designers to create more complex and sophisticated products.
      * *Blockchain:* Blockchain technology will provide a secure and transparent way to track products throughout their lifecycle.
@@ -239,7 +239,8 @@ Digital manufacturing has revolutionized the way products are designed, manufact
 
 Smart Manufacturing is a multifaceted concept that encompasses various aspects of production, including cost control and differentiation through four key areas: Productivity, Quality, Agility, and Sustainability.
 These dimensions are interconnected and interdependent, working together to drive innovation, efficiency, and competitiveness in the manufacturing sector. By understanding these perspectives, businesses can better navigate the complexities of smart manufacturing and make informed decisions that align with their strategic goals
- * `Cost Control`
+
+`Cost Control`
   * *Economic Benefits*: Customers are looking for cost-effective solutions that can help them save money on operational expenses.
     * This includes reducing energy consumption, minimizing waste, and optimizing resource allocation.
     * By implementing smart manufacturing technologies, customers can achieve significant cost savings and improve their bottom line.
@@ -250,7 +251,7 @@ These dimensions are interconnected and interdependent, working together to driv
     * This includes adopting new technologies such as artificial intelligence (AI), machine learning (ML), and the Internet of Things (IoT).
     * By embracing these innovations, customers can gain a competitive edge and improve their overall performance.
 
- * `Differentiation`
+`Differentiation`
   * *Quality and Reliability*: Customers place a high value on quality and reliability in their products.
     * This includes ensuring that products meet or exceed customer expectations in terms of performance, durability, and safety.
     * By implementing smart manufacturing technologies, customers can achieve higher levels of quality and reliability, leading to increased customer satisfaction and loyalty.
@@ -265,15 +266,23 @@ These dimensions are interconnected and interdependent, working together to driv
 
 ### Design Principles & Smart System Elements
 ![DPSSE](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/industrial-iot/industrial-iot/0006-DPSSE.png)
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
+A comprehensive framework for designing and implementing industrial production systems in the modern era.
+
+`Core Components`
+  * *Interoperability*: This concept refers to the seamless integration and communication between various devices, systems, and software platforms within a manufacturing system. Interoperability enables different components to exchange data and work together efficiently.
+  * *Virtualization*: Virtualization involves creating virtual representations of physical assets or processes in a digital environment. It allows for simulations, modeling, and analysis without the need for physical prototypes.
+  * *Decentralization*: Decentralized systems distribute decision-making authority among various nodes or components within the system. This approach enhances flexibility, resilience, and adaptability.
+
+`Key Principles`
+  * *Modularity*: Modular systems consist of interchangeable components that can be easily reconfigured or replaced. This design principle promotes flexibility and reduces waste.
+  * *Service orientation*: Smart manufacturing emphasizes providing services rather than just products. This approach enables businesses to offer customized solutions, enhance customer experience, and create new revenue streams.
+
+`Smart System Elements`
+  * *Self-awareness/ Autonomy*: Smart manufacturing systems are equipped with sensors and data analytics capabilities that enable them to monitor their own performance and make adjustments in real-time
+  * *Connectivity*: These systems are connected through various networks (e.g., IoT, cloud computing) to facilitate data exchange and collaboration among different stakeholders.
+  * *Data-driven decision-making*: Smart manufacturing relies heavily on data analysis and AI algorithms to optimize production processes, predict maintenance needs, and improve overall efficiency.
+  * *Autonomous analytics on data to decide (Monitor / Diagnose / Correct)*: These systems use AI-powered tools to analyze vast amounts of data in real-time, enabling them to identify issues, predict maintenance needs, and optimize production processes.
+  * *New design, manufacturing and communication technologies*: Smart manufacturing incorporates cutting-edge technologies like 3D printing, augmented reality (AR), and the Internet of Things (IoT) to streamline operations, improve product quality, and enhance collaboration among stakeholders.
 
 -----
 
