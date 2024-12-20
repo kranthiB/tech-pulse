@@ -46,17 +46,23 @@ Table of contents
 
 An IoT smart Gateway platform serves as a central node in the IoT ecosystem, enabling seamless data transfer and communication between various devices and the cloud. By converting several protocols, it fosters interoperability by aggregating, processing, and translating data from many sources. Through the facilitation of localized decision-making, the reduction of latency, and the enhancement of energy efficiency, this platform improves real-time responsiveness.
 
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
- * `<<PLACEHOLDEER>> - <<PLACEHOLDEER>> - <<PLACEHOLDEER>>`
+   * `IoT Edge Things`: The platform starts with IoT edge things, which are devices or sensors that collect data from the physical world. These can include temperature sensors, humidity sensors, motion detectors, and more.
+
+   * `Field Connectors`: The IoT edge things are connected to field connectors, which are specialized modules that enable communication between the devices and the smart gateway. Field connectors can be wireless (e.g., Wi-Fi, Bluetooth) or wired (e.g., Ethernet).
+
+   * `Smart Gateway`: The field connectors connect to a smart gateway, which is a central hub that manages data exchange between all connected devices. The smart gateway acts as an intermediary between the IoT edge things and the cloud or other networks.
+   
+   * `Cloud Connectors`: The smart gateway connects to cloud connectors, which are specialized modules that enable communication with the cloud or other networks. Cloud connectors can be wireless (e.g., cellular) or wired (e.g., Ethernet).
+   
+   * `IoT Platform Services`: The cloud connectors connect to IoT platform services, which provide a range of features and functionalities for managing and analyzing data from the connected devices. These services may include data storage, analytics, machine learning, and more.
+   
+   * `Data Flow`: Here's how data flows through the system:
+   
+      * *Sensor Data Collection*: IoT edge things collect sensor data (e.g., temperature, humidity) from the physical world.
+      * *Field Connector Communication*: The field connectors transmit the sensor data to the smart gateway.
+      * *Smart Gateway Processing*: The smart gateway processes and filters the sensor data, removing any unnecessary or redundant information.
+      * *Cloud Connector Transmission*: The smart gateway transmits the processed data to the cloud connectors.
+      * *IoT Platform Services*: The cloud connectors connect to IoT platform services, which store, analyze, and provide insights on the collected data.
 
 -----
 
