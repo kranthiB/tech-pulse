@@ -11,7 +11,7 @@ Table of contents
 <!--ts-->
    * [AI Code Assistant](#ai-code-assistant)
       * [Developer's Coding Companion](#developers-coding-companion)
-      * [AI Autopilot for Software] (#ai-autopilot-for-software)
+      * [AI Autopilot for Software](#ai-autopilot-for-software)
       * [LLMs](#llms)
         * [Evolution Tree](#evolution-tree)
         * [Emerging Abilities](#emerging-abilities)
@@ -37,72 +37,72 @@ Table of contents
 ## AI Code Assistant
 
 ### Developers Coding Companion
-![DCC](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0001-DCC.png)
+![DCC](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0001-DCC.png)
 
 -----
 
 ### AI Autopilot for Software
-![AUS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0002-AUS.png)
+![AUS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0002-AUS.png)
 
 -----
 
 ### LLMs
 
 #### Evolution tree
-![LET](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0003-LET.png)
+![LET](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0003-LET.png)
 
 -----
 
 #### Emerging Abilities
-![LEA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0004-LEA.png)
+![LEA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0004-LEA.png)
 
 -----
 
 #### Model Sizes
-![LMSA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0005-A-LMS.png)
+![LMSA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0005-A-LMS.png)
 
-![LMSB](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0005-B-LMS.png)
+![LMSB](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0005-B-LMS.png)
 
 -----
 
 ### SLMs
-![SLM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0006-SLM.png)
+![SLM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0006-SLM.png)
 
 -----
 
 ### Security
-![LMS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0007-LMS.png)
+![LMS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0007-LMS.png)
 
 -----
 
 ### Compliance
-![LMC](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0008-LMC.png)
+![LMC](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0008-LMC.png)
 
 -----
 
 ### Customization
-![LMCA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0009-LMC.png)
+![LMCA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0009-LMC.png)
 
 -----
 
 ### Context Size Limits
-![LCS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0010-LCS.png)
+![LCS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0010-LCS.png)
 
 -----
 
 ### AI Adoption
-![LMA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0011-LMA.png)
+![LMA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0011-LMA.png)
 
 -----
 
 ### Tools Comparison
 
 #### Use case
-![UCA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0012-A-UC.png)
+![UCA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0012-A-UC.png)
 
 -----
 
-![UCB](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0012-B-UC.png)
+![UCB](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0012-B-UC.png)
 
 -----
 
@@ -129,72 +129,72 @@ Table of contents
 -----
 
 #### Comparison
-![ACMP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0013-A-CMP.png)
+![ACMP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0013-A-CMP.png)
 
 -----
 
-![BCMP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0013-B-CMP.png)
+![BCMP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0013-B-CMP.png)
 
 -----
 
-![CCMP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0013-C-CMP.png)
+![CCMP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0013-C-CMP.png)
 
 -----
 
-![DCMP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0013-D-CMP.png)
+![DCMP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0013-D-CMP.png)
 
 -----
 
-![ECMP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0013-E-CMP.png)
+![ECMP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0013-E-CMP.png)
 
 -----
 
 ## Developer Productivity
-![DP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0014-DP.png)
+![DP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0014-DP.png)
 
 -----
 
 ## Performance Scorecard
-![APS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0015-A-PS.png)
+![APS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0015-A-PS.png)
 
 -----
 
-![BPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0015-B-PS.png)
+![BPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0015-B-PS.png)
 
 -----
 
-![CPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0015-C-PS.png)
+![CPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0015-C-PS.png)
 
 -----
 
-![DPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0015-D-PS.png)
+![DPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0015-D-PS.png)
 
 -----
 
-![EPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0015-E-PS.png)
+![EPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0015-E-PS.png)
 
 -----
 
-![FPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0015-F-PS.png)
+![FPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0015-F-PS.png)
 
 -----
 
-![GPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0015-G-PS.png)
+![GPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0015-G-PS.png)
 
 -----
 
-![HPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0015-H-PS.png)
+![HPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0015-H-PS.png)
 
 -----
 
-![IPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0015-I-PS.png)
+![IPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0015-I-PS.png)
 
 -----
 
-![JPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0015-J-PS.png)
+![JPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0015-J-PS.png)
 
 -----
 
-![KPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development./0015-K-PS.png)
+![KPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0015-K-PS.png)
 
 -----
