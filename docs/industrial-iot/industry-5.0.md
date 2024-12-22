@@ -7,3 +7,5 @@ next_page: industrial-iot/edge-gateway
 ---
 
 # Industry 5.0
+
+## Coming Soon!

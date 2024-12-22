@@ -6,3 +6,5 @@ previous_page: system-design/communication-protocols
 ---
 
 # Patterns
+
+## Coming Soon!

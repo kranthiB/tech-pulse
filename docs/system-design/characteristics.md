@@ -6,3 +6,5 @@ next_page: system-design/load-balancing
 ---
 
 # Characteristics of Distributed Computing
+
+## Coming Soon!
