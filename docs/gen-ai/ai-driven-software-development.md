@@ -15,7 +15,7 @@ Table of contents
       * [LLMs](#llms)
         * [Evolution Tree](#evolution-tree)
         * [Emerging Abilities](#emerging-abilities)
-        * [Model Sizes](model-sizes)
+        * [Model Sizes](#model-sizes)
       * [SLMs](#slms)
       * [Security](#security)
       * [Compliance](#compliance)
@@ -24,7 +24,7 @@ Table of contents
       * [AI Adoption](#ai-adoption)
       * [Tools Comparison](#tools-comparison)
         * [Usecase](#use-case)
-        * [Demo]
+        * [Demo](#demo)
           * [Copilot](#copilot)
           * [CodeWhisperer](#code-whisperer)
           * [Tabnine](#tabnine)
@@ -42,11 +42,14 @@ Table of contents
 -----
 
 ### AI Autopilot for Software
+`Automated Creation, Monitoring and Maintenance with Artifical Intelligence`
+
 ![AUS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0002-AUS.png)
 
 -----
 
 ### LLMs
+`Revolutionizing Software Development through Cutting-Edge Coding Assistance`
 
 #### Evolution tree
 ![LET](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0003-LET.png)
@@ -66,31 +69,42 @@ Table of contents
 -----
 
 ### SLMs
+`Compact & resource-efficient neural networks with fewer parameters`
+
 ![SLM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0006-SLM.png)
 
 -----
 
 ### Security
+`Confidentiality, integrity and availability of the assistant, its data, and its functionality`
+
 ![LMS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0007-LMS.png)
 
 -----
 
 ### Compliance
+`Adherence to applicable laws, regulations, ethical principles, and technical standards`
+
 ![LMC](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0008-LMC.png)
 
 -----
 
 ### Customization
+`Tailor the assistant’s behaviour, functionality and user experience to meet specific needs`
+
 ![LMCA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0009-LMC.png)
 
 -----
 
 ### Context Size Limits
+`Exploring techniques and approaches for effective large code analysis`
+
 ![LCS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0010-LCS.png)
 
 -----
 
 ### AI Adoption
+`Guide to Seamlessly Incorporating Artificial Intelligence`
 ![LMA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0011-LMA.png)
 
 -----
@@ -98,10 +112,11 @@ Table of contents
 ### Tools Comparison
 
 #### Use case
+`Add to Cart - API`
 ![UCA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0012-A-UC.png)
 
 -----
-
+`Place Order - API`
 ![UCB](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0012-B-UC.png)
 
 -----
@@ -114,7 +129,7 @@ Table of contents
 -----
 
 ##### Code Whisperer
-[Code Whispere](https://youtu.be/-qyna_xbovI)
+[Code Whisperer](https://youtu.be/-qyna_xbovI)
 
 -----
 
