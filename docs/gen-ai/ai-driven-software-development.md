@@ -32,6 +32,7 @@ Table of contents
         * [Comparison](#comparison)
   * [Developer Productivity](#developer-productivity)
   * [Performance Scorecard](#performance-scorecard)
+  * [Next-Gen DevX Platform](#next-gen-devx-platform)
 <!--te-->
 
 ## AI Code Assistant
@@ -211,5 +212,10 @@ Table of contents
 -----
 
 ![KPS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0015-K-PS.png)
+
+-----
+
+## Next-Gen DevX Platform
+![DXP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-driven-software-development/0016-DXP.png)
 
 -----
