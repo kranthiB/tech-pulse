@@ -34,7 +34,7 @@ Table of contents
   * [Developer Productivity](#developer-productivity)
       * [AI Powered Development Environments](#ai-powered-development-environments)
       * [IDE Settings to 5x AI Output Quality](#ide-settings-to-5x-ai-output-quality)
-          * [Rules File Template](#rules-file-template)
+          * [Instructions or Settings Template](#instructions-or-settings-template-for-windsurf--cursor--vs-code)
   * [Performance Scorecard](#performance-scorecard)
   * [Next-Gen DevX Platform](#next-gen-devx-platform)
 <!--te-->
