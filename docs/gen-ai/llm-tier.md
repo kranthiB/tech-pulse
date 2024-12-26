@@ -139,5 +139,32 @@ An LLM Tier is a classification system that ranks large language models (LLMs) b
 
 -----
 
-### LLMs Tier List - 2024`
+### LLMs Tier List - 2024
 ![TL24](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/llm-tier/0001-Tier_List-2024.png)
+
+  * *Gemini 2.0 Flash* - Launched in December 2024, Gemini 2.0 Flash is a cutting-edge multimodal model that handles inputs and outputs, including audio. Its speed and cost-effectiveness set it apart—it’s entirely free and serves as both a general-purpose and reasoning model, drawing comparisons to GPT-40.
+  * *3.5 Sonnet* - An S-tier model renowned for its superior capabilities and efficiency. It sets the benchmark for high-quality performance.
+  * *3.5 Haiku* - A more controversial option, 3.5 Haiku is priced significantly higher than its predecessor, 3 Haiku. Despite its cost, it falls short of Gemini Flash or Sonnet, which outperform it while being free.
+  * *Mistral Models*
+      * Mistral Large 2: A solid performer but comes with restrictive licensing.
+      * Mistral Nemo: Developed by Mistral and Nvidia, it was revolutionary at launch but has since been outpaced by newer models.
+      * Mistral Pixtral/Ministral: Lacks robust licensing and underwhelms in performance.
+  * *Llama Series*: The Open-Source Trailblazers
+      * 3.1 Models (8B & 405B): These models continue to show immense potential, with the 405B model being the largest to date. Licensing is user-friendly.
+      * 3-2 Models: Includes two mini and two vision models, but vision models fail to deliver.
+      * 3.3 70B Model: An impressive option for its size, delivering strong performance.
+  * *Qwen Series*
+      * 2.5: Although good for mathematical and specific tasks, its general knowledge and instruction-following capabilities are lacking.
+      * 2.5 Coder: Made headlines during its release but was criticized for over-reliance on proprietary benchmarks.
+      * QwQ: A competitive open-source alternative to O1, with commendable performance.
+  * *DeepSeek*
+      * R1-Lite: A capable reasoning model.
+      * V2.5: Combines coding and general-purpose capabilities seamlessly, with low API costs.
+  * *Phi4*: A standout in the 14B segment, offering great performance for its size.
+  * *OpenAI Models*
+      * GPT-40: Despite introducing omni-modality, it failed to deliver on its promise at launch. Gemini 2.0 Flash has since surpassed it.
+      * GPT-40 Mini: Performed well but couldn’t compete with Gemini’s pricing.
+      * O1/O1 Mini: Overpriced ($200) and lacks transparency, raising concerns about its training practices.
+  * *Gemma 2*: Poorly received, with subpar performance.
+  * *Codestral*: A robust coding model, outperforming Qwen 2.5.
+  * *Grok-2*: A notable uncensored model, available for free on Twitter and via API.
