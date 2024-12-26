@@ -191,7 +191,7 @@ To enhance the quality of AI-generated output, specific IDEs have designated loc
 
 -----
 
-#### Rules File Template
+#### Instructions or Settings Template for Windsurf / Cursor / VS Code
 
 ##### [Project Name]
 Every time you choose to apply a rule(s), explicitly state the rule(s) in the output. You can abbreviate the rule description to a single word or phrase.
