@@ -43,6 +43,7 @@ sidebar:
       - ops-mastery/green-ops
   - label: GenAI
     children:
+      - gen-ai/llm-tier
       - gen-ai/ai-driven-software-development
   - label: Industrial IoT
     children:
