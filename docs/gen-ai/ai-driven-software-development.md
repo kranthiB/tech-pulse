@@ -196,13 +196,13 @@ To enhance the quality of AI-generated output, specific IDEs have designated loc
 ##### [Project Name]
 Every time you choose to apply a rule(s), explicitly state the rule(s) in the output. You can abbreviate the rule description to a single word or phrase.
 
-##### Project Context
+###### Project Context
 [Brief description ]
 - [more description]
 - [more description]
 - [more description]
 
-##### Code Style and Structure
+###### Code Style and Structure
 - Write concise, technical TypeScript code with accurate examples
 - Use functional and declarative programming patterns; avoid classes
 - Prefer iteration and modularization over code duplication
@@ -234,7 +234,7 @@ shared/
     └── utils/          # Helper functions, only used for shared functions between server and extension
 ```
 
-##### Tech Stack
+###### Tech Stack
 - React
 - TypeScript
 - Tailwind CSS
@@ -242,13 +242,13 @@ shared/
 - Chrome Extension
 - Express.js
 
-##### Naming Conventions
+###### Naming Conventions
 - Use lowercase with dashes for directories (e.g., components/form-wizard)
 - Favor named exports for components and utilities
 - Use PascalCase for component files (e.g., VisaForm.tsx)
 - Use camelCase for utility files (e.g., formValidator.ts)
 
-##### TypeScript Usage
+###### TypeScript Usage
 - Use TypeScript for all code; prefer interfaces over types
 - Avoid enums; use const objects with 'as const' assertion
 - Use functional components with TypeScript interfaces
@@ -257,36 +257,18 @@ shared/
 - Avoid try/catch blocks unless there's good reason to translate or handle error in that abstraction
 - Use explicit return types for all functions
 
-##### Chrome Extension Specific
-- Use Manifest V3 standards
-- Implement proper message passing between components:
-  ```typescript
-  interface MessagePayload {
-    type: string;
-    data: unknown;
-  }
-  ```
-- Handle permissions properly in manifest.json
-- Use chrome.storage.local for persistent data
-- Implement proper error boundaries and fallbacks
-- Use lib/storage for storage related logic
-- For the async injected scripts in content/, 
-  - they must not close over variables from the outer scope
-  - they must not use imported functions from the outer scope
-  - they must have wrapped error handling so the error message is returned to the caller
-
 ###### State Management
 - Use React Context for global state when needed
 - Implement proper state persistence using chrome.storage (for extension)
 - Implement proper cleanup in useEffect hooks
 
-##### Syntax and Formatting
+###### Syntax and Formatting
 - Use "function" keyword for pure functions
 - Avoid unnecessary curly braces in conditionals
 - Use declarative JSX
 - Implement proper TypeScript discriminated unions for message types
 
-##### UI and Styling
+###### UI and Styling
 - Use Shadcn UI and Radix for components
 - use `npx shadcn@latest add <component-name>` to add new shadcn components
 - Implement Tailwind CSS for styling
@@ -294,26 +276,26 @@ shared/
 - Follow Material Design guidelines for Chrome extensions
 - When adding new shadcn component, document the installation command
 
-##### Error Handling
+###### Error Handling
 - Implement proper error boundaries
 - Log errors appropriately for debugging
 - Provide user-friendly error messages
 - Handle network failures gracefully
 
-##### Testing
+###### Testing
 - Write unit tests for utilities and components
 - Implement E2E tests for critical flows
 - Test across different Chrome versions
 - Test memory usage and performance
 
-##### Security
+###### Security
 - Implement Content Security Policy
 - Sanitize user inputs
 - Handle sensitive data properly
 - Follow Chrome extension security best practices
 - Implement proper CORS handling
 
-##### Git Usage
+###### Git Usage
 Commit Message Prefixes:
 - "fix:" for bug fixes
 - "feat:" for new features
@@ -330,14 +312,14 @@ Rules:
 - Include description for non-obvious changes
 - Reference issue numbers when applicable
 
-##### Documentation
+###### Documentation
 - Maintain clear README with setup instructions
 - Document API interactions and data flows
 - Keep manifest.json well-documented
 - Don't include comments unless it's for complex logic
 - Document permission requirements
 
-##### Development Workflow
+###### Development Workflow
 - Use proper version control
 - Implement proper code review process
 - Test in multiple environments
