@@ -5,10 +5,22 @@ sidebar_label: LLM Tiers
 next_page: gen-ai/ai-driven-software-development
 ---
 
+Table of contents
+=================
+
+<!--ts-->
+   * [LLM Tiers](#llm-tiers)
+      * [Key Criteria for LLM Tier Classification](#key-criteria-for-llm-tier-classification)
+      * [LLM Tier Breakdown](#llm-tier-breakdown)
+      * [Purpose of LLM Tiering](#purpose-of-llm-tiering)
+      * [LLM Tier Selection Guide](#llm-tier-selection-guide)
+      * [LLMs Tier List - 2024](#llms-tier-list---2024)
+<!--te-->
+
 ## LLM Tiers
 An LLM Tier is a classification system that ranks large language models (LLMs) based on their capabilities, performance, and suitability for various applications. These tiers provide a structured way to assess which models are best suited for different tasks, industries, or resource constraints
 
-`Key Criteria for LLM Tier Classification`
+### Key Criteria for LLM Tier Classification
   * **Performance**:
     * *Reasoning and Comprehension*: Ability to perform complex reasoning, understand context, and generate coherent responses.
     * *Accuracy*: Precision in generating relevant and factual outputs.
@@ -34,7 +46,7 @@ An LLM Tier is a classification system that ranks large language models (LLMs) b
 
 -----
 
-`LLM Tier Breakdown`
+### LLM Tier Breakdown
   * **S Tier**
     * The highest-performing models, excelling in a wide range of complex and general-purpose tasks.
     * State-of-the-art capabilities, high versatility, advanced reasoning, support for long-context, and multi-modal features.
@@ -57,7 +69,7 @@ An LLM Tier is a classification system that ranks large language models (LLMs) b
 
 -----
 
-`Purpose of LLM Tiering`
+### Purpose of LLM Tiering
   * LLM tiers help:
     * *Optimize Model Selection*: Match the right model to the task’s complexity, budget, and resource availability.
     * *Guide Decision-Making*: Assist developers, businesses, and researchers in choosing the most suitable model for their goals.
@@ -65,7 +77,7 @@ An LLM Tier is a classification system that ranks large language models (LLMs) b
 
 -----
 
-`LLM Tier Selection Guide`
+### LLM Tier Selection Guide
   * **When to Choose**:
     * **S Tier** - Cutting Edge performance
         * *High Complexity Tasks*: Advanced reasoning, multi-step problem-solving, and nuanced decision-making.
@@ -116,6 +128,7 @@ An LLM Tier is a classification system that ranks large language models (LLMs) b
             * Proof-of-concept designs or AI system bootstrapping.
 
   * **Factors to Consider**
+
 | Factor                | S Tier                 | A Tier                 | B Tier   | C Tier  | D Tier       |
 | --------------------- | ---------------------- | ---------------------- | -------- | ------- | ------------ |
 | Budget                | High                   | Moderate               | Low      | Minimal | Minimal      |
@@ -126,5 +139,5 @@ An LLM Tier is a classification system that ranks large language models (LLMs) b
 
 -----
 
-`LLM's Tier List - 2024`
+### LLMs Tier List - 2024`
 ![TL24](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/llm-tier/0001-Tier_List-2024.png)
