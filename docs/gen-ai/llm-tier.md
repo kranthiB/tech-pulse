@@ -58,16 +58,16 @@ An LLM Tier is a classification system that ranks large language models (LLMs) b
 -----
 
 `Purpose of LLM Tiering`
-LLM tiers help:
-  * *Optimize Model Selection*: Match the right model to the task’s complexity, budget, and resource availability.
-  * *Guide Decision-Making*: Assist developers, businesses, and researchers in choosing the most suitable model for their goals.
-  * *Set Expectations*: Clarify the capabilities and limitations of different models to avoid over- or under-utilization.
+  * LLM tiers help:
+    * *Optimize Model Selection*: Match the right model to the task’s complexity, budget, and resource availability.
+    * *Guide Decision-Making*: Assist developers, businesses, and researchers in choosing the most suitable model for their goals.
+    * *Set Expectations*: Clarify the capabilities and limitations of different models to avoid over- or under-utilization.
 
 -----
 
 `LLM Tier Selection Guide`
   * **When to Choose**:
-    * *S Tier* - Cutting Edge performance
+    * **S Tier** - Cutting Edge performance
         * *High Complexity Tasks*: Advanced reasoning, multi-step problem-solving, and nuanced decision-making.
         * *Wide Range of Applications*: Versatility for general-purpose use (creative writing, technical tasks, and multilingual content).
         * *Enterprise-Grade Needs*: Tasks requiring reliability, scalability, and state-of-the-art performance.
@@ -77,7 +77,7 @@ LLM tiers help:
             * Advanced coding and debugging assistance.
             * Scientific research involving complex data analysis.
             * Creative industries: screenwriting, art prompts, and ideation.
-    * *A Tier* – High Quality and Cost Effective
+    * **A Tier** – High Quality and Cost Effective
         * *Cost-Conscious Applications*: Offers a balance between performance and affordability.
         * *Specialized Tasks*: Tasks that don't demand state-of-the-art precision but require reliable performance.
         * *Moderate Resource Constraints*: Suitable for businesses looking for efficiency without the overhead of S-tier costs.
@@ -87,7 +87,7 @@ LLM tiers help:
             * Generating medium-complexity code and providing debugging suggestions.
             * Enterprise knowledge bases and search augmentation.
 
-    * *B Tier* – Mid Level Performance for Focused Tasks
+    * **B Tier** – Mid Level Performance for Focused Tasks
         * *Specific Use Cases*: When the focus is on specific tasks like document summarization or text classification.
         * *Resource Constraints*: Suitable for lightweight environments with limited compute or storage.
         * *Experimentation and Prototyping*: Ideal for proof-of-concept development or quick deployment.
@@ -96,7 +96,7 @@ LLM tiers help:
             * Moderate-level question-answering systems.
             * Simple chatbot systems or task-specific automation.
             * Text generation for blogs or articles where absolute precision isn’t critical.
-    * *C Tier* – Entry Level or Lightweight Models
+    * **C Tier** – Entry Level or Lightweight Models
         * *Basic Applications*: Tasks with minimal complexity (e.g., keyword extraction or simple language tasks).
         * *Low Resource Requirements*: Useful in environments with constrained budgets or computing power.
         * *Training Simplicity*: Often used to develop AI systems for educational purposes.
@@ -105,7 +105,7 @@ LLM tiers help:
             * Text completion for basic web applications.
             * Lightweight analysis of text content.
             * Processing short, structured data inputs (e.g., emails).
-    * *D Tier* - Foundational/Research Models
+    * **D Tier** - Foundational/Research Models
         * *Exploration of NLP Techniques*: Ideal for learning and experimenting with model architectures and NLP concepts.
         * *Resource-Constrained Development*: Works well for very lightweight or on-device applications.
         * *Not Performance Critical*: For tasks where accuracy and sophistication are less important.
@@ -116,13 +116,13 @@ LLM tiers help:
             * Proof-of-concept designs or AI system bootstrapping.
 
   * **Factors to Consider**
-    | Factor                | S Tier                 | A Tier                 | B Tier   | C Tier  | D Tier       |
-    | --------------------- | ---------------------- | ---------------------- | -------- | ------- | ------------ |
-    | Budget                | High                   | Moderate               | Low      | Minimal | Minimal      |
-    | Performance Needs     | Cutting edge           | High                   | Moderate | Basic   | Foundational |
-    | Resource Availability | High                   | Moderate               | Moderate | Low     | Very Low     |
-    | Task Complexity.      | Complex                | Moderate to Complex    | Moderate | Basic   | Very Basic   |
-    | Customization         | Flexible (Fine-tuning) | Flexible (Fine-tuning) | Limited  | Limited | Minimal      |
+| Factor                | S Tier                 | A Tier                 | B Tier   | C Tier  | D Tier       |
+| --------------------- | ---------------------- | ---------------------- | -------- | ------- | ------------ |
+| Budget                | High                   | Moderate               | Low      | Minimal | Minimal      |
+| Performance Needs     | Cutting edge           | High                   | Moderate | Basic   | Foundational |
+| Resource Availability | High                   | Moderate               | Moderate | Low     | Very Low     |
+| Task Complexity.      | Complex                | Moderate to Complex    | Moderate | Basic   | Very Basic   |
+| Customization         | Flexible (Fine-tuning) | Flexible (Fine-tuning) | Limited  | Limited | Minimal      |
 
 -----
 
