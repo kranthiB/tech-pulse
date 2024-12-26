@@ -142,29 +142,29 @@ An LLM Tier is a classification system that ranks large language models (LLMs) b
 ### LLMs Tier List - 2024
 ![TL24](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/llm-tier/0001-Tier_List-2024.png)
 
-  * *Gemini 2.0 Flash* - Launched in December 2024, Gemini 2.0 Flash is a cutting-edge multimodal model that handles inputs and outputs, including audio. Its speed and cost-effectiveness set it apart—it’s entirely free and serves as both a general-purpose and reasoning model, drawing comparisons to GPT-40.
-  * *3.5 Sonnet* - An S-tier model renowned for its superior capabilities and efficiency. It sets the benchmark for high-quality performance.
-  * *3.5 Haiku* - A more controversial option, 3.5 Haiku is priced significantly higher than its predecessor, 3 Haiku. Despite its cost, it falls short of Gemini Flash or Sonnet, which outperform it while being free.
+  * *Gemini 2.0 Flash* - Debuting in December 2024, Gemini 2.0 Flash has quickly gained traction as a multimodal powerhouse capable of processing inputs and outputs, including audio. Known for its remarkable speed and zero cost, it rivals GPT-40 in performance while being versatile enough to serve both reasoning and general-purpose needs.
+  * *3.5 Sonnet* - An elite, top-tier model celebrated for its outstanding efficiency and reliability, making it a strong choice for a wide range of applications
+  * *3.5 Haiku* - This model has sparked debate due to its steep price—double that of 3 Haiku. While functional, it doesn’t match the value offered by free models like Gemini Flash or Sonnet, which excel in comparison.
   * *Mistral Models*
-      * Mistral Large 2: A solid performer but comes with restrictive licensing.
-      * Mistral Nemo: Developed by Mistral and Nvidia, it was revolutionary at launch but has since been outpaced by newer models.
-      * Mistral Pixtral/Ministral: Lacks robust licensing and underwhelms in performance.
+      * Mistral Large 2: A competent model, although its restrictive licensing may deter some users.
+      * Mistral Nemo: Once groundbreaking, this collaboration between Mistral and Nvidia has been eclipsed by newer entrants.
+      * Mistral Pixtral/Ministral: Performance is underwhelming, and its licensing terms leave much to be desired.
   * *Llama Series*: The Open-Source Trailblazers
-      * 3.1 Models (8B & 405B): These models continue to show immense potential, with the 405B model being the largest to date. Licensing is user-friendly.
-      * 3-2 Models: Includes two mini and two vision models, but vision models fail to deliver.
-      * 3.3 70B Model: An impressive option for its size, delivering strong performance.
+      * 3.1 Models (8B & 405B): These models remain highly effective, with the 405B model holding the title as the largest to date. Licensing is straightforward and user-friendly.
+      * 3-2 Models: Comprises two mini and two vision models, though the vision models fail to impress.
+      * 3.3 70B Model: Offers exceptional performance for its size, making it a standout choice.
   * *Qwen Series*
-      * 2.5: Although good for mathematical and specific tasks, its general knowledge and instruction-following capabilities are lacking.
-      * 2.5 Coder: Made headlines during its release but was criticized for over-reliance on proprietary benchmarks.
-      * QwQ: A competitive open-source alternative to O1, with commendable performance.
+      * 2.5: Excels in mathematics and task-specific scenarios but struggles with general knowledge and instruction-following.
+      * 2.5 Coder: Initially hyped but received criticism for its reliance on proprietary benchmarks.
+      * QwQ: A strong open-source contender to O1, known for its solid performance
   * *DeepSeek*
       * R1-Lite: A capable reasoning model.
-      * V2.5: Combines coding and general-purpose capabilities seamlessly, with low API costs.
-  * *Phi4*: A standout in the 14B segment, offering great performance for its size.
+      * V2.5: Merges coding and general functionalities, delivering excellent performance at a low API cost.
+  * *Phi4*: A remarkable entry in the 14B model category, offering substantial power in a compact size.
   * *OpenAI Models*
-      * GPT-40: Despite introducing omni-modality, it failed to deliver on its promise at launch. Gemini 2.0 Flash has since surpassed it.
-      * GPT-40 Mini: Performed well but couldn’t compete with Gemini’s pricing.
-      * O1/O1 Mini: Overpriced ($200) and lacks transparency, raising concerns about its training practices.
-  * *Gemma 2*: Poorly received, with subpar performance.
-  * *Codestral*: A robust coding model, outperforming Qwen 2.5.
-  * *Grok-2*: A notable uncensored model, available for free on Twitter and via API.
+      * GPT-40: While it introduced omni-modality, its delayed feature rollouts allowed Gemini 2.0 Flash to take the lead.
+      * GPT-40 Mini: Decent performance but overshadowed by Gemini’s more competitive pricing
+      * O1/O1 Mini: Overpriced at $200 and criticized for its lack of transparency in training processes.
+  * *Gemma 2*: Widely regarded as a disappointment due to its poor capabilities
+  * *Codestral*: A standout coding model, outperforming Qwen 2.5 in this domain
+  * *Grok-2*: An uncensored model praised for its accessibility, available for free via Twitter and API.
