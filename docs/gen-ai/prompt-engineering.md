@@ -501,6 +501,5 @@ By following this framework, you can harness AI’s power to create stunning vis
 #### Rules for image generation prompting
 | Rules                | ![No](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-A-NO.jpeg)              | ![Yes](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-B-TCK.png)                | 
 | --------------------- | ---------------------- | ---------------------- |
-| Rule-1: Don't overthink it - Descibe the image you would to a friend who's never seen it | cat, urban street, cyberpunk, neon, nighttime, high quality | A sleek black cat perched on a rain-slicked urban street in a glowing cyberpynk city at night. Neon signs in electric blues and purples reflect off the wet pavement, casting a dreamy glow. The cat's cybernetic eyes shimmer softly as it watches hover cars zip through the misty air in the backgroud |
 
 -----
