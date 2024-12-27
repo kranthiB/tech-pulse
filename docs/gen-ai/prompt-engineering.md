@@ -8,7 +8,7 @@ next_page: gen-ai/llm-tier
 <!--ts-->
    * [Prompt Engineering](#prompt-engineering-:-unlocking-the-power-of-generative-ai)
       * [What is Prompting?](#What-is-prompting-?)
-      * [Designing a Prompt: A 5-Step Framework](#designing-a-prompt-:-a-5---step-framewor)
+      * [Designing a Prompt: A 5-Step Framework](#designing-a-prompt-:-a-5---step-framework)
         * [1. Task](#1-.-task)
         * [2. Context](#2-.-context)
         * [3. References](#3-.-references)
