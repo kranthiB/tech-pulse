@@ -11,7 +11,7 @@ Table of contents
 <!--ts-->
    * [Prompt Engineering](#prompt-engineering-unlocking-the-power-of-generative-ai)
       * [What is Prompting?](#what-is-prompting)
-      * [Designing a Prompt: A 5-Step Framework](designing-a-prompt-a-5-step-framework)
+      * [Designing a Prompt: A 5-Step Framework](#designing-a-prompt-a-5-step-framework)
         * [1. Task](#1-task)
         * [2. Context](#2-context)
         * [3. References](#3-references)
@@ -20,7 +20,7 @@ Table of contents
             * [Mnemonic to Remember Iteration Methods](#mnemonic-to-remember-iteration-methods)
         * [Mnemonic to Remember the Framework](#mnemonic-to-remember-the-framework)
       * [Multimodal Prompting](#multimodal-prompting)
-        * [Examples of Multimodal Usage](l#examples-of-multimodal-usage)
+        * [Examples of Multimodal Usage](#examples-of-multimodal-usage)
       * [Major Issues When Using AI Tools](#major-issues-when-using-ai-tools)
         * [1. Hallucinations](#1-hallucinations)
         * [2. Biases](#2-biases)
