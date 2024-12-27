@@ -26,8 +26,15 @@ Table of contents
         * [2. Biases](#2-biases)
         * [Mitigating Issues](#mitigating-issues)
       * [Using AI Responsibly](#using-ai-responsibly)
-      * [Designing Prompts for Everyday Work Tasks](#designing-prompts-for-everyday-work-tasks)
+      * [Design Prompts for Everyday Work Tasks](#design-prompts-for-everyday-work-tasks)
         * [Prompt Library](#prompt-library)
+          * [Example 1: Writing an Email](#example-1-writing-an-email)
+          * [Example 2: Planning a Game Launch](#example-2-planning-a-game-launch)
+          * [Example 3: Scheduling Staff Shifts](#example-3-scheduling-staff-shifts)
+      * [Speed Up Data Analysis](#speed-up-data-analysis)
+        * [Example Dataset](#example-data-sheet)
+        * [Prompts for Data Analysis](#prompts-for-data-analysis)
+        * [Understanding Complex Formulas](#understanding-complex-formulas)
 <!--te-->
 
 
@@ -169,7 +176,7 @@ By adhering to this checklist, you can ensure that AI is employed responsibly, f
 
 ### Designing Prompts for Everyday Work Tasks
 
-Creating prompts for daily work tasks involves applying the 5-step framework and iteration methods effectively. Below are examples of common use cases:
+This section provides examples of use cases based on the 5-step framework and iteration methods to show how generative AI tools can assist with daily work tasks.
 
 #### Prompt Library
 
@@ -177,7 +184,7 @@ Creating prompts for daily work tasks involves applying the 5-step framework and
    Example:  
    *"I'm a gym manager, and we have a new gym schedule. Write an email informing our staff of the new schedule. Highlight the fact that the M/W/F Cardio Blast class changed from 7:00 AM to 6:00 AM. Make the email professional and friendly, and short so that readers can skim it quickly."*  
 
-![WEM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0002-WEM.png)
+
 
    For straightforward emails, simplicity suffices. However, for more critical communications (e.g., essays, articles, newsletters), focus on tone and word choice. For example:
    - Instead of: *"Write a casual summary."*
@@ -188,7 +195,7 @@ Creating prompts for daily work tasks involves applying the 5-step framework and
    Example:  
    *"I'm a marketer for a well-known video game producer specializing in immersive story-based online games. I'm planning the launch of a new medieval fantasy role-playing game about a young protagonist searching for their missing partner. The primary audience is young adults. The game is in its final development stages, and I need help creating a timeline for the year leading up to the launch. Also, suggest pre-launch ideas to generate buzz."
 
-![CTP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0003-CTP.png)
+
 
 - **Staff Scheduling**
    Example:  
@@ -197,6 +204,86 @@ Creating prompts for daily work tasks involves applying the 5-step framework and
    Employees should not be scheduled for both the morning and afternoon shifts on the same day.
    Every employee should have roughly the same number of total shifts per week"
 
+
+
+
+
+### Design Prompts for Everyday Work Tasks
+
+This section provides examples of use cases based on the 5-step framework and iteration methods to show how generative AI tools can assist with daily work tasks.
+
+#### Prompt Library
+
+One common use case for generative AI is content production. For instance, writing emails:
+
+##### Example 1: Writing an Email
+
+*"I'm a gym manager and we have a new gym schedule. Write an email informing our staff of the new schedule. Highlight the fact that the M/W/F Cardio Blast class changed from 7:00 AM to 6:00 AM. Make the email professional and friendly, and short so that readers can skim it quickly."*  
+
+![WEM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0002-WEM.png)
+
+For simple emails, tone may not be critical. However, for more important content such as essays, articles, or newsletters, tone and word choice matter greatly. Instead of vague instructions like *"write a casual summary,"* use specific phrases such as:
+
+*"Write a summary in a friendly, easy-to-understand tone like explaining to a curious friend."*
+
+Providing references—like past emails or articles—and asking the AI to match their tone can also improve results.
+
+##### Example 2: Planning a Game Launch
+
+*"I'm a marketer for a well-known video game producer known for creating immersive story-based online video games. I'm planning the launch of a new medieval fantasy roleplaying game that follows the path of a young protagonist searching for their missing partner. The game's primary audience is young adults. The game is reaching the end stages of development, and I need help creating a timeline before it goes live. Provide a rough timeline for the year leading up to its launch. Also, provide some pre-launch ideas to help generate buzz around the game."*  
+
+![CTP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0003-CTP.png)
+
+##### Example 3: Scheduling Staff Shifts
+
+*"I have 10 employees. Their employee numbers are 1 through 10. Create a table that tracks weekly staffing. Create columns for day, name, and shift (morning or afternoon).  
+
+- Employees should not be scheduled for a morning shift on the following day after they were scheduled for an afternoon shift.  
+- Employees should not be scheduled for both the morning and afternoon shifts on the same day.  
+- Every employee should have roughly the same number of total shifts per week."*  
+
 ![SSD](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0004-SSD.png)
+
+-----
+
+### Speed Up Data Analysis
+
+Generative AI can significantly streamline data analysis tasks, from creating new columns to understanding complex formulas. Here’s an example of how you can leverage AI to enhance your data workflows:
+
+#### Example Dataset
+
+Download the dataset from the following URL:  
+[StoreData.xlsx](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/files/StoreData.xlsx)  
+
+This dataset contains information about a grocery store chain, including store details, areas, items available, daily customer counts, and store sales.
+
+#### Prompts for Data Analysis
+
+1. **Calculate Average Sales Per Customer:**  
+   Prompt:  
+   *"Attached is an Excel sheet of store data. How can I create a new column in Sheets that calculates the average sales per customer for each store?"*
+
+   This helps generate the formula or logic needed to compute average sales per customer.
+
+2. **Analyze Relationships in the Data:**  
+   Prompt:  
+   *"Give me insights into the relationship between 'Daily Customer Count,' 'Items Available,' and 'Sales' based on the given data."*
+
+   This can reveal patterns, trends, or correlations between variables.
+
+#### Understanding Complex Formulas
+
+AI tools can also demystify intricate formulas. For example:
+
+Prompt:  
+*"I work at a large restaurant and I need to order inventory while my coworker is on leave. They left me with a formula to calculate how much food to order, but I don’t understand it:  
+
+=IFERROR(ROUNDUP(MAXO, VLOOKUP(B2, Inventory!A:B,2,FALSE)*0.2 - C2) + SUMIFS(Reservations!D:D, Reservations!A:A, “>=“&TODAY(), Reservations!A:A, “<“&(TODAY()+7), Reservations!C:C,B2)* 0.12), “Check Inventory”).  
+
+Explain what the formula means in simpler, step-by-step terms."*
+
+By breaking it down, AI can clarify each component, helping you understand its purpose and application.
+
+Generative AI can transform mundane data analysis into a faster and more efficient process, allowing you to focus on deriving insights and making decisions.
 
 -----
