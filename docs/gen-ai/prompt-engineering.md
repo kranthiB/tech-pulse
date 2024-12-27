@@ -32,9 +32,14 @@ Table of contents
           * [Example 2: Planning a Game Launch](#example-2-planning-a-game-launch)
           * [Example 3: Scheduling Staff Shifts](#example-3-scheduling-staff-shifts)
       * [Speed Up Data Analysis](#speed-up-data-analysis)
-        * [Example Dataset](#example-data-sheet)
+        * [Example Dataset](#example-dataset)
         * [Prompts for Data Analysis](#prompts-for-data-analysis)
         * [Understanding Complex Formulas](#understanding-complex-formulas)
+      * [Building Presentations](#building-presentations)
+        * [How Generative AI Can Help](#how-generative-ai-can-help)
+        * [Example Prompts](#example-prompts)
+          * [Structuring a Presentation](#structuring-a-presentation)
+          * [Creating Visuals for the Presentation](#creating-visuals-for-the-presentation)
 <!--te-->
 
 
@@ -276,14 +281,42 @@ This dataset contains information about a grocery store chain, including store d
 AI tools can also demystify intricate formulas. For example:
 
 Prompt:  
-*"I work at a large restaurant and I need to order inventory while my coworker is on leave. They left me with a formula to calculate how much food to order, but I don’t understand it:  
+"I work at a large restaurant and I need to order inventory while my coworker is on leave. They left me with a formula to calculate how much food to order, but I don’t understand it:  
 
 =IFERROR(ROUNDUP(MAXO, VLOOKUP(B2, Inventory!A:B,2,FALSE)*0.2 - C2) + SUMIFS(Reservations!D:D, Reservations!A:A, “>=“&TODAY(), Reservations!A:A, “<“&(TODAY()+7), Reservations!C:C,B2)* 0.12), “Check Inventory”).  
 
-Explain what the formula means in simpler, step-by-step terms."*
+Explain what the formula means in simpler, step-by-step terms."
 
 By breaking it down, AI can clarify each component, helping you understand its purpose and application.
 
-Generative AI can transform mundane data analysis into a faster and more efficient process, allowing you to focus on deriving insights and making decisions.
+Generative AI can transform mundane data analysis into a faster and more efficient process, allowing you to focus on deriving insights and making decisions
+
+-----
+
+### Building Presentations
+
+Generative AI can be a powerful tool for designing and structuring professional presentations. From organizing content to generating visual elements, it simplifies the process and allows you to focus on delivering your message effectively.
+
+#### How Generative AI Can Help
+
+1. **Organizing Content:** Use AI to outline your presentation structure, ensuring logical flow and completeness.  
+2. **Creating Visuals:** Generate custom images, graphics, or charts to enhance the visual appeal of your slides.  
+3. **Writing Slide Content:** Craft concise and impactful slide text tailored to your audience.  
+4. **Design Suggestions:** Get recommendations for layouts, color schemes, and fonts to match your presentation’s theme.  
+
+#### Example Prompts
+
+##### Structuring a Presentation
+
+*"I’m a product designer at a headphones brand. I’m putting together a presentation for my team about what new features should be included in our next product line. The presentation includes findings from our market research on features that our 18-to-34-year-old customers want their headphones to have. These features include new colors, the ability to control playback with head movements, and noise-canceling capabilities.  
+
+Consider the relationship between our demographics' disposable income and their most important considerations when buying headphones. How should I structure my presentation? List each slide’s topic with its key points and visuals."*
+
+##### Creating Visuals for the Presentation
+
+*"Generate close-up images of a pair of sleek, silver headphones on a desk in a college dorm room. They should have musical notes floating around the headphones to show that they’re playing music."*
+
+
+Generative AI transforms the process of building presentations by offering creative support, reducing the effort required, and enhancing the overall quality of your slides. It enables you to deliver compelling, visually engaging presentations with ease.
 
 -----
