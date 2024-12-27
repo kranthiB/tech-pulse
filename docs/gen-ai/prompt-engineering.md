@@ -186,33 +186,38 @@ By adhering to this checklist, you can ensure that AI is employed responsibly, f
 
 -----
 
-### Designing Prompts for Everyday Work Tasks
+### Design Prompts for Everyday Work Tasks
 
 This section provides examples of use cases based on the 5-step framework and iteration methods to show how generative AI tools can assist with daily work tasks.
 
 #### Prompt Library
 
-- **Writing Emails**
-   Example:  
-   *"I'm a gym manager, and we have a new gym schedule. Write an email informing our staff of the new schedule. Highlight the fact that the M/W/F Cardio Blast class changed from 7:00 AM to 6:00 AM. Make the email professional and friendly, and short so that readers can skim it quickly."*  
+One common use case for generative AI is content production. For instance, writing emails:
 
+##### Example 1: Writing an Email
 
+*"I'm a gym manager and we have a new gym schedule. Write an email informing our staff of the new schedule. Highlight the fact that the M/W/F Cardio Blast class changed from 7:00 AM to 6:00 AM. Make the email professional and friendly, and short so that readers can skim it quickly."*  
+*(See the image)*
 
-   For straightforward emails, simplicity suffices. However, for more critical communications (e.g., essays, articles, newsletters), focus on tone and word choice. For example:
-   - Instead of: *"Write a casual summary."*
-   - Use: *"Write a summary in a friendly, easy-to-understand tone, like explaining to a curious friend."*
-   You can also provide references (e.g., previous emails or articles) to help match the tone and style.
+For simple emails, tone may not be critical. However, for more important content such as essays, articles, or newsletters, tone and word choice matter greatly. Instead of vague instructions like *"write a casual summary,"* use specific phrases such as:
 
-- **Creating Timelines and Plans**
-   Example:  
-   *"I'm a marketer for a well-known video game producer specializing in immersive story-based online games. I'm planning the launch of a new medieval fantasy role-playing game about a young protagonist searching for their missing partner. The primary audience is young adults. The game is in its final development stages, and I need help creating a timeline for the year leading up to the launch. Also, suggest pre-launch ideas to generate buzz."
+*"Write a summary in a friendly, easy-to-understand tone like explaining to a curious friend."*
 
-- **Staff Scheduling**
-   Example:  
-   *"I have 10 employees. Their employee numbers are 1 through 10. Create a table that tracks weekly staffing. Create columns for day, name, and shift (morning or afternoon). Morning shift and 2 employees scheduled for the afternoon shift
-   Employees should not be scheduled for a morning shift on the following day after they were scheduled for an afternoon shift.
-   Employees should not be scheduled for both the morning and afternoon shifts on the same day.
-   Every employee should have roughly the same number of total shifts per week"
+Providing references—like past emails or articles—and asking the AI to match their tone can also improve results.
+
+##### Example 2: Planning a Game Launch
+
+*"I'm a marketer for a well-known video game producer known for creating immersive story-based online video games. I'm planning the launch of a new medieval fantasy roleplaying game that follows the path of a young protagonist searching for their missing partner. The game's primary audience is young adults. The game is reaching the end stages of development, and I need help creating a timeline before it goes live. Provide a rough timeline for the year leading up to its launch. Also, provide some pre-launch ideas to help generate buzz around the game."*  
+*(See image)*
+
+##### Example 3: Scheduling Staff Shifts
+
+*"I have 10 employees. Their employee numbers are 1 through 10. Create a table that tracks weekly staffing. Create columns for day, name, and shift (morning or afternoon).  
+
+- Employees should not be scheduled for a morning shift on the following day after they were scheduled for an afternoon shift.  
+- Employees should not be scheduled for both the morning and afternoon shifts on the same day.  
+- Every employee should have roughly the same number of total shifts per week."*  
+*(See image)*
 
 -----
 
