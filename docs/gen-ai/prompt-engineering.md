@@ -5,22 +5,25 @@ sidebar_label: Prompt Engineering
 next_page: gen-ai/llm-tier
 ---
 
+Table of contents
+=================
+
 <!--ts-->
-   * [Prompt Engineering](#prompt-engineering-:-unlocking-the-power-of-generative-ai)
-      * [What is Prompting?](#What-is-prompting-?)
-      * [Designing a Prompt: A 5-Step Framework](#designing-a-prompt-:-a-5---step-framework)
-        * [1. Task](#1-.-task)
-        * [2. Context](#2-.-context)
-        * [3. References](#3-.-references)
-        * [4. Evaluate](#4-.-evaluate)
-        * [5. Iterate](#5-.-iterate)
+   * [Prompt Engineering](#prompt-engineering-unlocking-the-power-of-generative-ai)
+      * [What is Prompting?](#what-is-prompting)
+      * [Designing a Prompt: A 5-Step Framework](designing-a-prompt-a-5-step-framework)
+        * [1. Task](#1-task)
+        * [2. Context](#2-context)
+        * [3. References](#3-references)
+        * [4. Evaluate](#4-evaluate)
+        * [5. Iterate](#5-iterate)
             * [Mnemonic to Remember Iteration Methods](#mnemonic-to-remember-iteration-methods)
         * [Mnemonic to Remember the Framework](#mnemonic-to-remember-the-framework)
       * [Multimodal Prompting](#multimodal-prompting)
-        * [Examples of Multimodal Usage](#examples-of-multimodal-usage)
+        * [Examples of Multimodal Usage](l#examples-of-multimodal-usage)
       * [Major Issues When Using AI Tools](#major-issues-when-using-ai-tools)
-        * [1. Hallucinations](#1-.-hallucinations)
-        * [2. Biases](#2-.-biases)
+        * [1. Hallucinations](#1-hallucinations)
+        * [2. Biases](#2-biases)
         * [Mitigating Issues](#mitigating-issues)
       * [Using AI Responsibly](#using-ai-responsibly)
       * [Designing Prompts for Everyday Work Tasks](#designing-prompts-for-everyday-work-tasks)
@@ -42,6 +45,8 @@ Prompting is the process of providing specific instructions to a generative AI t
 - **Code**
 
 The quality and structure of the prompt often directly influence the relevance and usefulness of the AI-generated output.
+
+-----
 
 ### Designing a Prompt: A 5-Step Framework
 
@@ -112,6 +117,8 @@ Use the phrase *"Thoughtfully Create Really Excellent Inputs"* to recall the 5-s
 - **Evaluate**
 - **Iterate**
 
+-----
+
 ### Multimodal Prompting
 
 Multimodal prompting expands the interaction beyond text, allowing generative AI tools to process and generate outputs in various modalities such as images, audio, video, and code. Many advanced AI models, like Gemini, support these capabilities. This doesn’t fundamentally change the principles of effective prompting but requires careful specification of inputs, outputs, and context.
@@ -126,6 +133,8 @@ For example, if you designed a new nail art collection and want to market it on 
 - **Suggest recipes based on a photo of the ingredients in your fridge.**
 - **Design a visually appealing digital teaser to promote an upcoming event:**  
   *"Incorporate the brand's logo and signature colors. The teaser should be modern and engaging, featuring the event's key details such as the name, date, location, and a catchy tagline. Use dynamic elements, bold typography, and seamless transitions aligned with the brand's aesthetic. Aim for a captivating teaser that sparks curiosity and encourages audience participation."*
+
+-----
 
 ### Major Issues When Using AI Tools
 
@@ -142,6 +151,8 @@ AI systems, trained on human-generated content, often inherit biases present in 
 #### Mitigating Issues
 To address these problems, a **human-in-the-loop** approach is recommended. Always review and verify the AI-generated outputs to ensure accuracy and fairness.
 
+-----
+
 ### Using AI Responsibly
 
 When leveraging AI tools, it is your responsibility to ensure that the outputs are accurate, ethical, and appropriate. Here’s a checklist for responsible AI use:
@@ -154,13 +165,15 @@ When leveraging AI tools, it is your responsibility to ensure that the outputs a
 
 By adhering to this checklist, you can ensure that AI is employed responsibly, fostering trust and promoting ethical practices.
 
+-----
+
 ### Designing Prompts for Everyday Work Tasks
 
 Creating prompts for daily work tasks involves applying the 5-step framework and iteration methods effectively. Below are examples of common use cases:
 
 #### Prompt Library
 
-1. **Writing Emails**
+- **Writing Emails**
    Example:  
    *"I'm a gym manager, and we have a new gym schedule. Write an email informing our staff of the new schedule. Highlight the fact that the M/W/F Cardio Blast class changed from 7:00 AM to 6:00 AM. Make the email professional and friendly, and short so that readers can skim it quickly."*  
 
@@ -171,13 +184,13 @@ Creating prompts for daily work tasks involves applying the 5-step framework and
    - Use: *"Write a summary in a friendly, easy-to-understand tone, like explaining to a curious friend."*
    You can also provide references (e.g., previous emails or articles) to help match the tone and style.
 
-2. **Creating Timelines and Plans**
+- **Creating Timelines and Plans**
    Example:  
    *"I'm a marketer for a well-known video game producer specializing in immersive story-based online games. I'm planning the launch of a new medieval fantasy role-playing game about a young protagonist searching for their missing partner. The primary audience is young adults. The game is in its final development stages, and I need help creating a timeline for the year leading up to the launch. Also, suggest pre-launch ideas to generate buzz."
 
 ![CTP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0003-CTP.png)
 
-3. **Staff Scheduling**
+- **Staff Scheduling**
    Example:  
    *"I have 10 employees. Their employee numbers are 1 through 10. Create a table that tracks weekly staffing. Create columns for day, name, and shift (morning or afternoon). Morning shift and 2 employees scheduled for the afternoon shift
    Employees should not be scheduled for a morning shift on the following day after they were scheduled for an afternoon shift.
@@ -186,5 +199,4 @@ Creating prompts for daily work tasks involves applying the 5-step framework and
 
 ![SSD](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0004-SSD.png)
 
-
-
+-----
