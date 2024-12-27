@@ -49,6 +49,15 @@ Table of contents
         * [AI Agents](#ai-agents)
           * [Types of AI Agents](#types-of-ai-agents)
           * [Designing Effective AI Agents](#designing-effective-ai-agents)
+      * [Rules to Prompt Engineering](#rules-to-prompt-engineering)
+      * [Parameters](#parameters)
+        * [Key Parameters and Their Functions](#key-parameters-and-their-functions)
+        * [Practical Usage](#practical-usage)
+      * [Image Generation](#image-generation)
+        * [Prompting for Image Generation](#prompting-for-image-generation)
+        * [The 3-Step Framework for Killer Image Prompts](#the-3-step-framework-for-killer-image-prompts)
+        * [Key Tips for Crafting Prompts](#key-tips-for-crafting-prompts)
+        * [Rules for image generation prompting](#rules-for-image-generation-prompting)
 <!--te-->
 
 ## Prompt Engineering: Unlocking the Power of Generative AI
@@ -399,9 +408,125 @@ AI agents can be incredibly versatile and effective when designed thoughtfully.
 
 -----
 
-### Rules
+### Rules to Prompt Engineering
 
-| Rule                | ![No](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-A-NO.jpeg)              | ![Yes](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-B-TCK.png)                | 
-| --------------------- | ---------------------- | ---------------------- |
+| Rules                | ![No](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-A-NO.jpeg)              | ![Yes](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-B-TCK.png)                | 
+| :---------------------: | :----------------------: | :----------------------: |
 | Rule-1: Ditch the fluff / Forget all the pleasantries                | Can you please write me a short story about a robot and a dog who go on adventure together?              | Write a short story about a robot and a dog going on an adventure               | 
+| Rule-2: Be Descriptive - The more detail we give, the less the AI has to guess | A blog post about the economics of the Middle East in the 1960s | Write a 1000-word blog about the economic situation of Kuwait from 1961 to 1967, aimed at begineers, in a conversational tone |
+| Rule-3: Context & Specifics - Specifics tell the AI what to write about, while context guides how it should write it | Write a blog post about social media marketing | Write a 1000-word blog post about digital social media marketing for beginners, using a conversational tone, targeting a general audience, and dividing it into 5 parts, each with a short list |
+| Rule-4: Remember about role play | Explain the legal process for patenting an invention | You are a patent lawyer. Explain the legal process for patenting an invention in simple terms for a non legal audience |
+| Rule-5: Use Limitations (Use words like: <<avoid>>, <<only>> or <<focus on>> to set clear boundaries) | Write about renewable energy | Write a 200-word summary on the benefits of solar energy, avoiding technical jargon, and focusing on environmental advantages (or) Write a 3-paragraph article summarizing the pros and cons of wind energy for high school students. Avoid discussing financial incentives, and focus only on environmental benefits |
+| Rule-6: Iterative Prompting - Instead of trying to nail the perfect prompt on your first go , you start simple and build from there | - | Prompt-1: Explain renewable energy  
+Prompt-2:Focus on advantages of wind energy compared to fossil fuels
+Prompt-3: Rewrite the explanation for a 10-year old audience, using simple language and examples 
+Single Prompt: Explain renewable energy, focusing on the advantage of wind energy compared to fossil fuels, for a 10-year-old audience, using simple language and examples |
+| Rule-7: Output formats - This can include formats like lists, tables, essays, or specific writing styles like poems, song verses, and so on | Tell me about the history of computers | Write a timeline of major events in computer history, formatted as a bulleted list. Includes 5-7 key milestones, with one sentence explaining each |
+| Rule-8: Provide examples - Give AI a template | Write a chord progression in the style of the Beach Boys | Write a chord progression in the style of the Beach Boys. Here is an example
+IVERSE1]
+C/G
+Am
+I may not always love you,
+Em Em7
+But long as there are stars above you,
+D/A
+Bdim7
+You'll never need to doubt it,
+D/A
+Abm7b5
+I'll make you so sure about it.
+[REFRAIN 1]
+G D/F#
+Em7
+D
+God only knows what I'd be without you |
+| Rule-9: Chain-of-Thought - It's all about structuring your prompts like a checklist or guideline | Explain the pros and cons of renewable energy | Explain the pros and cons of renewable energy by addressing the following: Environmental impact, Economic considerations, Availability and scalability, Long-term sustainability |
+| Rule-10: Split huge prompts into smaller chunks - It makes manageable and also dramatically reduce erros or hallucinations | Explain the causes, effects, and potential solutions for climate change | 
+Prompt-1: List the top three causes of climate change 
+Prompt-2: Describe the main effects of climate change on agriculture
+Prompt-3: Suggest two practical solutions to combat climate change |
+| Rule-11: Ask LLM to help you with prompting | - | Refine this prompt to make it clearer and more effective: 'Explan the causes, effects, and potential solutions for climate change' |
+
+-----
+
+### Parameters
+
+Parameters are essentially settings you can adjust to control how an AI responds to your prompts. By tweaking these values, you can influence the behavior, creativity, and length of the AI’s responses. Each parameter plays a unique role in shaping the output.
+
+### Key Parameters and Their Functions
+
+1. **Temperature:**  
+   The "randomness dial" that determines how creative or focused the AI’s responses are.  
+   - **High Temperature (e.g., 1.0):** Produces creative, chaotic, and unpredictable outputs.  
+   - **Low Temperature (e.g., 0.2):** Results in structured, deterministic, and rule-abiding responses, akin to a straight-A student.  
+
+2. **Max Tokens:**  
+   Controls the maximum length of the AI’s response.  
+   - A lower value limits the output length, making it concise.  
+   - A higher value allows the AI to provide detailed and extended answers.  
+
+3. **Top-p (Nucleus Sampling):**  
+   Influences the creative diversity of the response by narrowing or expanding the pool of words considered.  
+   - A value of `1.0` includes all possible words (high diversity).  
+   - A lower value (e.g., `0.3`) focuses on only the most probable options, reducing randomness.  
+
+4. **Top-k:**  
+   Limits the number of options the AI considers when selecting the next word.  
+   - A lower value forces the AI to pick from only the most likely words.  
+   - A higher value increases the number of potential choices, enhancing creativity.  
+
+### Practical Usage
+
+Every language model handles parameters differently, so the syntax for specifying them varies:  
+- In **ChatGPT/Claude/Gemini**, parameters are formatted like `temperature:0.7`.  
+- In **Mistral**, parameters use an equal sign, e.g., `temperature=0.7`.  
+
+By mastering these parameters, you can fine-tune the AI to suit a variety of tasks, from creative writing to technical problem-solving.  
+
+-----
+
+### Image Generation
+
+Image generation with AI is an incredible blend of creativity and technology. At its core, it uses **diffusion**—an AI process that refines noise bit by bit, turning chaos into something stunning.  
+
+**Example:**  
+*The Batmobile stuck in Los Angeles traffic, impressionist painting, wide shot*  
+
+#### Prompting for Image Generation
+
+When crafting prompts for image generation, think of it as describing exactly what you want to see rather than dictating how to draw it. To get the most jaw-dropping results, use the "secret sausage" structure: clear, detailed instructions that cover every aspect of your desired image.  
+
+#### The 3-Step Framework for Killer Image Prompts
+
+1. **Subject:**  
+   The foundation of your image, like the main character of your visual story. This is usually a noun (*dog*, *spaceship*, *guitar*, *waterfall*).  
+   - For better results, spice it up with adjectives.  
+   - **Example:** *A fluffy black cat with glowing green eyes*  
+
+2. **Description:**  
+   Add context—what’s your subject doing? How are they doing it? What’s happening around them? Details make all the difference.  
+   - **Example:** *A red dragon soaring through stormy clouds, lightning illuminating its scales as it breathes fire into the night*  
+
+3. **Style/Aesthetic:**  
+   Think of this as picking the filter for your image. Decide how you want it to look:  
+   - Is it a photo or a painting?  
+   - What’s the art style (impressionist, surreal, 3D render, etc.)?  
+   - **Example:** *A 3D render of a futuristic cityscape at sunset with neon lights glowing*  
+
+#### Key Tips for Crafting Prompts
+
+- Be as specific as possible to avoid ambiguity.  
+- Think about the mood, color palette, and perspective (e.g., wide shot, close-up).  
+- Test and iterate—AI models often improve results with refined instructions.  
+
+By following this framework, you can harness AI’s power to create stunning visuals, whether for fun, storytelling, or professional projects.  
+
+#### Rules for image generation prompting
+| Rules                | ![No](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-A-NO.jpeg)              | ![Yes](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-B-TCK.png)                | 
+| :---------------------: | :----------------------: | :----------------------: |
+| Rule-1: Don't overthink it - Descibe the image you would to a friend who's never seen it | cat, urban street, cyberpunk, neon, nighttime, high quality | A sleek black cat perched on a rain-slicked urban street in a glowing cyberpynk city at night. Neon signs in electric blues and purples reflect off the wet pavement, casting a dreamy glow. The cat's cybernetic eyes shimmer softly as it watches hover cars zip through the misty air in the backgroud |
+| Rule-2: Find the right prompt length depending on the complexity of the image we're trying to generate | A snowy mountain range at sunrise, golden light hitting icy peaks, with a lone climber in the distance.Short Promts are like quick sketches and they are great for getting ideas down fast, medium prompts are like roof drafts balanced in creativity and control, long prompts are detailed masterpieces where you have the final say over every element   | A stunning snowy mountain range illuminated by the warm glow of sunrise. Golden light glints off icy peaks, contrasting against the deep blue shadows. A lone climber in vibrant gear scales the ridge, surrounded by an expense of untouched snow |
+| Rule-3: Negative prompting - You have to tell AI what you don't want in your image. You just type "avoid" or "exclude" and then list of things you don't want | Generate me an image of A serene beach scene with crystal clear water and white sand |  Generate me an image of A serene beach scene with crystal clear water and white sand, exclude trees | 
+| Rule-4:  Resolution and quality settings. Layout - use terms like "square", "landscape" or "portrait" | - | Generate me an image of a cat , 4k, high resolution, detailed textures |
+
 
