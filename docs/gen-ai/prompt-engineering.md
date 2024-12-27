@@ -40,9 +40,16 @@ Table of contents
         * [Example Prompts](#example-prompts)
           * [Structuring a Presentation](#structuring-a-presentation)
           * [Creating Visuals for the Presentation](#creating-visuals-for-the-presentation)
+      * [Use AI as a Creative or Expert Partner](#use-ai-as-a-creative-or-expert-partner)
+        * [Advanced Prompting Techniques](#advanced-prompting-techniques)
+          * [Prompt Chaining](#prompt-chaining)
+          * [Chain of Thought Prompting](#chain-of-thought-prompting)
+          * [Tree of Thought Prompting](#tree-of-thought-prompting)
+          * [Pro Tips for Prompting](#pro-tips-for-prompting)
+        * [AI Agents](#ai-agents)
+          * [Types of AI Agents](#types-of-agents)
+          * [Designing Effective AI Agents](#designing-effective-ai-agents)
 <!--te-->
-
-
 
 ## Prompt Engineering: Unlocking the Power of Generative AI
 
@@ -200,54 +207,12 @@ This section provides examples of use cases based on the 5-step framework and it
    Example:  
    *"I'm a marketer for a well-known video game producer specializing in immersive story-based online games. I'm planning the launch of a new medieval fantasy role-playing game about a young protagonist searching for their missing partner. The primary audience is young adults. The game is in its final development stages, and I need help creating a timeline for the year leading up to the launch. Also, suggest pre-launch ideas to generate buzz."
 
-
-
 - **Staff Scheduling**
    Example:  
    *"I have 10 employees. Their employee numbers are 1 through 10. Create a table that tracks weekly staffing. Create columns for day, name, and shift (morning or afternoon). Morning shift and 2 employees scheduled for the afternoon shift
    Employees should not be scheduled for a morning shift on the following day after they were scheduled for an afternoon shift.
    Employees should not be scheduled for both the morning and afternoon shifts on the same day.
    Every employee should have roughly the same number of total shifts per week"
-
-
-
-
-
-### Design Prompts for Everyday Work Tasks
-
-This section provides examples of use cases based on the 5-step framework and iteration methods to show how generative AI tools can assist with daily work tasks.
-
-#### Prompt Library
-
-One common use case for generative AI is content production. For instance, writing emails:
-
-##### Example 1: Writing an Email
-
-*"I'm a gym manager and we have a new gym schedule. Write an email informing our staff of the new schedule. Highlight the fact that the M/W/F Cardio Blast class changed from 7:00 AM to 6:00 AM. Make the email professional and friendly, and short so that readers can skim it quickly."*  
-
-![WEM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0002-WEM.png)
-
-For simple emails, tone may not be critical. However, for more important content such as essays, articles, or newsletters, tone and word choice matter greatly. Instead of vague instructions like *"write a casual summary,"* use specific phrases such as:
-
-*"Write a summary in a friendly, easy-to-understand tone like explaining to a curious friend."*
-
-Providing references—like past emails or articles—and asking the AI to match their tone can also improve results.
-
-##### Example 2: Planning a Game Launch
-
-*"I'm a marketer for a well-known video game producer known for creating immersive story-based online video games. I'm planning the launch of a new medieval fantasy roleplaying game that follows the path of a young protagonist searching for their missing partner. The game's primary audience is young adults. The game is reaching the end stages of development, and I need help creating a timeline before it goes live. Provide a rough timeline for the year leading up to its launch. Also, provide some pre-launch ideas to help generate buzz around the game."*  
-
-![CTP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0003-CTP.png)
-
-##### Example 3: Scheduling Staff Shifts
-
-*"I have 10 employees. Their employee numbers are 1 through 10. Create a table that tracks weekly staffing. Create columns for day, name, and shift (morning or afternoon).  
-
-- Employees should not be scheduled for a morning shift on the following day after they were scheduled for an afternoon shift.  
-- Employees should not be scheduled for both the morning and afternoon shifts on the same day.  
-- Every employee should have roughly the same number of total shifts per week."*  
-
-![SSD](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0004-SSD.png)
 
 -----
 
@@ -318,5 +283,111 @@ Consider the relationship between our demographics' disposable income and their 
 
 
 Generative AI transforms the process of building presentations by offering creative support, reducing the effort required, and enhancing the overall quality of your slides. It enables you to deliver compelling, visually engaging presentations with ease.
+
+-----
+
+### Use AI as a Creative or Expert Partner
+
+Generative AI can be leveraged not only as a tool but as a creative or expert partner to enhance problem-solving, content creation, and skill-building. By using advanced prompting techniques and AI agents, you can unlock innovative ways to collaborate with AI.
+
+#### Advanced Prompting Techniques
+
+##### **Prompt Chaining**
+
+Prompt chaining guides the AI tool through a series of interconnected prompts, adding layers of complexity along the way.  
+
+![Prompt Chaining Diagram](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0005-PCT.png)  
+
+**Example Scenario:**  
+You’re an author who has written a novel and now needs a marketing plan.  
+
+1. **Generate Summaries:**  
+   *Prompt:*  
+   *“Generate three options for a one-sentence summary of this novel manuscript. The summary should be similar in voice and tone to the manuscript but more catchy and engaging.”*  
+
+   ![Output Example](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0005-A-PCT.png)  
+
+2. **Create a Tagline:**  
+   *Prompt:*  
+   *“Create a tagline that is a combination of the previous three options, with a special focus on the exciting plot twist and mystery of the book. Find the catchiest and most impactful combination. The tagline should be concise and leave the reader hooked and wanting to read more.”*  
+
+   ![Output Example](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0005-B-PCT.png)  
+
+3. **Design a Marketing Plan:**  
+   *Prompt:*  
+   *“Generate a six-week promotional plan for a book tour, including what locations I should visit and what channels I should utilize to promote each stop on the tour.”*  
+
+   ![Output Example](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0005-C-PCT.png)  
+
+
+##### **Chain of Thought Prompting**
+
+Chain of thought prompting involves asking AI to explain its reasoning step by step. This is especially useful for identifying errors and improving decision-making.  
+
+*Prompt:*  
+*“Explain your thought process step by step.”*  
+
+![Chain of Thought Diagram](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0006-COT.png)  
+
+
+##### **Tree of Thought Prompting**
+
+Tree of thought prompting allows you to explore multiple reasoning paths simultaneously, making it valuable for abstract or complex problems.  
+
+*Example Prompt:*  
+*“Imagine three different designers are pitching their design to me. Each designer writes one step of their thinking and shares it with the group. If any expert realizes they’re wrong at any point, they leave. The question is: Generate an image that’s visually energetic, featuring art supplies and computers. Show me three suggestions in different styles from simple to detailed.”*  
+
+![Tree of Thought Diagram](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0007-TOT.png)  
+
+*Follow-up Prompt:*  
+*“I like the first option. Expand the idea and generate three different color schemes for that concept.”*  
+
+---
+
+##### **Pro Tips for Prompting**
+
+1. Combine chain-of-thought and tree-of-thought techniques by asking AI to explain its reasoning at each iteration.  
+2. Use meta-prompting: Ask AI to help you generate the next prompt when you're stuck.  
+
+#### AI Agents
+
+AI agents are specialized virtual assistants designed to help with specific tasks or provide expert feedback.  
+
+##### **Types of AI Agents**
+
+1. **Simulation Agent (“Agent SIM”):**  
+   Simulates scenarios, such as role-playing exercises.  
+
+   *Example Prompt:*  
+   *“Act as a career development training simulator. Your task is to help interns master interview skills and conduct conversations with potential managers. Support these types of conversations:  
+      - Articulating strengths and skills  
+      - Communicating professionally and confidently  
+      - Discussing future career goals  
+   Continue the role play until the intern replies with ‘JAZZ HANDS’. Then provide key takeaways from the simulation and areas for improvement.”*  
+
+   ![Simulation Agent Example](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0008-ASM.png)  
+
+2. **Expert Feedback Agent (“Agent X”):**  
+   Acts as a tutor or consultant to provide feedback.  
+
+   *Example Prompt:*  
+   *“You’re my potential client, the VP of Advertising at a world-famous sports car company known for innovation and performance. Critique my answers, ask follow-up questions, and provide feedback until I say ‘BREAK.’ Summarize areas for improvement after the session.”*  
+
+   ![Expert Agent Example](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0009-AGX.png)  
+
+##### **Designing Effective AI Agents**
+
+1. Assign a persona to the agent.  
+   ![Assigning a Persona](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0010-A-AGL.png)  
+2. Provide context and detail about the scenario.  
+   ![Providing Context](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0010-B-AGL.png)  
+3. Specify conversation types and interaction rules.  
+   ![Specifying Rules](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0010-C-AGL.png)  
+4. Define a stop phrase for ending interactions.  
+   ![Defining a Stop Phrase](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0010-D-AGL.png)  
+5. Request feedback after the interaction.  
+   ![Requesting Feedback](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0010-E-AGL.png)  
+
+AI agents can be incredibly versatile and effective when designed thoughtfully.  
 
 -----
