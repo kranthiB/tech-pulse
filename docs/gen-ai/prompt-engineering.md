@@ -401,7 +401,7 @@ AI agents can be incredibly versatile and effective when designed thoughtfully.
 
 ### Rules
 
-| Rule                | ![No](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-A-NO.png)              | ![Yes](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-B-YES.png)                | 
+| Rule                | ![No](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-A-NO.jpeg)              | ![Yes](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-B-YES.png)                | 
 | --------------------- | ---------------------- | ---------------------- |
 | Rule-1: Ditch the fluff / Forget all the pleasantries                | Can you please write me a short story about a robot and a dog who go on adventure together?              | Write a short story about a robot and a dog going on an adventure               | 
 
