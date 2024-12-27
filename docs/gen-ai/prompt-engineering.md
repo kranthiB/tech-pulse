@@ -411,40 +411,17 @@ AI agents can be incredibly versatile and effective when designed thoughtfully.
 ### Rules to Prompt Engineering
 
 | Rules                | ![No](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-A-NO.jpeg)              | ![Yes](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-B-TCK.png)                | 
-| :---------------------: | :----------------------: | :----------------------: |
+| --------------------- | ---------------------- | ---------------------- |
 | Rule-1: Ditch the fluff / Forget all the pleasantries                | Can you please write me a short story about a robot and a dog who go on adventure together?              | Write a short story about a robot and a dog going on an adventure               | 
 | Rule-2: Be Descriptive - The more detail we give, the less the AI has to guess | A blog post about the economics of the Middle East in the 1960s | Write a 1000-word blog about the economic situation of Kuwait from 1961 to 1967, aimed at begineers, in a conversational tone |
 | Rule-3: Context & Specifics - Specifics tell the AI what to write about, while context guides how it should write it | Write a blog post about social media marketing | Write a 1000-word blog post about digital social media marketing for beginners, using a conversational tone, targeting a general audience, and dividing it into 5 parts, each with a short list |
 | Rule-4: Remember about role play | Explain the legal process for patenting an invention | You are a patent lawyer. Explain the legal process for patenting an invention in simple terms for a non legal audience |
 | Rule-5: Use Limitations (Use words like: <<avoid>>, <<only>> or <<focus on>> to set clear boundaries) | Write about renewable energy | Write a 200-word summary on the benefits of solar energy, avoiding technical jargon, and focusing on environmental advantages (or) Write a 3-paragraph article summarizing the pros and cons of wind energy for high school students. Avoid discussing financial incentives, and focus only on environmental benefits |
-| Rule-6: Iterative Prompting - Instead of trying to nail the perfect prompt on your first go , you start simple and build from there | - | Prompt-1: Explain renewable energy  
-Prompt-2:Focus on advantages of wind energy compared to fossil fuels
-Prompt-3: Rewrite the explanation for a 10-year old audience, using simple language and examples 
-Single Prompt: Explain renewable energy, focusing on the advantage of wind energy compared to fossil fuels, for a 10-year-old audience, using simple language and examples |
+| Rule-6: Iterative Prompting - Instead of trying to nail the perfect prompt on your first go , you start simple and build from there | - | Prompt-1: Explain renewable energy / Prompt-2:Focus on advantages of wind energy compared to fossil fuels / Prompt-3: Rewrite the explanation for a 10-year old audience, using simple language and examples / Single Prompt: Explain renewable energy, focusing on the advantage of wind energy compared to fossil fuels, for a 10-year-old audience, using simple language and examples |
 | Rule-7: Output formats - This can include formats like lists, tables, essays, or specific writing styles like poems, song verses, and so on | Tell me about the history of computers | Write a timeline of major events in computer history, formatted as a bulleted list. Includes 5-7 key milestones, with one sentence explaining each |
-| Rule-8: Provide examples - Give AI a template | Write a chord progression in the style of the Beach Boys | Write a chord progression in the style of the Beach Boys. Here is an example
-IVERSE1]
-C/G
-Am
-I may not always love you,
-Em Em7
-But long as there are stars above you,
-D/A
-Bdim7
-You'll never need to doubt it,
-D/A
-Abm7b5
-I'll make you so sure about it.
-[REFRAIN 1]
-G D/F#
-Em7
-D
-God only knows what I'd be without you |
+| Rule-8: Provide examples - Give AI a template | Write a chord progression in the style of the Beach Boys | Write a chord progression in the style of the Beach Boys. Here is an example <lorem> |
 | Rule-9: Chain-of-Thought - It's all about structuring your prompts like a checklist or guideline | Explain the pros and cons of renewable energy | Explain the pros and cons of renewable energy by addressing the following: Environmental impact, Economic considerations, Availability and scalability, Long-term sustainability |
-| Rule-10: Split huge prompts into smaller chunks - It makes manageable and also dramatically reduce erros or hallucinations | Explain the causes, effects, and potential solutions for climate change | 
-Prompt-1: List the top three causes of climate change 
-Prompt-2: Describe the main effects of climate change on agriculture
-Prompt-3: Suggest two practical solutions to combat climate change |
+| Rule-10: Split huge prompts into smaller chunks - It makes manageable and also dramatically reduce erros or hallucinations | Explain the causes, effects, and potential solutions for climate change | Prompt-1: List the top three causes of climate change  / Prompt-2: Describe the main effects of climate change on agriculture / Prompt-3: Suggest two practical solutions to combat climate change |
 | Rule-11: Ask LLM to help you with prompting | - | Refine this prompt to make it clearer and more effective: 'Explan the causes, effects, and potential solutions for climate change' |
 
 -----
@@ -523,7 +500,7 @@ By following this framework, you can harness AI’s power to create stunning vis
 
 #### Rules for image generation prompting
 | Rules                | ![No](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-A-NO.jpeg)              | ![Yes](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-B-TCK.png)                | 
-| :---------------------: | :----------------------: | :----------------------: |
+| --------------------- | ---------------------- | ---------------------- |
 | Rule-1: Don't overthink it - Descibe the image you would to a friend who's never seen it | cat, urban street, cyberpunk, neon, nighttime, high quality | A sleek black cat perched on a rain-slicked urban street in a glowing cyberpynk city at night. Neon signs in electric blues and purples reflect off the wet pavement, casting a dreamy glow. The cat's cybernetic eyes shimmer softly as it watches hover cars zip through the misty air in the backgroud |
 | Rule-2: Find the right prompt length depending on the complexity of the image we're trying to generate | A snowy mountain range at sunrise, golden light hitting icy peaks, with a lone climber in the distance.Short Promts are like quick sketches and they are great for getting ideas down fast, medium prompts are like roof drafts balanced in creativity and control, long prompts are detailed masterpieces where you have the final say over every element   | A stunning snowy mountain range illuminated by the warm glow of sunrise. Golden light glints off icy peaks, contrasting against the deep blue shadows. A lone climber in vibrant gear scales the ridge, surrounded by an expense of untouched snow |
 | Rule-3: Negative prompting - You have to tell AI what you don't want in your image. You just type "avoid" or "exclude" and then list of things you don't want | Generate me an image of A serene beach scene with crystal clear water and white sand |  Generate me an image of A serene beach scene with crystal clear water and white sand, exclude trees | 
