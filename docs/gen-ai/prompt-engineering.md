@@ -47,7 +47,7 @@ Table of contents
           * [Tree of Thought Prompting](#tree-of-thought-prompting)
           * [Pro Tips for Prompting](#pro-tips-for-prompting)
         * [AI Agents](#ai-agents)
-          * [Types of AI Agents](#types-of-agents)
+          * [Types of AI Agents](#types-of-ai-agents)
           * [Designing Effective AI Agents](#designing-effective-ai-agents)
 <!--te-->
 
@@ -354,6 +354,8 @@ Tree of thought prompting allows you to explore multiple reasoning paths simulta
 1. Combine chain-of-thought and tree-of-thought techniques by asking AI to explain its reasoning at each iteration.  
 2. Use meta-prompting: Ask AI to help you generate the next prompt when you're stuck.  
 
+---
+
 #### AI Agents
 
 AI agents are specialized virtual assistants designed to help with specific tasks or provide expert feedback.  
@@ -396,3 +398,10 @@ AI agents are specialized virtual assistants designed to help with specific task
 AI agents can be incredibly versatile and effective when designed thoughtfully.  
 
 -----
+
+### Rules
+
+| Rule                | ![No](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-A-NO.png)              | ![Yes](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-B-YES.png)                | 
+| --------------------- | ---------------------- | ---------------------- |
+| Rule-1: Ditch the fluff / Forget all the pleasantries                | Can you please write me a short story about a robot and a dog who go on adventure together?              | Write a short story about a robot and a dog going on an adventure               | 
+
