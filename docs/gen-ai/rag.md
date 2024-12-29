@@ -28,6 +28,7 @@ Table of contents
           * [Document Augmentation through Question Generation for Enhanced Retrieval](#11-document-augmentation-through-question-generation-for-enhanced-retrieval)
         * [Advanced Retrieval Methods](#advanced-retrieval-methods)
           * [12. Fusion Retrieval in Document Search](#12-fusion-retrieval-in-document-search)
+          * [13. Intelligent Reranking](#13-intelligent-reranking)
         * [Iterative and Adaptive Techniques](#iterative-and-adaptive-techniques)
         * [Evaluation](#evaluation)
         * [Explainability and Transparency](#explainability-and-transparency)
@@ -198,6 +199,14 @@ Retrieval-Augmented Generation (RAG) systems often struggle with insufficient co
 ##### 12. Fusion Retrieval in Document Search
 
 ![FRR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0009-FFR.png)
+
+-----
+
+##### 13. Intelligent Reranking
+
+![AIRR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0010-A-IRR.png)
+
+![BIRR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0010-B-IRR.png)
 
 -----
 
