@@ -44,7 +44,7 @@ Table of contents
           * [22. Microsoft GraphRAG](#22-microsoft-graphrag)
           * [23. RAPTOR: Recursive Abstractive Processing and Thematic Organization for Retrieval](#23-raptor-recursive-abstractive-processing-and-thematic-organization-for-retrieval)
           * [24. Self-RAG](#24-self-rag)
-        * [Special Advanced Technique](#special-advanced-technique)
+          * [25. Corrective RAG](#25-corrective-rag)
 <!--te-->
 
 ## Retrieval-Augmented Generation (RAG)
@@ -402,10 +402,57 @@ The primary motivation for reranking in RAG systems is to overcome limitations o
 
 ##### 24. Self-RAG
 
+Self-RAG introduces a refined approach to question answering by dynamically balancing information retrieval and response generation. This method ensures that responses are both factually grounded and flexible, addressing challenges faced by traditional systems that either over-rely on retrieved data or generate content without sufficient context.
+
+###### Key Components
+
+1. **Retrieval Decision**: Determines whether information retrieval is necessary for the given query.  
+2. **Document Retrieval**: Searches a vector store to find documents potentially relevant to the query.  
+3. **Relevance Evaluation**: Filters retrieved documents to identify those most pertinent to the query's intent.  
+4. **Response Generation**: Constructs responses using the most relevant context available.  
+5. **Support Assessment**: Verifies how well the generated response is grounded in the provided context.  
+6. **Utility Evaluation**: Assesses the overall usefulness and coherence of the response for the query.  
+
+###### Benefits of the Approach
+
+1. **Dynamic Retrieval**: Adapts to diverse queries by deciding when retrieval is necessary, optimizing efficiency.  
+2. **Relevance Filtering**: Ensures that only the most pertinent information informs the response, reducing extraneous noise.  
+3. **Quality Assurance**: Incorporates mechanisms to evaluate the support and utility of generated responses, maintaining high standards.  
+4. **Flexibility**: Allows for response generation with or without retrieval, making it versatile across different contexts.  
+5. **Improved Accuracy**: Combines relevant retrieved data with robust generation techniques to produce precise and contextually grounded outputs.  
+
 ![SRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0019-SRG.png)
 
 -----
 
-#### Special Advanced Technique
+##### 25. Corrective RAG
+
+Corrective RAG is a methodology designed to address shortcomings in traditional Retrieval-Augmented Generation (RAG) systems, particularly when retrieved data is irrelevant, incomplete, or outdated. This approach enhances retrieval and response generation by:
+
+1. Utilizing existing knowledge bases for initial information retrieval  
+2. Assessing the relevance of retrieved data to the query  
+3. Dynamically leveraging web searches when local data is insufficient  
+4. Synthesizing and refining knowledge from multiple sources  
+5. Producing coherent, human-like responses using the most reliable information  
+
+###### Key Components
+
+1. **FAISS Index**: A vector-based system that efficiently retrieves relevant information from pre-existing knowledge bases.  
+2. **Relevance Evaluator**: Determines how closely retrieved documents align with the query's intent.  
+3. **Knowledge Refinement**: Extracts and refines important details from retrieved documents to ensure accuracy.  
+4. **Web Search Query Optimization**: Reformulates queries for web searches when local knowledge falls short.  
+5. **Response Generator**: Constructs clear and accurate responses by integrating knowledge from various sources.  
+
+###### Benefits of the Corrective RAG Approach
+
+1. **Dynamic Adaptability**: Automatically adjusts to retrieve accurate and relevant information.  
+2. **Enhanced Flexibility**: Combines local knowledge retrieval with real-time web searches when needed.  
+3. **Improved Precision**: Ensures that only relevant and reliable data is used in response generation.  
+4. **Transparent Information**: Provides source references, enabling users to verify the credibility of information.  
+5. **Rapid Retrieval**: Employs vector search for efficient access to large knowledge repositories.  
+6. **Comprehensive Context**: Merges insights from multiple sources for more complete and nuanced answers.  
+7. **Real-Time Updates**: Incorporates the latest information from the web to supplement outdated local data.  
+
+![SRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0020-CRG.png)
 
 -----
