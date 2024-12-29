@@ -43,6 +43,7 @@ Table of contents
           * [21. GraphRAG](#21-graphrag)
           * [22. Microsoft GraphRAG](#22-microsoft-graphrag)
           * [23. RAPTOR: Recursive Abstractive Processing and Thematic Organization for Retrieval](#23-raptor-recursive-abstractive-processing-and-thematic-organization-for-retrieval)
+          * [24. Self-RAG](#24-self-rag)
         * [Special Advanced Technique](#special-advanced-technique)
 <!--te-->
 
@@ -396,6 +397,12 @@ The primary motivation for reranking in RAG systems is to overcome limitations o
 ##### 23. RAPTOR: Recursive Abstractive Processing and Thematic Organization for Retrieval
 
 ![RPT](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0018-RPT.png)
+
+-----
+
+##### 24. Self-RAG
+
+![SRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0019-SRG.png)
 
 -----
 
