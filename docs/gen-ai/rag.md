@@ -23,7 +23,8 @@ Table of contents
           * [6. Contextual Chunk Headers (CCH)](#6-contextual-chunk-headers-cch)
           * [7. Relevant Segment Extraction (RSE)](#7-relevant-segment-extraction-rse)
           * [8. Context Enrichment Window for Document Retrieval](#8-context-enrichment-window-for-document-retrieval)
-          * [9. Semantic Chunking](#9-semantic-chunking)
+          * [9. Semantic Chunking for Document Processing](#9-semantic-chunking-for-document-processing)
+          * [10. Contextual Compression in Document Retrieval](#10-contextual-compression-in-document-retrieval)
         * [Advanced Retrieval Methods](#advanced-retrieval-methods)
         * [Iterative and Adaptive Techniques](#iterative-and-adaptive-techniques)
         * [Evaluation](#evaluation)
@@ -174,9 +175,15 @@ Retrieval-Augmented Generation (RAG) systems often struggle with insufficient co
 
 -----
 
-##### 9. Semantic Chunking
+##### 9. Semantic Chunking for Document Processing
 
 ![SCD](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0007-SCD.png)
+
+-----
+
+##### 10. Contextual Compression in Document Retrieval
+
+![CCR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0008-CCR.png)
 
 -----
 
