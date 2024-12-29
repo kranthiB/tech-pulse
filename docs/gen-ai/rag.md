@@ -20,6 +20,7 @@ Table of contents
           * [4. Query Transformations](#4-query-transformations)
           * [5. Hypothetical Document Embedding (HyDE)](#5-hypothetical-document-embedding-hyde)
         * [Context and Content Enrichment](#context-and-content-enrichment)
+          * [6. Contextual Chunk Headers (CCH)](#6-contextual-chunk-headers-cch)
         * [Advanced Retrieval Methods](#advanced-retrieval-methods)
         * [Iterative and Adaptive Techniques](#iterative-and-adaptive-techniques)
         * [Evaluation](#evaluation)
@@ -129,6 +130,30 @@ Traditional retrieval methods often face challenges in bridging the semantic gap
 -----
 
 #### Context and Content Enrichment
+
+##### 6. Contextual Chunk Headers (CCH)
+
+Retrieval-Augmented Generation (RAG) systems often struggle with insufficient context within individual chunks, leading to retrieval errors or hallucinations during the response generation process. Contextual Chunk Headers (CCH) address this by augmenting chunks with higher-level context, ensuring better retrieval accuracy and comprehension by the language model.
+
+###### Problems Addressed by CCH
+
+- **Implicit References**: Chunks may refer to their subject using pronouns or vague references, making them difficult to retrieve or interpret accurately.
+- **Context Dependency**: Many chunks lack standalone meaning and can only be properly understood within the broader context of the section or document, leading to potential misinterpretation.
+
+###### Key Components
+
+- **Contextual Chunk Headers**: This method enhances chunks by prepending them with headers that encapsulate higher-level context. These headers might include:
+  - The document title.
+  - A concise summary of the document.
+  - The hierarchical structure of section and sub-section titles.
+
+###### Benefits of CCH
+
+- **Improved Context Representation**: Provides a more complete representation of the content and meaning of the text.
+- **Enhanced Retrieval Accuracy**: Makes it easier to retrieve relevant chunks even when implicit references are used.
+- **Reduced Hallucinations**: Helps the language model understand chunks within the appropriate context, minimizing errors in generated responses.
+
+![CCH](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0004-CCH.png)
 
 -----
 
