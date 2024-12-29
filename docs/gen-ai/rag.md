@@ -38,6 +38,7 @@ Table of contents
           * [18. DeepEval Evaluation](#18-deepeval-evaluation)
           * [19. GroUSE Evaluation](#19-grouse-evaluation)
         * [Explainability and Transparency](#explainability-and-transparency)
+          * [20. Explainable Retrieval in Document Search](#20-explainable-retrieval-in-document-search)
         * [Advanced Architectures](#advanced-architectures)
         * [Special Advanced Technique](#special-advanced-technique)
 <!--te-->
@@ -368,6 +369,8 @@ The primary motivation for reranking in RAG systems is to overcome limitations o
 -----
 
 #### Explainability and Transparency
+
+##### 20. Explainable Retrieval in Document Search
 
 -----
 
