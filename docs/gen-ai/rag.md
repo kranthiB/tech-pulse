@@ -13,10 +13,11 @@ Table of contents
    * [Retrieval-Augmented Generation](#retrieval-augmented-generation-rag)
       * [RAG Techniques](#rag-techniques)
         * [Foundational RAG Techniques](#foundational-rag-techniques)
-            * [1. Simple RAG for PDF and CSV Files](#1-simple-rag-for-pdf-and-csv-files)
-            * [2. Reliable RAG](#2-reliable-rag)
-            * [3. Propositions Chunking](#3-propositions-chunking)
+          * [1. Simple RAG for PDF and CSV Files](#1-simple-rag-for-pdf-and-csv-files)
+          * [2. Reliable RAG](#2-reliable-rag)
+          * [3. Propositions Chunking](#3-propositions-chunking)
         * [Query Enhancements](#query-enhancements)
+          * [4.Query Transformations](#4-query-transformations)     
         * [Context and Content Enrichment](#context-and-content-enrichment)
         * [Advanced Retrieval Methods](#advanced-retrieval-methods)
         * [Iterative and Adaptive Techniques](#iterative-and-adaptive-techniques)
@@ -83,6 +84,23 @@ Inspired by recent ([research from Tony Chen et al.](https://arxiv.org/abs/2312.
 -----
 
 #### Query Enhancements
+
+##### 4. Query Transformations
+
+Retrieval-Augmented Generation (RAG) systems often encounter challenges when handling complex or ambiguous queries, leading to suboptimal retrieval of relevant information. Query transformation techniques address these challenges by reformulating or expanding queries to improve the match with relevant documents and retrieve more comprehensive information. Here are three key techniques used to enhance the retrieval process:
+
+###### Techniques
+
+- **Query Rewriting**: Reformulates the original query to make it more specific and detailed, improving the alignment with relevant documents.
+- **Step-back Prompting**: Broadens the query context by generating higher-level or more generalized prompts to capture broader information.
+- **Sub-query Decomposition**: Breaks down complex or multifaceted queries into simpler, more manageable sub-queries, facilitating targeted retrieval.
+
+###### Benefits of these Techniques
+
+- **Improved Relevance**: Query rewriting helps in retrieving more specific and relevant information.
+- **Better Context**: Step-back prompting allows for retrieval of broader context and background information.
+- **Comprehensive Results**: Sub-query decomposition enables retrieval of information that covers different aspects of a complex query.
+- **Flexibility**: Each technique can be used independently or in combination, depending on the specific use case.
 
 -----
 
