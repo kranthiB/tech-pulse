@@ -25,7 +25,9 @@ Table of contents
           * [8. Context Enrichment Window for Document Retrieval](#8-context-enrichment-window-for-document-retrieval)
           * [9. Semantic Chunking for Document Processing](#9-semantic-chunking-for-document-processing)
           * [10. Contextual Compression in Document Retrieval](#10-contextual-compression-in-document-retrieval)
+          * [Document Augmentation through Question Generation for Enhanced Retrieval](#11-document-augmentation-through-question-generation-for-enhanced-retrieval)
         * [Advanced Retrieval Methods](#advanced-retrieval-methods)
+          * [12. Fusion Retrieval in Document Search](#12-fusion-retrieval-in-document-search)
         * [Iterative and Adaptive Techniques](#iterative-and-adaptive-techniques)
         * [Evaluation](#evaluation)
         * [Explainability and Transparency](#explainability-and-transparency)
@@ -187,7 +189,15 @@ Retrieval-Augmented Generation (RAG) systems often struggle with insufficient co
 
 -----
 
+##### 11. Document Augmentation through Question Generation for Enhanced Retrieval
+
+-----
+
 #### Advanced Retrieval Methods
+
+##### 12. Fusion Retrieval in Document Search
+
+![FRR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0009-FFR.png)
 
 -----
 
