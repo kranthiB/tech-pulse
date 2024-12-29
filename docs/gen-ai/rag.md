@@ -2,8 +2,8 @@
 id: gen-ai/rag
 title: Retrieval-Augmented Generation (RAG)
 sidebar_label: Retrieval-Augmented Generation (RAG)
-next_page: gen-ai/llm-tier
-previous_page: gen-ai/ai-driven-software-development
+previous_page: gen-ai/llm-tier
+next_page: gen-ai/ai-driven-software-development
 ---
 
 Table of contents
@@ -13,8 +13,9 @@ Table of contents
    * [Retrieval-Augmented Generation](#retrieval-augmented-generation-rag)
       * [RAG Techniques](#rag-techniques)
         * [Foundational RAG Techniques](#foundational-rag-techniques)
-            * [Simple RAG for PDF and CSV Files](#simple-rag-for-pdf-and-csv-files)
-
+            * [1. Simple RAG for PDF and CSV Files](#1-simple-rag-for-pdf-and-csv-files)
+            * [2. Reliable RAG](#2-reliable-rag)
+            * [3. Propositions Chunking](#3-propositions-chunking)
 <!--te-->
 
 ## Retrieval-Augmented Generation (RAG)
@@ -44,7 +45,7 @@ A basic Retrieval-Augmented Generation (RAG) system processes and queries PDF/CS
 ##### 2. Reliable-RAG
 The "Reliable-RAG" method enhances the traditional Retrieval-Augmented Generation (RAG) approach by incorporating additional layers of validation and refinement to ensure the accuracy and reliability of retrieved information. Designed specifically for web-based documents, this system encodes content into a vector store and retrieves the most relevant segments, ensuring precise and dependable answers.
 
-##### Key Components
+###### Key Components
 
 - **Document Loading and Chunking**: Web-based documents are loaded and divided into smaller, manageable chunks to facilitate efficient vector encoding and retrieval.
 - **Vector Store Creation**: Leverages advanced tools like Chroma and Cohere embeddings to encode document chunks into a vector store, enabling similarity-based retrieval.
@@ -54,5 +55,21 @@ The "Reliable-RAG" method enhances the traditional Retrieval-Augmented Generatio
 - **Document Snippet Highlighting**: Identifies and highlights the specific document segments directly used in generating the answer, providing transparency and traceability.
 
 ![REL](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0001-REL.png)
+
+-----
+
+##### 3. Propositions Chunking
+
+Inspired by recent ([research from Tony Chen et al.](https://arxiv.org/abs/2312.06648)), the Propositions Chunking method enhances document processing by breaking input text into smaller, atomic units called propositions. These propositions are designed to be factual, self-contained, and concise, enabling efficient encoding into a vector store for future retrieval.
+
+###### Key Components
+
+- **Document Chunking**: Dividing the document into smaller sections to facilitate easier analysis and processing.
+- **Proposition Generation**: Utilizing large language models (LLMs) to distill document chunks into concise, factual, and independent propositions.
+- **Proposition Quality Check**: Assessing the generated propositions for their accuracy, clarity, completeness, and conciseness to ensure reliability.
+- **Embedding and Vector Store**: Encoding both the refined propositions and larger document chunks into a vector store to support fast and efficient retrieval.
+- **Retrieval and Comparison**: Conducting retrieval tests with various query sizes, comparing the results from proposition-based retrieval with those from larger chunk-based models to highlight the advantages of this approach.
+
+![PRP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0002-PRP.png)
 
 -----
