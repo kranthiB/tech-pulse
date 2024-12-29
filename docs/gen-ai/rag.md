@@ -25,10 +25,11 @@ Table of contents
           * [8. Context Enrichment Window for Document Retrieval](#8-context-enrichment-window-for-document-retrieval)
           * [9. Semantic Chunking for Document Processing](#9-semantic-chunking-for-document-processing)
           * [10. Contextual Compression in Document Retrieval](#10-contextual-compression-in-document-retrieval)
-          * [Document Augmentation through Question Generation for Enhanced Retrieval](#11-document-augmentation-through-question-generation-for-enhanced-retrieval)
+          * [11. Document Augmentation through Question Generation for Enhanced Retrieval](#11-document-augmentation-through-question-generation-for-enhanced-retrieval)
         * [Advanced Retrieval Methods](#advanced-retrieval-methods)
           * [12. Fusion Retrieval in Document Search](#12-fusion-retrieval-in-document-search)
           * [13. Intelligent Reranking](#13-intelligent-reranking)
+          * [14. Hierarchical Indices in Document Retrieval](#14-hierarchical-indices-in-document-retrieval)
         * [Iterative and Adaptive Techniques](#iterative-and-adaptive-techniques)
         * [Evaluation](#evaluation)
         * [Explainability and Transparency](#explainability-and-transparency)
@@ -318,6 +319,14 @@ The primary motivation for reranking in RAG systems is to overcome limitations o
 ![AIRR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0010-A-IRR.png)
 
 ![BIRR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0010-B-IRR.png)
+
+-----
+
+##### 14. Hierarchical Indices in Document Retrieval
+
+![AHIR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0011-A-HIR.png)
+
+![BHIR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0011-B-HIR.png)
 
 -----
 
