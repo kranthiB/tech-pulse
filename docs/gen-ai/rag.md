@@ -21,6 +21,8 @@ Table of contents
           * [5. Hypothetical Document Embedding (HyDE)](#5-hypothetical-document-embedding-hyde)
         * [Context and Content Enrichment](#context-and-content-enrichment)
           * [6. Contextual Chunk Headers (CCH)](#6-contextual-chunk-headers-cch)
+          * [7. Relevant Segment Extraction (RSE)](#7-relevant-segment-extraction-rse)
+          * [8. Context Enrichment Window for Document Retrieval](#8-context-enrichment-window-for-document-retrieval)
         * [Advanced Retrieval Methods](#advanced-retrieval-methods)
         * [Iterative and Adaptive Techniques](#iterative-and-adaptive-techniques)
         * [Evaluation](#evaluation)
@@ -154,6 +156,20 @@ Retrieval-Augmented Generation (RAG) systems often struggle with insufficient co
 - **Reduced Hallucinations**: Helps the language model understand chunks within the appropriate context, minimizing errors in generated responses.
 
 ![CCH](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0004-CCH.png)
+
+-----
+
+##### 7. Relevant Segment Extraction (RSE)
+
+![RSE](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0005-RSE.png)
+
+-----
+
+##### 8. Context Enrichment Window for Document Retrieval
+
+![ACEW](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0006-A-CEW.png)
+
+![BCEW](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0006-B-CEW.png)
 
 -----
 
