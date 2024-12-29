@@ -17,7 +17,8 @@ Table of contents
           * [2. Reliable RAG](#2-reliable-rag)
           * [3. Propositions Chunking](#3-propositions-chunking)
         * [Query Enhancements](#query-enhancements)
-          * [4.Query Transformations](#4-query-transformations)     
+          * [4. Query Transformations](#4-query-transformations)
+          * [5. Hypothetical Document Embedding (HyDE)](#5-hypothetical-document-embedding-hyde)
         * [Context and Content Enrichment](#context-and-content-enrichment)
         * [Advanced Retrieval Methods](#advanced-retrieval-methods)
         * [Iterative and Adaptive Techniques](#iterative-and-adaptive-techniques)
@@ -101,6 +102,29 @@ Retrieval-Augmented Generation (RAG) systems often encounter challenges when han
 - **Better Context**: Step-back prompting allows for retrieval of broader context and background information.
 - **Comprehensive Results**: Sub-query decomposition enables retrieval of information that covers different aspects of a complex query.
 - **Flexibility**: Each technique can be used independently or in combination, depending on the specific use case.
+
+-----
+
+##### 5. Hypothetical Document Embedding (HyDE)
+
+Traditional retrieval methods often face challenges in bridging the semantic gap between brief queries and longer, more detailed documents. Hypothetical Document Embedding (HyDE) tackles this issue by transforming the query into a full hypothetical document, improving retrieval relevance by aligning the query's representation more closely with document representations in the vector space.
+
+###### Key Components
+
+- **PDF Processing and Text Chunking**: Efficiently processes documents by extracting and segmenting text into manageable chunks for analysis.
+- **Vector Store Creation**: Utilizes advanced techniques like FAISS and OpenAI embeddings to encode documents and hypothetical queries into a shared vector space for similarity-based retrieval.
+- **Language Model for Hypothetical Document Generation**: Leverages a language model to generate detailed hypothetical documents that enrich the query representation.
+
+###### Benefits of this Approach
+
+- **Improved Relevance**: By expanding queries into comprehensive documents, HyDE captures more nuanced and relevant matches within the dataset.
+- **Handling Complex Queries**: Particularly beneficial for queries that are multi-faceted or difficult to match directly, enabling more precise retrieval.
+- **Adaptability**: Supports a wide range of query types and document domains, making it flexible for various applications.
+- **Potential for Better Context Understanding**: Expanded queries provide a richer representation of the context and intent, improving the overall retrieval quality.
+
+![AHDE](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0003-A-HDE.png)
+
+![BHDE](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0003-B-HDE.png)
 
 -----
 
