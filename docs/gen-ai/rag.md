@@ -291,7 +291,7 @@ Traditional retrieval methods often rely on either semantic understanding (vecto
 3. **Robustness**: The combined approach can handle a wider range of queries effectively, mitigating weaknesses of individual methods.
 4. **Customizability**: The system can be easily adapted to use different vector stores or keyword-based retrieval methods.
 
-![FRR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0009-FFR.png)
+![FRR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0009-FRR.png)
 
 -----
 
