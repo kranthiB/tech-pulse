@@ -30,6 +30,7 @@ Table of contents
           * [12. Fusion Retrieval in Document Search](#12-fusion-retrieval-in-document-search)
           * [13. Intelligent Reranking](#13-intelligent-reranking)
           * [14. Hierarchical Indices in Document Retrieval](#14-hierarchical-indices-in-document-retrieval)
+          * [15. Multi-modal Retrieval](#15-multi-modal-retrieval)
         * [Iterative and Adaptive Techniques](#iterative-and-adaptive-techniques)
         * [Evaluation](#evaluation)
         * [Explainability and Transparency](#explainability-and-transparency)
@@ -327,6 +328,12 @@ The primary motivation for reranking in RAG systems is to overcome limitations o
 ![AHIR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0011-A-HIR.png)
 
 ![BHIR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0011-B-HIR.png)
+
+-----
+
+##### 15. Multi-modal Retrieval
+
+![MMR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0012-MMR.png)
 
 -----
 
