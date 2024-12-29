@@ -35,6 +35,8 @@ Table of contents
           * [16. Retrieval with Feedback Loops](#16-retrieval-with-feedback-loops)
           * [17. Adaptive Retrieval](#17-adaptive-retrieval)
         * [Evaluation](#evaluation)
+          * [18. DeepEval Evaluation](#18-deepeval-evaluation)
+          * [19. GroUSE Evaluation](#19-grouse-evaluation)
         * [Explainability and Transparency](#explainability-and-transparency)
         * [Advanced Architectures](#advanced-architectures)
         * [Special Advanced Technique](#special-advanced-technique)
@@ -354,6 +356,14 @@ The primary motivation for reranking in RAG systems is to overcome limitations o
 -----
 
 #### Evaluation
+
+##### 18. DeepEval Evaluation
+
+-----
+
+##### 19. GroUSE Evaluation
+
+![GER](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0019-GER.png)
 
 -----
 
