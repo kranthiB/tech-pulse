@@ -16,6 +16,14 @@ Table of contents
             * [1. Simple RAG for PDF and CSV Files](#1-simple-rag-for-pdf-and-csv-files)
             * [2. Reliable RAG](#2-reliable-rag)
             * [3. Propositions Chunking](#3-propositions-chunking)
+        * [Query Enhancements](#query-enhancements)
+        * [Context and Content Enrichment](#context-and-content-enrichment)
+        * [Advanced Retrieval Methods](#advanced-retrieval-methods)
+        * [Iterative and Adaptive Techniques](#iterative-and-adaptive-techniques)
+        * [Evaluation](#evaluation)
+        * [Explainability and Transparency](#explainability-and-transparency)
+        * [Advanced Architectures](#advanced-architectures)
+        * [Special Advanced Technique](#special-advanced-technique)
 <!--te-->
 
 ## Retrieval-Augmented Generation (RAG)
@@ -71,5 +79,37 @@ Inspired by recent ([research from Tony Chen et al.](https://arxiv.org/abs/2312.
 - **Retrieval and Comparison**: Conducting retrieval tests with various query sizes, comparing the results from proposition-based retrieval with those from larger chunk-based models to highlight the advantages of this approach.
 
 ![PRP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0002-PRP.png)
+
+-----
+
+#### Query Enhancements
+
+-----
+
+#### Context and Content Enrichment
+
+-----
+
+#### Advanced Retrieval Methods
+
+-----
+
+#### Iterative and Adaptive Techniques
+
+-----
+
+#### Evaluation
+
+-----
+
+#### Explainability and Transparency
+
+-----
+
+#### Advanced Architectures
+
+-----
+
+#### Special Advanced Technique
 
 -----
