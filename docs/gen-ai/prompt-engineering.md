@@ -217,7 +217,6 @@ Providing references—like past emails or articles—and asking the AI to match
 ##### Example 2: Planning a Game Launch
 
 *"I'm a marketer for a well-known video game producer known for creating immersive story-based online video games. I'm planning the launch of a new medieval fantasy roleplaying game that follows the path of a young protagonist searching for their missing partner. The game's primary audience is young adults. The game is reaching the end stages of development, and I need help creating a timeline before it goes live. Provide a rough timeline for the year leading up to its launch. Also, provide some pre-launch ideas to help generate buzz around the game."*  
-*(See image)*
 
 ##### Example 3: Scheduling Staff Shifts
 
@@ -226,7 +225,6 @@ Providing references—like past emails or articles—and asking the AI to match
 - Employees should not be scheduled for a morning shift on the following day after they were scheduled for an afternoon shift.  
 - Employees should not be scheduled for both the morning and afternoon shifts on the same day.  
 - Every employee should have roughly the same number of total shifts per week."*  
-*(See image)*
 
 -----
 
