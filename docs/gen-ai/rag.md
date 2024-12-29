@@ -40,6 +40,7 @@ Table of contents
         * [Explainability and Transparency](#explainability-and-transparency)
           * [20. Explainable Retrieval in Document Search](#20-explainable-retrieval-in-document-search)
         * [Advanced Architectures](#advanced-architectures)
+          * [21. GraphRAG](#21-graphrag)
         * [Special Advanced Technique](#special-advanced-technique)
 <!--te-->
 
@@ -364,7 +365,7 @@ The primary motivation for reranking in RAG systems is to overcome limitations o
 
 ##### 19. GroUSE Evaluation
 
-![GER](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0019-GER.png)
+![GER](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0015-GER.png)
 
 -----
 
@@ -375,6 +376,12 @@ The primary motivation for reranking in RAG systems is to overcome limitations o
 -----
 
 #### Advanced Architectures
+
+##### 21. GraphRAG
+
+![AGRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0016-A-GRG.png)
+
+![BGRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0016-B-GRG.png)
 
 -----
 
