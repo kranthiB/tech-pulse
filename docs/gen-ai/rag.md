@@ -32,7 +32,8 @@ Table of contents
           * [14. Hierarchical Indices in Document Retrieval](#14-hierarchical-indices-in-document-retrieval)
           * [15. Multi-modal Retrieval](#15-multi-modal-retrieval)
         * [Iterative and Adaptive Techniques](#iterative-and-adaptive-techniques)
-          * [Retrieval with Feedback Loops](#16-retrieval-with-feedback-loops)
+          * [16. Retrieval with Feedback Loops](#16-retrieval-with-feedback-loops)
+          * [17. Adaptive Retrieval](#17-adaptive-retrieval)
         * [Evaluation](#evaluation)
         * [Explainability and Transparency](#explainability-and-transparency)
         * [Advanced Architectures](#advanced-architectures)
@@ -343,6 +344,12 @@ The primary motivation for reranking in RAG systems is to overcome limitations o
 ##### 16. Retrieval with Feedback Loops
 
 ![RFL](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0013-RFL.png)
+
+-----
+
+##### 17. Adaptive Retrieval
+
+![ARR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0014-ARR.png)
 
 -----
 
