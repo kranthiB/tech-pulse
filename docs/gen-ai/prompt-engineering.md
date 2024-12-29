@@ -501,13 +501,13 @@ By following this framework, you can harness AI’s power to create stunning vis
 #### Rules for image generation prompting
 
 1. **Rule-1**: Don't overthink it - Descibe the image you would to a friend who's never seen it 
-  - cat, urban street, cyberpunk, neon, nighttime, high quality 
-  - A sleek black cat perched on a rain-slicked urban street in a glowing cyberpynk city at night. Neon signs in electric blues and purples reflect off the wet pavement, casting a dreamy glow. The cat's cybernetic eyes shimmer softly as it watches hover cars zip through the misty air in the background
+  - ![No](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-A-NO.jpeg) - cat, urban street, cyberpunk, neon, nighttime, high quality 
+  - ![Yes](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-B-TCK.png) - A sleek black cat perched on a rain-slicked urban street in a glowing cyberpynk city at night. Neon signs in electric blues and purples reflect off the wet pavement, casting a dreamy glow. The cat's cybernetic eyes shimmer softly as it watches hover cars zip through the misty air in the background
 2. **Rule-2**: Find the right prompt length depending on the complexity of the image we're trying to generate.Short Promts are like quick sketches and they are great for getting ideas down fast, medium prompts are like roof drafts balanced in creativity and control, long prompts are detailed masterpieces where you have the final say over every element 
-  - A snowy mountain range at sunrise, golden light hitting icy peaks, with a lone climber in the distance
-  - A stunning snowy mountain range illuminated by the warm glow of sunrise. Golden light glints off icy peaks, contrasting against the deep blue shadows. A lone climber in vibrant gear scales the ridge, surrounded by an expense of untouched snow
+  - ![No](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-A-NO.jpeg) - A snowy mountain range at sunrise, golden light hitting icy peaks, with a lone climber in the distance
+  - ![Yes](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-B-TCK.png) - A stunning snowy mountain range illuminated by the warm glow of sunrise. Golden light glints off icy peaks, contrasting against the deep blue shadows. A lone climber in vibrant gear scales the ridge, surrounded by an expense of untouched snow
 3. **Rule-3**: Negative prompting - You have to tell AI what you don't want in your image. You just type "avoid" or "exclude" and then list of things you don't want 
-  - Generate me an image of A serene beach scene with crystal clear water and white sand
-  - Generate me an image of A serene beach scene with crystal clear water and white sand, exclude trees
+  - ![No](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-A-NO.jpeg) - Generate me an image of A serene beach scene with crystal clear water and white sand
+  - ![Yes](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-B-TCK.png) - Generate me an image of A serene beach scene with crystal clear water and white sand, exclude trees
 4. **Rule-4**:  Resolution and quality settings. Layout - use terms like "square", "landscape" or "portrait"
-  - Generate me an image of a cat , 4k, high resolution, detailed textures
+  - ![No](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-A-NO.jpeg) - - ![Yes](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-B-TCK.png) - Generate me an image of a cat , 4k, high resolution, detailed textures

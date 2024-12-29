@@ -166,11 +166,39 @@ Retrieval-Augmented Generation (RAG) systems often struggle with insufficient co
 
 ##### 7. Relevant Segment Extraction (RSE)
 
+When chunking documents for Retrieval-Augmented Generation (RAG), determining the optimal chunk size involves balancing tradeoffs. Larger chunks offer better context for the language model but can make precise retrieval more difficult, while smaller chunks enable precise retrieval but may lack sufficient context. Relevant Segment Extraction (RSE) provides a dynamic approach to address these challenges by reconstructing multi-chunk segments of contiguous text from retrieved chunks, ensuring the appropriate context is presented to the language model.
+
+###### Challenges in Chunking
+
+- **Context vs. Precision**: Large chunks are ideal for complex or high-level queries but may retrieve irrelevant information. Small chunks are precise but lack the broader context needed for more nuanced queries.
+- **Query Diversity**: Real-world RAG use cases often involve a mix of queries, from simple fact-based questions to complex, multi-faceted inquiries that require extensive context.
+
+###### Key Components
+
+- **Chunk Text Key-Value Store**: RSE relies on a database to quickly retrieve chunk text using a `doc_id` and `chunk_index` as keys. This ensures that even chunks not initially marked as relevant can be included if they are sandwiched between highly relevant chunks.
+- **Segment Reconstruction**: Rebuilds segments of contiguous text from nearby chunks, preserving their order in the original document. This step enhances the context provided to the language model.
+
+
 ![RSE](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0005-RSE.png)
 
 -----
 
 ##### 8. Context Enrichment Window for Document Retrieval
+
+Traditional vector search methods often retrieve isolated chunks of text, which can lack the necessary context for complete understanding. The Context Enrichment Window enhances the standard retrieval process by including surrounding context for each retrieved chunk, resulting in more coherent and comprehensive information.
+
+###### Key Components
+
+1. **PDF Processing and Text Chunking**: Extracts and segments text into manageable chunks for effective analysis and retrieval.
+2. **Vector Store Creation**: Uses advanced techniques such as FAISS and OpenAI embeddings to encode and store document chunks in a shared vector space.
+3. **Custom Retrieval Function with Context Window**: Adds a configurable context window to enrich the retrieved chunks with surrounding text, ensuring completeness and coherence.
+4. **Comparison Between Standard and Context-Enriched Retrieval**: Evaluates the effectiveness of context-enriched retrieval against traditional methods, highlighting its advantages in providing richer information.
+
+###### Benefits of this Approach
+
+1. **Improved Coherence**: Delivers results that are more contextually connected and meaningful.
+2. **Enhanced Utility of Vector Search**: Retains the benefits of vector-based retrieval while addressing its limitations of returning fragmented text.
+3. **Flexible Context Adjustment**: Allows fine-tuning of the context window size to meet specific retrieval needs, enabling adaptability for different use cases.
 
 ![ACEW](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0006-A-CEW.png)
 
@@ -180,11 +208,44 @@ Retrieval-Augmented Generation (RAG) systems often struggle with insufficient co
 
 ##### 9. Semantic Chunking for Document Processing
 
+Traditional text splitting methods often divide documents at arbitrary points, disrupting the flow of information and context. Semantic chunking addresses this limitation by splitting text at natural breakpoints, preserving semantic coherence within each chunk.
+
+###### Key Components
+
+1. **PDF Processing and Text Extraction**: Extracts raw text from PDF documents for further analysis.
+2. **Semantic Chunking**: Utilizes advanced techniques, such as LangChain's SemanticChunker, to create meaningful and contextually consistent text segments.
+3. **Vector Store Creation**: Encodes the semantically coherent chunks into a vector store using tools like FAISS and OpenAI embeddings.
+4. **Retriever Setup**: Configures a retriever to query the semantically processed documents effectively.
+
+###### Benefits of this Approach
+
+1. **Improved Coherence**: Ensures that each chunk contains complete ideas or thoughts, enhancing their standalone clarity.
+2. **Better Retrieval Relevance**: Maintains context within chunks, improving the accuracy of information retrieval.
+3. **Adaptability**: Allows for customization of chunking methods based on document characteristics and retrieval requirements.
+4. **Enhanced Understanding**: Facilitates better performance of LLMs and downstream tasks by providing more coherent and meaningful text segments.
+
 ![SCD](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0007-SCD.png)
 
 -----
 
 ##### 10. Contextual Compression in Document Retrieval
+
+Traditional document retrieval systems often return entire chunks or documents, which may include irrelevant information. Contextual compression tackles this inefficiency by extracting and compressing only the most relevant portions of retrieved documents. This results in a more focused and streamlined retrieval process.
+
+###### Key Components
+
+1. **Vector Store Creation from a PDF Document**: Encodes document content into a vector store using advanced embedding techniques.
+2. **Base Retriever Setup**: Configures the initial retriever to fetch relevant document chunks.
+3. **LLM-Based Contextual Compressor**: Employs a language model to analyze and compress retrieved chunks, focusing on the most relevant information.
+4. **Contextual Compression Retriever**: Integrates the compressor with the retriever for optimized query results.
+5. **Question-Answering Chain**: Utilizes the compressed retriever in a question-answering pipeline to provide concise and accurate answers.
+
+###### Benefits of this Approach
+
+1. **Improved Relevance**: Delivers only the most pertinent information, reducing noise in the results.
+2. **Increased Efficiency**: Minimizes the volume of text the LLM needs to process, enhancing system performance.
+3. **Enhanced Context Understanding**: Leverages the contextual analysis capabilities of LLMs to extract precise information aligned with the query intent.
+4. **Flexibility**: Easily adaptable to various document types and query requirements, ensuring versatility in application.
 
 ![CCR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0008-CCR.png)
 
@@ -192,17 +253,67 @@ Retrieval-Augmented Generation (RAG) systems often struggle with insufficient co
 
 ##### 11. Document Augmentation through Question Generation for Enhanced Retrieval
 
+This technique enhances document retrieval within a vector database by generating additional questions related to each text fragment. By incorporating these questions, the system improves the standard retrieval process, increasing the likelihood of identifying relevant documents to serve as context for generative question answering.
+
+###### Key Components
+
+1. **PDF Processing and Text Chunking**: Processes PDF documents and divides them into manageable text fragments for efficient analysis.
+2. **Question Augmentation**: Utilizes OpenAI's language models to generate relevant questions at both the document and fragment levels.
+3. **Vector Store Creation**: Encodes documents and generated questions into a vector store using OpenAI's embedding model and FAISS for similarity search.
+4. **Retrieval and Answer Generation**: Leverages FAISS to retrieve the most relevant documents and uses the provided context to generate accurate answers.
+
+###### Benefits of This Approach
+
+1. **Enhanced Retrieval Process**: Improves the probability of retrieving the most relevant documents from the vector store for a given query.
+2. **Flexible Context Adjustment**: Supports dynamic adjustment of the context window size for both documents and individual fragments, catering to diverse query requirements.
+3. **High-Quality Language Understanding**: Employs OpenAI's advanced language models for generating meaningful questions and producing precise answers, ensuring a robust retrieval mechanism.
+
+
 -----
 
 #### Advanced Retrieval Methods
 
 ##### 12. Fusion Retrieval in Document Search
 
+Traditional retrieval methods often rely on either semantic understanding (vector-based) or keyword matching (BM25). Each approach has its strengths and weaknesses. Fusion retrieval aims to combine these methods to create a more robust and accurate retrieval system that can handle a wider range of queries effectively.
+
+###### Key Components
+
+1. **PDF Processing and Text Chunking**: Prepares documents for analysis by splitting them into manageable chunks.
+2. **Vector Store Creation**: Utilizes FAISS and OpenAI embeddings to build a vector-based semantic retrieval system.
+3. **BM25 Index Creation**: Implements a keyword-based retrieval system using the BM25 algorithm.
+4. **Custom Fusion Retrieval Function**: Combines vector-based and keyword-based retrieval methods to enhance search capabilities.
+
+###### Benefits of This Approach
+
+1. **Improved Retrieval Quality**: By combining semantic and keyword-based search, the system can capture both conceptual similarity and exact keyword matches.
+2. **Flexibility**: The α parameter allows for adjusting the balance between vector and keyword search based on specific use cases or query types.
+3. **Robustness**: The combined approach can handle a wider range of queries effectively, mitigating weaknesses of individual methods.
+4. **Customizability**: The system can be easily adapted to use different vector stores or keyword-based retrieval methods.
+
 ![FRR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0009-FFR.png)
 
 -----
 
 ##### 13. Intelligent Reranking
+
+The primary motivation for reranking in RAG systems is to overcome limitations of initial retrieval methods, which often rely on simpler similarity metrics. Reranking allows for more sophisticated relevance assessment, taking into account nuanced relationships between queries and documents that might be missed by traditional retrieval techniques. This process aims to enhance the overall performance of RAG systems by ensuring that the most relevant information is used in the generation phase.
+
+#### Key Components
+
+1. **Initial Retriever**: Often a vector store using embedding-based similarity search.
+2. **Reranking Model**: This can be either:
+    * A Large Language Model (LLM) for scoring relevance
+    * A Cross-Encoder model specifically trained for relevance assessment
+3. **Scoring Mechanism**: A method to assign relevance scores to documents
+4. **Sorting and Selection Logic**: To reorder documents based on new scores
+
+#### Benefits of this Approach
+
+1. **Improved Relevance**: By using more sophisticated models, reranking can capture subtle relevance factors.
+2. **Flexibility**: Different reranking methods can be applied based on specific needs and resources.
+3. **Enhanced Context Quality**: Providing more relevant documents to the RAG system improves the quality of generated responses.
+4. **Reduced Noise**: Reranking helps filter out less relevant information, focusing on the most pertinent content.
 
 ![AIRR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/rag/0010-A-IRR.png)
 
