@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tech Pulse
-auto_title: false
+auto_title: true
 ---
 
 ![Profile Picture](https://github.com/kranthiB/tech-pulse/assets/20100300/9a736590-5588-4b5b-813c-7e25c031942e) 
