@@ -15,6 +15,7 @@ Table of contents
         * [Security Plane](#security-plane)
         * [Monitoring & Logging Plane](#monitoring--logging-plane)
         * [Resource Plane](#resource-plane)
+        * [Landscape](#landscape)
       * [Maturity Model](#maturity-model)
       * [References](#references)
         * [Internal Developer Platform on AWS Cloud](#internal-developer-platform-on-aws-cloud)
@@ -62,6 +63,8 @@ Table of contents
 
 -----
 
+#### Landscape
+
 ![LSS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/platform-engineering/0007-LSS.png)
 
 -----
@@ -98,5 +101,6 @@ Table of contents
 
 #### Internal Developer Platform on Multi-Cloud
 
-![MLR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/platform-engineering/0012-MLR.png)
+![PML](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/platform-engineering/0012-PML.png)
+
 -----
