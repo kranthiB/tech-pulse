@@ -74,20 +74,29 @@ Table of contents
 
 #### Internal Developer Platform on AWS Cloud
 
+![AWS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/platform-engineering/0008-AWS.png)
+
 -----
 
 #### Internal Developer Platform on Google Cloud
+
+![GCP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/platform-engineering/0009-GCP.png)
 
 -----
 
 #### Internal Developer Platform on Azure Cloud
 
+![AZR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/platform-engineering/0010-AZR.png)
+
 -----
 
 #### Internal Developer Platform on Openshift
+
+![OSR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/platform-engineering/0011-OSR.png)
 
 -----
 
 #### Internal Developer Platform on Multi-Cloud
 
+![MLR](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/platform-engineering/0012-MLR.png)
 -----
