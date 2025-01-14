@@ -4,6 +4,76 @@ title: Platform Engineering
 sidebar_label: Platform Engineering
 ---
 
-# Platform Engineering
+Table of contents
+=================
 
-## Coming Soon!
+<!--ts-->
+   * [Platform Engineering](#platform-engineering)
+      * [Tooling Landscape](#tooling-landscape)
+        * [Developer Control Plane](#developer-control-plane)
+        * [Integration & Delivery Plane](#integration--delivery-plane)
+        * [Security Plane](#security-plane)
+        * [Monitoring & Logging Plane](#monitoring--logging-plane)
+        * [Resource Plane](#resource-plane)
+      * [Maturity Model](#maturity-model)
+      * [References](#references)
+        * [Internal Developer Platform on AWS Cloud](#internal-developer-platform-on-aws-cloud)
+        * [Internal Developer Platform on Google Cloud](#internal-developer-platform-on-google-cloud)
+        * [Internal Developer Platform on Azure Cloud](#internal-developer-platform-on-azure-cloud)
+        * [Internal Developer Platform on Openshift](#internal-developer-platform-on-openshift)
+        * [Internal Developer Platform on Multi-Cloud](#internal-developer-platform-on-multi-cloud)
+<!--te-->
+
+## Platform Engineering
+
+### Tooling Landscape
+
+![TLS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/platform-engineering/0001-TLS.png)
+
+-----
+
+#### Developer Control Plane
+
+-----
+
+#### Integration & Delivery Plane
+
+-----
+
+#### Security Plane
+
+-----
+
+#### Monitoring & Logging Plane
+
+-----
+
+#### Resource Plane
+
+-----
+
+### Maturity Model
+
+-----
+
+### References
+
+#### Internal Developer Platform on AWS Cloud
+
+-----
+
+#### Internal Developer Platform on Google Cloud
+
+-----
+
+#### Internal Developer Platform on Azure Cloud
+
+-----
+
+#### Internal Developer Platform on Openshift
+
+-----
+
+#### Internal Developer Platform on Multi-Cloud
+
+-----
