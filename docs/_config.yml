@@ -52,6 +52,4 @@ sidebar:
       - industrial-iot/industrial-iot
       - industrial-iot/industry-5.0
       - industrial-iot/edge-gateway
-  - label: Platform Engineering
-    - platform-engineering
-
+  - platform-engineering
