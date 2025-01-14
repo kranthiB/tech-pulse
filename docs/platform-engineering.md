@@ -34,21 +34,35 @@ Table of contents
 
 #### Developer Control Plane
 
+![DCP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/platform-engineering/0002-DCP.png)
+
 -----
 
 #### Integration & Delivery Plane
+
+![IDP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/platform-engineering/0003-IDP.png)
 
 -----
 
 #### Security Plane
 
+![PSP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/platform-engineering/0004-PSP.png)
+
 -----
 
 #### Monitoring & Logging Plane
 
+![MLP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/platform-engineering/0005-MLP.png)
+
 -----
 
 #### Resource Plane
+
+![PRP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/platform-engineering/0006-PRP.png)
+
+-----
+
+![LSS](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/platform-engineering/0007-LSS.png)
 
 -----
 
