@@ -91,9 +91,8 @@ C_{network} = f(egress, inter-regiontransfer, bandwidth)
 
 For finding optimal resource placement:
 
-```math
-d(v) = min(d(u) + w(u,v)), \forall u,v \in V
-```
+![ShortestPathAlgorithm](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/cloud-cost-optimization/ShortestPathAlgorithm.png)
+
 
 This helps determine the most cost-effective path between resources.
 
@@ -101,30 +100,25 @@ This helps determine the most cost-effective path between resources.
 
 For optimizing resource distribution:
 
-```math
-Minimize \sum_{(u,v)\in E} C(u,v) \text{ subject to } \sum_{v\in P_i} R(v) \leq Capacity(P_i)
-```
+![WorkloadPartitioning](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/cloud-cost-optimization/WorkloadPartitioning.png)
+
 
 #### C. Auto-Scaling Using MDP
 
 For dynamic resource adjustment:
 
-```math
-V(s) = \max_{a\in A}\left(R(s,a) + \gamma\sum_{s'\in S} P(s'|s,a)V(s')\right)
-```
+![AutoScalingUsingMDP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/cloud-cost-optimization/AutoScalingUsingMDP.png)
 
 #### D. Multi-Cloud Optimization
 
 Using Linear Programming:
 
-```math
-Minimize \sum_{i=1}^N C_iX_i
-```
+![MultiCloudOptimization](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/cloud-cost-optimization/MultiCloudOptimization.png)
 
 Subject to:
-```math
-\sum_{i=1}^N X_i = D, X_i \geq 0
-```
+
+![MultiCloudOptimizationSubjectTo](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/cloud-cost-optimization/MultiCloudOptimizationSubjectTo.png)
+
 
 ## Practical Implementation Steps
 
