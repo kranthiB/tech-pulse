@@ -4,6 +4,9 @@ title: Cloud Cost Optimization
 sidebar_label: Cloud Cost Optimization
 ---
 
+Table of contents
+=================
+
 <!--ts-->
    * [Graph-Based Cloud Cost Optimization](#graph-based-cloud-cost-optimization)
         * [Introduction](#introduction)
