@@ -18,7 +18,7 @@ Table of contents
             * [3. Optimization Techniques](#3-optimization-techniques)
                 * [A. Shortest Path Algorithm](#a-shortest-path-algorithm)
                 * [B. Workload Partitioning](#b-workload-partitioning)
-                * [C. Auto-Scaling Using MDP](#c-auto-scaling-using-mdp)
+                * [C. Auto-Scaling Using MDP](#c-auto-scaling-using-mdpmarkov-decision-process)
                 * [D. Multi-Cloud Optimization](#d-multi-cloud-optimization)
         * [Practical Implementation Steps](#practical-implementation-steps)
             * [1. Resource Graph Construction](#1-resource-graph-construction)
@@ -106,7 +106,7 @@ For optimizing resource distribution:
 ![WorkloadPartitioning](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/cloud-cost-optimization/WorkloadPartitioning.png)
 
 
-#### C. Auto-Scaling Using MDP
+#### C. Auto-Scaling Using MDP(Markov Decision Process)
 
 For dynamic resource adjustment:
 
