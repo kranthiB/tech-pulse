@@ -33,6 +33,8 @@ Table of contents
 
 # Graph-Based Cloud Cost Optimization
 
+![CCO](https://github.com/user-attachments/assets/0f5b8cc9-74ca-420d-b7da-f8d2c127e2f3)
+
 ## Introduction
 
 Cloud computing has revolutionized how we deploy and manage applications, but with this flexibility comes the challenge of managing costs effectively. In this post, I'll explore an innovative approach to cloud cost optimization using graph theory and mathematical modeling. We'll look at how representing cloud resources as a graph can help make smarter decisions about resource allocation and cost management.
