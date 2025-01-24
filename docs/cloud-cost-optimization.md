@@ -14,26 +14,16 @@ Table of contents
         * [What Are We Trying to Solve?](#what-are-we-trying-to-solve)
         * [Technical Implementation](#technical-implementation)
             * [1. Graph-Based Resource Modeling](#1-graph-based-resource-modeling)
-            * [2. Resource Cost Functions](#2-resource-cost-functions)
+            * [2. Cost Modeling Framework](#2-cost-modeling-framework)
             * [3. Optimization Techniques](#3-optimization-techniques)
-                * [A. Shortest Path Algorithm](#a-shortest-path-algorithm)
-                * [B. Workload Partitioning](#b-workload-partitioning)
-                * [C. Auto-Scaling Using MDP](#c-auto-scaling-using-mdpmarkov-decision-process)
-                * [D. Multi-Cloud Optimization](#d-multi-cloud-optimization)
-        * [Practical Implementation Steps](#practical-implementation-steps)
-            * [1. Resource Graph Construction](#1-resource-graph-construction)
-            * [2. Cost Function Implementation](#2-cost-function-implementation)
-            * [3. Optimization Pipeline](#3-optimization-pipeline)
-        * [Best Practices and Recommendations](#best-practices-and-recommendations)
-            * [Cost Optimization Guidelines](#cost-optimization-guidelines)
-        * [Performance Considerations](#performance-considerations)
-        * [Future Enhancements](#future-enhancements)
+               * [A. Shortest Path Algorithm](#a-shortest-path-algorithm)
+               * [B. Multi-Cloud Optimization](#b-multi-cloud-optimization)
         * [Conclusion](#conclusion)
 <!--te-->
 
 # Graph-Based Cloud Cost Optimization
 
-![CCO](https://github.com/user-attachments/assets/0f5b8cc9-74ca-420d-b7da-f8d2c127e2f3)
+![CCO](https://github.com/user-attachments/assets/f5281be9-94f3-4d3d-99b4-cf2e2d45deae)
 
 ## Introduction
 
@@ -54,137 +44,31 @@ The primary challenges in cloud cost optimization include:
 
 ### 1. Graph-Based Resource Modeling
 
-Cloud infrastructure is modeled as a directed weighted graph where:
+![GRM](https://github.com/user-attachments/assets/24d41a9c-0d6f-4317-a208-fc9008b24a24)
 
-```math
-G = (V, E)
-```
+### 2. Cost Modeling Framework
 
-- **Vertices (V)**: Represent individual cloud resources (VMs, storage buckets, network components)
-- **Edges (E)**: Represent relationships and dependencies between resources
-- **Weights**: Represent costs associated with resource usage and data transfer
+![CRC](https://github.com/user-attachments/assets/7d9cfc29-6b4a-4684-a22b-266ceab3ff82)
 
-The cost function for an edge between resources is defined as:
+-----------
 
-```math
-w(u,v) = C(u,v)
-```
+![QOS](https://github.com/user-attachments/assets/271e6916-ee92-4200-aed0-3cc1abfbe2d5)
 
-### 2. Resource Cost Functions
+-----------
 
-Each cloud resource has an associated cost function that combines multiple factors:
+![ECF](https://github.com/user-attachments/assets/9209c30c-bfe8-48bc-9a54-50b3853ab9c1)
 
-```math
-C_r = C_{compute} + C_{storage} + C_{network}
-```
-
-Where:
-```math
-C_{compute} = f(CPU, RAM, executiontime)
-C_{storage} = f(size, accessfrequency, region)
-C_{network} = f(egress, inter-regiontransfer, bandwidth)
-```
-
-#### Cost Components:
-- **Compute Costs**: Based on CPU, memory usage, and runtime
-- **Storage Costs**: Based on data volume and access patterns
-- **Network Costs**: Based on data transfer between regions
+-----------
 
 ### 3. Optimization Techniques
 
 #### A. Shortest Path Algorithm
 
-For finding optimal resource placement:
+![DJK](https://github.com/user-attachments/assets/27200c1f-e047-4edc-9a00-bb4139ad2d13)
 
-![ShortestPathAlgorithm](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/cloud-cost-optimization/ShortestPathAlgorithm.png)
+#### B. Multi-Cloud Optimization
 
-
-This helps determine the most cost-effective path between resources.
-
-#### B. Workload Partitioning
-
-For optimizing resource distribution:
-
-![WorkloadPartitioning](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/cloud-cost-optimization/WorkloadPartitioning.png)
-
-
-#### C. Auto-Scaling Using MDP(Markov Decision Process)
-
-For dynamic resource adjustment:
-
-![AutoScalingUsingMDP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/cloud-cost-optimization/AutoScalingUsingMDP.png)
-
-#### D. Multi-Cloud Optimization
-
-Using Linear Programming:
-
-![MultiCloudOptimization](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/cloud-cost-optimization/MultiCloudOptimization.png)
-
-Subject to:
-
-![MultiCloudOptimizationSubjectTo](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/cloud-cost-optimization/MultiCloudOptimizationSubjectTo.png)
-
-
-## Practical Implementation Steps
-
-### 1. Resource Graph Construction
-1. Identify all cloud resources
-2. Map dependencies between resources
-3. Calculate edge weights based on cost functions
-4. Validate graph connectivity
-
-### 2. Cost Function Implementation
-1. Define base cost functions for each resource type
-2. Implement dynamic pricing updates
-3. Add region-specific cost modifiers
-4. Include time-based cost variations
-
-### 3. Optimization Pipeline
-1. Collect real-time resource usage data
-2. Apply shortest path algorithms for placement
-3. Use partitioning for workload distribution
-4. Implement auto-scaling based on MDP
-5. Optimize multi-cloud resource allocation
-
-## Best Practices and Recommendations
-
-### Cost Optimization Guidelines
-
-1. **Resource Placement**
-   - Place dependent resources in the same region
-   - Consider data gravity in placement decisions
-   - Use cheaper regions when latency isn't critical
-
-2. **Network Optimization**
-   - Minimize cross-region data transfer
-   - Use CDNs for content delivery
-   - Implement caching strategies
-
-3. **Compute Optimization**
-   - Right-size instances based on workload
-   - Use spot instances where applicable
-   - Implement auto-scaling based on demand
-
-4. **Storage Optimization**
-   - Use appropriate storage tiers
-   - Implement lifecycle policies
-   - Consider access patterns in placement
-
-## Performance Considerations
-
-When implementing this approach, consider:
-- Graph algorithm complexity for large infrastructures
-- Real-time cost calculation overhead
-- Update frequency for dynamic pricing
-- Scaling considerations for large deployments
-
-## Future Enhancements
-
-Potential areas for improvement include:
-- Machine learning for cost prediction
-- Enhanced multi-cloud optimization
-- Integration with serverless architectures
-- Real-time pricing optimization
+![MCO](https://github.com/user-attachments/assets/17670777-a27b-4885-83cd-97df69252a9b)
 
 ## Conclusion
 
