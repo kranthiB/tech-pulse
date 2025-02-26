@@ -1,5 +1,5 @@
 ---
-id: data-ai/ml-engineer
+id: data-ai/conventional-ml
 title: Conventional ML
 sidebar_label: Conventional ML
 previous_page: data-ai/data-engineer
@@ -1071,3 +1071,4 @@ Key differences between PCA and t-SNE:
 When to use each:
 - PCA: For dimensionality reduction, feature extraction, or when interpretability matters
 - t-SNE: For visualization, cluster identification, or exploring complex data structure
+
