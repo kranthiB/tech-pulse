@@ -3,6 +3,7 @@ id: data-ai/conventional-ml
 title: Conventional ML
 sidebar_label: Conventional ML
 previous_page: data-ai/data-engineer
+next_page: data-ai/deep-learning
 ---
 
 Table of contents
