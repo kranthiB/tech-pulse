@@ -32,7 +32,7 @@ sidebar:
     children:
       - data-ai/data-analyst
       - data-ai/data-engineer
-      - data-ai/ml-engineer
+      - data-ai/conventional-ml
   - label: Ops Mastery
     children:
       - ops-mastery/dev-sec-ops
