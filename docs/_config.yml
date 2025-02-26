@@ -2,15 +2,7 @@ title: Tech Pulse
 remote_theme: zendesk/jekyll-theme-zendesk-garden@main
 baseurl: /tech-pulse
 sidebar:
-  - label: System Design
-    children:
-      - system-design/characteristics
-      - system-design/load-balancing
-      - system-design/api-gateway
-      - system-design/caching
-      - system-design/messaging-system
-      - system-design/communication-protocols
-      - system-design/patterns
+  - system-design
   - label: Computing Models
     children:
       - computing-models/cloud-computing
