@@ -1,3 +1,9 @@
+---
+id: enterprise-application-security-framework
+title: Enterprise Application Security Framework
+sidebar_label: Enterprise Application Security Framework
+---
+
 # Enterprise Application Security Framework
 
 ## Executive Summary
