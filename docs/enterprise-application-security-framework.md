@@ -22,6 +22,7 @@ This living document should be integrated into your secure development lifecycle
 ---
 
 ## Risk Rating Legend
+
 | Rating | Description |
 |--------|-------------|
 | 🔴 **Critical** | Vulnerabilities that could lead to system compromise with significant financial, operational, or reputational damage |
@@ -30,11 +31,95 @@ This living document should be integrated into your secure development lifecycle
 | 🟢 **Low** | Good security practices that enhance overall posture but pose minimal direct risk |
 
 ## Implementation Tier Legend
+
 | Tier | Description |
 |------|-------------|
 | **T1: Foundation** | Essential controls that must be implemented in all applications |
 | **T2: Enhanced** | Controls for applications handling sensitive data or critical business functions |
 | **T3: Advanced** | Sophisticated controls for highest-risk applications with regulatory requirements |
+
+---
+
+## Table of Contents
+
+### Core Security Domains
+1. [Security Architecture & Design](#1-security-architecture--design)
+   - [1.1 Secure Software Development Lifecycle](#11-secure-software-development-lifecycle)
+   - [1.2 Authentication Architecture](#12-authentication-architecture)
+   - [1.3 Input and Output Architecture](#13-input-and-output-architecture)
+   - [1.4 Logging and Auditing Architecture](#14-logging-and-auditing-architecture)
+   - [1.5 Data Protection Architecture](#15-data-protection-architecture)
+   - [1.6 Communications Architecture](#16-communications-architecture)
+   - [1.7 Secure Supply Chain Architecture](#17-secure-supply-chain-architecture)
+   - [1.8 Configuration Architecture](#18-configuration-architecture)
+2. [Authentication Controls](#2-authentication-controls)
+   - [2.1 Password Security](#21-password-security)
+   - [2.2 Multi-Factor Authentication](#22-multi-factor-authentication)
+   - [2.3 Authenticator Lifecycle](#23-authenticator-lifecycle)
+   - [2.4 Credential Storage](#24-credential-storage)
+   - [2.5 Credential Recovery](#25-credential-recovery)
+   - [2.6 Out-of-Band Authentication](#26-out-of-band-authentication)
+   - [2.7 Time-Based One-Time Passwords](#27-time-based-one-time-passwords)
+   - [2.8 Cryptographic Authentication](#28-cryptographic-authentication)
+3. [Session Management](#3-session-management)
+   - [3.1 Session Security Fundamentals](#31-session-security-fundamentals)
+   - [3.2 Session Creation and Binding](#32-session-creation-and-binding)
+   - [3.3 Session Termination](#33-session-termination)
+   - [3.4 Cookie-Based Session Management](#34-cookie-based-session-management)
+   - [3.5 Advanced Session Protection](#35-advanced-session-protection)
+4. [Access Control](#4-access-control)
+   - [4.1 Access Control Architecture](#41-access-control-architecture)
+   - [4.2 Operation-Level Authorization](#42-operation-level-authorization)
+   - [4.3 Administrative Access Control](#43-administrative-access-control)
+   - [4.4 Content and Resource Protection](#44-content-and-resource-protection)
+5. [Input Validation & Output Encoding](#5-input-validation--output-encoding)
+   - [5.1 Input Validation Strategy](#51-input-validation-strategy)
+   - [5.2 Content Sanitization](#52-content-sanitization)
+   - [5.3 Output Encoding](#53-output-encoding)
+   - [5.4 SQL Injection Prevention](#54-sql-injection-prevention)
+   - [5.5 Command Injection Prevention](#55-command-injection-prevention)
+   - [5.6 XML Security](#56-xml-security)
+   - [5.7 Memory Safety](#57-memory-safety)
+   - [5.8 Deserialization Security](#58-deserialization-security)
+6. [Data Protection](#6-data-protection)
+   - [6.1 Data Classification](#61-data-classification)
+   - [6.2 Cryptographic Controls](#62-cryptographic-controls)
+   - [6.3 Data Protection in Transit](#63-data-protection-in-transit)
+   - [6.4 Data Protection at Rest](#64-data-protection-at-rest)
+   - [6.5 Client-Side Data Protection](#65-client-side-data-protection)
+   - [6.6 Privacy Controls](#66-privacy-controls)
+7. [Logging, Monitoring & Incident Response](#7-logging-monitoring--incident-response)
+   - [7.1 Logging Strategy](#71-logging-strategy)
+   - [7.2 Log Protection](#72-log-protection)
+   - [7.3 Monitoring & Detection](#73-monitoring--detection)
+   - [7.4 Error Handling](#74-error-handling)
+   - [7.5 Incident Response Integration](#75-incident-response-integration)
+8. [Communications Security](#8-communications-security)
+   - [8.1 Transport Layer Security](#81-transport-layer-security)
+   - [8.2 API Security](#82-api-security)
+   - [8.3 Backend Communications](#83-backend-communications)
+9. [File & Resource Protection](#9-file--resource-protection)
+   - [9.1 Malicious Code Prevention](#91-malicious-code-prevention)
+   - [9.2 Application Integrity](#92-application-integrity)
+   - [9.3 Business Logic Security](#93-business-logic-security)
+   - [9.4 File Upload Security](#94-file-upload-security)
+   - [9.5 File Execution Controls](#95-file-execution-controls)
+   - [9.6 File Download Security](#96-file-download-security)
+10. [Web Services & API Security](#10-web-services--api-security)
+    - [10.1 Web Service Design](#101-web-service-design)
+    - [10.2 REST API Security](#102-rest-api-security)
+    - [10.3 SOAP API Security](#103-soap-api-security)
+    - [10.4 API Gateway Security](#104-api-gateway-security)
+11. [Configuration & Deployment Security](#11-configuration--deployment-security)
+    - [11.1 Dependency Management](#111-dependency-management)
+    - [11.2 Secure Deployment](#112-secure-deployment)
+    - [11.3 Security Headers](#113-security-headers)
+    - [11.4 Request Validation](#114-request-validation)
+
+### Appendices
+- [Appendix A: Compliance Mapping](#appendix-a-compliance-mapping)
+- [Appendix B: Implementation Roadmap](#appendix-b-implementation-roadmap)
+- [Appendix C: Roles and Responsibilities](#appendix-c-roles-and-responsibilities)
 
 ---
 
