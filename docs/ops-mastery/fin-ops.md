@@ -67,14 +67,14 @@ This guide will take you through the FinOps framework components as they relate 
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                       FINOPS JOURNEY                         │
+│                       FINOPS JOURNEY                        │
 ├─────────────────────────────────────────────────────────────┤
 │ ┌─────────┐   ┌─────────┐   ┌─────────┐   ┌─────────┐       │
-│ │PRINCIPLES│ → │ DOMAINS │ → │CAPABILITIES│ → │ PHASES │       │
+│ │PRINCIPLES│ → │ DOMAINS │ → │CAPABILITIES│ → │ PHASES │    │
 │ └─────────┘   └─────────┘   └─────────┘   └─────────┘       │
 │       ↑             ↑             ↑             ↑           │
 │ ┌─────────┐   ┌─────────┐   ┌─────────┐   ┌─────────┐       │
-│ │ PERSONAS │ ← │ MATURITY │ ← │ SCOPES  │ ← │IMPLEMENTATION│  │
+│ │ PERSONAS │ ← │ MATURITY │ ← │ SCOPES  │ ← │IMPLEMENTATION││
 │ └─────────┘   └─────────┘   └─────────┘   └─────────┘       │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -97,6 +97,8 @@ FinOps principles reflect how teams should collaborate and operate to create fin
 - Celebration of successful cross-team collaborations
 
 > **Real-World Example:** A leading e-commerce company established "Cloud Cost Cafés"—bi-weekly informal sessions where engineers, finance, and product teams gather to review cloud costs over coffee. These sessions have led to a 24% reduction in unnecessary cloud spending through improved communication alone.
+
+---
 
 ### 💼 Decisions Are Driven by Business Value of Cloud
 
@@ -123,6 +125,8 @@ FinOps principles reflect how teams should collaborate and operate to create fin
 
 > **Ownership Story:** The engineering team at a media streaming service introduced "cloud cost buddies"—each sprint, one team member wore the hat of cost efficiency champion, reviewing proposed changes for financial impact before deployment. This rotation ensured everyone developed cost consciousness while sharing the responsibility.
 
+---
+
 ### 📊 FinOps Data Should Be Accessible and Timely
 
 **The Challenge:** Teams can't make informed decisions without timely, relevant information presented in ways they can understand.
@@ -136,6 +140,8 @@ FinOps principles reflect how teams should collaborate and operate to create fin
 
 > **Dashboard Philosophy:** "The perfect dashboard answers the questions you ask most frequently in a language you understand naturally."
 
+---
+
 ### 🏢 A Centralized Team Drives FinOps
 
 **The Challenge:** Without coordination, FinOps efforts become fragmented and inconsistent across the organization.
@@ -148,6 +154,8 @@ FinOps principles reflect how teams should collaborate and operate to create fin
 - Provide consistent tooling, training, and support across the organization
 
 > **Team Structure:** Think of your FinOps team like air traffic control—they don't fly the planes (that's the engineering teams), but they coordinate everything, prevent collisions, and ensure everyone reaches their destination safely and efficiently.
+
+---
 
 ### 🚀 Take Advantage of the Variable Cost Model of the Cloud
 
@@ -180,6 +188,8 @@ The four FinOps domains represent areas where teams must develop specific expert
 
 > **Visibility Mantra:** "You can't manage what you can't see, and you can't improve what you don't understand."
 
+---
+
 ### 💰 Domain 2: Quantify Business Value
 
 **Focus:** Connecting technical metrics to business outcomes that matter to everyone.
@@ -192,6 +202,8 @@ The four FinOps domains represent areas where teams must develop specific expert
 
 > **Value Question:** "How does this cloud investment help us serve customers better, operate more efficiently, or grow more rapidly?"
 
+---
+
 ### ⚙️ Domain 3: Optimize Cloud Usage & Cost
 
 **Focus:** Empowering teams to identify and implement improvements.
@@ -203,6 +215,8 @@ The four FinOps domains represent areas where teams must develop specific expert
 - Balancing cost, performance, and sustainability
 
 > **Optimization Philosophy:** "Optimization isn't about being cheap—it's about being intentional with every dollar spent."
+
+---
 
 ### 🌱 Domain 4: Manage the FinOps Practice
 
@@ -225,14 +239,14 @@ FinOps capabilities represent the specific activities teams perform to implement
 ### Understand Cloud Usage & Cost Capabilities
 
 ```
-┌───────────────────────────────────────────────────────────┐
-│                                                           │
-│  DATA INGESTION   →   ALLOCATION   →   REPORTING   →   ANOMALIES  │
-│      ⬇️               ⬇️              ⬇️              ⬇️       │
-│  "Gather the      "Assign costs    "Create         "Detect and   │
-│   right data"      to owners"       insights"       alert"        │
-│                                                           │
-└───────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────┐
+│                                                                         │
+│  DATA INGESTION   →   ALLOCATION   →   REPORTING   →   ANOMALIES        │
+│      ⬇️                   ⬇️                ⬇️               ⬇️          |
+│  "Gather the          "Assign costs     "Create         "Detect and     │
+│   right data"          to owners"       insights"       alert"          │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
 ```
 
 #### Data Ingestion
@@ -244,6 +258,8 @@ FinOps capabilities represent the specific activities teams perform to implement
 - Definition of metadata standards for consistent analysis
 - Regular data quality reviews to ensure trustworthy insights
 
+---
+
 #### Allocation
 **Core Element:** Creating accountability by connecting spending to the teams responsible.
 
@@ -252,6 +268,9 @@ FinOps capabilities represent the specific activities teams perform to implement
 - Engineering teams implementing and maintaining resource tagging
 - Finance teams mapping cloud resources to cost centers
 - Leadership establishing allocation principles and priorities
+
+---
+
 
 #### Reporting & Analytics
 **Core Element:** Translating complex data into actionable insights for different audiences.
@@ -262,6 +281,8 @@ FinOps capabilities represent the specific activities teams perform to implement
 - Training sessions on interpreting cloud financial data
 - Establishing report distribution and communication channels
 
+---
+
 #### Anomaly Management
 **Core Element:** Ensuring the right teams know when something unexpected happens with cloud spending.
 
@@ -271,18 +292,20 @@ FinOps capabilities represent the specific activities teams perform to implement
 - Conducting root cause analysis as a learning opportunity
 - Documenting and sharing lessons from significant anomalies
 
+---
+
 ### Quantify Business Value Capabilities
 
 ```
-┌───────────────────────────────────────────────────────────────────────┐
-│                                                                       │
-│  PLANNING   →   FORECASTING   →   BUDGETING   →   BENCHMARKING   →   UNIT   │
-│     ⬇️           ⬇️              ⬇️              ⬇️              ⬇️    │
-│  "Estimate    "Predict        "Set            "Compare         "Connect   │
-│   future      future           limits"         performance"     to value"  │
-│   costs"      costs"                                                      │
-│                                                                       │
-└───────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                                                                               │
+│  PLANNING   →   FORECASTING   →   BUDGETING   →   BENCHMARKING   →   UNIT     │
+│     ⬇️               ⬇️               ⬇️                ⬇️              ⬇️      │
+│  "Estimate       "Predict          "Set            "Compare         "Connect  │
+│   future          future           limits"         performance"     to value" │
+│   costs"          costs"                                                      │
+│                                                                               │
+└───────────────────────────────────────────────────────────────────────────────┘
 ```
 
 #### Planning & Estimating
@@ -294,6 +317,8 @@ FinOps capabilities represent the specific activities teams perform to implement
 - Finance providing cost modeling templates and guidance
 - Cross-functional reviews of major initiative estimates
 
+---
+
 #### Forecasting
 **Core Element:** Using data and insights to predict future cloud spending patterns.
 
@@ -302,6 +327,8 @@ FinOps capabilities represent the specific activities teams perform to implement
 - Finance teams incorporating cloud forecasts into financial planning
 - Regular forecast review and refinement sessions
 - Communication of forecast implications to leadership
+
+---
 
 #### Budgeting
 **Core Element:** Setting appropriate financial guardrails for cloud spending.
@@ -312,6 +339,8 @@ FinOps capabilities represent the specific activities teams perform to implement
 - Processes for handling budget exceptions and adjustments
 - Clear communication of budget constraints and priorities
 
+---
+
 #### Benchmarking
 **Core Element:** Learning from others to set appropriate targets and identify improvement opportunities.
 
@@ -320,6 +349,8 @@ FinOps capabilities represent the specific activities teams perform to implement
 - Industry peer group analysis to establish performance targets
 - Regular benchmarking reviews to identify opportunity areas
 - Recognition of teams achieving benchmark excellence
+
+---
 
 #### Unit Economics
 **Core Element:** Connecting technical metrics to business outcomes that everyone understands.
@@ -330,17 +361,19 @@ FinOps capabilities represent the specific activities teams perform to implement
 - Incorporation of unit metrics into product planning
 - Executive reporting focused on business-relevant metrics
 
+---
+
 ### Optimize Cloud Usage & Cost Capabilities
 
 ```
-┌───────────────────────────────────────────────────────────────────────┐
-│                                                                       │
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│                                                                                  │
 │  ARCHITECTURE   →   RATE     →   WORKLOAD    →   SUSTAINABILITY   →   LICENSING  │
-│     ⬇️            ⬇️           ⬇️              ⬇️                ⬇️     │
-│  "Design       "Lower     "Right-size      "Reduce           "Optimize   │
-│   efficiently"  rates"     resources"       impact"           software"  │
-│                                                                       │
-└───────────────────────────────────────────────────────────────────────┘
+│     ⬇️               ⬇️             ⬇️                  ⬇️                ⬇️       │
+│  "Design           "Lower        "Right-size        "Reduce           "Optimize  │
+│   efficiently"      rates"        resources"         impact"           software" │
+│                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 #### Architecting for Cloud
@@ -352,6 +385,8 @@ FinOps capabilities represent the specific activities teams perform to implement
 - Training engineers on cost-efficient design patterns
 - Creating reusable templates for cost-effective architectures
 
+---
+
 #### Rate Optimization
 **Core Element:** Finding the most cost-effective way to pay for cloud resources.
 
@@ -360,6 +395,8 @@ FinOps capabilities represent the specific activities teams perform to implement
 - Engineers identifying commitment-eligible workloads
 - Procurement negotiating enterprise agreements
 - Regular optimization reviews to identify savings opportunities
+
+---
 
 #### Workload Optimization
 **Core Element:** Ensuring resources match actual requirements, eliminating waste.
@@ -370,6 +407,8 @@ FinOps capabilities represent the specific activities teams perform to implement
 - Creating automation for routine optimization tasks
 - Balancing cost optimization with performance requirements
 
+---
+
 #### Cloud Sustainability
 **Core Element:** Minimizing environmental impact alongside financial costs.
 
@@ -378,6 +417,8 @@ FinOps capabilities represent the specific activities teams perform to implement
 - Selecting regions and services with lower carbon footprints
 - Reporting on environmental impact alongside financial metrics
 - Creating incentives for sustainable cloud architecture
+
+---
 
 #### Licensing & SaaS
 **Core Element:** Managing software costs effectively across cloud environments.
@@ -388,17 +429,19 @@ FinOps capabilities represent the specific activities teams perform to implement
 - Procurement consolidating vendor relationships
 - Regular software utilization reviews
 
+---
+
 ### Manage the FinOps Practice Capabilities
 
 ```
-┌───────────────────────────────────────────────────────────────────────┐
-│                                                                       │
-│  OPERATIONS   →   GOVERNANCE   →   ASSESSMENT   →   TOOLS   →   EDUCATION  │
-│     ⬇️           ⬇️              ⬇️             ⬇️        ⬇️          │
-│  "Run the     "Establish     "Measure        "Enable      "Develop     │
-│   practice"    guardrails"    maturity"       with tech"   skills"      │
-│                                                                       │
-└───────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                                                              │
+│  OPERATIONS   →   GOVERNANCE   →   ASSESSMENT   →   TOOLS   →   EDUCATION    │
+│     ⬇️                ⬇️               ⬇️             ⬇️             ⬇️        │
+│  "Run the          "Establish       "Measure       "Enable       "Develop    │
+│   practice"         guardrails"      maturity"      with tech"    skills"    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
 ```
 
 #### FinOps Practice Operations
@@ -410,6 +453,8 @@ FinOps capabilities represent the specific activities teams perform to implement
 - Building relationships across the organization
 - Measuring and communicating FinOps practice value
 
+---
+
 #### Cloud Policy & Governance
 **Core Element:** Creating guardrails that enable rather than restrict innovation.
 
@@ -418,6 +463,8 @@ FinOps capabilities represent the specific activities teams perform to implement
 - Clear communication of policy rationale and benefits
 - Regular policy reviews and updates based on feedback
 - Balancing control with innovation and agility
+
+---
 
 #### FinOps Assessment
 **Core Element:** Honestly evaluating capabilities to identify improvement opportunities.
@@ -428,6 +475,8 @@ FinOps capabilities represent the specific activities teams perform to implement
 - Creation of specific improvement initiatives
 - Celebration of maturity milestones and progress
 
+---
+
 #### FinOps Tools & Services
 **Core Element:** Enabling teams with the right technology to perform FinOps effectively.
 
@@ -436,6 +485,8 @@ FinOps capabilities represent the specific activities teams perform to implement
 - Training programs for tool adoption and utilization
 - Continuous improvement of tool implementation
 - Regular evaluation of tool effectiveness
+
+---
 
 #### FinOps Education & Enablement
 **Core Element:** Building the knowledge and skills needed for FinOps success.
@@ -482,6 +533,8 @@ FinOps is an iterative process where organizations continuously cycle through th
 
 > **Inform Philosophy:** "In the Inform phase, we create the shared understanding that enables better decisions."
 
+---
+
 ### 📉 Optimize Phase: Rates & Usage
 
 **Focus:** Identifying and implementing opportunities to improve efficiency.
@@ -494,6 +547,8 @@ FinOps is an iterative process where organizations continuously cycle through th
 
 > **Optimize Philosophy:** "In the Optimize phase, we turn insights into action to improve efficiency."
 
+---
+
 ### 🔄 Operate Phase: Continuous Improvement & Culture
 
 **Focus:** Embedding FinOps principles and practices into the organizational culture.
@@ -505,6 +560,8 @@ FinOps is an iterative process where organizations continuously cycle through th
 - Creating accountability mechanisms
 
 > **Operate Philosophy:** "In the Operate phase, we make cost-conscious behavior part of our organizational DNA."
+
+---
 
 ### The FinOps Cycle in Action
 
@@ -528,13 +585,13 @@ FinOps requires collaboration across multiple roles and functions. Each persona 
 ```
 ┌─────────────────────────────────────────────────────┐
 │               CORE FINOPS PERSONAS                  │
-├─────────────┬──────────┬─────────────┬─────────────┤
-│  FINOPS     │          │             │             │
-│ PRACTITIONER│ ENGINEERING │  FINANCE   │ LEADERSHIP │
-├─────────────┼──────────┼─────────────┼─────────────┤
-│  PRODUCT    │          │             │             │
-│             │ PROCUREMENT │    ITSM    │   SECURITY  │
-└─────────────┴──────────┴─────────────┴─────────────┘
+├─────────────┬─────────────┬──────────┬──────────────┤
+│  FINOPS     │             │          │              │
+│ PRACTITIONER│ ENGINEERING │  FINANCE │ LEADERSHIP   │
+├─────────────┼─────────────┼──────────┼──────────────┤
+│  PRODUCT    │             │          │              │
+│             │ PROCUREMENT │    ITSM  │   SECURITY   │
+└─────────────┴─────────────┴──────────┴──────────────┘
 ```
 
 ### Core Personas
@@ -550,6 +607,8 @@ FinOps requires collaboration across multiple roles and functions. Each persona 
 
 > **A Day in the Life:** Sarah, a FinOps Practitioner, starts her day by reviewing overnight cost anomalies, then meets with the ML team to discuss commitment strategies for their GPU workloads. Later, she prepares the monthly executive dashboard, highlighting how recent optimizations have improved unit economics for the company's key services.
 
+---
+
 #### Engineering
 **The Builder:** Creates and manages cloud infrastructure while balancing performance, reliability, and cost.
 
@@ -560,6 +619,8 @@ FinOps requires collaboration across multiple roles and functions. Each persona 
 - Automating optimization activities where possible
 
 > **A Day in the Life:** Miguel, a Senior DevOps Engineer, reviews the team's cost dashboard during morning standup, noting that the test environment costs have increased. He investigates and discovers a configuration issue, implements a fix, and sets up an alert to catch similar issues in the future. Later, he meets with the FinOps team to discuss reserved instance coverage for the production environment.
+
+---
 
 #### Finance
 **The Steward:** Ensures cloud spending aligns with financial plans and delivers appropriate business value.
@@ -572,6 +633,8 @@ FinOps requires collaboration across multiple roles and functions. Each persona 
 
 > **A Day in the Life:** Anika, a Financial Analyst, begins her day reconciling yesterday's AWS charges with internal cost allocations. She notices a discrepancy in the marketing team's spending and works with their technical lead to correct the tagging issue. In the afternoon, she reviews commitment discount opportunities with the FinOps practitioner and updates the quarterly forecast based on new projects starting next month.
 
+---
+
 #### Leadership
 **The Visionary:** Sets strategic direction and creates the conditions for FinOps success.
 
@@ -582,6 +645,8 @@ FinOps requires collaboration across multiple roles and functions. Each persona 
 - Making decisions on major cloud investments
 
 > **A Day in the Life:** Marcus, the CTO, starts his day reviewing the executive cloud dashboard, noting that the new recommendation engine has improved customer engagement while maintaining predicted cost-per-transaction. In his staff meeting, he recognizes the team that reduced their cloud spending by 30% through architecture improvements. Later, he meets with Finance to discuss commitment strategy for the upcoming fiscal year.
+
+---
 
 #### Product
 **The Value Creator:** Defines requirements and priorities that drive cloud usage and spending.
@@ -594,6 +659,8 @@ FinOps requires collaboration across multiple roles and functions. Each persona 
 
 > **A Day in the Life:** Priya, a Product Manager, reviews feature requests with her team, using the cloud cost simulator to estimate the impact of different implementation options. She meets with marketing to discuss the unit economics of their upcoming campaign, then joins the weekly FinOps review to provide context for recent usage increases related to a new feature rollout.
 
+---
+
 #### Procurement
 **The Negotiator:** Secures the best possible terms for cloud services and related software.
 
@@ -604,6 +671,8 @@ FinOps requires collaboration across multiple roles and functions. Each persona 
 - Benchmarking rates against industry standards
 
 > **A Day in the Life:** Carlos, a Procurement Specialist, reviews the FinOps team's recommendations for upcoming reserved instance purchases, then contacts AWS to negotiate terms. He meets with the license management team to discuss upcoming renewals and how they'll integrate with cloud deployments. Later, he updates the cloud vendor management dashboard with current discount rates and commitment coverage.
+
+---
 
 ### Allied Personas
 
@@ -649,6 +718,8 @@ Organizations develop FinOps capabilities at different rates based on their need
 
 > **Crawl Stage Example:** A retail company begins their FinOps journey by implementing basic tagging on cloud resources and creating monthly spending dashboards for each department. They establish a small FinOps team that works with engineering to identify the most obvious optimization opportunities, like unused resources and oversized instances.
 
+---
+
 ### 🏃 Walk: Building Momentum
 
 **Focus:** Expanding adoption and developing consistent processes.
@@ -661,6 +732,8 @@ Organizations develop FinOps capabilities at different rates based on their need
 
 > **Walk Stage Example:** Building on their initial success, the retail company implements automated tagging enforcement and creates customized dashboards for different teams. They establish bi-weekly optimization reviews and develop a commitment strategy for predictable workloads. Engineering teams begin incorporating cost considerations into their architecture decisions, and finance includes cloud costs in their regular forecasting processes.
 
+---
+
 ### 🏆 Run: Achieving Excellence
 
 **Focus:** Optimization becoming second nature throughout the organization.
@@ -672,6 +745,8 @@ Organizations develop FinOps capabilities at different rates based on their need
 - Continuous improvement culture
 
 > **Run Stage Example:** The retail company now has fully automated optimization for many common scenarios, with engineers receiving real-time feedback on the cost impact of their deployments. Unit economics metrics drive product decisions, and cloud financial management is fully integrated with enterprise financial systems. The FinOps team focuses on strategic initiatives and coaching rather than tactical optimizations, which are now handled autonomously by engineering teams.
+
+---
 
 ### Maturity Is a Journey, Not a Destination
 
@@ -689,8 +764,8 @@ Remember these key principles about FinOps maturity:
 As organizations mature their FinOps practice, they often expand beyond public cloud to include other technology spending areas.
 
 ```
-┌──────────────────────────────────────────────┐
-│              FINOPS SCOPES                    │
+┌─────────────────────────────────────────────┐
+│              FINOPS SCOPES                  │
 ├──────────────┬──────────────┬───────────────┤
 │  PUBLIC      │              │               │
 │  CLOUD       │     SAAS     │ DATA CENTER   │
@@ -710,6 +785,8 @@ As organizations mature their FinOps practice, they often expand beyond public c
 
 > **Cloud FinOps in Action:** A media company implements comprehensive tagging, right-sizing automation, and commitment strategies across their AWS, Azure, and GCP environments, reducing their annual cloud spend by 28% while supporting 40% growth in streaming content.
 
+---
+
 ### 📊 Software-as-a-Service (SaaS)
 
 **Focus:** Optimizing the proliferation of subscription-based software services.
@@ -721,6 +798,8 @@ As organizations mature their FinOps practice, they often expand beyond public c
 - Potential for significant duplication
 
 > **SaaS FinOps in Action:** A financial services firm discovers they have five different project management tools being purchased by different departments. By consolidating to a single, enterprise-wide solution, they reduce annual software costs by $380,000 while improving cross-team collaboration.
+
+---
 
 ### 🏢 Data Center
 
@@ -744,9 +823,9 @@ Putting FinOps into practice requires a thoughtful approach tailored to your org
 
 ```
 ┌───────────────────────────────────────────────────────────┐
-│                 FINOPS IMPLEMENTATION                      │
+│                 FINOPS IMPLEMENTATION                     │
 ├───────────────┬───────────────────────┬───────────────────┤
-│  FIRST 30 DAYS │     DAYS 31-60        │    DAYS 61-90     │
+│  FIRST 30 DAYS │     DAYS 31-60        │    DAYS 61-90    │
 ├───────────────┼───────────────────────┼───────────────────┤
 │ Secure        │ Implement basic       │ Begin regular     │
 │ sponsorship   │ reporting             │ optimization      │
@@ -759,6 +838,8 @@ Putting FinOps into practice requires a thoughtful approach tailored to your org
 └───────────────┴───────────────────────┴───────────────────┘
 ```
 
+---
+
 #### First 30 Days: Building the Foundation
 
 **Focus Areas:**
@@ -769,6 +850,8 @@ Putting FinOps into practice requires a thoughtful approach tailored to your org
 - Set initial goals and success metrics
 
 > **Quick Start:** Begin with a cloud cost workshop that brings together key stakeholders from engineering, finance, and product teams to review current cloud spending, identify pain points, and establish shared goals for the FinOps practice.
+
+---
 
 #### Days 31-60: Creating Visibility
 
@@ -781,6 +864,8 @@ Putting FinOps into practice requires a thoughtful approach tailored to your org
 
 > **Early Win:** Focus on "non-production tax"—identifying and optimizing development, testing, and staging environments that often contain significant waste, such as oversized instances and resources running 24/7 when only needed during business hours.
 
+---
+
 #### Days 61-90: Establishing Rhythm
 
 **Focus Areas:**
@@ -791,6 +876,8 @@ Putting FinOps into practice requires a thoughtful approach tailored to your org
 - Celebrate and communicate early successes
 
 > **Building Momentum:** Implement a "FinOps Friday" routine where teams spend time reviewing their cloud costs, identifying optimization opportunities, and sharing successful strategies. Recognize and reward teams that demonstrate cost-conscious behaviors.
+
+---
 
 ### Organizational Models: Finding Your Fit
 
@@ -808,6 +895,8 @@ Different organizational structures can support effective FinOps, depending on y
 
 > **Centralized Example:** A mid-sized software company establishes a three-person FinOps team reporting to the CTO. This team manages all aspects of cloud financial management, from tagging strategy to optimization reviews, serving as a central resource for all cloud-using teams.
 
+---
+
 #### Federated Model
 
 **Structure:** Central FinOps team sets standards, with distributed implementation.
@@ -819,6 +908,8 @@ Different organizational structures can support effective FinOps, depending on y
 - Balance of standardization and flexibility
 
 > **Federated Example:** A global financial services firm establishes a central FinOps Center of Excellence that defines policies, tools, and best practices. Each business unit has dedicated FinOps analysts who implement these standards while adapting to their specific needs and working closely with their engineering teams.
+
+---
 
 #### Community of Practice Model
 
@@ -832,6 +923,8 @@ Different organizational structures can support effective FinOps, depending on y
 
 > **Community Example:** A healthcare technology company forms a FinOps community of practice with representatives from engineering, finance, product, and procurement. They meet bi-weekly to review cloud spending, share optimization strategies, and collaborate on improvement initiatives, while maintaining their primary roles in their home departments.
 
+---
+
 ### Common Challenges and Solutions
 
 Implementing FinOps isn't without hurdles. Here are common challenges and practical solutions:
@@ -844,6 +937,8 @@ Implementing FinOps isn't without hurdles. Here are common challenges and practi
 - Demonstrate value quickly through focused pilot initiatives
 - Use peer examples and benchmarks to create FOMO (fear of missing out)
 
+---
+
 #### Challenge: Resistance to Cultural Change
 
 **People Solution:**
@@ -852,6 +947,8 @@ Implementing FinOps isn't without hurdles. Here are common challenges and practi
 - Create incentives that reward cost-conscious behaviors
 - Start with volunteers and enthusiasts who can become advocates
 
+---
+
 #### Challenge: Siloed Organizations
 
 **People Solution:**
@@ -859,6 +956,8 @@ Implementing FinOps isn't without hurdles. Here are common challenges and practi
 - Develop shared metrics that transcend departmental boundaries
 - Establish clear escalation paths for cross-team issues
 - Use visualization tools that create shared understanding
+
+---
 
 #### Challenge: Technical Complexity
 
@@ -884,6 +983,8 @@ Machine learning will increasingly drive FinOps activities:
 - Pattern recognition across massive datasets
 - Intelligent forecasting based on multiple variables
 
+---
+
 #### Multi-Cloud and Hybrid Management
 
 Organizations will need unified approaches across environments:
@@ -892,6 +993,8 @@ Organizations will need unified approaches across environments:
 - Cross-environment optimization strategies
 - Unified financial management across cloud and on-premises
 
+---
+
 #### Sustainability Integration
 
 Environmental impact will become inseparable from financial management:
@@ -899,6 +1002,8 @@ Environmental impact will become inseparable from financial management:
 - Balancing cost, performance, and sustainability
 - Regulatory compliance for environmental reporting
 - Green cloud provider selection criteria
+
+---
 
 #### FinOps in Enterprise Strategy
 
@@ -940,6 +1045,8 @@ As you embark on or continue your FinOps journey, focus on culture and collabora
 - [ ] Develop commitment management strategy
 - [ ] Create continuous improvement process
 
+---
+
 ### FinOps Terminology Guide
 
 - **Allocation**: Assigning cloud costs to business units, products, or teams
@@ -953,3 +1060,5 @@ As you embark on or continue your FinOps journey, focus on culture and collabora
 - **Showback**: Reporting allocated costs without financial chargeback
 - **Tagging**: Applying metadata to cloud resources for organization and allocation
 - **Unit Economics**: Business-specific metrics connecting cloud costs to value
+
+---
