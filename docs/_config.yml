@@ -3,6 +3,7 @@ remote_theme: zendesk/jekyll-theme-zendesk-garden@main
 baseurl: /tech-pulse
 sidebar:
   - system-design
+  - application-security-checklist
   - enterprise-api-integration-and-management-platform
   - label: Computing Models
     children:
