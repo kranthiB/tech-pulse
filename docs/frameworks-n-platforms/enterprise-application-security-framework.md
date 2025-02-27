@@ -1,7 +1,8 @@
 ---
-id: enterprise-application-security-framework
+id: frameworks-n-platforms/enterprise-application-security-framework
 title: Enterprise Application Security Framework
 sidebar_label: Enterprise Application Security Framework
+next_page: frameworks-n-platforms/enterprise-api-integration-and-management-platform
 ---
 
 # Enterprise Application Security Framework

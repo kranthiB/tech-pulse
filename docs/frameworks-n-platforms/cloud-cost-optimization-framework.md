@@ -1,10 +1,11 @@
 ---
-id: cloud-cost-optimization
+id: frameworks-n-platforms/cloud-cost-optimization-framework
 title: Cloud Cost Optimization
 sidebar_label: Cloud Cost Optimization
+previous_page: frameworks-n-platforms/enterprise-api-integration-and-management-platform
 ---
 
-# Cloud Cost Optimization
+# Cloud Cost Optimization Framework
 
 Table of contents
 =================

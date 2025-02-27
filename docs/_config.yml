@@ -3,8 +3,11 @@ remote_theme: zendesk/jekyll-theme-zendesk-garden@main
 baseurl: /tech-pulse
 sidebar:
   - system-design
-  - enterprise-application-security-framework
-  - enterprise-api-integration-and-management-platform
+  - label: Frameworks & Platforms
+    children:
+      - frameworks-n-platforms/enterprise-application-security-framework
+      - frameworks-n-platforms/enterprise-api-integration-and-management-platform
+      - frameworks-n-platforms/cloud-cost-optimization-framework
   - label: Computing Models
     children:
       - computing-models/cloud-computing
