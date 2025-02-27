@@ -279,6 +279,8 @@ A global manufacturing enterprise with operations in 15 countries transformed it
   - API-enabled integration with suppliers and logistics partners
   - 65% reduction in integration development and maintenance costs
 
+---
+
 ### Pillar 3: Architectural Resilience
 
 Architectural Resilience provides enterprises with a robust foundation that ensures APIs and integrations can maintain performance, availability, and reliability under varying conditions. This pillar addresses the unique challenges of enterprise-scale deployments where downtime or performance degradation can have significant business impact.
