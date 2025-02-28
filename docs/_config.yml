@@ -3,11 +3,36 @@ remote_theme: zendesk/jekyll-theme-zendesk-garden@main
 baseurl: /tech-pulse
 sidebar:
   - system-design
+  - label: Data & AI
+    children:
+      - data-ai/data-foundations
+      - data-ai/conventional-ml
+      - data-ai/deep-learning
+  - label: Generative AI
+    children:
+      - gen-ai/prompt-engineering
+      - gen-ai/llm-tier
+      - gen-ai/rag
+      - gen-ai/ai-driven-software-development
+  - label: Industrial IoT
+    children:
+      - industrial-iot/industrial-iot
+      - industrial-iot/industry-5.0
+      - industrial-iot/edge-gateway      
+  - label: Ops Mastery
+    children:
+      - ops-mastery/dev-sec-ops
+      - ops-mastery/git-ops
+      - ops-mastery/fin-ops
+      - ops-mastery/ml-ops
+      - ops-mastery/ai-ops
+      - ops-mastery/green-ops
   - label: Frameworks & Platforms
     children:
       - frameworks-n-platforms/enterprise-application-security-framework
       - frameworks-n-platforms/enterprise-api-integration-and-management-platform
       - frameworks-n-platforms/cloud-cost-optimization-framework
+  - platform-engineering
   - label: Computing Models
     children:
       - computing-models/cloud-computing
@@ -25,42 +50,4 @@ sidebar:
       - cloud-native/observability-and-analysis
       - cloud-native/provisioning
       - cloud-native/runtime
-  - label: Data & AI
-    children:
-      - label: Data Foundations
-        path: data-ai/data-foundations
-      - label: Conventional ML
-        path: data-ai/conventional-ml
-      - label: Deep Learning
-        path: data-ai/deep-learning
-      - label: Generative AI
-        children:
-          - label: Prompt Engineering
-            path: gen-ai/prompt-engineering
-          - label: LLM Tier
-            path: gen-ai/llm-tier
-          - label: RAG
-            path: gen-ai/rag
-          - label: AI-Driven Software Development
-            path: gen-ai/ai-driven-software-development
-  - label: Ops Mastery
-    children:
-      - ops-mastery/dev-sec-ops
-      - ops-mastery/git-ops
-      - ops-mastery/fin-ops
-      - ops-mastery/ml-ops
-      - ops-mastery/ai-ops
-      - ops-mastery/green-ops
-  - label: GenAI
-    children:
-      - gen-ai/prompt-engineering
-      - gen-ai/llm-tier
-      - gen-ai/rag
-      - gen-ai/ai-driven-software-development
-  - label: Industrial IoT
-    children:
-      - industrial-iot/industrial-iot
-      - industrial-iot/industry-5.0
-      - industrial-iot/edge-gateway
-  - platform-engineering
-  - cloud-cost-optimization
+
