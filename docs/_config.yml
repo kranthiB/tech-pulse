@@ -5,9 +5,23 @@ sidebar:
   - system-design
   - label: Data & AI
     children:
-      - data-ai/data-foundations
-      - data-ai/conventional-ml
-      - data-ai/deep-learning
+      - id: data-ai/data-foundations
+        label: Data Foundations
+      - id: data-ai/conventional-ml
+        label: Conventional ML
+      - id: data-ai/deep-learning
+        label: Deep Learning
+      - id: gen-ai
+        label: Generative AI
+        children:
+          - id: gen-ai/prompt-engineering
+            label: Prompt Engineering
+          - id: gen-ai/llm-tier
+            label: LLM Tier
+          - id: gen-ai/rag
+            label: RAG
+          - id: gen-ai/ai-driven-software-development
+            label: AI-Driven Software Development
   - label: Generative AI
     children:
       - gen-ai/prompt-engineering
