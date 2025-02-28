@@ -154,8 +154,6 @@ GitOps represents the next evolutionary step, adding:
 
 The GitOps architecture consists of three essential components:
 
-![GitOps Components](https://via.placeholder.com/800x400?text=GitOps+Architecture)
-
 1. **Git Repository** (The Source of Truth)
    * Contains declarative infrastructure definitions
    * Maintains complete history of all infrastructure changes
@@ -318,8 +316,6 @@ GitOps delivers substantial benefits that address key enterprise concerns:
 
 #### Pipeline Stages
 
-![CI/CD Pipeline](https://via.placeholder.com/800x200?text=GitOps+Pipeline+Stages)
-
 1. **Validation**: Syntax checking, formatting, policy compliance
 2. **Planning**: Preview of changes (e.g., Terraform plan)
 3. **Approval**: Manual or automated based on risk assessment
@@ -424,8 +420,6 @@ GitOps delivers substantial benefits that address key enterprise concerns:
 ### 7.1 Multi-Environment Management
 
 #### Environment Promotion Strategy
-
-![Environment Promotion](https://via.placeholder.com/800x200?text=GitOps+Environment+Promotion)
 
 * Define consistent promotion paths (Dev → Test → Staging → Production)
 * Implement environment-specific validation
@@ -602,8 +596,6 @@ GitOps delivers substantial benefits that address key enterprise concerns:
 * Create proof-of-concept implementations
 
 ### 10.2 Implementation Phases
-
-![Implementation Phases](https://via.placeholder.com/800x200?text=GitOps+Implementation+Phases)
 
 #### Phase 1: Foundation Building
 * Establish Git repositories for infrastructure
