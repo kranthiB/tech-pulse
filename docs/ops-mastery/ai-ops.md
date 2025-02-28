@@ -8,6 +8,35 @@ next_page: ops-mastery/green-ops
 
 # AIOps: A Comprehensive Enterprise Implementation Guide
 
+```mermaid
+graph LR
+    DS[Data Sources] --> DI[Data Ingestion]
+    DI --> P[Processing]
+    P --> ML[Machine Learning]
+    ML --> AN[Analytics]
+    AN --> VI[Visualization]
+    AN --> AU[Automation]
+    
+    subgraph "AIOps Enterprise Implementation"
+    DI
+    P
+    ML
+    AN
+    VI
+    AU
+    end
+    
+    classDef sources fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    classDef processing fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    classDef intelligence fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
+    classDef action fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    
+    class DS sources
+    class DI,P processing
+    class ML,AN intelligence
+    class VI,AU action
+```
+
 ## 📋 Table of Contents
 
 1. [Introduction to AIOps](#1-introduction-to-aiops)
@@ -175,16 +204,18 @@ Provides interfaces for:
 
 The AIOps data pipeline follows a sequential flow that transforms raw operational data into actionable intelligence:
 
-```
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐  
-│    Data     │    │    Data     │    │    Data     │    
-│ Collection  │ -> │ Preparation │ -> │   Storage   │ 
-└─────────────┘    └─────────────┘    └─────────────┘   
-                                             |
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│   Action    │    │ Insight     │    │    Data     │    
-│ Execution   │ <- │ Generation  │ <- │ Processing  │
-└─────────────┘    └─────────────┘    └─────────────┘    
+```mermaid
+flowchart LR
+    A[Data Collection] --> B[Data Preparation]
+    B --> C[Data Storage]
+    C --> D[Data Processing]
+    D --> E[Insight Generation]
+    E --> F[Action Execution]
+    
+    classDef default fill:#f9f9f9,stroke:#333,stroke-width:1px
+    classDef active fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    
+    class A,B,C,D,E,F active
 ```
 
 #### 1. Data Collection
@@ -255,8 +286,6 @@ The foundation of any effective AIOps implementation is a robust big data infras
 * Data quality monitoring
 * Access control and security
 * Compliance with relevant regulations
-
----
 
 Enterprises typically implement big data infrastructure using either:
 
