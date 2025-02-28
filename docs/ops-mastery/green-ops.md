@@ -7,6 +7,19 @@ previous_page: ops-mastery/ai-ops
 
 # The Comprehensive Guide to GreenOps: Enterprise Sustainability in IT
 
+```mermaid
+graph LR
+    A[IT Operations] --> B[GreenOps]
+    C[Environmental<br>Sustainability] --> B
+    D[Financial<br>Optimization] --> B
+    E[Regulatory<br>Compliance] --> B
+    B --> F[Sustainable<br>Enterprise IT]
+    classDef greenNode fill:#d0f0c0,stroke:#006400,stroke-width:2px;
+    classDef blueNode fill:#c0e0f0,stroke:#00008b,stroke-width:2px;
+    class A,C,D,E blueNode;
+    class B,F greenNode;
+```
+
 > *"The most sustainable energy is the energy we don't use."*
 
 ---
@@ -49,6 +62,26 @@ As defined by Cycloid founder Benjamin Brial:
 ### The GreenOps Ecosystem
 
 GreenOps exists within a broader ecosystem of related disciplines and frameworks:
+
+```mermaid
+graph TD
+    GreenOps((GreenOps))
+    GreenIT[Green IT]
+    FinOps[FinOps]
+    DevOps[DevOps]
+    SRE[Site Reliability<br>Engineering]
+    
+    GreenIT --- GreenOps
+    FinOps --- GreenOps
+    DevOps --- GreenOps
+    SRE --- GreenOps
+    
+    classDef main fill:#1e8449,color:white,stroke:#145a32,stroke-width:2px;
+    classDef related fill:#3498db,color:white,stroke:#2874a6,stroke-width:1px;
+    
+    class GreenOps main;
+    class GreenIT,FinOps,DevOps,SRE related;
+```
 
 - **Green IT**: Focuses on environmentally sustainable computing, covering hardware, software, and IT services.
 - **FinOps**: Manages and optimizes cloud financial operations.
@@ -123,6 +156,19 @@ The regulatory environment for corporate environmental responsibility is rapidly
 
 #### Implementation Timeline for ESRS
 
+```mermaid
+timeline
+    title ESRS Implementation Timeline
+    2024 : Large Listed Companies, Banks, and Insurance Undertakings
+         : More Than 500 Employees
+    2025 : Other Large Companies
+         : Including Non-EU Listed Companies
+    2026 : Listed SMEs
+         : Option to opt-out for two additional years
+    2028 : Non-EU Companies
+         : Generating Over EUR 150 Million in the EU
+```
+
 - **2024**: Large Listed Companies, Banks, and Insurance Undertakings with More Than 500 Employees
 - **2025**: Other Large Companies, Including Non-EU Listed Companies
 - **2026**: Listed SMEs (with the option to opt-out for two additional years)
@@ -176,6 +222,37 @@ Effective GreenOps implementation requires a clear governance structure:
 #### Cross-Functional Teams
 
 A successful GreenOps initiative requires collaboration across multiple departments:
+
+```mermaid
+flowchart TD
+    GreenOps((GreenOps<br>Initiative))
+    IT[IT Operations]
+    Dev[Development]
+    Finance[Finance]
+    Procurement[Procurement]
+    Compliance[Compliance]
+    Sustainability[Sustainability]
+    
+    GreenOps --- IT
+    GreenOps --- Dev
+    GreenOps --- Finance
+    GreenOps --- Procurement
+    GreenOps --- Compliance
+    GreenOps --- Sustainability
+    
+    IT --- |Technical<br>Implementation| GreenOps
+    Dev --- |Sustainable<br>Coding| GreenOps
+    Finance --- |Budget &<br>TCO Analysis| GreenOps
+    Procurement --- |Green<br>Purchasing| GreenOps
+    Compliance --- |Regulatory<br>Alignment| GreenOps
+    Sustainability --- |Strategy<br>Integration| GreenOps
+    
+    classDef center fill:#2ecc71,color:white,stroke:#27ae60,stroke-width:2px;
+    classDef dept fill:#3498db,color:white,stroke:#2980b9,stroke-width:1px;
+    
+    class GreenOps center;
+    class IT,Dev,Finance,Procurement,Compliance,Sustainability dept;
+```
 
 | Department | Role in GreenOps |
 |:-----------|:-----------------|
@@ -255,6 +332,57 @@ For enterprises maintaining on-premises infrastructure:
 #### Multi-Cloud Environmental Strategy
 
 For enterprises operating across multiple cloud providers:
+
+```mermaid
+flowchart TD
+    subgraph central [GreenOps Multi-Cloud Strategy]
+        CM[Carbon<br>Monitoring]
+        WD[Workload<br>Distribution]
+        RS[Regional<br>Selection]
+    end
+    
+    subgraph aws [AWS]
+        A1[US East]
+        A2[EU West]
+        A3[Asia Pacific]
+    end
+    
+    subgraph azure [Azure]
+        B1[North Europe]
+        B2[West US]
+        B3[Southeast Asia]
+    end
+    
+    subgraph gcp [GCP]
+        C1[Belgium]
+        C2[Iowa]
+        C3[Tokyo]
+    end
+    
+    CM --> aws
+    CM --> azure
+    CM --> gcp
+    
+    WD --> A1
+    WD --> B1
+    WD --> C1
+    
+    RS --> A2
+    RS --> B2
+    RS --> C2
+    
+    classDef greenregion fill:#c8e6c9,stroke:#4caf50,stroke-width:1px;
+    classDef yellowregion fill:#fff9c4,stroke:#ffeb3b,stroke-width:1px;
+    classDef redregion fill:#ffcdd2,stroke:#f44336,stroke-width:1px;
+    classDef strategy fill:#bbdefb,stroke:#2196f3,stroke-width:2px;
+    classDef cloud fill:#f5f5f5,stroke:#9e9e9e,stroke-width:1px;
+    
+    class A1,A3,B2,C3 redregion;
+    class A2,B3,C2 yellowregion;
+    class B1,C1 greenregion;
+    class CM,WD,RS strategy;
+    class aws,azure,gcp cloud;
+```
 
 - **Provider Selection**: Considering the environmental credentials of different cloud providers
 - **Regional Selection**: Choosing data center regions powered by renewable energy
@@ -368,6 +496,62 @@ For enterprises operating across multiple cloud providers:
 
 Key elements for leadership visibility:
 
+```mermaid
+graph TD
+    subgraph Executive_Dashboard [Executive GreenOps Dashboard]
+        A[Carbon<br>Emissions]
+        B[Cost<br>Metrics]
+        C[Resource<br>Efficiency]
+        D[Compliance<br>Status]
+    end
+    
+    subgraph Key_Metrics
+        A1[Total: 1,250 tCO2e]
+        A2[Per User: 0.42 tCO2e]
+        A3[YoY Change: -15%]
+        
+        B1[Cloud Spend: $3.2M]
+        B2[Energy Costs: $850K]
+        B3[Waste Reduction: 22%]
+        
+        C1[Server Utilization: 68%]
+        C2[Storage Efficiency: 73%]
+        C3[Network Optimization: 65%]
+        
+        D1[ESRS: 92% Ready]
+        D2[SEC: 87% Ready]
+        D3[Risk Level: Low]
+    end
+    
+    A --> A1
+    A --> A2
+    A --> A3
+    
+    B --> B1
+    B --> B2
+    B --> B3
+    
+    C --> C1
+    C --> C2
+    C --> C3
+    
+    D --> D1
+    D --> D2
+    D --> D3
+    
+    classDef dashboard fill:#e8f5e9,stroke:#81c784,stroke-width:2px;
+    classDef metrics fill:#f1f8e9,stroke:#aed581,stroke-width:1px;
+    classDef good fill:#c8e6c9,stroke:#4caf50,stroke-width:1px;
+    classDef warning fill:#fff9c4,stroke:#ffeb3b,stroke-width:1px;
+    classDef attention fill:#ffccbc,stroke:#ff8a65,stroke-width:1px;
+    
+    class Executive_Dashboard dashboard;
+    class Key_Metrics metrics;
+    class A1,A3,B3,D3 good;
+    class C1,C2,C3,D1,D2 warning;
+    class A2,B1,B2 attention;
+```
+
 - **Sustainability Scorecard**: High-level view of environmental performance
 - **Trend Analysis**: Directional indicators for key metrics
 - **Benchmark Comparisons**: Performance relative to industry standards
@@ -456,6 +640,45 @@ Detailed views for implementation teams:
 
 When evaluating GreenOps tools, enterprises should consider:
 
+```mermaid
+flowchart TD
+    Start[Tool Selection<br>Process] --> A
+    
+    A{Integration<br>Capabilities} -->|High| B
+    A -->|Medium| B
+    A -->|Low| Reject1[Reconsider]
+    
+    B{Data<br>Granularity} -->|Detailed| C
+    B -->|Basic| C
+    B -->|Insufficient| Reject2[Reconsider]
+    
+    C{Actionability} -->|High| D
+    C -->|Medium| D
+    C -->|Low| Reject3[Reconsider]
+    
+    D{Enterprise<br>Readiness} -->|Production Ready| E
+    D -->|Maturing| E
+    D -->|Early Stage| Reject4[Reconsider]
+    
+    E{TCO} -->|Favorable| F
+    E -->|Acceptable| F
+    E -->|Prohibitive| Reject5[Reconsider]
+    
+    F{Vendor<br>Sustainability} -->|Strong| Select[Implement<br>Solution]
+    F -->|Moderate| Select
+    F -->|Poor| Reject6[Reconsider]
+    
+    classDef process fill:#d1c4e9,stroke:#7e57c2,stroke-width:2px;
+    classDef decision fill:#bbdefb,stroke:#2196f3,stroke-width:2px;
+    classDef reject fill:#ffcdd2,stroke:#e57373,stroke-width:2px;
+    classDef select fill:#c8e6c9,stroke:#66bb6a,stroke-width:2px;
+    
+    class Start process;
+    class A,B,C,D,E,F decision;
+    class Reject1,Reject2,Reject3,Reject4,Reject5,Reject6 reject;
+    class Select select;
+```
+
 1. **Integration Capabilities**: Compatibility with existing systems and workflows
 2. **Data Granularity**: Level of detail in measurements and reporting
 3. **Actionability**: Practical recommendations vs. pure analytics
@@ -543,6 +766,29 @@ When evaluating GreenOps tools, enterprises should consider:
 
 ### Assessment Phase
 
+```mermaid
+gantt
+    title GreenOps Assessment Phase
+    dateFormat  YYYY-MM-DD
+    section Environmental Baseline
+    Inventory IT Assets           :a1, 2025-01-01, 30d
+    Measure Current Impact        :a2, after a1, 45d
+    Identify Hotspots            :a3, after a2, 15d
+    Gap Analysis                 :a4, after a3, 21d
+    
+    section Organizational Readiness
+    Stakeholder Mapping          :b1, 2025-01-15, 21d
+    Skills Assessment            :b2, after b1, 30d
+    Cultural Evaluation          :b3, after b2, 21d
+    Resistance Analysis          :b4, after b3, 14d
+    
+    section Strategy Development
+    Vision and Objectives        :c1, 2025-04-01, 30d
+    Align with Business Strategy :c2, after c1, 21d
+    Create Business Case         :c3, after c2, 30d
+    Executive Alignment          :c4, after c3, 14d
+```
+
 #### Environmental Baseline
 
 1. **Inventory IT Assets**: Catalog all hardware, software, and cloud resources
@@ -619,6 +865,64 @@ Fundamental changes requiring significant investment:
 
 #### Maturity Model Progression
 
+```mermaid
+graph TD
+    L1[Level 1:<br>Initial] --> L2[Level 2:<br>Managed]
+    L2 --> L3[Level 3:<br>Defined]
+    L3 --> L4[Level 4:<br>Quantitative]
+    L4 --> L5[Level 5:<br>Optimizing]
+    
+    subgraph level1 [Level 1 Characteristics]
+        L1C1[Ad-hoc<br>initiatives]
+        L1C2[Limited<br>measurement]
+        L1C3[Isolated<br>efforts]
+    end
+    
+    subgraph level2 [Level 2 Characteristics]
+        L2C1[Formal<br>program]
+        L2C2[Consistent<br>measurement]
+        L2C3[Standard<br>tools]
+    end
+    
+    subgraph level3 [Level 3 Characteristics]
+        L3C1[Integrated<br>processes]
+        L3C2[Comprehensive<br>metrics]
+        L3C3[Enterprise<br>adoption]
+    end
+    
+    subgraph level4 [Level 4 Characteristics]
+        L4C1[Predictive<br>capabilities]
+        L4C2[Advanced<br>analytics]
+        L4C3[Automated<br>optimization]
+    end
+    
+    subgraph level5 [Level 5 Characteristics]
+        L5C1[Continuous<br>innovation]
+        L5C2[Industry<br>leadership]
+        L5C3[Carbon<br>negative]
+    end
+    
+    L1 --- level1
+    L2 --- level2
+    L3 --- level3
+    L4 --- level4
+    L5 --- level5
+    
+    classDef level fill:#e3f2fd,stroke:#90caf9,stroke-width:2px;
+    classDef l1 fill:#ffcdd2,stroke:#ef9a9a,stroke-width:1px;
+    classDef l2 fill:#fff9c4,stroke:#fff59d,stroke-width:1px;
+    classDef l3 fill:#c8e6c9,stroke:#a5d6a7,stroke-width:1px;
+    classDef l4 fill:#bbdefb,stroke:#90caf9,stroke-width:1px;
+    classDef l5 fill:#d1c4e9,stroke:#b39ddb,stroke-width:1px;
+    
+    class L1,L2,L3,L4,L5 level;
+    class level1,L1C1,L1C2,L1C3 l1;
+    class level2,L2C1,L2C2,L2C3 l2;
+    class level3,L3C1,L3C2,L3C3 l3;
+    class level4,L4C1,L4C2,L4C3 l4;
+    class level5,L5C1,L5C2,L5C3 l5;
+```
+
 | Maturity Level | Characteristics | Focus Areas |
 |:---------------|:---------------|:------------|
 | **Level 1: Initial** | Ad-hoc initiatives, limited measurement | Basic awareness, simple optimizations |
@@ -670,3 +974,39 @@ As computing continues to expand its role in global business, the environmental 
 ---
 
 > *"The greatest threat to our planet is the belief that someone else will save it."* — Robert Swan
+
+```mermaid
+sankey-beta
+    title GreenOps Impact Flows
+    
+    GreenOps Initiatives [385] Infrastructure Optimization
+    GreenOps Initiatives [270] Software Efficiency
+    GreenOps Initiatives [195] Data Management
+    GreenOps Initiatives [150] Cultural Change
+    
+    Infrastructure Optimization [220] Energy Reduction
+    Infrastructure Optimization [120] Cost Savings
+    Infrastructure Optimization [45] Performance Improvements
+    
+    Software Efficiency [140] Resource Optimization
+    Software Efficiency [80] Enhanced User Experience
+    Software Efficiency [50] Development Productivity
+    
+    Data Management [110] Storage Reduction
+    Data Management [85] Data Value Increase
+    
+    Cultural Change [90] Employee Engagement
+    Cultural Change [60] Innovation Opportunities
+    
+    Energy Reduction [140] Carbon Footprint Reduction
+    Cost Savings [80] Financial Benefits
+    Resource Optimization [90] Environmental Impact
+    Storage Reduction [70] Environmental Impact
+    
+    Carbon Footprint Reduction [140] Sustainability Goals
+    Financial Benefits [80] Business Performance
+    Environmental Impact [160] Sustainability Goals
+    
+    Sustainability Goals [200] Enterprise Value
+    Business Performance [80] Enterprise Value
+```
