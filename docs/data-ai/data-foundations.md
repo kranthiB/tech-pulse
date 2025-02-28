@@ -1583,7 +1583,7 @@ Roles and workflows for maintenance:
   | **Trusted/Silver** | • Validated and cleansed data<br>• Standardized formats<br>• Domain organization | • Quality-checked<br>• Consistent schemas<br>• Linked entities | • Data engineering<br>• Domain analytics<br>• Application integration |
   | **Refined/Gold** | • Business-ready datasets<br>• Purpose-built views<br>• Performance-optimized | • Aggregated metrics<br>• Enriched content<br>• Consumer-specific formats | • Business intelligence<br>• Self-service analytics<br>• Application consumption |
 
-- **Storage Technologies**
+**Storage Technologies**
 
   | Technology | Characteristics | Best For | Limitations |
   |------------|-----------------|----------|------------|

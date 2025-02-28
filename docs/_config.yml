@@ -27,15 +27,22 @@ sidebar:
       - cloud-native/runtime
   - label: Data & AI
     children:
-      - data-ai/data-foundations
-      - data-ai/conventional-ml
-      - data-ai/deep-learning
+      - label: Data Foundations
+        path: data-ai/data-foundations
+      - label: Conventional ML
+        path: data-ai/conventional-ml
+      - label: Deep Learning
+        path: data-ai/deep-learning
       - label: Generative AI
         children:
-          - gen-ai/prompt-engineering
-          - gen-ai/llm-tier
-          - gen-ai/rag
-          - gen-ai/ai-driven-software-development
+          - label: Prompt Engineering
+            path: gen-ai/prompt-engineering
+          - label: LLM Tier
+            path: gen-ai/llm-tier
+          - label: RAG
+            path: gen-ai/rag
+          - label: AI-Driven Software Development
+            path: gen-ai/ai-driven-software-development
   - label: Ops Mastery
     children:
       - ops-mastery/dev-sec-ops
