@@ -1,4 +1,3 @@
-
 ---
 id: data-ai/data-foundations
 title: Data Foundations
