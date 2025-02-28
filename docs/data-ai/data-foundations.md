@@ -158,12 +158,12 @@ Enterprise data governance establishes accountability for data assets through:
 The contemporary enterprise data ecosystem typically comprises interconnected layers:
 
 ```mermaid
-graph TD
+flowchart TD
     subgraph "Modern Data Stack"
-    A[SOURCE SYSTEMS<br>Operational DBs | SaaS Applications | IoT | External Data] --> B[INTEGRATION LAYER<br>ETL/ELT Tools | Data Pipelines | Event Streams]
-    B --> C[STORAGE LAYER<br>Data Warehouses | Data Lakes | Lake Houses]
-    C --> D[PROCESSING LAYER<br>Query Engines | Compute Frameworks | ML Services]
-    D --> E[CONSUMPTION LAYER<br>BI Tools | Dashboards | Analytics | ML/AI | Applications]
+    A["SOURCE SYSTEMS<br>Operational DBs / SaaS Applications / IoT / External Data"] --> B["INTEGRATION LAYER<br>ETL/ELT Tools / Data Pipelines / Event Streams"]
+    B --> C["STORAGE LAYER<br>Data Warehouses / Data Lakes / Lake Houses"]
+    C --> D["PROCESSING LAYER<br>Query Engines / Compute Frameworks / ML Services"]
+    D --> E["CONSUMPTION LAYER<br>BI Tools / Dashboards / Analytics / ML/AI / Applications"]
     end
     
     style A fill:#f5f5f5,stroke:#333
@@ -709,7 +709,7 @@ Enterprise approach to systematic query optimization:
 
 #### Transaction Management
 
-- **Isolation Levels**
+**Isolation Levels**
 
   | Level | Description | Use Cases | Trade-offs |
   |-------|-------------|-----------|------------|
@@ -719,7 +719,7 @@ Enterprise approach to systematic query optimization:
   | **Serializable** | Prevents all concurrency phenomena | • Financial transactions<br>• Regulatory compliance | • Lowest concurrency<br>• Highest blocking<br>• Performance impact |
   | **Snapshot** | Point-in-time consistent view | • Reporting during OLTP<br>• Long-running reads | • Tempdb usage<br>• Version store growth<br>• Potential update conflicts |
 
-- **Locking Mechanisms**
+**Locking Mechanisms**
   - Pessimistic concurrency control
     - Shared locks (read)
     - Exclusive locks (write)
@@ -730,7 +730,7 @@ Enterprise approach to systematic query optimization:
     - Timestamp ordering
     - Multi-version concurrency control (MVCC)
 
-- **Deadlock Detection and Prevention**
+**Deadlock Detection and Prevention**
   - Detection algorithms
     - Wait-for graph analysis
     - Timeout-based detection
@@ -742,7 +742,7 @@ Enterprise approach to systematic query optimization:
     - Minimizing lock duration
     - Application-level prevention
 
-- **Distributed Transactions**
+**Distributed Transactions**
   - Two-phase commit protocol
     - Prepare phase
     - Commit phase
@@ -756,7 +756,7 @@ Enterprise approach to systematic query optimization:
 
 #### High Availability and Scaling
 
-- **Replication Architectures**
+**Replication Architectures**
   - Synchronous replication
     - Transaction consistency
     - Performance impact
@@ -768,7 +768,7 @@ Enterprise approach to systematic query optimization:
     - Geographic distribution
     - Reduced network dependency
 
-- **Clustering Approaches**
+**Clustering Approaches**
   - Active-passive clustering
     - Standby server readiness
     - Failover mechanisms
@@ -780,7 +780,7 @@ Enterprise approach to systematic query optimization:
     - Conflict resolution
     - Connection management
 
-- **Sharding Strategies**
+**Sharding Strategies**
   - Range-based sharding
     - Natural data boundaries
     - Uneven distribution risk
@@ -797,7 +797,7 @@ Enterprise approach to systematic query optimization:
     - Routing layer requirement
     - Adaptive distribution
 
-- **Load Balancing**
+**Load Balancing**
   - Connection-level distribution
     - Round-robin allocation
     - Least-connection routing
@@ -809,7 +809,7 @@ Enterprise approach to systematic query optimization:
     - Workload-aware routing
     - Service-level enforcement
 
-- **Global Distribution**
+**Global Distribution**
   - Multi-region deployment patterns
     - Active-active regions
     - Region failover hierarchy
@@ -1194,7 +1194,7 @@ Techniques for handling historical changes:
   - Implementation: Scheduled aggregation processes
   - Best practices: Transparent query routing
 
-- **Fact Table Types by Temporal Pattern**
+**Fact Table Types by Temporal Pattern**
 
   | Type | Characteristics | Updates | Use Cases |
   |------|-----------------|---------|-----------|
@@ -1548,7 +1548,7 @@ Roles and workflows for maintenance:
 
 #### Data Lake Architecture
 
-- **Components**
+**Components**
 
   ```
   ┌───────────────────────────────────────┐
@@ -1575,7 +1575,7 @@ Roles and workflows for maintenance:
   └───────────────────────────────────────┘
   ```
 
-- **Zone-based Design**
+**Zone-based Design**
 
   | Zone | Purpose | Data Characteristics | Access Patterns |
   |------|---------|----------------------|-----------------|
@@ -1591,7 +1591,7 @@ Roles and workflows for maintenance:
   | **S3/Azure Blob/GCS** | • Object storage<br>• Unlimited scale<br>• Cost-effective | • Cloud data lakes<br>• Variable workloads<br>• Long-term storage | • No data locality<br>• Potential latency<br>• Access control complexity |
   | **Delta Lake/Iceberg/Hudi** | • ACID transactions<br>• Schema enforcement<br>• Time travel | • Lakehouse architecture<br>• Mixed workloads<br>• Schema evolution | • Processing overhead<br>• Tool ecosystem limitations<br>• Complexity |
 
-- **Enterprise Implementation Patterns**
+**Enterprise Implementation Patterns**
 
   - Business-driven organization
     - Domain alignment
@@ -1615,7 +1615,7 @@ Roles and workflows for maintenance:
 
 #### Data Warehouse Architecture
 
-- **Kimball vs. Inmon Methodologies**
+**Kimball vs. Inmon Methodologies**
 
   | Aspect | Kimball Approach | Inmon Approach |
   |--------|------------------|----------------|
@@ -1627,7 +1627,7 @@ Roles and workflows for maintenance:
   | **Primary Audience** | Business users | IT and data specialists |
   | **Flexibility** | Business process adaptation | Enterprise data consistency |
 
-- **Layered Architecture**
+**Layered Architecture**
 
   ```
   ┌────────────────────────────────────────────┐
@@ -1651,7 +1651,7 @@ Roles and workflows for maintenance:
   └────────────────────────────────────────────┘
   ```
 
-- **ETL Frameworks**
+**ETL Frameworks**
 
   - Batch processing design
     - Sequential dependencies
@@ -1667,7 +1667,7 @@ Roles and workflows for maintenance:
     - Fact table loading
     - Exception handling
 
-- **Enterprise Data Warehouse Patterns**
+**Enterprise Data Warehouse Patterns**
 
   | Pattern | Description | Advantages | Challenges |
   |---------|-------------|------------|------------|
@@ -1676,7 +1676,7 @@ Roles and workflows for maintenance:
   | **Virtual** | • Logical data warehouse<br>• Query federation<br>• Minimal physical consolidation | • Reduced data movement<br>• Source system utilization<br>• Faster implementation | • Performance limitations<br>• Source system impact<br>• Complex query optimization |
   | **Hybrid** | • Combined approaches<br>• Selective centralization<br>• Tiered architecture | • Balanced methodology<br>• Pragmatic implementation<br>• Evolutionary approach | • Design complexity<br>• Clear boundaries needed<br>• Governance model challenges |
 
-- **Cloud Data Warehouse Considerations**
+**Cloud Data Warehouse Considerations**
 
   | Platform | Key Features | Enterprise Considerations |
   |----------|-------------|----------------------------|
@@ -1711,7 +1711,7 @@ Convergence of data lake and warehouse capabilities:
 └───────────────────────────────────────────────┘
 ```
 
-- **Core Principles**
+**Core Principles**
 
   - Schema enforcement and evolution
     - Declarative schemas
@@ -1732,7 +1732,7 @@ Convergence of data lake and warehouse capabilities:
     - Query optimization
     - Compute isolation
 
-- **Implementation Technologies**
+**Implementation Technologies**
 
   | Technology | Key Features | Enterprise Considerations |
   |------------|-------------|----------------------------|
@@ -1740,7 +1740,7 @@ Convergence of data lake and warehouse capabilities:
   | **Apache Iceberg** | • Schema evolution<br>• Hidden partitioning<br>• Immutable file format<br>• Multi-engine support | • Engine compatibility<br>• Vendor-neutral approach<br>• Integration complexity |
   | **Apache Hudi** | • Upsert support<br>• Incremental processing<br>• Stream processing<br>• Snapshot isolation | • Real-time use cases<br>• Ecosystem integration<br>• Operational complexity |
 
-- **Enterprise Adoption Considerations**
+**Enterprise Adoption Considerations**
 
   - Skills and capabilities
     - Data engineering expertise
@@ -1766,7 +1766,7 @@ Convergence of data lake and warehouse capabilities:
 
 Decentralized, domain-oriented data approach:
 
-- **Core Principles**
+**Core Principles**
 
   - Domain ownership
     - Business-aligned data domains
@@ -1795,7 +1795,7 @@ Decentralized, domain-oriented data approach:
     - Cross-domain policies
     - Distributed enforcement
 
-- **Organizational Alignment**
+**Organizational Alignment**
 
   - Structure changes
     - Domain-oriented teams
@@ -1811,7 +1811,7 @@ Decentralized, domain-oriented data approach:
     - Cross-functional teams
     - Collaborative governance
 
-- **Technical Enablers**
+**Technical Enablers**
 
   - Federation technologies
     - API management
@@ -1827,7 +1827,7 @@ Decentralized, domain-oriented data approach:
     - Interoperability patterns
     - Security models
 
-- **Enterprise Transformation**
+**Enterprise Transformation**
 
   - Change management considerations
     - Cultural transformation
@@ -1845,7 +1845,7 @@ Decentralized, domain-oriented data approach:
 
 #### Lambda and Kappa Architectures
 
-- **Lambda Architecture**
+**Lambda Architecture**
 
     ```
     ┌─────────────────┐
@@ -1897,7 +1897,7 @@ Decentralized, domain-oriented data approach:
     - Unified access interface
     - Performance tuning
 
-- **Kappa Architecture**
+**Kappa Architecture**
 
   ```
   ┌─────────────────┐
@@ -1927,7 +1927,7 @@ Decentralized, domain-oriented data approach:
     - Simplified operations
     - Unified programming model
 
-- **Implementation Technologies**
+**Implementation Technologies**
 
   | Component | Technologies | Enterprise Considerations |
   |-----------|-------------|----------------------------|
@@ -1936,7 +1936,7 @@ Decentralized, domain-oriented data approach:
   | **Serving Layer** | Cassandra, HBase, Redis, Elasticsearch, Cloud Bigtable | • Query patterns<br>• Response time<br>• Scalability needs |
   | **Event Storage** | Kafka, Pulsar, Kinesis, EventHubs | • Retention period<br>• Throughput requirements<br>• Partitioning strategy |
 
-- **Enterprise Considerations**
+**Enterprise Considerations**
 
   - Architectural selection
     - Data complexity assessment
@@ -2284,7 +2284,7 @@ Enterprise decision factors:
     - Priority processing
     - Buffering policies
 
-- **Enterprise Streaming Technologies**
+**Enterprise Streaming Technologies**
 
   | Technology | Key Features | Enterprise Considerations |
   |------------|-------------|----------------------------|
@@ -2828,10 +2828,10 @@ The data ecosystem continues to evolve rapidly, with emerging approaches address
 Evolution toward integrated data environments:
 
 ```mermaid
-graph TD
-    SL[Storage Layer<br>Object Storage | HDFS | Optimized Formats] --> ML[Lakehouse Metadata Layer<br>Schema | Transactions | Versioning | Lineage]
-    ML --> PL[Processing Layer<br>SQL Engines | Spark | ML Frameworks | Streaming]
-    PL --> CL[Consumption Layer<br>SQL Analytics | ML | BI Tools | Applications]
+flowchart TD
+    SL["Storage Layer<br>Object Storage / HDFS / Optimized Formats"] --> ML["Lakehouse Metadata Layer<br>Schema / Transactions / Versioning / Lineage"]
+    ML --> PL["Processing Layer<br>SQL Engines / Spark / ML Frameworks / Streaming"]
+    PL --> CL["Consumption Layer<br>SQL Analytics / ML / BI Tools / Applications"]
     
     style SL fill:#d0e9c6,stroke:#3c763d
     style ML fill:#d9edf7,stroke:#337ab7

@@ -30,10 +30,12 @@ sidebar:
       - data-ai/data-foundations
       - data-ai/conventional-ml
       - data-ai/deep-learning
-      - gen-ai/prompt-engineering
-      - gen-ai/llm-tier
-      - gen-ai/rag
-      - gen-ai/ai-driven-software-development
+      - label: Generative AI
+        children:
+          - gen-ai/prompt-engineering
+          - gen-ai/llm-tier
+          - gen-ai/rag
+          - gen-ai/ai-driven-software-development
   - label: Ops Mastery
     children:
       - ops-mastery/dev-sec-ops
