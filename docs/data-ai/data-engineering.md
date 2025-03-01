@@ -3,7 +3,7 @@ id: data-ai/data-engineering
 title: Data Engineering
 sidebar_label: Data Engineering
 previous_page: data-ai/data-foundations
-next_page: data-ai/conventional-ml
+next_page: data-ai/data-analysis
 ---
 
 # Comprehensive Guide to Data Engineering: Concepts, Technologies, and Best Practices
