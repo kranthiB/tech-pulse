@@ -156,17 +156,17 @@ When selecting algorithms, consider:
 For example, SVM or t-SNE will struggle with very large datasets due to their O(n³) and O(n²) complexity respectively, while linear models scale better with sample size.
 
 ```mermaid
-graph LR
+flowchart LR
     A[Algorithm Selection] --> B[Dataset Size]
     A --> C[Computational Resources]
     A --> D[Inference Speed Requirements]
     A --> E[Retraining Frequency]
-    B --> F[Small: <10K samples]
-    B --> G[Medium: 10K-1M samples]
-    B --> H[Large: >1M samples]
+    B --> F["Small: <10K samples"]
+    B --> G["Medium: 10K-1M samples"]
+    B --> H["Large: >1M samples"]
     F --> I[Any Algorithm]
-    G --> J[Avoid O(n²) or worse]
-    H --> K[Use O(n) or O(n log n)]
+    G --> J["Avoid O(n²) or worse"]
+    H --> K["Use O(n) or O(n log n)"]
 ```
 
 ---
@@ -539,7 +539,7 @@ Statistical models assume a data generation process, making knowledge of probabi
 | **Weibull** | Models waiting time for events | Time-to-failure analysis |
 
 ```mermaid
-graph TD
+flowchart TD
     A[Probability Distributions] --> B[Discrete]
     A --> C[Continuous]
     
@@ -552,8 +552,8 @@ graph TD
     C --> I[Gamma]
     C --> J[Beta]
     C --> K[Uniform]
-    C --> L[Log-Normal]
-    C --> M[Student's t]
+    C --> L["Log-Normal"]
+    C --> M["Student's t"]
     C --> N[Weibull]
     
     D --> O[Binary outcomes]
@@ -563,9 +563,9 @@ graph TD
     G --> R[Symmetric, unbounded]
     H --> S[Time between events]
     I --> T[Waiting time for multiple events]
-    J --> U[Probabilities [0,1]]
+    J --> U["Probabilities [0,1]"]
     K --> V[Equal probability]
-    L --> W[Positive, right-skewed]
+    L --> W["Positive, right-skewed"]
     M --> X[Heavier tails than normal]
     N --> Y[Failure rate modeling]
 ```
@@ -781,15 +781,15 @@ Cyclical features (like hour-of-day, day-of-week, month) require special encodin
 - Distance between adjacent values should be equal
 
 ```mermaid
-graph TD
+flowchart TD
     A[Cyclical Feature Encoding] --> B[Standard Encoding Problem]
     A --> C[Trigonometric Solution]
     
     B --> D[Hours 23 and 0 appear far apart]
-    B --> E[Doesn't preserve circular nature]
+    B --> E["Doesn't preserve circular nature"]
     
-    C --> F[sin_x = sin(2π * x / max_value)]
-    C --> G[cos_x = cos(2π * x / max_value)]
+    C --> F["sin_x = sin(2π * x / max_value)"]
+    C --> G["cos_x = cos(2π * x / max_value)"]
     
     F --> H[Creates two new features]
     G --> H
@@ -1422,20 +1422,20 @@ Interactive Sankey diagrams provide an elegant way to visualize and prune decisi
 
 ```mermaid
 sankey-beta
-    Root [3000 samples] --> Feature1_left [1200 samples]
-    Root --> Feature1_right [1800 samples]
-    Feature1_left --> Feature2_left [500 samples]
-    Feature1_left --> Feature2_right [700 samples]
-    Feature1_right --> Feature3_left [1100 samples]
-    Feature1_right --> Feature3_right [700 samples]
-    Feature2_left --> Leaf1 [200 samples]
-    Feature2_left --> Leaf2 [300 samples]
-    Feature2_right --> Leaf3 [400 samples]
-    Feature2_right --> Leaf4 [300 samples]
-    Feature3_left --> Leaf5 [600 samples]
-    Feature3_left --> Leaf6 [500 samples]
-    Feature3_right --> Leaf7 [300 samples]
-    Feature3_right --> Leaf8 [400 samples]
+    Root, 3000 --> Feature1_left, 1200
+    Root, 3000 --> Feature1_right, 1800
+    Feature1_left, 1200 --> Feature2_left, 500
+    Feature1_left, 1200 --> Feature2_right, 700
+    Feature1_right, 1800 --> Feature3_left, 1100
+    Feature1_right, 1800 --> Feature3_right, 700
+    Feature2_left, 500 --> Leaf1, 200
+    Feature2_left, 500 --> Leaf2, 300
+    Feature2_right, 700 --> Leaf3, 400
+    Feature2_right, 700 --> Leaf4, 300
+    Feature3_left, 1100 --> Leaf5, 600
+    Feature3_left, 1100 --> Leaf6, 500
+    Feature3_right, 700 --> Leaf7, 300
+    Feature3_right, 700 --> Leaf8, 400
 ```
 
 This visualization helps quickly determine optimal tree depth and identify unnecessary splits.
@@ -1967,14 +1967,14 @@ Understanding these categories helps in selecting the appropriate algorithm for 
 Without labeled data, evaluating clustering quality requires intrinsic measures. These metrics help determine the optimal number of clusters and assess overall clustering quality:
 
 ```mermaid
-graph LR
+flowchart LR
     A[Clustering Evaluation] --> B[Silhouette Coefficient]
     A --> C[Calinski-Harabasz Index]
     A --> D[Density-Based Clustering Validation]
     
     B --> E[Measures fit within cluster vs. nearby clusters]
     B --> F[Range: -1 to 1, higher is better]
-    B --> G[O(n²) complexity]
+    B --> G["O(n²) complexity"]
     
     C --> H[Ratio of between to within-cluster variance]
     C --> I[Higher values = better clustering]
@@ -2113,11 +2113,11 @@ Standard KMeans has a runtime bottleneck in finding the nearest centroid for eac
 - Provides GPU acceleration for further speedup
 
 ```mermaid
-graph TD
+flowchart TD
     A[K-Means Acceleration] --> B[Exhaustive Search Bottleneck]
     A --> C[Faiss Solution]
     
-    B --> D[O(nk) comparisons]
+    B --> D["O(nk) comparisons"]
     B --> E[Slow for large datasets]
     
     C --> F[Approximate Nearest Neighbor]
@@ -2212,7 +2212,7 @@ flowchart TD
     A[Density-Based Clustering] --> B[DBSCAN]
     A --> C[DBSCAN++]
     
-    B --> D[O(n²) complexity]
+    B --> D["O(n²) complexity"]
     B --> E[Full density computation]
     
     C --> F[Sample-based approach]
@@ -2548,8 +2548,8 @@ When true labels aren't immediately available, proxy-labeling techniques can hel
 
 ```mermaid
 flowchart TD
-    A[Training Dataset] --> B[Label as "old"]
-    C[Current Dataset] --> D[Label as "current"]
+    A[Training Dataset] --> B["Label as 'old'"]
+    C[Current Dataset] --> D["Label as 'current'"]
     
     B --> E[Combined Dataset]
     D --> E
@@ -2651,7 +2651,7 @@ flowchart TD
     A --> C[Approximate Search]
     
     B --> D[Compare to all points]
-    D --> E[O(nd) complexity]
+    D --> E["O(nd) complexity"]
     
     C --> F[Inverted File Index]
     F --> G[Indexing Phase]
@@ -2662,7 +2662,7 @@ flowchart TD
     
     H --> K[Find closest partition]
     K --> L[Search only within partition]
-    L --> M[O(k + n/k) complexity]
+    L --> M["O(k + n/k) complexity"]
 ```
 
 #### Inverted File Index (IVF) Solution
@@ -2700,20 +2700,20 @@ This approach enables kNN on massive datasets with minimal accuracy loss, making
 The kernel trick is a fundamental concept in machine learning that allows algorithms to operate in high-dimensional spaces without explicitly computing coordinates in that space:
 
 ```mermaid
-graph TD
+flowchart TD
     A[Kernel Trick] --> B[Problem: Linear Separability]
     B --> C[Solution: Transform to Higher Dimension]
     C --> D[Challenge: Computational Cost]
     D --> E[Kernel Trick: Implicit Transformation]
     
-    E --> F[Compute K(x,y) = ⟨φ(x), φ(y)⟩]
-    F --> G[No need to compute φ(x) explicitly]
+    E --> F["Compute K(x,y) = <φ(x), φ(y)>"]
+    F --> G["No need to compute φ(x) explicitly"]
     
     E --> H[Common Kernels]
-    H --> I[Linear: K(x,y) = x·y]
-    H --> J[Polynomial: K(x,y) = (x·y + c)ᵈ]
-    H --> K[RBF: K(x,y) = exp(-γ||x-y||²)]
-    H --> L[Sigmoid: K(x,y) = tanh(γx·y + c)]
+    H --> I["Linear: K(x,y) = x·y"]
+    H --> J["Polynomial: K(x,y) = (x·y + c)^d"]
+    H --> K["RBF: K(x,y) = exp(-γ||x-y||²)"]
+    H --> L["Sigmoid: K(x,y) = tanh(γx·y + c)"]
 ```
 
 #### The Concept
@@ -2751,16 +2751,16 @@ The Radial Basis Function kernel is one of the most widely used kernels in machi
 RBF Kernel: K(x,y) = exp(-γ ||x-y||²)
 
 ```mermaid
-graph TD
-    A[RBF Kernel] --> B[K(x,y) = exp(-γ||x-y||²)]
+flowchart TD
+    A[RBF Kernel] --> B["K(x,y) = exp(-γ||x-y||²)"]
     B --> C[Infinite-Dimensional Space]
     
-    B --> D[γ Parameter]
-    D --> E[Small γ = Wide Influence]
-    D --> F[Large γ = Narrow Influence]
+    B --> D["γ Parameter"]
+    D --> E["Small γ = Wide Influence"]
+    D --> F["Large γ = Narrow Influence"]
     
     C --> G[Taylor Expansion]
-    G --> H[exp(2γxy) = 1 + 2γxy + (2γxy)²/2! + ...]
+    G --> H["exp(2γxy) = 1 + 2γxy + (2γxy)²/2! + ..."]
     
     B --> I[Properties]
     I --> J[Decreases as distance increases]
@@ -3032,12 +3032,12 @@ Log transformation is a common technique for handling skewed data, but it's not 
 - **Right-skewed with large values**: Log transform has diminished effect
 
 ```mermaid
-graph TD
+flowchart TD
     A[Skewed Data Transformation] --> B[Right Skewness]
     A --> C[Left Skewness]
     
     B --> D[Log Transform]
-    D --> E[log(x) grows faster at lower values]
+    D --> E["log(x) grows faster at lower values"]
     E --> F[Compresses right tail]
     
     C --> G[Log Transform Ineffective]
@@ -3046,7 +3046,7 @@ graph TD
     B --> I[Box-Cox Transform]
     I --> J[Automatically finds optimal transformation]
     
-    H --> K[λ parameter adjusts transformation type]
+    H --> K["λ parameter adjusts transformation type"]
     J --> K
 ```
 
@@ -3081,17 +3081,17 @@ Log transformations should be applied thoughtfully, with understanding of their 
 Feature scaling and standardization are often confused, but they serve different purposes and have different effects on data distributions:
 
 ```mermaid
-graph LR
+flowchart LR
     A[Data Transformation] --> B[Feature Scaling]
     A --> C[Standardization]
     
     B --> D[Min-Max Scaling]
-    D --> E[Range [0,1]]
-    D --> F[X_scaled = (X-min)/(max-min)]
+    D --> E["Range [0,1]"]
+    D --> F["X_scaled = (X-min)/(max-min)"]
     
     C --> G[Z-score Normalization]
-    G --> H[Mean 0, SD 1]
-    G --> I[X_standardized = (X-μ)/σ]
+    G --> H["Mean 0, SD 1"]
+    G --> I["X_standardized = (X-μ)/σ"]
     
     J[Common Misconception] --> K[Neither changes distribution shape]
     K --> L[Skewed data remains skewed]
@@ -3135,14 +3135,14 @@ Understanding these distinctions helps avoid the common pitfall of applying scal
 L2 regularization (Ridge regression) is commonly presented as a technique to prevent overfitting, but it also serves as an effective solution for multicollinearity:
 
 ```mermaid
-graph TD
+flowchart TD
     A[Ridge Regression] --> B[OLS Objective]
     A --> C[Ridge Objective]
     
-    B --> D[||y - Xθ||²]
+    B --> D["||y - Xθ||²"]
     D --> E[Multiple solutions possible with multicollinearity]
     
-    C --> F[||y - Xθ||² + λ||θ||²]
+    C --> F["||y - Xθ||² + λ||θ||²"]
     F --> G[L2 penalty creates unique solution]
     F --> H[Stabilizes coefficients]
     
@@ -3433,8 +3433,8 @@ Understanding these equivalents facilitates gradual adoption of more performant 
 Standard DataFrame summary methods like `df.describe()` provide limited information. More advanced tools offer comprehensive insights:
 
 ```mermaid
-graph TD
-    A[DataFrame Summary Tools] --> B[Standard df.describe()]
+flowchart TD
+    A[DataFrame Summary Tools] --> B["Standard df.describe()"]
     A --> C[Enhanced Tools]
     
     C --> D[Skimpy]
@@ -4207,12 +4207,12 @@ Sankey diagrams visualize flows between entities, where width represents quantit
 
 ```mermaid
 sankey-beta
-    A [Country A] --> D [Sport 1] {value: 50}
-    A --> E [Sport 2] {value: 30}
-    B [Country B] --> D {value: 20}
-    B --> E {value: 60}
-    C [Country C] --> D {value: 40}
-    C --> E {value: 25}
+    A, 80 --> D, 50
+    A, 80 --> E, 30
+    B, 80 --> D, 20
+    B, 80 --> E, 60
+    C, 65 --> D, 40
+    C, 65 --> E, 25
 ```
 
 #### Use Cases
@@ -4874,14 +4874,14 @@ Understanding these magic methods enables creating classes that behave naturally
 Python classes dynamically accept new attributes, which consumes additional memory. Slotted classes restrict this behavior, improving efficiency:
 
 ```mermaid
-graph TD
+flowchart TD
     A[Class Memory Optimization] --> B[Standard Classes]
     A --> C[Slotted Classes]
     
     B --> D[Dynamic attribute dictionary]
     D --> E[Flexible but memory-intensive]
     
-    C --> F[__slots__ = ['attribute1', 'attribute2']]
+    C --> F["__slots__ = ['attribute1', 'attribute2']"]
     F --> G[No __dict__ created]
     G --> H[8-16% memory reduction per instance]
     
@@ -4963,9 +4963,9 @@ Slotted classes provide a simple optimization that can significantly improve mem
 Python allows class instances to be called like functions using the `__call__` magic method, enabling powerful functional programming patterns:
 
 ```mermaid
-graph TD
-    A[__call__ Method] --> B[Makes instances callable]
-    B --> C[obj() calls obj.__call__()]
+flowchart TD
+    A["__call__ Method"] --> B[Makes instances callable]
+    B --> C["obj() calls obj.__call__()"]
     
     A --> D[Applications]
     D --> E[Function factories]
@@ -4974,9 +4974,9 @@ graph TD
     D --> H[Machine learning models]
     
     A --> I[PyTorch Connection]
-    I --> J[nn.Module.__call__]
+    I --> J["nn.Module.__call__"]
     J --> K[Preprocessing]
-    K --> L[Call forward()]
+    K --> L["Call forward()"]
     L --> M[Postprocessing]
 ```
 

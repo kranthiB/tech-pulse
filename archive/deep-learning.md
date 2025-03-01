@@ -5,48 +5,52 @@ sidebar_label: Deep Learning
 previous_page: data-ai/conventional-ml
 ---
 
-# Deep Learning
+Table of contents
+=================
+<!--ts-->
+   * [Deep Learning](#deep-learning)
+      * [Advanced Learning Methodologies](#advanced-learning-methodologies)
+        * [Transfer Learning vs. Fine-tuning vs. Multi-task Learning](#transfer-learning-vs-fine-tuning-vs-multi-task-learning)
+            * [Transfer Learning](#transfer-learning)
+            * [Fine-tuning](#fine-tuning)
+            * [Multi-task Learning](#multi-task-learning)
+        * [Introduction to Federated Learning](#introduction-to-federated-learning)
+        * [Building Multi-task Learning Models](#building-multi-task-learning-models)
+        * [Self-supervised Learning Approaches](#self-supervised-learning-approaches)
+        * [Active Learning for Efficient Model Building](#active-learning-for-efficient-model-building)
+      * [Neural Network Training Optimization](#neural-network-training-optimization)
+        * [Understanding Momentum in Optimization](#understanding-momentum-in-optimization)
+        * [Mixed Precision Training](#mixed-precision-training)
+        * [Gradient Checkpointing for Memory Efficiency](#gradient-checkpointing-for-memory-efficiency)
+        * [Gradient Accumulation for Large Batch Training](#gradient-accumulation-for-large-batch-training)
+      * [Model Regularization Techniques](#model-regularization-techniques)
+        * [Label Smoothing for Better Generalization](#label-smoothing-for-better-generalization) 
+        * [Focal Loss for Imbalanced Classification](#focal-loss-for-imbalanced-classification)
+        * [Dropout: How it Actually Works](#dropout-how-it-actually-works)
+        * [DropBlock: Enhanced Regularization for CNNs](#dropblock-enhanced-regularization-for-cnns)
+        * [Understanding Neural Network Activations](#understanding-neural-network-activations)
+      * [Model Compression and Deployment](#model-compression-and-deployment)
+        * [Knowledge Distillation for Model Compression](#knowledge-distillation-for-model-compression)
+        * [Activation Pruning for Network Compression](#activation-pruning-for-network-compression)
+        * [Model Deployment from Jupyter Notebooks](#model-deployment-from-jupyter-notebooks)
+        * [Testing ML Models in Production](#testing-ml-models-in-production)
+        * [Model Versioning and Registry](#model-versioning-and-registry)
+      * [Large Language Model Techniques](#large-language-model-techniques)
+        * [Memory Requirements for LLM Training](#memory-requirements-for-llm-training)
+        * [Low-Rank Adaptation (LoRA) Fine-tuning](#low-rank-adaptation-lora-fine-tuning)
+        * [LoRA and Other Parameter-Efficient Fine-tuning Methods](#lora-and-other-parameter-efficient-fine-tuning-methods)
+        * [Retrieval Augmented Generation (RAG) vs. Fine-tuning](#retrieval-augmented-generation-rag-vs-fine-tuning)
 
-## Table of Contents
+<!--te-->
 
-- [Advanced Learning Methodologies](#advanced-learning-methodologies)
-  - [Transfer Learning vs. Fine-tuning vs. Multi-task Learning](#transfer-learning-vs-fine-tuning-vs-multi-task-learning)
-  - [Introduction to Federated Learning](#introduction-to-federated-learning)
-  - [Building Multi-task Learning Models](#building-multi-task-learning-models)
-  - [Self-supervised Learning Approaches](#self-supervised-learning-approaches)
-  - [Active Learning for Efficient Model Building](#active-learning-for-efficient-model-building)
-- [Neural Network Training Optimization](#neural-network-training-optimization)
-  - [Understanding Momentum in Optimization](#understanding-momentum-in-optimization)
-  - [Mixed Precision Training](#mixed-precision-training)
-  - [Gradient Checkpointing for Memory Efficiency](#gradient-checkpointing-for-memory-efficiency)
-  - [Gradient Accumulation for Large Batch Training](#gradient-accumulation-for-large-batch-training)
-- [Model Regularization Techniques](#model-regularization-techniques)
-  - [Label Smoothing for Better Generalization](#label-smoothing-for-better-generalization)
-  - [Focal Loss for Imbalanced Classification](#focal-loss-for-imbalanced-classification)
-  - [Dropout: How it Actually Works](#dropout-how-it-actually-works)
-  - [DropBlock: Enhanced Regularization for CNNs](#dropblock-enhanced-regularization-for-cnns)
-  - [Understanding Neural Network Activations](#understanding-neural-network-activations)
-- [Model Compression and Deployment](#model-compression-and-deployment)
-  - [Knowledge Distillation for Model Compression](#knowledge-distillation-for-model-compression)
-  - [Activation Pruning for Network Compression](#activation-pruning-for-network-compression)
-  - [Model Deployment from Jupyter Notebooks](#model-deployment-from-jupyter-notebooks)
-  - [Testing ML Models in Production](#testing-ml-models-in-production)
-  - [Model Versioning and Registry](#model-versioning-and-registry)
-- [Large Language Model Techniques](#large-language-model-techniques)
-  - [Memory Requirements for LLM Training](#memory-requirements-for-llm-training)
-  - [Low-Rank Adaptation (LoRA) Fine-tuning](#low-rank-adaptation-lora-fine-tuning)
-  - [LoRA and Other Parameter-Efficient Fine-tuning Methods](#lora-and-other-parameter-efficient-fine-tuning-methods)
-  - [Retrieval Augmented Generation (RAG) vs. Fine-tuning](#retrieval-augmented-generation-rag-vs-fine-tuning)
+## Deep Learning
+### Advanced Learning Methodologies
 
----
-
-## Advanced Learning Methodologies
-
-### Transfer Learning vs. Fine-tuning vs. Multi-task Learning
+#### Transfer Learning vs. Fine-tuning vs. Multi-task Learning
 
 Different learning paradigms offer various approaches to leverage existing knowledge for new tasks:
 
-#### Transfer Learning
+###### Transfer Learning
 
 Transfer learning is particularly valuable when:
 - Your target task has limited data
@@ -67,7 +71,9 @@ Transfer learning is particularly valuable when:
 - Computer vision tasks with pre-trained models like ResNet, VGG, EfficientNet
 - NLP tasks with pre-trained models like BERT, RoBERTa
 
-#### Fine-tuning
+-----
+
+###### Fine-tuning
 
 While often confused with transfer learning, fine-tuning has a distinct approach:
 
@@ -86,7 +92,9 @@ While often confused with transfer learning, fine-tuning has a distinct approach
 - Often combined with gradual unfreezing (starting with just the final layers)
 - Can be more prone to catastrophic forgetting than transfer learning
 
-#### Multi-task Learning
+-----
+
+###### Multi-task Learning
 
 Multi-task learning trains a single model to perform multiple related tasks simultaneously:
 
@@ -132,9 +140,9 @@ class MultitaskModel(nn.Module):
 - Dynamic task weights based on validation performance can improve results
 - Balancing tasks with different convergence rates requires careful optimization
 
----
+-----
 
-### Introduction to Federated Learning
+#### Introduction to Federated Learning
 
 Federated learning addresses the challenge of training models on private data distributed across multiple devices or organizations:
 
@@ -142,17 +150,6 @@ Federated learning addresses the challenge of training models on private data di
 Rather than centralizing data for training, federated learning brings the model to the data, trains locally, and aggregates only model updates.
 
 **Process:**
-
-```mermaid
-flowchart TD
-    A[Global Model on Server] --> B[Distribute to Client Devices]
-    B --> C[Local Training on Private Data]
-    C --> D[Send Model Updates to Server]
-    D --> E[Aggregate Updates]
-    E --> F[Improved Global Model]
-    F --> B
-```
-
 1. Start with a global model on a central server
 2. Distribute this model to client devices (phones, hospitals, etc.)
 3. Train the model on local private data on each device
@@ -180,9 +177,9 @@ flowchart TD
 
 Federated learning represents a paradigm shift in how we think about model training, moving from "bring data to computation" to "bring computation to data".
 
----
+-----
 
-### Building Multi-task Learning Models
+#### Building Multi-task Learning Models
 
 Multi-task learning involves training a single model to perform multiple related tasks simultaneously. Here's a practical guide to implementation:
 
@@ -262,9 +259,9 @@ for epoch in range(epochs):
 
 Multi-task learning can be particularly effective when tasks are related but different enough to provide complementary learning signals.
 
----
+-----
 
-### Self-supervised Learning Approaches
+#### Self-supervised Learning Approaches
 
 Self-supervised learning creates supervised training signals from unlabeled data by leveraging the inherent structure of the data itself:
 
@@ -300,9 +297,9 @@ Target: Predict "cat" and "mat"
 
 This approach allows models like BERT and GPT to learn powerful language representations from vast text corpora without explicit labeling, which can then be fine-tuned for specific downstream tasks with minimal labeled data.
 
----
+-----
 
-### Active Learning for Efficient Model Building
+#### Active Learning for Efficient Model Building
 
 Active learning addresses the challenge of building high-performing supervised models when data annotation is expensive or time-consuming:
 
@@ -346,11 +343,11 @@ Active learning process:
 
 Active learning has shown to achieve the same model performance with 40-80% fewer labels in many domains, making it particularly valuable for medical imaging, legal document analysis, and other areas where expert annotation is costly.
 
----
+-----
 
-## Neural Network Training Optimization
+### Neural Network Training Optimization
 
-### Understanding Momentum in Optimization
+#### Understanding Momentum in Optimization
 
 Momentum is a technique that significantly improves the efficiency and effectiveness of gradient-based optimization methods:
 
@@ -400,9 +397,9 @@ optimizer = torch.optim.SGD(
 
 Momentum is a foundational optimization technique in deep learning, and variants like Nesterov Momentum, Adam, and RMSProp build upon its core principles to offer further improvements in specific scenarios.
 
----
+-----
 
-### Mixed Precision Training
+#### Mixed Precision Training
 
 Mixed precision training allows for faster, memory-efficient neural network training by utilizing lower precision number formats:
 
@@ -465,9 +462,9 @@ for inputs, labels in dataloader:
 
 Mixed precision training is widely used for training large models like BERT, GPT, and state-of-the-art computer vision networks, enabling larger and more capable models to be trained on existing hardware.
 
----
+-----
 
-### Gradient Checkpointing for Memory Efficiency
+#### Gradient Checkpointing for Memory Efficiency
 
 Gradient checkpointing is a technique to reduce memory usage during neural network training at the cost of additional computation:
 
@@ -523,9 +520,9 @@ Gradient checkpointing is particularly valuable for:
 
 This technique has been crucial for democratizing research on large models, allowing researchers with limited hardware to work on state-of-the-art architectures.
 
----
+-----
 
-### Gradient Accumulation for Large Batch Training
+#### Gradient Accumulation for Large Batch Training
 
 Gradient accumulation enables training with effectively larger batch sizes without requiring proportional memory increases:
 
@@ -580,11 +577,11 @@ for i, (inputs, labels) in enumerate(dataloader):
 **Real-world Impact:**
 Gradient accumulation made it possible to reproduce results from papers that used 8-16 high-end GPUs on just 1-2 consumer GPUs, dramatically democratizing deep learning research.
 
----
+-----
 
-## Model Regularization Techniques
+### Model Regularization Techniques
 
-### Label Smoothing for Better Generalization
+#### Label Smoothing for Better Generalization
 
 Label smoothing is a powerful regularization technique that improves model generalization by preventing overconfidence:
 
@@ -649,9 +646,9 @@ Label smoothing has become standard practice in many state-of-the-art models, in
 
 This simple technique provides substantial benefits with minimal computational overhead.
 
----
+-----
 
-### Focal Loss for Imbalanced Classification
+#### Focal Loss for Imbalanced Classification
 
 Focal Loss addresses the challenge of class imbalance by dynamically adjusting the loss contribution of easy examples:
 
@@ -706,9 +703,9 @@ Testing Focal Loss (γ=3) on a binary classification dataset with 90:10 imbalanc
 
 Focal Loss has become a standard component in many object detection frameworks (like RetinaNet) and is increasingly used in medical image analysis and other domains with significant class imbalance.
 
----
+-----
 
-### Dropout: How it Actually Works
+#### Dropout: How it Actually Works
 
 Dropout is a fundamental regularization technique in deep learning, but its full mechanism is often misunderstood:
 
@@ -769,9 +766,9 @@ Dropout can be viewed as training an ensemble of sub-networks:
 
 Understanding the complete dropout mechanism helps explain why it works and guides its effective application across different network architectures.
 
----
+-----
 
-### DropBlock: Enhanced Regularization for CNNs
+#### DropBlock: Enhanced Regularization for CNNs
 
 Standard Dropout is less effective for convolutional layers because of spatial correlations. DropBlock addresses this limitation:
 
@@ -841,9 +838,9 @@ On ImageNet classification:
 
 DropBlock has become a standard regularization technique for state-of-the-art CNN architectures, particularly in computer vision tasks that require strong regularization like object detection and segmentation.
 
----
+-----
 
-### Understanding Neural Network Activations
+#### Understanding Neural Network Activations
 
 Neural networks create complex decision boundaries through layer-by-layer transformations. Understanding this process provides insights into their functioning:
 
@@ -851,13 +848,6 @@ Neural networks create complex decision boundaries through layer-by-layer transf
 At each layer, neural networks perform:
 1. Linear transformation of input data
 2. Non-linear activation function application
-
-```mermaid
-flowchart LR
-    Input[Input Data] --> Linear[Linear Transformation]
-    Linear --> Activation[Non-linear Activation]
-    Activation --> Output[Transformed Output]
-```
 
 **What Neural Networks Actually Learn:**
 Through multiple layers of transformation, neural networks are constantly striving to **project data into a linearly separable form** before the final layer.
@@ -907,11 +897,11 @@ Understanding this principle:
 
 This insight reveals that what appears as a "black box" is actually a systematic process of successive transformations aimed at creating linear separability.
 
----
+-----
 
-## Model Compression and Deployment
+### Model Compression and Deployment
 
-### Knowledge Distillation for Model Compression
+#### Knowledge Distillation for Model Compression
 
 Knowledge distillation compresses larger, complex models ("teachers") into smaller, simpler models ("students") while maintaining performance:
 
@@ -994,9 +984,9 @@ for inputs, targets in dataloader:
 
 Knowledge distillation provides a powerful way to deploy high-performing models in resource-constrained environments.
 
----
+-----
 
-### Activation Pruning for Network Compression
+#### Activation Pruning for Network Compression
 
 After training, neural networks often contain many "useless" neurons that can be removed without affecting performance. Activation pruning identifies and removes these redundant components:
 
@@ -1080,9 +1070,9 @@ def prune_network(model, dataloader, threshold=0.4):
 
 Activation pruning provides a straightforward approach to network compression without requiring changes to the training process, making it easily applicable to existing models.
 
----
+-----
 
-### Model Deployment from Jupyter Notebooks
+#### Model Deployment from Jupyter Notebooks
 
 Deploying machine learning models from development to production environment often involves multiple steps and technologies. Modelbit simplifies this process by enabling direct deployment from Jupyter notebooks:
 
@@ -1145,9 +1135,9 @@ prediction = response.json()["data"]
 
 This approach dramatically simplifies the deployment process, allowing data scientists to focus on model development rather than infrastructure concerns.
 
----
+-----
 
-### Testing ML Models in Production
+#### Testing ML Models in Production
 
 Deploying a new ML model directly to production can be risky. Several testing strategies help mitigate this risk:
 
@@ -1175,13 +1165,21 @@ Deploying a new ML model directly to production can be risky. Several testing st
 - Compare performance offline without affecting users
 
 **Shadow Testing Implementation:**
-```mermaid
-flowchart TD
-    UserRequest[User Request] --> LegacyModel[Legacy Model]
-    LegacyModel --> Response[Response to User]
-    LegacyModel --> CandidateModel[Candidate Model]
-    CandidateModel --> LogResults[Log Results]
-    LogResults --> Response
+```
+┌─────────────┐     ┌────────────────┐     ┌─────────────┐
+│  User       │────▶│  Legacy Model  │────▶│  Response   │
+│  Request    │     └────────────────┘     │  to User    │
+└─────────────┘            │               └─────────────┘
+                           │                      ▲
+                           ▼                      │
+                    ┌────────────────┐            │
+                    │ Candidate Model│            │
+                    └────────────────┘            │
+                           │                      │
+                           ▼                      │
+                    ┌────────────────┐            │
+                    │  Log Results   │────────────┘
+                    └────────────────┘
 ```
 
 **Selecting the Right Testing Strategy:**
@@ -1198,9 +1196,9 @@ flowchart TD
 
 These testing strategies allow for safe, controlled deployment of new models while minimizing risk and maximizing learning opportunities.
 
----
+-----
 
-### Model Versioning and Registry
+#### Model Versioning and Registry
 
 Effective ML deployment requires proper model versioning and registry systems to track, manage, and deploy models:
 
@@ -1247,11 +1245,11 @@ A bug is discovered in the inference code (not the model itself):
 
 A robust model versioning and registry system is foundational for reliable, maintainable machine learning systems in production environments.
 
----
+-----
 
-## Large Language Model Techniques
+### Large Language Model Techniques
 
-### Memory Requirements for LLM Training
+#### Memory Requirements for LLM Training
 
 Understanding the memory required for training large language models helps explain why they're so resource-intensive:
 
@@ -1302,9 +1300,9 @@ With gradient checkpointing to reduce activation memory to ~9GB:
 
 This memory analysis explains why LLM training is primarily conducted by organizations with access to large GPU clusters and why techniques to reduce memory requirements are crucial for democratizing LLM research.
 
----
+-----
 
-### Low-Rank Adaptation (LoRA) Fine-tuning
+#### Low-Rank Adaptation (LoRA) Fine-tuning
 
 Full fine-tuning of large language models is resource-intensive. Low-Rank Adaptation (LoRA) offers an efficient alternative:
 
@@ -1341,20 +1339,14 @@ For a weight matrix of size 1000×1000:
 - LoRA with r=8: 16K parameters (1.6% of original)
 
 **Implementation Architecture:**
-```mermaid
-flowchart LR
-    subgraph "Original Model"
-    A[Input] --> B[Dense Layer (W)]
-    B --> C[Output]
-    end
-    
-    subgraph "With LoRA"
-    D[Input] --> E[Dense Layer (W, frozen)]
-    D --> F[Low-Rank Path (BA)]
-    E --> G((+))
-    F --> G
-    G --> H[Output]
-    end
+```
+Original Model:
+Input → Dense Layer (W) → Output
+
+With LoRA:
+                 ┌─ Low-Rank Path (BA) ─┐
+                 │                      ▼
+Input → Dense Layer (W, frozen) → (+) → Output
 ```
 
 **Advantages:**
@@ -1372,9 +1364,9 @@ flowchart LR
 
 LoRA has become the standard approach for efficient fine-tuning of large language models, enabling personalization and domain adaptation with limited computational resources.
 
----
+-----
 
-### LoRA and Other Parameter-Efficient Fine-tuning Methods
+#### LoRA and Other Parameter-Efficient Fine-tuning Methods
 
 Several techniques extend or complement LoRA for efficient LLM fine-tuning:
 
@@ -1425,9 +1417,9 @@ For a model with 1B parameters:
 
 These parameter-efficient techniques have democratized LLM fine-tuning, enabling customization of powerful models on consumer hardware and reducing the environmental impact of model adaptation.
 
----
+-----
 
-### Retrieval Augmented Generation (RAG) vs. Fine-tuning
+#### Retrieval Augmented Generation (RAG) vs. Fine-tuning
 
 RAG and fine-tuning represent two different approaches to enhancing LLMs with domain-specific knowledge:
 
@@ -1444,25 +1436,6 @@ RAG and fine-tuning represent two different approaches to enhancing LLMs with do
 - Uses LLM to generate response based on augmented context
 
 **RAG Process:**
-
-```mermaid
-flowchart TD
-    subgraph "Preparation Phase (done once)"
-    A[Domain Documents] --> B[Preprocess Documents]
-    B --> C[Create Vector Embeddings]
-    C --> D[(Vector Database)]
-    end
-    
-    subgraph "Inference Phase (for each query)"
-    E[User Query] --> F[Embed Query]
-    F --> G{Retrieve Similar Chunks}
-    D --> G
-    G --> H[Augment Prompt]
-    H --> I[LLM]
-    I --> J[Generate Response]
-    end
-```
-
 1. **Preparation Phase (done once):**
    - Preprocess domain-specific documents
    - Create vector embeddings of document chunks
@@ -1500,3 +1473,5 @@ Many production systems combine both approaches:
 - This combines the strengths of both approaches
 
 RAG has become particularly valuable for building LLM applications that need access to proprietary information, frequently updated content, or highly specific domain knowledge without the cost of continuous fine-tuning.
+
+-----
