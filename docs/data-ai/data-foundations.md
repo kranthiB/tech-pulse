@@ -2,7 +2,7 @@
 id: data-ai/data-foundations
 title: Data Foundations
 sidebar_label: Data Foundations
-next_page: data-ai/conventional-ml
+next_page: data-ai/data-engineering
 ---
 
 # Data Foundations: A Comprehensive Guide
