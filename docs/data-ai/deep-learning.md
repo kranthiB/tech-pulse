@@ -1344,16 +1344,16 @@ For a weight matrix of size 1000×1000:
 ```mermaid
 flowchart LR
     subgraph "Original Model"
-    A[Input] --> B[Dense Layer (W)]
-    B --> C[Output]
+    A["Input"] --> B["Dense Layer (W)"]
+    B --> C["Output"]
     end
     
     subgraph "With LoRA"
-    D[Input] --> E[Dense Layer (W, frozen)]
-    D --> F[Low-Rank Path (BA)]
-    E --> G((+))
+    D["Input"] --> E["Dense Layer (W, frozen)"]
+    D --> F["Low-Rank Path (BA)"]
+    E --> G{"+"}
     F --> G
-    G --> H[Output]
+    G --> H["Output"]
     end
 ```
 
