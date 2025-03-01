@@ -7,7 +7,7 @@ sidebar:
     children:
       - data-ai/data-foundations
       - data-ai/data-engineering
-      - data-ai/deep-analysis
+      - data-ai/data-analysis
       - data-ai/conventional-ml
       - data-ai/deep-learning
   - label: Generative AI
