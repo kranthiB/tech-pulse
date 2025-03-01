@@ -3,7 +3,7 @@ id: frameworks-n-platforms/enterprise-api-integration-and-management-platform
 title: Enterprise API Integration and Management Platform
 sidebar_label: Enterprise API Integration and Management Platform
 previous_page: frameworks-n-platforms/enterprise-application-security-framework
-next_page: frameworks-n-platforms/cloud-cost-optimization-platform
+next_page: frameworks-n-platforms/cloud-cost-optimization-framework
 ---
 
 # Enterprise API Integration and Management Platform: Strategic Enabler for Digital Transformation
