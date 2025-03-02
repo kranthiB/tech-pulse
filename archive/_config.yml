@@ -36,4 +36,21 @@ sidebar:
       - frameworks-n-platforms/enterprise-api-integration-and-management-platform
       - frameworks-n-platforms/cloud-cost-optimization-framework
   - platform-engineering
+  - label: Computing Models
+    children:
+      - computing-models/cloud-computing
+      - computing-models/serverless-computing
+      - computing-models/edge-computing
+  - label: Cloud Services
+    children:
+      - cloud-services/aws
+      - cloud-services/azure
+      - cloud-services/gcp
+  - label: Cloud Native
+    children:
+      - cloud-native/app-definition-and-development
+      - cloud-native/orchestration-and-management
+      - cloud-native/observability-and-analysis
+      - cloud-native/provisioning
+      - cloud-native/runtime
 
