@@ -34,20 +34,20 @@ auto_title: false
   
   <!-- System Design Card -->
   <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background: linear-gradient(135deg, #2c3e50, #34495e); padding: 18px; color: white; border-bottom: 3px solid #1abc9c;">
+    <div style="background: linear-gradient(135deg, #2054a6, #3498db); padding: 18px; color: white; border-bottom: 3px solid #1e88e5;">
       <h2 style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;">System Design</h2>
     </div>
     <div style="padding: 20px; background-color: white;">
       <p style="margin-top: 0; color: #24292e;">Architecture patterns, distributed systems, scalability, and resilience strategies.</p>
       <div style="text-align: right;">
-        <a href="https://kranthib.github.io/tech-pulse/system-design.html" style="display: inline-block; padding: 6px 14px; background-color: #1abc9c; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">Explore →</a>
+        <a href="https://kranthib.github.io/tech-pulse/system-design.html" style="display: inline-block; padding: 6px 14px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">Explore →</a>
       </div>
     </div>
   </div>
   
   <!-- Data & AI Card -->
   <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background: linear-gradient(135deg, #2980b9, #3498db); padding: 18px; color: white; border-bottom: 3px solid #f39c12;">
+    <div style="background: linear-gradient(135deg, #2054a6, #3498db); padding: 18px; color: white; border-bottom: 3px solid #1e88e5;">
       <h2 style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;">Data & AI</h2>
     </div>
     <div style="padding: 20px; background-color: white;">
@@ -69,7 +69,7 @@ auto_title: false
   
   <!-- Generative AI Card -->
   <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background: linear-gradient(135deg, #8e44ad, #9b59b6); padding: 18px; color: white; border-bottom: 3px solid #2ecc71;">
+    <div style="background: linear-gradient(135deg, #2054a6, #3498db); padding: 18px; color: white; border-bottom: 3px solid #1e88e5;">
       <h2 style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;">Generative AI</h2>
     </div>
     <div style="padding: 20px; background-color: white;">
@@ -85,7 +85,7 @@ auto_title: false
   
   <!-- Industrial IoT Card -->
   <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background: linear-gradient(135deg, #d35400, #e67e22); padding: 18px; color: white; border-bottom: 3px solid #3498db;">
+    <div style="background: linear-gradient(135deg, #2054a6, #3498db); padding: 18px; color: white; border-bottom: 3px solid #1e88e5;">
       <h2 style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;">Industrial IoT</h2>
     </div>
     <div style="padding: 20px; background-color: white;">
@@ -108,7 +108,7 @@ auto_title: false
   
   <!-- Ops Mastery Card -->
   <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background: linear-gradient(135deg, #16a085, #2ecc71); padding: 18px; color: white; border-bottom: 3px solid #e74c3c;">
+    <div style="background: linear-gradient(135deg, #2054a6, #3498db); padding: 18px; color: white; border-bottom: 3px solid #1e88e5;">
       <h2 style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;">Ops Mastery</h2>
     </div>
     <div style="padding: 20px; background-color: white;">
@@ -125,20 +125,20 @@ auto_title: false
   
   <!-- Platform Engineering Card -->
   <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background: linear-gradient(135deg, #c0392b, #e74c3c); padding: 18px; color: white; border-bottom: 3px solid #f1c40f;">
+    <div style="background: linear-gradient(135deg, #2054a6, #3498db); padding: 18px; color: white; border-bottom: 3px solid #1e88e5;">
       <h2 style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;">Platform Engineering</h2>
     </div>
     <div style="padding: 20px; background-color: white;">
       <p style="color: #24292e;">Internal developer platforms, infrastructure automation, and delivery excellence.</p>
       <div style="text-align: right;">
-        <a href="https://kranthib.github.io/tech-pulse/platform-engineering.html" style="display: inline-block; padding: 6px 14px; background-color: #e74c3c; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">Explore →</a>
+        <a href="https://kranthib.github.io/tech-pulse/platform-engineering.html" style="display: inline-block; padding: 6px 14px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">Explore →</a>
       </div>
     </div>
   </div>
   
   <!-- Frameworks & Platforms Card -->
   <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background: linear-gradient(135deg, #f39c12, #f1c40f); padding: 18px; color: white; border-bottom: 3px solid #9b59b6;">
+    <div style="background: linear-gradient(135deg, #2054a6, #3498db); padding: 18px; color: white; border-bottom: 3px solid #1e88e5;">
       <h2 style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">Frameworks & Platforms</h2>
     </div>
     <div style="padding: 20px; background-color: white;">
