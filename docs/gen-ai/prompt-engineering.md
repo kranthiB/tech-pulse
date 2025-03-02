@@ -92,15 +92,16 @@ flowchart TD
 ### 1. Task
 
 Define what you want the AI to do. For example:
-- If your friend's birthday is approaching and they're into anime, you could start with:  
+
+If your friend's birthday is approaching and they're into anime, you could start with:  
   *"Suggest a gift related to anime for my friend's birthday."*
 
 While this prompt might yield decent results, you can make it more specific by incorporating two additional elements:
 
-- **Persona:** Define the role you want the AI to embody. For example:  
+**Persona:** Define the role you want the AI to embody. For example:  
   *"Act as an anime expert to suggest an anime gift for my friend's birthday."*  
 
-- **Output Format:** Specify the desired format of the response. For instance:  
+**Output Format:** Specify the desired format of the response. For instance:  
   *"Organize that data into a table."*
 
 ### 2. Context
@@ -413,13 +414,13 @@ flowchart TD
     
     PC --> PCE[Example:<br>Novel marketing plan<br>1. Generate summaries<br>2. Create tagline<br>3. Design marketing plan]
     
-    COT --> COTE[Example:<br>"Explain your thought process<br>step by step"]
+    COT --> COTE[Example:<br>Explain your thought process<br>step by step]
     
-    TOT --> TOTE[Example:<br>"Imagine three different<br>designers pitching ideas"]
+    TOT --> TOTE[Example:<br>Imagine three different<br>designers pitching ideas]
     
     subgraph "AI Agents"
-        SIM[Simulation Agent<br>"Agent SIM"]
-        EXP[Expert Feedback Agent<br>"Agent X"]
+        SIM[Simulation Agent<br>Agent SIM]
+        EXP[Expert Feedback Agent<br>Agent X]
     end
     
     style PC fill:#f9d5e5,stroke:#333,stroke-width:1px
@@ -540,8 +541,6 @@ AI agents are specialized virtual assistants designed to help with specific task
 | **Rule 9:** Use Chain-of-Thought | "Explain the pros and cons of renewable energy" | "Explain the pros and cons of renewable energy by addressing the following: Environmental impact, Economic considerations, Availability and scalability, Long-term sustainability" |
 | **Rule 10:** Split huge prompts | "Explain the causes, effects, and potential solutions for climate change" | Break into multiple focused prompts: "1. List the top three causes of climate change" followed by effect and solution prompts |
 | **Rule 11:** Ask for help with prompting | Direct question | "Refine this prompt to make it clearer and more effective: 'Explain the causes, effects, and potential solutions for climate change'" |
-
-![No](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-A-NO.jpeg) ![Yes](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/prompt-engineering/0011-B-TCK.png)
 
 ## Parameters
 
