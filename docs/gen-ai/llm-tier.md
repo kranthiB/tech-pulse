@@ -6,166 +6,434 @@ next_page: gen-ai/rag
 previous_page: gen-ai/prompt-engineering
 ---
 
-Table of contents
-=================
+# LLM Tiers: A Comprehensive Guide
 
-<!--ts-->
-   * [LLM Tiers](#llm-tiers)
-      * [Key Criteria for LLM Tier Classification](#key-criteria-for-llm-tier-classification)
-      * [LLM Tier Breakdown](#llm-tier-breakdown)
-      * [Purpose of LLM Tiering](#purpose-of-llm-tiering)
-      * [LLM Tier Selection Guide](#llm-tier-selection-guide)
-      * [LLMs Tier List - 2024](#llms-tier-list---2024)
-<!--te-->
+## Introduction
+This guide presents a structured classification system for Large Language Models (LLMs), helping you assess which models are best suited for various applications based on capabilities, performance, and resource requirements.
 
-## LLM Tiers
-An LLM Tier is a classification system that ranks large language models (LLMs) based on their capabilities, performance, and suitability for various applications. These tiers provide a structured way to assess which models are best suited for different tasks, industries, or resource constraints
-
-### Key Criteria for LLM Tier Classification
-  * **Performance**:
-    * *Reasoning and Comprehension*: Ability to perform complex reasoning, understand context, and generate coherent responses.
-    * *Accuracy*: Precision in generating relevant and factual outputs.
-    * *Multitask Capabilities*: Proficiency across a variety of domains, such as coding, creative writing, and summarization.
-
-  * **Model Size and Complexity**:
-    * Larger models often perform better but come with higher computational costs.
-    * Smaller models (e.g., GPT-2) are more lightweight but less versatile.
-
-  * **Adaptability**:
-    * Ease of fine-tuning and customizing for domain-specific tasks.
-    * Support for multilingual capabilities or niche applications.
+```mermaid
+flowchart TB
+    LLM[LLM Classification] --> S[S Tier\nState-of-the-art]
+    LLM --> A[A Tier\nHigh Performance]
+    LLM --> B[B Tier\nMid-level]
+    LLM --> C[C Tier\nEntry-level]
+    LLM --> D[D Tier\nFoundational]
     
-  * **Cost and Accessibility**:
-    * Compute resources required for training and inference.
-    * Licensing terms (open-source vs proprietary).
-
-  * **Specialization**:
-    * General-purpose models (e.g., GPT-4) vs models tailored for specific tasks (e.g., coding-focused models like Codex).
+    S --> S1[Cutting-edge performance]
+    S --> S2[Advanced reasoning]
+    S --> S3[Multi-modal capabilities]
+    S --> S4[Long-context support]
     
-  * **Benchmarks and Evaluation**:
-    * Performance on standardized NLP benchmarks like GLUE, SuperGLUE, or MMLU.
-
------
-
-### LLM Tier Breakdown
-  * **S Tier**
-    * The highest-performing models, excelling in a wide range of complex and general-purpose tasks.
-    * State-of-the-art capabilities, high versatility, advanced reasoning, support for long-context, and multi-modal features.
-
-  * **A Tier**	
-    * High-performing models that approach S Tier but may lack in certain areas like reasoning or scalability.
-    * Reliable, cost-effective, excellent for business and focused use cases, high-quality outputs, and moderate customization.
-
-  * **B Tier**
-    * Mid-tier models offering solid performance but limited scalability or generalization.	
-    * Suitable for niche tasks, lower compute requirements, moderate reasoning capabilities, and adequate general-purpose support.
+    A --> A1[Reliable performance]
+    A --> A2[Cost-effective]
+    A --> A3[Excellent for business use]
+    A --> A4[High-quality outputs]
     
-  * **C Tier**
-    * Entry-level models, typically older generations or smaller architectures.	
-    * Basic capabilities, lightweight, suitable for low-complexity tasks or resource-constrained environments.
+    B --> B1[Solid performance]
+    B --> B2[Limited scalability]
+    B --> B3[Good for niche tasks]
+    B --> B4[Moderate reasoning]
+    
+    C --> C1[Basic capabilities]
+    C --> C2[Lightweight]
+    C --> C3[Low-complexity tasks]
+    C --> C4[Resource-constrained environments]
+    
+    D --> D1[Minimal capabilities]
+    D --> D2[Research/experimental]
+    D --> D3[Academic purposes]
+    D --> D4[Not for production]
 
-  * **D Tier**
-    * Foundational models, often used for research or experimentation rather than production.
-    * Minimal capabilities, lightweight, ideal for academic or educational purposes, not recommended for high-performance tasks.
+    classDef tier fill:#f9f,stroke:#333,stroke-width:2px
+    classDef features fill:#ddf,stroke:#333,stroke-width:1px
+    class S,A,B,C,D tier
+    class S1,S2,S3,S4,A1,A2,A3,A4,B1,B2,B3,B4,C1,C2,C3,C4,D1,D2,D3,D4 features
+```
 
------
+## Key Criteria for LLM Tier Classification
 
-### Purpose of LLM Tiering
-  * LLM tiers help:
-    * *Optimize Model Selection*: Match the right model to the task’s complexity, budget, and resource availability.
-    * *Guide Decision-Making*: Assist developers, businesses, and researchers in choosing the most suitable model for their goals.
-    * *Set Expectations*: Clarify the capabilities and limitations of different models to avoid over- or under-utilization.
+### Performance Metrics
+- **Reasoning and Comprehension**: Ability to perform complex reasoning, understand context, and generate coherent responses
+- **Accuracy**: Precision in generating relevant and factual outputs
+- **Multitask Capabilities**: Proficiency across domains such as coding, creative writing, and summarization
 
------
+### Technical Considerations
+- **Model Size and Complexity**: Larger models typically offer better performance but demand greater computational resources
+- **Adaptability**: Ease of fine-tuning and customization for domain-specific applications
+- **Multilingual Support**: Capability to handle multiple languages effectively
 
-### LLM Tier Selection Guide
-  * **When to Choose**:
-    * **S Tier** - Cutting Edge performance
-        * *High Complexity Tasks*: Advanced reasoning, multi-step problem-solving, and nuanced decision-making.
-        * *Wide Range of Applications*: Versatility for general-purpose use (creative writing, technical tasks, and multilingual content).
-        * *Enterprise-Grade Needs*: Tasks requiring reliability, scalability, and state-of-the-art performance.
-        * *Budget is Not a Constraint*: These models often come with higher costs for inference and fine-tuning.
-        * *Examples of Use Cases*:
-            * Building conversational AI assistants for large-scale deployments.
-            * Advanced coding and debugging assistance.
-            * Scientific research involving complex data analysis.
-            * Creative industries: screenwriting, art prompts, and ideation.
-    * **A Tier** – High Quality and Cost Effective
-        * *Cost-Conscious Applications*: Offers a balance between performance and affordability.
-        * *Specialized Tasks*: Tasks that don't demand state-of-the-art precision but require reliable performance.
-        * *Moderate Resource Constraints*: Suitable for businesses looking for efficiency without the overhead of S-tier costs.
-        * *Examples of Use Cases*:
-            * Customer service chatbots with domain-specific training.
-            * Summarization, translation, and sentiment analysis.
-            * Generating medium-complexity code and providing debugging suggestions.
-            * Enterprise knowledge bases and search augmentation.
+### Practical Factors
+- **Cost and Accessibility**: Compute resources required and associated operational expenses
+- **Licensing Terms**: Open-source availability versus proprietary restrictions
+- **Specialization**: General-purpose versus task-specific optimization
+- **Benchmark Performance**: Scores on standardized evaluations (GLUE, SuperGLUE, MMLU, etc.)
 
-    * **B Tier** – Mid Level Performance for Focused Tasks
-        * *Specific Use Cases*: When the focus is on specific tasks like document summarization or text classification.
-        * *Resource Constraints*: Suitable for lightweight environments with limited compute or storage.
-        * *Experimentation and Prototyping*: Ideal for proof-of-concept development or quick deployment.
-        * *Examples of Use Cases*:  
-            * Generating concise summaries for documents or web content.
-            * Moderate-level question-answering systems.
-            * Simple chatbot systems or task-specific automation.
-            * Text generation for blogs or articles where absolute precision isn’t critical.
-    * **C Tier** – Entry Level or Lightweight Models
-        * *Basic Applications*: Tasks with minimal complexity (e.g., keyword extraction or simple language tasks).
-        * *Low Resource Requirements*: Useful in environments with constrained budgets or computing power.
-        * *Training Simplicity*: Often used to develop AI systems for educational purposes.
-        * *Examples of Use Cases*:
-            * Academic experiments or teaching materials in NLP.
-            * Text completion for basic web applications.
-            * Lightweight analysis of text content.
-            * Processing short, structured data inputs (e.g., emails).
-    * **D Tier** - Foundational/Research Models
-        * *Exploration of NLP Techniques*: Ideal for learning and experimenting with model architectures and NLP concepts.
-        * *Resource-Constrained Development*: Works well for very lightweight or on-device applications.
-        * *Not Performance Critical*: For tasks where accuracy and sophistication are less important.
-        * *Examples of Use Cases*:
-            * Low-compute environments (e.g., edge devices or embedded systems).
-            * Academic research on language modeling.
-            * Fine-tuning experiments with smaller datasets.
-            * Proof-of-concept designs or AI system bootstrapping.
+```mermaid
+mindmap
+  root((LLM Tier<br>Classification<br>Criteria))
+    Performance
+      Reasoning
+      Accuracy
+      Multitask Capabilities
+      Benchmark Scores
+    Technical
+      Model Size
+      Parameter Count
+      Architecture
+      Adaptability
+    Practical
+      Cost
+      Accessibility
+      Licensing
+      Compute Requirements
+    Specialization
+      General Purpose
+      Domain-Specific
+      Task-Optimized
+```
 
-  * **Factors to Consider**
+## LLM Tier Breakdown
 
-| Factor                | S Tier                 | A Tier                 | B Tier   | C Tier  | D Tier       |
-| --------------------- | ---------------------- | ---------------------- | -------- | ------- | ------------ |
-| Budget                | High                   | Moderate               | Low      | Minimal | Minimal      |
-| Performance Needs     | Cutting edge           | High                   | Moderate | Basic   | Foundational |
-| Resource Availability | High                   | Moderate               | Moderate | Low     | Very Low     |
-| Task Complexity.      | Complex                | Moderate to Complex    | Moderate | Basic   | Very Basic   |
-| Customization         | Flexible (Fine-tuning) | Flexible (Fine-tuning) | Limited  | Limited | Minimal      |
+### S Tier: State-of-the-Art Models
+The highest-performing models excelling across a wide range of complex tasks with:
+- State-of-the-art capabilities across multiple domains
+- Exceptional reasoning and problem-solving abilities
+- Advanced multi-modal features and long-context support
+- Highest versatility and adaptability
 
------
+### A Tier: High-Performance Models
+Reliable models approaching S Tier but with certain limitations:
+- Strong performance in most applications
+- Excellent cost-to-capability ratio
+- High-quality outputs for business applications
+- Good customization potential
 
-### LLMs Tier List - 2024
-![TL24](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/llm-tier/0001-Tier_List-2024.png)
+### B Tier: Mid-Level Performance
+Solid performers with more significant constraints:
+- Consistent performance for specific use cases
+- Moderate reasoning and generalization capabilities
+- Lower computational requirements
+- Good for focused applications with defined parameters
 
-  * *Gemini 2.0 Flash* - Debuting in December 2024, Gemini 2.0 Flash has quickly gained traction as a multimodal powerhouse capable of processing inputs and outputs, including audio. Known for its remarkable speed and zero cost, it rivals GPT-40 in performance while being versatile enough to serve both reasoning and general-purpose needs.
-  * *3.5 Sonnet* - An elite, top-tier model celebrated for its outstanding efficiency and reliability, making it a strong choice for a wide range of applications
-  * *3.5 Haiku* - This model has sparked debate due to its steep price—double that of 3 Haiku. While functional, it doesn’t match the value offered by free models like Gemini Flash or Sonnet, which excel in comparison.
-  * *Mistral Models*
-      * Mistral Large 2: A competent model, although its restrictive licensing may deter some users.
-      * Mistral Nemo: Once groundbreaking, this collaboration between Mistral and Nvidia has been eclipsed by newer entrants.
-      * Mistral Pixtral/Ministral: Performance is underwhelming, and its licensing terms leave much to be desired.
-  * *Llama Series*: The Open-Source Trailblazers
-      * 3.1 Models (8B & 405B): These models remain highly effective, with the 405B model holding the title as the largest to date. Licensing is straightforward and user-friendly.
-      * 3-2 Models: Comprises two mini and two vision models, though the vision models fail to impress.
-      * 3.3 70B Model: Offers exceptional performance for its size, making it a standout choice.
-  * *Qwen Series*
-      * 2.5: Excels in mathematics and task-specific scenarios but struggles with general knowledge and instruction-following.
-      * 2.5 Coder: Initially hyped but received criticism for its reliance on proprietary benchmarks.
-      * QwQ: A strong open-source contender to O1, known for its solid performance
-  * *DeepSeek*
-      * R1-Lite: A capable reasoning model.
-      * V2.5: Merges coding and general functionalities, delivering excellent performance at a low API cost.
-  * *Phi4*: A remarkable entry in the 14B model category, offering substantial power in a compact size.
-  * *OpenAI Models*
-      * GPT-40: While it introduced omni-modality, its delayed feature rollouts allowed Gemini 2.0 Flash to take the lead.
-      * GPT-40 Mini: Decent performance but overshadowed by Gemini’s more competitive pricing
-      * O1/O1 Mini: Overpriced at $200 and criticized for its lack of transparency in training processes.
-  * *Gemma 2*: Widely regarded as a disappointment due to its poor capabilities
-  * *Codestral*: A standout coding model, outperforming Qwen 2.5 in this domain
-  * *Grok-2*: An uncensored model praised for its accessibility, available for free via Twitter and API.
+### C Tier: Entry-Level Models
+Basic models suitable for simpler applications:
+- Adequate performance for straightforward tasks
+- Lightweight implementation requirements
+- Suitable for resource-constrained environments
+- Often older generation or smaller architectures
+
+### D Tier: Foundational Models
+Minimal capability models primarily for research or education:
+- Basic language capabilities
+- Extremely lightweight implementation
+- Suitable for academic exploration or training
+- Not recommended for production environments
+
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#007bff', 'primaryTextColor': '#fff', 'primaryBorderColor': '#007bff', 'lineColor': '#303030', 'secondaryColor': '#006699', 'tertiaryColor': '#fff' }}}%%
+graph TD
+    subgraph Performance[Performance Spectrum]
+        S[S Tier] --- A[A Tier] --- B[B Tier] --- C[C Tier] --- D[D Tier]
+    end
+    
+    subgraph Budget[Budget Requirements]
+        S1[High] --- A1[Moderate] --- B1[Low] --- C1[Minimal] --- D1[Minimal]
+    end
+    
+    subgraph Resources[Resource Requirements]
+        S2[Extensive] --- A2[Significant] --- B2[Moderate] --- C2[Low] --- D2[Very Low]
+    end
+    
+    subgraph Tasks[Task Complexity]
+        S3[Complex & Advanced] --- A3[Moderate to Complex] --- B3[Moderate] --- C3[Basic] --- D3[Very Basic]
+    end
+    
+    subgraph Customize[Customization Potential]
+        S4[Highly Flexible] --- A4[Flexible] --- B4[Limited] --- C4[Basic] --- D4[Minimal]
+    end
+    
+    S --- S1
+    S --- S2
+    S --- S3
+    S --- S4
+    
+    A --- A1
+    A --- A2
+    A --- A3
+    A --- A4
+    
+    B --- B1
+    B --- B2
+    B --- B3
+    B --- B4
+    
+    C --- C1
+    C --- C2
+    C --- C3
+    C --- C4
+    
+    D --- D1
+    D --- D2
+    D --- D3
+    D --- D4
+
+    classDef sTier fill:#6a0dad,color:white,stroke-width:2px
+    classDef aTier fill:#4169e1,color:white,stroke-width:2px
+    classDef bTier fill:#228b22,color:white,stroke-width:2px
+    classDef cTier fill:#ff8c00,color:white,stroke-width:2px
+    classDef dTier fill:#cd5c5c,color:white,stroke-width:2px
+    
+    class S,S1,S2,S3,S4 sTier
+    class A,A1,A2,A3,A4 aTier
+    class B,B1,B2,B3,B4 bTier
+    class C,C1,C2,C3,C4 cTier
+    class D,D1,D2,D3,D4 dTier
+```
+
+## Purpose of LLM Tiering
+
+LLM classification tiers serve several critical functions for organizations implementing AI solutions:
+
+### Strategic Decision Support
+- **Optimize Model Selection**: Match appropriate models to specific task requirements
+- **Resource Allocation**: Balance performance needs with available computational resources
+- **Cost Management**: Align budget constraints with performance expectations
+
+### Implementation Guidance
+- **Technical Planning**: Inform infrastructure and deployment requirements
+- **Clear Expectations**: Set realistic performance and capability benchmarks
+- **Risk Management**: Understand limitations and potential failure points
+
+### Long-term Planning
+- **Upgrade Pathways**: Define clear progression paths as needs evolve
+- **Future-proofing**: Anticipate technological advancements and scaling requirements
+- **Performance Benchmarking**: Establish consistent evaluation frameworks
+
+```mermaid
+flowchart LR
+    PURPOSE[Purpose of LLM Tiering]
+    
+    PURPOSE --> DECISION[Decision Support]
+    PURPOSE --> IMPLEMENTATION[Implementation Guidance]
+    PURPOSE --> PLANNING[Strategic Planning]
+    
+    DECISION --> D1[Model Selection Optimization]
+    DECISION --> D2[Resource Allocation]
+    DECISION --> D3[Budget Alignment]
+    
+    IMPLEMENTATION --> I1[Technical Requirements]
+    IMPLEMENTATION --> I2[Performance Expectations]
+    IMPLEMENTATION --> I3[Limitation Awareness]
+    
+    PLANNING --> P1[Upgrade Pathways]
+    PLANNING --> P2[Future-proofing]
+    PLANNING --> P3[Performance Benchmarking]
+    
+    style PURPOSE fill:#6495ed,stroke:#333,stroke-width:2px
+    style DECISION fill:#7b68ee,stroke:#333,stroke-width:1px
+    style IMPLEMENTATION fill:#9370db,stroke:#333,stroke-width:1px
+    style PLANNING fill:#8a2be2,stroke:#333,stroke-width:1px
+    
+    style D1 fill:#e6e6fa,stroke:#333,stroke-width:1px
+    style D2 fill:#e6e6fa,stroke:#333,stroke-width:1px
+    style D3 fill:#e6e6fa,stroke:#333,stroke-width:1px
+    
+    style I1 fill:#f0f8ff,stroke:#333,stroke-width:1px
+    style I2 fill:#f0f8ff,stroke:#333,stroke-width:1px
+    style I3 fill:#f0f8ff,stroke:#333,stroke-width:1px
+    
+    style P1 fill:#f5f5f5,stroke:#333,stroke-width:1px
+    style P2 fill:#f5f5f5,stroke:#333,stroke-width:1px
+    style P3 fill:#f5f5f5,stroke:#333,stroke-width:1px
+```
+
+
+## LLM Tier Selection Guide
+
+### S Tier Selection Criteria: Cutting-Edge Performance
+**Best For:**
+- Advanced reasoning and multi-step problem-solving requirements
+- Applications demanding state-of-the-art capabilities across domains
+- Enterprise deployments requiring highest reliability and versatility
+- Situations where budget constraints are secondary to performance
+
+**Example Use Cases:**
+- Sophisticated conversational AI assistants for enterprise deployment
+- Advanced technical and scientific research applications
+- Complex creative content generation (screenwriting, long-form content)
+- High-stakes decision support systems
+
+### A Tier Selection Criteria: High Quality and Cost-Effective
+**Best For:**
+- Balancing strong performance with reasonable operational costs
+- Applications requiring reliable but not necessarily cutting-edge results
+- Business implementations with moderate resource availability
+- Domain-specific deployments with focused requirements
+
+**Example Use Cases:**
+- Customer service automation and chatbots
+- Robust content generation and summarization
+- Medium-complexity code generation and assistance
+- Enterprise knowledge management systems
+
+### B Tier Selection Criteria: Mid-Level Performance for Focused Tasks
+**Best For:**
+- Specific, well-defined use cases with limited scope
+- Environments with meaningful resource constraints
+- Prototype development and proof-of-concept implementations
+- Applications with straightforward requirements
+
+**Example Use Cases:**
+- Document summarization and content classification
+- Basic to moderate question-answering systems
+- Simple chatbots and automated responses
+- Content generation where absolute precision isn't critical
+
+### C Tier Selection Criteria: Entry-Level or Lightweight Models
+**Best For:**
+- Basic applications with minimal complexity
+- Highly resource-constrained environments
+- Educational and training implementations
+- Non-critical applications with basic requirements
+
+**Example Use Cases:**
+- Academic exercises and educational demonstrations
+- Simple text completion and basic analysis
+- Lightweight processing of structured inputs
+- Applications where response time is prioritized over sophistication
+
+### D Tier Selection Criteria: Foundational/Research Models
+**Best For:**
+- Exploration and experimentation with NLP concepts
+- Extremely resource-limited environments
+- Academic research on fundamental language modeling
+- Applications where performance expectations are minimal
+
+**Example Use Cases:**
+- Edge computing and embedded systems
+- Academic research and experimentation
+- Initial prototyping and concept validation
+- Learning environments for AI education
+
+### Comparison Matrix: Factors to Consider
+
+| Factor | S Tier | A Tier | B Tier | C Tier | D Tier |
+|--------|--------|--------|--------|--------|--------|
+| Budget Requirements | High | Moderate | Low | Minimal | Minimal |
+| Performance Expectations | Cutting-edge | High | Moderate | Basic | Foundational |
+| Resource Availability | Extensive | Moderate | Limited | Very Limited | Minimal |
+| Task Complexity | Complex | Moderate to Complex | Moderate | Basic | Very Basic |
+| Customization Potential | Highly Flexible | Flexible | Limited | Basic | Minimal |
+| Deployment Scope | Enterprise | Department/Team | Specific Application | Single Function | Experimental |
+| Risk Tolerance | Low | Moderate | Moderate-High | High | Very High |
+
+```mermaid
+graph TD
+    START[Selection Start] --> Q1{High Performance<br>Requirements?}
+    Q1 -->|Yes| Q2{Budget<br>Constraints?}
+    Q1 -->|No| Q3{Specific Use<br>Case Only?}
+    
+    Q2 -->|Minimal| S[S Tier]
+    Q2 -->|Moderate| A[A Tier]
+    Q2 -->|Significant| Q4{Complex<br>Reasoning<br>Needed?}
+    
+    Q4 -->|Yes| A[A Tier]
+    Q4 -->|No| B[B Tier]
+    
+    Q3 -->|Yes| Q5{Resource<br>Constraints?}
+    Q3 -->|No| Q6{Educational/<br>Research<br>Purpose?}
+    
+    Q5 -->|Significant| C[C Tier]
+    Q5 -->|Moderate| B[B Tier]
+    
+    Q6 -->|Yes| D[D Tier]
+    Q6 -->|No| C[C Tier]
+    
+    S -->|Provides| S1[Advanced Reasoning<br>State-of-the-art Performance<br>Multi-modal Capabilities]
+    A -->|Provides| A1[Reliable Results<br>Good Performance/Cost<br>Suitable for Business]
+    B -->|Provides| B1[Focused Capabilities<br>Moderate Performance<br>Specific Use-Cases]
+    C -->|Provides| C1[Basic Functionality<br>Lightweight<br>Simple Applications]
+    D -->|Provides| D1[Minimal Capabilities<br>Research-Oriented<br>Educational Value]
+    
+    classDef start fill:#22c55e,color:white,stroke:#333,stroke-width:2px
+    classDef question fill:#f97316,color:white,stroke:#333,stroke-width:1px
+    classDef tier fill:#3b82f6,color:white,stroke:#333,stroke-width:1px
+    classDef features fill:#f5f5f5,stroke:#333,stroke-width:1px,stroke-dasharray: 5 5
+    
+    class START start
+    class Q1,Q2,Q3,Q4,Q5,Q6 question
+    class S,A,B,C,D tier
+    class S1,A1,B1,C1,D1 features
+```
+
+## LLMs Tier List - 2024
+
+The landscape of Large Language Models continues to evolve rapidly, with new models and capabilities emerging regularly. Below is a current assessment of prominent LLMs across different tiers:
+
+### S Tier Models: State-of-the-Art
+
+- **Gemini 2.0 Flash**: Introduced in December 2024, this multimodal powerhouse processes various input types including audio. Its remarkable speed, zero cost, and performance rivaling GPT-40 make it exceptional for both reasoning and general-purpose applications.
+
+- **Claude 3.5 Sonnet**: An elite model celebrated for outstanding efficiency and reliability across a wide application spectrum. Particularly noted for its performance-to-cost ratio.
+
+- **GPT-40**: While introducing omni-modality, some feature rollout delays allowed competitors like Gemini 2.0 Flash to gain market advantage. Nevertheless, remains a top-tier model with exceptional capabilities.
+
+### A Tier Models: High Performance
+
+- **Claude 3.5 Haiku**: Despite pricing controversies (double that of Claude 3 Haiku), provides solid functionality, though value comparison to free alternatives raises questions.
+
+- **Mistral Large 2**: A competent model with comprehensive capabilities, though restrictive licensing may deter some potential users.
+
+- **Llama 3.1 (405B)**: The largest publicly available model to date with excellent performance and straightforward licensing terms.
+
+- **DeepSeek V2.5**: Successfully combines coding and general functionalities with excellent performance at a competitive API cost.
+
+- **Phi4**: A remarkable entry in the 14B parameter category, delivering substantial capability in a compact framework.
+
+- **Llama 3.3 70B**: Offers exceptional performance relative to its size, making it a standout in the parameter-efficient category.
+
+### B Tier Models: Solid Performers
+
+- **Mistral Nemo**: Once groundbreaking, this Mistral-Nvidia collaboration has been overtaken by newer model releases.
+
+- **Qwen 2.5**: Excels in mathematics and task-specific applications but shows limitations in general knowledge and instruction-following.
+
+- **DeepSeek R1-Lite**: A capable reasoning-focused model with good performance in analytical tasks.
+
+- **Codestral**: A standout coding model that outperforms many competitors (including Qwen 2.5) in programming domains.
+
+- **GPT-40 Mini**: Delivers decent performance but faces challenges competing with more aggressively priced alternatives.
+
+- **Grok-2**: An uncensored model available through Twitter and API, praised for its accessibility and unique positioning.
+
+### C Tier Models: Basic Functionality
+
+- **Qwen 2.5 Coder**: Initially generated significant interest but later criticized for reliance on proprietary benchmarks.
+
+- **Mistral Pixtral/Ministral**: Performance generally considered underwhelming with licensing limitations further reducing appeal.
+
+- **Llama 3-2 Vision**: Vision capabilities fail to impress compared to multimodal leaders.
+
+- **O1 Mini**: Limited capabilities relative to pricing position.
+
+### D Tier Models: Minimal Capabilities
+
+- **Gemma 2**: Widely regarded as disappointing due to limited capabilities relative to expectations.
+
+- **QwQ**: Despite positioning as an open-source alternative to O1, performance remains limited.
+
+- **O1**: Criticized for high pricing ($200) and lack of transparency regarding training methodologies.
+
+
+## Conclusion
+
+The LLM tier classification system provides a structured framework for evaluating and selecting language models based on capabilities, performance, and resource requirements. As the landscape continues to evolve rapidly, this classification helps organizations make informed decisions aligned with their specific needs and constraints.
+
+Key takeaways:
+
+- **Strategic Selection**: Match the LLM tier to your specific use case, budget, and performance requirements
+- **Ongoing Evolution**: The LLM landscape is highly dynamic, with models frequently shifting between tiers as new capabilities emerge
+- **Performance/Resource Balance**: Higher tiers generally deliver better performance but require greater resources
+- **Deployment Context Matters**: Consider your specific deployment environment, user expectations, and technical constraints
+
+By utilizing this tiering system, organizations can navigate the complex LLM ecosystem more effectively, making strategic choices that optimize both performance and resource utilization.
