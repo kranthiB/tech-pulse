@@ -853,17 +853,16 @@ Organizations should implement these security elements in coordination with thei
 ### Maturity Model Dimensions
 
 ```mermaid
-radar
-    title IIoT Readiness Dimensions
-    Technology     : 0.7
-    Strategy       : 0.5
-    Operations     : 0.6
-    Organization   : 0.4
-    Security       : 0.3
-    Skills         : 0.4
+pie title IIoT Readiness Dimensions
+    "Technology" : 70
+    "Strategy" : 50
+    "Operations" : 60
+    "Organization" : 40
+    "Security" : 30
+    "Skills" : 40
 ```
 
-This radar chart visualizes a typical organization's readiness for IIoT implementation across six critical dimensions:
+This chart visualizes a typical organization's readiness for IIoT implementation across six critical dimensions:
 
 - **Technology:** The technical infrastructure, systems, and capabilities that enable IIoT
 - **Strategy:** The clarity of vision, goals, and roadmap for IIoT implementation
@@ -872,7 +871,7 @@ This radar chart visualizes a typical organization's readiness for IIoT implemen
 - **Security:** The security capabilities and practices that protect IIoT implementations
 - **Skills:** The workforce capabilities needed to implement and operate IIoT solutions
 
-The radar format highlights:
+The format highlights:
 - Relative maturity across dimensions, identifying areas of strength and weakness
 - Balanced development across all dimensions rather than excellence in just one or two
 - A holistic view of readiness beyond just technological capabilities
