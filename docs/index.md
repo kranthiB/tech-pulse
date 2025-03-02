@@ -34,8 +34,8 @@ auto_title: false
   
   <!-- System Design Card -->
   <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background: linear-gradient(135deg, #2054a6, #3498db); padding: 18px; color: white; border-bottom: 3px solid #1e88e5;">
-      <h2 style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;">System Design</h2>
+    <div style="background-color: #2054a6; padding: 18px; color: white;">
+      <p style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;">System Design</p>
     </div>
     <div style="padding: 20px; background-color: white;">
       <p style="margin-top: 0; color: #24292e;">Architecture patterns, distributed systems, scalability, and resilience strategies.</p>
