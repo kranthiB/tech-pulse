@@ -2,7 +2,7 @@
 id: gen-ai/ai-driven-software-development
 title: AI Driven Software Development
 sidebar_label: AI Driven Software Development
-previous_page: gen-ai/llm-tier
+previous_page: gen-ai/agentic-ai
 ---
 
 

@@ -15,6 +15,7 @@ sidebar:
       - gen-ai/prompt-engineering
       - gen-ai/llm-tier
       - gen-ai/rag
+      - gen-ai/agentic-ai
       - gen-ai/ai-driven-software-development
   - label: Industrial IoT
     children:
