@@ -372,57 +372,57 @@ The landscape of Large Language Models continues to evolve rapidly, with new mod
 
 ### S Tier Models: State-of-the-Art
 
-- **Gemini 2.0 Flash**: Introduced in December 2024, this multimodal powerhouse processes various input types including audio. Its remarkable speed, zero cost, and performance rivaling GPT-40 make it exceptional for both reasoning and general-purpose applications.
+**Gemini 2.0 Flash**: Introduced in December 2024, this multimodal powerhouse processes various input types including audio. Its remarkable speed, zero cost, and performance rivaling GPT-40 make it exceptional for both reasoning and general-purpose applications.
 
-- **Claude 3.5 Sonnet**: An elite model celebrated for outstanding efficiency and reliability across a wide application spectrum. Particularly noted for its performance-to-cost ratio.
+**Claude 3.5 Sonnet**: An elite model celebrated for outstanding efficiency and reliability across a wide application spectrum. Particularly noted for its performance-to-cost ratio.
 
-- **GPT-40**: While introducing omni-modality, some feature rollout delays allowed competitors like Gemini 2.0 Flash to gain market advantage. Nevertheless, remains a top-tier model with exceptional capabilities.
+**GPT-40**: While introducing omni-modality, some feature rollout delays allowed competitors like Gemini 2.0 Flash to gain market advantage. Nevertheless, remains a top-tier model with exceptional capabilities.
 
 ### A Tier Models: High Performance
 
-- **Claude 3.5 Haiku**: Despite pricing controversies (double that of Claude 3 Haiku), provides solid functionality, though value comparison to free alternatives raises questions.
+**Claude 3.5 Haiku**: Despite pricing controversies (double that of Claude 3 Haiku), provides solid functionality, though value comparison to free alternatives raises questions.
 
-- **Mistral Large 2**: A competent model with comprehensive capabilities, though restrictive licensing may deter some potential users.
+**Mistral Large 2**: A competent model with comprehensive capabilities, though restrictive licensing may deter some potential users.
 
-- **Llama 3.1 (405B)**: The largest publicly available model to date with excellent performance and straightforward licensing terms.
+**Llama 3.1 (405B)**: The largest publicly available model to date with excellent performance and straightforward licensing terms.
 
-- **DeepSeek V2.5**: Successfully combines coding and general functionalities with excellent performance at a competitive API cost.
+**DeepSeek V2.5**: Successfully combines coding and general functionalities with excellent performance at a competitive API cost.
 
-- **Phi4**: A remarkable entry in the 14B parameter category, delivering substantial capability in a compact framework.
+**Phi4**: A remarkable entry in the 14B parameter category, delivering substantial capability in a compact framework.
 
-- **Llama 3.3 70B**: Offers exceptional performance relative to its size, making it a standout in the parameter-efficient category.
+**Llama 3.3 70B**: Offers exceptional performance relative to its size, making it a standout in the parameter-efficient category.
 
 ### B Tier Models: Solid Performers
 
-- **Mistral Nemo**: Once groundbreaking, this Mistral-Nvidia collaboration has been overtaken by newer model releases.
+**Mistral Nemo**: Once groundbreaking, this Mistral-Nvidia collaboration has been overtaken by newer model releases.
 
-- **Qwen 2.5**: Excels in mathematics and task-specific applications but shows limitations in general knowledge and instruction-following.
+**Qwen 2.5**: Excels in mathematics and task-specific applications but shows limitations in general knowledge and instruction-following.
 
-- **DeepSeek R1-Lite**: A capable reasoning-focused model with good performance in analytical tasks.
+**DeepSeek R1-Lite**: A capable reasoning-focused model with good performance in analytical tasks.
 
-- **Codestral**: A standout coding model that outperforms many competitors (including Qwen 2.5) in programming domains.
+**Codestral**: A standout coding model that outperforms many competitors (including Qwen 2.5) in programming domains.
 
-- **GPT-40 Mini**: Delivers decent performance but faces challenges competing with more aggressively priced alternatives.
+**GPT-40 Mini**: Delivers decent performance but faces challenges competing with more aggressively priced alternatives.
 
-- **Grok-2**: An uncensored model available through Twitter and API, praised for its accessibility and unique positioning.
+**Grok-2**: An uncensored model available through Twitter and API, praised for its accessibility and unique positioning.
 
 ### C Tier Models: Basic Functionality
 
-- **Qwen 2.5 Coder**: Initially generated significant interest but later criticized for reliance on proprietary benchmarks.
+**Qwen 2.5 Coder**: Initially generated significant interest but later criticized for reliance on proprietary benchmarks.
 
-- **Mistral Pixtral/Ministral**: Performance generally considered underwhelming with licensing limitations further reducing appeal.
+**Mistral Pixtral/Ministral**: Performance generally considered underwhelming with licensing limitations further reducing appeal.
 
-- **Llama 3-2 Vision**: Vision capabilities fail to impress compared to multimodal leaders.
+**Llama 3-2 Vision**: Vision capabilities fail to impress compared to multimodal leaders.
 
-- **O1 Mini**: Limited capabilities relative to pricing position.
+**O1 Mini**: Limited capabilities relative to pricing position.
 
 ### D Tier Models: Minimal Capabilities
 
-- **Gemma 2**: Widely regarded as disappointing due to limited capabilities relative to expectations.
+**Gemma 2**: Widely regarded as disappointing due to limited capabilities relative to expectations.
 
-- **QwQ**: Despite positioning as an open-source alternative to O1, performance remains limited.
+**QwQ**: Despite positioning as an open-source alternative to O1, performance remains limited.
 
-- **O1**: Criticized for high pricing ($200) and lack of transparency regarding training methodologies.
+**O1**: Criticized for high pricing ($200) and lack of transparency regarding training methodologies.
 
 
 ## Conclusion
