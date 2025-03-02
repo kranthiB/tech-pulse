@@ -20,8 +20,8 @@ sidebar:
   - label: Industrial IoT
     children:
       - industrial-iot/industrial-iot
-      - industrial-iot/industry-5.0
-      - industrial-iot/edge-gateway      
+      - industrial-iot/edge-gateway
+      - industrial-iot/industry-5.0 
   - label: Ops Mastery
     children:
       - ops-mastery/dev-sec-ops
