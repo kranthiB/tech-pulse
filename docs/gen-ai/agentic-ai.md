@@ -1,7 +1,7 @@
 ---
 id: gen-ai/agentic-ai
 title: Agentic AI
-sidebar_label: Agentic aI
+sidebar_label: Agentic AI
 previous_page: gen-ai/rag
 next_page: gen-ai/ai-driven-software-development
 ---
