@@ -33,22 +33,22 @@ auto_title: false
   <h1 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Knowledge Areas</h1>
   
   <!-- System Design Card -->
-  <div style="margin-bottom: 25px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background-color: #454545; padding: 15px; color: white;">
-      <h2 style="margin: 0; font-size: 20px; color: white;">System Design</h2>
+  <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
+    <div style="background: linear-gradient(135deg, #2c3e50, #34495e); padding: 18px; color: white; border-bottom: 3px solid #1abc9c;">
+      <h2 style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;">System Design</h2>
     </div>
     <div style="padding: 20px; background-color: white;">
       <p style="margin-top: 0; color: #24292e;">Architecture patterns, distributed systems, scalability, and resilience strategies.</p>
       <div style="text-align: right;">
-        <a href="https://kranthib.github.io/tech-pulse/system-design.html" style="display: inline-block; padding: 6px 12px; background-color: #454545; color: white; text-decoration: none; border-radius: 3px; font-size: 14px;">Explore →</a>
+        <a href="https://kranthib.github.io/tech-pulse/system-design.html" style="display: inline-block; padding: 6px 14px; background-color: #1abc9c; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">Explore →</a>
       </div>
     </div>
   </div>
   
   <!-- Data & AI Card -->
-  <div style="margin-bottom: 25px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background-color: #454545; padding: 15px; color: white;">
-      <h2 style="margin: 0; font-size: 20px; color: white;">Data & AI</h2>
+  <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
+    <div style="background: linear-gradient(135deg, #2980b9, #3498db); padding: 18px; color: white; border-bottom: 3px solid #f39c12;">
+      <h2 style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;">Data & AI</h2>
     </div>
     <div style="padding: 20px; background-color: white;">
       <div style="margin-bottom: 20px;">
@@ -68,9 +68,9 @@ auto_title: false
   </div>
   
   <!-- Generative AI Card -->
-  <div style="margin-bottom: 25px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background-color: #454545; padding: 15px; color: white;">
-      <h2 style="margin: 0; font-size: 20px; color: white;">Generative AI</h2>
+  <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
+    <div style="background: linear-gradient(135deg, #8e44ad, #9b59b6); padding: 18px; color: white; border-bottom: 3px solid #2ecc71;">
+      <h2 style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;">Generative AI</h2>
     </div>
     <div style="padding: 20px; background-color: white;">
       <div style="display: flex; flex-wrap: wrap; gap: 10px;">
@@ -84,9 +84,9 @@ auto_title: false
   </div>
   
   <!-- Industrial IoT Card -->
-  <div style="margin-bottom: 25px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background-color: #454545; padding: 15px; color: white;">
-      <h2 style="margin: 0; font-size: 20px; color: white;">Industrial IoT</h2>
+  <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
+    <div style="background: linear-gradient(135deg, #d35400, #e67e22); padding: 18px; color: white; border-bottom: 3px solid #3498db;">
+      <h2 style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;">Industrial IoT</h2>
     </div>
     <div style="padding: 20px; background-color: white;">
       <div style="display: flex; flex-wrap: wrap; gap: 15px;">
@@ -107,9 +107,9 @@ auto_title: false
   </div>
   
   <!-- Ops Mastery Card -->
-  <div style="margin-bottom: 25px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background-color: #454545; padding: 15px; color: white;">
-      <h2 style="margin: 0; font-size: 20px; color: white;">Ops Mastery</h2>
+  <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
+    <div style="background: linear-gradient(135deg, #16a085, #2ecc71); padding: 18px; color: white; border-bottom: 3px solid #e74c3c;">
+      <h2 style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;">Ops Mastery</h2>
     </div>
     <div style="padding: 20px; background-color: white;">
       <div style="display: flex; flex-wrap: wrap; gap: 10px;">
@@ -124,22 +124,22 @@ auto_title: false
   </div>
   
   <!-- Platform Engineering Card -->
-  <div style="margin-bottom: 25px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background-color: #454545; padding: 15px; color: white;">
-      <h2 style="margin: 0; font-size: 20px; color: white;">Platform Engineering</h2>
+  <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
+    <div style="background: linear-gradient(135deg, #c0392b, #e74c3c); padding: 18px; color: white; border-bottom: 3px solid #f1c40f;">
+      <h2 style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;">Platform Engineering</h2>
     </div>
     <div style="padding: 20px; background-color: white;">
       <p style="color: #24292e;">Internal developer platforms, infrastructure automation, and delivery excellence.</p>
       <div style="text-align: right;">
-        <a href="https://kranthib.github.io/tech-pulse/platform-engineering.html" style="display: inline-block; padding: 6px 12px; background-color: #454545; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; color: white;">Explore →</a>
+        <a href="https://kranthib.github.io/tech-pulse/platform-engineering.html" style="display: inline-block; padding: 6px 14px; background-color: #e74c3c; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">Explore →</a>
       </div>
     </div>
   </div>
   
   <!-- Frameworks & Platforms Card -->
-  <div style="margin-bottom: 25px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background-color: #454545; padding: 15px; color: white;">
-      <h2 style="margin: 0; font-size: 20px; color: white;">Frameworks & Platforms</h2>
+  <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
+    <div style="background: linear-gradient(135deg, #f39c12, #f1c40f); padding: 18px; color: white; border-bottom: 3px solid #9b59b6;">
+      <h2 style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">Frameworks & Platforms</h2>
     </div>
     <div style="padding: 20px; background-color: white;">
       <div style="display: flex; flex-direction: column; gap: 10px;">
