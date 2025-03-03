@@ -4,17 +4,45 @@ title: Platform Engineering
 sidebar_label: Platform Engineering
 ---
 
-<!-- Replace the existing anchor with this code -->
-<div style="text-align: right;">
-    <a href="#top" id="backToTop" style="display: inline-block; padding: 6px 14px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">Back to Home →</a>
-</div>
+<!-- Add this to your markdown file -->
+<style>
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px 15px;
+    background-color: #2054a6;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 1000;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
 
-<!-- Add an id at the top of your document -->
-<div id="top"></div>
+.back-to-top:hover {
+    opacity: 1;
+}
+</style>
 
-<!-- Add this script at the end of your markdown file -->
+<a href="https://kranthib.github.io/tech-pulse/" class="back-to-top" id="backToTopBtn">Back to Top ↑</a>
+
 <script>
-document.getElementById('backToTop').addEventListener('click', function(e) {
+// Show button when user scrolls down 100px
+window.addEventListener('scroll', function() {
+    var backToTopBtn = document.getElementById('backToTopBtn');
+    if (window.pageYOffset > 100) {
+        backToTopBtn.style.display = 'block';
+    } else {
+        backToTopBtn.style.display = 'none';
+    }
+});
+
+// Smooth scroll to top when clicked
+document.getElementById('backToTopBtn').addEventListener('click', function(e) {
     e.preventDefault();
     window.scrollTo({
         top: 0,
