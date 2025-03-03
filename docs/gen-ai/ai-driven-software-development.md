@@ -264,17 +264,22 @@ Successfully incorporating AI code assistants into development workflows require
 gantt
     title AI Adoption Roadmap
     dateFormat  YYYY-MM-DD
+    axisFormat %b %e
+    
     section Assessment
-    Current Capability Analysis       :a1, 2023-01-01, 30d
+    Current Capability Analysis       :a1, 2025-03-03, 30d
     Use Case Identification          :a2, after a1, 20d
     Tool Selection                   :a3, after a2, 15d
+    
     section Pilot
     Small Team Implementation        :p1, after a3, 45d
     Training & Feedback              :p2, after a3, 45d
     ROI Measurement                  :p3, after p1, 15d
+    
     section Scaling
     Expanded Deployment              :s1, after p3, 30d
     Integration Refinement           :s2, after s1, 30d
+    
     section Optimization
     Advanced Use Cases               :o1, after s2, 60d
     Continuous Improvement           :o2, after s2, 90d
@@ -358,22 +363,6 @@ Based on comprehensive testing across multiple criteria, here's how these AI cod
 
 **Functionality & Performance**
 
-```mermaid
-radar
-  title Assistant Capabilities
-  
-  GitHub Copilot     : 90, 95, 85, 80, 75
-  Tabnine            : 75, 90, 70, 95, 65
-  Codeium            : 82, 92, 78, 85, 72
-  Amazon Q Developer : 85, 80, 90, 92, 83
-  Cursor             : 88, 85, 92, 75, 80
-  Windsurf           : 85, 75, 94, 70, 88
-  CodeGPT            : 80, 82, 75, 73, 78
-  Google Code Assist : 88, 90, 83, 78, 92
-  
-  axisLabels        : Code Quality, Response Time, Accuracy, Security, API Understanding
-```
-
 **Feature Comparison Matrix**
 
 | Feature | GitHub Copilot | Tabnine | Codeium | Amazon Q | Cursor | Windsurf | CodeGPT | Google Code Assist |
@@ -436,21 +425,22 @@ flowchart LR
 **Developer Experience and Adoption**
 
 ```mermaid
-xychart-beta
-    title "Developer Experience vs. Market Penetration"
-    x-axis "Developer Experience (Ease of Use)" 60 -> 100
-    y-axis "Market Adoption" 60 -> 100
-    line [
-        [65, 70], [70, 75], [75, 80], [80, 85], [85, 90], [90, 95], [95, 97]
-    ]
-    point [92, 95] "GitHub Copilot"
-    point [88, 82] "Google Code Assist"
-    point [85, 75] "Amazon Q Developer"
-    point [90, 72] "Cursor"
-    point [83, 78] "Tabnine"
-    point [80, 73] "Codeium"
-    point [85, 68] "Windsurf"
-    point [78, 70] "CodeGPT"
+quadrantChart
+    title Developer Experience vs. Market Penetration
+    x-axis "Low Developer Experience" --> "High Developer Experience"
+    y-axis "Low Market Adoption" --> "High Market Adoption"
+    quadrant-1 "High Adoption, Challenging UX"
+    quadrant-2 "Market Leaders"
+    quadrant-3 "Niche Players"
+    quadrant-4 "Growing Potential"
+    "GitHub Copilot": [0.92, 0.95]
+    "Google Code Assist": [0.88, 0.82]
+    "Amazon Q Developer": [0.85, 0.75]
+    "Cursor": [0.90, 0.72]
+    "Tabnine": [0.83, 0.78]
+    "Codeium": [0.80, 0.73]
+    "Windsurf": [0.85, 0.68]
+    "CodeGPT": [0.78, 0.70]
 ```
 
 **Integration Capabilities**
