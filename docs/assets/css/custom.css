@@ -1,0 +1,121 @@
+/* Base styling */
+body {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main container */
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Header styling */
+  h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-weight: 600;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    border-bottom: 2px solid #4285f4;
+    padding-bottom: 0.3em;
+    margin-top: 0;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.3em;
+  }
+  
+  /* About section styling */
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-image {
+    border-radius: 8px;
+    max-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Connect section styling */
+  .connect-section {
+    background-color: #f1f3f5;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  
+  .connect-section h2 {
+    margin-top: 0;
+    color: #4285f4;
+  }
+  
+  .connect-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .connect-links a {
+    color: #4285f4;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .connect-links a:hover {
+    color: #1a73e8;
+    text-decoration: underline;
+  }
+  
+  /* Knowledge areas section */
+  .knowledge-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .knowledge-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Paragraph styling */
+  p {
+    margin-bottom: 1.2rem;
+  }
+  
+  /* Navigation styling */
+  .site-navigation {
+    background-color: #4285f4;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .site-navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 1.5rem;
+  }
+  
+  .site-navigation a:hover {
+    text-decoration: underline;
+  }
