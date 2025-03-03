@@ -53,7 +53,7 @@ auto_title: false
     <div style="padding: 20px; background-color: white;">
       <div style="margin-bottom: 20px;">
         <div style="display: flex; flex-wrap: wrap; gap: 5px; align-items: center;">
-          <a href="https://kranthib.github.io/tech-pulse/data-ai/data-foundations.html" style="flex: 1; min-width: 200px; padding: 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; font-weight: 500; border: 1px solid #e1e4e8; font-size: 14px;">Data Foundations</a>
+          <a href="https://kranthib.github.io/tech-pulse/data-ai/data-foundations.html" style="padding: 6px 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; font-size: 14px;">Data Foundations</a>
           <span style="color: #6a737d;">→</span>
           <a href="https://kranthib.github.io/tech-pulse/data-ai/data-engineering.html" style="padding: 6px 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; font-size: 14px;">Data Engineering</a>
           <span style="color: #6a737d;">→</span>
