@@ -1,8 +1,3 @@
----
----
-
-@import "{{ site.theme }}";
-
 /* Target the vertical sidebar with multiple possible class names */
 .zd-sidebar, 
 .sidebar-container,
