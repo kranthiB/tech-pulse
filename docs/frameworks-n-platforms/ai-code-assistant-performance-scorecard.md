@@ -14,20 +14,20 @@ This scorecard provides a comprehensive evaluation framework for AI code assista
 ```mermaid
 mindmap
   root((Performance Scorecard))
-    Intelligence[Intelligence (30pts)]
-      Context Awareness (10pts)
-      Output Quality (10pts)
-      Autonomy (10pts)
-    Acceleration[Acceleration (30pts)]
-      Iteration Size (10pts)
-      Iteration Speed (10pts)
-      Capabilities (10pts)
-    Experience[Experience (30pts)]
-      Flexibility (10pts)
-      Ease of Use (10pts)
-      Reliability (10pts)
-    Value[Value (10pts)]
-      Cost-Benefit (10pts)
+    Intelligence["Intelligence (30pts)"]
+        Context_Awareness["Context Awareness (10pts)"]
+        Output_Quality["Output Quality (10pts)"]
+        Autonomy["Autonomy (10pts)"]
+    Acceleration["Acceleration (30pts)"]
+        Iteration_Size["Iteration Size (10pts)"]
+        Iteration_Speed["Iteration Speed (10pts)"]
+        Capabilities["Capabilities (10pts)"]
+    Experience["Experience (30pts)"]
+        Flexibility["Flexibility (10pts)"]
+        Ease_of_Use["Ease of Use (10pts)"]
+        Reliability["Reliability (10pts)"]
+    Value["Value (10pts)"]
+        Cost_Benefit["Cost-Benefit (10pts)"]
 ```
 
 ## Scoring Framework

@@ -31,7 +31,7 @@ Table of contents
 
 # Graph-Based Cloud Cost Optimization
 
-![CCO](https://github.com/user-attachments/assets/f5281be9-94f3-4d3d-99b4-cf2e2d45deae)
+![CCO](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/gif/CloudCostOptimization.gif)
 
 ## Introduction
 
