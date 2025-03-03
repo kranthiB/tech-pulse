@@ -4,6 +4,10 @@ title: Platform Engineering
 sidebar_label: Platform Engineering
 ---
 
+<div style="text-align: right;">
+    <a href="https://kranthib.github.io/tech-pulse/" style="display: inline-block; padding: 6px 14px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">Back to Home →</a>
+</div>
+
 # Platform Engineering
 
 Platform engineering is the discipline of designing and building toolchains and workflows that enable self-service capabilities for software engineering organizations. By creating these internal developer platforms (IDPs), platform engineers improve developer experience and productivity.

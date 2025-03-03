@@ -1,6 +1,8 @@
 title: Tech Pulse
 remote_theme: zendesk/jekyll-theme-zendesk-garden@main
 baseurl: /tech-pulse
+show_sidebar: false
+show_navigation: false
 sidebar:
   - system-design
   - label: Data & AI
