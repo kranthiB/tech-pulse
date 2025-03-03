@@ -6,6 +6,10 @@ previous_page: frameworks-n-platforms/enterprise-application-security-framework
 next_page: frameworks-n-platforms/cloud-cost-optimization-framework
 ---
 
+<div style="text-align: right;">
+    <a href="https://kranthib.github.io/tech-pulse/" style="display: inline-block; padding: 6px 14px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">Back to Home →</a>
+</div>
+
 # Enterprise API Integration and Management Platform: Strategic Enabler for Digital Transformation
 
 ## Table of Contents

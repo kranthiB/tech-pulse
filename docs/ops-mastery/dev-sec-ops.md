@@ -5,6 +5,10 @@ sidebar_label: DevSecOps
 next_page: ops-mastery/git-ops
 ---
 
+<div style="text-align: right;">
+    <a href="https://kranthib.github.io/tech-pulse/" style="display: inline-block; padding: 6px 14px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">Back to Home →</a>
+</div>
+
 # DevSecOps Comprehensive Framework
 
 1. [Introduction to DevSecOps](#1-introduction-to-devsecops)
