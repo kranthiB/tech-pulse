@@ -1,7 +1,7 @@
 ---
 id: frameworks-n-platforms/ai-code-assistant-performance-scorecard
-title: Cloud Cost Optimization Framework
-sidebar_label: Cloud Cost Optimization Framework
+title: AI Code Assistant Performance Scoring Framework
+sidebar_label: AI Code Assistant Performance Scoring Framework
 previous_page: frameworks-n-platforms/cloud-cost-optimization-framework
 ---
 
