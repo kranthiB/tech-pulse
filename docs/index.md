@@ -51,18 +51,12 @@ auto_title: false
       <p style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;"><i class="fa fa-database" style="margin-right: 10px;"></i>Data & AI</p>
     </div>
     <div style="padding: 20px; background-color: white;">
-      <div style="margin-bottom: 20px;">
-        <div style="display: flex; flex-wrap: wrap; gap: 5px; align-items: center;">
-          <a href="https://kranthib.github.io/tech-pulse/data-ai/data-foundations.html" style="padding: 6px 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-cubes" style="margin-right: 5px;"></i>Data Foundations</a>
-          <span style="color: #6a737d;"><i class="fa fa-angle-right"></i></span>
-          <a href="https://kranthib.github.io/tech-pulse/data-ai/data-engineering.html" style="padding: 6px 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-cogs" style="margin-right: 5px;"></i>Data Engineering</a>
-          <span style="color: #6a737d;"><i class="fa fa-angle-right"></i></span>
-          <a href="https://kranthib.github.io/tech-pulse/data-ai/data-analysis.html" style="padding: 6px 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-chart-bar" style="margin-right: 5px;"></i>Data Analysis</a>
-          <span style="color: #6a737d;"><i class="fa fa-angle-right"></i></span>
-          <a href="https://kranthib.github.io/tech-pulse/data-ai/conventional-ml.html" style="padding: 6px 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-cog" style="margin-right: 5px;"></i>Conventional ML</a>
-          <span style="color: #6a737d;"><i class="fa fa-angle-right"></i></span>
-          <a href="https://kranthib.github.io/tech-pulse/data-ai/deep-learning.html" style="padding: 6px 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-brain" style="margin-right: 5px;"></i>Deep Learning</a>
-        </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+        <a href="https://kranthib.github.io/tech-pulse/data-ai/data-foundations.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-cubes" style="margin-right: 5px;"></i>Data Foundations</a>
+        <a href="https://kranthib.github.io/tech-pulse/data-ai/data-engineering.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-cogs" style="margin-right: 5px;"></i>Data Engineering</a>
+        <a href="https://kranthib.github.io/tech-pulse/data-ai/data-analysis.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-chart-bar" style="margin-right: 5px;"></i>Data Analysis</a>
+        <a href="https://kranthib.github.io/tech-pulse/data-ai/conventional-ml.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-cog" style="margin-right: 5px;"></i>Conventional ML</a>
+        <a href="https://kranthib.github.io/tech-pulse/data-ai/deep-learning.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-brain" style="margin-right: 5px;"></i>Deep Learning</a>
       </div>
     </div>
   </div>
@@ -89,19 +83,10 @@ auto_title: false
       <p style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;"><i class="fa fa-industry" style="margin-right: 10px;"></i>Industrial IoT</p>
     </div>
     <div style="padding: 20px; background-color: white;">
-      <div style="display: flex; flex-wrap: wrap; gap: 15px;">
-        <a href="https://kranthib.github.io/tech-pulse/industrial-iot/industrial-iot.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; padding: 20px; border: 1px solid #e1e4e8; border-radius: 3px; text-decoration: none; color: #0366d6; background-color: #f6f8fa;">
-          <i class="fa fa-industry" style="font-size: 36px; margin-bottom: 10px; color: #2054a6;"></i>
-          <span style="font-weight: 500;">Smart Manufacturing</span>
-        </a>
-        <a href="https://kranthib.github.io/tech-pulse/industrial-iot/edge-gateway.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; padding: 20px; border: 1px solid #e1e4e8; border-radius: 3px; text-decoration: none; color: #0366d6; background-color: #f6f8fa;">
-          <i class="fa fa-network-wired" style="font-size: 36px; margin-bottom: 10px; color: #2054a6;"></i>
-          <span style="font-weight: 500;">Edge Gateway</span>
-        </a>
-        <a href="https://kranthib.github.io/tech-pulse/industrial-iot/industry-5.0.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; padding: 20px; border: 1px solid #e1e4e8; border-radius: 3px; text-decoration: none; color: #0366d6; background-color: #f6f8fa;">
-          <i class="fa fa-rocket" style="font-size: 36px; margin-bottom: 10px; color: #2054a6;"></i>
-          <span style="font-weight: 500;">Industry 5.0</span>
-        </a>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+        <a href="https://kranthib.github.io/tech-pulse/industrial-iot/industrial-iot.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-industry" style="margin-right: 5px;"></i>Smart Manufacturing</a>
+        <a href="https://kranthib.github.io/tech-pulse/industrial-iot/edge-gateway.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-network-wired" style="margin-right: 5px;"></i>Edge Gateway</a>
+        <a href="https://kranthib.github.io/tech-pulse/industrial-iot/industry-5.0.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-rocket" style="margin-right: 5px;"></i>Industry 5.0</a>
       </div>
     </div>
   </div>
