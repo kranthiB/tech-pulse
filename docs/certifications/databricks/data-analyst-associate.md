@@ -47,6 +47,20 @@ Table of contents
         * [5. Managing Nested Data Formats](#5-managing-nested-data-formats)
         * [6. Query Performance Optimization](#6-query-performance-optimization)
         * [Knowledge Check Quiz](#knowledge-check-quiz-2)
+      * [Data Visualization and Dashboarding](#data-visualization-and-dashboarding-1)
+        * [1. Introduction to Data Visualization in Databricks SQL](#1-introduction-to-data-visualization-in-databricks-sql)
+        * [2. Essential Visualization Types](#2-essential-visualization-types)
+        * [3. Visualization Formatting and Customization](#3-visualization-formatting-and-customization)
+        * [4. Data Storytelling Through Visualization](#4-data-storytelling-through-visualization)
+        * [5. Creating Schema-Specific Visualizations](#5-creating-schema-specific-visualizations)
+        * [6. Building Interactive Dashboards](#6-building-interactive-dashboards)
+        * [7. Using Query Parameters for Dynamic Dashboards](#7-using-query-parameters-for-dynamic-dashboards)
+        * [8. Dashboard Sharing and Scheduling](#8-dashboard-sharing-and-scheduling)
+        * [9. Alert Configuration and Management](#9-alert-configuration-and-management)
+        * [Knowledge Check Quiz](#knowledge-check-quiz-3)
+
+
+
 <!--te-->
 
 # Preparation Plan
@@ -90,6 +104,20 @@ Table of contents
 ---
 
 ## Data Visualization and Dashboarding
+
+- Introduction to Data Visualization in Databricks SQL
+- Essential Visualization Types
+- Visualization Formatting and Customization
+- Data Storytelling Through Visualization
+- Creating Schema-Specific Visualizations
+- Building Interactive Dashboards
+- Using Query Parameters for Dynamic Dashboards
+- Dashboard Sharing and Scheduling
+- Alert Configuration and Management
+- Knowledge Check Quiz
+
+---
+
 
 ## Analytics Applications & Final Exam Preparation
 
@@ -1854,6 +1882,646 @@ To reinforce learning:
 ---
 
 ## Data Visualization and Dashboarding
+
+### 1. Introduction to Data Visualization in Databricks SQL
+
+Data visualization is a critical component of analytics, transforming raw data into meaningful visual representations that highlight patterns, trends, and insights. Databricks SQL provides integrated visualization capabilities that allow you to create compelling visuals directly from your query results.
+
+**The Visualization Workflow in Databricks SQL:**
+
+1. Write and execute a SQL query that retrieves the data you want to visualize
+2. Select the "Visualization" tab in the query results section
+3. Choose an appropriate visualization type
+4. Configure visualization settings and formatting
+5. Save the visualization for use in dashboards
+
+**Benefits of Integrated Visualizations:**
+
+- Direct connection to your query results without data export
+- Real-time updates when queries refresh
+- Seamless integration with dashboards
+- Consistent security and access controls
+- Reduced data movement and associated risks
+
+---
+
+### 2. Essential Visualization Types
+
+Databricks SQL supports various visualization types, each suited for specific analytical purposes. Understanding when to use each type is fundamental to effective data storytelling.
+
+**Table Visualizations**
+
+Tables display raw data in rows and columns, ideal when precise values are important.
+
+**Key features:**
+- Column formatting (numbers, dates, percentages)
+- Conditional formatting based on values
+- Sorting and pagination
+- Column visibility control
+
+**Use cases:**
+- Detailed transaction records
+- Contact information
+- Inventory listings
+- Precise numerical comparisons
+
+**Counter Visualizations**
+
+Counters highlight single values, often KPIs or important metrics that need immediate attention.
+
+**Key features:**
+- Large, prominent display of the primary value
+- Comparison with reference values (targets, previous periods)
+- Trend indicators (up/down arrows)
+- Color coding based on thresholds
+
+**Use cases:**
+- Total sales for current period
+- Customer count
+- Conversion rate
+- System uptime percentage
+
+**Bar and Column Charts**
+
+Bar charts (horizontal) and column charts (vertical) compare values across categories.
+
+**Key features:**
+- Multiple series for comparison
+- Stacked or grouped display options
+- Value labels and tooltips
+- Sorting by value or category
+
+**Use cases:**
+- Sales by product category
+- Customer distribution by region
+- Completion rate by project
+- Resource allocation by department
+
+**Line Charts**
+
+Line charts show trends over time or continuous dimensions, highlighting patterns and changes.
+
+**Key features:**
+- Multiple series for comparison
+- Area filling options
+- Markers for data points
+- Customizable axes and scales
+
+**Use cases:**
+- Sales trends over time
+- Temperature variations
+- Stock price movements
+- Utilization rates
+
+**Pie and Donut Charts**
+
+These charts show part-to-whole relationships, displaying each category as a slice of the whole.
+
+**Key features:**
+- Percentage and value labels
+- Exploded segments for emphasis
+- Legend customization
+- Donut hole with summary information
+
+**Use cases:**
+- Market share analysis
+- Budget allocation
+- Survey response distribution
+- Task completion status
+
+**Scatter Plots**
+
+Scatter plots reveal relationships between two numerical variables, showing correlation patterns.
+
+**Key features:**
+- Bubble size for a third dimension
+- Color coding for categories
+- Trend lines and regression analysis
+- Quadrant divisions
+
+**Use cases:**
+- Price vs. quality analysis
+- Marketing spend vs. revenue
+- Height vs. weight distributions
+- Performance vs. cost comparisons
+
+**Maps**
+
+Geographical visualizations display data in relation to physical locations.
+
+**Key features:**
+- Choropleth (colored regions)
+- Point mapping
+- Heat mapping
+- Custom region definitions
+
+**Use cases:**
+- Sales by geographic region
+- Customer distribution
+- Delivery routes
+- Regional performance metrics
+
+**Pivot Tables**
+
+Dynamic tables that reorganize and summarize data, allowing for interactive analysis.
+
+**Key features:**
+- Drag-and-drop field arrangement
+- Expandable and collapsible sections
+- Conditional formatting
+- Multiple aggregation functions
+
+**Use cases:**
+- Sales by product and region
+- Performance metrics by department and time period
+- Resource allocation across projects and teams
+- Customer metrics by segment and channel
+
+**Box Plots**
+
+Box plots display distribution characteristics for numerical data.
+
+**Key features:**
+- Quartile visualization
+- Outlier identification
+- Multiple series comparison
+- Statistical insights
+
+**Use cases:**
+- Performance distribution analysis
+- Quality control metrics
+- Response time analysis
+- Pricing variation studies
+
+---
+
+### 3. Visualization Formatting and Customization
+
+Effective visualization goes beyond selecting the right chart type—proper formatting enhances clarity and impact.
+
+**Color Selection Principles:**
+
+- **Consistency:** Use consistent color schemes across related visualizations
+- **Contrast:** Ensure sufficient contrast for readability
+- **Meaning:** Use colors that convey appropriate meaning (e.g., red for negative values)
+- **Accessibility:** Consider color blindness and other accessibility factors
+- **Branding:** Align with organizational color guidelines when appropriate
+
+**Text and Label Formatting:**
+
+- **Titles:** Clear, concise titles that explain what the visualization shows
+- **Subtitles:** Additional context or time period information
+- **Axis Labels:** Descriptive labels with appropriate units
+- **Data Labels:** Show values where appropriate without cluttering
+- **Tooltips:** Additional information on hover
+- **Font:** Readable fonts with appropriate sizing hierarchy
+
+**Layout and Composition:**
+
+- **Simplicity:** Remove unnecessary elements (gridlines, borders, backgrounds)
+- **Focus:** Highlight the most important information
+- **Whitespace:** Allow breathing room between elements
+- **Aspect Ratio:** Choose appropriate dimensions for the data
+- **Scale:** Set appropriate min/max values and intervals
+- **Sorting:** Arrange data meaningfully (e.g., descending values for ranking)
+
+**Practical Examples of Formatting Impact:**
+
+**Example 1: Sales Dashboard KPI Counter**
+- Poor formatting: Generic title, no comparison, default colors
+- Improved formatting: Specific title ("Q3 Sales: $1.2M"), comparison (+15% YoY), color-coded green to indicate positive performance
+
+**Example 2: Regional Performance Map**
+- Poor formatting: Rainbow color scale, cluttered labels, no context
+- Improved formatting: Sequential color scale (light to dark), selective labels for key regions, legend with clear value ranges
+
+---
+
+### 4. Data Storytelling Through Visualization
+
+Effective data visualization is about communicating insights, not just displaying data. Data storytelling combines visualizations into a coherent narrative.
+
+**Key Principles of Data Storytelling:**
+
+1. **Know Your Audience:** Tailor visualizations to their knowledge level and interests
+2. **Define the Core Message:** Identify the key insight you want to convey
+3. **Provide Context:** Include relevant benchmarks, targets, or historical data
+4. **Guide Attention:** Direct viewers to the most important elements
+5. **Progressive Disclosure:** Reveal information in a logical sequence
+6. **Connect the Dots:** Explain relationships between different visualizations
+7. **Call to Action:** Make clear what decisions or actions should follow
+
+**Visualization Sequence for Effective Storytelling:**
+
+1. **Overview:** Start with high-level metrics or summaries
+2. **Drill Down:** Move to more detailed breakdowns
+3. **Compare:** Show relationships, differences, or similarities
+4. **Contextualize:** Add historical trends or external benchmarks
+5. **Conclude:** Return to key takeaways and implications
+
+**Example Storytelling Sequence for Sales Analysis:**
+
+1. **Counter:** Total quarterly sales with year-over-year comparison
+2. **Line Chart:** Monthly sales trend over the past year
+3. **Bar Chart:** Sales by product category compared to targets
+4. **Map:** Geographic distribution of sales performance
+5. **Table:** Top and bottom performing products with detailed metrics
+
+---
+
+### 5. Creating Schema-Specific Visualizations
+
+Let's practice creating visualizations tailored to specific data schemas and analytical needs.
+
+**Practical Exercise 1: Sales Performance Dashboard**
+
+Start with a query that retrieves sales data:
+
+```sql
+SELECT 
+  date_trunc('month', order_date) AS month,
+  region,
+  product_category,
+  SUM(sales_amount) AS total_sales,
+  COUNT(DISTINCT customer_id) AS customer_count,
+  SUM(sales_amount) / COUNT(DISTINCT customer_id) AS avg_customer_spend
+FROM sales
+WHERE order_date BETWEEN '2023-01-01' AND '2023-12-31'
+GROUP BY date_trunc('month', order_date), region, product_category
+ORDER BY month, region, product_category;
+```
+
+Using this query result, create the following visualizations:
+
+1. **Line Chart: Monthly Sales Trend**
+   - X-axis: month
+   - Y-axis: total_sales
+   - Series: product_category
+   - Formatting: Add title "2023 Monthly Sales by Product Category"
+   - Customize colors for each product category
+   - Add data labels for the last month
+
+2. **Bar Chart: Regional Performance**
+   - X-axis: region
+   - Y-axis: total_sales
+   - Group by: product_category
+   - Sorting: Descending by total sales
+   - Formatting: Add title "Regional Sales by Product Category"
+   - Display values as stacked bars
+
+3. **Pivot Table: Detailed Breakdown**
+   - Rows: region, product_category
+   - Columns: month
+   - Values: total_sales (sum), customer_count (count)
+   - Formatting: Add conditional formatting to highlight cells above target
+
+4. **Counter: Total Annual Sales**
+   - Primary value: SUM(total_sales)
+   - Comparison: Previous year (if available)
+   - Formatting: Large font, color-coded based on year-over-year growth
+
+**Practical Exercise 2: Customer Analysis Dashboard**
+
+Start with a query that retrieves customer metrics:
+
+```sql
+SELECT 
+  customer_segment,
+  acquisition_channel,
+  COUNT(DISTINCT customer_id) AS customer_count,
+  AVG(lifetime_value) AS avg_ltv,
+  SUM(total_orders) AS order_count,
+  SUM(total_orders) / COUNT(DISTINCT customer_id) AS avg_orders_per_customer,
+  SUM(total_spend) / SUM(total_orders) AS avg_order_value
+FROM customers
+GROUP BY customer_segment, acquisition_channel
+ORDER BY customer_segment, acquisition_channel;
+```
+
+Using this query result, create the following visualizations:
+
+1. **Donut Chart: Customer Distribution by Segment**
+   - Segments: customer_segment
+   - Values: customer_count
+   - Formatting: Add percentage labels, custom colors by segment
+   - Add title "Customer Distribution by Segment"
+
+2. **Horizontal Bar Chart: Average Lifetime Value by Segment and Channel**
+   - Y-axis: acquisition_channel
+   - X-axis: avg_ltv
+   - Group by: customer_segment
+   - Sorting: Descending by avg_ltv
+   - Formatting: Add data labels, custom colors by segment
+
+3. **Scatter Plot: Order Frequency vs. Order Value**
+   - X-axis: avg_orders_per_customer
+   - Y-axis: avg_order_value
+   - Bubble size: customer_count
+   - Color: customer_segment
+   - Formatting: Add quadrant lines for segmentation analysis
+
+4. **Table: Detailed Metrics**
+   - Columns: All metrics from the query
+   - Formatting: Currency formatting for monetary values
+   - Add conditional formatting for high/low values
+   - Enable sorting and filtering
+
+---
+
+### 6. Building Interactive Dashboards
+
+Dashboards combine multiple visualizations into a cohesive interface, allowing users to monitor key metrics and explore data relationships.
+
+**Dashboard Creation Process:**
+
+1. Navigate to the Dashboards section in Databricks SQL
+2. Create a new dashboard with a descriptive name
+3. Add visualizations from saved queries
+4. Arrange visualizations in a logical layout
+5. Add text boxes for context and explanations
+6. Configure dashboard-level settings and parameters
+
+**Dashboard Layout Best Practices:**
+
+- **Hierarchical Arrangement:** Place high-level metrics at the top, with supporting details below
+- **Logical Grouping:** Arrange related visualizations near each other
+- **Consistent Sizing:** Maintain consistent widths for visualizations in the same column
+- **Whitespace:** Leave adequate spacing between visualizations
+- **Text Context:** Add text boxes to explain dashboard purpose and insights
+- **Responsive Design:** Consider how dashboard will display on different screen sizes
+
+**Practical Exercise 3: Creating a Sales Performance Dashboard**
+
+1. Create a new dashboard named "Sales Performance Overview"
+2. Add the visualizations created in Exercise 1
+3. Arrange in the following layout:
+   - Top row: Total Annual Sales counter (full width)
+   - Middle row: Monthly Sales Trend line chart (full width)
+   - Bottom row: Regional Performance bar chart (left) and Detailed Breakdown pivot table (right)
+4. Add a text box at the top with dashboard description and key takeaways
+5. Add a text box below the trend chart explaining significant patterns
+
+---
+
+### 7. Using Query Parameters for Dynamic Dashboards
+
+Query parameters enable interactive filtering and dynamic content in dashboards, allowing users to explore data without writing SQL.
+
+**Types of Dashboard Parameters:**
+
+1. **Text Parameters:** For string inputs like names or codes
+2. **Number Parameters:** For numerical inputs like thresholds or IDs
+3. **Date Parameters:** For time period selection
+4. **Dropdown Parameters:** For selecting from predefined options
+5. **Query-Based Dropdown:** For options populated by query results
+
+**Creating and Using Parameters:**
+
+1. Define parameter in the query editor:
+```sql
+-- Parameter definition
+-- Type: Date
+-- Name: start_date
+-- Default: 2023-01-01
+
+-- Using parameter in query
+SELECT 
+  date_trunc('month', order_date) AS month,
+  SUM(sales_amount) AS total_sales
+FROM sales
+WHERE order_date >= '{{start_date}}'
+GROUP BY date_trunc('month', order_date)
+ORDER BY month;
+```
+
+2. Create query-based dropdown parameters:
+```sql
+-- Query to populate dropdown options
+SELECT DISTINCT region FROM sales ORDER BY region;
+
+-- Main query using the parameter
+SELECT 
+  product_category,
+  SUM(sales_amount) AS total_sales
+FROM sales
+WHERE region = '{{selected_region}}'
+GROUP BY product_category
+ORDER BY total_sales DESC;
+```
+
+**Practical Exercise 4: Adding Parameters to Sales Dashboard**
+
+1. Create the following parameters for the sales dashboard:
+   - Date range parameter (start_date and end_date)
+   - Region dropdown (populated from distinct regions)
+   - Product category multiselect dropdown
+   
+2. Modify the sales query to use these parameters:
+```sql
+SELECT 
+  date_trunc('month', order_date) AS month,
+  region,
+  product_category,
+  SUM(sales_amount) AS total_sales,
+  COUNT(DISTINCT customer_id) AS customer_count,
+  SUM(sales_amount) / COUNT(DISTINCT customer_id) AS avg_customer_spend
+FROM sales
+WHERE order_date BETWEEN '{{start_date}}' AND '{{end_date}}'
+  AND region = '{{selected_region}}'
+  AND product_category IN ({{selected_categories}})
+GROUP BY date_trunc('month', order_date), region, product_category
+ORDER BY month, region, product_category;
+```
+
+3. Apply parameters to all visualizations in the dashboard
+4. Test the dashboard interactivity by changing parameter values
+
+---
+
+### 8. Dashboard Sharing and Scheduling
+
+Effective dashboards deliver insights to stakeholders through appropriate sharing and automated updates.
+
+**Dashboard Sharing Options:**
+
+1. **User-Based Access:** Grant specific users or groups access to the dashboard
+2. **Link Sharing:** Generate shareable links with or without authentication
+3. **Public Access:** Make dashboard available to all workspace users
+4. **Embedding:** Integrate dashboards into other applications (where supported)
+
+**Considerations for Sharing:**
+
+- **Data Security:** Ensure recipients have appropriate data access permissions
+- **Context:** Provide sufficient explanation for proper interpretation
+- **Refresh Timing:** Communicate when data was last updated and refresh schedule
+- **Interaction Instructions:** Explain how to use any interactive features
+
+**Setting Up Refresh Schedules:**
+
+1. Navigate to dashboard settings
+2. Configure refresh schedule:
+   - Frequency (hourly, daily, weekly)
+   - Specific times or intervals
+   - Time zone considerations
+   - Failure notification recipients
+
+**Important Refresh Considerations:**
+
+- **Warehouse Auto-Stop:** Ensure SQL warehouse will be available (refresh will fail if warehouse has stopped)
+- **Query Runtime:** Allow sufficient time for all queries to complete
+- **Dependencies:** Consider data pipeline dependencies that may affect freshness
+- **Resource Usage:** Balance refresh frequency with cost/resource considerations
+
+**Practical Exercise 5: Sharing and Scheduling the Sales Dashboard**
+
+1. Configure dashboard sharing settings:
+   - Grant access to specific user groups (Sales, Marketing, Executive)
+   - Generate a shareable link for ad-hoc distribution
+   
+2. Set up a refresh schedule:
+   - Daily refresh at 7:00 AM local time
+   - Additional refresh before executive meeting (e.g., Monday 9:00 AM)
+   - Configure email notifications for refresh failures
+   
+3. Add dashboard context:
+   - Last update timestamp
+   - Data source information
+   - Contact person for questions
+   - Brief usage instructions for interactive elements
+
+---
+
+### 9. Alert Configuration and Management
+
+Alerts automatically monitor your data and notify stakeholders when metrics reach specific thresholds.
+
+**Alert Components:**
+
+1. **Source Query:** SQL query that retrieves the monitored metric
+2. **Condition:** Threshold or criteria that triggers the alert
+3. **Schedule:** How frequently to check the condition
+4. **Notification:** Who receives alerts and through which channels
+5. **State Tracking:** Alert history and current status
+
+**Setting Up Basic Alerts:**
+
+1. Create or select a query that returns the metric to monitor
+2. Define alert condition (e.g., value above/below threshold)
+3. Set checking frequency
+4. Configure notification recipients and channels
+5. Add descriptive name and context for the alert
+
+**Alert Best Practices:**
+
+- **Clear Naming:** Use descriptive names that indicate the condition and impact
+- **Context:** Include sufficient information in notifications to understand the issue
+- **Thresholds:** Set appropriate thresholds to avoid alert fatigue
+- **Recipients:** Target alerts to people who can take action
+- **Escalation:** Create tiered alert levels for different severities
+- **Documentation:** Maintain documentation on expected actions for each alert
+
+**Practical Exercise 6: Creating Alerts for Key Metrics**
+
+1. Create a low inventory alert:
+```sql
+SELECT 
+  product_id,
+  product_name,
+  current_stock,
+  reorder_level
+FROM inventory
+WHERE current_stock < reorder_level;
+```
+   - Set to trigger when any products are below reorder level
+   - Schedule to check daily at 8:00 AM
+   - Notify inventory management team
+
+2. Create a sales performance alert:
+```sql
+SELECT 
+  SUM(sales_amount) AS daily_sales,
+  (SELECT AVG(daily_total) FROM daily_sales_targets) AS daily_target,
+  SUM(sales_amount) / (SELECT AVG(daily_total) FROM daily_sales_targets) * 100 AS target_percentage
+FROM sales
+WHERE sale_date = CURRENT_DATE() - INTERVAL 1 DAY;
+```
+   - Set to trigger when daily sales fall below 80% of target
+   - Schedule to check daily at 9:00 AM
+   - Notify sales management team
+
+---
+
+### Knowledge Check Quiz
+
+Test your understanding of today's material with these questions:
+
+1. Which visualization type is most appropriate for showing part-to-whole relationships across categories?
+   a) Line chart
+   b) Bar chart
+   c) Pie or donut chart
+   d) Scatter plot
+
+2. What is the primary purpose of using dashboard parameters?
+   a) To improve dashboard loading speed
+   b) To allow users to interactively filter and explore data
+   c) To restrict access to sensitive data
+   d) To enable automated dashboard refreshes
+
+3. When setting up a dashboard refresh schedule, which consideration is most important to prevent refresh failures?
+   a) Time zone settings
+   b) Query complexity
+   c) SQL warehouse availability
+   d) Number of visualizations
+
+4. Which statement about visualizations in Databricks SQL is FALSE?
+   a) Visualizations can be created directly from query results
+   b) Multiple visualizations can be created from a single query
+   c) Visualizations automatically update when the underlying data changes
+   d) Customizable tables can be used as visualizations
+
+5. When creating a query-based dropdown parameter, what type of query should you write?
+   a) A query that returns exactly one column with distinct values
+   b) A query that returns multiple columns with distinct combinations
+   c) A query that returns a single row with multiple columns
+   d) A query that returns aggregated summary data
+
+#### Knowledge Check Quiz - Answers
+
+1. Which visualization type is most appropriate for showing part-to-whole relationships across categories?
+   **Answer: c) Pie or donut chart**
+   
+   Pie and donut charts are specifically designed to represent proportional parts of a whole. Each slice visually represents a category's proportion of the total, making these chart types ideal for showing percentage distributions or composition across categories.
+
+2. What is the primary purpose of using dashboard parameters?
+   **Answer: b) To allow users to interactively filter and explore data**
+   
+   Dashboard parameters enable non-technical users to interact with data visualizations by changing filter values without writing SQL. This interactive capability allows stakeholders to explore different segments of data, change time periods, or focus on specific categories, all while maintaining the dashboard's overall structure and relationships.
+
+3. When setting up a dashboard refresh schedule, which consideration is most important to prevent refresh failures?
+   **Answer: c) SQL warehouse availability**
+   
+   SQL warehouse availability is critical because if the warehouse has auto-stopped due to inactivity when a scheduled refresh occurs, the refresh will fail. When configuring refresh schedules, you must ensure that either the warehouse will be running at the scheduled time or that auto-start functionality is properly configured.
+
+4. Which statement about visualizations in Databricks SQL is FALSE?
+   **Answer: c) Visualizations automatically update when the underlying data changes**
+   
+   This statement is false. Visualizations reflect the data as of the last query execution. They only update when the query is manually run or when triggered by a scheduled refresh. Changes to the underlying data are not automatically reflected until the next query execution.
+
+5. When creating a query-based dropdown parameter, what type of query should you write?
+   **Answer: a) A query that returns exactly one column with distinct values**
+   
+   A query-based dropdown parameter requires a query that returns a single column containing the distinct values that will populate the dropdown options. This query defines the available choices for the parameter, such as product categories, regions, or time periods that users can select from.
+
+#### Recommended Practice
+
+To reinforce learning:
+1. Create a comprehensive dashboard with at least four different visualization types
+2. Implement at least two different parameter types for interactive filtering
+3. Configure appropriate formatting for each visualization
+4. Set up a refresh schedule and sharing settings
+5. Create an alert for a key business metric
+
+---
 
 ## Analytics Applications & Final Exam Preparation
 
