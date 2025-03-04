@@ -9,7 +9,7 @@ previous_page: certifications/databricks/data-analyst-associate
     <a href="https://kranthib.github.io/tech-pulse/" style="display: inline-block; padding: 6px 14px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">Back to Home →</a>
 </div>
 
-# Databricks Data Analyst Associate Certification
+# Databricks Data Engineer Associate Certification
 
 Table of contents
 =================
