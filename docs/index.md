@@ -10,9 +10,9 @@ auto_title: false
     <div style="margin-top: 15px;">
       <h3>Connect</h3>
       <ul style="list-style-type: none; padding-left: 0;">
-        <li><a href="https://github.com/kranthiB"><i class="fa fa-github" style="margin-right: 8px;"></i>GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/kranthi-kumar-bitra/"><i class="fa fa-linkedin" style="margin-right: 8px;"></i>LinkedIn</a></li>
-        <li><a href="https://kranthib.github.io/tech-pulse"><i class="fa fa-rss" style="margin-right: 8px;"></i>TechPulse</a></li>
+        <li style="margin-bottom: 8px;"><a href="https://github.com/kranthiB" style="display: flex; align-items: center; text-decoration: none; color: #0366d6;"><i class="fab fa-github" style="margin-right: 8px; font-size: 18px;"></i>GitHub</a></li>
+        <li style="margin-bottom: 8px;"><a href="https://www.linkedin.com/in/kranthi-kumar-bitra/" style="display: flex; align-items: center; text-decoration: none; color: #0366d6;"><i class="fab fa-linkedin" style="margin-right: 8px; font-size: 18px;"></i>LinkedIn</a></li>
+        <li><a href="https://kranthib.github.io/tech-pulse" style="display: flex; align-items: center; text-decoration: none; color: #0366d6;"><i class="fa fa-rss" style="margin-right: 8px; font-size: 18px;"></i>TechPulse</a></li>
       </ul>
     </div>
   </div>
@@ -57,7 +57,7 @@ auto_title: false
           <span style="color: #6a737d;"><i class="fa fa-angle-right"></i></span>
           <a href="https://kranthib.github.io/tech-pulse/data-ai/data-engineering.html" style="padding: 6px 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-cogs" style="margin-right: 5px;"></i>Data Engineering</a>
           <span style="color: #6a737d;"><i class="fa fa-angle-right"></i></span>
-          <a href="https://kranthib.github.io/tech-pulse/data-ai/data-analysis.html" style="padding: 6px 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-bar-chart" style="margin-right: 5px;"></i>Data Analysis</a>
+          <a href="https://kranthib.github.io/tech-pulse/data-ai/data-analysis.html" style="padding: 6px 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-chart-bar" style="margin-right: 5px;"></i>Data Analysis</a>
           <span style="color: #6a737d;"><i class="fa fa-angle-right"></i></span>
           <a href="https://kranthib.github.io/tech-pulse/data-ai/conventional-ml.html" style="padding: 6px 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-cog" style="margin-right: 5px;"></i>Conventional ML</a>
           <span style="color: #6a737d;"><i class="fa fa-angle-right"></i></span>
@@ -91,15 +91,15 @@ auto_title: false
     <div style="padding: 20px; background-color: white;">
       <div style="display: flex; flex-wrap: wrap; gap: 15px;">
         <a href="https://kranthib.github.io/tech-pulse/industrial-iot/industrial-iot.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; padding: 20px; border: 1px solid #e1e4e8; border-radius: 3px; text-decoration: none; color: #0366d6; background-color: #f6f8fa;">
-          <span style="font-size: 36px; margin-bottom: 10px;">🏭</span>
+          <i class="fa fa-industry" style="font-size: 36px; margin-bottom: 10px; color: #2054a6;"></i>
           <span style="font-weight: 500;">Smart Manufacturing</span>
         </a>
         <a href="https://kranthib.github.io/tech-pulse/industrial-iot/edge-gateway.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; padding: 20px; border: 1px solid #e1e4e8; border-radius: 3px; text-decoration: none; color: #0366d6; background-color: #f6f8fa;">
-          <span style="font-size: 36px; margin-bottom: 10px;">🔄</span>
+          <i class="fa fa-network-wired" style="font-size: 36px; margin-bottom: 10px; color: #2054a6;"></i>
           <span style="font-weight: 500;">Edge Gateway</span>
         </a>
         <a href="https://kranthib.github.io/tech-pulse/industrial-iot/industry-5.0.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; padding: 20px; border: 1px solid #e1e4e8; border-radius: 3px; text-decoration: none; color: #0366d6; background-color: #f6f8fa;">
-          <span style="font-size: 36px; margin-bottom: 10px;">🚀</span>
+          <i class="fa fa-rocket" style="font-size: 36px; margin-bottom: 10px; color: #2054a6;"></i>
           <span style="font-weight: 500;">Industry 5.0</span>
         </a>
       </div>
