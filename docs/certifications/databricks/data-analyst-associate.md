@@ -58,9 +58,14 @@ Table of contents
         * [8. Dashboard Sharing and Scheduling](#8-dashboard-sharing-and-scheduling)
         * [9. Alert Configuration and Management](#9-alert-configuration-and-management)
         * [Knowledge Check Quiz](#knowledge-check-quiz-3)
-
-
-
+      * [Analytics Applications & Final Exam Preparation](#analytics-applications--final-exam-preparation-1)
+        * [1. Descriptive Statistics Fundamentals](#1-descriptive-statistics-fundamentals)
+        * [2. Data Enhancement and Blending Techniques](#2-data-enhancement-and-blending-techniques)
+        * [3. Common Analytics Applications](#3-common-analytics-applications)
+        * [4. Applying Analytics Techniques](#4-applying-analytics-techniques)
+        * [5. Comprehensive Review of Key Concepts](#5-comprehensive-review-of-key-concepts)
+        * [6. Final Exam Preparation Strategies](#6-final-exam-preparation-strategies)
+      * [Comprehensive Practice Exam](#comprehensive-practice-exam)
 <!--te-->
 
 # Preparation Plan
@@ -121,6 +126,14 @@ Table of contents
 
 ## Analytics Applications & Final Exam Preparation
 
+- Descriptive Statistics Fundamentals
+- Data Enhancement and Blending Techniques
+- Common Analytics Applications
+- Applying Analytics Techniques
+- Comprehensive Review of Key Concepts
+- Final Exam Preparation Strategies
+
+---
 
 # Knowledge Base
 
@@ -2525,3 +2538,990 @@ To reinforce learning:
 
 ## Analytics Applications & Final Exam Preparation
 
+### 1. Descriptive Statistics Fundamentals
+
+Statistical analysis forms the foundation of data-driven decision making. As a data analyst using Databricks, understanding how to calculate and interpret descriptive statistics is essential for deriving meaningful insights from your data.
+
+**Discrete vs. Continuous Statistics**
+
+Understanding the distinction between discrete and continuous data is critical for selecting appropriate analytical methods:
+
+**Discrete Statistics** deal with countable data that takes specific, separate values:
+- Customer counts
+- Number of transactions
+- Product quantities
+- Binary outcomes (yes/no, success/failure)
+
+**Continuous Statistics** involve measurements that can take any value within a range:
+- Revenue amounts
+- Time durations
+- Temperature readings
+- Percentages
+
+**Key Statistical Measures**
+
+Descriptive statistics are grouped into several categories:
+
+**Measures of Central Tendency** describe the center or typical value of a distribution:
+
+1. **Mean (Average)**: Sum of all values divided by the count
+   ```sql
+   SELECT AVG(order_amount) AS mean_order_value 
+   FROM orders;
+   ```
+
+2. **Median**: Middle value when data is arranged in order
+   ```sql
+   SELECT percentile_approx(order_amount, 0.5) AS median_order_value 
+   FROM orders;
+   ```
+
+3. **Mode**: Most frequently occurring value
+   ```sql
+   SELECT product_id, COUNT(*) AS frequency
+   FROM orders
+   GROUP BY product_id
+   ORDER BY frequency DESC
+   LIMIT 1;
+   ```
+
+**Measures of Dispersion** describe how spread out the data is:
+
+1. **Range**: Difference between maximum and minimum values
+   ```sql
+   SELECT 
+     MAX(order_amount) - MIN(order_amount) AS order_amount_range 
+   FROM orders;
+   ```
+
+2. **Variance**: Average of squared deviations from the mean
+   ```sql
+   SELECT VARIANCE(order_amount) AS order_amount_variance
+   FROM orders;
+   ```
+
+3. **Standard Deviation**: Square root of variance
+   ```sql
+   SELECT STDDEV(order_amount) AS order_amount_stddev
+   FROM orders;
+   ```
+
+4. **Interquartile Range (IQR)**: Difference between 75th and 25th percentiles
+   ```sql
+   SELECT 
+     percentile_approx(order_amount, 0.75) - percentile_approx(order_amount, 0.25) AS order_amount_iqr
+   FROM orders;
+   ```
+
+**Distribution Moments** describe the shape of the data distribution:
+
+1. **Skewness**: Measures asymmetry of the distribution
+   - Positive skew: Right tail is longer (most values are lower)
+   - Negative skew: Left tail is longer (most values are higher)
+   - Zero skew: Symmetrical distribution
+
+2. **Kurtosis**: Measures the "tailedness" of the distribution
+   - High kurtosis: Heavy tails, more outliers
+   - Low kurtosis: Light tails, fewer outliers
+
+**Practical Statistics Applications in Data Analysis**
+
+1. **Outlier Detection** using statistical methods:
+   ```sql
+   WITH stats AS (
+     SELECT 
+       AVG(order_amount) AS mean,
+       STDDEV(order_amount) AS stddev
+     FROM orders
+   )
+   SELECT 
+     order_id,
+     order_amount
+   FROM orders, stats
+   WHERE order_amount > mean + 3 * stddev  -- 3 standard deviations above mean
+     OR order_amount < mean - 3 * stddev;  -- 3 standard deviations below mean
+   ```
+
+2. **Z-Score Calculation** to standardize values:
+   ```sql
+   WITH stats AS (
+     SELECT 
+       AVG(order_amount) AS mean,
+       STDDEV(order_amount) AS stddev
+     FROM orders
+   )
+   SELECT 
+     order_id,
+     order_amount,
+     (order_amount - mean) / stddev AS z_score
+   FROM orders, stats;
+   ```
+
+3. **Percentile Analysis** for understanding distribution:
+   ```sql
+   SELECT 
+     percentile_approx(order_amount, array(0.1, 0.25, 0.5, 0.75, 0.9)) AS order_amount_percentiles
+   FROM orders;
+   ```
+
+---
+
+### 2. Data Enhancement and Blending Techniques
+
+Data enhancement involves enriching your datasets with additional information to provide deeper insights. Data blending combines information from multiple sources into a cohesive analytical view.
+
+**Data Enhancement Approaches**
+
+1. **Attribute Derivation**: Creating new columns from existing data
+   ```sql
+   SELECT 
+     customer_id,
+     first_purchase_date,
+     last_purchase_date,
+     datediff(last_purchase_date, first_purchase_date) AS customer_lifespan_days,
+     COUNT(order_id) AS order_count,
+     SUM(order_amount) AS total_spend,
+     SUM(order_amount) / COUNT(order_id) AS average_order_value
+   FROM orders
+   GROUP BY customer_id, first_purchase_date, last_purchase_date;
+   ```
+
+2. **Classification and Segmentation**: Categorizing data based on attributes
+   ```sql
+   SELECT 
+     customer_id,
+     total_spend,
+     CASE 
+       WHEN total_spend >= 10000 THEN 'High Value'
+       WHEN total_spend >= 5000 THEN 'Medium Value'
+       ELSE 'Low Value'
+     END AS customer_segment
+   FROM customer_summary;
+   ```
+
+3. **Temporal Enrichment**: Adding time-based dimensions
+   ```sql
+   SELECT 
+     order_id,
+     order_date,
+     DAYOFWEEK(order_date) AS day_of_week,
+     WEEKOFYEAR(order_date) AS week_of_year,
+     MONTH(order_date) AS month,
+     QUARTER(order_date) AS quarter,
+     YEAR(order_date) AS year,
+     CASE 
+       WHEN MONTH(order_date) IN (12, 1, 2) THEN 'Winter'
+       WHEN MONTH(order_date) IN (3, 4, 5) THEN 'Spring'
+       WHEN MONTH(order_date) IN (6, 7, 8) THEN 'Summer'
+       ELSE 'Fall'
+     END AS season
+   FROM orders;
+   ```
+
+4. **Geographical Enrichment**: Adding location-based attributes
+   ```sql
+   SELECT 
+     store_id,
+     city,
+     state,
+     region,
+     CASE
+       WHEN region = 'Northeast' OR region = 'Midwest' THEN 'Eastern Division'
+       ELSE 'Western Division'
+     END AS division,
+     CASE
+       WHEN state IN ('CA', 'OR', 'WA') THEN 'West Coast'
+       WHEN state IN ('NY', 'NJ', 'CT') THEN 'Tri-State Area'
+       ELSE 'Other'
+     END AS market_zone
+   FROM store_locations;
+   ```
+
+**Data Blending Techniques**
+
+1. **Entity Resolution**: Matching and consolidating records from different sources
+   ```sql
+   -- Matching customers across two systems
+   SELECT 
+     a.customer_id AS system_a_id,
+     b.customer_id AS system_b_id,
+     a.email,
+     a.name AS system_a_name,
+     b.name AS system_b_name
+   FROM system_a_customers a
+   JOIN system_b_customers b 
+     ON LOWER(a.email) = LOWER(b.email)
+     OR (a.phone = b.phone AND a.phone IS NOT NULL);
+   ```
+
+2. **Dimensional Enrichment**: Adding context from dimension tables
+   ```sql
+   -- Enriching sales transactions with product and customer dimensions
+   SELECT 
+     s.transaction_id,
+     s.transaction_date,
+     s.quantity,
+     s.unit_price,
+     s.quantity * s.unit_price AS total_amount,
+     p.product_name,
+     p.category,
+     p.brand,
+     c.customer_name,
+     c.segment,
+     c.acquisition_channel
+   FROM sales_transactions s
+   JOIN products p ON s.product_id = p.product_id
+   JOIN customers c ON s.customer_id = c.customer_id;
+   ```
+
+3. **Temporal Alignment**: Matching data from different time periods
+   ```sql
+   -- Aligning weekly sales with marketing campaigns
+   SELECT 
+     w.week_start_date,
+     w.week_end_date,
+     w.weekly_sales,
+     w.store_id,
+     COALESCE(c.campaign_name, 'No Campaign') AS campaign_name,
+     COALESCE(c.campaign_type, 'None') AS campaign_type,
+     COALESCE(c.campaign_budget, 0) AS campaign_budget
+   FROM weekly_sales w
+   LEFT JOIN marketing_campaigns c 
+     ON w.week_start_date <= c.end_date
+     AND w.week_end_date >= c.start_date
+     AND w.region = c.target_region;
+   ```
+
+**Last-Mile ETL**
+
+Last-mile ETL refers to the final transformations performed by analysts to prepare data for specific analytical needs. This typically occurs after data has already been processed through formal ETL pipelines and landed in the gold layer of your data lake.
+
+**Key characteristics of last-mile ETL:**
+
+1. **Purpose-specific transformations** tailored to a particular analysis
+2. **Performed by analysts** rather than data engineers
+3. **Often ad-hoc** or project-specific rather than production pipelines
+4. **Focuses on analytical readiness** rather than data quality or integration
+
+**Common last-mile ETL operations:**
+
+1. **Dataset combination** for specific analytical needs
+   ```sql
+   -- Combining data for a marketing analysis
+   CREATE OR REPLACE TEMPORARY VIEW marketing_analysis AS
+   SELECT 
+     c.customer_id,
+     c.acquisition_date,
+     c.acquisition_channel,
+     COUNT(o.order_id) AS order_count,
+     SUM(o.order_amount) AS total_spend,
+     AVG(s.satisfaction_score) AS avg_satisfaction,
+     MAX(o.order_date) AS last_order_date
+   FROM customers c
+   LEFT JOIN orders o ON c.customer_id = o.customer_id
+   LEFT JOIN satisfaction_surveys s ON o.order_id = s.order_id
+   GROUP BY c.customer_id, c.acquisition_date, c.acquisition_channel;
+   ```
+
+2. **Metric calculation** for specific KPIs
+   ```sql
+   -- Creating customer lifetime value metrics
+   CREATE OR REPLACE TEMPORARY VIEW customer_ltv AS
+   SELECT 
+     customer_id,
+     SUM(order_amount) AS total_spend,
+     COUNT(DISTINCT order_id) AS order_count,
+     DATEDIFF(MAX(order_date), MIN(order_date)) / 30 AS customer_tenure_months,
+     SUM(order_amount) / NULLIF(DATEDIFF(MAX(order_date), MIN(order_date)) / 30, 0) AS monthly_value
+   FROM orders
+   GROUP BY customer_id;
+   ```
+
+3. **Time period alignment** for reporting needs
+   ```sql
+   -- Aligning data to fiscal year for financial reporting
+   CREATE OR REPLACE TEMPORARY VIEW fiscal_year_performance AS
+   SELECT 
+     CASE 
+       WHEN MONTH(transaction_date) >= 7 THEN YEAR(transaction_date)
+       ELSE YEAR(transaction_date) - 1
+     END AS fiscal_year,
+     CASE 
+       WHEN MONTH(transaction_date) >= 7 THEN MONTH(transaction_date) - 6
+       ELSE MONTH(transaction_date) + 6
+     END AS fiscal_month,
+     SUM(amount) AS total_amount
+   FROM transactions
+   GROUP BY fiscal_year, fiscal_month
+   ORDER BY fiscal_year, fiscal_month;
+   ```
+
+---
+
+### 3. Common Analytics Applications
+
+Understanding common analytics application patterns allows you to quickly implement solutions for frequent business needs.
+
+**Customer Analytics Applications**
+
+1. **Cohort Analysis**: Tracking groups of customers based on shared characteristics
+   ```sql
+   -- Monthly cohort retention analysis
+   WITH cohorts AS (
+     SELECT 
+       customer_id,
+       DATE_FORMAT(first_purchase_date, 'yyyy-MM') AS cohort_month,
+       first_purchase_date
+     FROM (
+       SELECT 
+         customer_id,
+         MIN(order_date) AS first_purchase_date
+       FROM orders
+       GROUP BY customer_id
+     )
+   ),
+   customer_activity AS (
+     SELECT 
+       c.customer_id,
+       c.cohort_month,
+       DATE_FORMAT(o.order_date, 'yyyy-MM') AS activity_month,
+       MONTHS_BETWEEN(DATE_FORMAT(o.order_date, 'yyyy-MM-01'), 
+                     DATE_FORMAT(c.first_purchase_date, 'yyyy-MM-01')) AS month_number
+     FROM cohorts c
+     JOIN orders o ON c.customer_id = o.customer_id
+   )
+   SELECT 
+     cohort_month,
+     COUNT(DISTINCT customer_id) AS cohort_size,
+     SUM(CASE WHEN month_number = 0 THEN 1 ELSE 0 END) / COUNT(DISTINCT customer_id) * 100 AS month_0_retention,
+     SUM(CASE WHEN month_number = 1 THEN 1 ELSE 0 END) / COUNT(DISTINCT customer_id) * 100 AS month_1_retention,
+     SUM(CASE WHEN month_number = 2 THEN 1 ELSE 0 END) / COUNT(DISTINCT customer_id) * 100 AS month_2_retention,
+     SUM(CASE WHEN month_number = 3 THEN 1 ELSE 0 END) / COUNT(DISTINCT customer_id) * 100 AS month_3_retention
+   FROM customer_activity
+   GROUP BY cohort_month
+   ORDER BY cohort_month;
+   ```
+
+2. **RFM Analysis**: Segmenting customers by Recency, Frequency, and Monetary value
+   ```sql
+   WITH customer_rfm AS (
+     SELECT 
+       customer_id,
+       DATEDIFF(CURRENT_DATE(), MAX(order_date)) AS recency,
+       COUNT(order_id) AS frequency,
+       SUM(order_amount) AS monetary,
+       NTILE(5) OVER (ORDER BY DATEDIFF(CURRENT_DATE(), MAX(order_date)) DESC) AS r_score,
+       NTILE(5) OVER (ORDER BY COUNT(order_id)) AS f_score,
+       NTILE(5) OVER (ORDER BY SUM(order_amount)) AS m_score
+     FROM orders
+     GROUP BY customer_id
+   )
+   SELECT 
+     customer_id,
+     recency,
+     frequency,
+     monetary,
+     r_score,
+     f_score,
+     m_score,
+     CONCAT(r_score, f_score, m_score) AS rfm_score,
+     CASE 
+       WHEN r_score >= 4 AND f_score >= 4 AND m_score >= 4 THEN 'Champions'
+       WHEN r_score >= 3 AND f_score >= 3 AND m_score >= 3 THEN 'Loyal Customers'
+       WHEN r_score >= 3 AND f_score >= 1 AND m_score >= 2 THEN 'Potential Loyalists'
+       WHEN r_score >= 4 AND f_score <= 2 AND m_score <= 2 THEN 'New Customers'
+       WHEN r_score <= 2 AND f_score >= 3 AND m_score >= 3 THEN 'At Risk'
+       WHEN r_score <= 2 AND f_score >= 2 AND m_score >= 2 THEN 'Needs Attention'
+       WHEN r_score <= 1 AND f_score >= 4 AND m_score >= 4 THEN 'Can\'t Lose Them'
+       WHEN r_score <= 2 AND f_score <= 2 AND m_score <= 2 THEN 'Hibernating'
+       ELSE 'Others'
+     END AS segment
+   FROM customer_rfm;
+   ```
+
+**Product Analytics Applications**
+
+1. **Product Affinity Analysis**: Identifying frequently co-purchased products
+   ```sql
+   -- Market basket analysis
+   WITH order_pairs AS (
+     SELECT 
+       o1.order_id,
+       p1.product_id AS product_1,
+       p1.product_name AS product_1_name,
+       p2.product_id AS product_2,
+       p2.product_name AS product_2_name
+     FROM order_items o1
+     JOIN order_items o2 
+       ON o1.order_id = o2.order_id 
+       AND o1.product_id < o2.product_id
+     JOIN products p1 ON o1.product_id = p1.product_id
+     JOIN products p2 ON o2.product_id = p2.product_id
+   )
+   SELECT 
+     product_1,
+     product_1_name,
+     product_2,
+     product_2_name,
+     COUNT(*) AS co_occurrence_count
+   FROM order_pairs
+   GROUP BY product_1, product_1_name, product_2, product_2_name
+   ORDER BY co_occurrence_count DESC;
+   ```
+
+2. **Product Performance Analysis**: Evaluating product metrics over time
+   ```sql
+   SELECT 
+     p.product_id,
+     p.product_name,
+     p.category,
+     DATE_FORMAT(o.order_date, 'yyyy-MM') AS month,
+     COUNT(DISTINCT o.order_id) AS order_count,
+     SUM(oi.quantity) AS units_sold,
+     SUM(oi.quantity * oi.unit_price) AS revenue,
+     SUM(oi.quantity * oi.unit_price) / SUM(oi.quantity) AS average_selling_price,
+     SUM(oi.quantity * (oi.unit_price - p.cost)) AS gross_profit,
+     SUM(oi.quantity * (oi.unit_price - p.cost)) / SUM(oi.quantity * oi.unit_price) * 100 AS profit_margin
+   FROM products p
+   JOIN order_items oi ON p.product_id = oi.product_id
+   JOIN orders o ON oi.order_id = o.order_id
+   GROUP BY p.product_id, p.product_name, p.category, DATE_FORMAT(o.order_date, 'yyyy-MM')
+   ORDER BY month, revenue DESC;
+   ```
+
+**Operational Analytics Applications**
+
+1. **Funnel Analysis**: Tracking conversion through sequential steps
+   ```sql
+   WITH user_stages AS (
+     SELECT 
+       user_id,
+       MAX(CASE WHEN event_type = 'page_view' AND page = 'product_listing' THEN 1 ELSE 0 END) AS reached_listing,
+       MAX(CASE WHEN event_type = 'page_view' AND page = 'product_detail' THEN 1 ELSE 0 END) AS reached_detail,
+       MAX(CASE WHEN event_type = 'add_to_cart' THEN 1 ELSE 0 END) AS reached_cart,
+       MAX(CASE WHEN event_type = 'begin_checkout' THEN 1 ELSE 0 END) AS reached_checkout,
+       MAX(CASE WHEN event_type = 'purchase' THEN 1 ELSE 0 END) AS completed_purchase
+     FROM user_events
+     WHERE session_date = CURRENT_DATE() - INTERVAL 1 DAY
+     GROUP BY user_id
+   )
+   SELECT 
+     COUNT(*) AS total_users,
+     SUM(reached_listing) AS listing_views,
+     SUM(reached_detail) AS detail_views,
+     SUM(reached_cart) AS cart_additions,
+     SUM(reached_checkout) AS checkouts,
+     SUM(completed_purchase) AS purchases,
+     SUM(reached_detail) / SUM(reached_listing) * 100 AS listing_to_detail_rate,
+     SUM(reached_cart) / SUM(reached_detail) * 100 AS detail_to_cart_rate,
+     SUM(reached_checkout) / SUM(reached_cart) * 100 AS cart_to_checkout_rate,
+     SUM(completed_purchase) / SUM(reached_checkout) * 100 AS checkout_to_purchase_rate,
+     SUM(completed_purchase) / SUM(reached_listing) * 100 AS overall_conversion_rate
+   FROM user_stages;
+   ```
+
+2. **Anomaly Detection**: Identifying unusual patterns in data
+   ```sql
+   -- Detecting unusual sales patterns using z-scores
+   WITH daily_sales AS (
+     SELECT 
+       transaction_date,
+       SUM(amount) AS daily_total
+     FROM transactions
+     GROUP BY transaction_date
+   ),
+   sales_stats AS (
+     SELECT 
+       AVG(daily_total) AS mean_daily_sales,
+       STDDEV(daily_total) AS stddev_daily_sales
+     FROM daily_sales
+   )
+   SELECT 
+     ds.transaction_date,
+     ds.daily_total,
+     ss.mean_daily_sales,
+     (ds.daily_total - ss.mean_daily_sales) / ss.stddev_daily_sales AS z_score,
+     CASE 
+       WHEN ABS((ds.daily_total - ss.mean_daily_sales) / ss.stddev_daily_sales) > 2 THEN 'Anomaly'
+       ELSE 'Normal'
+     END AS status
+   FROM daily_sales ds, sales_stats ss
+   ORDER BY ABS((ds.daily_total - ss.mean_daily_sales) / ss.stddev_daily_sales) DESC;
+   ```
+---
+
+### 4. Applying Analytics Techniques
+
+Let's practice implementing some of the analytics applications we've discussed.
+
+**Practical Exercise 1: Customer Segmentation and Analysis**
+
+Implement a comprehensive customer segmentation analysis using RFM:
+
+```sql
+-- Step 1: Calculate base RFM metrics
+CREATE OR REPLACE TEMPORARY VIEW customer_rfm_base AS
+SELECT 
+  customer_id,
+  DATEDIFF(CURRENT_DATE(), MAX(order_date)) AS recency_days,
+  COUNT(DISTINCT order_id) AS frequency,
+  SUM(order_amount) AS monetary
+FROM orders
+GROUP BY customer_id;
+
+-- Step 2: Create RFM scores
+CREATE OR REPLACE TEMPORARY VIEW customer_rfm_scores AS
+SELECT 
+  customer_id,
+  recency_days,
+  frequency,
+  monetary,
+  NTILE(5) OVER (ORDER BY recency_days ASC) AS recency_score,
+  NTILE(5) OVER (ORDER BY frequency DESC) AS frequency_score,
+  NTILE(5) OVER (ORDER BY monetary DESC) AS monetary_score
+FROM customer_rfm_base;
+
+-- Step 3: Create segments
+CREATE OR REPLACE TEMPORARY VIEW customer_segments AS
+SELECT 
+  customer_id,
+  recency_days,
+  frequency,
+  monetary,
+  recency_score,
+  frequency_score,
+  monetary_score,
+  (recency_score + frequency_score + monetary_score) / 3.0 AS average_score,
+  CASE 
+    WHEN recency_score >= 4 AND frequency_score >= 4 AND monetary_score >= 4 THEN 'Champions'
+    WHEN recency_score >= 4 AND frequency_score >= 3 AND monetary_score >= 3 THEN 'Loyal Customers'
+    WHEN recency_score >= 3 AND frequency_score >= 1 AND monetary_score >= 2 THEN 'Potential Loyalists'
+    WHEN recency_score >= 4 AND frequency_score <= 2 AND monetary_score <= 2 THEN 'New Customers'
+    WHEN recency_score <= 2 AND frequency_score >= 3 AND monetary_score >= 3 THEN 'At Risk'
+    WHEN recency_score <= 2 AND frequency_score >= 2 AND monetary_score >= 2 THEN 'Needs Attention'
+    WHEN recency_score <= 1 AND frequency_score >= 4 AND monetary_score >= 4 THEN 'Can\'t Lose Them'
+    WHEN recency_score <= 2 AND frequency_score <= 2 AND monetary_score <= 2 THEN 'Hibernating'
+    WHEN recency_score <= 1 AND frequency_score <= 1 AND monetary_score <= 1 THEN 'Lost'
+    ELSE 'Others'
+  END AS segment
+FROM customer_rfm_scores;
+
+-- Step 4: Analyze segment characteristics
+SELECT 
+  segment,
+  COUNT(*) AS customer_count,
+  ROUND(AVG(recency_days), 1) AS avg_recency,
+  ROUND(AVG(frequency), 1) AS avg_frequency,
+  ROUND(AVG(monetary), 2) AS avg_monetary,
+  ROUND(SUM(monetary) / SUM(SUM(monetary)) OVER () * 100, 2) AS pct_total_revenue
+FROM customer_segments
+GROUP BY segment
+ORDER BY avg_recency, avg_monetary DESC;
+```
+
+**Practical Exercise 2: Cohort Retention Analysis**
+
+Implement a monthly cohort retention analysis:
+
+```sql
+-- Step 1: Identify first purchase month for each customer
+CREATE OR REPLACE TEMPORARY VIEW customer_cohorts AS
+SELECT 
+  customer_id,
+  DATE_FORMAT(MIN(order_date), 'yyyy-MM') AS cohort_month
+FROM orders
+GROUP BY customer_id;
+
+-- Step 2: Calculate activity for each customer by month
+CREATE OR REPLACE TEMPORARY VIEW customer_monthly_activity AS
+SELECT 
+  c.customer_id,
+  c.cohort_month,
+  DATE_FORMAT(o.order_date, 'yyyy-MM') AS activity_month,
+  CAST(MONTHS_BETWEEN(TO_DATE(DATE_FORMAT(o.order_date, 'yyyy-MM-01')), 
+                     TO_DATE(DATE_FORMAT(MIN(o.order_date) OVER (PARTITION BY c.customer_id), 'yyyy-MM-01'))) 
+       AS INT) AS month_number
+FROM customer_cohorts c
+JOIN orders o ON c.customer_id = o.customer_id;
+
+-- Step 3: Build cohort retention grid
+SELECT 
+  cohort_month,
+  COUNT(DISTINCT customer_id) AS cohort_size,
+  SUM(CASE WHEN month_number = 0 THEN 1 ELSE 0 END) / COUNT(DISTINCT customer_id) * 100 AS month_0_retention,
+  SUM(CASE WHEN month_number = 1 THEN 1 ELSE 0 END) / COUNT(DISTINCT customer_id) * 100 AS month_1_retention,
+  SUM(CASE WHEN month_number = 2 THEN 1 ELSE 0 END) / COUNT(DISTINCT customer_id) * 100 AS month_2_retention,
+  SUM(CASE WHEN month_number = 3 THEN 1 ELSE 0 END) / COUNT(DISTINCT customer_id) * 100 AS month_3_retention,
+  SUM(CASE WHEN month_number = 4 THEN 1 ELSE 0 END) / COUNT(DISTINCT customer_id) * 100 AS month_4_retention,
+  SUM(CASE WHEN month_number = 5 THEN 1 ELSE 0 END) / COUNT(DISTINCT customer_id) * 100 AS month_5_retention,
+  SUM(CASE WHEN month_number = 6 THEN 1 ELSE 0 END) / COUNT(DISTINCT customer_id) * 100 AS month_6_retention
+FROM customer_monthly_activity
+GROUP BY cohort_month
+ORDER BY cohort_month;
+```
+
+---
+
+### 5. Comprehensive Review of Key Concepts
+
+Let's review the key concepts from each day of our preparation to ensure you have a solid grasp of all exam topics.
+
+**Day 1: Databricks SQL Fundamentals & Lakehouse Architecture**
+
+1. **Databricks SQL Components**:
+   - Query Editor for writing and executing SQL
+   - SQL Warehouses (Endpoints) for compute resources
+   - Dashboards for visualizing and sharing insights
+   - Schema Browser for exploring data objects
+
+2. **The Lakehouse Architecture**:
+   - Combines data lake flexibility with data warehouse reliability
+   - Delta Lake provides ACID transactions and versioning
+   - Medallion approach: Bronze (raw), Silver (validated), Gold (business-ready)
+
+3. **Data Ingestion Methods**:
+   - Small-file upload for reference data
+   - Object storage import for larger datasets
+   - Partner Connect for third-party integrations
+
+**Day 2: Data Management with Delta Lake**
+
+1. **Delta Lake Benefits**:
+   - ACID transactions ensure data consistency
+   - Time travel enables historical data access
+   - Schema enforcement and evolution
+   - Metadata management for performance
+
+2. **Table Management**:
+   - Managed tables: Databricks controls data and metadata
+   - Unmanaged tables: You control data location, Databricks manages metadata
+   - Database scope and location settings
+
+3. **Views and Security**:
+   - Permanent views persist across sessions
+   - Temporary views exist only for current session
+   - Table ownership and permission management
+
+**Day 3: Advanced SQL in the Lakehouse**
+
+1. **Data Modification Operations**:
+   - INSERT adds new data
+   - MERGE performs upserts and deletes
+   - COPY efficiently loads from files
+
+2. **Join Types and Applications**:
+   - INNER JOIN: Only matching rows
+   - LEFT/RIGHT JOIN: All rows from one table, matching from the other
+   - FULL JOIN: All rows from both tables
+   - CROSS JOIN: Cartesian product
+
+3. **Aggregation and Window Functions**:
+   - GROUP BY for basic aggregation
+   - CUBE and ROLLUP for multi-dimensional analysis
+   - Window functions for calculations across rows
+
+4. **Nested Data Handling**:
+   - Arrays, Maps, and Structs for complex data
+   - Explode functions to flatten nested structures
+   - Higher-order functions for array processing
+
+**Day 4: Data Visualization and Dashboarding**
+
+1. **Visualization Types**:
+   - Tables for detailed data
+   - Charts (bar, line, pie) for comparisons and trends
+   - Maps for geographical data
+   - Counters for KPIs
+
+2. **Dashboard Features**:
+   - Multiple visualizations in a single view
+   - Parameters for interactive filtering
+   - Scheduled refreshes
+   - Sharing and access controls
+
+3. **Alert Configuration**:
+   - Threshold-based monitoring
+   - Scheduled checks
+   - Notification channels
+
+---
+
+### 6. Final Exam Preparation Strategies
+
+**Time Management**
+
+The exam consists of 45 multiple-choice questions in 90 minutes, giving you an average of 2 minutes per question.
+
+- Quickly read each question and identify the key concepts being tested
+- Answer questions you're confident about first
+- Flag questions you're unsure about and return to them later
+- In the last 10 minutes, review any unanswered or flagged questions
+- Don't leave any questions unanswered—if you're unsure, make your best guess
+
+**Question Analysis Approach**
+
+1. Read the entire question carefully before looking at answer choices
+2. Pay attention to qualifiers like "MOST appropriate" or "is NOT correct"
+3. Eliminate obviously incorrect answers to improve odds on difficult questions
+4. Look for technical accuracy in answer choices, not just plausibility
+5. Consider the context of the question within the Databricks environment
+
+**Common Question Patterns**
+
+1. **Scenario-based questions**: Applied knowledge in a business context
+   - Identify the key requirements in the scenario
+   - Match requirements to Databricks capabilities
+   - Consider both technical and business aspects
+
+2. **Code analysis questions**: Find errors or predict outputs
+   - Check syntax first
+   - Verify logic and potential edge cases
+   - Look for common SQL mistakes
+
+3. **Concept differentiation**: Distinguish between similar features
+   - Focus on key differences in functionality
+   - Consider use cases for different approaches
+   - Remember specific limitations and capabilities
+
+**Final Preparation Checklist**
+
+- Review your notes from all days of training
+- Focus extra attention on areas where you've struggled
+- Practice writing SQL for common scenarios
+- Familiarize yourself with the exam format and timing
+- Ensure you understand all visualization types and their appropriate uses
+- Be comfortable with all data manipulation operations
+- Know how to interpret basic statistical measures
+
+---
+
+## Comprehensive Practice Exam
+
+Now let's complete a full practice exam covering all the key topics from the Databricks Certified Data Analyst Associate exam. This will simulate the actual exam experience with 45 multiple-choice questions to be completed in 90 minutes.
+
+**Practice Exam Instructions:**
+- Set a timer for 90 minutes
+- Answer all 45 questions
+- Mark questions you're unsure about for review
+- Aim to complete a first pass through all questions with at least 15 minutes remaining for review
+
+[Note: I'll now provide a comprehensive set of practice questions covering all exam domains. Each question will test your understanding of key concepts, with an emphasis on practical application.]
+
+### Sample Practice Exam Questions
+
+**Databricks SQL Section**
+
+1. A data analyst needs to create a dashboard that will be viewed by executives who do not have direct access to Databricks. What is the best way to share this dashboard?
+   a) Export the dashboard as a PDF
+   b) Share a link that uses the dashboard owner's credentials
+   c) Create a scheduled refresh that emails the dashboard
+   d) Grant the executives permission to the dashboard and underlying queries
+
+2. When setting up a Databricks SQL warehouse, which configuration would be most cost-effective for a dashboard that refreshes hourly during business hours?
+   a) 2X-Small with auto-stop set to 10 minutes
+   b) 4X-Large with auto-stop set to 60 minutes
+   c) Serverless endpoint with no auto-stop
+   d) Medium size with auto-stop disabled
+
+3. Which statement about the medallion architecture is FALSE?
+   a) The bronze layer contains raw, unprocessed data
+   b) The silver layer contains cleansed and validated data
+   c) The gold layer contains business-level aggregates
+   d) Data analysts typically work primarily with bronze layer data
+
+**Data Management Section**
+
+4. What happens to the data files when you drop an unmanaged Delta table?
+   a) The data files are automatically deleted
+   b) The data files remain but are marked for deletion
+   c) The data files remain untouched
+   d) The data files are moved to an archive location
+
+5. You need to create a view that will be available only during your current session. Which SQL statement should you use?
+   a) CREATE VIEW my_view AS SELECT...
+   b) CREATE TEMPORARY VIEW my_view AS SELECT...
+   c) CREATE SESSION VIEW my_view AS SELECT...
+   d) CREATE EPHEMERAL VIEW my_view AS SELECT...
+
+6. Which statement about Delta Lake is TRUE?
+   a) Delta Lake tables cannot be modified once created
+   b) Delta Lake stores all table history indefinitely
+   c) Delta Lake provides ACID transaction guarantees
+   d) Delta Lake requires data to be in a specific format
+
+**SQL in the Lakehouse Section**
+
+7. Which join type will return all rows from both tables, including unmatched rows?
+   a) INNER JOIN
+   b) LEFT JOIN
+   c) RIGHT JOIN
+   d) FULL JOIN
+
+8. What is the purpose of the MERGE statement in Databricks SQL?
+   a) To combine two tables into a new table
+   b) To update, insert, or delete rows based on matching conditions
+   c) To merge table schemas
+   d) To combine partitioned tables
+
+9. You need to find the rolling 7-day average of daily sales. Which SQL feature would be most appropriate?
+   a) GROUP BY
+   b) Window functions
+   c) Common Table Expressions
+   d) Subqueries
+
+10. Which higher-order function would you use to apply a transformation to each element in an array column?
+    a) filter()
+    b) transform()
+    c) aggregate()
+    d) exists()
+
+**Data Visualization and Dashboarding Section**
+
+11. Which visualization type is most appropriate for showing the proportion of sales by product category?
+    a) Line chart
+    b) Bar chart
+    c) Pie chart
+    d) Scatter plot
+
+12. What is the primary benefit of using query parameters in dashboards?
+    a) They improve query performance
+    b) They reduce dashboard loading time
+    c) They allow users to interact with the dashboard without writing SQL
+    d) They enable automated dashboard refreshes
+
+13. When configuring a dashboard refresh schedule, what should you consider to avoid refresh failures?
+    a) The SQL warehouse auto-stop settings
+    b) The number of visualizations
+    c) The dashboard sharing permissions
+    d) The time zone of the users
+
+**Analytics Applications Section**
+
+14. Which statistical measure represents the middle value in a sorted dataset?
+    a) Mean
+    b) Median
+    c) Mode
+    d) Range
+
+15. In a cohort analysis, what defines a cohort?
+    a) Customers who purchased the same product
+    b) Customers who share demographic characteristics
+    c) Customers who joined during the same time period
+    d) Customers with similar spending patterns
+
+16. What is the purpose of data enhancement in analytics applications?
+    a) To clean and validate data
+    b) To combine data from multiple sources
+    c) To enrich datasets with additional attributes or derived information
+    d) To optimize query performance
+
+---
+
+### Comprehensive Practice Exam - Answers
+
+#### Databricks SQL Section
+
+1. A data analyst needs to create a dashboard that will be viewed by executives who do not have direct access to Databricks. What is the best way to share this dashboard?
+   **Answer: b) Share a link that uses the dashboard owner's credentials**
+   
+   Explanation: This option allows executives without Databricks access to view the dashboard through a shared link that authenticates as the dashboard creator, enabling access without requiring Databricks accounts for the viewers.
+
+2. When setting up a Databricks SQL warehouse, which configuration would be most cost-effective for a dashboard that refreshes hourly during business hours?
+   **Answer: a) 2X-Small with auto-stop set to 10 minutes**
+   
+   Explanation: This configuration uses the smallest warehouse size suitable for the workload while automatically stopping after 10 minutes of inactivity, minimizing costs between hourly refreshes.
+
+3. Which statement about the medallion architecture is FALSE?
+   **Answer: d) Data analysts typically work primarily with bronze layer data**
+   
+   Explanation: This statement is false because data analysts primarily work with gold layer data, which contains business-ready, transformed metrics. Bronze layer contains raw, unprocessed data that typically requires further transformation before analysis.
+
+#### Data Management Section
+
+4. What happens to the data files when you drop an unmanaged Delta table?
+   **Answer: c) The data files remain untouched**
+   
+   Explanation: For unmanaged (external) tables, Databricks only manages the metadata. When dropping an unmanaged table, only the metadata definition is removed while the underlying data files remain in their specified location.
+
+5. You need to create a view that will be available only during your current session. Which SQL statement should you use?
+   **Answer: b) CREATE TEMPORARY VIEW my_view AS SELECT...**
+   
+   Explanation: Temporary views exist only for the duration of the current session and are automatically dropped when the session ends, making them appropriate for session-specific data analysis.
+
+6. Which statement about Delta Lake is TRUE?
+   **Answer: c) Delta Lake provides ACID transaction guarantees**
+   
+   Explanation: Delta Lake ensures atomicity, consistency, isolation, and durability (ACID) for all operations, which is one of its key benefits over traditional data lake storage formats.
+
+#### SQL in the Lakehouse Section
+
+7. Which join type will return all rows from both tables, including unmatched rows?
+   **Answer: d) FULL JOIN**
+   
+   Explanation: A FULL JOIN (or FULL OUTER JOIN) returns all rows from both tables, with NULL values for columns from the non-matching table when there is no match between the tables.
+
+8. What is the purpose of the MERGE statement in Databricks SQL?
+   **Answer: b) To update, insert, or delete rows based on matching conditions**
+   
+   Explanation: MERGE allows for simultaneous insert, update, and delete operations based on matching conditions between source and target tables, enabling efficient upsert operations in a single statement.
+
+9. You need to find the rolling 7-day average of daily sales. Which SQL feature would be most appropriate?
+   **Answer: b) Window functions**
+   
+   Explanation: Window functions allow calculations across a specified range of rows related to the current row, making them ideal for computing rolling averages over time periods.
+
+10. Which higher-order function would you use to apply a transformation to each element in an array column?
+    **Answer: b) transform()**
+    
+    Explanation: The transform() function applies a lambda function to each element in an array, returning a new array with the transformed values, perfect for element-wise transformations.
+
+#### Data Visualization and Dashboarding Section
+
+11. Which visualization type is most appropriate for showing the proportion of sales by product category?
+    **Answer: c) Pie chart**
+    
+    Explanation: Pie charts are specifically designed to show part-to-whole relationships, making them suitable for displaying proportional distribution across categories.
+
+12. What is the primary benefit of using query parameters in dashboards?
+    **Answer: c) They allow users to interact with the dashboard without writing SQL**
+    
+    Explanation: Query parameters enable non-technical users to filter and customize dashboard data through interactive controls without needing to modify or understand the underlying SQL code.
+
+13. When configuring a dashboard refresh schedule, what should you consider to avoid refresh failures?
+    **Answer: a) The SQL warehouse auto-stop settings**
+    
+    Explanation: If the SQL warehouse has auto-stopped when a scheduled refresh occurs, the refresh will fail. Warehouse auto-stop settings must align with scheduled refresh times to ensure the warehouse is available.
+
+#### Analytics Applications Section
+
+14. Which statistical measure represents the middle value in a sorted dataset?
+    **Answer: b) Median**
+    
+    Explanation: The median is the middle value in a sorted dataset, with an equal number of values above and below it, making it resistant to outliers compared to the mean.
+
+15. In a cohort analysis, what defines a cohort?
+    **Answer: c) Customers who joined during the same time period**
+    
+    Explanation: Cohorts are typically defined by when customers joined (acquisition date/month/quarter), allowing analysis of behavior over time for groups that started their journey at the same point.
+
+16. What is the purpose of data enhancement in analytics applications?
+    **Answer: c) To enrich datasets with additional attributes or derived information**
+    
+    Explanation: Data enhancement involves adding new calculated fields, classifications, or attributes that weren't in the original dataset to provide additional analytical context and insights.
+
+
+---
+
+### Post-Exam Review
+
+After completing the practice exam, we'll review your answers and clarify any remaining questions or concepts. We'll identify areas that may need additional focus before your actual exam.
+
+**Final Exam-Taking Tips:**
+
+1. **Read Carefully**: Pay close attention to keywords and qualifiers in questions.
+2. **Process of Elimination**: For difficult questions, eliminate clearly incorrect options first.
+3. **Manage Your Time**: Don't spend too long on any single question.
+4. **Answer Every Question**: There's no penalty for guessing, so don't leave any blank.
+5. **Review If Time Allows**: Double-check your answers if you have time remaining.
+
+---
