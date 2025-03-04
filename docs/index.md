@@ -137,5 +137,30 @@ auto_title: false
   </div>
 </div>
 
+<!-- Certifications Card -->
+<div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
+  <div style="background-color: #2054a6; padding: 18px; color: white;">
+    <p style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;"><i class="fa fa-certificate" style="margin-right: 10px;"></i>Certifications</p>
+  </div>
+  <div style="padding: 20px; background-color: white;">
+    <!-- Databricks Section -->
+    <div style="margin-bottom: 15px;">
+      <h3 style="margin-top: 0; margin-bottom: 10px; font-size: 18px; color: #24292e;">Databricks</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+        <a href="https://kranthib.github.io/tech-pulse/certifications/databricks/data-analyst-associate.html" style="flex: 1; min-width: 200px; padding: 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; font-weight: 500; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-chart-pie" style="margin-right: 5px;"></i>Data Analyst Associate</a>
+        <a href="https://kranthib.github.io/tech-pulse/certifications/databricks/data-engineer-associate.html" style="flex: 1; min-width: 200px; padding: 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; font-weight: 500; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-database" style="margin-right: 5px;"></i>Data Engineer Associate</a>
+      </div>
+    </div>
+    
+    <!-- Google Cloud Section -->
+    <div>
+      <h3 style="margin-top: 0; margin-bottom: 10px; font-size: 18px; color: #24292e;">Google Cloud</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+        <a href="https://kranthib.github.io/tech-pulse/certifications/google-cloud/professional-cloud-architect.html" style="flex: 1; min-width: 200px; padding: 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; font-weight: 500; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-cloud" style="margin-right: 5px;"></i>Professional Cloud Architect</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
