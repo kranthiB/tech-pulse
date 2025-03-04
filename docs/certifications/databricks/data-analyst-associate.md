@@ -15,9 +15,38 @@ Table of contents
 
 <!--ts-->
    * [Preparation Plan](#preparation-plan)
-      * [Databricks SQL Fundamentals & Lakehouse Architecture]
+      * [Databricks SQL Fundamentals & Lakehouse Architecture](#databricks-sql-fundamentals--lakehouse-architecture)
+      * [Data Management with Delta Lake](#data-management-with-delta-lake)
+      * [Advanced SQL in the Lakehouse](#advanced-sql-in-the-lakehouse)
+      * [Data Visualization and Dashboarding](#data-visualization-and-dashboarding)
+      * [Analytics Applications & Final Exam Preparation](#analytics-applications--final-exam-preparation)
    * [Knowledge Base](#knowledge-base)
-      
+      * [Databricks SQL Fundamentals & Lakehouse Architecture](#databricks-sql-fundamentals--lakehouse-architecture-1)
+        * [1. Introduction to Databricks SQL](#1-introduction-to-databricks-sql)
+        * [2. Lakehouse Architecture and the Medallion Approach](#2-lakehouse-architecture-and-the-medallion-approach)
+        * [3. SQL Query Fundamentals in Databricks](#3-sql-query-fundamentals-in-databricks)
+        * [4. SQL Endpoints/Warehouses Configuration](#4-sql-endpointswarehouses-configuration)
+        * [5. Data Ingestion Methods in Databricks SQL](#5-data-ingestion-methods-in-databricks-sql)
+        * [6. Partner Connect Integration](#6-partner-connect-integration)
+        * [7. Query Practice and Exploration](#7-query-practice-and-exploration)
+        * [Review and Assessment](#review-and-assessment)
+      * [Data Management with Delta Lake](#data-management-with-delta-lake-1)
+        * [1. Delta Lake Fundamentals](#1-delta-lake-fundamentals)
+        * [2. Table Management: Managed vs. Unmanaged Tables](#2-table-management-managed-vs-unmanaged-tables)
+        * [3. Database and Table Operations](#3-database-and-table-operations)
+        * [4. Table Persistence and Scope](#4-table-persistence-and-scope)
+        * [5. Working with Views and Temp Views](#5-working-with-views-and-temp-views)
+        * [6. Using Data Explorer for Data Management](#6-using-data-explorer-for-data-management)
+        * [7. Table Security and Access Control](#7-table-security-and-access-control)
+        * [Knowledge Check Quiz](#knowledge-check-quiz-1)
+      * [Advanced SQL in the Lakehouse](#advanced-sql-in-the-lakehouse-1)
+        * [1. Advanced SQL Operations](#1-advanced-sql-operations)
+        * [2. Understanding JOIN Types and Their Applications](#2-understanding-join-types-and-their-applications)
+        * [3. Subqueries and Optimization](#3-subqueries-and-optimization)
+        * [4. Aggregations and Window Functions](#4-aggregations-and-window-functions)
+        * [5. Managing Nested Data Formats](#5-managing-nested-data-formats)
+        * [6. Query Performance Optimization](#6-query-performance-optimization)
+        * [Knowledge Check Quiz](#knowledge-check-quiz-2)
 <!--te-->
 
 # Preparation Plan
@@ -49,6 +78,16 @@ Table of contents
 ---
 
 ## Advanced SQL in the Lakehouse
+
+- Advanced SQL Operations
+- Understanding JOIN Types and Their Applications
+- Subqueries and Optimization
+- Aggregations and Window Functions
+- Managing Nested Data Formats
+- Query Performance Optimization
+- Knowledge Check Quiz
+
+---
 
 ## Data Visualization and Dashboarding
 
@@ -862,6 +901,957 @@ To reinforce learning:
 ---
 
 ## Advanced SQL in the Lakehouse
+
+### 1. Advanced SQL Operations
+
+Building on your foundation, today we dive into more sophisticated SQL capabilities in Databricks that allow you to perform complex data transformations and analysis.
+
+**Beyond Basic SELECT Statements**
+
+While basic SELECT statements form the foundation of SQL, Databricks SQL supports advanced clauses and operations for complex data manipulation:
+
+```sql
+SELECT 
+  customer_id,
+  CONCAT(first_name, ' ', last_name) AS full_name,
+  CASE 
+    WHEN total_purchases > 10000 THEN 'Premium'
+    WHEN total_purchases > 5000 THEN 'Gold'
+    WHEN total_purchases > 1000 THEN 'Silver'
+    ELSE 'Bronze'
+  END AS customer_tier,
+  DATE_DIFF(CURRENT_DATE(), first_purchase_date, 'MONTH') AS customer_tenure_months
+FROM customers
+WHERE status = 'Active'
+  AND (region = 'North America' OR region = 'Europe')
+  AND NOT EXISTS (SELECT 1 FROM complaints WHERE complaints.customer_id = customers.customer_id)
+ORDER BY total_purchases DESC
+LIMIT 100;
+```
+
+This query demonstrates several advanced techniques:
+- String manipulation with CONCAT
+- Conditional logic with CASE statements
+- Date calculations with DATE_DIFF
+- Complex filtering with multiple conditions and subqueries
+- Existence checks with NOT EXISTS
+
+**Data Modification Operations**
+
+Databricks SQL supports several methods for modifying data in tables:
+
+1. **INSERT INTO**: Adds new rows to a table
+
+```sql
+-- Basic insert
+INSERT INTO customers (customer_id, first_name, last_name, email)
+VALUES (1001, 'John', 'Smith', 'john.smith@example.com');
+
+-- Insert multiple rows
+INSERT INTO customers
+VALUES 
+  (1002, 'Jane', 'Doe', 'jane.doe@example.com'),
+  (1003, 'Robert', 'Johnson', 'robert.j@example.com');
+
+-- Insert from query results
+INSERT INTO active_customers
+SELECT customer_id, first_name, last_name, email
+FROM customers
+WHERE last_activity_date > CURRENT_DATE() - INTERVAL 90 DAYS;
+```
+
+2. **MERGE INTO**: Updates, inserts, or deletes rows based on a condition
+
+```sql
+MERGE INTO customers AS target
+USING customer_updates AS source
+ON target.customer_id = source.customer_id
+WHEN MATCHED AND source.status = 'Inactive' THEN
+  DELETE
+WHEN MATCHED THEN
+  UPDATE SET
+    target.email = source.email,
+    target.last_updated = CURRENT_TIMESTAMP()
+WHEN NOT MATCHED THEN
+  INSERT (customer_id, first_name, last_name, email, status, last_updated)
+  VALUES (
+    source.customer_id, 
+    source.first_name, 
+    source.last_name, 
+    source.email, 
+    source.status, 
+    CURRENT_TIMESTAMP()
+  );
+```
+
+3. **COPY INTO**: Efficiently loads data from files into tables
+
+```sql
+COPY INTO sales
+FROM 's3://data-bucket/new-sales/'
+FILEFORMAT = CSV
+FORMAT_OPTIONS ('header' = 'true', 'inferSchema' = 'true')
+COPY_OPTIONS ('mergeSchema' = 'true');
+```
+
+**Comparison of Data Modification Methods**
+
+| Method | Primary Use Case | Advantages | Limitations |
+|--------|------------------|------------|-------------|
+| INSERT INTO | Adding new data | Simple syntax, familiar | Cannot update existing data |
+| MERGE INTO | Upserting data (update + insert) | Handles multiple operations in one statement | More complex syntax |
+| COPY INTO | Bulk loading from files | Efficient for large data loads | Works with files, not query results |
+
+---
+
+### 2. Understanding JOIN Types and Their Applications
+
+Joins are fundamental for combining data from multiple tables. Understanding the different types is crucial for accurate analysis.
+
+**INNER JOIN**
+
+Returns only matching rows from both tables. This is the most common join type.
+
+```sql
+SELECT 
+  o.order_id,
+  c.customer_name,
+  o.order_date,
+  o.total_amount
+FROM orders o
+INNER JOIN customers c
+  ON o.customer_id = c.customer_id;
+```
+
+**LEFT JOIN (LEFT OUTER JOIN)**
+
+Returns all rows from the left table and matching rows from the right table. If there's no match, NULL values are returned for right table columns.
+
+```sql
+SELECT 
+  c.customer_id,
+  c.customer_name,
+  o.order_id,
+  o.order_date
+FROM customers c
+LEFT JOIN orders o
+  ON c.customer_id = o.customer_id;
+```
+
+Use case: Finding all customers and their orders, including customers who haven't placed any orders.
+
+**RIGHT JOIN (RIGHT OUTER JOIN)**
+
+Returns all rows from the right table and matching rows from the left table. If there's no match, NULL values are returned for left table columns.
+
+```sql
+SELECT 
+  o.order_id,
+  p.product_name,
+  o.quantity,
+  o.unit_price
+FROM order_items o
+RIGHT JOIN products p
+  ON o.product_id = p.product_id;
+```
+
+Use case: Finding all products and their orders, including products that haven't been ordered.
+
+**FULL JOIN (FULL OUTER JOIN)**
+
+Returns all rows when there's a match in either the left or right table. NULL values are returned for non-matching sides.
+
+```sql
+SELECT 
+  e.employee_id,
+  e.employee_name,
+  d.department_name
+FROM employees e
+FULL JOIN departments d
+  ON e.department_id = d.department_id;
+```
+
+Use case: Finding all employees and departments, including employees not assigned to departments and departments without employees.
+
+**CROSS JOIN**
+
+Returns the Cartesian product of both tables (every row from the first table combined with every row from the second table).
+
+```sql
+SELECT 
+  p.product_name,
+  c.category_name
+FROM products p
+CROSS JOIN categories c;
+```
+
+Use case: Creating combinations of all possible values, such as a product matrix or date dimension table.
+
+**SELF JOIN**
+
+Joining a table to itself, typically using different aliases.
+
+```sql
+SELECT 
+  e.employee_name AS employee,
+  m.employee_name AS manager
+FROM employees e
+JOIN employees m
+  ON e.manager_id = m.employee_id;
+```
+
+Use case: Handling hierarchical data like organizational structures or category hierarchies.
+
+---
+
+### 3. Subqueries and Optimization
+
+Subqueries (queries nested within other queries) are powerful tools for complex data analysis but require careful optimization.
+
+**Types of Subqueries**
+
+1. **Scalar Subqueries**: Return a single value
+
+```sql
+SELECT 
+  product_name,
+  price,
+  (SELECT AVG(price) FROM products) AS average_price,
+  price - (SELECT AVG(price) FROM products) AS price_difference
+FROM products;
+```
+
+2. **Row Subqueries**: Return a single row with multiple columns
+
+```sql
+SELECT 
+  department_name,
+  (SELECT COUNT(*) FROM employees WHERE department_id = d.department_id) AS employee_count
+FROM departments d;
+```
+
+3. **Table Subqueries**: Return multiple rows and columns
+
+```sql
+SELECT 
+  c.customer_name,
+  o.order_count,
+  o.total_spent
+FROM customers c
+JOIN (
+  SELECT 
+    customer_id,
+    COUNT(*) AS order_count,
+    SUM(total_amount) AS total_spent
+  FROM orders
+  GROUP BY customer_id
+) o ON c.customer_id = o.customer_id;
+```
+
+4. **Correlated Subqueries**: Reference columns from the outer query
+
+```sql
+SELECT 
+  product_name,
+  category,
+  price,
+  (SELECT AVG(price) FROM products p2 WHERE p2.category = p1.category) AS category_avg_price
+FROM products p1
+WHERE price > (SELECT AVG(price) FROM products p2 WHERE p2.category = p1.category);
+```
+
+**Optimizing Subqueries**
+
+Subqueries can impact performance if not used carefully. Here are optimization strategies:
+
+1. **Use JOINs instead of correlated subqueries** when possible
+   
+   Instead of:
+   ```sql
+   SELECT 
+     c.customer_name,
+     (SELECT COUNT(*) FROM orders o WHERE o.customer_id = c.customer_id) AS order_count
+   FROM customers c;
+   ```
+   
+   Use:
+   ```sql
+   SELECT 
+     c.customer_name,
+     COUNT(o.order_id) AS order_count
+   FROM customers c
+   LEFT JOIN orders o ON c.customer_id = o.customer_id
+   GROUP BY c.customer_id, c.customer_name;
+   ```
+
+2. **Use Common Table Expressions (CTEs)** for readability and reuse
+
+   ```sql
+   WITH customer_orders AS (
+     SELECT 
+       customer_id,
+       COUNT(*) AS order_count,
+       SUM(total_amount) AS total_spent
+     FROM orders
+     GROUP BY customer_id
+   )
+   SELECT 
+     c.customer_name,
+     co.order_count,
+     co.total_spent
+   FROM customers c
+   JOIN customer_orders co ON c.customer_id = co.customer_id;
+   ```
+
+3. **Materialize frequently used subqueries** as temporary tables or views
+
+   ```sql
+   CREATE OR REPLACE TEMPORARY VIEW high_value_customers AS
+   SELECT 
+     customer_id,
+     SUM(total_amount) AS total_spent
+   FROM orders
+   GROUP BY customer_id
+   HAVING SUM(total_amount) > 10000;
+   
+   -- Now use this view in multiple queries
+   SELECT * FROM high_value_customers;
+   ```
+
+4. **Push predicates into subqueries** to filter early
+
+   Instead of:
+   ```sql
+   SELECT *
+   FROM (
+     SELECT * FROM orders
+   ) o
+   WHERE o.order_date > '2023-01-01';
+   ```
+   
+   Use:
+   ```sql
+   SELECT *
+   FROM (
+     SELECT * FROM orders WHERE order_date > '2023-01-01'
+   ) o;
+   ```
+
+---
+
+### 4. Aggregations and Window Functions
+
+Aggregation functions and window functions are essential tools for data analysis that allow you to summarize and compare data across different dimensions.
+
+**Basic Aggregation Functions**
+
+These functions operate on a set of rows to return a single value:
+
+```sql
+SELECT 
+  category,
+  COUNT(*) AS product_count,
+  AVG(price) AS avg_price,
+  MIN(price) AS min_price,
+  MAX(price) AS max_price,
+  SUM(inventory) AS total_inventory
+FROM products
+GROUP BY category;
+```
+
+**Advanced Aggregation Techniques**
+
+1. **GROUPING SETS**: Allows you to specify multiple grouping sets in a single query
+
+```sql
+SELECT 
+  COALESCE(region, 'All Regions') AS region,
+  COALESCE(category, 'All Categories') AS category,
+  SUM(sales_amount) AS total_sales
+FROM sales
+GROUP BY GROUPING SETS (
+  (region, category),
+  (region),
+  (category),
+  ()
+);
+```
+
+2. **CUBE**: Generates all possible grouping sets based on the specified columns
+
+```sql
+SELECT 
+  COALESCE(region, 'All Regions') AS region,
+  COALESCE(category, 'All Categories') AS category,
+  COALESCE(CAST(year AS STRING), 'All Years') AS year,
+  SUM(sales_amount) AS total_sales
+FROM sales
+GROUP BY CUBE(region, category, year);
+```
+
+3. **ROLLUP**: Generates a subset of grouping sets based on a hierarchy
+
+```sql
+SELECT 
+  COALESCE(region, 'All Regions') AS region,
+  COALESCE(state, 'All States') AS state,
+  COALESCE(city, 'All Cities') AS city,
+  SUM(sales_amount) AS total_sales
+FROM sales
+GROUP BY ROLLUP(region, state, city);
+```
+
+**Window Functions**
+
+Window functions perform calculations across a set of rows related to the current row, without collapsing the result into a single output row.
+
+1. **Ranking Functions**
+
+```sql
+SELECT 
+  category,
+  product_name,
+  price,
+  RANK() OVER (PARTITION BY category ORDER BY price DESC) AS price_rank,
+  DENSE_RANK() OVER (PARTITION BY category ORDER BY price DESC) AS price_dense_rank,
+  ROW_NUMBER() OVER (PARTITION BY category ORDER BY price DESC) AS price_row_number
+FROM products;
+```
+
+2. **Analytic Functions**
+
+```sql
+SELECT 
+  product_name,
+  category,
+  price,
+  AVG(price) OVER (PARTITION BY category) AS category_avg_price,
+  price - AVG(price) OVER (PARTITION BY category) AS price_diff_from_avg,
+  price / SUM(price) OVER (PARTITION BY category) * 100 AS pct_of_category_price
+FROM products;
+```
+
+3. **Window Functions with Frames**
+
+```sql
+SELECT 
+  order_date,
+  order_id,
+  total_amount,
+  SUM(total_amount) OVER (
+    ORDER BY order_date
+    ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+  ) AS running_total,
+  AVG(total_amount) OVER (
+    ORDER BY order_date
+    ROWS BETWEEN 2 PRECEDING AND 2 FOLLOWING
+  ) AS moving_avg_5day
+FROM orders;
+```
+
+**Practical Exercise 1: Working with Aggregations and Window Functions**
+
+1. Write a query that calculates year-over-year growth by quarter:
+
+```sql
+SELECT 
+  year,
+  quarter,
+  total_sales,
+  LAG(total_sales) OVER (PARTITION BY quarter ORDER BY year) AS prev_year_sales,
+  (total_sales - LAG(total_sales) OVER (PARTITION BY quarter ORDER BY year)) / 
+    LAG(total_sales) OVER (PARTITION BY quarter ORDER BY year) * 100 AS yoy_growth_pct
+FROM (
+  SELECT 
+    YEAR(order_date) AS year,
+    QUARTER(order_date) AS quarter,
+    SUM(total_amount) AS total_sales
+  FROM orders
+  GROUP BY YEAR(order_date), QUARTER(order_date)
+) quarterly_sales
+ORDER BY year, quarter;
+```
+
+2. Identify the top 3 products in each category by sales volume:
+
+```sql
+WITH product_sales AS (
+  SELECT 
+    p.product_id,
+    p.product_name,
+    p.category,
+    SUM(oi.quantity) AS total_quantity_sold,
+    RANK() OVER (PARTITION BY p.category ORDER BY SUM(oi.quantity) DESC) AS sales_rank
+  FROM products p
+  JOIN order_items oi ON p.product_id = oi.product_id
+  GROUP BY p.product_id, p.product_name, p.category
+)
+SELECT 
+  product_id,
+  product_name,
+  category,
+  total_quantity_sold
+FROM product_sales
+WHERE sales_rank <= 3
+ORDER BY category, sales_rank;
+```
+
+---
+
+### 5. Managing Nested Data Formats
+
+Databricks SQL excels at handling complex, nested data structures that are common in modern data lakes.
+
+**Types of Nested Data Structures**
+
+1. **Arrays**: Ordered collections of elements
+
+```sql
+-- Creating a table with array columns
+CREATE TABLE users (
+  user_id INT,
+  name STRING,
+  interests ARRAY<STRING>,
+  purchase_amounts ARRAY<DOUBLE>
+);
+
+-- Inserting data with arrays
+INSERT INTO users VALUES
+  (1, 'Alice', ARRAY('hiking', 'reading', 'cooking'), ARRAY(120.50, 25.00, 75.99)),
+  (2, 'Bob', ARRAY('gaming', 'photography'), ARRAY(249.99, 525.50));
+```
+
+2. **Maps**: Key-value pairs
+
+```sql
+-- Creating a table with map columns
+CREATE TABLE product_attributes (
+  product_id INT,
+  name STRING,
+  specifications MAP<STRING, STRING>
+);
+
+-- Inserting data with maps
+INSERT INTO product_attributes VALUES
+  (101, 'Smartphone', MAP('color', 'black', 'storage', '128GB', 'ram', '8GB')),
+  (102, 'Laptop', MAP('color', 'silver', 'storage', '512GB', 'ram', '16GB'));
+```
+
+3. **Structs**: Records with named fields
+
+```sql
+-- Creating a table with struct columns
+CREATE TABLE orders (
+  order_id INT,
+  customer_id INT,
+  shipping_address STRUCT<street: STRING, city: STRING, zip: STRING>,
+  billing_address STRUCT<street: STRING, city: STRING, zip: STRING>
+);
+
+-- Inserting data with structs
+INSERT INTO orders VALUES
+  (1001, 5001, 
+   STRUCT('123 Main St', 'Portland', '97201'), 
+   STRUCT('123 Main St', 'Portland', '97201')),
+  (1002, 5002, 
+   STRUCT('456 Oak Ave', 'Seattle', '98101'), 
+   STRUCT('789 Pine Dr', 'New York', '10001'));
+```
+
+**Querying Nested Data**
+
+1. **Working with Arrays**
+
+```sql
+-- Accessing array elements
+SELECT 
+  user_id,
+  name,
+  interests[0] AS primary_interest,
+  size(interests) AS interest_count
+FROM users;
+
+-- Exploding arrays
+SELECT 
+  user_id,
+  name,
+  exploded_interest
+FROM users
+LATERAL VIEW explode(interests) AS exploded_interest;
+
+-- Filtering with array containment
+SELECT *
+FROM users
+WHERE array_contains(interests, 'hiking');
+
+-- Aggregating arrays
+SELECT 
+  user_id,
+  name,
+  array_join(interests, ', ') AS interest_list,
+  array_min(purchase_amounts) AS min_purchase,
+  array_max(purchase_amounts) AS max_purchase,
+  array_sum(purchase_amounts) AS total_spent
+FROM users;
+```
+
+2. **Working with Maps**
+
+```sql
+-- Accessing map values
+SELECT 
+  product_id,
+  name,
+  specifications['color'] AS color,
+  specifications['storage'] AS storage
+FROM product_attributes;
+
+-- Exploding maps
+SELECT 
+  product_id,
+  name,
+  spec_name,
+  spec_value
+FROM product_attributes
+LATERAL VIEW explode(specifications) AS spec_name, spec_value;
+
+-- Filtering with map keys
+SELECT *
+FROM product_attributes
+WHERE map_keys(specifications) ARRAY_CONTAINS 'ram';
+```
+
+3. **Working with Structs**
+
+```sql
+-- Accessing struct fields
+SELECT 
+  order_id,
+  customer_id,
+  shipping_address.street AS shipping_street,
+  shipping_address.city AS shipping_city,
+  billing_address.zip AS billing_zip
+FROM orders;
+
+-- Comparing struct fields
+SELECT *
+FROM orders
+WHERE shipping_address = billing_address;
+```
+
+**Practical Exercise 2: Working with Nested Data**
+
+1. Create a table with nested structures and insert sample data:
+
+```sql
+CREATE TABLE customer_transactions (
+  customer_id INT,
+  name STRING,
+  transactions ARRAY<STRUCT
+    transaction_id: STRING,
+    date: DATE,
+    amount: DOUBLE,
+    items: ARRAY<STRUCT
+      item_id: INT,
+      item_name: STRING,
+      quantity: INT,
+      price: DOUBLE
+    >>
+  >>
+);
+
+INSERT INTO customer_transactions VALUES
+  (1, 'Alice', ARRAY(
+    STRUCT('T1001', DATE '2023-01-15', 125.40, ARRAY(
+      STRUCT(101, 'Product A', 2, 45.50),
+      STRUCT(102, 'Product B', 1, 34.40)
+    )),
+    STRUCT('T1002', DATE '2023-02-20', 85.00, ARRAY(
+      STRUCT(103, 'Product C', 1, 85.00)
+    ))
+  )),
+  (2, 'Bob', ARRAY(
+    STRUCT('T2001', DATE '2023-01-05', 200.00, ARRAY(
+      STRUCT(101, 'Product A', 1, 45.50),
+      STRUCT(104, 'Product D', 1, 154.50)
+    ))
+  ));
+```
+
+2. Query to extract all purchased items and their quantities:
+
+```sql
+SELECT 
+  ct.customer_id,
+  ct.name,
+  t.transaction_id,
+  t.date,
+  i.item_name,
+  i.quantity,
+  i.price,
+  i.quantity * i.price AS line_total
+FROM customer_transactions ct
+LATERAL VIEW explode(transactions) AS t
+LATERAL VIEW explode(t.items) AS i
+ORDER BY ct.customer_id, t.date, i.item_name;
+```
+
+---
+
+### 6. Query Performance Optimization
+
+Optimizing query performance is crucial for efficient data analysis, especially with large datasets.
+
+**Key Optimization Techniques**
+
+1. **Filtering Early**: Push filters as early as possible in the query
+
+```sql
+-- Instead of this
+SELECT 
+  c.customer_name,
+  o.order_date,
+  o.total_amount
+FROM customers c
+JOIN orders o ON c.customer_id = o.customer_id
+WHERE o.order_date > '2023-01-01';
+
+-- Do this
+SELECT 
+  c.customer_name,
+  o.order_date,
+  o.total_amount
+FROM customers c
+JOIN (
+  SELECT * FROM orders WHERE order_date > '2023-01-01'
+) o ON c.customer_id = o.customer_id;
+```
+
+2. **Projection Pruning**: Select only the columns you need
+
+```sql
+-- Instead of this
+SELECT * FROM customers JOIN orders ON customers.customer_id = orders.customer_id;
+
+-- Do this
+SELECT 
+  customers.customer_name,
+  orders.order_id,
+  orders.order_date,
+  orders.total_amount
+FROM customers 
+JOIN orders ON customers.customer_id = orders.customer_id;
+```
+
+3. **Partition Pruning**: Limit scanned partitions when using partitioned tables
+
+```sql
+-- For a table partitioned by date
+SELECT *
+FROM sales_data
+WHERE sale_date BETWEEN '2023-01-01' AND '2023-01-31';
+```
+
+4. **Avoiding Cartesian Products**: Be cautious with CROSS JOINs and ensure proper join conditions
+
+5. **Using Appropriate Join Types**: Choose the right join type based on your data and requirements
+
+6. **Leveraging Query Caching**: Databricks SQL caches query results for improved performance
+
+```sql
+-- Check if query results are cached
+SELECT * FROM samples.nyctaxi.trips LIMIT 10;
+-- Run again to use cached results
+```
+
+7. **Using Query History**: Review past queries for optimization opportunities
+
+**Higher-Order Functions**
+
+Spark SQL provides higher-order functions for working efficiently with complex data types:
+
+1. **transform**: Applies a function to each element in an array
+
+```sql
+SELECT 
+  user_id,
+  name,
+  interests,
+  transform(interests, i -> upper(i)) AS uppercase_interests
+FROM users;
+```
+
+2. **filter**: Selects elements from an array based on a condition
+
+```sql
+SELECT 
+  user_id,
+  name,
+  purchase_amounts,
+  filter(purchase_amounts, a -> a > 100) AS large_purchases
+FROM users;
+```
+
+3. **exists**: Checks if any element in an array satisfies a condition
+
+```sql
+SELECT *
+FROM users
+WHERE exists(purchase_amounts, a -> a > 500);
+```
+
+4. **aggregate**: Reduces an array to a single value
+
+```sql
+SELECT 
+  user_id,
+  name,
+  purchase_amounts,
+  aggregate(purchase_amounts, 0, (acc, x) -> acc + x) AS total_spent
+FROM users;
+```
+
+**User-Defined Functions (UDFs)**
+
+UDFs allow you to extend SQL functionality with custom logic:
+
+```sql
+-- Creating a simple UDF
+CREATE OR REPLACE FUNCTION celsius_to_fahrenheit(celsius DOUBLE)
+RETURNS DOUBLE
+RETURN (celsius * 9/5) + 32;
+
+-- Using the UDF
+SELECT 
+  city,
+  temperature_celsius,
+  celsius_to_fahrenheit(temperature_celsius) AS temperature_fahrenheit
+FROM weather_data;
+```
+
+**Practical Exercise 3: Performance Optimization**
+
+1. Analyze a slow query and optimize it:
+
+Original query:
+```sql
+SELECT *
+FROM sales s
+JOIN customers c ON s.customer_id = c.customer_id
+JOIN products p ON s.product_id = p.product_id
+WHERE s.sale_date BETWEEN '2022-01-01' AND '2023-12-31';
+```
+
+Optimized query:
+```sql
+SELECT 
+  s.sale_id,
+  s.sale_date,
+  s.quantity,
+  s.total_amount,
+  c.customer_name,
+  c.customer_email,
+  p.product_name,
+  p.category
+FROM (
+  SELECT * FROM sales 
+  WHERE sale_date BETWEEN '2022-01-01' AND '2023-12-31'
+) s
+JOIN customers c ON s.customer_id = c.customer_id
+JOIN products p ON s.product_id = p.product_id;
+```
+
+2. Create and use a UDF for a common calculation:
+
+```sql
+-- Create a UDF to calculate discount price
+CREATE OR REPLACE FUNCTION calculate_discount(price DOUBLE, discount_pct DOUBLE)
+RETURNS DOUBLE
+RETURN price * (1 - discount_pct/100);
+
+-- Use the UDF in a query
+SELECT 
+  product_id,
+  product_name,
+  price AS original_price,
+  discount_percentage,
+  calculate_discount(price, discount_percentage) AS discounted_price
+FROM products;
+```
+
+---
+
+### Knowledge Check Quiz
+
+Test your understanding of today's material with these questions:
+
+1. Which SQL operation would you use to simultaneously insert, update, and delete rows in a target table based on values from a source table?
+   a) INSERT
+   b) UPDATE
+   c) MERGE
+   d) COPY
+
+2. When using a window function, what does PARTITION BY do?
+   a) Splits the result set into partitions for distributed processing
+   b) Divides the result set into groups for which the window function is applied separately
+   c) Creates physical partitions in the underlying table
+   d) Filters the result set based on partition values
+
+3. Which join type returns all rows from both tables, with NULL values for non-matching rows?
+   a) INNER JOIN
+   b) LEFT JOIN
+   c) RIGHT JOIN
+   d) FULL JOIN
+
+4. Which higher-order function would you use to filter elements from an array based on a condition?
+   a) transform()
+   b) filter()
+   c) exists()
+   d) aggregate()
+
+5. What is the primary advantage of using Common Table Expressions (CTEs) over subqueries?
+   a) CTEs always perform better
+   b) CTEs can be reused multiple times in the same query
+   c) CTEs support recursion
+   d) CTEs are easier to update
+
+#### Knowledge Check Quiz - Answers
+
+1. Which SQL operation would you use to simultaneously insert, update, and delete rows in a target table based on values from a source table?
+   **Answer: c) MERGE**
+   
+   The MERGE operation is designed specifically for this purpose, allowing you to perform multiple data manipulation actions in a single statement. It matches rows between source and target tables, then applies different actions (INSERT, UPDATE, DELETE) based on whether matches are found and any additional conditions you specify.
+
+2. When using a window function, what does PARTITION BY do?
+   **Answer: b) Divides the result set into groups for which the window function is applied separately**
+   
+   PARTITION BY creates logical divisions in your data. The window function calculations are performed independently within each partition, similar to how GROUP BY works for aggregations, but without collapsing the rows. This allows for more sophisticated analytical calculations while maintaining the detail rows.
+
+3. Which join type returns all rows from both tables, with NULL values for non-matching rows?
+   **Answer: d) FULL JOIN**
+   
+   A FULL JOIN (or FULL OUTER JOIN) returns all rows from both tables. When there's no match for a row in either table, NULL values are returned for columns from the non-matching table. This join type is useful when you need to see all data from both tables regardless of whether relationships exist.
+
+4. Which higher-order function would you use to filter elements from an array based on a condition?
+   **Answer: b) filter()**
+   
+   The filter() function takes an array and a lambda function that specifies a filtering condition. It returns a new array containing only the elements that satisfy that condition. This is especially useful when working with array columns in nested data structures.
+
+5. What is the primary advantage of using Common Table Expressions (CTEs) over subqueries?
+   **Answer: b) CTEs can be reused multiple times in the same query**
+   
+   While CTEs offer several benefits (including improved readability and support for recursion), their ability to be referenced multiple times within the same query is a key advantage. With a CTE, you define a complex intermediate result set once and can then reference it in multiple places, eliminating the need to repeat the same subquery logic.
+
+#### Recommended Practice
+
+To reinforce learning:
+1. Write a query using window functions to calculate month-over-month growth rates
+2. Create a complex JOIN scenario involving at least three tables
+3. Practice working with nested data structures using higher-order functions
+4. Write and use a custom UDF to solve a specific analytical problem
+5. Optimize a complex query and measure the performance improvement
+
+---
 
 ## Data Visualization and Dashboarding
 
