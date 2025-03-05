@@ -37,7 +37,7 @@ auto_title: false
   <div style="flex: 1; min-width: 300px;">
     <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
       <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
-        <i class="fa fa-sitemap" style="margin-right: 10px;"></i>System Design
+        <p style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;"><i class="fa fa-sitemap" style="margin-right: 10px;"></i>System Design</p>
       </h3>
       <p style="margin-top: 0; color: #24292e; font-size: 14px;">Architecture patterns, distributed systems, scalability, and resilience strategies.</p>
       <div style="text-align: right;">
