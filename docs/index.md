@@ -29,111 +29,138 @@ auto_title: false
   </div>
 </div>
 
-<div style="margin-top: 40px;">
-  <h1 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Knowledge Areas</h1>
-  
-  <!-- System Design Card -->
-  <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background-color: #2054a6; padding: 18px; color: white;">
-      <p style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;"><i class="fa fa-sitemap" style="margin-right: 10px;"></i>System Design</p>
-    </div>
-    <div style="padding: 20px; background-color: white;">
-      <p style="margin-top: 0; color: #24292e;">Architecture patterns, distributed systems, scalability, and resilience strategies.</p>
+<h1 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Knowledge Areas</h1>
+
+<!-- Knowledge Areas section with multi-column layout -->
+<div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 40px;">
+  <!-- System Design Column -->
+  <div style="flex: 1; min-width: 300px;">
+    <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
+      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
+        <i class="fa fa-sitemap" style="margin-right: 10px;"></i>System Design
+      </h3>
+      <p style="margin-top: 0; color: #24292e; font-size: 14px;">Architecture patterns, distributed systems, scalability, and resilience strategies.</p>
       <div style="text-align: right;">
         <a href="https://kranthib.github.io/tech-pulse/system-design.html" style="display: inline-block; padding: 6px 14px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">Explore <i class="fa fa-arrow-right"></i></a>
       </div>
     </div>
   </div>
   
-  <!-- Data & AI Card -->
-  <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background-color: #2054a6; padding: 18px; color: white;">
-      <p style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;"><i class="fa fa-database" style="margin-right: 10px;"></i>Data & AI</p>
-    </div>
-    <div style="padding: 20px; background-color: white;">
-      <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-        <a href="https://kranthib.github.io/tech-pulse/data-ai/data-foundations.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-cubes" style="margin-right: 5px;"></i>Data Foundations</a>
-        <a href="https://kranthib.github.io/tech-pulse/data-ai/data-engineering.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-cogs" style="margin-right: 5px;"></i>Data Engineering</a>
-        <a href="https://kranthib.github.io/tech-pulse/data-ai/data-analysis.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-chart-bar" style="margin-right: 5px;"></i>Data Analysis</a>
-        <a href="https://kranthib.github.io/tech-pulse/data-ai/conventional-ml.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-cog" style="margin-right: 5px;"></i>Conventional ML</a>
-        <a href="https://kranthib.github.io/tech-pulse/data-ai/deep-learning.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-brain" style="margin-right: 5px;"></i>Deep Learning</a>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Generative AI Card -->
-  <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background-color: #2054a6; padding: 18px; color: white;">
-      <p style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;"><i class="fa fa-robot" style="margin-right: 10px;"></i>Generative AI</p>
-    </div>
-    <div style="padding: 20px; background-color: white;">
-      <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/prompt-engineering.html" style="flex: 1; min-width: 200px; padding: 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; font-weight: 500; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-keyboard" style="margin-right: 5px;"></i>Prompt Engineering</a>
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/llm-tier.html" style="flex: 1; min-width: 200px; padding: 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; font-weight: 500; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-layer-group" style="margin-right: 5px;"></i>LLM Tiers</a>
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/rag.html" style="flex: 1; min-width: 200px; padding: 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; font-weight: 500; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-search" style="margin-right: 5px;"></i>RAG</a>
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/agentic-ai.html" style="flex: 1; min-width: 200px; padding: 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; font-weight: 500; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-user-cog" style="margin-right: 5px;"></i>Agentic AI</a>
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/ai-driven-software-development.html" style="flex: 1; min-width: 200px; padding: 12px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; font-weight: 500; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-code" style="margin-right: 5px;"></i>AI-Enabled Development</a>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Industrial IoT Card -->
-  <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background-color: #2054a6; padding: 18px; color: white;">
-      <p style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;"><i class="fa fa-industry" style="margin-right: 10px;"></i>Industrial IoT</p>
-    </div>
-    <div style="padding: 20px; background-color: white;">
-      <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-        <a href="https://kranthib.github.io/tech-pulse/industrial-iot/industrial-iot.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-industry" style="margin-right: 5px;"></i>Smart Manufacturing</a>
-        <a href="https://kranthib.github.io/tech-pulse/industrial-iot/edge-gateway.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-network-wired" style="margin-right: 5px;"></i>Edge Gateway</a>
-        <a href="https://kranthib.github.io/tech-pulse/industrial-iot/industry-5.0.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-rocket" style="margin-right: 5px;"></i>Industry 5.0</a>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Ops Mastery Card -->
-  <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background-color: #2054a6; padding: 18px; color: white;">
-      <p style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;"><i class="fa fa-wrench" style="margin-right: 10px;"></i>Ops Mastery</p>
-    </div>
-    <div style="padding: 20px; background-color: white;">
-      <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-        <a href="https://kranthib.github.io/tech-pulse/ops-mastery/dev-sec-ops.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-shield-alt" style="margin-right: 5px;"></i>DevSecOps</a>
-        <a href="https://kranthib.github.io/tech-pulse/ops-mastery/git-ops.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-code-branch" style="margin-right: 5px;"></i>GitOps</a>
-        <a href="https://kranthib.github.io/tech-pulse/ops-mastery/fin-ops.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-money-bill" style="margin-right: 5px;"></i>FinOps</a>
-        <a href="https://kranthib.github.io/tech-pulse/ops-mastery/ml-ops.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-cogs" style="margin-right: 5px;"></i>MLOps</a>
-        <a href="https://kranthib.github.io/tech-pulse/ops-mastery/ai-ops.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-robot" style="margin-right: 5px;"></i>AIOps</a>
-        <a href="https://kranthib.github.io/tech-pulse/ops-mastery/green-ops.html" style="flex: 1; min-width: 140px; padding: 10px; background-color: #f6f8fa; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-leaf" style="margin-right: 5px;"></i>GreenOps</a>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Platform Engineering Card -->
-  <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background-color: #2054a6; padding: 18px; color: white;">
-      <p style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;"><i class="fa fa-server" style="margin-right: 10px;"></i>Platform Engineering</p>
-    </div>
-    <div style="padding: 20px; background-color: white;">
-      <p style="color: #24292e;">Internal developer platforms, infrastructure automation, and delivery excellence.</p>
+  <!-- Platform Engineering Column -->
+  <div style="flex: 1; min-width: 300px;">
+    <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
+      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
+        <i class="fa fa-server" style="margin-right: 10px;"></i>Platform Engineering
+      </h3>
+      <p style="margin-top: 0; color: #24292e; font-size: 14px;">Internal developer platforms, infrastructure automation, and delivery excellence.</p>
       <div style="text-align: right;">
         <a href="https://kranthib.github.io/tech-pulse/platform-engineering.html" style="display: inline-block; padding: 6px 14px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">Explore <i class="fa fa-arrow-right"></i></a>
       </div>
     </div>
   </div>
-  
-  <h1 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Frameworks & Platforms</h1>
+</div>
 
-  <!-- Frameworks & Platforms Card -->
-  <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-    <div style="background-color: #2054a6; padding: 18px; color: white;">
-      <p style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;"><i class="fa fa-th-large" style="margin-right: 10px;"></i>Frameworks & Platforms</p>
+<!-- Data & AI and Generative AI -->
+<div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 40px;">
+  <!-- Data & AI Column -->
+  <div style="flex: 1; min-width: 300px;">
+    <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
+      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
+        <i class="fa fa-database" style="margin-right: 10px;"></i>Data & AI
+      </h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
+        <a href="https://kranthib.github.io/tech-pulse/data-ai/data-foundations.html" style="flex: 1; min-width: 120px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-cubes" style="margin-right: 5px;"></i>Data Foundations</a>
+        <a href="https://kranthib.github.io/tech-pulse/data-ai/data-engineering.html" style="flex: 1; min-width: 120px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-cogs" style="margin-right: 5px;"></i>Data Engineering</a>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <a href="https://kranthib.github.io/tech-pulse/data-ai/data-analysis.html" style="flex: 1; min-width: 120px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-chart-bar" style="margin-right: 5px;"></i>Data Analysis</a>
+        <a href="https://kranthib.github.io/tech-pulse/data-ai/conventional-ml.html" style="flex: 1; min-width: 120px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-cog" style="margin-right: 5px;"></i>Conventional ML</a>
+        <a href="https://kranthib.github.io/tech-pulse/data-ai/deep-learning.html" style="flex: 1; min-width: 120px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-brain" style="margin-right: 5px;"></i>Deep Learning</a>
+      </div>
     </div>
-    <div style="padding: 20px; background-color: white;">
-      <div style="display: flex; flex-direction: column; gap: 10px;">
-        <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/enterprise-application-security-framework.html" style="padding: 10px; background-color: #f6f8fa; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-lock" style="margin-right: 8px;"></i>Enterprise Application Security Framework</a>
-        <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/enterprise-api-integration-and-management-platform.html" style="padding: 10px; background-color: #f6f8fa; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-exchange-alt" style="margin-right: 8px;"></i>Enterprise API Integration and Management Platform</a>
-        <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/cloud-cost-optimization-framework.html" style="padding: 10px; background-color: #f6f8fa; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-cloud" style="margin-right: 8px;"></i>Cloud Cost Optimization Framework</a>
-        <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/ai-code-assistant-performance-scorecard.html" style="padding: 10px; background-color: #f6f8fa; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 14px;"><i class="fa fa-chart-line" style="margin-right: 8px;"></i>AI Code Assistant Performance Scorecard</a>
+  </div>
+  
+  <!-- Generative AI Column -->
+  <div style="flex: 1; min-width: 300px;">
+    <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
+      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
+        <i class="fa fa-robot" style="margin-right: 10px;"></i>Generative AI
+      </h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/prompt-engineering.html" style="flex: 1; min-width: 130px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-keyboard" style="margin-right: 5px;"></i>Prompt Engineering</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/llm-tier.html" style="flex: 1; min-width: 130px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-layer-group" style="margin-right: 5px;"></i>LLM Tiers</a>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/rag.html" style="flex: 1; min-width: 130px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-search" style="margin-right: 5px;"></i>RAG</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/agentic-ai.html" style="flex: 1; min-width: 130px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-user-cog" style="margin-right: 5px;"></i>Agentic AI</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/ai-driven-software-development.html" style="flex: 1; min-width: 130px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-code" style="margin-right: 5px;"></i>AI-Enabled Development</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Industrial IoT and Ops Mastery -->
+<div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 40px;">
+  <!-- Industrial IoT Column -->
+  <div style="flex: 1; min-width: 300px;">
+    <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
+      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
+        <i class="fa fa-industry" style="margin-right: 10px;"></i>Industrial IoT
+      </h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <a href="https://kranthib.github.io/tech-pulse/industrial-iot/industrial-iot.html" style="flex: 1; min-width: 120px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-industry" style="margin-right: 5px;"></i>Smart Manufacturing</a>
+        <a href="https://kranthib.github.io/tech-pulse/industrial-iot/edge-gateway.html" style="flex: 1; min-width: 120px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-network-wired" style="margin-right: 5px;"></i>Edge Gateway</a>
+        <a href="https://kranthib.github.io/tech-pulse/industrial-iot/industry-5.0.html" style="flex: 1; min-width: 120px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-rocket" style="margin-right: 5px;"></i>Industry 5.0</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Ops Mastery Column -->
+  <div style="flex: 1; min-width: 300px;">
+    <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
+      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
+        <i class="fa fa-wrench" style="margin-right: 10px;"></i>Ops Mastery
+      </h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
+        <a href="https://kranthib.github.io/tech-pulse/ops-mastery/dev-sec-ops.html" style="flex: 1; min-width: 90px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-shield-alt" style="margin-right: 5px;"></i>DevSecOps</a>
+        <a href="https://kranthib.github.io/tech-pulse/ops-mastery/git-ops.html" style="flex: 1; min-width: 90px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-code-branch" style="margin-right: 5px;"></i>GitOps</a>
+        <a href="https://kranthib.github.io/tech-pulse/ops-mastery/fin-ops.html" style="flex: 1; min-width: 90px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-money-bill" style="margin-right: 5px;"></i>FinOps</a>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <a href="https://kranthib.github.io/tech-pulse/ops-mastery/ml-ops.html" style="flex: 1; min-width: 90px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-cogs" style="margin-right: 5px;"></i>MLOps</a>
+        <a href="https://kranthib.github.io/tech-pulse/ops-mastery/ai-ops.html" style="flex: 1; min-width: 90px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-robot" style="margin-right: 5px;"></i>AIOps</a>
+        <a href="https://kranthib.github.io/tech-pulse/ops-mastery/green-ops.html" style="flex: 1; min-width: 90px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-leaf" style="margin-right: 5px;"></i>GreenOps</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Frameworks & Platforms</h1>
+
+<!-- Frameworks & Platforms section with multi-column layout -->
+<div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 40px;">
+  <!-- Column 1 -->
+  <div style="flex: 1; min-width: 300px;">
+    <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
+      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
+        <i class="fa fa-th-large" style="margin-right: 10px;"></i>Security & Integration
+      </h3>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/enterprise-application-security-framework.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-lock" style="margin-right: 8px;"></i>Enterprise Application Security Framework</a>
+        <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/enterprise-api-integration-and-management-platform.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-exchange-alt" style="margin-right: 8px;"></i>Enterprise API Integration and Management Platform</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Column 2 -->
+  <div style="flex: 1; min-width: 300px;">
+    <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
+      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
+        <i class="fa fa-th-large" style="margin-right: 10px;"></i>Optimization & Performance
+      </h3>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/cloud-cost-optimization-framework.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-cloud" style="margin-right: 8px;"></i>Cloud Cost Optimization Framework</a>
+        <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/ai-code-assistant-performance-scorecard.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-chart-line" style="margin-right: 8px;"></i>AI Code Assistant Performance Scorecard</a>
       </div>
     </div>
   </div>
