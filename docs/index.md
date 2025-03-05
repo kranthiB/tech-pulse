@@ -31,7 +31,7 @@ auto_title: false
 
 <h1 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Knowledge Areas</h1>
 
-<!-- Knowledge Areas section with multi-column layout -->
+<!-- Redesigned Knowledge Areas section with multi-column layout -->
 <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 40px;">
   <!-- System Design Column -->
   <div style="flex: 1; min-width: 300px;">
@@ -87,13 +87,13 @@ auto_title: false
         <i class="fa fa-robot" style="margin-right: 10px;"></i>Generative AI
       </h3>
       <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/prompt-engineering.html" style="flex: 1; min-width: 130px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-keyboard" style="margin-right: 5px;"></i>Prompt Engineering</a>
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/llm-tier.html" style="flex: 1; min-width: 130px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-layer-group" style="margin-right: 5px;"></i>LLM Tiers</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/prompt-engineering.html" style="flex: 1; min-width: 120px; padding: 8px 12px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-keyboard" style="margin-right: 5px;"></i>Prompt Engineering</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/llm-tier.html" style="flex: 1; min-width: 120px; padding: 8px 12px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-layer-group" style="margin-right: 5px;"></i>LLM Tiers</a>
       </div>
       <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/rag.html" style="flex: 1; min-width: 130px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-search" style="margin-right: 5px;"></i>RAG</a>
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/agentic-ai.html" style="flex: 1; min-width: 130px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-user-cog" style="margin-right: 5px;"></i>Agentic AI</a>
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/ai-driven-software-development.html" style="flex: 1; min-width: 130px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-code" style="margin-right: 5px;"></i>AI-Enabled Development</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/rag.html" style="width: 32%; min-width: 100px; padding: 10px 12px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px; display: flex; justify-content: center; align-items: center;"><i class="fa fa-search" style="margin-right: 5px;"></i>RAG</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/agentic-ai.html" style="width: 32%; min-width: 100px; padding: 10px 12px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px; display: flex; justify-content: center; align-items: center;"><i class="fa fa-user-cog" style="margin-right: 5px;"></i>Agentic AI</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/ai-driven-software-development.html" style="width: 32%; min-width: 100px; padding: 10px 12px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px; display: flex; justify-content: center; align-items: center;"><i class="fa fa-code" style="margin-right: 5px;"></i>AI-Enabled Development</a>
       </div>
     </div>
   </div>
@@ -137,7 +137,7 @@ auto_title: false
 
 <h1 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Frameworks & Platforms</h1>
 
-<!-- Frameworks & Platforms section with multi-column layout -->
+<!-- Redesigned Frameworks & Platforms section with multi-column layout -->
 <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 40px;">
   <!-- Column 1 -->
   <div style="flex: 1; min-width: 300px;">
