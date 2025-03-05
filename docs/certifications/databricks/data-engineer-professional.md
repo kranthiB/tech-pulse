@@ -3,6 +3,7 @@ id: certifications/databricks/data-engineer-professional
 title: Databricks Data Engineer Professional Certification
 sidebar_label: Databricks Data Engineer Professional Certification
 previous_page: certifications/databricks/data-engineer-associate
+next_page: certifications/databricks/generative-ai-engineer-associate
 ---
 
 <div style="text-align: right;">

@@ -2,6 +2,7 @@
 id: certifications/databricks/data-analyst-associate
 title: Databricks Data Analyst Associate Certification
 sidebar_label: Databricks Data Analyst Associate Certification
+next_page: certifications/databricks/data-engineer-associate
 ---
 
 <div style="text-align: right;">

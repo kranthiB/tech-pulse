@@ -166,6 +166,9 @@ auto_title: false
             <a href="https://kranthib.github.io/tech-pulse/certifications/databricks/data-engineer-professional.html" style="display: block; padding: 12px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; font-weight: 500; border: 1px solid #e1e4e8; font-size: 14px; transition: all 0.2s ease;">
               <i class="fa fa-cogs" style="margin-right: 10px; color: #ff3621;"></i>Data Engineer Professional
             </a>
+            <a href="https://kranthib.github.io/tech-pulse/certifications/databricks/generative-ai-engineer-associate.html" style="display: block; padding: 12px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; font-weight: 500; border: 1px solid #e1e4e8; font-size: 14px; transition: all 0.2s ease;">
+              <i class="fa fa-robot" style="margin-right: 10px; color: #ff3621;"></i>Generative AI Engineer Associate
+            </a>
           </div>
         </div>
       </div>
