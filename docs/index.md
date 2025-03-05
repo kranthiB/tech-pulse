@@ -36,8 +36,8 @@ auto_title: false
   <!-- System Design Column -->
   <div style="flex: 1; min-width: 300px;">
     <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
-      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
-        <p style="margin: 0; font-size: 22px; color: white; letter-spacing: 0.5px; font-weight: 600;"><i class="fa fa-sitemap" style="margin-right: 10px;"></i>System Design</p>
+      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white !important; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
+        <i class="fa fa-sitemap" style="margin-right: 10px; color: white;"></i>System Design
       </h3>
       <p style="margin-top: 0; color: #24292e; font-size: 14px;">Architecture patterns, distributed systems, scalability, and resilience strategies.</p>
       <div style="text-align: right;">
@@ -49,8 +49,8 @@ auto_title: false
   <!-- Platform Engineering Column -->
   <div style="flex: 1; min-width: 300px;">
     <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
-      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
-        <i class="fa fa-server" style="margin-right: 10px;"></i>Platform Engineering
+      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white !important; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
+        <i class="fa fa-server" style="margin-right: 10px; color: white;"></i>Platform Engineering
       </h3>
       <p style="margin-top: 0; color: #24292e; font-size: 14px;">Internal developer platforms, infrastructure automation, and delivery excellence.</p>
       <div style="text-align: right;">
@@ -65,8 +65,8 @@ auto_title: false
   <!-- Data & AI Column -->
   <div style="flex: 1; min-width: 300px;">
     <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
-      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
-        <i class="fa fa-database" style="margin-right: 10px;"></i>Data & AI
+      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white !important; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
+        <i class="fa fa-database" style="margin-right: 10px; color: white;"></i>Data & AI
       </h3>
       <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
         <a href="https://kranthib.github.io/tech-pulse/data-ai/data-foundations.html" style="flex: 1; min-width: 120px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-cubes" style="margin-right: 5px;"></i>Data Foundations</a>
@@ -83,8 +83,8 @@ auto_title: false
   <!-- Generative AI Column -->
   <div style="flex: 1; min-width: 300px;">
     <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
-      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
-        <i class="fa fa-robot" style="margin-right: 10px;"></i>Generative AI
+      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white !important; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
+        <i class="fa fa-robot" style="margin-right: 10px; color: white;"></i>Generative AI
       </h3>
       <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/prompt-engineering.html" style="flex: 1; min-width: 120px; padding: 8px 12px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-keyboard" style="margin-right: 5px;"></i>Prompt Engineering</a>
@@ -104,8 +104,8 @@ auto_title: false
   <!-- Industrial IoT Column -->
   <div style="flex: 1; min-width: 300px;">
     <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
-      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
-        <i class="fa fa-industry" style="margin-right: 10px;"></i>Industrial IoT
+      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white !important; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
+        <i class="fa fa-industry" style="margin-right: 10px; color: white;"></i>Industrial IoT
       </h3>
       <div style="display: flex; flex-wrap: wrap; gap: 8px;">
         <a href="https://kranthib.github.io/tech-pulse/industrial-iot/industrial-iot.html" style="flex: 1; min-width: 120px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-industry" style="margin-right: 5px;"></i>Smart Manufacturing</a>
@@ -118,8 +118,8 @@ auto_title: false
   <!-- Ops Mastery Column -->
   <div style="flex: 1; min-width: 300px;">
     <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
-      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
-        <i class="fa fa-wrench" style="margin-right: 10px;"></i>Ops Mastery
+      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white !important; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
+        <i class="fa fa-wrench" style="margin-right: 10px; color: white;"></i>Ops Mastery
       </h3>
       <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
         <a href="https://kranthib.github.io/tech-pulse/ops-mastery/dev-sec-ops.html" style="flex: 1; min-width: 90px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-shield-alt" style="margin-right: 5px;"></i>DevSecOps</a>
@@ -142,8 +142,8 @@ auto_title: false
   <!-- Column 1 -->
   <div style="flex: 1; min-width: 300px;">
     <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
-      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
-        <i class="fa fa-th-large" style="margin-right: 10px;"></i>Security & Integration
+      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white !important; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
+        <i class="fa fa-th-large" style="margin-right: 10px; color: white;"></i>Security & Integration
       </h3>
       <div style="display: flex; flex-direction: column; gap: 8px;">
         <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/enterprise-application-security-framework.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-lock" style="margin-right: 8px;"></i>Enterprise Application Security Framework</a>
@@ -155,8 +155,8 @@ auto_title: false
   <!-- Column 2 -->
   <div style="flex: 1; min-width: 300px;">
     <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
-      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
-        <i class="fa fa-th-large" style="margin-right: 10px;"></i>Optimization & Performance
+      <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 18px; border-bottom: 1px solid #e1e4e8; padding-bottom: 8px; background-color: #2054a6; color: white !important; margin: -12px -12px 12px -12px; padding: 12px; border-radius: 5px 5px 0 0;">
+        <i class="fa fa-th-large" style="margin-right: 10px; color: white;"></i>Optimization & Performance
       </h3>
       <div style="display: flex; flex-direction: column; gap: 8px;">
         <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/cloud-cost-optimization-framework.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-cloud" style="margin-right: 8px;"></i>Cloud Cost Optimization Framework</a>
@@ -170,8 +170,8 @@ auto_title: false
 
 <!-- Certifications Card -->
 <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-  <div style="background-color: #2054a6; padding: 15px; color: white;">
-    <p style="margin: 0; font-size: 20px; color: white; letter-spacing: 0.5px; font-weight: 600;"><i class="fa fa-certificate" style="margin-right: 10px;"></i>Certifications</p>
+  <div style="background-color: #2054a6; padding: 15px; color: white !important;">
+    <p style="margin: 0; font-size: 20px; color: white !important; letter-spacing: 0.5px; font-weight: 600;"><i class="fa fa-certificate" style="margin-right: 10px; color: white;"></i>Certifications</p>
   </div>
   <div style="padding: 15px; background-color: white;">
     <!-- More compact two-column layout for certifications -->
