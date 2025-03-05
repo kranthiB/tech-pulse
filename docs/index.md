@@ -121,6 +121,8 @@ auto_title: false
     </div>
   </div>
   
+  <h1 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Frameworks & Platforms</h1>
+
   <!-- Frameworks & Platforms Card -->
   <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
     <div style="background-color: #2054a6; padding: 18px; color: white;">
@@ -136,6 +138,8 @@ auto_title: false
     </div>
   </div>
 </div>
+
+<h1 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Certifications</h1>
 
 <!-- Certifications Card -->
 <div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
