@@ -3,6 +3,7 @@ id: certifications/databricks/data-engineer-associate
 title: Databricks Data Engineer Associate Certification
 sidebar_label: Databricks Data Engineer Associate Certification
 previous_page: certifications/databricks/data-analyst-associate
+next_page: certifications/databricks/data-engineer-professional
 ---
 
 <div style="text-align: right;">
@@ -3774,10 +3775,15 @@ Now let's take a second full-length practice exam to further assess your knowled
 #### Final Preparation Checklist
 
 ✅ **Review all exam sections**, especially those where you scored lower on practice exams
+
 ✅ **Memorize key commands and syntax** for common operations
+
 ✅ **Understand the core concepts** behind each technology rather than just memorizing facts
+
 ✅ **Practice time management** to ensure you can complete all questions
+
 ✅ **Get a good night's sleep** before the exam
+
 ✅ **Arrive early** if taking the exam at a testing center, or ensure your environment is ready for online proctoring
 
 ---
