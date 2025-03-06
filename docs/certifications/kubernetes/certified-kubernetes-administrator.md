@@ -150,7 +150,6 @@ Table of contents
 
 ## Storage & Advanced Scheduling
 
----
 - Persistent Volumes (PV)
 - Persistent Volume Claims (PVC)
 - Storage Classes
@@ -203,23 +202,23 @@ Kubernetes is a container orchestration platform designed to automate the deploy
 
 The control plane is the brain of Kubernetes, making global decisions about the cluster and responding to cluster events.
 
-- **API Server**: Acts as the frontend for Kubernetes control plane. All communications, both internal and external, go through the API server. It validates and processes RESTful requests and updates the corresponding objects in etcd.
+1. **API Server**: Acts as the frontend for Kubernetes control plane. All communications, both internal and external, go through the API server. It validates and processes RESTful requests and updates the corresponding objects in etcd.
 
-- **etcd**: A consistent and highly-available key-value store used as Kubernetes' backing store for all cluster data. Consider it the source of truth for the cluster state.
+2. **etcd**: A consistent and highly-available key-value store used as Kubernetes' backing store for all cluster data. Consider it the source of truth for the cluster state.
 
-- **Scheduler**: Watches for newly created Pods with no assigned node and selects a node for them to run on. Factors considered include individual and collective resource requirements, hardware/software/policy constraints, affinity and anti-affinity specifications, and more.
+3. **Scheduler**: Watches for newly created Pods with no assigned node and selects a node for them to run on. Factors considered include individual and collective resource requirements, hardware/software/policy constraints, affinity and anti-affinity specifications, and more.
 
-- **Controller Manager**: Runs controller processes that regulate the state of the cluster. Each controller is a separate process, but they are compiled into a single binary and run in a single process for simplicity. Examples include Node Controller, Job Controller, and Replication Controller.
+4. **Controller Manager**: Runs controller processes that regulate the state of the cluster. Each controller is a separate process, but they are compiled into a single binary and run in a single process for simplicity. Examples include Node Controller, Job Controller, and Replication Controller.
 
 **Node Components:**
 
 These components run on every node in the cluster, maintaining running pods and providing the Kubernetes runtime environment.
 
-- **kubelet**: An agent that runs on each node and ensures containers are running in a Pod as expected. It takes a set of PodSpecs provided through various mechanisms and ensures the containers described in those PodSpecs are running and healthy.
+1. **kubelet**: An agent that runs on each node and ensures containers are running in a Pod as expected. It takes a set of PodSpecs provided through various mechanisms and ensures the containers described in those PodSpecs are running and healthy.
 
-- **kube-proxy**: A network proxy that runs on each node, implementing part of the Kubernetes Service concept. It maintains network rules that allow network communication to Pods from network sessions inside or outside of the cluster.
+2. **kube-proxy**: A network proxy that runs on each node, implementing part of the Kubernetes Service concept. It maintains network rules that allow network communication to Pods from network sessions inside or outside of the cluster.
 
-- **Container Runtime**: The software responsible for running containers. Kubernetes supports container runtimes such as containerd, CRI-O, and any implementation of the Kubernetes CRI (Container Runtime Interface).
+3. **Container Runtime**: The software responsible for running containers. Kubernetes supports container runtimes such as containerd, CRI-O, and any implementation of the Kubernetes CRI (Container Runtime Interface).
 
 ---
 
@@ -229,29 +228,29 @@ Kubernetes objects are persistent entities in the system that represent the stat
 
 **Essential Resources:**
 
-- **Pods**: The smallest deployable units in Kubernetes that can be created and managed. A Pod represents a single instance of a running process in your cluster and can contain one or more containers that share storage, network, and a specification for how to run the containers.
+1. **Pods**: The smallest deployable units in Kubernetes that can be created and managed. A Pod represents a single instance of a running process in your cluster and can contain one or more containers that share storage, network, and a specification for how to run the containers.
 
-- **ReplicaSets**: Ensures that a specified number of Pod replicas are running at any given time. It's often used to guarantee the availability of a specified number of identical Pods.
+2. **ReplicaSets**: Ensures that a specified number of Pod replicas are running at any given time. It's often used to guarantee the availability of a specified number of identical Pods.
 
-- **Deployments**: Provides declarative updates for Pods and ReplicaSets. You describe a desired state in a Deployment, and the Deployment Controller changes the actual state to match the desired state at a controlled rate.
+3. **Deployments**: Provides declarative updates for Pods and ReplicaSets. You describe a desired state in a Deployment, and the Deployment Controller changes the actual state to match the desired state at a controlled rate.
 
 **Configuration Resources:**
 
-- **ConfigMaps**: Allow you to decouple configuration artifacts from image content to keep containerized applications portable. ConfigMaps hold configuration data as key-value pairs.
+1. **ConfigMaps**: Allow you to decouple configuration artifacts from image content to keep containerized applications portable. ConfigMaps hold configuration data as key-value pairs.
 
-- **Secrets**: Similar to ConfigMaps but designed for storing sensitive information such as passwords, OAuth tokens, and ssh keys. They can be mounted as data volumes or exposed as environment variables.
+2. **Secrets**: Similar to ConfigMaps but designed for storing sensitive information such as passwords, OAuth tokens, and ssh keys. They can be mounted as data volumes or exposed as environment variables.
 
 **Networking Resources:**
 
-- **Services**: An abstraction which defines a logical set of Pods and a policy by which to access them. As Pods are ephemeral, Services allow clients to reliably discover and connect to containers running in the Pods.
+1. **Services**: An abstraction which defines a logical set of Pods and a policy by which to access them. As Pods are ephemeral, Services allow clients to reliably discover and connect to containers running in the Pods.
 
-- **Endpoints**: A list of all the IP addresses and ports that provide a Service. Kubernetes automatically creates and manages Endpoint objects for Services except for Services of type ExternalName.
+2. **Endpoints**: A list of all the IP addresses and ports that provide a Service. Kubernetes automatically creates and manages Endpoint objects for Services except for Services of type ExternalName.
 
 **Storage Resources:**
 
-- **PersistentVolumes (PV)**: Pieces of storage in the cluster that have been provisioned by an administrator or dynamically provisioned using Storage Classes.
+1. **PersistentVolumes (PV)**: Pieces of storage in the cluster that have been provisioned by an administrator or dynamically provisioned using Storage Classes.
 
-- **PersistentVolumeClaims (PVC)**: A request for storage by a user that can be fulfilled by a PersistentVolume.
+2. **PersistentVolumeClaims (PVC)**: A request for storage by a user that can be fulfilled by a PersistentVolume.
 
 ---
 
@@ -261,13 +260,13 @@ Understanding how Kubernetes components communicate is essential for troubleshoo
 
 **Component Communication:**
 
-- **API Server as Central Hub**: All communications between components flow through the API server. The API server is the only component that communicates with etcd.
+1. **API Server as Central Hub**: All communications between components flow through the API server. The API server is the only component that communicates with etcd.
 
-- **Controller to API Server**: Controllers watch the API server for changes to their respective resources and take action to ensure the current state matches the desired state.
+2. **Controller to API Server**: Controllers watch the API server for changes to their respective resources and take action to ensure the current state matches the desired state.
 
-- **Scheduler to API Server**: The scheduler watches for newly created Pods with no assigned node and selects a node for them to run on.
+3. **Scheduler to API Server**: The scheduler watches for newly created Pods with no assigned node and selects a node for them to run on.
 
-- **Kubelet to API Server**: Kubelets on worker nodes register themselves with the API server and report the status of containers they are running.
+4. **Kubelet to API Server**: Kubelets on worker nodes register themselves with the API server and report the status of containers they are running.
 
 **Authentication and Authorization Flow:**
 
@@ -279,11 +278,11 @@ Understanding how Kubernetes components communicate is essential for troubleshoo
 
 **Watch and Reconciliation Patterns:**
 
-- **Watch API**: Kubernetes components use the Watch API to efficiently observe changes to resources they are interested in.
+1. **Watch API**: Kubernetes components use the Watch API to efficiently observe changes to resources they are interested in.
 
-- **Reconciliation Loop**: Controllers implement a reconciliation loop that continuously compares the desired state (specification) with the current state, making changes as necessary to achieve the desired state.
+2. **Reconciliation Loop**: Controllers implement a reconciliation loop that continuously compares the desired state (specification) with the current state, making changes as necessary to achieve the desired state.
 
-- **Level-Triggered Logic**: Kubernetes uses level-triggered logic (rather than edge-triggered), meaning it continues to process objects until they reach the desired state, making the system more resilient to failures.
+3. **Level-Triggered Logic**: Kubernetes uses level-triggered logic (rather than edge-triggered), meaning it continues to process objects until they reach the desired state, making the system more resilient to failures.
 
 ---
 
@@ -293,31 +292,31 @@ When planning a Kubernetes deployment, several architectural decisions must be m
 
 **Single-node vs Multi-node Architectures:**
 
-- **Single-node**: All components run on a single machine. This is suitable for development and testing but lacks high availability and scalability for production.
+1. **Single-node**: All components run on a single machine. This is suitable for development and testing but lacks high availability and scalability for production.
 
-- **Multi-node**: Components are distributed across multiple machines, with dedicated control plane nodes and worker nodes. This setup provides better resilience, scalability, and resource isolation.
+2. **Multi-node**: Components are distributed across multiple machines, with dedicated control plane nodes and worker nodes. This setup provides better resilience, scalability, and resource isolation.
 
 **High-availability Considerations:**
 
-- **Control Plane Redundancy**: For production environments, running multiple control plane nodes (typically 3 or 5) ensures that the cluster remains operational even if some control plane nodes fail.
+1. **Control Plane Redundancy**: For production environments, running multiple control plane nodes (typically 3 or 5) ensures that the cluster remains operational even if some control plane nodes fail.
 
-- **etcd Clustering**: etcd should be deployed as a cluster with an odd number of members (typically 3, 5, or 7) to maintain quorum and ensure data consistency.
+2. **etcd Clustering**: etcd should be deployed as a cluster with an odd number of members (typically 3, 5, or 7) to maintain quorum and ensure data consistency.
 
-- **Load Balancing**: A load balancer should be placed in front of the API servers to distribute client requests across multiple API server instances.
+3. **Load Balancing**: A load balancer should be placed in front of the API servers to distribute client requests across multiple API server instances.
 
 **Control Plane vs Worker Node Requirements:**
 
-- **Control Plane Nodes**: Require less CPU and memory compared to worker nodes but benefit from faster storage (SSD) for etcd. Typically need 2 CPUs and 4GB RAM at minimum.
+1. **Control Plane Nodes**: Require less CPU and memory compared to worker nodes but benefit from faster storage (SSD) for etcd. Typically need 2 CPUs and 4GB RAM at minimum.
 
-- **Worker Nodes**: Resource requirements depend on the workloads they will run. Need sufficient CPU, memory, and storage to accommodate all pods scheduled on the node.
+2. **Worker Nodes**: Resource requirements depend on the workloads they will run. Need sufficient CPU, memory, and storage to accommodate all pods scheduled on the node.
 
 **Networking Prerequisites:**
 
-- **Node Connectivity**: All nodes must be able to communicate with each other through a network.
+1. **Node Connectivity**: All nodes must be able to communicate with each other through a network.
 
-- **Port Requirements**: Specific ports must be open for Kubernetes components to communicate.
+2. **Port Requirements**: Specific ports must be open for Kubernetes components to communicate.
 
-- **Network Policies**: Consideration for how to implement network policies to control pod-to-pod communication.
+3. **Network Policies**: Consideration for how to implement network policies to control pod-to-pod communication.
 
 ---
 
@@ -327,51 +326,51 @@ kubeadm is a tool built to provide best-practice "fast paths" for creating Kuber
 
 **kubeadm Phases and Workflow:**
 
-- **preflight**: Runs a set of checks to validate the system state before making changes.
+1. **preflight**: Runs a set of checks to validate the system state before making changes.
 
-- **certs**: Generates the self-signed CA and certificates for all Kubernetes components.
+2. **certs**: Generates the self-signed CA and certificates for all Kubernetes components.
 
-- **kubeconfig**: Generates kubeconfig files for the controller manager, scheduler, admin, and kubelet.
+3. **kubeconfig**: Generates kubeconfig files for the controller manager, scheduler, admin, and kubelet.
 
-- **kubelet-start**: Configures and starts the kubelet.
+4. **kubelet-start**: Configures and starts the kubelet.
 
-- **control-plane**: Creates control plane components as static Pod manifests.
+5. **control-plane**: Creates control plane components as static Pod manifests.
 
-- **etcd**: Creates a local etcd instance as a static Pod.
+6. **etcd**: Creates a local etcd instance as a static Pod.
 
-- **upload-config**: Uploads the kubeadm and kubelet configurations to a ConfigMap.
+7. **upload-config**: Uploads the kubeadm and kubelet configurations to a ConfigMap.
 
-- **mark-control-plane**: Applies labels and taints to the control plane node.
+8. **mark-control-plane**: Applies labels and taints to the control plane node.
 
-- **bootstrap-token**: Creates a bootstrap token to join additional nodes.
+9. **bootstrap-token**: Creates a bootstrap token to join additional nodes.
 
-- **addon**: Installs required addons like kube-proxy and CoreDNS.
+10. **addon**: Installs required addons like kube-proxy and CoreDNS.
 
 **Certificate Management:**
 
-- **PKI Infrastructure**: kubeadm sets up a PKI infrastructure using self-signed certificates stored in `/etc/kubernetes/pki`.
+1. **PKI Infrastructure**: kubeadm sets up a PKI infrastructure using self-signed certificates stored in `/etc/kubernetes/pki`.
 
-- **Certificate Authority (CA)**: kubeadm creates a root CA that issues certificates for each component.
+2. **Certificate Authority (CA)**: kubeadm creates a root CA that issues certificates for each component.
 
-- **Component Certificates**: Each component (API server, kubelet, etc.) receives its own certificate with appropriate SANs (Subject Alternative Names).
+3. **Component Certificates**: Each component (API server, kubelet, etc.) receives its own certificate with appropriate SANs (Subject Alternative Names).
 
 - **Certificate Rotation**: For security reasons, certificates should be rotated periodically.
 
 **kubelet Configuration:**
 
-- **kubelet-config**: kubeadm generates a kubelet configuration file with appropriate settings.
+1. **kubelet-config**: kubeadm generates a kubelet configuration file with appropriate settings.
 
-- **Systemd Service**: kubelet runs as a systemd service on each node.
+2. **Systemd Service**: kubelet runs as a systemd service on each node.
 
-- **Authorization Mode**: kubeadm configures the kubelet to use the Node Authorizer, which restricts kubelet access to only the resources it needs.
+3. **Authorization Mode**: kubeadm configures the kubelet to use the Node Authorizer, which restricts kubelet access to only the resources it needs.
 
 **Container Runtime Interfaces (CRI):**
 
-- **CRI Standard**: Kubernetes uses the Container Runtime Interface to interact with different container runtimes.
+1. **CRI Standard**: Kubernetes uses the Container Runtime Interface to interact with different container runtimes.
 
-- **Supported Runtimes**: Common runtimes include containerd, CRI-O, and Docker (via the dockershim, which is deprecated in newer versions).
+2. **Supported Runtimes**: Common runtimes include containerd, CRI-O, and Docker (via the dockershim, which is deprecated in newer versions).
 
-- **Runtime Configuration**: kubeadm detects and configures the available container runtime.
+3. **Runtime Configuration**: kubeadm detects and configures the available container runtime.
 
 ---
 
@@ -381,38 +380,38 @@ Kubernetes has specific requirements for networking, and understanding these fun
 
 **Pod Network Fundamentals:**
 
-- **Pod IP Addressing**: Each Pod receives its own IP address. All containers within a Pod share the same network namespace and IP address.
+1. **Pod IP Addressing**: Each Pod receives its own IP address. All containers within a Pod share the same network namespace and IP address.
 
-- **Pod-to-Pod Communication**: Pods should be able to communicate with all other pods in the cluster without NAT.
+2. **Pod-to-Pod Communication**: Pods should be able to communicate with all other pods in the cluster without NAT.
 
-- **Flat Network Space**: The Pod network is typically implemented as a flat, layer 3 network.
+3. **Flat Network Space**: The Pod network is typically implemented as a flat, layer 3 network.
 
 **Container Network Interface (CNI):**
 
-- **CNI Specification**: A standard for configuring network interfaces in Linux containers, used by Kubernetes to set up Pod networking.
+1. **CNI Specification**: A standard for configuring network interfaces in Linux containers, used by Kubernetes to set up Pod networking.
 
-- **CNI Plugins**: Software components that implement the CNI specification, such as Calico, Flannel, Cilium, and Weave Net.
+2. **CNI Plugins**: Software components that implement the CNI specification, such as Calico, Flannel, Cilium, and Weave Net.
 
-- **Plugin Selection**: Factors to consider include performance, network policy support, encryption, and integration with existing infrastructure.
+3. **Plugin Selection**: Factors to consider include performance, network policy support, encryption, and integration with existing infrastructure.
 
 **Service Networking and kube-proxy Modes:**
 
-- **Service IP Range**: A separate CIDR block allocated for Service ClusterIPs. This range is different from the Pod network range.
+1. **Service IP Range**: A separate CIDR block allocated for Service ClusterIPs. This range is different from the Pod network range.
 
-- **kube-proxy Modes**:
+2. **kube-proxy Modes**:
   - **userspace**: The original mode, where kube-proxy watches the API server for new Services and creates proxy servers for each Service.
   - **iptables**: Default mode, where kube-proxy configures iptables rules to capture traffic to Service IPs and redirect it to backends.
   - **ipvs**: For high-performance requirements, using the Linux IPVS (IP Virtual Server) module for load balancing.
 
 **DNS Architecture with CoreDNS:**
 
-- **Cluster DNS**: CoreDNS serves as the DNS server for the cluster, providing name resolution for Services and Pods.
+1. **Cluster DNS**: CoreDNS serves as the DNS server for the cluster, providing name resolution for Services and Pods.
 
-- **DNS Records**: CoreDNS creates DNS records for Services and (optionally) for Pods.
+2. **DNS Records**: CoreDNS creates DNS records for Services and (optionally) for Pods.
 
-- **Service Discovery**: Containers can discover Services through DNS names like `service-name.namespace.svc.cluster.local`.
+3. **Service Discovery**: Containers can discover Services through DNS names like `service-name.namespace.svc.cluster.local`.
 
-- **DNS Configuration**: Pod DNS settings are configured through the kubelet, which sets up `/etc/resolv.conf` in each container.
+4. **DNS Configuration**: Pod DNS settings are configured through the kubelet, which sets up `/etc/resolv.conf` in each container.
 
 ---
 
@@ -422,41 +421,41 @@ Kubernetes has a comprehensive security model that addresses various aspects of 
 
 **Authentication Methods:**
 
-- **X.509 Client Certificates**: Using client certificates for authentication to the API server.
+1. **X.509 Client Certificates**: Using client certificates for authentication to the API server.
 
-- **Service Account Tokens**: JWT tokens that are automatically mounted into Pods.
+2. **Service Account Tokens**: JWT tokens that are automatically mounted into Pods.
 
-- **OpenID Connect (OIDC)**: Integration with external identity providers like Google, Azure AD, or Okta.
+3. **OpenID Connect (OIDC)**: Integration with external identity providers like Google, Azure AD, or Okta.
 
-- **Webhook Token Authentication**: Allowing an external service to determine authentication decisions.
+4. **Webhook Token Authentication**: Allowing an external service to determine authentication decisions.
 
-- **Authentication Proxy**: Using a proxy in front of the API server to handle authentication.
+5. **Authentication Proxy**: Using a proxy in front of the API server to handle authentication.
 
 **Authorization Mechanisms:**
 
-- **RBAC (Role-Based Access Control)**: Fine-grained control over what actions users and service accounts can perform on which resources.
+1. **RBAC (Role-Based Access Control)**: Fine-grained control over what actions users and service accounts can perform on which resources.
 
-- **ABAC (Attribute-Based Access Control)**: Policy-based access control using attributes of users, resources, and environment.
+2. **ABAC (Attribute-Based Access Control)**: Policy-based access control using attributes of users, resources, and environment.
 
-- **Node Authorization**: Special-purpose authorizer that grants permissions to kubelets based on the Pods they are scheduled to run.
+3. **Node Authorization**: Special-purpose authorizer that grants permissions to kubelets based on the Pods they are scheduled to run.
 
-- **Webhook Authorization**: Delegates authorization decisions to an external service.
+4. **Webhook Authorization**: Delegates authorization decisions to an external service.
 
 **Admission Controllers:**
 
-- **Validating Admission Controllers**: Validate requests against a set of rules before processing them.
+1. **Validating Admission Controllers**: Validate requests against a set of rules before processing them.
 
-- **Mutating Admission Controllers**: Can modify objects before they are persisted.
+2. **Mutating Admission Controllers**: Can modify objects before they are persisted.
 
-- **Common Admission Controllers**: Include PodSecurityPolicy, ResourceQuota, LimitRanger, and ServiceAccount.
+3. **Common Admission Controllers**: Include PodSecurityPolicy, ResourceQuota, LimitRanger, and ServiceAccount.
 
 **Pod Security Standards:**
 
-- **Privileged**: No restrictions on Pod capabilities, equivalent to root on the host.
+1. **Privileged**: No restrictions on Pod capabilities, equivalent to root on the host.
 
-- **Baseline**: Minimally restrictive policy, preventing known privilege escalations while allowing the default (minimally specified) Pod configuration.
+2. **Baseline**: Minimally restrictive policy, preventing known privilege escalations while allowing the default (minimally specified) Pod configuration.
 
-- **Restricted**: Heavily restricted policy for hardened environments, requiring Pods to run with a more restrictive security context.
+3. **Restricted**: Heavily restricted policy for hardened environments, requiring Pods to run with a more restrictive security context.
 
 ---
 
@@ -466,39 +465,39 @@ RBAC is a method of regulating access to computer or network resources based on 
 
 **Roles and ClusterRoles:**
 
-- **Role**: Defines permissions within a specific namespace.
+1. **Role**: Defines permissions within a specific namespace.
 
-- **ClusterRole**: Defines permissions across the entire cluster.
+2. **ClusterRole**: Defines permissions across the entire cluster.
 
-- **Permission Structure**: Each role contains rules that specify which API groups, resources, and verbs (actions) are allowed.
+3. **Permission Structure**: Each role contains rules that specify which API groups, resources, and verbs (actions) are allowed.
 
 **RoleBindings and ClusterRoleBindings:**
 
-- **RoleBinding**: Binds a Role to users, groups, or service accounts within a namespace.
+1. **RoleBinding**: Binds a Role to users, groups, or service accounts within a namespace.
 
-- **ClusterRoleBinding**: Binds a ClusterRole to users, groups, or service accounts cluster-wide.
+2. **ClusterRoleBinding**: Binds a ClusterRole to users, groups, or service accounts cluster-wide.
 
-- **Binding Subjects**: Can reference users, groups, or service accounts.
+3. **Binding Subjects**: Can reference users, groups, or service accounts.
 
 **Service Accounts and Their Uses:**
 
-- **Default Service Account**: Every namespace has a default service account that is automatically assigned to Pods if no service account is specified.
+1. **Default Service Account**: Every namespace has a default service account that is automatically assigned to Pods if no service account is specified.
 
-- **Custom Service Accounts**: Created for applications that need specific permissions.
+2. **Custom Service Accounts**: Created for applications that need specific permissions.
 
-- **Token Mounting**: Service account tokens are automatically mounted into Pods at `/var/run/secrets/kubernetes.io/serviceaccount/token`.
+3. **Token Mounting**: Service account tokens are automatically mounted into Pods at `/var/run/secrets/kubernetes.io/serviceaccount/token`.
 
-- **Usage Scenarios**: Used for Pods that need to interact with the Kubernetes API or for external applications that need cluster access.
+4. **Usage Scenarios**: Used for Pods that need to interact with the Kubernetes API or for external applications that need cluster access.
 
 **Best Practices for Least Privilege:**
 
-- **Granular Permissions**: Grant only the permissions needed for the task at hand.
+1. **Granular Permissions**: Grant only the permissions needed for the task at hand.
 
-- **Namespace Isolation**: Use namespaces to isolate resources and limit the scope of permissions.
+2. **Namespace Isolation**: Use namespaces to isolate resources and limit the scope of permissions.
 
-- **Avoid Cluster-Admin**: Minimize the use of cluster-admin role, which grants unrestricted access.
+3. **Avoid Cluster-Admin**: Minimize the use of cluster-admin role, which grants unrestricted access.
 
-- **Regular Auditing**: Regularly review and audit RBAC policies to ensure they follow the principle of least privilege.
+4. **Regular Auditing**: Regularly review and audit RBAC policies to ensure they follow the principle of least privilege.
 
 ### 9. Security Context and Pod Security
 
@@ -506,45 +505,45 @@ Security contexts define privilege and access control settings for Pods and cont
 
 **Container Security Contexts:**
 
-- **User and Group Settings**: Specify the user and group IDs under which the container processes run.
+1. **User and Group Settings**: Specify the user and group IDs under which the container processes run.
 
-- **Capabilities**: Add or drop Linux capabilities. For example, adding NET_ADMIN allows network administration operations.
+2. **Capabilities**: Add or drop Linux capabilities. For example, adding NET_ADMIN allows network administration operations.
 
-- **Privilege Settings**: Control whether the container can gain additional privileges beyond its parent process.
+3. **Privilege Settings**: Control whether the container can gain additional privileges beyond its parent process.
 
-- **Read-Only Root Filesystem**: Prevent writes to the container's root filesystem for added security.
+4. **Read-Only Root Filesystem**: Prevent writes to the container's root filesystem for added security.
 
 **Pod Security Contexts:**
 
-- **Pod-level Settings**: Apply to all containers in the Pod.
+1. **Pod-level Settings**: Apply to all containers in the Pod.
 
-- **runAsUser/runAsGroup**: Set the user and group IDs for all containers.
+2. **runAsUser/runAsGroup**: Set the user and group IDs for all containers.
 
-- **fsGroup**: Set the group ID for volumes mounted in the Pod.
+3. **fsGroup**: Set the group ID for volumes mounted in the Pod.
 
-- **supplementalGroups**: Additional groups that apply to all containers.
+4. **supplementalGroups**: Additional groups that apply to all containers.
 
 **SecurityContext Fields:**
 
-- **allowPrivilegeEscalation**: Controls whether a process can gain more privileges than its parent process.
+1. **allowPrivilegeEscalation**: Controls whether a process can gain more privileges than its parent process.
 
-- **privileged**: Gives the container nearly all the same access as processes on the host.
+2. **privileged**: Gives the container nearly all the same access as processes on the host.
 
-- **readOnlyRootFilesystem**: Forces the container's root filesystem to be read-only.
+3. **readOnlyRootFilesystem**: Forces the container's root filesystem to be read-only.
 
-- **seccompProfile**: Specifies the seccomp profile for syscall restriction.
+4. **seccompProfile**: Specifies the seccomp profile for syscall restriction.
 
-- **seLinuxOptions**: Configures SELinux options for the container.
+5. **seLinuxOptions**: Configures SELinux options for the container.
 
 **Pod Security Standards:**
 
-- **Migration from PodSecurityPolicies**: Pod Security Standards are the successor to the deprecated PodSecurityPolicy.
+1. **Migration from PodSecurityPolicies**: Pod Security Standards are the successor to the deprecated PodSecurityPolicy.
 
-- **Enforcement Levels**: Pod Security Admission Controller can enforce standards at different levels: warn, audit, or enforce.
+2. **Enforcement Levels**: Pod Security Admission Controller can enforce standards at different levels: warn, audit, or enforce.
 
-- **Implementation**: Enabled through the Pod Security Admission Controller, which is built into Kubernetes from v1.22 onwards.
+3. **Implementation**: Enabled through the Pod Security Admission Controller, which is built into Kubernetes from v1.22 onwards.
 
-- **Security Levels**: Define different levels of restrictions (privileged, baseline, restricted) based on the security requirements of your workloads.
+4. **Security Levels**: Define different levels of restrictions (privileged, baseline, restricted) based on the security requirements of your workloads.
 
 This comprehensive coverage of key concepts provides you with the foundational knowledge needed to understand Kubernetes architecture, deployment, and security. These concepts directly align with the hands-on labs that follow, where you'll apply this knowledge in practical scenarios that mirror the CKA exam.
 

@@ -5371,7 +5371,7 @@ This comprehensive approach aligns perfectly with EHR Healthcare's 99.9% availab
 
 This multi-faceted approach addresses Mountkirk Games' cost challenges while maintaining player performance. Cost allocation tags provide visibility into spending by application component. Right-sizing eliminates waste without impacting performance. Spot VMs reduce costs for non-player-facing workloads. Scheduling optimizes costs for development environments. Budget alerts prevent unexpected overruns. Reducing global regions would hurt player experience by increasing latency. Manual scaling wouldn't be responsive enough for game traffic patterns. Committing all resources to 3-year terms would be inflexible for a gaming platform with changing needs.
 
---
+---
 
 ## Module 9: Case Study Analysis - EHR Healthcare
 

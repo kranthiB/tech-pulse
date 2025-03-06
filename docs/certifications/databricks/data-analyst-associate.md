@@ -257,13 +257,13 @@ SQL Warehouses (also called endpoints) are the compute resources that execute yo
 
 **Key Concepts:**
 
-- **Serverless vs. Classic**: Serverless warehouses start quickly and don't require management, making them ideal for most analytical workloads.
+1. **Serverless vs. Classic**: Serverless warehouses start quickly and don't require management, making them ideal for most analytical workloads.
 
-- **Sizing Options**: Warehouses range from 2X-Small to 4X-Large, with larger sizes providing more cores and memory.
+2. **Sizing Options**: Warehouses range from 2X-Small to 4X-Large, with larger sizes providing more cores and memory.
 
-- **Auto-Stopping**: Warehouses can be configured to automatically stop after a period of inactivity (reducing costs).
+3. **Auto-Stopping**: Warehouses can be configured to automatically stop after a period of inactivity (reducing costs).
 
-- **Scaling**: Warehouses can scale up and down based on query load.
+4. **Scaling**: Warehouses can scale up and down based on query load.
 
 **Practical Exercise 1: Configuring a SQL Warehouse**
 
