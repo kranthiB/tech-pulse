@@ -67,7 +67,7 @@ auto_title: false
 
 <h1 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Knowledge Areas</h1>
 
-<!-- Redesigned Knowledge Areas section with multi-column layout -->
+<!-- Knowledge Areas section with multi-column layout -->
 <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 40px;">
   <!-- System Design Column -->
   <div style="flex: 1; min-width: 300px;">
@@ -173,7 +173,7 @@ auto_title: false
 
 <h1 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Frameworks & Platforms</h1>
 
-<!-- Redesigned Frameworks & Platforms section with multi-column layout -->
+<!-- Frameworks & Platforms section with multi-column layout -->
 <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 40px;">
   <!-- Column 1 -->
   <div style="flex: 1; min-width: 300px;">
@@ -246,6 +246,21 @@ auto_title: false
           <div style="display: flex; flex-direction: column; gap: 8px;">
             <a href="https://kranthib.github.io/tech-pulse/certifications/google-cloud/professional-cloud-architect.html" style="display: block; padding: 8px 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; font-weight: 500; border: 1px solid #e1e4e8; font-size: 13px; transition: all 0.2s ease;">
               <i class="fa fa-cloud" style="margin-right: 8px; color: #4285F4;"></i>Professional Cloud Architect
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kubernetes Column -->
+      <div style="flex: 1; min-width: 230px;">
+        <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8;">
+          <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 16px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 6px;">
+            <img src="https://kubernetes.io/images/favicon.png" alt="Kubernetes" style="width: 16px; height: 16px; margin-right: 6px; vertical-align: text-bottom;">
+            Kubernetes
+          </h3>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <a href="https://kranthib.github.io/tech-pulse/certifications/kubernetes/certified-kubernetes-administrator.html" style="display: block; padding: 8px 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; font-weight: 500; border: 1px solid #e1e4e8; font-size: 13px; transition: all 0.2s ease;">
+              <i class="fa fa-server" style="margin-right: 8px; color: #326CE5;"></i>Certified Kubernetes Administrator
             </a>
           </div>
         </div>
