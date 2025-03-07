@@ -904,7 +904,7 @@ function FadeInView({ children }) {
 
 Sophisticated gesture recognition across platforms:
 
-```jsx
+{% raw %}
 import { GestureDetector, Gesture } from '@lynx/gestures';
 
 function ZoomableImage({ source }) {
@@ -928,7 +928,7 @@ function ZoomableImage({ source }) {
     </GestureDetector>
   );
 }
-```
+{% endraw %}
 
 ---
 
