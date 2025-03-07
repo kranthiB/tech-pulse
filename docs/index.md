@@ -204,66 +204,74 @@ auto_title: false
 
 <h1 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Certifications</h1>
 
-<!-- Certifications Card -->
-<div style="margin-bottom: 25px; box-shadow: 0 3px 6px rgba(0,0,0,0.16); border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-  <div class="cert-header">
-    <p style="margin: 0; font-size: 20px; letter-spacing: 0.5px; font-weight: 600;"><i class="fa fa-certificate" style="margin-right: 10px;"></i>Certifications</p>
+<!-- Certifications section with cards layout -->
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 40px;">
+  <!-- Databricks Column -->
+  <div style="flex: 1; min-width: 300px; max-width: 500px;">
+    <div style="background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16); overflow: hidden;">
+      <div class="cert-header" style="display: flex; align-items: center;">
+        <img src="https://www.databricks.com/favicon.ico" alt="Databricks" style="width: 24px; height: 24px; margin-right: 10px;">
+        <h3 style="margin: 0; font-size: 18px;">Databricks</h3>
+      </div>
+      <div style="padding: 15px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px;">
+          <a href="https://kranthib.github.io/tech-pulse/certifications/databricks/data-analyst-associate.html" style="display: flex; align-items: center; padding: 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; transition: all 0.2s ease;">
+            <i class="fa fa-chart-pie" style="margin-right: 8px; color: #ff3621; font-size: 16px;"></i>
+            <span style="font-weight: 500; font-size: 14px;">Data Analyst Associate</span>
+          </a>
+          <a href="https://kranthib.github.io/tech-pulse/certifications/databricks/data-engineer-associate.html" style="display: flex; align-items: center; padding: 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; transition: all 0.2s ease;">
+            <i class="fa fa-database" style="margin-right: 8px; color: #ff3621; font-size: 16px;"></i>
+            <span style="font-weight: 500; font-size: 14px;">Data Engineer Associate</span>
+          </a>
+          <a href="https://kranthib.github.io/tech-pulse/certifications/databricks/data-engineer-professional.html" style="display: flex; align-items: center; padding: 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; transition: all 0.2s ease;">
+            <i class="fa fa-cogs" style="margin-right: 8px; color: #ff3621; font-size: 16px;"></i>
+            <span style="font-weight: 500; font-size: 14px;">Data Engineer Professional</span>
+          </a>
+          <a href="https://kranthib.github.io/tech-pulse/certifications/databricks/generative-ai-engineer-associate.html" style="display: flex; align-items: center; padding: 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; transition: all 0.2s ease;">
+            <i class="fa fa-robot" style="margin-right: 8px; color: #ff3621; font-size: 16px;"></i>
+            <span style="font-weight: 500; font-size: 14px;">Generative AI Engineer Associate</span>
+          </a>
+          <a href="https://kranthib.github.io/certifications/databricks/machine-learning-associate.html" style="display: flex; align-items: center; padding: 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; transition: all 0.2s ease;">
+            <i class="fa fa-brain" style="margin-right: 8px; color: #ff3621; font-size: 16px;"></i>
+            <span style="font-weight: 500; font-size: 14px;">Machine Learning Associate</span>
+          </a>
+          <a href="https://kranthib.github.io/certifications/databricks/machine-learning-professional.html" style="display: flex; align-items: center; padding: 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; transition: all 0.2s ease;">
+            <i class="fa fa-brain" style="margin-right: 8px; color: #ff3621; font-size: 16px;"></i>
+            <span style="font-weight: 500; font-size: 14px;">Machine Learning Professional</span>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
-  <div style="padding: 15px; background-color: white;">
-    <!-- More compact two-column layout for certifications -->
-    <div style="display: flex; flex-wrap: wrap; gap: 15px;">
-      <!-- Databricks Column -->
-      <div style="flex: 1; min-width: 230px;">
-        <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8;">
-          <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 16px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 6px;">
-            <img src="https://www.databricks.com/favicon.ico" alt="Databricks" style="width: 16px; height: 16px; margin-right: 6px; vertical-align: text-bottom;">
-            Databricks
-          </h3>
-          <div style="display: flex; flex-direction: column; gap: 8px;">
-            <a href="https://kranthib.github.io/tech-pulse/certifications/databricks/data-analyst-associate.html" style="display: block; padding: 8px 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; font-weight: 500; border: 1px solid #e1e4e8; font-size: 13px; transition: all 0.2s ease;">
-              <i class="fa fa-chart-pie" style="margin-right: 8px; color: #ff3621;"></i>Data Analyst Associate
-            </a>
-            <a href="https://kranthib.github.io/tech-pulse/certifications/databricks/data-engineer-associate.html" style="display: block; padding: 8px 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; font-weight: 500; border: 1px solid #e1e4e8; font-size: 13px; transition: all 0.2s ease;">
-              <i class="fa fa-database" style="margin-right: 8px; color: #ff3621;"></i>Data Engineer Associate
-            </a>
-            <a href="https://kranthib.github.io/tech-pulse/certifications/databricks/data-engineer-professional.html" style="display: block; padding: 8px 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; font-weight: 500; border: 1px solid #e1e4e8; font-size: 13px; transition: all 0.2s ease;">
-              <i class="fa fa-cogs" style="margin-right: 8px; color: #ff3621;"></i>Data Engineer Professional
-            </a>
-            <a href="https://kranthib.github.io/tech-pulse/certifications/databricks/generative-ai-engineer-associate.html" style="display: block; padding: 8px 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; font-weight: 500; border: 1px solid #e1e4e8; font-size: 13px; transition: all 0.2s ease;">
-              <i class="fa fa-robot" style="margin-right: 8px; color: #ff3621;"></i>Generative AI Engineer Associate
-            </a>
-          </div>
-        </div>
+  
+  <!-- Google Cloud Column -->
+  <div style="flex: 1; min-width: 300px; max-width: 500px;">
+    <div style="background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16); overflow: hidden;">
+      <div class="cert-header" style="display: flex; align-items: center;">
+        <img src="https://www.gstatic.com/devrel-devsite/prod/v4f875a1b81b7f452d4ad95ddc2e0847267daa183c4980c794500a8a63318384d/cloud/images/favicons/onecloud/favicon.ico" alt="Google Cloud" style="width: 24px; height: 24px; margin-right: 10px;">
+        <h3 style="margin: 0; font-size: 18px;">Google Cloud</h3>
       </div>
-      
-      <!-- Google Cloud Column -->
-      <div style="flex: 1; min-width: 230px;">
-        <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8;">
-          <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 16px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 6px;">
-            <img src="https://www.gstatic.com/devrel-devsite/prod/v4f875a1b81b7f452d4ad95ddc2e0847267daa183c4980c794500a8a63318384d/cloud/images/favicons/onecloud/favicon.ico" alt="Google Cloud" style="width: 16px; height: 16px; margin-right: 6px; vertical-align: text-bottom;">
-            Google Cloud
-          </h3>
-          <div style="display: flex; flex-direction: column; gap: 8px;">
-            <a href="https://kranthib.github.io/tech-pulse/certifications/google-cloud/professional-cloud-architect.html" style="display: block; padding: 8px 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; font-weight: 500; border: 1px solid #e1e4e8; font-size: 13px; transition: all 0.2s ease;">
-              <i class="fa fa-cloud" style="margin-right: 8px; color: #4285F4;"></i>Professional Cloud Architect
-            </a>
-          </div>
-        </div>
+      <div style="padding: 15px;">
+        <a href="https://kranthib.github.io/tech-pulse/certifications/google-cloud/professional-cloud-architect.html" style="display: flex; align-items: center; padding: 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; transition: all 0.2s ease;">
+          <i class="fa fa-cloud" style="margin-right: 8px; color: #4285F4; font-size: 16px;"></i>
+          <span style="font-weight: 500; font-size: 14px;">Professional Cloud Architect</span>
+        </a>
       </div>
+    </div>
+  </div>
 
-      <!-- Kubernetes Column -->
-      <div style="flex: 1; min-width: 230px;">
-        <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8;">
-          <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 16px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 6px;">
-            <img src="https://kubernetes.io/images/favicon.png" alt="Kubernetes" style="width: 16px; height: 16px; margin-right: 6px; vertical-align: text-bottom;">
-            Kubernetes
-          </h3>
-          <div style="display: flex; flex-direction: column; gap: 8px;">
-            <a href="https://kranthib.github.io/tech-pulse/certifications/kubernetes/certified-kubernetes-administrator.html" style="display: block; padding: 8px 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; font-weight: 500; border: 1px solid #e1e4e8; font-size: 13px; transition: all 0.2s ease;">
-              <i class="fa fa-server" style="margin-right: 8px; color: #326CE5;"></i>Certified Kubernetes Administrator
-            </a>
-          </div>
-        </div>
+  <!-- Kubernetes Column -->
+  <div style="flex: 1; min-width: 300px; max-width: 500px;">
+    <div style="background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16); overflow: hidden;">
+      <div class="cert-header" style="display: flex; align-items: center;">
+        <img src="https://kubernetes.io/images/favicon.png" alt="Kubernetes" style="width: 24px; height: 24px; margin-right: 10px;">
+        <h3 style="margin: 0; font-size: 18px;">Kubernetes</h3>
+      </div>
+      <div style="padding: 15px;">
+        <a href="https://kranthib.github.io/tech-pulse/certifications/kubernetes/certified-kubernetes-administrator.html" style="display: flex; align-items: center; padding: 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; transition: all 0.2s ease;">
+          <i class="fa fa-server" style="margin-right: 8px; color: #326CE5; font-size: 16px;"></i>
+          <span style="font-weight: 500; font-size: 14px;">Certified Kubernetes Administrator</span>
+        </a>
       </div>
     </div>
   </div>
