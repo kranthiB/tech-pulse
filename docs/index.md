@@ -209,7 +209,7 @@ auto_title: false
   <!-- Databricks Column -->
   <div style="flex: 1; min-width: 300px; max-width: 500px;">
     <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
-      <h3 style="margin: 0; color: white; font-size: 18px;">
+      <h3 class="section-header">
         <i class="fa fa-database" style="margin-right: 10px;"></i>Databricks
       </h3>
       <div style="padding: 15px;">
@@ -246,7 +246,7 @@ auto_title: false
   <!-- Google Cloud Column -->
   <div style="flex: 1; min-width: 300px; max-width: 500px;">
     <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
-      <h3 style="margin: 0; color: white; font-size: 18px;">
+      <h3 class="section-header">
         <i class="fa fa-cloud" style="margin-right: 10px;"></i>Google Cloud
       </h3>
       <div style="padding: 15px;">
@@ -261,7 +261,7 @@ auto_title: false
   <!-- Kubernetes Column -->
   <div style="flex: 1; min-width: 300px; max-width: 500px;">
     <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
-      <h3 style="margin: 0; color: white; font-size: 18px;">
+      <h3 class="section-header">
         <i class="fa fa-dharmachakra" style="margin-right: 10px;"></i>Kubernetes
       </h3>
       <div style="padding: 15px;">
