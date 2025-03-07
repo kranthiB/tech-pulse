@@ -230,11 +230,11 @@ auto_title: false
             <i class="fa fa-robot" style="margin-right: 8px; color: #ff3621; font-size: 16px;"></i>
             <span style="font-weight: 500; font-size: 14px;">Generative AI Engineer Associate</span>
           </a>
-          <a href="https://kranthib.github.io/certifications/databricks/machine-learning-associate.html" style="display: flex; align-items: center; padding: 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; transition: all 0.2s ease;">
+          <a href="https://kranthib.github.io/tech-pulse/certifications/databricks/machine-learning-associate.html" style="display: flex; align-items: center; padding: 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; transition: all 0.2s ease;">
             <i class="fa fa-brain" style="margin-right: 8px; color: #ff3621; font-size: 16px;"></i>
             <span style="font-weight: 500; font-size: 14px;">Machine Learning Associate</span>
           </a>
-          <a href="https://kranthib.github.io/certifications/databricks/machine-learning-professional.html" style="display: flex; align-items: center; padding: 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; transition: all 0.2s ease;">
+          <a href="https://kranthib.github.io/tech-pulse/certifications/databricks/machine-learning-professional.html" style="display: flex; align-items: center; padding: 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; transition: all 0.2s ease;">
             <i class="fa fa-brain" style="margin-right: 8px; color: #ff3621; font-size: 16px;"></i>
             <span style="font-weight: 500; font-size: 14px;">Machine Learning Professional</span>
           </a>
