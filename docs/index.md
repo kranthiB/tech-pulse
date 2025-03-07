@@ -209,9 +209,11 @@ auto_title: false
   <!-- Databricks Column -->
   <div style="flex: 1; min-width: 300px; max-width: 500px;">
     <div style="background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16); overflow: hidden;">
-      <h3 class="section-header">
-        <i class="fa fa-database" style="margin-right: 10px;"></i>Databricks
-      </h3>
+      <div style="background-color: #2054a6; color: white; padding: 12px; margin-bottom: 0px;">
+        <h3 style="margin: 0; color: white; font-size: 18px;">
+          <i class="fa fa-database" style="margin-right: 10px;"></i>Databricks
+        </h3>
+      </div>
       <div style="padding: 15px;">
         <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px;">
           <a href="https://kranthib.github.io/tech-pulse/certifications/databricks/data-analyst-associate.html" style="display: flex; align-items: center; padding: 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; transition: all 0.2s ease;">
@@ -246,9 +248,11 @@ auto_title: false
   <!-- Google Cloud Column -->
   <div style="flex: 1; min-width: 300px; max-width: 500px;">
     <div style="background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16); overflow: hidden;">
-      <h3 class="section-header">
-        <i class="fa fa-cloud" style="margin-right: 10px;"></i>Google Cloud
-      </h3>
+      <div style="background-color: #2054a6; color: white; padding: 12px; margin-bottom: 0px;">
+        <h3 style="margin: 0; color: white; font-size: 18px;">
+          <i class="fa fa-cloud" style="margin-right: 10px;"></i>Google Cloud
+        </h3>
+      </div>
       <div style="padding: 15px;">
         <a href="https://kranthib.github.io/tech-pulse/certifications/google-cloud/professional-cloud-architect.html" style="display: flex; align-items: center; padding: 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; transition: all 0.2s ease;">
           <i class="fa fa-cloud" style="margin-right: 8px; color: #4285F4; font-size: 16px;"></i>
@@ -261,9 +265,11 @@ auto_title: false
   <!-- Kubernetes Column -->
   <div style="flex: 1; min-width: 300px; max-width: 500px;">
     <div style="background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16); overflow: hidden;">
-      <h3 class="section-header">
-        <i class="fa fa-dharmachakra" style="margin-right: 10px;"></i>Kubernetes
-      </h3>
+      <div style="background-color: #2054a6; color: white; padding: 12px; margin-bottom: 0px;">
+        <h3 style="margin: 0; color: white; font-size: 18px;">
+          <i class="fa fa-dharmachakra" style="margin-right: 10px;"></i>Kubernetes
+        </h3>
+      </div>
       <div style="padding: 15px;">
         <a href="https://kranthib.github.io/tech-pulse/certifications/kubernetes/certified-kubernetes-administrator.html" style="display: flex; align-items: center; padding: 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; transition: all 0.2s ease;">
           <i class="fa fa-server" style="margin-right: 8px; color: #326CE5; font-size: 16px;"></i>
