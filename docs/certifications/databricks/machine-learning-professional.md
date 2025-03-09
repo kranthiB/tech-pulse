@@ -70,9 +70,9 @@ Table of contents
 
 ## Experimentation & Data Management
 
-- 1. Delta Lake Fundamentals
-- 2. Feature Store Concepts
-- 3. MLflow Experiment Tracking
+- Delta Lake Fundamentals
+- Feature Store Concepts
+- MLflow Experiment Tracking
 - Exercise 1: Delta Lake Operations
 - Exercise 2: Feature Store Operations
 - Quiz: Experimentation & Data Management
