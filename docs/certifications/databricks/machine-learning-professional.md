@@ -16,6 +16,7 @@ Table of contents
 <!--ts-->
    * [Preparation Plan](#preparation-plan)
         * [Experimentation & Data Management](#experimentation--data-management)
+        * [Model Lifecycle Management](#model-lifecycle-management)
    * [Knowledge Base](#knowledge-base)
         * [Experimentation & Data Management](#experimentation--data-management-1)
             * [1. Delta Lake Fundamentals](#1-delta-lake-fundamentals)
@@ -23,8 +24,18 @@ Table of contents
             * [3. MLflow Experiment Tracking](#3-mlflow-experiment-tracking)
             * [Exercise 1: Delta Lake Operations](#exercise-1-delta-lake-operations)
             * [Exercise 2: Feature Store Operations](#exercise-2-feature-store-operations)
+            * [Exercise 3: MLflow Experiment Tracking](#exercise-3-mlflow-experiment-tracking)
             * [Quiz: Experimentation & Data Management](#quiz-experimentation--data-management)
             * [Key Takeaways](#key-takeaways)
+        * [Model Lifecycle Management](#model-lifecycle-management-1)
+            * [1. MLflow Flavors and Custom Models](#1-mlflow-flavors-and-custom-models)
+            * [2. Model Registry Fundamentals](#2-model-registry-fundamentals)
+            * [3. Model Lifecycle Automation](#3-model-lifecycle-automation)
+            * [Exercise 1: MLflow Flavors and Custom Models](#exercise-1-mlflow-flavors-and-custom-models)
+            * [Exercise 2: Model Registry Operations](#exercise-2-model-registry-operations)
+            * [Exercise 3: Automating the Model Lifecycle](#exercise-3-automating-the-model-lifecycle)
+            * [Quiz: Model Lifecycle Management](#quiz-model-lifecycle-management)
+            * [Key Takeaways](#key-takeaways-1)
 <!--te-->
 
 # Preparation Plan
@@ -37,6 +48,19 @@ Table of contents
 - Exercise 1: Delta Lake Operations
 - Exercise 2: Feature Store Operations
 - Quiz: Experimentation & Data Management
+- Key Takeaways
+
+---
+
+## Model Lifecycle Management
+
+- MLflow Flavors and Custom Models
+- Model Registry Fundamentals
+- Model Lifecycle Automation
+- Exercise 1: MLflow Flavors and Custom Models
+- Exercise 2: Model Registry Operations
+- Exercise 3: Automating the Model Lifecycle
+- Quiz: Model Lifecycle Management
 - Key Takeaways
 
 ---
@@ -178,6 +202,8 @@ training_data = fs.create_training_set(
 # Get the training DataFrame
 training_df = training_data.load_df()
 ```
+
+---
 
 ### Exercise 3: MLflow Experiment Tracking
 
@@ -387,5 +413,493 @@ Here are the concepts to review:
 1. Delta Lake provides ACID transactions and time travel capabilities
 2. Feature Store centralizes feature engineering and sharing
 3. MLflow helps track experiments and model artifacts
+
+---
+
+## Model Lifecycle Management
+
+### 1. MLflow Flavors and Custom Models
+
+MLflow flavors provide a standardized way to package models for different frameworks.
+
+**Key Concepts:**
+- **MLflow Flavors**: Framework-specific formats for saving and loading models (sklearn, pytorch, tensorflow, etc.)
+- **PyFunc Flavor**: Universal model format that can wrap any Python model
+- **Custom Model Classes**: Extending MLflow with custom preprocessing logic
+- **Model Signatures**: Defining input/output schemas for models
+
+**Essential Operations:**
+- Creating custom PyFunc models with preprocessing
+- Saving models with different flavors
+- Loading models using different flavors
+- Defining model signatures and input examples
+
+---
+
+### 2. Model Registry Fundamentals
+
+The Model Registry provides a centralized repository for managing the full lifecycle of your ML models.
+
+**Key Concepts:**
+- **Registered Models**: Named entities that contain different versions of a model
+- **Model Versions**: Distinct iterations of a model under the same name
+- **Model Stages**: Organizational states (None, Staging, Production, Archived)
+- **Model Metadata**: Tags and descriptions to document models
+
+**Essential Operations:**
+- Creating and registering models
+- Transitioning models between stages
+- Adding metadata to models
+- Retrieving models from the registry
+
+---
+
+### 3. Model Lifecycle Automation
+
+Automating the model lifecycle enables CI/CD workflows for ML models.
+
+**Key Concepts:**
+- **Webhooks**: Event-triggered callbacks when model states change
+- **Databricks Jobs**: Scheduled or triggered batch processing
+- **CI/CD for ML**: Testing, deployment, and monitoring automation
+- **Job Clusters**: Purpose-specific compute for model tasks
+
+**Essential Operations:**
+- Creating and managing webhooks
+- Setting up automated testing jobs
+- Building model deployment pipelines
+- Connecting webhooks to jobs
+
+---
+
+### Exercise 1: MLflow Flavors and Custom Models
+
+```python
+# 1. Basic model with sklearn flavor
+import mlflow.sklearn
+from sklearn.ensemble import RandomForestRegressor
+import pandas as pd
+import numpy as np
+
+# Train a model
+X = np.random.rand(100, 4)
+y = X[:, 0] + 2 * X[:, 1] + np.random.rand(100)
+model = RandomForestRegressor(n_estimators=100)
+model.fit(X, y)
+
+# Log with sklearn flavor
+with mlflow.start_run() as run:
+    mlflow.sklearn.log_model(model, "sklearn_model")
+    model_uri = f"runs:/{run.info.run_id}/sklearn_model"
+    
+# Load the model
+loaded_model = mlflow.sklearn.load_model(model_uri)
+predictions = loaded_model.predict(X)
+
+# 2. Custom PyFunc model with preprocessing
+import mlflow.pyfunc
+
+# Define a custom model class with preprocessing
+class CustomRFModel(mlflow.pyfunc.PythonModel):
+    def __init__(self, model):
+        self.model = model
+        
+    def predict(self, context, model_input):
+        # Add preprocessing logic
+        if isinstance(model_input, pd.DataFrame):
+            # Scale numeric features
+            numeric_cols = model_input.select_dtypes(include=[np.number]).columns
+            model_input[numeric_cols] = model_input[numeric_cols] - model_input[numeric_cols].mean()
+            model_input[numeric_cols] = model_input[numeric_cols] / model_input[numeric_cols].std()
+            
+        # Return predictions
+        return self.model.predict(model_input)
+
+# Create and log the custom model
+custom_model = CustomRFModel(model)
+with mlflow.start_run() as run:
+    # Define the model signature
+    from mlflow.models.signature import infer_signature
+    signature = infer_signature(X, model.predict(X))
+    
+    # Provide an input example
+    input_example = pd.DataFrame(X[0:5])
+    
+    # Log the model with all metadata
+    mlflow.pyfunc.log_model(
+        "custom_model",
+        python_model=custom_model,
+        signature=signature,
+        input_example=input_example
+    )
+    custom_model_uri = f"runs:/{run.info.run_id}/custom_model"
+
+# Load and use the custom model
+loaded_custom_model = mlflow.pyfunc.load_model(custom_model_uri)
+custom_predictions = loaded_custom_model.predict(X)
+```
+
+---
+
+### Exercise 2: Model Registry Operations
+
+```python
+# 1. Register a model directly from a run
+import mlflow.sklearn
+from mlflow.tracking import MlflowClient
+
+client = MlflowClient()
+
+# First, log a model with MLflow
+with mlflow.start_run() as run:
+    mlflow.sklearn.log_model(model, "sk_model")
+    run_id = run.info.run_id
+    model_uri = f"runs:/{run_id}/sk_model"
+
+# Register the model
+model_name = "RandomForestRegressor"
+mv = mlflow.register_model(model_uri, model_name)
+print(f"Name: {mv.name}")
+print(f"Version: {mv.version}")
+
+# 2. Add description and tags to the registered model
+client.update_registered_model(
+    name=model_name,
+    description="Random Forest Regressor for predicting target values"
+)
+
+client.set_registered_model_tag(
+    name=model_name,
+    key="team",
+    value="data_science"
+)
+
+# 3. Add description and tags to a specific model version
+client.update_model_version(
+    name=model_name,
+    version=mv.version,
+    description="Model trained with 100 trees and default parameters"
+)
+
+client.set_model_version_tag(
+    name=model_name,
+    version=mv.version,
+    key="train_data",
+    value="synthetic_data"
+)
+
+# 4. Transition model to staging
+client.transition_model_version_stage(
+    name=model_name,
+    version=mv.version,
+    stage="Staging"
+)
+
+# 5. Create a new version and transition to production
+with mlflow.start_run() as new_run:
+    mlflow.sklearn.log_model(
+        model,
+        "sk_model",
+        registered_model_name=model_name
+    )
+    new_run_id = new_run.info.run_id
+
+# Find the latest version
+latest_version = max([mv.version for mv in client.search_model_versions(f"name='{model_name}'")])
+
+# Transition to production
+client.transition_model_version_stage(
+    name=model_name,
+    version=latest_version,
+    stage="Production"
+)
+
+# 6. Load a specific model version by stage
+prod_model = mlflow.pyfunc.load_model(f"models:/{model_name}/Production")
+staging_model = mlflow.pyfunc.load_model(f"models:/{model_name}/Staging")
+
+# 7. Archive older versions
+client.transition_model_version_stage(
+    name=model_name,
+    version=1,  # Assuming this is the older version
+    stage="Archived"
+)
+```
+
+---
+
+### Exercise 3: Automating the Model Lifecycle
+
+```python
+# 1. Creating a webhook for Model Registry
+from mlflow.tracking import MlflowClient
+
+client = MlflowClient()
+
+# Create a job-triggered webhook when a model is transitioned to staging
+staging_webhook = client.create_webhook(
+    name="Trigger-Test-Job-On-Staging",
+    events=["MODEL_VERSION_TRANSITIONED_STAGE"],
+    job_spec={
+        "job_id": "123456",  # Replace with actual job ID
+        "workspace_url": "https://your-workspace.cloud.databricks.com"
+    },
+    model_name=model_name,
+    target_stage="Staging"
+)
+
+# Create an HTTP webhook when a model is transitioned to production
+production_webhook = client.create_webhook(
+    name="Notify-On-Production",
+    events=["MODEL_VERSION_TRANSITIONED_STAGE"],
+    http_url_spec={
+        "url": "https://your-service.example.com/webhook",
+        "authorization": "Bearer your-token-here"
+    },
+    model_name=model_name,
+    target_stage="Production"
+)
+
+# 2. List all webhooks
+all_webhooks = client.list_webhooks()
+for webhook in all_webhooks:
+    print(f"ID: {webhook.id}, Name: {webhook.name}, Events: {webhook.events}")
+
+# 3. Delete a webhook
+client.delete_webhook(webhook_id=staging_webhook.id)
+
+# 4. Set up Databricks Jobs for model automation
+
+# Note: This would typically be done through the Databricks UI or API
+# Here's a conceptual example of what the jobs would look like:
+
+# Job 1: Train Model (scheduled or triggered)
+"""
+{
+    "name": "Train-RF-Model",
+    "tasks": [
+        {
+            "task_key": "train_model",
+            "notebook_task": {
+                "notebook_path": "/Path/To/Training/Notebook",
+                "source": "WORKSPACE"
+            },
+            "job_cluster_key": "training_cluster"
+        }
+    ],
+    "job_clusters": [
+        {
+            "job_cluster_key": "training_cluster",
+            "new_cluster": {
+                "spark_version": "10.4.x-cpu-ml-scala2.12",
+                "node_type_id": "Standard_DS3_v2",
+                "num_workers": 2
+            }
+        }
+    ]
+}
+"""
+
+# Job 2: Test Model (triggered by webhook)
+"""
+{
+    "name": "Test-RF-Model",
+    "tasks": [
+        {
+            "task_key": "test_model",
+            "notebook_task": {
+                "notebook_path": "/Path/To/Testing/Notebook",
+                "base_parameters": {
+                    "model_name": "{{model.name}}",
+                    "model_version": "{{model.version}}"
+                }
+            },
+            "job_cluster_key": "testing_cluster"
+        }
+    ],
+    "job_clusters": [
+        {
+            "job_cluster_key": "testing_cluster",
+            "new_cluster": {
+                "spark_version": "10.4.x-cpu-ml-scala2.12",
+                "node_type_id": "Standard_DS3_v2",
+                "num_workers": 1
+            }
+        }
+    ]
+}
+"""
+
+# Job 3: Deploy Model (triggered by webhook)
+"""
+{
+    "name": "Deploy-RF-Model",
+    "tasks": [
+        {
+            "task_key": "deploy_model",
+            "notebook_task": {
+                "notebook_path": "/Path/To/Deployment/Notebook",
+                "base_parameters": {
+                    "model_name": "{{model.name}}",
+                    "model_version": "{{model.version}}"
+                }
+            },
+            "job_cluster_key": "deployment_cluster"
+        }
+    ],
+    "job_clusters": [
+        {
+            "job_cluster_key": "deployment_cluster",
+            "new_cluster": {
+                "spark_version": "10.4.x-cpu-ml-scala2.12",
+                "node_type_id": "Standard_DS3_v2",
+                "num_workers": 1
+            }
+        }
+    ]
+}
+"""
+```
+
+---
+
+### Quiz: Model Lifecycle Management
+
+1. **Which MLflow flavor would you use to create a model with custom preprocessing logic?**
+   A) mlflow.sklearn
+   B) mlflow.custom
+   C) mlflow.pyfunc
+   D) mlflow.generic
+
+2. **What happens when you register a model that already exists in the Model Registry?**
+   A) It overwrites the existing model
+   B) It creates a new version of the model
+   C) It returns an error that the model already exists
+   D) It creates a copy with a different name
+
+3. **Which of the following is NOT a standard stage in the MLflow Model Registry?**
+   A) Development
+   B) Staging
+   C) Production
+   D) Archived
+
+4. **When creating a webhook for model registry events, which of these is NOT a valid event type?**
+   A) MODEL_VERSION_CREATED
+   B) MODEL_VERSION_TRANSITIONED_STAGE
+   C) REGISTERED_MODEL_CREATED
+   D) MODEL_VERSION_DEPLOYED
+
+5. **What is the correct way to load a production model from the registry?**
+   A) mlflow.pyfunc.load_model("models:/model_name/production")
+   B) mlflow.sklearn.load_production_model("model_name")
+   C) mlflow.load_model("models:/model_name/Production")
+   D) mlflow.pyfunc.load_model("models:/model_name/Production")
+
+6. **What is the purpose of adding a model signature to an MLflow model?**
+   A) Digitally sign the model to verify its creator
+   B) Define the expected input and output schema
+   C) Increase the model's security in the registry
+   D) Document who approved the model for production
+
+7. **Which client method is used to move a model from Staging to Production?**
+   A) client.promote_model_version()
+   B) client.update_model_stage()
+   C) client.transition_model_version_stage()
+   D) client.set_model_version_status()
+
+8. **What would you include in a pyfunc model's predict() method to implement custom preprocessing?**
+   A) Data cleaning and feature transformation logic before passing to the model
+   B) Hyperparameter optimization logic
+   C) Model retraining logic if performance decreases
+   D) Post-processing of model outputs only
+
+9. **What is the correct API to add a description to a model version?**
+   A) client.set_model_version_description()
+   B) client.update_model_version()
+   C) client.add_model_description()
+   D) client.update_registered_model_version()
+
+10. **What type of compute is recommended for production Databricks Jobs?**
+    A) All-purpose clusters
+    B) Job clusters
+    C) Single-node clusters
+    D) Interactive clusters
+
+#### Quiz Answers
+
+1. **Which MLflow flavor would you use to create a model with custom preprocessing logic?**
+   **Answer: C) mlflow.pyfunc**
+   
+   Explanation: The mlflow.pyfunc flavor allows you to create custom Python models by extending the PythonModel class, enabling you to implement custom preprocessing logic in the predict() method. The other flavors are for specific frameworks (sklearn) or don't exist (custom, generic).
+
+2. **What happens when you register a model that already exists in the Model Registry?**
+   **Answer: B) It creates a new version of the model**
+   
+   Explanation: When registering a model with a name that already exists in the registry, MLflow creates a new version under that name rather than overwriting the existing model or returning an error.
+
+3. **Which of the following is NOT a standard stage in the MLflow Model Registry?**
+   **Answer: A) Development**
+   
+   Explanation: The standard stages in the MLflow Model Registry are None (default), Staging, Production, and Archived. "Development" is not a standard stage.
+
+4. **When creating a webhook for model registry events, which of these is NOT a valid event type?**
+   **Answer: D) MODEL_VERSION_DEPLOYED**
+   
+   Explanation: Valid event types include MODEL_VERSION_CREATED, MODEL_VERSION_TRANSITIONED_STAGE, and REGISTERED_MODEL_CREATED. MODEL_VERSION_DEPLOYED is not a standard event type in MLflow webhooks.
+
+5. **What is the correct way to load a production model from the registry?**
+   **Answer: D) mlflow.pyfunc.load_model("models:/model_name/Production")**
+   
+   Explanation: The correct URI format is "models:/model_name/stage" and the stage name is case-sensitive, with "Production" being the proper casing. MLflow's pyfunc loader is the universal way to load any model.
+
+6. **What is the purpose of adding a model signature to an MLflow model?**
+   **Answer: B) Define the expected input and output schema**
+   
+   Explanation: A model signature in MLflow defines the expected data types and shapes for inputs and outputs, allowing for validation when the model is used for inference.
+
+7. **Which client method is used to move a model from Staging to Production?**
+   **Answer: C) client.transition_model_version_stage()**
+   
+   Explanation: The transition_model_version_stage() method of the MLflowClient is used to change a model version's stage (e.g., from Staging to Production). The other methods don't exist in the MLflow API.
+
+8. **What would you include in a pyfunc model's predict() method to implement custom preprocessing?**
+   **Answer: A) Data cleaning and feature transformation logic before passing to the model**
+   
+   Explanation: The predict() method in a custom pyfunc model is where you implement preprocessing logic like data cleaning and feature transformations before passing the data to the underlying model.
+
+9. **What is the correct API to add a description to a model version?**
+   **Answer: B) client.update_model_version()**
+   
+   Explanation: The update_model_version() method is used to update metadata for a specific model version, including its description. The other options are not valid MLflow API methods.
+
+10. **What type of compute is recommended for production Databricks Jobs?**
+    **Answer: B) Job clusters**
+    
+    Explanation: Job clusters are purpose-built for production workloads in Databricks. They start when a job begins and terminate when it completes, optimizing costs. All-purpose clusters are for interactive work, not production jobs.
+
+#### Score Assessment
+
+- **9-10 correct**: Excellent! You have a strong grasp of Model Lifecycle Management.
+- **7-8 correct**: Good understanding, but review the topics you missed.
+- **5-6 correct**: You're on the right track, but need more study in several areas.
+- **Below 5 correct**: More intensive review needed on the Day 2 topics.
+
+#### Areas to Focus On
+
+Here are the concepts to review:
+
+- **MLflow flavors**: Make sure you understand the different flavors, especially pyfunc for custom models
+- **Model Registry stages**: Review the standard stages and their purpose in the workflow
+- **Webhook events**: Practice setting up webhooks with different event triggers
+- **Client API methods**: Familiarize yourself with the correct MLflowClient methods for different operations
+- **Model URI formats**: Practice loading models using the correct URI format and stage names
+
+---
+
+### Key Takeaways
+
+1. PyFunc is powerful for creating custom models with preprocessing logic
+2. The Model Registry provides stages to organize model development
+3. Webhooks enable event-driven automation for model transitions
 
 ---
