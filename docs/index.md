@@ -193,6 +193,7 @@ auto_title: false
         <a href="https://kranthib.github.io/tech-pulse/ops-mastery/ml-ops.html" style="flex: 1; min-width: 90px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-cogs" style="margin-right: 5px;"></i>MLOps</a>
         <a href="https://kranthib.github.io/tech-pulse/ops-mastery/ai-ops.html" style="flex: 1; min-width: 90px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-robot" style="margin-right: 5px;"></i>AIOps</a>
         <a href="https://kranthib.github.io/tech-pulse/ops-mastery/green-ops.html" style="flex: 1; min-width: 90px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-leaf" style="margin-right: 5px;"></i>GreenOps</a>
+        <a href="https://kranthib.github.io/tech-pulse/ops-mastery/test-ops.html" style="flex: 1; min-width: 90px; padding: 8px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-vial" style="margin-right: 5px;"></i>TestOps</a>
       </div>
     </div>
   </div>
