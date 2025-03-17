@@ -37,17 +37,17 @@ The platform offers a diverse array of specialized automation frameworks, each t
 The platform architecture consists of four interconnected layers that work seamlessly together:
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                       USER INTERFACE LAYER                       │
+┌───────────────────────────────────────────────────────────────┐
+│                       USER INTERFACE LAYER                    │
 ├───────────────────┬─────────────────────┬─────────────────────┐
-│  Collaboration    │     Analytics        │    Development      │
-│       Hub         │     Dashboard        │    Interface        │
+│  Collaboration    │     Analytics        │    Development     │
+│       Hub         │     Dashboard        │    Interface       │
 └───────────────────┴─────────────────────┴─────────────────────┘
                               ▲
                               │
                               ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                    TEST EXECUTION SERVICES                       │
+┌───────────────────────────────────────────────────────────────┐
+│                    TEST EXECUTION SERVICES                    │
 ├───────────┬───────────┬───────────┬───────────┬───────────────┐
 │    Web    │  Mobile   │    API    │  Visual   │    Desktop    │
 │  Engine   │  Engine   │  Service  │  Testing  │     Engine    │
@@ -55,17 +55,17 @@ The platform architecture consists of four interconnected layers that work seaml
                               ▲
                               │
                               ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                      PLATFORM SERVICES                           │
+┌───────────────────────────────────────────────────────────────┐
+│                      PLATFORM SERVICES                        │
 ├───────────┬───────────┬───────────┬───────────┬───────────────┐
-│ Security  │ Monitoring │Environment│Integration│    GenAI      │
-│ Services  │  Service   │Management │    Hub    │   Services    │
+│ Security  │ Monitoring │Environment│Integration│    GenAI     │
+│ Services  │  Service   │Management │    Hub    │   Services   │
 └───────────┴───────────┴───────────┴───────────┴───────────────┘
                               ▲
                               │
                               ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                    TEST DATA MANAGEMENT                          │
+┌───────────────────────────────────────────────────────────────┐
+│                    TEST DATA MANAGEMENT                       │
 ├───────────┬───────────┬───────────┬───────────────────────────┐
 │ Test Data │   Data    │ AI Data   │    External Data          │
 │Repository │  Version  │Generation │      Connectors           │
