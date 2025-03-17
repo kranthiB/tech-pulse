@@ -54,7 +54,77 @@ For modern enterprises, TestOps isn't merely a toolset but a philosophy that pla
 
 A well-designed TestOps ecosystem feels invisible yet indispensable—like excellent service at a fine restaurant. Its components work in harmony to create an environment where quality flourishes naturally.
 
-![TestOps Ecosystem](https://via.placeholder.com/800x400?text=TestOps+Ecosystem)
+```mermaid
+flowchart TD
+    subgraph Collaboration["Collaboration Hub"]
+        CH1["Team Collaboration"]
+        CH2["Test Orchestration"]
+        CH3["Workflow Management"]
+    end
+    
+    subgraph Development["Development Interface"]
+        DI1["Test Creation"]
+        DI2["Scripting Tools"]
+        DI3["Maintenance Console"]
+    end
+    
+    subgraph Execution["Test Execution Services"]
+        ES1["Web Automation"]
+        ES2["Mobile Testing"]
+        ES3["API Testing"]
+        ES4["Visual Testing"]
+        ES5["Desktop Testing"]
+    end
+    
+    subgraph Analytics["Analytics Dashboard"]
+        AD1["Reporting & Insights"]
+        AD2["Data Visualization"]
+        AD3["Trend Analysis"]
+    end
+    
+    subgraph Integration["Integration Hub"]
+        IH1["CI/CD Connectors"]
+        IH2["ALM Integrations"]
+        IH3["Data Connectors"]
+    end
+    
+    subgraph Platform["Platform Services"]
+        PS1["Security Services"]
+        PS2["Monitoring Services"]
+        PS3["Environment Management"]
+        PS4["GenAI Services"]
+    end
+    
+    subgraph DataMgmt["Test Data Management"]
+        TDM1["Data Repository"]
+        TDM2["Data Version Control"]
+        TDM3["AI Data Generation"]
+        TDM4["External Connectors"]
+    end
+    
+    Collaboration <--> Development
+    Development --> Execution
+    Execution --> Analytics
+    Analytics --> Collaboration
+    Integration <--> Collaboration
+    Integration <--> Development
+    Integration <--> Execution
+    Integration <--> Analytics
+    Platform -.-> Collaboration
+    Platform -.-> Development
+    Platform -.-> Execution
+    Platform -.-> Analytics
+    Platform -.-> Integration
+    DataMgmt <--> Execution
+    DataMgmt <--> Development
+    
+    classDef primary fill:#4682B4,stroke:#333,stroke-width:2px,color:white
+    classDef secondary fill:#6CB4EE,stroke:#333,stroke-width:1px,color:white
+    
+    class Collaboration,Development,Execution,Analytics,Integration primary
+    class Platform,DataMgmt secondary
+```
+
 
 ### Key Elements:
 
