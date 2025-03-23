@@ -16,6 +16,8 @@ The ABC Paints Sales Meeting Preparation Agent is an AI-powered solution designe
 
 This document outlines the complete solution approach, architecture, and proof of concept implementation details.
 
+![SPA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/gif/SalesMeetingPreparationAgent.gif)
+
 ## 2. Problem Statement
 
 Sales representatives at ABC Paints face significant challenges in preparing for customer meetings due to:
