@@ -358,7 +358,7 @@ The solution supports regional customization with:
 
 ### 7.1. Setup and Preparation
 
-Follow README.md in https://github.com/kranthiB/agentic-ai-solutions/tree/main/sales-meeting-preparation-agent
+Follow [README.md](https://github.com/kranthiB/agentic-ai-solutions/tree/main/sales-meeting-preparation-agent)
 
 ### 7.2. Demonstration Narrative
 
