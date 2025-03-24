@@ -229,6 +229,18 @@ auto_title: false
       </div>
     </div>
   </div>
+  
+  <!-- Column 3 (New) -->
+  <div style="flex: 1; min-width: 300px;">
+    <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
+      <h3 class="section-header">
+        <i class="fa fa-robot" style="margin-right: 10px;"></i>Agentic AI Solutions
+      </h3>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/sales-meeting-preparation-agent.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-briefcase" style="margin-right: 8px;"></i>Sales Meeting Preparation Agent</a>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- UPDATED CERTIFICATIONS SECTION -->
