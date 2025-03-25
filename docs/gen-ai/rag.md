@@ -33,7 +33,43 @@ flowchart LR
 
 ---
 
-## RAG Techniques
+## 📋 RAG Techniques
+
+1. [Foundational RAG Techniques](#foundational-rag-techniques)
+   - [1. Simple RAG for PDF and CSV Files](#1-simple-rag-for-pdf-and-csv-files)
+   - [2. Reliable-RAG](#2-reliable-rag)
+   - [3. Propositions Chunking](#3-propositions-chunking)
+2. [Query Enhancements](#query-enhancements)
+   - [4. Query Transformations](#4-query-transformations)
+   - [5. Hypothetical Document Embedding (HyDE)](#5-hypothetical-document-embedding-hyde)
+3. [Context and Content Enrichment](#context-and-content-enrichment)
+   - [6. Contextual Chunk Headers (CCH)](#6-contextual-chunk-headers-cch)
+   - [7. Relevant Segment Extraction (RSE)](#7-relevant-segment-extraction-rse)
+   - [8. Context Enrichment Window for Document Retrieval](#8-context-enrichment-window-for-document-retrieval)
+   - [9. Semantic Chunking for Document Processing](#9-semantic-chunking-for-document-processing)
+   - [10. Contextual Compression in Document Retrieval](#10-contextual-compression-in-document-retrieval)
+   - [11. Document Augmentation through Question Generation for Enhanced Retrieval](#11-document-augmentation-through-question-generation-for-enhanced-retrieval)
+4. [Advanced Retrieval Methods](#advanced-retrieval-methods)
+   - [12. Fusion Retrieval in Document Search](#12-fusion-retrieval-in-document-search)
+   - [13. Intelligent Reranking](#13-intelligent-reranking)
+   - [14. Hierarchical Indices in Document Retrieval](#14-hierarchical-indices-in-document-retrieval)
+   - [15. Multi-modal Retrieval](#15-multi-modal-retrieval)
+5. [Iterative and Adaptive Techniques](#iterative-and-adaptive-techniques)
+   - [16. Retrieval with Feedback Loops](#16-retrieval-with-feedback-loops)
+   - [17. Adaptive Retrieval](#17-adaptive-retrieval)
+6. [Evaluation](#evaluation)
+   - [18. DeepEval Evaluation](#18-deepeval-evaluation)
+   - [19. GroUSE Evaluation](#19-grouse-evaluation)
+7. [Explainability and Transparency](#explainability-and-transparency)
+   - [20. Explainable Retrieval in Document Search](#20-explainable-retrieval-in-document-search)   
+8. [Advanced Architectures](#advanced-architectures)
+   - [21. GraphRAG](#21-graphrag)
+   - [22. Microsoft GraphRAG](#22-microsoft-graphrag)
+   - [23. RAPTOR: Recursive Abstractive Processing and Thematic Organization for Retrieval](#23-raptor-recursive-abstractive-processing-and-thematic-organization-for-retrieval)
+   - [24. Self-RAG](#24-self-rag)
+   - [25. Corrective RAG](#25-corrective-rag)
+
+----
 
 ### Foundational RAG Techniques
 
