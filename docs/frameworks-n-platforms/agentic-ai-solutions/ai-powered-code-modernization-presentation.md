@@ -82,7 +82,7 @@ graph TD
     A["👨‍💻 Legacy Codebase"] --> B["🧠 AI Agent Ecosystem"]
     B --> C["✨ Modern Codebase"]
     
-    subgraph "🤖 Specialized AI Agents"
+    subgraph AgentEcosystem["🤖 Specialized AI Agents"]
         D["🔎 Assessment<br>Agents"] --- E["⚙️ Transformation<br>Agents"]
         E --- F["🧪 Validation<br>Agents"]
         
@@ -99,7 +99,7 @@ graph TD
         F -..-> F3["🔧 FixPoint<br><i>Issue Resolution</i>"]
     end
     
-    subgraph "👥 Human Collaboration Points"
+    subgraph HumanCollaboration["👥 Human Collaboration Points"]
         H1["👨‍💼 Business<br>Stakeholders"]
         H2["👩‍💻 Technical<br>Architects"]
         H3["👨‍🔬 QA<br>Experts"]
@@ -133,6 +133,9 @@ graph TD
     style H2 fill:#fab1a0,color:#333,stroke:#333,stroke-width:1px,rx:5px,ry:5px
     style H3 fill:#fab1a0,color:#333,stroke:#333,stroke-width:1px,rx:5px,ry:5px
     
+    style AgentEcosystem fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
+    style HumanCollaboration fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
+    
     linkStyle default stroke:#999,stroke-width:1px,fill:none;
 ```
 
@@ -151,17 +154,17 @@ Our solution leverages **specialized AI agents** for each aspect of modernizatio
 
 ```mermaid
 flowchart LR
-    subgraph "👁️ CodeLens"
+    subgraph CodeLens["👁️ CodeLens"]
         A1["📊 Complexity<br>Analysis"] --> A2["🧩 Dependency<br>Mapping"]
         A2 --> A3["⚠️ Risk<br>Assessment"]
     end
     
-    subgraph "🗺️ LogicMapper"
+    subgraph LogicMapper["🗺️ LogicMapper"]
         B1["💡 Business Rule<br>Extraction"] --> B2["📋 Process<br>Documentation"]
         B2 --> B3["📝 Knowledge<br>Preservation"]
     end
     
-    subgraph "🧵 DataFabric"
+    subgraph DataFabric["🧵 DataFabric"]
         C1["🏗️ Schema<br>Analysis"] --> C2["🔗 Relationship<br>Mapping"]
         C2 --> C3["📊 Data Flow<br>Tracing"]
     end
@@ -192,9 +195,10 @@ flowchart LR
     style C2 fill:#74b9ff,color:#333,stroke:#333,stroke-width:1px,rx:5px,ry:5px
     style C3 fill:#74b9ff,color:#333,stroke:#333,stroke-width:1px,rx:5px,ry:5px
     
-    %% Style for subgraphs
-    classDef subgraphStyle fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px;
-    class "👁️ CodeLens","🗺️ LogicMapper","🧵 DataFabric" subgraphStyle;
+    %% Style for subgraphs directly
+    style CodeLens fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
+    style LogicMapper fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
+    style DataFabric fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
 ```
 
 **🔍 CodeLens**: Analyzes code structure, complexity, and dependencies
@@ -215,17 +219,17 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    subgraph "🏗️ CodeStructor"
+    subgraph CodeStructor["🏗️ CodeStructor"]
         A1["📦 Code<br>Modularization"] --> A2["🧹 Technical Debt<br>Reduction"]
         A2 --> A3["📐 Architecture<br>Improvement"]
     end
     
-    subgraph "🔄 TransformEngine"
+    subgraph TransformEngine["🔄 TransformEngine"]
         B1["🔍 Source<br>Analysis"] --> B2["🔄 Language<br>Translation"]
         B2 --> B3["⚙️ API<br>Adaptation"]
     end
     
-    subgraph "⚡ EnhanceLogic"
+    subgraph EnhanceLogic["⚡ EnhanceLogic"]
         C1["🚀 Performance<br>Optimization"] --> C2["✨ Modern Pattern<br>Implementation"]
         C2 --> C3["🎯 Platform<br>Specialization"]
     end
@@ -257,8 +261,9 @@ flowchart LR
     style C3 fill:#54a0ff,color:#333,stroke:#333,stroke-width:1px,rx:5px,ry:5px
     
     %% Style for subgraphs
-    classDef subgraphStyle fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px;
-    class "🏗️ CodeStructor","🔄 TransformEngine","⚡ EnhanceLogic" subgraphStyle;
+    style CodeStructor fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
+    style TransformEngine fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
+    style EnhanceLogic fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
 ```
 
 **🏗️ CodeStructor**: Restructures code for modern architectures
@@ -279,17 +284,17 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    subgraph "🧪 TestBed"
+    subgraph TestBed["🧪 TestBed"]
         A1["🧮 Test Case<br>Generation"] --> A2["📊 Synthetic Data<br>Creation"]
         A2 --> A3["🎭 Edge Case<br>Simulation"]
     end
     
-    subgraph "⚖️ DualRunner"
+    subgraph DualRunner["⚖️ DualRunner"]
         B1["⏯️ Parallel<br>Execution"] --> B2["🔎 Output<br>Comparison"]
         B2 --> B3["📈 Performance<br>Benchmarking"]
     end
     
-    subgraph "🔧 FixPoint"
+    subgraph FixPoint["🔧 FixPoint"]
         C1["🐞 Issue<br>Detection"] --> C2["🤖 Automated<br>Fixes"]
         C2 --> C3["👨‍💻 Human Review<br>Flagging"]
     end
@@ -321,8 +326,9 @@ flowchart LR
     style C3 fill:#c8d6e5,color:#333,stroke:#333,stroke-width:1px,rx:5px,ry:5px
     
     %% Style for subgraphs
-    classDef subgraphStyle fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px;
-    class "🧪 TestBed","⚖️ DualRunner","🔧 FixPoint" subgraphStyle;
+    style TestBed fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
+    style DualRunner fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
+    style FixPoint fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
 ```
 
 **🧪 TestBed**: Creates comprehensive test suites
@@ -345,17 +351,17 @@ flowchart LR
 
 ```mermaid
 graph TD
-    subgraph "⏱️ Speed"
+    subgraph Speed["⏱️ Speed"]
         A1["❌ Traditional:<br>5+ Years"]
         A2["✅ AI-Powered:<br>1-2 Years<br><b>70% Faster</b>"]
     end
     
-    subgraph "💎 Quality"
+    subgraph Quality["💎 Quality"]
         B1["❌ Traditional:<br>High Defect Rate"]
         B2["✅ AI-Powered:<br>99% Functional Equivalence<br><b>80% Fewer Defects</b>"]
     end
     
-    subgraph "💰 Cost"
+    subgraph Cost["💰 Cost"]
         C1["❌ Traditional:<br>High Resource Requirement"]
         C2["✅ AI-Powered:<br>Efficient Automation<br><b>60% Cost Reduction</b>"]
     end
@@ -377,8 +383,9 @@ graph TD
     style C2 fill:#55efc4,color:#333,stroke:#333,stroke-width:1px,rx:5px,ry:5px
     
     %% Style for subgraphs
-    classDef subgraphStyle fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px;
-    class "⏱️ Speed","💎 Quality","💰 Cost" subgraphStyle;
+    style Speed fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
+    style Quality fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
+    style Cost fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
     
     %% Add comparison arrows
     A1 -.- A2
@@ -497,27 +504,26 @@ gantt
 ### Compelling Financial Benefits
 
 ```mermaid
-%%{init: {"pie": {"textPosition": 0.5}, "themeVariables": {"pieOuterStrokeWidth": "2px"}} }%%
 graph TD
-    subgraph "⏱️ Timeline Comparison"
-        T1[Traditional Approach<br><b>48 months</b>]
-        T2[AI-Powered Approach<br><b>14 months</b>]
+    subgraph TimelineComparison["⏱️ Timeline Comparison"]
+        T1[Traditional Approach48 months]
+        T2[AI-Powered Approach14 months]
     end
     
-    subgraph "💰 Cost Comparison (in $M)"
-        C1[Traditional Approach<br><b>$12M</b>]
-        C2[AI-Powered Approach<br><b>$4.8M</b>]
+    subgraph CostComparison["💰 Cost Comparison (in $M)"]
+        C1[Traditional Approach$12M]
+        C2[AI-Powered Approach$4.8M]
     end
     
-    subgraph "📈 5-Year TCO Impact"
-        TCO1[Traditional<br><b>+$2.5M</b>]
-        TCO2[AI-Powered<br><b>-$8.7M</b>]
-        DELTA[Cost Advantage<br><b>$11.2M</b>]
+    subgraph TCOImpact["📈 5-Year TCO Impact"]
+        TCO1[Traditional+$2.5M]
+        TCO2[AI-Powered-$8.7M]
+        DELTA[Cost Advantage$11.2M]
     end
     
-    subgraph "⚡ Time to New Features"
-        F1[Traditional<br><b>60 months</b>]
-        F2[AI-Powered<br><b>16 months</b>]
+    subgraph TimeToFeatures["⚡ Time to New Features"]
+        F1[Traditional60 months]
+        F2[AI-Powered16 months]
     end
     
     %% Add visual improvements
@@ -534,12 +540,14 @@ graph TD
     style F1 fill:#ff7675,color:#333,stroke:#333,stroke-width:1px,rx:5px,ry:5px
     style F2 fill:#55efc4,color:#333,stroke:#333,stroke-width:1px,rx:5px,ry:5px
     
-    %% Style for subgraphs
-    classDef subgraphStyle fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px;
-    class "⏱️ Timeline Comparison","💰 Cost Comparison (in $M)","📈 5-Year TCO Impact","⚡ Time to New Features" subgraphStyle;
+    %% Style for subgraphs directly
+    style TimelineComparison fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
+    style CostComparison fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
+    style TCOImpact fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
+    style TimeToFeatures fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
     
     %% Create a centered title
-    TITLE["<b>ROI Comparison:</b> Traditional vs AI-Powered Approach"]
+    TITLE["ROI Comparison: Traditional vs AI-Powered Approach"]
     style TITLE fill:none,stroke:none,color:#333,font-size:18px;
     
     TITLE --- T1
@@ -582,13 +590,13 @@ graph TD
 graph TD
     A["🚀 Begin Your<br>Modernization Journey"] --> B["📞 Contact Us"]
     
-    subgraph "👥 Connect With Us"
+    subgraph ConnectWithUs["👥 Connect With Us"]
         B --> C["✉️ Email:<br>modernization@company.com"]
         B --> D["📱 Phone:<br>(555) 123-4567"]
         B --> E["🌐 Website:<br>www.company.com/modernization"]
     end
     
-    subgraph "📋 Next Steps"
+    subgraph NextSteps["📋 Next Steps"]
         A --> F["📊 Assessment<br>Workshop"]
         A --> G["🧪 Personalized<br>Demo"]
         A --> H["👥 Client<br>References"]
@@ -606,8 +614,8 @@ graph TD
     style H fill:#ffeaa7,color:#333,stroke:#333,stroke-width:1px,rx:5px,ry:5px
     
     %% Style for subgraphs
-    classDef subgraphStyle fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px;
-    class "👥 Connect With Us","📋 Next Steps" subgraphStyle;
+    style ConnectWithUs fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
+    style NextSteps fill:#f5f6fa,stroke:#dcdde1,stroke-width:1px,rx:10px,ry:10px
     
     %% Add action buttons
     I[" Book Assessment Workshop "]
