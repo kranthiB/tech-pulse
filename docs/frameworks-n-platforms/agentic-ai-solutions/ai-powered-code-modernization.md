@@ -516,15 +516,15 @@ The system follows a microservices architecture with specialized AI agents imple
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                         User Interface Layer                         │
+│                         User Interface Layer                        │
 └───────────────────────────────────┬─────────────────────────────────┘
                                     │
 ┌───────────────────────────────────┼─────────────────────────────────┐
-│                      Orchestration & Workflow Layer                  │
+│                      Orchestration & Workflow Layer                 │
 └───────────────────────────────────┬─────────────────────────────────┘
                                     │
 ┌───────────────────────────────────┼─────────────────────────────────┐
-│                         AI Agent Service Layer                       │
+│                         AI Agent Service Layer                      │
 │   ┌───────────┐   ┌───────────┐   ┌───────────┐   ┌───────────┐     │
 │   │ Assessment│   │Transformat│   │ Validation│   │  Shared   │     │
 │   │  Agents   │   │ion Agents │   │  Agents   │   │ Services  │     │
@@ -532,7 +532,7 @@ The system follows a microservices architecture with specialized AI agents imple
 └─────────────────────────────────────────────────────────────────────┘
                                     │
 ┌───────────────────────────────────┼─────────────────────────────────┐
-│                        Data & Storage Layer                          │
+│                        Data & Storage Layer                         │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -854,16 +854,16 @@ The system follows a microservices architecture with specialized AI agents imple
 #### 4.1 System Data Flow
 
 ```
-┌─────────────┐     ┌───────────┐     ┌──────────┐     ┌───────────┐     ┌───────────┐
-│ Source Code │────>│ Assessment │────>│ Analysis │────>│Transformati│────>│ Validation │
-│ Repository  │     │   Phase   │     │ Results  │     │  on Phase  │     │   Phase    │
-└─────────────┘     └───────────┘     └──────────┘     └───────────┘     └───────────┘
+┌─────────────┐     ┌───────────┐     ┌──────────┐     ┌────────────┐     ┌───────────┐
+│ Source Code │────>│ Assessment│────>│ Analysis │────>│Transformati│────>│ Validation│
+│ Repository  │     │   Phase   │     │ Results  │     │  on Phase  │     │   Phase   │
+└─────────────┘     └───────────┘     └──────────┘     └────────────┘     └───────────┘
                          │                                   │                 │
                          ▼                                   ▼                 ▼
-                    ┌──────────┐                      ┌───────────┐      ┌──────────┐
-                    │ Knowledge │                      │ Transformed│      │ Quality  │
+                    ┌──────────┐                      ┌────────────┐      ┌──────────┐
+                    │ Knowledge│                      │ Transformed│      │ Quality  │
                     │   Base   │                      │    Code    │      │  Report  │
-                    └──────────┘                      └───────────┘      └──────────┘
+                    └──────────┘                      └────────────┘      └──────────┘
 ```
 
 #### 4.2 Agent Interaction Patterns
