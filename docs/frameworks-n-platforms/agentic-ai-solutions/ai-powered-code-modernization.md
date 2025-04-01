@@ -1,4 +1,16 @@
+---
+id: frameworks-n-platforms/agentic-ai-solutions/ai-powered-code-modernization
+title: AI-Powered Code Modernization
+sidebar_label: AI-Powered Code Modernization
+---
+
+
+<div style="text-align: right;">
+    <a href="https://kranthib.github.io/tech-pulse/" style="display: inline-block; padding: 6px 14px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">Back to Home →</a>
+</div>
+
 # AI-Powered Code Modernization
+
 ## Revolutionizing Legacy System Migration Through Multi-Agent Intelligence
 
 ```mermaid
