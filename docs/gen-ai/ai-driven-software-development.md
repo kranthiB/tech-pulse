@@ -583,7 +583,6 @@ Every time you choose to apply a rule(s), explicitly state the rule(s) in the ou
 - Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError)
 - Structure repository files as follows:
 
-```
 server/
 ├── src/
     ├── components/     # Shared React components
@@ -607,7 +606,6 @@ shared/
 ├── src/
     ├── types/          # TypeScript types, only used for shared types between server and extension
     └── utils/          # Helper functions, only used for shared functions between server and extension
-```
 
 ## Tech Stack
 - React
