@@ -582,6 +582,7 @@ Every time you choose to apply a rule(s), explicitly state the rule(s) in the ou
 - Prefer iteration and modularization over code duplication
 - Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError)
 - Structure repository files as follows:
+
 ```
 server/
 ├── src/
