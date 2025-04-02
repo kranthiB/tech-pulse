@@ -154,6 +154,7 @@ Monolithic architecture represents the earliest common approach to enterprise ap
 - Centralized data storage
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Simpler initial development | Limited scalability (must scale entire application) |
