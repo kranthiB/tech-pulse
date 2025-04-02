@@ -194,6 +194,7 @@ N-tier architecture evolved from monolithic systems by introducing logical and p
 - Each tier can scale independently (to some degree)
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Improved maintainability through separation of concerns | Still relatively tightly coupled within each tier |
@@ -238,6 +239,7 @@ Service-Oriented Architecture represented a significant paradigm shift by organi
 - Focus on reuse across business domains
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Business-aligned modularity | Complex governance requirements |
@@ -279,6 +281,7 @@ The Enterprise Service Bus pattern emerged as an implementation approach for SOA
 - Quality of service management
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Reduced integration complexity | Created a central bottleneck and dependency |
@@ -318,6 +321,7 @@ Layered architecture organizes components in horizontal layers (presentation, bu
 - Encapsulation of implementation details within layers
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Clear separation of concerns | Can lead to unnecessary coupling across business domains |
@@ -372,6 +376,7 @@ Introduced by Alistair Cockburn, Hexagonal Architecture (also known as Ports and
 - Outside dependencies can be easily swapped
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Highly testable architecture | Requires disciplined design approach |
@@ -416,6 +421,7 @@ Event-Driven Architecture (EDA) focuses on producing, detecting, and reacting to
 - Event sourcing and event stores
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Near real-time response to business events | Eventual consistency complexities |
@@ -457,6 +463,7 @@ API-First Architecture prioritizes well-designed APIs as the foundation for syst
 - API management for governance and analytics
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Improved developer productivity | Risk of premature abstraction |
@@ -504,6 +511,7 @@ Proposed by Robert C. Martin, Clean Architecture emphasizes separation of concer
 - Use cases as primary organizing structure
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Highly testable domain logic | Complex initial setup |
@@ -546,6 +554,7 @@ Command Query Responsibility Segregation (CQRS) separates read and update operat
 - Eventual consistency between read and write models
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Optimized performance for read-heavy systems | Significant architectural complexity |
@@ -588,6 +597,7 @@ Lambda Architecture addresses big data processing by combining batch and stream 
 - Pre-computation of views for performance
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Combination of accuracy and timeliness | Complexity of maintaining dual processing paths |
@@ -636,6 +646,7 @@ Microservices Architecture decomposes applications into small, independently dep
 - Language and technology diversity
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Enhanced development velocity | Distributed system complexity |
@@ -690,6 +701,7 @@ Cloud-Native Architecture leverages cloud computing models and technologies to c
 - Declarative configuration
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Optimized resource utilization | Complexity of distributed systems |
@@ -738,6 +750,7 @@ API-driven Microservice Architecture combines API management with microservices 
 - Developer portal for documentation and onboarding
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Simplified client integration | Potential gateway bottleneck |
@@ -776,6 +789,7 @@ Kappa Architecture simplifies big data processing by using a single stream proce
 - Event log as system of record
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Simplified architecture and operations | Stream processing complexity |
@@ -824,6 +838,7 @@ Serverless Architecture abstracts infrastructure management entirely, allowing d
 - No infrastructure management
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Reduced operational complexity | Cold start latency |
@@ -874,6 +889,7 @@ DevOps-Oriented Architecture integrates development and operations concerns dire
 - Feedback loops for operational data
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Faster delivery cycles | Requires cultural transformation |
@@ -930,6 +946,7 @@ Segmented Architecture divides layered architecture into functional segments bas
 - Common governance across segments
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Better business alignment | Complex boundary definition |
@@ -980,6 +997,7 @@ Blockchain Architecture implements distributed ledger technology with consensus 
 - Peer-to-peer network topology
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Trustless operation model | Performance limitations |
@@ -1031,6 +1049,7 @@ CIAM Architecture addresses the specific challenges of managing customer identit
 - Privacy-by-design approach
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Enhanced customer experience | Balancing security and user experience |
@@ -1080,6 +1099,7 @@ MASA combines aspects of microservices, API-first, cloud-native, and event-drive
 - Loose coupling throughout the stack
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Flexibility across channels and devices | Complex technical architecture |
@@ -1128,6 +1148,7 @@ Microfrontend Architecture extends microservices principles to frontend developm
 - Federated deployment model
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Team autonomy for full-stack features | Consistency across components |
@@ -1190,6 +1211,7 @@ Service Mesh Architecture adds a dedicated infrastructure layer for handling ser
 - Policy enforcement
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Enhanced observability | Additional operational complexity |
@@ -1238,6 +1260,7 @@ Edge Computing Architecture distributes processing closer to data sources rather
 - Local autonomy with central coordination
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Reduced latency for time-sensitive operations | Complex distributed management |
@@ -1301,6 +1324,7 @@ Cell-Based Architecture represents a decentralized approach where applications a
 - Autonomous team ownership of cells
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Enhanced isolation and security | Cell granularity decisions |
@@ -1355,6 +1379,7 @@ Digital Twin Architecture creates virtual representations of physical objects or
 - Integration with AI/ML for insights
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Enhanced visibility into physical operations | Complex data synchronization |
@@ -1422,6 +1447,7 @@ Data Mesh Architecture approaches data as a product, organizing it around busine
 - Product management approach to data
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Improved data quality and relevance | Complex federated governance |
@@ -1478,6 +1504,7 @@ AI-Driven Architecture treats artificial intelligence components as first-class 
 - Integration of human and AI decision-making
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Embedded intelligence throughout systems | Model governance and transparency |
@@ -1537,6 +1564,7 @@ Zero Trust Architecture eliminates implicit trust within enterprise networks, re
 - Device health verification
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Improved security posture | Implementation complexity |
@@ -1591,6 +1619,7 @@ Internal Developer Platform architecture focuses on providing self-service capab
 - Golden paths for common workflows
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Improved developer productivity | Initial platform development investment |
@@ -1640,6 +1669,7 @@ Composable Architecture treats business capabilities as modular, interchangeable
 - Business-oriented capability definition
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Rapid reconfiguration for business needs | Complex capability definition |
@@ -1690,6 +1720,7 @@ Platformless represents a radical simplification that abstracts away platform co
 - Self-service capability creation
 
 **Advantages & Challenges:**
+
 | Advantages | Challenges |
 |------------|------------|
 | Maximized developer productivity | Potential customization limitations |
