@@ -69,7 +69,7 @@ gantt
 
 ---
 
-## Architectural Evolution: Key Transistions
+## Architectural Evolution: Key Transitions
 
 ```mermaid
 flowchart LR
