@@ -39,7 +39,27 @@ auto_title: false
   color: white !important;
 }
 
+/* Knowledge Area section flex layout */
+.knowledge-areas-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.knowledge-area-column {
+  flex: 1 1 calc(25% - 15px);
+  min-width: 240px;
+}
+
 /* Additional responsive styles */
+@media (max-width: 992px) {
+  .knowledge-area-column {
+    flex: 1 1 calc(50% - 15px);
+  }
+}
+
 @media (max-width: 768px) {
   .cert-header {
     padding: 12px !important;
@@ -68,17 +88,127 @@ auto_title: false
   }
 }
 
+@media (max-width: 576px) {
+  .knowledge-area-column {
+    flex: 1 1 100%;
+  }
+  
+  .section-header {
+    font-size: 15px !important;
+  }
+}
+
 @media (max-width: 480px) {
   h1 {
     font-size: 24px !important;
   }
+  
+  h2 {
+    font-size: 20px !important;
+  }
+  
   .section-header {
-    font-size: 15px !important;
+    padding: 10px !important;
   }
   
   [class*="fa-"] {
     font-size: 12px !important;
   }
+  
+  .cert-header h3 {
+    font-size: 15px !important;
+  }
+}
+
+/* Button and card hover effects */
+.explore-button {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: #2054a6;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.explore-button:hover {
+  background-color: #163a75;
+  transform: translateY(-2px);
+}
+
+.knowledge-card {
+  padding: 12px;
+  background-color: #f6f8fa;
+  border-radius: 5px;
+  border: 1px solid #e1e4e8;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.knowledge-card:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+}
+
+/* Link styling in knowledge area sections */
+.topic-link {
+  padding: 10px;
+  background-color: white;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #0366d6;
+  text-align: center;
+  border: 1px solid #e1e4e8;
+  font-size: 13px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.topic-link:hover {
+  background-color: #f1f8ff;
+  transform: translateY(-2px);
+  border-color: #0366d6;
+}
+
+/* Reference architecture link styling */
+.reference-link {
+  padding: 8px;
+  background-color: white;
+  border-left: 3px solid #0366d6;
+  text-decoration: none;
+  color: #0366d6;
+  border-radius: 0 3px 3px 0;
+  border-top: 1px solid #e1e4e8;
+  border-right: 1px solid #e1e4e8;
+  border-bottom: 1px solid #e1e4e8;
+  font-size: 13px;
+  transition: background-color 0.2s, border-left-width 0.2s;
+}
+
+.reference-link:hover {
+  background-color: #f1f8ff;
+  border-left-width: 5px;
+}
+
+/* Certification card styling */
+.certification-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #0366d6;
+  border: 1px solid #e1e4e8;
+  transition: all 0.2s ease;
+  min-height: 42px;
+}
+
+.certification-card:hover {
+  background-color: #f1f8ff;
+  border-color: #0366d6;
+  transform: translateY(-2px);
 }
 </style>
 
@@ -140,10 +270,10 @@ auto_title: false
 </div>
 
 <!-- Main knowledge areas container with all four sections in one row -->
-<div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 40px;">
+<div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 40px; justify-content: space-between;">
   
   <!-- Data & AI Column -->
-  <div style="flex: 1; min-width: 270px;">
+  <div style="flex: 1 1 calc(25% - 15px); min-width: 240px;">
     <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
       <h3 class="section-header">
         <i class="fa fa-database" style="margin-right: 10px;"></i>Data & AI
@@ -159,7 +289,7 @@ auto_title: false
   </div>
   
   <!-- Generative AI Column -->
-  <div style="flex: 1; min-width: 270px;">
+  <div style="flex: 1 1 calc(25% - 15px); min-width: 240px;">
     <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
       <h3 class="section-header">
         <i class="fa fa-robot" style="margin-right: 10px;"></i>Generative AI
@@ -175,7 +305,7 @@ auto_title: false
   </div>
   
   <!-- Industrial IoT Column -->
-  <div style="flex: 1; min-width: 270px;">
+  <div style="flex: 1 1 calc(25% - 15px); min-width: 240px;">
     <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
       <h3 class="section-header">
         <i class="fa fa-industry" style="margin-right: 10px;"></i>Industrial IoT
@@ -189,7 +319,7 @@ auto_title: false
   </div>
   
   <!-- Ops Mastery Column -->
-  <div style="flex: 1; min-width: 270px;">
+  <div style="flex: 1 1 calc(25% - 15px); min-width: 240px;">
     <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
       <h3 class="section-header">
         <i class="fa fa-wrench" style="margin-right: 10px;"></i>Ops Mastery
@@ -206,7 +336,6 @@ auto_title: false
     </div>
   </div>
 </div>
-
 
 <h2 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Reference Architectures</h2>
 
