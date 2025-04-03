@@ -39,27 +39,50 @@ auto_title: false
   color: white !important;
 }
 
-/* Knowledge Area section flex layout */
-.knowledge-areas-container {
+/* Knowledge area grid layout - mobile-first approach */
+.knowledge-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+/* Apply consistent styling to each knowledge area card */
+.knowledge-area {
+  background-color: #f6f8fa;
+  border-radius: 5px;
+  border: 1px solid #e1e4e8;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+  overflow: hidden;
+}
+
+/* Original row layout for System Design & Platform Engineering */
+.system-platform-row {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
   margin-bottom: 40px;
-  justify-content: space-between;
 }
 
-.knowledge-area-column {
-  flex: 1 1 calc(25% - 15px);
-  min-width: 240px;
+.system-platform-column {
+  flex: 1;
+  min-width: 300px;
 }
 
-/* Additional responsive styles */
-@media (max-width: 992px) {
-  .knowledge-area-column {
-    flex: 1 1 calc(50% - 15px);
+/* Main grid breakpoints for knowledge areas */
+@media (min-width: 576px) {
+  .knowledge-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
+@media (min-width: 992px) {
+  .knowledge-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Additional responsive styles */
 @media (max-width: 768px) {
   .cert-header {
     padding: 12px !important;
@@ -88,71 +111,70 @@ auto_title: false
   }
 }
 
-@media (max-width: 576px) {
-  .knowledge-area-column {
-    flex: 1 1 100%;
-  }
-  
-  .section-header {
-    font-size: 15px !important;
-  }
-}
-
 @media (max-width: 480px) {
   h1 {
     font-size: 24px !important;
   }
   
-  h2 {
-    font-size: 20px !important;
-  }
-  
   .section-header {
-    padding: 10px !important;
+    font-size: 15px !important;
   }
   
   [class*="fa-"] {
     font-size: 12px !important;
   }
-  
-  .cert-header h3 {
-    font-size: 15px !important;
+}
+
+/* Reference architecture grid */
+.reference-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .reference-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Button and card hover effects */
-.explore-button {
-  display: inline-block;
-  padding: 6px 14px;
-  background-color: #2054a6;
-  color: white;
-  text-decoration: none;
-  border-radius: 3px;
-  font-size: 14px;
-  font-weight: 500;
-  transition: background-color 0.3s, transform 0.2s;
+@media (max-width: 480px) {
+  .reference-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-.explore-button:hover {
-  background-color: #163a75;
-  transform: translateY(-2px);
+/* Frameworks & Platforms layout */
+.frameworks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 40px;
 }
 
-.knowledge-card {
-  padding: 12px;
-  background-color: #f6f8fa;
-  border-radius: 5px;
-  border: 1px solid #e1e4e8;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-  transition: box-shadow 0.3s, transform 0.2s;
+@media (max-width: 992px) {
+  .frameworks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.knowledge-card:hover {
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  transform: translateY(-3px);
+@media (max-width: 576px) {
+  .frameworks-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-/* Link styling in knowledge area sections */
+/* Certifications grid */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Topic links in knowledge areas */
 .topic-link {
   padding: 10px;
   background-color: white;
@@ -171,7 +193,7 @@ auto_title: false
   border-color: #0366d6;
 }
 
-/* Reference architecture link styling */
+/* Reference architecture links */
 .reference-link {
   padding: 8px;
   background-color: white;
@@ -191,7 +213,7 @@ auto_title: false
   border-left-width: 5px;
 }
 
-/* Certification card styling */
+/* Certification cards */
 .certification-card {
   display: flex;
   align-items: center;
@@ -209,6 +231,23 @@ auto_title: false
   background-color: #f1f8ff;
   border-color: #0366d6;
   transform: translateY(-2px);
+}
+
+/* Explore buttons */
+.explore-button {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: #2054a6;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.explore-button:hover {
+  background-color: #1a4380;
 }
 </style>
 
@@ -270,11 +309,11 @@ auto_title: false
 </div>
 
 <!-- Main knowledge areas container with all four sections in one row -->
-<div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 40px; justify-content: space-between;">
+<div class="knowledge-grid">
   
   <!-- Data & AI Column -->
-  <div style="flex: 1 1 calc(25% - 15px); min-width: 240px;">
-    <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
+  <div class="knowledge-area">
+    <div style="padding: 12px;">
       <h3 class="section-header">
         <i class="fa fa-database" style="margin-right: 10px;"></i>Data & AI
       </h3>
@@ -289,8 +328,8 @@ auto_title: false
   </div>
   
   <!-- Generative AI Column -->
-  <div style="flex: 1 1 calc(25% - 15px); min-width: 240px;">
-    <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
+  <div class="knowledge-area">
+    <div style="padding: 12px;">
       <h3 class="section-header">
         <i class="fa fa-robot" style="margin-right: 10px;"></i>Generative AI
       </h3>
@@ -305,8 +344,8 @@ auto_title: false
   </div>
   
   <!-- Industrial IoT Column -->
-  <div style="flex: 1 1 calc(25% - 15px); min-width: 240px;">
-    <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
+  <div class="knowledge-area">
+    <div style="padding: 12px;">
       <h3 class="section-header">
         <i class="fa fa-industry" style="margin-right: 10px;"></i>Industrial IoT
       </h3>
@@ -319,8 +358,8 @@ auto_title: false
   </div>
   
   <!-- Ops Mastery Column -->
-  <div style="flex: 1 1 calc(25% - 15px); min-width: 240px;">
-    <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
+  <div class="knowledge-area">
+    <div style="padding: 12px;">
       <h3 class="section-header">
         <i class="fa fa-wrench" style="margin-right: 10px;"></i>Ops Mastery
       </h3>
