@@ -119,7 +119,7 @@ Comprehensive security is critical for protecting exposed business capabilities:
 - Threat protection
 - Payload analysis and validation
 
-### #Analytics and Business Intelligence
+#### Analytics and Business Intelligence
 
 Analytics capabilities provide valuable insights into API usage and business impact:
 
