@@ -80,6 +80,32 @@ auto_title: false
   min-width: 300px;
 }
 
+/* Framework sections grid layout */
+.frameworks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 40px;
+  align-items: start;
+}
+
+.framework-card {
+  background-color: #f6f8fa;
+  border-radius: 5px;
+  border: 1px solid #e1e4e8;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+  overflow: hidden;
+  height: fit-content;
+}
+
+.framework-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 15px;
+}
+
 /* Main grid breakpoints for knowledge areas */
 @media (min-width: 576px) {
   .knowledge-grid {
@@ -161,11 +187,19 @@ auto_title: false
   .knowledge-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .frameworks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 576px) {
   .knowledge-grid {
     grid-template-columns: 1fr;
+  }
+
+  .frameworks-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -390,7 +424,7 @@ auto_title: false
       </h3>
       
       <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-top: 15px; margin-bottom: 10px;">
-        <a href="https://kranthib.github.io/tech-pulse/reference-architectures/evolution-of-enterprise-reference-architectures.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-history" style="margin-right: 8px;"></i>Evolution of Enterprise Reference Architectures</a>
+        <a href="https://kranthib.github.io/tech-pulse/reference-architectures/evolution-of-enterprise-reference-architectures.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-history" style="margin-right: 8px;"></i>Enterprise Architectures Evolution</a>
         <a href="https://kranthib.github.io/tech-pulse/reference-architectures/cloud-native-digital-experience.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-cloud" style="margin-right: 8px;"></i>Cloud Native Digital Experience</a>
         <a href="https://kranthib.github.io/tech-pulse/reference-architectures/cell-based-reference-architecture.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-th" style="margin-right: 8px;"></i>Cell-Based Architecture</a>
       </div>
@@ -406,46 +440,40 @@ auto_title: false
 
 <h2 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Frameworks & Platforms</h2>
 
-<!-- Frameworks & Platforms section with multi-column layout -->
-<div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 40px;">
-  <!-- Column 1 -->
-  <div style="flex: 1; min-width: 300px;">
-    <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
-      <h3 class="section-header">
-        <i class="fa fa-th-large" style="margin-right: 10px;"></i>Security & Integration
-      </h3>
-      <div style="display: flex; flex-direction: column; gap: 8px;">
-        <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/enterprise-application-security-framework.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-lock" style="margin-right: 8px;"></i>Enterprise Application Security Framework</a>
-        <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/enterprise-api-integration-and-management-platform.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-exchange-alt" style="margin-right: 8px;"></i>Enterprise API Integration and Management Platform</a>
-      </div>
+<!-- Frameworks & Platforms section with consistent grid layout -->
+<div class="frameworks-grid">
+  <!-- Security & Integration -->
+  <div class="framework-card">
+    <h3 class="section-header">
+      <i class="fa fa-th-large" style="margin-right: 10px;"></i>Security & Integration
+    </h3>
+    <div class="framework-links">
+      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/enterprise-application-security-framework.html" class="reference-link"><i class="fa fa-lock" style="margin-right: 8px;"></i>Enterprise Application Security Framework</a>
+      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/enterprise-api-integration-and-management-platform.html" class="reference-link"><i class="fa fa-exchange-alt" style="margin-right: 8px;"></i>Enterprise API Integration and Management Platform</a>
     </div>
   </div>
   
-  <!-- Column 2 -->
-  <div style="flex: 1; min-width: 300px;">
-    <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
-      <h3 class="section-header">
-        <i class="fa fa-th-large" style="margin-right: 10px;"></i>Optimization & Performance
-      </h3>
-      <div style="display: flex; flex-direction: column; gap: 8px;">
-        <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/cloud-cost-optimization-framework.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-cloud" style="margin-right: 8px;"></i>Cloud Cost Optimization Framework</a>
-        <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/ai-code-assistant-performance-scorecard.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-chart-line" style="margin-right: 8px;"></i>AI Code Assistant Performance Scorecard</a>
-        <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/enterprise-test-automation-platform.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-vial" style="margin-right: 8px;"></i>Enterprise Test Automation Platform</a>
-      </div>
+  <!-- Optimization & Performance -->
+  <div class="framework-card">
+    <h3 class="section-header">
+      <i class="fa fa-th-large" style="margin-right: 10px;"></i>Optimization & Performance
+    </h3>
+    <div class="framework-links">
+      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/cloud-cost-optimization-framework.html" class="reference-link"><i class="fa fa-cloud" style="margin-right: 8px;"></i>Cloud Cost Optimization Framework</a>
+      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/ai-code-assistant-performance-scorecard.html" class="reference-link"><i class="fa fa-chart-line" style="margin-right: 8px;"></i>AI Code Assistant Performance Scorecard</a>
+      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/enterprise-test-automation-platform.html" class="reference-link"><i class="fa fa-vial" style="margin-right: 8px;"></i>Enterprise Test Automation Platform</a>
     </div>
   </div>
   
-  <!-- Column 3 (New) -->
-  <div style="flex: 1; min-width: 300px;">
-    <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
-      <h3 class="section-header">
-        <i class="fa fa-robot" style="margin-right: 10px;"></i>Agentic AI Solutions
-      </h3>
-      <div style="display: flex; flex-direction: column; gap: 8px;">
-        <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/sales-meeting-preparation-agent.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-briefcase" style="margin-right: 8px;"></i>Sales Meeting Preparation Agent</a>
-        <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/wall-paint-visualizer-agent.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-briefcase" style="margin-right: 8px;"></i>Wall Paint Visualizer Agent</a>
-        <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/ai-powered-code-modernization.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-briefcase" style="margin-right: 8px;"></i>AI-Powered Code Modernization</a>
-      </div>
+  <!-- Agentic AI Solutions -->
+  <div class="framework-card">
+    <h3 class="section-header">
+      <i class="fa fa-robot" style="margin-right: 10px;"></i>Agentic AI Solutions
+    </h3>
+    <div class="framework-links">
+      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/sales-meeting-preparation-agent.html" class="reference-link"><i class="fa fa-briefcase" style="margin-right: 8px;"></i>Sales Meeting Preparation Agent</a>
+      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/wall-paint-visualizer-agent.html" class="reference-link"><i class="fa fa-briefcase" style="margin-right: 8px;"></i>Wall Paint Visualizer Agent</a>
+      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/ai-powered-code-modernization.html" class="reference-link"><i class="fa fa-briefcase" style="margin-right: 8px;"></i>AI-Powered Code Modernization</a>
     </div>
   </div>
 </div>
