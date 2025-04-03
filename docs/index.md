@@ -42,9 +42,10 @@ auto_title: false
 /* Knowledge area grid layout - mobile-first approach */
 .knowledge-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 15px;
   margin-bottom: 40px;
+  align-items: start; /* This prevents stretching to equal heights */
 }
 
 /* Apply consistent styling to each knowledge area card */
@@ -54,6 +55,16 @@ auto_title: false
   border: 1px solid #e1e4e8;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16);
   overflow: hidden;
+  height: fit-content; /* This ensures the height adapts to content */
+}
+
+/* Ensure links container doesn't create extra space */
+.topic-links-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 0; /* Remove any bottom margin */
 }
 
 /* Original row layout for System Design & Platform Engineering */
@@ -146,22 +157,14 @@ auto_title: false
   }
 }
 
-/* Frameworks & Platforms layout */
-.frameworks-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  margin-bottom: 40px;
-}
-
 @media (max-width: 992px) {
-  .frameworks-grid {
+  .knowledge-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 576px) {
-  .frameworks-grid {
+  .knowledge-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -317,7 +320,7 @@ auto_title: false
       <h3 class="section-header">
         <i class="fa fa-database" style="margin-right: 10px;"></i>Data & AI
       </h3>
-      <div style="display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 15px;">
+      <div class="topic-links-container">
         <a href="https://kranthib.github.io/tech-pulse/data-ai/data-foundations.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-cubes" style="margin-right: 5px;"></i>Data Foundations</a>
         <a href="https://kranthib.github.io/tech-pulse/data-ai/data-engineering.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-cogs" style="margin-right: 5px;"></i>Data Engineering</a>
         <a href="https://kranthib.github.io/tech-pulse/data-ai/data-analysis.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-chart-bar" style="margin-right: 5px;"></i>Data Analysis</a>
@@ -333,7 +336,7 @@ auto_title: false
       <h3 class="section-header">
         <i class="fa fa-robot" style="margin-right: 10px;"></i>Generative AI
       </h3>
-      <div style="display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 15px;">
+      <div class="topic-links-container">
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/prompt-engineering.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-keyboard" style="margin-right: 5px;"></i>Prompt Engineering</a>
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/llm-tier.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-layer-group" style="margin-right: 5px;"></i>LLM Tiers</a>
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/rag.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-search" style="margin-right: 5px;"></i>RAG</a>
@@ -349,7 +352,7 @@ auto_title: false
       <h3 class="section-header">
         <i class="fa fa-industry" style="margin-right: 10px;"></i>Industrial IoT
       </h3>
-      <div style="display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 15px;">
+      <div class="topic-links-container">
         <a href="https://kranthib.github.io/tech-pulse/industrial-iot/industrial-iot.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-industry" style="margin-right: 5px;"></i>Smart Manufacturing</a>
         <a href="https://kranthib.github.io/tech-pulse/industrial-iot/edge-gateway.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-network-wired" style="margin-right: 5px;"></i>Edge Gateway</a>
         <a href="https://kranthib.github.io/tech-pulse/industrial-iot/industry-5.0.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-rocket" style="margin-right: 5px;"></i>Industry 5.0</a>
@@ -363,7 +366,7 @@ auto_title: false
       <h3 class="section-header">
         <i class="fa fa-wrench" style="margin-right: 10px;"></i>Ops Mastery
       </h3>
-      <div style="display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 15px;">
+      <div class="topic-links-container">
         <a href="https://kranthib.github.io/tech-pulse/ops-mastery/dev-sec-ops.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-shield-alt" style="margin-right: 5px;"></i>DevSecOps</a>
         <a href="https://kranthib.github.io/tech-pulse/ops-mastery/git-ops.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-code-branch" style="margin-right: 5px;"></i>GitOps</a>
         <a href="https://kranthib.github.io/tech-pulse/ops-mastery/fin-ops.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-money-bill" style="margin-right: 5px;"></i>FinOps</a>
