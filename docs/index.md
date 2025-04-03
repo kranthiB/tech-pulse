@@ -218,15 +218,16 @@ auto_title: false
         <i class="fa fa-building" style="margin-right: 10px;"></i>Reference Architecture
       </h3>
       
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 15px; margin-bottom: 10px;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-top: 15px; margin-bottom: 10px;">
         <a href="https://kranthib.github.io/tech-pulse/reference-architectures/evolution-of-enterprise-reference-architectures.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-history" style="margin-right: 8px;"></i>Evolution of Enterprise Reference Architectures</a>
         <a href="https://kranthib.github.io/tech-pulse/reference-architectures/cloud-native-digital-experience.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-cloud" style="margin-right: 8px;"></i>Cloud Native Digital Experience</a>
         <a href="https://kranthib.github.io/tech-pulse/reference-architectures/cell-based-reference-architecture.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-th" style="margin-right: 8px;"></i>Cell-Based Architecture</a>
       </div>
       
-      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px;">
         <a href="https://kranthib.github.io/tech-pulse/reference-architectures/internal-developer-platform.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-tools" style="margin-right: 8px;"></i>Internal Developer Platform</a>
         <a href="https://kranthib.github.io/tech-pulse/reference-architectures/platformless-architecture" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-feather" style="margin-right: 8px;"></i>Platformless Architecture</a>
+        <div></div>
       </div>
     </div>
   </div>
