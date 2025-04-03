@@ -13,6 +13,30 @@ auto_title: false
   margin: -12px -12px 12px -12px !important;
   border-radius: 5px 5px 0 0 !important;
   border-bottom: 1px solid #e1e4e8 !important;
+  line-height: 1.2 !important; /* Control line height */
+  display: flex !important;
+  align-items: center !important;
+}
+
+
+/* Ensure icon alignment is consistent */
+.section-header i {
+  margin-right: 10px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Remove any text indentation */
+.section-header-text {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-indent: 0 !important;
+}
+
+/* For framework cards specifically */
+.framework-card .section-header {
+  padding: 12px !important;
+  margin: 0 !important; /* No negative margins in this context */
+  border-radius: 0 !important; /* No rounded corners at top of framework cards */
 }
 
 .section-header * {
@@ -445,7 +469,8 @@ auto_title: false
   <!-- Security & Integration -->
   <div class="framework-card">
     <h3 class="section-header">
-      <i class="fa fa-th-large" style="margin-right: 10px;"></i>Security & Integration
+      <i class="fa fa-th-large" style="margin-right: 10px;"></i>
+      <span class="section-header-text">Security & Integration</span>
     </h3>
     <div class="framework-links">
       <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/enterprise-application-security-framework.html" class="reference-link"><i class="fa fa-lock" style="margin-right: 8px;"></i>Enterprise Application Security Framework</a>
@@ -456,7 +481,8 @@ auto_title: false
   <!-- Optimization & Performance -->
   <div class="framework-card">
     <h3 class="section-header">
-      <i class="fa fa-th-large" style="margin-right: 10px;"></i>Optimization & Performance
+      <i class="fa fa-th-large" style="margin-right: 10px;"></i>
+      <span class="section-header-text">Optimization & Performance</span>
     </h3>
     <div class="framework-links">
       <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/cloud-cost-optimization-framework.html" class="reference-link"><i class="fa fa-cloud" style="margin-right: 8px;"></i>Cloud Cost Optimization Framework</a>
@@ -468,7 +494,8 @@ auto_title: false
   <!-- Agentic AI Solutions -->
   <div class="framework-card">
     <h3 class="section-header">
-      <i class="fa fa-robot" style="margin-right: 10px;"></i>Agentic AI Solutions
+      <i class="fa fa-robot" style="margin-right: 10px;"></i>
+      <span class="section-header-text">Agentic AI Solutions</span>
     </h3>
     <div class="framework-links">
       <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/sales-meeting-preparation-agent.html" class="reference-link"><i class="fa fa-briefcase" style="margin-right: 8px;"></i>Sales Meeting Preparation Agent</a>
