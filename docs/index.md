@@ -543,8 +543,8 @@ auto_title: false
   <!-- Databricks -->
   <div style="background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16); overflow: hidden; height: fit-content;">
     <div style="background-color: #2054a6; color: white; padding: 15px; display: flex; align-items: center;">
-      <i class="fa fa-database" style="margin-right: 10px; font-size: 18px;"></i>
-      <h3 style="margin: 0; font-size: 18px;">Databricks</h3>
+      <i class="fa fa-database" style="margin-right: 10px; font-size: 18px; color: white;"></i>
+      <h3 style="margin: 0; font-size: 18px; color: white;">Databricks</h3>
     </div>
     
     <div style="padding: 15px; display: flex; flex-direction: column; gap: 12px;">
@@ -583,8 +583,8 @@ auto_title: false
   <!-- Google Cloud -->
   <div style="background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16); overflow: hidden; height: fit-content;">
     <div style="background-color: #2054a6; color: white; padding: 15px; display: flex; align-items: center;">
-      <i class="fa fa-cloud" style="margin-right: 10px; font-size: 18px;"></i>
-      <h3 style="margin: 0; font-size: 18px;">Google Cloud</h3>
+      <i class="fa fa-cloud" style="margin-right: 10px; font-size: 18px; color: white;"></i>
+      <h3 style="margin: 0; font-size: 18px; color: white;">Google Cloud</h3>
     </div>
     
     <div style="padding: 15px;">
@@ -598,8 +598,8 @@ auto_title: false
   <!-- Kubernetes -->
   <div style="background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16); overflow: hidden; height: fit-content;">
     <div style="background-color: #2054a6; color: white; padding: 15px; display: flex; align-items: center;">
-      <i class="fa fa-dharmachakra" style="margin-right: 10px; font-size: 18px;"></i>
-      <h3 style="margin: 0; font-size: 18px;">Kubernetes</h3>
+      <i class="fa fa-dharmachakra" style="margin-right: 10px; font-size: 18px; color: white;"></i>
+      <h3 style="margin: 0; font-size: 18px; color: white;">Kubernetes</h3>
     </div>
     
     <div style="padding: 15px;">
