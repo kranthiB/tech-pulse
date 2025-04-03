@@ -537,17 +537,18 @@ auto_title: false
 
 <h2 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Certifications</h2>
 
-<!-- Certifications section with grid layout for three columns in one row -->
+<!-- Certifications section with improved grid layout -->
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 40px;">
   
   <!-- Databricks -->
-  <div style="background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16); overflow: hidden; height: fit-content;">
-    <div style="background-color: #2054a6; color: white; padding: 15px; display: flex; align-items: center;">
-      <i class="fa fa-database" style="margin-right: 10px; font-size: 18px; color: white;"></i>
-      <h3 style="margin: 0; font-size: 18px; color: white;">Databricks</h3>
+  <div style="background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16); overflow: hidden;">
+    <div class="cert-header" style="display: flex; align-items: center;">
+      <i class="fa fa-database" style="margin-right: 10px; font-size: 18px;"></i>
+      <h3 style="margin: 0; font-size: 18px;">Databricks</h3>
     </div>
     
     <div style="padding: 15px; display: flex; flex-direction: column; gap: 12px;">
+      <!-- Databricks certification links -->
       <a href="https://kranthib.github.io/tech-pulse/certifications/databricks/data-analyst-associate.html" style="display: flex; align-items: center; padding: 10px; background-color: white; border-radius: 4px; text-decoration: none; color: #0366d6; border: 1px solid #e1e4e8; transition: all 0.2s ease; min-height: 42px;">
         <i class="fa fa-chart-pie" style="margin-right: 8px; color: #ff3621; font-size: 16px; flex-shrink: 0;"></i>
         <span style="font-weight: 500; font-size: 14px;">Data Analyst Associate</span>
@@ -581,10 +582,10 @@ auto_title: false
   </div>
   
   <!-- Google Cloud -->
-  <div style="background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16); overflow: hidden; height: fit-content;">
-    <div style="background-color: #2054a6; color: white; padding: 15px; display: flex; align-items: center;">
-      <i class="fa fa-cloud" style="margin-right: 10px; font-size: 18px; color: white;"></i>
-      <h3 style="margin: 0; font-size: 18px; color: white;">Google Cloud</h3>
+  <div style="background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16); overflow: hidden;">
+    <div class="cert-header" style="display: flex; align-items: center;">
+      <i class="fa fa-cloud" style="margin-right: 10px; font-size: 18px;"></i>
+      <h3 style="margin: 0; font-size: 18px;">Google Cloud</h3>
     </div>
     
     <div style="padding: 15px;">
@@ -596,10 +597,10 @@ auto_title: false
   </div>
 
   <!-- Kubernetes -->
-  <div style="background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16); overflow: hidden; height: fit-content;">
-    <div style="background-color: #2054a6; color: white; padding: 15px; display: flex; align-items: center;">
-      <i class="fa fa-dharmachakra" style="margin-right: 10px; font-size: 18px; color: white;"></i>
-      <h3 style="margin: 0; font-size: 18px; color: white;">Kubernetes</h3>
+  <div style="background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16); overflow: hidden;">
+    <div class="cert-header" style="display: flex; align-items: center;">
+      <i class="fa fa-dharmachakra" style="margin-right: 10px; font-size: 18px;"></i>
+      <h3 style="margin: 0; font-size: 18px;">Kubernetes</h3>
     </div>
     
     <div style="padding: 15px;">
