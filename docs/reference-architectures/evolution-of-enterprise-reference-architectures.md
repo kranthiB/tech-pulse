@@ -1,5 +1,5 @@
 ---
-id: reference-architectures/evolution-of-enterprise-reference-architectures.md
+id: reference-architectures/evolution-of-enterprise-reference-architectures
 title: Evolution of Enterprise Reference Architectures
 sidebar_label: Evolution of Enterprise Reference Architectures
 ---

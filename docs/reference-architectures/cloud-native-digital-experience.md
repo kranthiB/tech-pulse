@@ -1,5 +1,5 @@
 ---
-id: reference-architectures/cloud-native-digital-experience-reference-architecture.md
+id: reference-architectures/cloud-native-digital-experience-reference-architecture
 title: Cloud Native Digital Enterprise Reference Architecture
 sidebar_label: Cloud Native Digital Enterprise Reference Architecture
 ---
