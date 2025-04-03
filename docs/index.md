@@ -108,7 +108,7 @@ auto_title: false
 </div>
 
 <!-- Knowledge Areas section header -->
-<h1 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Knowledge Areas</h1>
+<h2 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Knowledge Areas</h2>
 
 <!-- System Design & Platform Engineering (keep in one row) -->
 <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 40px;">
@@ -208,16 +208,16 @@ auto_title: false
 </div>
 
 
-<h1 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Reference Architectures</h1>
+<h2 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Reference Architectures</h2>
 
-<!-- Reference Architectures section with the same styling pattern -->
+<!-- Reference Architectures section -->
 <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 40px;">
   <div style="flex: 1; min-width: 300px;">
     <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
       <h3 class="section-header">
-        <i class="fa fa-building" style="margin-right: 10px;"></i>Reference Architectures
+        <i class="fa fa-building" style="margin-right: 10px;"></i>Reference Architecture
       </h3>
-      <div style="display: flex; flex-direction: column; gap: 8px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; margin-top: 15px;">
         <a href="https://kranthib.github.io/tech-pulse/reference-architectures/evolution-of-enterprise-reference-architectures.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-history" style="margin-right: 8px;"></i>Evolution of Enterprise Reference Architectures</a>
         <a href="https://kranthib.github.io/tech-pulse/reference-architectures/cloud-native-digital-experience.html" style="padding: 8px; background-color: white; border-left: 3px solid #0366d6; text-decoration: none; color: #0366d6; border-radius: 0 3px 3px 0; border-top: 1px solid #e1e4e8; border-right: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-cloud" style="margin-right: 8px;"></i>Cloud Native Digital Experience</a>
       </div>
@@ -225,7 +225,7 @@ auto_title: false
   </div>
 </div>
 
-<h1 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Frameworks & Platforms</h1>
+<h2 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Frameworks & Platforms</h2>
 
 <!-- Frameworks & Platforms section with multi-column layout -->
 <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 40px;">
@@ -271,8 +271,7 @@ auto_title: false
   </div>
 </div>
 
-<!-- UPDATED CERTIFICATIONS SECTION -->
-<h1 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Certifications</h1>
+<h2 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Certifications</h2>
 
 <!-- Certifications section with improved responsive layout -->
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px;">
