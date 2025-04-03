@@ -241,15 +241,6 @@ When evaluating or building an IDP, organizations should prioritize platforms th
 
 With the right IDP in place, organizations can dramatically improve their software delivery performance and focus on what truly matters: creating value for their customers.
 
-----
-
-
-
-
-
-
-
-
 <div style="text-align: right;">
     <a href="https://kranthib.github.io/tech-pulse/" style="display: inline-block; padding: 6px 14px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">Back to Home →</a>
 </div>
