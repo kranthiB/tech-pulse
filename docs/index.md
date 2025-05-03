@@ -528,9 +528,10 @@ auto_title: false
       <span class="section-header-text">Agentic AI Solutions</span>
     </h3>
     <div class="framework-links">
-      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/sales-meeting-preparation-agent.html" class="reference-link"><i class="fa fa-briefcase" style="margin-right: 8px;"></i>Sales Meeting Preparation Agent</a>
-      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/wall-paint-visualizer-agent.html" class="reference-link"><i class="fa fa-briefcase" style="margin-right: 8px;"></i>Wall Paint Visualizer Agent</a>
-      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/ai-powered-code-modernization.html" class="reference-link"><i class="fa fa-briefcase" style="margin-right: 8px;"></i>AI-Powered Code Modernization</a>
+      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/sales-meeting-preparation-agent.html" class="reference-link"><i class="fa fa-robot fa-wand-magic-sparkles" style="margin-right: 8px;"></i>Sales Meeting Preparation Agent</a>
+      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/wall-paint-visualizer-agent.html" class="reference-link"><i class="fa fa-robot fa-wand-magic-sparkles" style="margin-right: 8px;"></i>Wall Paint Visualizer Agent</a>
+      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/ai-powered-code-modernization.html" class="reference-link"><i class="fa fa-robot fa-wand-magic-sparkles" style="margin-right: 8px;"></i>AI-Powered Code Modernization</a>
+      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/kubernetes-ai-agent.html" class="reference-link"><i class="fa fa-robot fa-wand-magic-sparkles" style="margin-right: 8px;"></i>Kubernetes AI Agent</a>
     </div>
   </div>
 </div>
