@@ -10,6 +10,8 @@ sidebar_label: Kubernetes AI Agent
 
 # Kubernetes AI Agent: Intelligent Cluster Management Through Multi-Agent Orchestration
 
+![KAA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/gif/KubernetesAIAgent.gif)
+
 ## Revolutionizing Kubernetes Operations Through AI-Powered Assistance
 
 ```mermaid
