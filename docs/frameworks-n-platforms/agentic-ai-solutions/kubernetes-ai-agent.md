@@ -406,6 +406,80 @@ The Kubernetes AI Agent employs a modern, scalable architecture:
 
 ---
 
+### Request Flow (Sample)
+
+```mermaid
+sequenceDiagram
+    participant Client as MCP Client (LLM/AI Agent)
+    participant Server as KAA MCP Server
+    participant Validator as MCP Validator
+    participant Registry as MCP Tool Registry
+    participant Discovery as MCP Tool Discovery
+    participant Tools as MCP Server Tools
+    participant Store as MCP Message Store
+    participant External as External MCP Tool Registry
+    participant K8s as Kubernetes API
+
+    Note over Client,K8s: Initial Connection & Tool Discovery Phase
+    
+    Client->>+Server: Connect to MCP Server
+    Server->>+Discovery: Request available tools
+    Discovery->>+Registry: Get registered tool schemas
+    Registry-->>-Discovery: Return tool definitions
+    Discovery->>+External: Query external tools (optional)
+    External-->>-Discovery: Return external tool definitions
+    Discovery-->>-Server: Consolidated tool list
+    Server-->>-Client: Tool discovery response (available operations)
+    
+    Note over Client,K8s: Tool Execution Phase
+    
+    Client->>+Server: Send MCP tool execution request
+    Server->>+Store: Log incoming request
+    Store-->>-Server: Request logged
+    
+    Server->>+Validator: Validate MCP request format & permissions
+    Validator-->>-Server: Validation result
+    
+    alt Invalid Request
+        Server-->>Client: Error response
+    else Valid Request
+        Server->>+Registry: Route request to appropriate tool
+        Registry->>+Tools: Execute tool operation
+        
+        alt Local K8s Operation
+            Tools->>+K8s: Make Kubernetes API call
+            K8s-->>-Tools: K8s API response
+        else Complex Operation
+            Tools->>+External: Call external MCP tool
+            External-->>-Tools: External tool response
+        end
+        
+        Tools-->>-Registry: Operation result
+        Registry-->>-Server: Tool execution result
+        
+        Server->>+Store: Log execution & response
+        Store-->>-Server: Response logged
+        
+        Server-->>-Client: MCP formatted response
+    end
+    
+    Note over Client,K8s: Reflection & Learning Phase
+    
+    Client->>+Server: Request execution feedback
+    Server->>+Store: Retrieve execution history
+    Store-->>-Server: Historical execution data
+    Server-->>-Client: Execution feedback
+
+    opt Learning Loop
+        Client->>+Server: Send execution feedback
+        Server->>+Store: Store feedback for learning
+        Store-->>-Server: Feedback stored
+        Server->>Server: Update learning models
+        Server-->>-Client: Feedback acknowledgement
+    end
+```
+---
+
 ## Use Cases
 
 The Kubernetes AI Agent excels in diverse operational scenarios:
