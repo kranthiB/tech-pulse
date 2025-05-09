@@ -344,7 +344,7 @@ auto_title: false
 
 <div class="about-container" style="display: flex; align-items: flex-start; margin-bottom: 30px;">
   <div class="profile-container" style="flex: 0 0 250px; margin-right: 30px;">
-    <img src="https://github.com/kranthiB/tech-pulse/assets/20100300/9a736590-5588-4b5b-813c-7e25c031942e" alt="Profile Picture" style="width: 100%; border-radius: 5px;">
+    <img src="https://github.com/user-attachments/assets/f677707d-a1c8-4c02-8791-aaa1d068eff0" alt="Profile Picture" style="width: 100%; border-radius: 5px;">
     <div style="margin-top: 15px;">
       <h3>Connect</h3>
       <ul style="list-style-type: none; padding-left: 0;">
