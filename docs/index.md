@@ -399,6 +399,24 @@ auto_title: false
   </div>
 </div>
 
+<div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 40px;">
+  <!-- Digital Strategy Column -->
+  <div style="flex: 1; min-width: 300px;">
+    <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
+      <h3 class="section-header">
+        <i class="fa fa-chart-line" style="margin-right: 10px;"></i>Digital Strategy
+      </h3>
+      <p style="margin-top: 0; color: #24292e; font-size: 14px;">Strategic frameworks for digital transformation, business model innovation, and competitive advantage.</p>
+      <div class="topic-links-container" style="display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 15px; margin-bottom: 15px;">
+        <a href="https://kranthib.github.io/tech-pulse/digital-strategy/complete-guide-digital-transformation.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-compass" style="margin-right: 5px;"></i>Complete Guide to Digital Transformation</a>
+      </div>
+      <div style="text-align: right;">
+        <a href="https://kranthib.github.io/tech-pulse/digital-strategy/complete-guide-digital-transformation.html" style="display: inline-block; padding: 6px 14px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">Explore <i class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Main knowledge areas container with all four sections in one row -->
 <div class="knowledge-grid">
   
