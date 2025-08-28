@@ -640,36 +640,25 @@ flowchart TD
 Understanding how customer needs evolve is crucial for value proposition adaptation:
 
 ```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'primaryColor':'#1f2937', 'primaryTextColor':'#ffffff', 'primaryBorderColor':'#374151', 'lineColor':'#6b7280', 'cScale0':'#fee2e2', 'cScale1':'#fef3c7', 'cScale2':'#d1fae5', 'cScale3':'#dbeafe'}}}%%
-timeline
-    title 🎵 Value Proposition Evolution: Music Industry
+%%{init: {'theme':'base', 'themeVariables': {'primaryColor':'#0891b2', 'primaryTextColor':'#ffffff', 'primaryBorderColor':'#0ea5e9', 'lineColor':'#38bdf8', 'secondaryColor':'#f0f9ff', 'tertiaryColor':'#e0f2fe'}}}%%
+flowchart LR
+    A[1999<br/>Traditional CDs] --> B[2003<br/>Napster Era]
+    B --> C[2010<br/>iTunes/iPod]
+    C --> D[2020<br/>Streaming Services]
     
-    1999 : 💿 Traditional CDs
-         : 🏪 Physical retail stores
-         : 📦 Limited selection per store
-         : 💰 $15-20 per album
-         : 🚗 Drive to store experience
+    A --> A1[💿 Physical retail stores<br/>📦 Limited selection<br/>💰 $15-20 per album<br/>🚗 Drive to store]
     
-    2003 : 🌐 Napster Era
-         : ⚡ Instant digital access
-         : 🌍 Unlimited global catalog
-         : 🆓 Free peer-to-peer sharing
-         : 🎵 Choose individual songs
-         : 📱 Computer-based listening
+    B --> B1[🌐 Instant digital access<br/>🌍 Unlimited catalog<br/>🆓 Free peer-to-peer<br/>🎵 Individual songs]
     
-    2010 : 📱 iTunes/iPod Revolution
-         : 🎧 Portable music device
-         : ⚖️ Legal digital downloads
-         : 💲 $0.99 per song model
-         : ⭐ Premium user experience
-         : 🔄 Sync across devices
+    C --> C1[📱 Portable device<br/>⚖️ Legal downloads<br/>💲 $0.99 per song<br/>⭐ Premium experience]
     
-    2020 : 🎶 Streaming Services Era
-         : 🔄 Unlimited access subscription
-         : 🤖 AI-powered recommendations
-         : 📱 Multi-device synchronization
-         : 🎯 Personalized discovery
-         : 👥 Social sharing features
+    D --> D1[🔄 Unlimited subscription<br/>🤖 AI recommendations<br/>📱 Multi-device sync<br/>🎯 Personalized discovery]
+    
+    classDef era fill:#0891b2,stroke:#0369a1,stroke-width:3px,color:#ffffff,font-weight:bold
+    classDef details fill:#e0f2fe,stroke:#0ea5e9,stroke-width:2px,color:#0c4a6e
+    
+    class A,B,C,D era
+    class A1,B1,C1,D1 details
 ```
 
 ### Three Routes Out of a Shrinking Market
@@ -898,29 +887,36 @@ Understanding these barriers is crucial for successful transformation:
 ### Implementation Framework
 
 ```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'primaryColor':'#065f46', 'primaryTextColor':'#ffffff', 'primaryBorderColor':'#10b981', 'lineColor':'#34d399'}}}%%
-gantt
-    title 🚀 Digital Transformation Implementation Timeline
-    dateFormat  YYYY-MM-DD
+%%{init: {'theme':'base', 'themeVariables': {'primaryColor':'#065f46', 'primaryTextColor':'#ffffff', 'primaryBorderColor':'#10b981', 'lineColor':'#34d399', 'secondaryColor':'#f0fdf4', 'tertiaryColor':'#dcfce7'}}}%%
+flowchart TD
+    A[🚀 Digital Transformation Implementation] --> B[📊 Phase 1: Assessment<br/>Days 1-65]
+    A --> C[📋 Phase 2: Strategy Development<br/>Days 30-115] 
+    A --> D[🛠️ Phase 3: Implementation<br/>Days 75-270]
+    A --> E[📈 Phase 4: Optimization<br/>Days 165-730]
     
-    section 📊 Assessment Phase
-    🔍 Five Domains Audit           :a1, 2024-01-01, 30d
-    ⚔️ Competitive Analysis         :a2, after a1, 15d
-    📈 Data Strategy Review         :a3, after a1, 20d
+    B --> B1[🔍 Five Domains Audit<br/>30 days]
+    B --> B2[⚔️ Competitive Analysis<br/>15 days]
+    B --> B3[📈 Data Strategy Review<br/>20 days]
     
-    section 📋 Strategy Development
-    👥 Customer Network Strategy    :s1, after a2, 45d
-    🏢 Platform Opportunities       :s2, after a3, 30d
-    💎 Value Proposition Evolution  :s3, after s1, 40d
+    C --> C1[👥 Customer Network Strategy<br/>45 days]
+    C --> C2[🏢 Platform Opportunities<br/>30 days]
+    C --> C3[💎 Value Proposition Evolution<br/>40 days]
     
-    section 🛠️ Implementation
-    🧪 Experimentation Framework    :i1, after s2, 60d
-    📊 Data Initiative Launch       :i2, after s3, 90d
-    🚀 Platform Development         :i3, after i1, 120d
+    D --> D1[🧪 Experimentation Framework<br/>60 days]
+    D --> D2[📊 Data Initiative Launch<br/>90 days]
+    D --> D3[🚀 Platform Development<br/>120 days]
     
-    section 📈 Optimization
-    🔄 Continuous Improvement       :o1, after i2, 365d
-    📊 Scale and Expand            :o2, after i3, 180d
+    E --> E1[🔄 Continuous Improvement<br/>365 days]
+    E --> E2[📊 Scale and Expand<br/>180 days]
+    
+    classDef phase fill:#065f46,stroke:#047857,stroke-width:3px,color:#ffffff,font-weight:bold
+    classDef activity fill:#dcfce7,stroke:#34d399,stroke-width:2px,color:#166534
+    classDef longTerm fill:#fef3c7,stroke:#facc15,stroke-width:2px,color:#a16207
+    
+    class A phase
+    class B,C,D,E phase
+    class B1,B2,B3,C1,C2,C3,D1,D2,D3 activity
+    class E1,E2 longTerm
 ```
 
 ### Organizational Readiness Assessment
