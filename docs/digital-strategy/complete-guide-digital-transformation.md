@@ -23,6 +23,7 @@ sidebar_label: Digital Strategies for Business Transformation
 9. [Mastering Disruptive Business Models](#mastering-disruptive-business-models)
 10. [Key Takeaways and Implementation Roadmap](#key-takeaways-and-implementation-roadmap)
 11. [References](#references)
+12. [Assignments](#assignments)
 ---
 
 ## Introduction
@@ -1210,28 +1211,43 @@ Success requires moving beyond traditional assumptions about strategy and embrac
 
 ## References
 
-![TDTP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/books/TheDigitalTransformationPlaybook.pdf)
+[The Digital Transformation Playbook - Rethink your business for the digital age](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/books/TheDigitalTransformationPlaybook.pdf)
 
-![M1QRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M1QRG.pdf)
+[Five Domains of Digital Transformation - Quick Reference Guide](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M1QRG.pdf)
 
-![M2QRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M2QRG.pdf)
+[Domain 1: Customers - Quick Reference Guide](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M2QRG.pdf)
 
-![M3QRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M3QRG.pdf)
+[Platform Business Models - Quick Reference Guide](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M3QRG.pdf)
 
-![M4QRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M4QRG.pdf)
+[Domain 2: Competition - Quick Reference Guide](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M4QRG.pdf)
 
-![M5QRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M5QRG.pdf)
+[Domain 3: Data - Quick Reference Guide](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M5QRG.pdf)
 
-![M6QRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M5QRG.pdf)
+[Domain 4: Innovation - Quick Reference Guide](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M6QRG.pdf)
 
-![M7QRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M5QRG.pdf)
+[Domain 5: Value - Quick Reference Guide](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M7QRG.pdf)
 
-![M8QRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M5QRG.pdf)
+[Disruptive Business Models - Quick Reference Guide](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M8QRG.pdf)
 
 ---
 
 ## Assignments
 
+[Assignment - Five Domains of Digital Transformation](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/assignments/M1-ApplyingtheFiveDomainsofDigitalTransformation.pdf)
+
+[Assignment - Domain 1: Customers](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/assignments/M2-ApplyingtheFiveCoreBehaviorsofCustomerNetworks.pdf)
+
+[Assignment - Platform Business Models](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/assignments/M3-PlatfomBusinessModelMapAnalysisAWS.pdf)
+
+[Assignment - Domain 2: Competition](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/assignments/M4-CompetitiveValueTrain.pdf)
+
+[Assignment - Domain 3: Data](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/assignments/M5-DataValue.pdf)
+
+[Assignment - Domain 4: Innovation](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/assignments/M6-ApplyingExperimentationtoYourBusiness.pdf)
+
+[Assignment - Domain 5: Value](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/assignments/M7-ValuePropositionExpansion.pdf)
+
+[Assignment - Disruptive Business Models](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/assignments/M8-DisruptiveBusinessModelMap.pdf)
 
 ---
 
