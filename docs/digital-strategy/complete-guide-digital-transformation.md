@@ -22,7 +22,7 @@ sidebar_label: Digital Strategies for Business Transformation
 8. [Domain 5: Value - Adapting Your Value Proposition](#domain-5-value---adapting-your-value-proposition)
 9. [Mastering Disruptive Business Models](#mastering-disruptive-business-models)
 10. [Key Takeaways and Implementation Roadmap](#key-takeaways-and-implementation-roadmap)
-
+11. [References](#references)
 ---
 
 ## Introduction
@@ -1205,6 +1205,33 @@ Digital transformation is not a destination but a continuous journey of adaptati
 Success requires moving beyond traditional assumptions about strategy and embracing new ways of creating and delivering value. Organizations that master these domains will not only survive digital disruption but will become the disruptors themselves, creating new markets and customer experiences that define the future of business.
 
 **Remember**: Digital transformation is primarily a challenge of strategy and mindset over technology. Start with understanding your customers, embrace experimentation, treat data as a strategic asset, and continuously evolve your value proposition. The future belongs to organizations that can adapt and thrive in an age of constant change.
+
+---
+
+## References
+
+![TDTP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/books/TheDigitalTransformationPlaybook.pdf)
+
+![M1QRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M1QRG.pdf)
+
+![M2QRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M2QRG.pdf)
+
+![M3QRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M3QRG.pdf)
+
+![M4QRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M4QRG.pdf)
+
+![M5QRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M5QRG.pdf)
+
+![M6QRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M5QRG.pdf)
+
+![M7QRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M5QRG.pdf)
+
+![M8QRG](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/docs/digital-strategy/references/M5QRG.pdf)
+
+---
+
+## Assignments
+
 
 ---
 
