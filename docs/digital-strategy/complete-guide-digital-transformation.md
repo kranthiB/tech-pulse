@@ -24,6 +24,7 @@ sidebar_label: Digital Strategies for Business Transformation
 10. [Key Takeaways and Implementation Roadmap](#key-takeaways-and-implementation-roadmap)
 11. [References](#references)
 12. [Assignments](#assignments)
+
 ---
 
 ## Introduction
