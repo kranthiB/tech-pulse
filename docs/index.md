@@ -550,6 +550,7 @@ auto_title: false
       <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/wall-paint-visualizer-agent.html" class="reference-link"><i class="fa fa-robot fa-wand-magic-sparkles" style="margin-right: 8px;"></i>Wall Paint Visualizer Agent</a>
       <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/ai-powered-code-modernization.html" class="reference-link"><i class="fa fa-robot fa-wand-magic-sparkles" style="margin-right: 8px;"></i>AI-Powered Code Modernization</a>
       <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/kubernetes-ai-agent.html" class="reference-link"><i class="fa fa-robot fa-wand-magic-sparkles" style="margin-right: 8px;"></i>Kubernetes AI Agent</a>
+      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/ai-first-software-engineering-maturity-assessment.html" class="reference-link"><i class="fa fa-robot fa-wand-magic-sparkles" style="margin-right: 8px;"></i>AI-First Software Engineering Maturity Assessment</a>
     </div>
   </div>
 </div>
