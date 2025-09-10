@@ -180,6 +180,28 @@ graph LR
 
 ## Value Proposition
 
+```mermaid
+graph TD
+    A[Assessment Input<br/>Current State Evaluation] --> B[Analysis Engine<br/>Gap Identification & Benchmarking]
+    
+    B --> C[Immediate Benefits<br/>⚡ Rapid Assessment<br/>🎯 Actionable Insights<br/>📊 Benchmark Positioning<br/>🗺️ Strategic Planning]
+    
+    B --> D[Long-term Impact<br/>📈 30-80% Productivity Gains<br/>✨ Quality Enhancement<br/>🛡️ Risk Mitigation<br/>🏆 Competitive Advantage]
+    
+    B --> E[Organizational Outcomes<br/>🔄 Digital Transformation<br/>💡 Innovation Capability<br/>⚙️ Operational Excellence<br/>🚀 Future Readiness]
+    
+    C --> F[Strategic Decision Making<br/>Data-Driven AI Transformation]
+    D --> F
+    E --> F
+    
+    style A fill:#e3f2fd
+    style B fill:#fff3e0
+    style C fill:#e8f5e8
+    style D fill:#f3e5f5
+    style E fill:#fce4ec
+    style F fill:#e1f5fe
+```
+
 ### Immediate Benefits
 - **Rapid Assessment**: Complete comprehensive evaluation in 1-2 hours
 - **Actionable Insights**: Specific recommendations with implementation timelines
