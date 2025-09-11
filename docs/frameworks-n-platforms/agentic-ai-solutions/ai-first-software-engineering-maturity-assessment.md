@@ -10,6 +10,20 @@ sidebar_label: AI-First Software Engineering Maturity Assessment
 
 # AI-First Software Engineering Maturity Assessment
 
+[![Video Demo](https://drive.google.com/thumbnail?id=1gJD9Lh0IHOkRoxd9Fm7WjQNQPiO9_Qmh&sz=w1000)](https://drive.google.com/file/d/1gJD9Lh0IHOkRoxd9Fm7WjQNQPiO9_Qmh/view)
+
+<div align="center">
+  <a href="https://drive.google.com/file/d/1gJD9Lh0IHOkRoxd9Fm7WjQNQPiO9_Qmh/view" target="_blank" rel="noopener noreferrer">
+    <strong>🎥 ▶️ Click to watch the demo video ▶️ 🎥</strong>
+  </a>
+</div>
+
+<div align="center">
+  <a href="https://github.com/kranthiB/ai-first-maturity-assesment-framework/raw/main/output/AI_Maturity_Assessment_Report_Engineering_Excellence_Team.pdf" target="_blank" rel="noopener noreferrer">
+    <strong>📄 📥 Download Sample Report (PDF) 📥 📄</strong>
+  </a>
+</div>
+
 ## Table of Contents
 
 - [About](#about)
