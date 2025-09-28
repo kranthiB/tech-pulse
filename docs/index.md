@@ -340,6 +340,19 @@ auto_title: false
 .explore-button:hover {
   background-color: #1a4380;
 }
+
+/* Responsive grid for books section */
+@media (max-width: 992px) {
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .books-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
 </style>
 
 <div class="about-container" style="display: flex; align-items: flex-start; margin-bottom: 30px;">
@@ -560,7 +573,7 @@ auto_title: false
 <!-- AI Engineering Books Section -->
 <div style="margin-bottom: 40px;">
   <div style="background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16); overflow: hidden;">
-    <h3 class="section-header">
+    <h3 class="section-header" style="text-align: left;">
       <i class="fa fa-robot" style="margin-right: 10px;"></i>AI Engineering Books
     </h3>
     
@@ -568,7 +581,7 @@ auto_title: false
       <!-- Phase 1: Foundational Knowledge -->
       <div style="margin-bottom: 25px;">
         <h4 style="color: #2054a6; margin: 0 0 15px 0; font-size: 14px; font-weight: 600;">Phase 1: Foundational Knowledge</h4>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 15px;">
+        <div class="books-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
           
           <!-- Book 1.1 -->
           <div style="background-color: white; border-radius: 4px; border: 1px solid #e1e4e8; padding: 15px;">
@@ -617,7 +630,7 @@ auto_title: false
       <!-- Phase 2: AI Engineering Foundations -->
       <div style="margin-bottom: 25px;">
         <h4 style="color: #2054a6; margin: 0 0 15px 0; font-size: 14px; font-weight: 600;">Phase 2: AI Engineering Foundations</h4>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 15px;">
+        <div class="books-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
           
           <!-- Book 2.1 -->
           <div style="background-color: white; border-radius: 4px; border: 1px solid #e1e4e8; padding: 15px;">
@@ -645,7 +658,7 @@ auto_title: false
       <!-- Phase 3: LLM Fundamentals & Theory -->
       <div style="margin-bottom: 25px;">
         <h4 style="color: #2054a6; margin: 0 0 15px 0; font-size: 14px; font-weight: 600;">Phase 3: LLM Fundamentals & Theory</h4>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 15px;">
+        <div class="books-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
           
           <!-- Book 3.1 -->
           <div style="background-color: white; border-radius: 4px; border: 1px solid #e1e4e8; padding: 15px;">
@@ -694,7 +707,7 @@ auto_title: false
       <!-- Phase 4: LLM Engineering & Production -->
       <div style="margin-bottom: 25px;">
         <h4 style="color: #2054a6; margin: 0 0 15px 0; font-size: 14px; font-weight: 600;">Phase 4: LLM Engineering & Production</h4>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 15px;">
+        <div class="books-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
           
           <!-- Book 4.1 -->
           <div style="background-color: white; border-radius: 4px; border: 1px solid #e1e4e8; padding: 15px;">
@@ -764,7 +777,7 @@ auto_title: false
       <!-- Phase 5: Specialized Techniques -->
       <div style="margin-bottom: 25px;">
         <h4 style="color: #2054a6; margin: 0 0 15px 0; font-size: 14px; font-weight: 600;">Phase 5: Specialized Techniques</h4>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 15px;">
+        <div class="books-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
           
           <!-- Book 5.1 -->
           <div style="background-color: white; border-radius: 4px; border: 1px solid #e1e4e8; padding: 15px;">
@@ -792,7 +805,7 @@ auto_title: false
       <!-- Phase 6: Applications & Agents -->
       <div>
         <h4 style="color: #2054a6; margin: 0 0 15px 0; font-size: 14px; font-weight: 600;">Phase 6: Applications & Agents</h4>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 15px;">
+        <div class="books-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
           
           <!-- Book 6.1 -->
           <div style="background-color: white; border-radius: 4px; border: 1px solid #e1e4e8; padding: 15px;">
