@@ -555,6 +555,313 @@ auto_title: false
   </div>
 </div>
 
+<h2 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Books</h2>
+
+<!-- AI Engineering Books Section -->
+<div style="margin-bottom: 40px;">
+  <div style="background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16); overflow: hidden;">
+    <h3 class="section-header">
+      <i class="fa fa-robot" style="margin-right: 10px;"></i>AI Engineering Books
+    </h3>
+    
+    <div style="padding: 15px;">
+      <!-- Phase 1: Foundational Knowledge -->
+      <div style="margin-bottom: 25px;">
+        <h4 style="color: #2054a6; margin: 0 0 15px 0; font-size: 14px; font-weight: 600;">Phase 1: Foundational Knowledge</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 15px;">
+          
+          <!-- Book 1.1 -->
+          <div style="background-color: white; border-radius: 4px; border: 1px solid #e1e4e8; padding: 15px;">
+            <div style="display: flex; align-items: flex-start; gap: 15px;">
+              <div style="flex: 1;">
+                <div style="margin-bottom: 8px;">
+                  <span style="background-color: #2054a6; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; margin-right: 8px;">1.1</span>
+                  <span style="font-weight: 600; font-size: 14px; color: #24292e;">Designing Data-Intensive Applications (2nd Edition)</span>
+                </div>
+                <p style="margin: 0; font-size: 13px; color: #586069; line-height: 1.4;">Build solid distributed systems and data architecture foundations essential for scalable AI infrastructure</p>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px; min-width: 160px;">
+                <a href="https://kranthib.github.io/tech-pulse/books/ai/designing-data-intensive-applications.html" style="padding: 8px 16px; background-color: #f1f8ff; color: #0366d6; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; border: 1px solid #c8e1ff; text-align: center; transition: all 0.2s;">
+                  Summary
+                </a>
+                <a href="https://www.oreilly.com/library/view/designing-data-intensive-applications/9781098119058/" target="_blank" style="padding: 8px 16px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; text-align: center; transition: all 0.2s;">
+                  Book
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 1.2 -->
+          <div style="background-color: white; border-radius: 4px; border: 1px solid #e1e4e8; padding: 15px;">
+            <div style="display: flex; align-items: flex-start; gap: 15px;">
+              <div style="flex: 1;">
+                <div style="margin-bottom: 8px;">
+                  <span style="background-color: #2054a6; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; margin-right: 8px;">1.2</span>
+                  <span style="font-weight: 600; font-size: 14px; color: #24292e;">Designing Machine Learning Systems</span>
+                </div>
+                <p style="margin: 0; font-size: 13px; color: #586069; line-height: 1.4;">Learn broad ML systems knowledge covering complete ML lifecycle and production considerations before diving into LLMs</p>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px; min-width: 160px;">
+                <a href="https://kranthib.github.io/tech-pulse/books/ai/designing-machine-learning-systems.html" style="padding: 8px 16px; background-color: #f1f8ff; color: #0366d6; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; border: 1px solid #c8e1ff; text-align: center; transition: all 0.2s;">
+                  Summary
+                </a>
+                <a href="https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/" target="_blank" style="padding: 8px 16px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; text-align: center; transition: all 0.2s;">
+                  Book
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 2: AI Engineering Foundations -->
+      <div style="margin-bottom: 25px;">
+        <h4 style="color: #2054a6; margin: 0 0 15px 0; font-size: 14px; font-weight: 600;">Phase 2: AI Engineering Foundations</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 15px;">
+          
+          <!-- Book 2.1 -->
+          <div style="background-color: white; border-radius: 4px; border: 1px solid #e1e4e8; padding: 15px;">
+            <div style="display: flex; align-items: flex-start; gap: 15px;">
+              <div style="flex: 1;">
+                <div style="margin-bottom: 8px;">
+                  <span style="background-color: #2054a6; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; margin-right: 8px;">2.1</span>
+                  <span style="font-weight: 600; font-size: 14px; color: #24292e;">AI Engineering - Building Applications with Foundation Models</span>
+                </div>
+                <p style="margin: 0; font-size: 13px; color: #586069; line-height: 1.4;">Bridge general ML and foundation models/LLMs with modern AI engineering practices and architecture patterns</p>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px; min-width: 160px;">
+                <a href="https://kranthib.github.io/tech-pulse/books/ai/ai-engineering.html" style="padding: 8px 16px; background-color: #f1f8ff; color: #0366d6; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; border: 1px solid #c8e1ff; text-align: center; transition: all 0.2s;">
+                  Summary
+                </a>
+                <a href="https://www.oreilly.com/library/view/ai-engineering/9781098166298/" target="_blank" style="padding: 8px 16px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; text-align: center; transition: all 0.2s;">
+                  Book
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 3: LLM Fundamentals & Theory -->
+      <div style="margin-bottom: 25px;">
+        <h4 style="color: #2054a6; margin: 0 0 15px 0; font-size: 14px; font-weight: 600;">Phase 3: LLM Fundamentals & Theory</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 15px;">
+          
+          <!-- Book 3.1 -->
+          <div style="background-color: white; border-radius: 4px; border: 1px solid #e1e4e8; padding: 15px;">
+            <div style="display: flex; align-items: flex-start; gap: 15px;">
+              <div style="flex: 1;">
+                <div style="margin-bottom: 8px;">
+                  <span style="background-color: #2054a6; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; margin-right: 8px;">3.1</span>
+                  <span style="font-weight: 600; font-size: 14px; color: #24292e;">Build a Large Language Model</span>
+                </div>
+                <p style="margin: 0; font-size: 13px; color: #586069; line-height: 1.4;">Gain deep understanding of how LLMs work from scratch - critical theoretical foundation before engineering applications</p>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px; min-width: 160px;">
+                <a href="https://kranthib.github.io/tech-pulse/books/ai/build-a-large-language-model.html" style="padding: 8px 16px; background-color: #f1f8ff; color: #0366d6; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; border: 1px solid #c8e1ff; text-align: center; transition: all 0.2s;">
+                  Summary
+                </a>
+                <a href="https://www.oreilly.com/library/view/build-a-large/9781633437166/" target="_blank" style="padding: 8px 16px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; text-align: center; transition: all 0.2s;">
+                  Book
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 3.2 -->
+          <div style="background-color: white; border-radius: 4px; border: 1px solid #e1e4e8; padding: 15px;">
+            <div style="display: flex; align-items: flex-start; gap: 15px;">
+              <div style="flex: 1;">
+                <div style="margin-bottom: 8px;">
+                  <span style="background-color: #2054a6; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; margin-right: 8px;">3.2</span>
+                  <span style="font-weight: 600; font-size: 14px; color: #24292e;">Hands-on Large Language Models</span>
+                </div>
+                <p style="margin: 0; font-size: 13px; color: #586069; line-height: 1.4;">Apply practical, visual approach to understanding LLMs that complements theoretical knowledge</p>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px; min-width: 160px;">
+                <a href="https://kranthib.github.io/tech-pulse/books/ai/hands-on-large-language-models.html" style="padding: 8px 16px; background-color: #f1f8ff; color: #0366d6; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; border: 1px solid #c8e1ff; text-align: center; transition: all 0.2s;">
+                  Summary
+                </a>
+                <a href="https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/" target="_blank" style="padding: 8px 16px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; text-align: center; transition: all 0.2s;">
+                  Book
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 4: LLM Engineering & Production -->
+      <div style="margin-bottom: 25px;">
+        <h4 style="color: #2054a6; margin: 0 0 15px 0; font-size: 14px; font-weight: 600;">Phase 4: LLM Engineering & Production</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 15px;">
+          
+          <!-- Book 4.1 -->
+          <div style="background-color: white; border-radius: 4px; border: 1px solid #e1e4e8; padding: 15px;">
+            <div style="display: flex; align-items: flex-start; gap: 15px;">
+              <div style="flex: 1;">
+                <div style="margin-bottom: 8px;">
+                  <span style="background-color: #2054a6; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; margin-right: 8px;">4.1</span>
+                  <span style="font-weight: 600; font-size: 14px; color: #24292e;">LLM Engineer's Handbook</span>
+                </div>
+                <p style="margin: 0; font-size: 13px; color: #586069; line-height: 1.4;">Master comprehensive engineering approach from concept to production with systematic methodology</p>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px; min-width: 160px;">
+                <a href="https://kranthib.github.io/tech-pulse/books/ai/llm-engineers-handbook.html" style="padding: 8px 16px; background-color: #f1f8ff; color: #0366d6; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; border: 1px solid #c8e1ff; text-align: center; transition: all 0.2s;">
+                  Summary
+                </a>
+                <a href="https://www.oreilly.com/library/view/llm-engineers-handbook/9781836200079/" target="_blank" style="padding: 8px 16px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; text-align: center; transition: all 0.2s;">
+                  Book
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 4.2 -->
+          <div style="background-color: white; border-radius: 4px; border: 1px solid #e1e4e8; padding: 15px;">
+            <div style="display: flex; align-items: flex-start; gap: 15px;">
+              <div style="flex: 1;">
+                <div style="margin-bottom: 8px;">
+                  <span style="background-color: #2054a6; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; margin-right: 8px;">4.2</span>
+                  <span style="font-weight: 600; font-size: 14px; color: #24292e;">Building LLMs for Production</span>
+                </div>
+                <p style="margin: 0; font-size: 13px; color: #586069; line-height: 1.4;">Focus specifically on prompting, fine-tuning, and RAG with production reliability and scalability techniques</p>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px; min-width: 160px;">
+                <a href="https://kranthib.github.io/tech-pulse/books/ai/building-llms-for-production.html" style="padding: 8px 16px; background-color: #f1f8ff; color: #0366d6; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; border: 1px solid #c8e1ff; text-align: center; transition: all 0.2s;">
+                  Summary
+                </a>
+                <a href="https://www.oreilly.com/library/view/building-llms-for/9798324731472/" target="_blank" style="padding: 8px 16px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; text-align: center; transition: all 0.2s;">
+                  Book
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 4.3 -->
+          <div style="background-color: white; border-radius: 4px; border: 1px solid #e1e4e8; padding: 15px;">
+            <div style="display: flex; align-items: flex-start; gap: 15px;">
+              <div style="flex: 1;">
+                <div style="margin-bottom: 8px;">
+                  <span style="background-color: #2054a6; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; margin-right: 8px;">4.3</span>
+                  <span style="font-weight: 600; font-size: 14px; color: #24292e;">LLMs in Production</span>
+                </div>
+                <p style="margin: 0; font-size: 13px; color: #586069; line-height: 1.4;">Learn production deployment, monitoring, and operational aspects of LLM systems in real-world environments</p>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px; min-width: 160px;">
+                <a href="https://kranthib.github.io/tech-pulse/books/ai/llms-in-production.html" style="padding: 8px 16px; background-color: #f1f8ff; color: #0366d6; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; border: 1px solid #c8e1ff; text-align: center; transition: all 0.2s;">
+                  Summary
+                </a>
+                <a href="https://www.oreilly.com/library/view/llms-in-production/9781633437203/" target="_blank" style="padding: 8px 16px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; text-align: center; transition: all 0.2s;">
+                  Book
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 5: Specialized Techniques -->
+      <div style="margin-bottom: 25px;">
+        <h4 style="color: #2054a6; margin: 0 0 15px 0; font-size: 14px; font-weight: 600;">Phase 5: Specialized Techniques</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 15px;">
+          
+          <!-- Book 5.1 -->
+          <div style="background-color: white; border-radius: 4px; border: 1px solid #e1e4e8; padding: 15px;">
+            <div style="display: flex; align-items: flex-start; gap: 15px;">
+              <div style="flex: 1;">
+                <div style="margin-bottom: 8px;">
+                  <span style="background-color: #2054a6; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; margin-right: 8px;">5.1</span>
+                  <span style="font-weight: 600; font-size: 14px; color: #24292e;">Prompt Engineering for LLMs</span>
+                </div>
+                <p style="margin: 0; font-size: 13px; color: #586069; line-height: 1.4;">Master the art of effective prompting - essential skill for all LLM applications</p>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px; min-width: 160px;">
+                <a href="https://kranthib.github.io/tech-pulse/books/ai/prompt-engineering-for-llms.html" style="padding: 8px 16px; background-color: #f1f8ff; color: #0366d6; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; border: 1px solid #c8e1ff; text-align: center; transition: all 0.2s;">
+                  Summary
+                </a>
+                <a href="https://www.oreilly.com/library/view/prompt-engineering-for/9781098156145/" target="_blank" style="padding: 8px 16px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; text-align: center; transition: all 0.2s;">
+                  Book
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 6: Applications & Agents -->
+      <div>
+        <h4 style="color: #2054a6; margin: 0 0 15px 0; font-size: 14px; font-weight: 600;">Phase 6: Applications & Agents</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 15px;">
+          
+          <!-- Book 6.1 -->
+          <div style="background-color: white; border-radius: 4px; border: 1px solid #e1e4e8; padding: 15px;">
+            <div style="display: flex; align-items: flex-start; gap: 15px;">
+              <div style="flex: 1;">
+                <div style="margin-bottom: 8px;">
+                  <span style="background-color: #2054a6; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; margin-right: 8px;">6.1</span>
+                  <span style="font-weight: 600; font-size: 14px; color: #24292e;">Building LLM Powered Applications</span>
+                </div>
+                <p style="margin: 0; font-size: 13px; color: #586069; line-height: 1.4;">Learn practical application development and bridge from engineering to real-world apps</p>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px; min-width: 160px;">
+                <a href="https://kranthib.github.io/tech-pulse/books/ai/building-llm-powered-applications.html" style="padding: 8px 16px; background-color: #f1f8ff; color: #0366d6; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; border: 1px solid #c8e1ff; text-align: center; transition: all 0.2s;">
+                  Summary
+                </a>
+                <a href="https://www.oreilly.com/library/view/building-llm-powered/9781835462317/" target="_blank" style="padding: 8px 16px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; text-align: center; transition: all 0.2s;">
+                  Book
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 6.2 -->
+          <div style="background-color: white; border-radius: 4px; border: 1px solid #e1e4e8; padding: 15px;">
+            <div style="display: flex; align-items: flex-start; gap: 15px;">
+              <div style="flex: 1;">
+                <div style="margin-bottom: 8px;">
+                  <span style="background-color: #2054a6; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; margin-right: 8px;">6.2</span>
+                  <span style="font-weight: 600; font-size: 14px; color: #24292e;">Building AI Agents with LLMs, RAG, and Knowledge Graphs</span>
+                </div>
+                <p style="margin: 0; font-size: 13px; color: #586069; line-height: 1.4;">Implement specific agent architectures combining LLMs with knowledge systems</p>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px; min-width: 160px;">
+                <a href="https://kranthib.github.io/tech-pulse/books/ai/building-ai-agents-with-llms-rag-knowledge-graphs.html" style="padding: 8px 16px; background-color: #f1f8ff; color: #0366d6; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; border: 1px solid #c8e1ff; text-align: center; transition: all 0.2s;">
+                  Summary
+                </a>
+                <a href="https://www.oreilly.com/library/view/building-ai-agents/9781835087060/" target="_blank" style="padding: 8px 16px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; text-align: center; transition: all 0.2s;">
+                  Book
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 6.3 -->
+          <div style="background-color: white; border-radius: 4px; border: 1px solid #e1e4e8; padding: 15px;">
+            <div style="display: flex; align-items: flex-start; gap: 15px;">
+              <div style="flex: 1;">
+                <div style="margin-bottom: 8px;">
+                  <span style="background-color: #2054a6; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; margin-right: 8px;">6.3</span>
+                  <span style="font-weight: 600; font-size: 14px; color: #24292e;">Building Agentic AI Systems</span>
+                </div>
+                <p style="margin: 0; font-size: 13px; color: #586069; line-height: 1.4;">Explore advanced autonomous agent concepts including reasoning, planning, and adaptive systems</p>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px; min-width: 160px;">
+                <a href="https://kranthib.github.io/tech-pulse/books/ai/building-agentic-ai-systems.html" style="padding: 8px 16px; background-color: #f1f8ff; color: #0366d6; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; border: 1px solid #c8e1ff; text-align: center; transition: all 0.2s;">
+                  Summary
+                </a>
+                <a href="https://www.oreilly.com/library/view/building-agentic-ai/9781803238753/" target="_blank" style="padding: 8px 16px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; text-align: center; transition: all 0.2s;">
+                  Book
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <h2 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Certifications</h2>
 
 <!-- Certifications section with improved grid layout -->
