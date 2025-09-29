@@ -2820,10 +2820,6 @@ def train_dpo_model(model_name: str, preference_data: List[Dict[str, Any]],
 
 ---
 
-I'll search the project knowledge for the PDF and extract the remaining chapters to complete your comprehensive study guide.I'll continue searching for the remaining chapters to complete your comprehensive study guide.Let me continue searching for the remaining chapters.Let me search for more content on the remaining chapters to ensure completeness.Let me search for the final chapters to complete your comprehensive study guide.Let me search for the final remaining chapters to complete your comprehensive study guide.Based on your existing comprehensive study guide covering Chapters 1-6, I'll continue with the remaining chapters. Here's the **complete continuation** for Chapters 7-11 and the Appendix:
-
----
-
 ## Chapter 7: Evaluating LLMs
 
 ### **🎯 Understanding LLM Evaluation**
@@ -6333,12 +6329,12 @@ graph TB
         N --> O[Response]
     end
     
-    P[Orchestrator ZenML] -.-> Feature Pipeline
-    P -.-> Training Pipeline
-    P -.-> Inference Pipeline
+    P[Orchestrator ZenML] -.-> B
+    P -.-> G
+    P -.-> K
     
-    Q[Monitoring Opik] -.-> Inference Pipeline
-    R[Experiment Tracking Comet] -.-> Training Pipeline
+    Q[Monitoring Opik] -.-> N
+    R[Experiment Tracking Comet] -.-> H
 ```
 
 **Key Benefits:**
