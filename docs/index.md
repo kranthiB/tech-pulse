@@ -680,7 +680,7 @@ auto_title: false
                 <a href="https://kranthib.github.io/tech-pulse/books/ai/ai-engineering.html" style="padding: 8px 16px; background-color: #f1f8ff; color: #0366d6; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; border: 1px solid #c8e1ff; text-align: center; transition: all 0.2s;">
                   Summary
                 </a>
-                <a href="https://www.oreilly.com/library/view/ai-engineering/9781098166298/" target="_blank" style="padding: 8px 16px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; text-align: center; transition: all 0.2s;">
+                <a href="https://drive.google.com/file/d/1EjRSHcLlxQWJaMyPPOpKlpHwafAN3Ifx/view" target="_blank" style="padding: 8px 16px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; text-align: center; transition: all 0.2s;">
                   Book
                 </a>
               </div>

@@ -59,6 +59,7 @@ graph LR
 ### Foundation Model Use Cases
 
 #### Consumer Applications
+
 | Use Case | Examples | Key Benefits |
 |----------|----------|--------------|
 | **Coding** | GitHub Copilot, Cursor | 10-40% productivity increase |
@@ -68,6 +69,7 @@ graph LR
 | **Conversational Bots** | ChatGPT, Claude | Natural language interfaces |
 
 #### Enterprise Applications
+
 | Use Case | Business Value | Implementation Complexity |
 |----------|----------------|---------------------------|
 | **Information Aggregation** | Knowledge management | Medium |
@@ -148,6 +150,7 @@ graph TB
 #### Multilingual Model Challenges
 
 **Language Distribution in Common Crawl**:
+
 | Language | Speakers (M) | % World Pop | % Common Crawl | Representation Ratio |
 |----------|--------------|-------------|-----------------|---------------------|
 | English | 1,452 | 18.15% | 45.88% | 0.40 |
@@ -338,9 +341,9 @@ graph LR
     A --> C[Bits-per-Character]
     A --> D[Bits-per-Byte]
     
-    B --> E[PPL = 2^H(P,Q)]
-    C --> F[BPC = H(P,Q)]
-    D --> G[BPB = BPC / bytes_per_char]
+    B --> E["PPL = 2^H(P,Q)"]
+    C --> F["BPC = H(P,Q)"]
+    D --> G["BPB = BPC / bytes_per_char"]
 ```
 
 #### Perplexity Interpretation
@@ -426,6 +429,7 @@ Provide scores and brief justification.
 #### Limitations and Mitigation
 
 **Major Limitations**:
+
 | Limitation | Impact | Mitigation Strategy |
 |------------|--------|-------------------|
 | **Criteria Ambiguity** | Inconsistent scoring | Detailed rubrics |
@@ -1130,6 +1134,7 @@ graph LR
 ```
 
 **Vector Similarity Metrics**:
+
 | Metric | Formula | Use Case | Range |
 |--------|---------|----------|-------|
 | **Cosine** | cos(θ) = A·B / (||A|| ||B||) | Text similarity | [-1, 1] |
@@ -1167,6 +1172,7 @@ def hybrid_retrieval(query, term_index, vector_index, alpha=0.5):
 #### Chunking Strategies
 
 **Strategy Comparison**:
+
 | Strategy | Chunk Size | Overlap | Use Case | Pros | Cons |
 |----------|------------|---------|----------|------|------|
 | **Fixed Size** | 512 tokens | 50 tokens | General purpose | Simple, consistent | May break context |
@@ -1618,6 +1624,7 @@ graph LR
 ```
 
 **Finetuning vs Training from Scratch**:
+
 | Aspect | From Scratch | Finetuning |
 |--------|--------------|------------|
 | **Data Required** | Millions of examples | Hundreds to thousands |
@@ -1912,6 +1919,7 @@ class LoRALayer(nn.Module):
 #### LoRA Configuration Guidelines
 
 **Rank Selection**:
+
 | Model Size | Recommended Rank | Memory Reduction | Performance |
 |------------|------------------|------------------|-------------|
 | **7B params** | 16-32 | ~95% | ~98% of full FT |
@@ -1968,6 +1976,7 @@ class QLoRAModel:
 ```
 
 **Memory Comparison**:
+
 | Model | Full Finetuning | LoRA | QLoRA |
 |-------|----------------|------|-------|
 | **Llama 2 7B** | 60 GB | 18 GB | 12 GB |
@@ -2093,6 +2102,7 @@ def suggest_learning_rate(model_size, task_type, data_size):
 ```
 
 **Batch Size and Epochs**:
+
 | Model Size | Batch Size | Epochs | Justification |
 |------------|------------|--------|---------------|
 | **< 1B** | 32-64 | 3-5 | Fast iteration |
@@ -2173,6 +2183,7 @@ graph LR
 ```
 
 **Impact Comparison**:
+
 | Approach | Investment | Typical Improvement | Sustainability |
 |----------|------------|-------------------|----------------|
 | **Model-Centric** | $100K-$1M+ | 10-50% | Diminishing returns |
@@ -2228,6 +2239,7 @@ def assess_data_quality(dataset):
 #### Data Coverage Strategy
 
 **Coverage Dimensions**:
+
 | Dimension | Examples | Measurement |
 |-----------|----------|-------------|
 | **Linguistic** | Languages, dialects, formality | Language detection |
@@ -2278,6 +2290,7 @@ graph LR
 ```
 
 **Task-Specific Requirements**:
+
 | Task Type | Minimum Examples | Recommended | Notes |
 |-----------|-----------------|-------------|-------|
 | **Classification** | 100 per class | 1K per class | Balanced distribution |
@@ -2380,6 +2393,7 @@ def calculate_agreement_metrics(annotations_1, annotations_2, task_type):
 ```
 
 **Agreement Thresholds**:
+
 | Task Type | Metric | Acceptable | Good | Excellent |
 |-----------|--------|------------|------|-----------|
 | **Classification** | Cohen's κ | > 0.60 | > 0.75 | > 0.90 |
@@ -2518,6 +2532,7 @@ def score_synthetic_data(instruction, response):
 ```
 
 **Verification Strategies**:
+
 | Strategy | Method | Pros | Cons |
 |----------|--------|------|------|
 | **Rule-Based** | Pattern matching, constraints | Fast, interpretable | Limited scope |
@@ -2760,6 +2775,7 @@ def identify_bottleneck(model, hardware_spec):
 #### Performance Metrics
 
 **Latency Metrics**:
+
 | Metric | Definition | Typical Values | Optimization Target |
 |--------|------------|----------------|-------------------|
 | **TTFT** | Time to First Token | 50-500ms | User experience |
@@ -3034,6 +3050,7 @@ def parallel_decoding(model, prompts, max_new_tokens=100):
 #### Model Compression
 
 **Quantization Strategies**:
+
 | Method | Precision | Memory Reduction | Performance Impact |
 |--------|-----------|------------------|-------------------|
 | **FP16** | 16-bit | 50% | Minimal |
@@ -3680,6 +3697,7 @@ class MultiLevelCache:
 ```
 
 **Cache Strategies by Content Type**:
+
 | Content Type | Strategy | TTL | Use Case |
 |--------------|----------|-----|----------|
 | **Exact Matches** | Exact key lookup | 24h | Identical queries |
