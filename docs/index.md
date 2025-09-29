@@ -754,10 +754,10 @@ auto_title: false
                 <p style="margin: 0; font-size: 13px; color: #586069; line-height: 1.4;">Master comprehensive engineering approach from concept to production with systematic methodology</p>
               </div>
               <div style="display: flex; flex-direction: column; gap: 8px; min-width: 160px;">
-                <a href="https://kranthib.github.io/tech-pulse/books/ai/llm-engineers-handbook.html" style="padding: 8px 16px; background-color: #f1f8ff; color: #0366d6; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; border: 1px solid #c8e1ff; text-align: center; transition: all 0.2s;">
+                <a href="https://kranthib.github.io/tech-pulse/books/ai/llm-engineer-handbook.html" style="padding: 8px 16px; background-color: #f1f8ff; color: #0366d6; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; border: 1px solid #c8e1ff; text-align: center; transition: all 0.2s;">
                   Summary
                 </a>
-                <a href="https://www.oreilly.com/library/view/llm-engineers-handbook/9781836200079/" target="_blank" style="padding: 8px 16px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; text-align: center; transition: all 0.2s;">
+                <a href="https://drive.google.com/file/d/153pFlNi72mwsevtTDSNI7Ub7m433yXez/view" target="_blank" style="padding: 8px 16px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: 500; text-align: center; transition: all 0.2s;">
                   Book
                 </a>
               </div>
