@@ -58,17 +58,17 @@ block-beta
         title["MASTRA AI FRAMEWORK"]
     end
     
-    space:5
+    space:2
     
     block:row1:5
         agents["AGENTS<br/>AI Agents"]
-        tools["🔧 TOOLS<br/>Typed Funcs"]
+        tools["TOOLS<br/>Typed Funcs"]
         workflows["WORKFLOWS<br/>Multi-Step"]
         memory["MEMORY<br/>Persist Context"]
         storage["STORAGE<br/>LibSQL/SQLite"]
     end
     
-    space:5
+    space:2
     
     block:row2:5
         observe["BSERVE<br/>OpenTelemetry"]
@@ -77,7 +77,7 @@ block-beta
         space:2
     end
     
-    space:5
+    space:2
     
     block:footer:5
         tagline["All-in-One • TypeScript-First • Production-Ready"]
@@ -109,10 +109,10 @@ block-beta
     columns 6
     
     block:tradHeader:6
-        tradTitle["⚠️ MULTI-PACKAGE APPROACH"]
+        tradTitle["MULTI-PACKAGE APPROACH"]
     end
     
-    space:6
+    space:2
     
     block:packages:6
         langchain["LangChain<br/>(Chains)"]
@@ -123,7 +123,7 @@ block-beta
         result["= 5+ packages"]
     end
     
-    space:6
+    space:2
     
     block:issues:6
         issue1["❌ Different APIs"]
@@ -154,10 +154,10 @@ block-beta
     columns 5
     
     block:mastraHeader:5
-        mastraTitle["✅ MASTRA APPROACH (Single Package)"]
+        mastraTitle["MASTRA APPROACH (Single Package)"]
     end
     
-    space:5
+    space:2
     
     block:package:5
         space
@@ -165,7 +165,7 @@ block-beta
         space
     end
     
-    space:5
+    space:2
     
     block:benefits:5
         benefit1["✅ Unified API"]
