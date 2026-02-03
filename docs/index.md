@@ -600,6 +600,32 @@ auto_title: false
       <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agentic-ai-solutions/ai-first-software-engineering-maturity-assessment.html" class="reference-link"><i class="fa fa-robot fa-wand-magic-sparkles" style="margin-right: 8px;"></i>AI-First Software Engineering Maturity Assessment</a>
     </div>
   </div>
+
+  <!-- AI Application Platforms -->
+  <div class="framework-card">
+    <h3 class="section-header">
+      <i class="fa fa-layer-group" style="margin-right: 10px;"></i>
+      <span class="section-header-text">AI Application Platforms</span>
+    </h3>
+    <div class="framework-links">
+      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/ai-application-platforms/langchain-application-framework.html"
+         class="reference-link">
+        <i class="fa fa-tools" style="margin-right: 8px;"></i>
+        LangChain Application Framework
+      </a>
+      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/ai-application-platforms/langgraph-agent-orchestration-platform.html"
+         class="reference-link">
+         <i class="fa fa-project-diagram" style="margin-right: 8px;"></i>
+        LangGraph Agent Orchestration Platform
+      </a>
+      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/ai-application-platforms/langsmith-llmops-observability-platform.html"
+         class="reference-link">
+        <i class="fa fa-chart-area" style="margin-right: 8px;"></i>
+        LangSmith LLMOps & Observability Platform
+      </a>
+    </div>
+  </div>
+
 </div>
 
 <h2 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Books</h2>
