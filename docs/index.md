@@ -623,6 +623,11 @@ auto_title: false
         <i class="fa fa-chart-area" style="margin-right: 8px;"></i>
         LangSmith LLMOps & Observability Platform
       </a>
+      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/ai-application-platforms/master-ai-framework.html"
+         class="reference-link">
+        <i class="fa fa-robot" style="margin-right: 8px;"></i>
+        Master AI Framework
+      </a>
     </div>
   </div>
 
