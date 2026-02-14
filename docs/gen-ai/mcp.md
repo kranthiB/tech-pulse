@@ -36,11 +36,7 @@ Before diving into the security analysis, it is worth understanding the architec
 
 MCP operates on a three-component architecture: the **Host**, the **Client**, and the **Server**.
 
-<div align="center">
-
 ![MCP](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/mcp/0001-MCP.png)
-
-</div>
 
 The **Host** is the AI application — think Claude Desktop, Cursor, or any custom agent framework. It provides the environment where the language model runs and manages the overall interaction flow.
 
@@ -60,8 +56,6 @@ These are genuinely powerful design decisions. They enable a composable, discove
 
 To understand why the security conversation matters right now, consider the pace of adoption.
 
-<div align="center">
-
 | Metric | Current State |
 |:---|:---|
 | Community MCP Servers | 26,000+ across major directories |
@@ -71,7 +65,6 @@ To understand why the security conversation matters right now, consider the pace
 | Official SDKs | TypeScript, Python, Java, Kotlin, C# |
 | Community Directories | 26+ independent marketplaces and registries |
 
-</div>
 
 The ecosystem spans every major category — developer tools (Cursor, Replit, Cline), IDEs (JetBrains, Zed, Windsurf), cloud platforms (Cloudflare, Tencent Cloud, Alibaba Cloud, Huawei Cloud), financial services (Stripe, Block/Square, Alipay), and web automation tools. OpenAI integrated MCP across its products and the Agents SDK. Google added protocol support for the Gemini model family. Microsoft announced MCP support in Copilot Studio.
 
@@ -85,11 +78,7 @@ This is not a theoretical concern. It is the current state of the infrastructure
 
 One of the most useful mental models for understanding MCP security is the **server lifecycle**. Every MCP server passes through four distinct phases, and each phase introduces its own category of risk.
 
-<div align="center">
-
 ![SLC](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/mcp/0002-SLC.png)
-
-</div>
 
 What makes this lifecycle model so important is a non-obvious insight: **the most dangerous attacks originate in the creation phase but only detonate during operation**. A developer who embeds malicious instructions in a tool's metadata description is planting a time bomb. The payload sits dormant through deployment and registration, appearing perfectly legitimate during any surface-level review. It only activates when an AI agent actually invokes the tool at runtime and follows the hidden instructions.
 
@@ -107,11 +96,7 @@ These are adversaries who control the MCP servers that users install. They explo
 
 **Tool Poisoning** is perhaps the most insidious attack in the MCP threat landscape. It works by embedding covertly malicious instructions into a tool's metadata — the description fields that language models treat as authoritative context. A tool that performs simple arithmetic can include hidden directives in its description telling the model to read local SSH keys and transmit them to an external endpoint. The tool returns correct results, making the attack nearly invisible to the user. The model follows the metadata instructions because it has no mechanism to distinguish between legitimate usage guidelines and injected attack payloads.
 
-<div align="center">
-
 ![TPA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/mcp/0003-TPA.png)
-
-</div>
 
 The consequences extend far beyond data theft. Poisoned tools can hijack entire interaction sessions, corrupt model reasoning by injecting biased outputs, install persistent backdoors, or chain multiple unauthorized operations together — all while the visible output remains perfectly normal.
 
@@ -131,11 +116,7 @@ These attackers do not control any MCP infrastructure. Instead, they inject mali
 
 The severity amplifies dramatically when agents have access to multiple systems. This creates what security researchers call the **cross-system exfiltration pattern**: one system provides the malicious instructions (the injection source), a second system contains the sensitive data (the target), and a third system provides the communication channel for extraction (the exfiltration endpoint). The agent becomes an unwitting bridge between systems the attacker cannot directly access.
 
-<div align="center">
-
 ![CSE](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/mcp/0004-CSE.png)
-
-</div>
 
 A product manager who connects their agent to a project tracker, email, customer support platform, and data warehouse has created exactly this pattern. A malicious instruction injected into any one of those systems can direct the agent to retrieve data from all connected systems and transmit it externally.
 
@@ -183,11 +164,7 @@ After analyzing the threat landscape thoroughly, I believe the most effective de
 
 The rationale is straightforward. Embedding security into every individual MCP server leads to duplication, inconsistency, and an increased attack surface. Server developers should focus on tool functionality. Security controls should be centralized, consistently enforced, and managed by teams with security expertise.
 
-<div align="center">
-
 ![MGA](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/mcp/0005-MGA.png)
-
-</div>
 
 Let me walk through each layer and why it matters.
 
@@ -233,7 +210,6 @@ Only approved servers are admitted and **version-pinned**. Any update repeats th
 
 For organizations operating under regulatory requirements, the gateway architecture maps cleanly to established compliance frameworks.
 
-<div align="center">
 
 | Control Layer | NIST AI RMF Function | ISO/IEC 27001:2022 Controls | ISO/IEC 42001:2023 Controls |
 |:---|:---|:---|:---|
@@ -242,8 +218,6 @@ For organizations operating under regulatory requirements, the gateway architect
 | Isolation and Sandboxing | Govern, Manage | 8.20, 8.22 (Network Security, Segregation) | A.4.2, A.4.3, A.4.5 (Resources, Tooling) |
 | Policy Enforcement | Measure, Manage | 8.11, 8.12, 5.34 (Masking, DLP, PII) | A.2.2, A.7.2-A.7.4, A.9.3 (Data Quality) |
 | Centralized Governance | Govern, Map | 5.1, 5.19, 5.20 (Policies, Supplier Security) | A.8.3-A.8.5, A.10.2 (Reporting, Suppliers) |
-
-</div>
 
 The NIST mapping is particularly clean. **Govern** maps to centralized governance — private registries, tool allowlists, credential management, and policy ownership. **Map** contextualizes the deployment by documenting agents, connected servers, data stores, and applicable regulatory obligations. **Measure** uses provenance tracking and gateway logging to generate key risk indicators: injection attempt rates, DLP violations blocked, secrets detected per server, and anomalous tool-call patterns. **Manage** deploys the layered defenses with detection and response hooks.
 
