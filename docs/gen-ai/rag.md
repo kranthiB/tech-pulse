@@ -3,7 +3,7 @@ id: gen-ai/rag
 title: Retrieval-Augmented Generation (RAG)
 sidebar_label: Retrieval-Augmented Generation (RAG)
 previous_page: gen-ai/llm-tier
-next_page: gen-ai/agentic-ai
+next_page: gen-ai/mcp
 ---
 
 <div style="text-align: right;">
