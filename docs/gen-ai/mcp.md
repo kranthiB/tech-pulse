@@ -3,7 +3,7 @@ id: gen-ai/mcp
 title: Model Context Protocol (MCP)
 sidebar_label: Model Context Protocol (MCP)
 previous_page: gen-ai/rag
-next_page: gen-ai/agentic-ai
+next_page: gen-ai/agent-memory
 ---
 
 <div style="text-align: right;">

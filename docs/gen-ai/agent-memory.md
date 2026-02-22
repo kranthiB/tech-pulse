@@ -1,3 +1,15 @@
+---
+id: gen-ai/agent-memory
+title: Agent Memory Architecture
+sidebar_label: Agent Memory Architecture
+previous_page: gen-ai/mcp
+next_page: gen-ai/agentic-ai
+---
+
+<div style="text-align: right;">
+    <a href="https://kranthib.github.io/tech-pulse/" style="display: inline-block; padding: 6px 14px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">Back to Home →</a>
+</div>
+
 # Building Intelligent AI Agents: The Architecture of Memory That Actually Works
 
 ![AM](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/agent-memory/0000-AgentMemory.png)
