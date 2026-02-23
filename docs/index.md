@@ -534,6 +534,43 @@ auto_title: false
   </div>
 </div>
 
+<div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 40px;">
+
+  <div style="flex: 1; min-width: 300px;">
+
+    <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
+
+      <h3 class="section-header">
+        <i class="fa fa-microchip" style="margin-right: 10px;"></i>Benchmarks
+      </h3>
+
+      <p style="margin-top: 0; color: #24292e; font-size: 14px;">
+        Evaluation frameworks and experimental benchmarks that measure long-term memory,
+        retrieval accuracy, context evolution, and reasoning stability in AI agents.
+      </p>
+
+      <div class="topic-links-container" style="display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 15px; margin-bottom: 15px;">
+
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/benchmarks/agent-memory-benchmarks.html"
+           style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;">
+           <i class="fa fa-tachometer-alt" style="margin-right: 5px;"></i>Agent Memory Benchmark Framework
+        </a>
+
+      </div>
+
+      <div style="text-align: right;">
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/benchmarks/agent-memory-benchmarks.html"
+           style="display: inline-block; padding: 6px 14px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">
+           Explore <i class="fa fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
 <h2 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Reference Architectures</h2>
 
 <!-- Reference Architectures section -->
