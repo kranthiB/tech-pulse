@@ -495,6 +495,10 @@ auto_title: false
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/rag.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-search" style="margin-right: 5px;"></i>RAG</a>
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/mcp.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-plug" style="margin-right: 5px;"></i>Model Context Protocol (MCP)</a>
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/agent-memory.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-brain" style="margin-right: 5px;"></i>Agent Memory</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/evaluation-engineering-llm-systems.html"
+        style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;">
+        <i class="fa fa-check-circle" style="margin-right: 5px;"></i>Evaluation Engineering for LLM Systems
+        </a>
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/agentic-ai.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-user-cog" style="margin-right: 5px;"></i>Agentic AI</a>
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/ai-driven-software-development.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-code" style="margin-right: 5px;"></i>AI-Enabled Development</a>
       </div>
@@ -510,6 +514,10 @@ auto_title: false
       <div class="topic-links-container">
         <a href="https://kranthib.github.io/tech-pulse/industrial-iot/industrial-iot.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-industry" style="margin-right: 5px;"></i>Smart Manufacturing</a>
         <a href="https://kranthib.github.io/tech-pulse/industrial-iot/edge-gateway.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-network-wired" style="margin-right: 5px;"></i>Edge Gateway</a>
+        <a href="https://kranthib.github.io/tech-pulse/industrial-iot/voice-native-edge-ai.html"
+        style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;">
+        <i class="fa fa-microphone" style="margin-right: 5px;"></i>Voice-Native Edge AI
+        </a>
         <a href="https://kranthib.github.io/tech-pulse/industrial-iot/industry-5.0.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-rocket" style="margin-right: 5px;"></i>Industry 5.0</a>
       </div>
     </div>
@@ -534,42 +542,6 @@ auto_title: false
   </div>
 </div>
 
-<div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 40px;">
-
-  <div style="flex: 1; min-width: 300px;">
-
-    <div style="padding: 12px; background-color: #f6f8fa; border-radius: 5px; border: 1px solid #e1e4e8; box-shadow: 0 3px 6px rgba(0,0,0,0.16);">
-
-      <h3 class="section-header">
-        <i class="fa fa-microchip" style="margin-right: 10px;"></i>Benchmarks
-      </h3>
-
-      <p style="margin-top: 0; color: #24292e; font-size: 14px;">
-        Evaluation frameworks and experimental benchmarks that measure long-term memory,
-        retrieval accuracy, context evolution, and reasoning stability in AI agents.
-      </p>
-
-      <div class="topic-links-container" style="display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 15px; margin-bottom: 15px;">
-
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/benchmarks/agent-memory-benchmarks.html"
-           style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;">
-           <i class="fa fa-tachometer-alt" style="margin-right: 5px;"></i>Agent Memory Benchmark Framework
-        </a>
-
-      </div>
-
-      <div style="text-align: right;">
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/benchmarks/agent-memory-benchmarks.html"
-           style="display: inline-block; padding: 6px 14px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">
-           Explore <i class="fa fa-arrow-right"></i>
-        </a>
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
 
 <h2 style="text-align: center; margin-bottom: 30px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Reference Architectures</h2>
 
@@ -622,6 +594,9 @@ auto_title: false
       <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/cloud-cost-optimization-framework.html" class="reference-link"><i class="fa fa-cloud" style="margin-right: 8px;"></i>Cloud Cost Optimization Framework</a>
       <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/ai-code-assistant-performance-scorecard.html" class="reference-link"><i class="fa fa-chart-line" style="margin-right: 8px;"></i>AI Code Assistant Performance Scorecard</a>
       <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/enterprise-test-automation-platform.html" class="reference-link"><i class="fa fa-vial" style="margin-right: 8px;"></i>Enterprise Test Automation Platform</a>
+      <a href="https://kranthib.github.io/tech-pulse/frameworks-n-platforms/agent-memory-benchmarks.html" class="reference-link">
+      <i class="fa fa-tachometer-alt" style="margin-right: 8px;"></i>Agent Memory Benchmark Framework
+    </a>
     </div>
   </div>
   

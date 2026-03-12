@@ -3,7 +3,7 @@ id: industrial-iot/edge-gateway
 title: Edge Gateway
 sidebar_label: Edge Gateway
 previous_page: industrial-iot/industrial-iot
-next_page: industrial-iot/industry-5.0
+next_page: industrial-iot/voice-native-edge-ai
 ---
 
 <div style="text-align: right;">
