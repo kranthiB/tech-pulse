@@ -14,6 +14,8 @@ next_page: industrial-iot/industry-5.0
 
 *How deploying a small language model on constrained hardware forces a discipline that cloud AI never had to develop*
 
+![AMB](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/voice-native-edge-ai/0000-EAI.png)
+
 ---
 
 When we talk about AI interfaces, the conversation almost always assumes abundant compute, reliable connectivity, and a tolerant user who will wait a few seconds for a cloud round-trip. Strip those assumptions away — deploy on a 4GB embedded controller in a field with no cellular signal, where the consequence of a wrong command is a flooded field or a machine stop that costs thousands of dollars per hour — and every design decision changes.
