@@ -3,7 +3,7 @@ id: gen-ai/agent-memory
 title: Agent Memory Architecture
 sidebar_label: Agent Memory Architecture
 previous_page: gen-ai/mcp
-next_page: gen-ai/agentic-ai
+next_page: gen-ai/evaluation-engineering-for-llm-systems
 ---
 
 <div style="text-align: right;">
