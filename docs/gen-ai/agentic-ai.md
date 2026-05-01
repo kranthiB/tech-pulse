@@ -3,7 +3,7 @@ id: gen-ai/agentic-ai
 title: Agentic AI
 sidebar_label: Agentic AI
 previous_page: gen-ai/rag
-next_page: gen-ai/ai-driven-software-development
+next_page: gen-ai/multi-agent-orchestration-patterns
 ---
 
 <div style="text-align: right;">
