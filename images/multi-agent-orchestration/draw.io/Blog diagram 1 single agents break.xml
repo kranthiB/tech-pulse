@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="762" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <mxCell id="bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="10" y="10" width="1149" height="807" as="geometry" />
+    </mxCell>
+    <mxCell id="header" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="10" y="10" width="1149" height="62" as="geometry" />
+    </mxCell>
+    <mxCell id="htitle" value="Why Single Agents Break at Scale" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="28" y="10" width="620" height="62" as="geometry" />
+    </mxCell>
+    <mxCell id="hsub" value="Architectural ceilings — not model limitations" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#AACCFF;" vertex="1" parent="1">
+      <mxGeometry x="650" y="10" width="490" height="62" as="geometry" />
+    </mxCell>
+
+    <!-- Card 1: Domain Overload — x=28, w=356 -->
+    <mxCell id="c1bg" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="28" y="84" width="356" height="200" as="geometry" />
+    </mxCell>
+    <mxCell id="c1bar" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="28" y="84" width="356" height="5" as="geometry" />
+    </mxCell>
+    <mxCell id="c1ic" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="44" y="100" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c1ict" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="44" y="100" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c1t" value="Domain Overload" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="78" y="96" width="294" height="18" as="geometry" />
+    </mxCell>
+    <mxCell id="c1s" value="Precision degrades as scope expands" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" vertex="1" parent="1">
+      <mxGeometry x="78" y="114" width="294" height="14" as="geometry" />
+    </mxCell>
+    <mxCell id="c1d" value="" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="38" y="132" width="336" height="4" as="geometry" />
+    </mxCell>
+    <mxCell id="c1body" value="A single agent holding too many specialised roles pays a reliability tax on every call. Precision degrades as generalisation increases. Downstream decisions depend on accuracy — this is the first ceiling teams hit." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="38" y="140" width="336" height="90" as="geometry" />
+    </mxCell>
+    <mxCell id="c1pill" value="" style="rounded=1;arcSize=15;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="38" y="246" width="336" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="c1pt" value="Ceiling 1: Reliability degrades as scope expands" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="38" y="246" width="336" height="28" as="geometry" />
+    </mxCell>
+
+    <!-- Card 2: Context Saturation — x=402, w=356 -->
+    <mxCell id="c2bg" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="402" y="84" width="356" height="200" as="geometry" />
+    </mxCell>
+    <mxCell id="c2bar" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="402" y="84" width="356" height="5" as="geometry" />
+    </mxCell>
+    <mxCell id="c2ic" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="418" y="100" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c2ict" value="2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="418" y="100" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c2t" value="Context Window Saturation" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="452" y="96" width="294" height="18" as="geometry" />
+    </mxCell>
+    <mxCell id="c2s" value="Quality degrades unpredictably past the limit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" vertex="1" parent="1">
+      <mxGeometry x="452" y="114" width="294" height="14" as="geometry" />
+    </mxCell>
+    <mxCell id="c2d" value="" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="412" y="132" width="336" height="4" as="geometry" />
+    </mxCell>
+    <mxCell id="c2body" value="Multi-step tasks consume context faster than single interactions. When context must be trimmed — as every production system must — quality degrades unpredictably. The agent is simultaneously navigator, executor, and memory manager." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="412" y="140" width="336" height="90" as="geometry" />
+    </mxCell>
+    <mxCell id="c2pill" value="" style="rounded=1;arcSize=15;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="412" y="246" width="336" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="c2pt" value="Ceiling 2: Output quality degrades past the context limit" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="412" y="246" width="336" height="28" as="geometry" />
+    </mxCell>
+
+    <!-- Card 3: Sequential Bottleneck — x=776, w=363 -->
+    <mxCell id="c3bg" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="776" y="84" width="363" height="200" as="geometry" />
+    </mxCell>
+    <mxCell id="c3bar" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="776" y="84" width="363" height="5" as="geometry" />
+    </mxCell>
+    <mxCell id="c3ic" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="792" y="100" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c3ict" value="3" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="792" y="100" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c3t" value="Sequential Throughput Bottleneck" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="826" y="96" width="301" height="18" as="geometry" />
+    </mxCell>
+    <mxCell id="c3s" value="Independent tasks cannot be parallelised" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" vertex="1" parent="1">
+      <mxGeometry x="826" y="114" width="301" height="14" as="geometry" />
+    </mxCell>
+    <mxCell id="c3d" value="" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="786" y="132" width="343" height="4" as="geometry" />
+    </mxCell>
+    <mxCell id="c3body" value="A single agent processing complex workflows serially cannot exploit task independence. If step 5 is independent of steps 3 and 4, the single-agent architecture cannot parallelise that work. Same bottleneck that drove microservices adoption." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="786" y="140" width="343" height="90" as="geometry" />
+    </mxCell>
+    <mxCell id="c3pill" value="" style="rounded=1;arcSize=15;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="786" y="246" width="343" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="c3pt" value="Ceiling 3: Throughput capped at sequential single-agent speed" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="786" y="246" width="343" height="28" as="geometry" />
+    </mxCell>
+
+    <!-- Warning -->
+    <mxCell id="wbg" value="" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="28" y="298" width="1111" height="118" as="geometry" />
+    </mxCell>
+    <mxCell id="wbar" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="28" y="298" width="1111" height="5" as="geometry" />
+    </mxCell>
+    <mxCell id="wlabel" value="Most Teams Get This Wrong" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="44" y="305" width="500" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="wdiv" value="" style="line;strokeColor=#FFCA2C;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="38" y="327" width="1095" height="4" as="geometry" />
+    </mxCell>
+    <mxCell id="wbody" value="Teams move to multi-agent architectures because they have hit a ceiling — but they misidentify which ceiling. They assume the problem is model capability. The real limits are domain overload, context saturation, and sequential throughput — all architectural problems, not model problems. Adding a better model to a single-agent architecture does not raise these ceilings." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="44" y="335" width="1089" height="72" as="geometry" />
+    </mxCell>
+
+    <!-- Solution header -->
+    <mxCell id="solhdr" value="" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="28" y="430" width="1111" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="solhdrt" value="The Multi-Agent Response: Separation of Concerns" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="44" y="430" width="900" height="40" as="geometry" />
+    </mxCell>
+
+    <!-- Sol cards -->
+    <mxCell id="s1bg" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="28" y="482" width="356" height="78" as="geometry" />
+    </mxCell>
+    <mxCell id="s1t" value="Independent Scalability" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="44" y="486" width="328" height="18" as="geometry" />
+    </mxCell>
+    <mxCell id="s1b" value="Each specialised agent scales independently based on its workload" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="44" y="506" width="328" height="46" as="geometry" />
+    </mxCell>
+
+    <mxCell id="s2bg" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="402" y="482" width="356" height="78" as="geometry" />
+    </mxCell>
+    <mxCell id="s2t" value="Fault Isolation" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="418" y="486" width="328" height="18" as="geometry" />
+    </mxCell>
+    <mxCell id="s2b" value="One agent failure does not automatically corrupt all downstream agents" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="418" y="506" width="328" height="46" as="geometry" />
+    </mxCell>
+
+    <mxCell id="s3bg" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="776" y="482" width="363" height="78" as="geometry" />
+    </mxCell>
+    <mxCell id="s3t" value="Parallelisation" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="792" y="486" width="335" height="18" as="geometry" />
+    </mxCell>
+    <mxCell id="s3b" value="Independent tasks execute simultaneously, not sequentially" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="792" y="506" width="335" height="46" as="geometry" />
+    </mxCell>
+
+    <!-- Closing note -->
+    <mxCell id="notebg" value="" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="28" y="574" width="1111" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="notetxt" value="Multi-agent architecture applies the same engineering principle as microservices — to AI. The orchestration layer is the equivalent of the service mesh. Teams that under-invest in orchestration repeat the same mistake early microservices teams made with service discovery." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#1B3A6B;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="44" y="574" width="1089" height="56" as="geometry" />
+    </mxCell>
+
+    <!-- Footer -->
+    <mxCell id="footer" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="10" y="757" width="1149" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="furl" value="kranthib.github.io/tech-pulse" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" vertex="1" parent="1">
+      <mxGeometry x="28" y="757" width="400" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="fname" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="700" y="757" width="440" height="60" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

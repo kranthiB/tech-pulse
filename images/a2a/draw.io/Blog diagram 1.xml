@@ -1,0 +1,154 @@
+<mxfile host="Electron">
+  <diagram id="nO4S9fqFKCsCQY3Wz_UJ" name="Page-1">
+    <mxGraphModel dx="1467" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="807" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="Agent-to-Agent Protocols: The Protocol Gap A2A Was Built to Fill" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="c1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="178" width="540" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c1bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="540" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#1B3A6B;" value="Before A2A: The Fragmented Landscape" vertex="1">
+          <mxGeometry height="20" width="508" x="44" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="c1s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Every framework shipped its own inter-agent communication mechanism" vertex="1">
+          <mxGeometry height="14" width="508" x="44" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="c1div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="520" x="38" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="c1body" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="• LangGraph: proprietary state handoff model&#xa;• AutoGen: custom message envelope format&#xa;• Custom frameworks: whatever the author thought fit&#xa;&#xa;Result: agents could not talk to each other across framework boundaries — even when the underlying task was straightforward." vertex="1">
+          <mxGeometry height="112" width="512" x="44" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="178" width="540" x="599" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c2bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="540" x="599" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#856404;" value="The Connectivity Math That Breaks Teams" vertex="1">
+          <mxGeometry height="20" width="508" x="615" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="c2s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Without a shared protocol, each agent pair needs its own coordination logic" vertex="1">
+          <mxGeometry height="14" width="508" x="615" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="c2div" parent="1" style="line;strokeColor=#FFCA2C;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="520" x="609" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="c2body" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="10 agents = up to 90 bilateral coordination relationships&#xa;20 agents = up to 380 bilateral coordination relationships&#xa;50 agents = up to 2,450 bilateral coordination relationships&#xa;&#xa;Each relationship: its own auth, retry logic, monitoring, and failure handling. The combinatorial math is the problem A2A solves." vertex="1">
+          <mxGeometry height="112" width="512" x="615" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="r2hdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="r2hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="What Every Agent Handoff Requires (Unsolved Before A2A)" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="110" width="269" x="28" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="r1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="1. Capability Discovery" vertex="1">
+          <mxGeometry height="18" width="237" x="44" y="326" as="geometry" />
+        </mxCell>
+        <mxCell id="r1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="What can the receiving agent actually do? What tasks does it accept? No standard mechanism existed to answer this at runtime." vertex="1">
+          <mxGeometry height="78" width="237" x="44" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="110" width="269" x="307" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="r2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="2. Input Schema Agreement" vertex="1">
+          <mxGeometry height="18" width="237" x="323" y="326" as="geometry" />
+        </mxCell>
+        <mxCell id="r2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="What format does the receiving agent expect? Bespoke schemas answered this per pair — not across frameworks or teams." vertex="1">
+          <mxGeometry height="78" width="237" x="323" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="110" width="269" x="586" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="r3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="3. Result Contract" vertex="1">
+          <mxGeometry height="18" width="237" x="602" y="326" as="geometry" />
+        </mxCell>
+        <mxCell id="r3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="What should the calling agent expect back? No standard error taxonomy, no partial result signal, no confidence indicator existed." vertex="1">
+          <mxGeometry height="78" width="237" x="602" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="110" width="274" x="865" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="r4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="4. Failure Handling" vertex="1">
+          <mxGeometry height="18" width="242" x="881" y="326" as="geometry" />
+        </mxCell>
+        <mxCell id="r4b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="What happens when the handoff fails or the result is partial? Every team wrote custom retry logic with no shared standard." vertex="1">
+          <mxGeometry height="78" width="242" x="881" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="wbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="68" width="1111" x="28" y="446" as="geometry" />
+        </mxCell>
+        <mxCell id="wbar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="446" as="geometry" />
+        </mxCell>
+        <mxCell id="wt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="400" x="44" y="452" as="geometry" />
+        </mxCell>
+        <mxCell id="wb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Building peer-to-peer coordination logic per agent pair because it feels fast at the start. By the time the system has 6–7 agents, the coordination graph has become a maintenance liability that cannot be unwound without a major refactor." vertex="1">
+          <mxGeometry height="36" width="1089" x="44" y="472" as="geometry" />
+        </mxCell>
+        <mxCell id="c3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="178" width="540" x="28" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="c3bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="540" x="28" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="c3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#1B3A6B;" value="How A2A Emerged: The ACP Merger" vertex="1">
+          <mxGeometry height="20" width="508" x="44" y="538" as="geometry" />
+        </mxCell>
+        <mxCell id="c3s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="IBM&#39;s ACP (Agent Communication Protocol) merged into A2A under the Linux Foundation" vertex="1">
+          <mxGeometry height="14" width="508" x="44" y="558" as="geometry" />
+        </mxCell>
+        <mxCell id="c3div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="520" x="38" y="576" as="geometry" />
+        </mxCell>
+        <mxCell id="c3body" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="ACP contributed: REST-native simplicity (no SDK required), multi-modal message envelopes, and explicit capability negotiation.&#xa;&#xa;Co-governed by OpenAI, Anthropic, Google, Microsoft, and AWS. The resulting protocol inherits both lineages." vertex="1">
+          <mxGeometry height="112" width="512" x="44" y="584" as="geometry" />
+        </mxCell>
+        <mxCell id="c4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="178" width="540" x="599" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="c4bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="540" x="599" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="c4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#1B5E20;" value="A2A in Production: Status as of 2026" vertex="1">
+          <mxGeometry height="20" width="508" x="615" y="538" as="geometry" />
+        </mxCell>
+        <mxCell id="c4s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Linux Foundation governance — open standard, no single vendor lock-in" vertex="1">
+          <mxGeometry height="14" width="508" x="615" y="558" as="geometry" />
+        </mxCell>
+        <mxCell id="c4div" parent="1" style="line;strokeColor=#C8E6C9;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="520" x="609" y="576" as="geometry" />
+        </mxCell>
+        <mxCell id="c4body" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="150+ organizations running A2A in production.&#xa;&#xa;The three-layer consensus architecture is established: MCP (tools) + A2A (agents) + WebMCP (web).&#xa;&#xa;Teams building multi-agent systems outside this stack are accumulating coordination debt that is not yet visible — but will be." vertex="1">
+          <mxGeometry height="112" width="512" x="615" y="584" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="98" width="1149" x="10" y="719" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="98" width="400" x="28" y="719" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="98" width="440" x="700" y="719" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

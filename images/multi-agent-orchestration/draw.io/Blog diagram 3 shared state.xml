@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="762" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <mxCell id="bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="10" y="10" width="1149" height="807" as="geometry" />
+    </mxCell>
+    <mxCell id="header" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="10" y="10" width="1149" height="62" as="geometry" />
+    </mxCell>
+    <mxCell id="htitle" value="Shared State Management" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="28" y="10" width="600" height="62" as="geometry" />
+    </mxCell>
+    <mxCell id="hsub" value="What agents own vs. share vs. pass" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#AACCFF;" vertex="1" parent="1">
+      <mxGeometry x="630" y="10" width="510" height="62" as="geometry" />
+    </mxCell>
+
+    <!-- Three columns: each 356px wide, gaps of 9px. x: 28, 393, 758 -->
+    <!-- Col widths: 28+356=384, 393+356=749, 758+381=1139 — last col slightly wider -->
+
+    <!-- OWNED STATE — x=28, w=356 -->
+    <mxCell id="c1bg" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="28" y="84" width="356" height="348" as="geometry" />
+    </mxCell>
+    <mxCell id="c1bar" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="28" y="84" width="356" height="5" as="geometry" />
+    </mxCell>
+    <mxCell id="c1ic" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="44" y="100" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c1ict" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="44" y="100" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c1t" value="Owned State" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="78" y="96" width="294" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="c1s" value="Belongs to one agent — no other agent writes to it" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" vertex="1" parent="1">
+      <mxGeometry x="78" y="116" width="294" height="14" as="geometry" />
+    </mxCell>
+    <mxCell id="c1d" value="" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="38" y="134" width="336" height="4" as="geometry" />
+    </mxCell>
+    <mxCell id="c1ex" value="Examples:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="38" y="142" width="336" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c1exb" value="• Internal scratchpad&#xa;• Decision history&#xa;• Current task context&#xa;• Working memory" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="38" y="160" width="336" height="72" as="geometry" />
+    </mxCell>
+    <mxCell id="c1rl" value="Access rule:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="38" y="236" width="336" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c1rb" value="Other agents may request information via a defined interface — they never access owned state directly." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="38" y="254" width="336" height="44" as="geometry" />
+    </mxCell>
+    <!-- Violation sub-card -->
+    <mxCell id="c1vbg" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="38" y="304" width="336" height="118" as="geometry" />
+    </mxCell>
+    <mxCell id="c1vt" value="Violation:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="50" y="310" width="312" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c1vb" value="Any agent writing to another agent's owned state creates an implicit dependency that produces race conditions in production." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="50" y="328" width="312" height="86" as="geometry" />
+    </mxCell>
+
+    <!-- SHARED STATE — x=393, w=356 -->
+    <mxCell id="c2bg" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="393" y="84" width="356" height="348" as="geometry" />
+    </mxCell>
+    <mxCell id="c2bar" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="393" y="84" width="356" height="5" as="geometry" />
+    </mxCell>
+    <mxCell id="c2ic" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="409" y="100" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c2ict" value="2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="409" y="100" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c2t" value="Shared State" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="443" y="96" width="294" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="c2s" value="Multiple agents read — defined agents write" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" vertex="1" parent="1">
+      <mxGeometry x="443" y="116" width="294" height="14" as="geometry" />
+    </mxCell>
+    <mxCell id="c2d" value="" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="403" y="134" width="336" height="4" as="geometry" />
+    </mxCell>
+    <mxCell id="c2ex" value="Examples:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="403" y="142" width="336" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c2exb" value="• Document being processed&#xa;• Session context object&#xa;• Task status registry&#xa;• Accumulated findings" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="403" y="160" width="336" height="72" as="geometry" />
+    </mxCell>
+    <mxCell id="c2rl" value="Access rule:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="403" y="236" width="336" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c2rb" value="Write authority must be explicit per field. Exactly one agent (or one at a time, via lock) has write authority at any moment." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="403" y="254" width="336" height="44" as="geometry" />
+    </mxCell>
+    <mxCell id="c2vbg" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="403" y="304" width="336" height="118" as="geometry" />
+    </mxCell>
+    <mxCell id="c2vt" value="Violation:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="415" y="310" width="312" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c2vb" value="Implicit write authority. 'Any agent can update this' is a race condition waiting to be triggered." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="415" y="328" width="312" height="86" as="geometry" />
+    </mxCell>
+
+    <!-- PASSED STATE — x=758, w=381 -->
+    <mxCell id="c3bg" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="758" y="84" width="381" height="348" as="geometry" />
+    </mxCell>
+    <mxCell id="c3bar" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="758" y="84" width="381" height="5" as="geometry" />
+    </mxCell>
+    <mxCell id="c3ic" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="774" y="100" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c3ict" value="3" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="774" y="100" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c3t" value="Passed State" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="808" y="96" width="319" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="c3s" value="Cleanest model — use wherever the workflow allows" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" vertex="1" parent="1">
+      <mxGeometry x="808" y="116" width="319" height="14" as="geometry" />
+    </mxCell>
+    <mxCell id="c3d" value="" style="line;strokeColor=#C8E6C9;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="768" y="134" width="361" height="4" as="geometry" />
+    </mxCell>
+    <mxCell id="c3ex" value="Examples:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="768" y="142" width="361" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c3exb" value="• Extraction result handed to analyser&#xa;• Validated output passed to formatter&#xa;• Classified document passed to router" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="768" y="160" width="361" height="72" as="geometry" />
+    </mxCell>
+    <mxCell id="c3rl" value="Access rule:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="768" y="236" width="361" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c3rb" value="Once passed, the sending agent does not modify what was passed. The receiving agent owns it completely." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="768" y="254" width="361" height="44" as="geometry" />
+    </mxCell>
+    <mxCell id="c3gbg" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="768" y="304" width="361" height="118" as="geometry" />
+    </mxCell>
+    <mxCell id="c3gt" value="Why it is the cleanest model:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="780" y="310" width="337" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c3gb" value="Ownership is unambiguous. No conflict resolution needed. Each agent's responsibility boundary is clear from the handoff point." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="780" y="328" width="337" height="86" as="geometry" />
+    </mxCell>
+
+    <!-- Warning block -->
+    <mxCell id="wbg" value="" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="28" y="446" width="1111" height="118" as="geometry" />
+    </mxCell>
+    <mxCell id="wbar" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="28" y="446" width="1111" height="5" as="geometry" />
+    </mxCell>
+    <mxCell id="wlabel" value="Most Teams Get This Wrong: The Hidden Shared State Problem" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="44" y="453" width="800" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="wdiv" value="" style="line;strokeColor=#FFCA2C;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="38" y="475" width="1095" height="4" as="geometry" />
+    </mxCell>
+    <mxCell id="wbody" value="Teams design what they believe is a clean passed-state handoff. Then they add a 'global context' object that all agents read and write without defined authority rules. The global context becomes the shared state problem the handoff abstraction was supposed to eliminate. Every production multi-agent system has one. Finding it — and defining explicit write authority rules for every field — is non-negotiable work before go-live." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="44" y="483" width="1089" height="72" as="geometry" />
+    </mxCell>
+
+    <!-- Decision framework -->
+    <mxCell id="dfhdr" value="" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="28" y="578" width="1111" height="38" as="geometry" />
+    </mxCell>
+    <mxCell id="dfhdrt" value="State Decision Framework: Three Questions Before Designing Any Shared Data Structure" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="44" y="578" width="1000" height="38" as="geometry" />
+    </mxCell>
+
+    <mxCell id="df1" value="Q1: How many agents need to write?&#xa;&#xa;One agent only → Owned state&#xa;Multiple agents, defined authority → Shared state&#xa;Transferred once → Passed state" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="28" y="626" width="356" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="df2" value="Q2: What is the conflict resolution strategy?&#xa;&#xa;No strategy defined → Do not use shared state&#xa;Last write wins → Document it explicitly&#xa;Field-level authority → Define per field, per agent" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="393" y="626" width="356" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="df3" value="Q3: What happens if an agent fails mid-write?&#xa;&#xa;No answer → Do not use shared state without a transaction model&#xa;Idempotent writes possible → Document retry strategy&#xa;Non-idempotent → Require lock/commit/rollback semantics" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="758" y="626" width="381" height="100" as="geometry" />
+    </mxCell>
+
+    <!-- Footer -->
+    <mxCell id="footer" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="10" y="739" width="1149" height="78" as="geometry" />
+    </mxCell>
+    <mxCell id="furl" value="kranthib.github.io/tech-pulse" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" vertex="1" parent="1">
+      <mxGeometry x="28" y="739" width="400" height="78" as="geometry" />
+    </mxCell>
+    <mxCell id="fname" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="700" y="739" width="440" height="78" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

@@ -1,0 +1,142 @@
+<mxfile host="Electron">
+  <diagram id="7OY7Cpw-x8IAJYVT-yb3" name="Page-1">
+    <mxGraphModel dx="1467" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="827" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="MCP vs. A2A — Different Layers, Not Competitors" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="stackhdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="stackhdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="The Three-Layer Protocol Stack" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="l3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="78" width="1111" x="28" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="l3badge" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=10;fontStyle=1;" value="LAYER 3" vertex="1">
+          <mxGeometry height="30" width="74" x="44" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="l3name" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#1B3A6B;" value="WebMCP — Web Layer" vertex="1">
+          <mxGeometry height="22" width="320" x="130" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="l3desc" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Browser-native. Enables agents to interact with web surfaces and browser-resident tools. Extends the protocol stack into the web layer without requiring native tool integrations." vertex="1">
+          <mxGeometry height="44" width="997" x="130" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="l2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="78" width="1111" x="28" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="l2badge" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;fontColor=#FFFFFF;fontSize=10;fontStyle=1;" value="LAYER 2" vertex="1">
+          <mxGeometry height="30" width="74" x="44" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="l2name" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#1B5E20;" value="A2A — Agent-to-Agent (Horizontal)" vertex="1">
+          <mxGeometry height="22" width="380" x="130" y="222" as="geometry" />
+        </mxCell>
+        <mxCell id="l2desc" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Horizontal communication. Agent-to-agent. Both parties are active reasoners — either can negotiate, decline, or propose alternatives. Task delegation, capability negotiation, result negotiation. JSON-over-HTTP. Agent Card-based discovery." vertex="1">
+          <mxGeometry height="44" width="997" x="130" y="242" as="geometry" />
+        </mxCell>
+        <mxCell id="l1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="78" width="1111" x="28" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="l1badge" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=10;fontStyle=1;" value="LAYER 1" vertex="1">
+          <mxGeometry height="30" width="74" x="44" y="326" as="geometry" />
+        </mxCell>
+        <mxCell id="l1name" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#1B3A6B;" value="MCP — Model Context Protocol (Vertical)" vertex="1">
+          <mxGeometry height="22" width="420" x="130" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="l1desc" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Vertical communication. Agent-to-tool. The agent has goals; the tool has capabilities. Asymmetric trust — tool does not make decisions about accepting the request. Capability discovery, invocation, JSON-RPC. Request-response semantics." vertex="1">
+          <mxGeometry height="44" width="997" x="130" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="cmphdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="398" as="geometry" />
+        </mxCell>
+        <mxCell id="cmphdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Key Differences: MCP vs. A2A" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="398" as="geometry" />
+        </mxCell>
+        <mxCell id="chdim" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#2E5499;fontColor=#FFFFFF;fontSize=11;fontStyle=1;" value="Dimension" vertex="1">
+          <mxGeometry height="32" width="210" x="28" y="434" as="geometry" />
+        </mxCell>
+        <mxCell id="chmcp" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#2E5499;fontColor=#AACCFF;fontSize=11;fontStyle=1;" value="MCP (Vertical)" vertex="1">
+          <mxGeometry height="32" width="450" x="238" y="434" as="geometry" />
+        </mxCell>
+        <mxCell id="cha2a" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=#2E5499;fontColor=#FFFFFF;fontSize=11;fontStyle=1;" value="A2A (Horizontal)" vertex="1">
+          <mxGeometry height="32" width="451" x="688" y="434" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Communication direction" vertex="1">
+          <mxGeometry height="34" width="210" x="28" y="466" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;fontSize=11;" value="Vertical — agent calls down to tool" vertex="1">
+          <mxGeometry height="34" width="450" x="238" y="466" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;" value="Horizontal — agent coordinates with agent" vertex="1">
+          <mxGeometry height="34" width="451" x="688" y="466" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Party roles" vertex="1">
+          <mxGeometry height="34" width="210" x="28" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="m2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;fontSize=11;" value="Asymmetric — agent decides, tool executes" vertex="1">
+          <mxGeometry height="34" width="450" x="238" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;" value="Symmetric — both parties reason and can decline" vertex="1">
+          <mxGeometry height="34" width="451" x="688" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Interaction pattern" vertex="1">
+          <mxGeometry height="34" width="210" x="28" y="534" as="geometry" />
+        </mxCell>
+        <mxCell id="m3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;fontSize=11;" value="Request-response, predictable" vertex="1">
+          <mxGeometry height="34" width="450" x="238" y="534" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;" value="Negotiation, delegation, result refinement" vertex="1">
+          <mxGeometry height="34" width="451" x="688" y="534" as="geometry" />
+        </mxCell>
+        <mxCell id="d4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Transport" vertex="1">
+          <mxGeometry height="34" width="210" x="28" y="568" as="geometry" />
+        </mxCell>
+        <mxCell id="m4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;fontSize=11;" value="JSON-RPC 2.0 over stdio or HTTP" vertex="1">
+          <mxGeometry height="34" width="450" x="238" y="568" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;" value="JSON-over-HTTP, REST-native semantics" vertex="1">
+          <mxGeometry height="34" width="451" x="688" y="568" as="geometry" />
+        </mxCell>
+        <mxCell id="d5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Mental model" vertex="1">
+          <mxGeometry height="34" width="210" x="28" y="602" as="geometry" />
+        </mxCell>
+        <mxCell id="m5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;fontSize=11;" value="Interface to the agent&#39;s hands" vertex="1">
+          <mxGeometry height="34" width="450" x="238" y="602" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;" value="Interface to the agent&#39;s collaborators" vertex="1">
+          <mxGeometry height="34" width="451" x="688" y="602" as="geometry" />
+        </mxCell>
+        <mxCell id="wbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="60" width="1111" x="28" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="wbar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="wt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="400" x="44" y="656" as="geometry" />
+        </mxCell>
+        <mxCell id="wb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Treating A2A as a replacement for MCP. They solve different layers. Replacing MCP with A2A for tool calls adds complexity with zero benefit. Using both correctly produces a composable, vendor-neutral agent architecture." vertex="1">
+          <mxGeometry height="28" width="1089" x="44" y="676" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="114" width="1149" x="10" y="723" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="114" width="400" x="28" y="723" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="114" width="440" x="700" y="723" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

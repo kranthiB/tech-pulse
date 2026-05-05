@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="762" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <mxCell id="bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="10" y="10" width="1149" height="807" as="geometry" />
+    </mxCell>
+
+    <mxCell id="header" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="10" y="10" width="1149" height="68" as="geometry" />
+    </mxCell>
+    <mxCell id="title" value="Production Readiness Checklist" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="30" y="10" width="700" height="68" as="geometry" />
+    </mxCell>
+    <mxCell id="subtitle" value="Multi-agent orchestration" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#AACCFF;" vertex="1" parent="1">
+      <mxGeometry x="700" y="10" width="440" height="68" as="geometry" />
+    </mxCell>
+
+    <!-- Column headers -->
+    <mxCell id="hcheck" value="Readiness Checkpoint" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="30" y="96" width="250" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="hwhat" value="What It Requires" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="290" y="96" width="420" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="href" value="Red Flag if Missing" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="720" y="96" width="419" height="36" as="geometry" />
+    </mxCell>
+
+    <!-- Row 1 -->
+    <mxCell id="r1c" value="01  Observability Across Agent Boundaries" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;fontSize=11;fontStyle=1;align=left;verticalAlign=middle;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="30" y="142" width="250" height="82" as="geometry" />
+    </mxCell>
+    <mxCell id="r1w" value="Trace a single task from initial receipt through every agent handoff to final output, with timestamps, input/output payloads, and validation results at each boundary." style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="290" y="142" width="420" height="82" as="geometry" />
+    </mxCell>
+    <mxCell id="r1f" value="You will diagnose agent failures but miss orchestration failures — which is where most production incidents originate." style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#7A6000;" vertex="1" parent="1">
+      <mxGeometry x="720" y="142" width="419" height="82" as="geometry" />
+    </mxCell>
+
+    <!-- Row 2 -->
+    <mxCell id="r2c" value="02  Contract Validation at Runtime" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;fontSize=11;fontStyle=1;align=left;verticalAlign=middle;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="30" y="234" width="250" height="82" as="geometry" />
+    </mxCell>
+    <mxCell id="r2w" value="The orchestration layer validates incoming outputs against defined schemas before passing them downstream — in production, on every call. Not just in test environments." style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="290" y="234" width="420" height="82" as="geometry" />
+    </mxCell>
+    <mxCell id="r2f" value="Contract validation that only runs in tests is theater. Production invariably presents inputs that tests did not cover." style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#7A6000;" vertex="1" parent="1">
+      <mxGeometry x="720" y="234" width="419" height="82" as="geometry" />
+    </mxCell>
+
+    <!-- Row 3 -->
+    <mxCell id="r3c" value="03  Explicit Failure Handling Per Agent" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;fontSize=11;fontStyle=1;align=left;verticalAlign=middle;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="30" y="326" width="250" height="82" as="geometry" />
+    </mxCell>
+    <mxCell id="r3w" value="For each agent, a documented answer exists to: what does the orchestration layer do if this agent returns a contract violation? That answer must exist before go-live." style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="290" y="326" width="420" height="82" as="geometry" />
+    </mxCell>
+    <mxCell id="r3f" value="First production incident becomes an emergency design session for failure handling that should have been built before launch." style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#7A6000;" vertex="1" parent="1">
+      <mxGeometry x="720" y="326" width="419" height="82" as="geometry" />
+    </mxCell>
+
+    <!-- Row 4 -->
+    <mxCell id="r4c" value="04  Blast Radius Limits" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;fontSize=11;fontStyle=1;align=left;verticalAlign=middle;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="30" y="418" width="250" height="82" as="geometry" />
+    </mxCell>
+    <mxCell id="r4w" value="A defined maximum number of agents a single failure can propagate through before the system halts and escalates. This limit is enforced by the orchestrator, not by individual agents." style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="290" y="418" width="420" height="82" as="geometry" />
+    </mxCell>
+    <mxCell id="r4f" value="Systems without propagation limits propagate failures to completion — producing wrong outputs that look correct. Detection lag measured in days." style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#7A6000;" vertex="1" parent="1">
+      <mxGeometry x="720" y="418" width="419" height="82" as="geometry" />
+    </mxCell>
+
+    <!-- Row 5 -->
+    <mxCell id="r5c" value="05  State Conflict Resolution Rules" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;fontSize=11;fontStyle=1;align=left;verticalAlign=middle;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="30" y="510" width="250" height="82" as="geometry" />
+    </mxCell>
+    <mxCell id="r5w" value="For every piece of shared state with multiple potential writers, a defined conflict resolution strategy. 'Last write wins' is a strategy. 'I'm not sure' is not." style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="290" y="510" width="420" height="82" as="geometry" />
+    </mxCell>
+    <mxCell id="r5f" value="Race conditions that are intermittent in staging become consistent in production at scale. Debugging without defined authority rules requires replaying the entire event sequence." style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#7A6000;" vertex="1" parent="1">
+      <mxGeometry x="720" y="510" width="419" height="82" as="geometry" />
+    </mxCell>
+
+    <!-- Row 6 -->
+    <mxCell id="r6c" value="06  Human Escalation Paths" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;fontSize=11;fontStyle=1;align=left;verticalAlign=middle;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="30" y="602" width="250" height="82" as="geometry" />
+    </mxCell>
+    <mxCell id="r6w" value="Automatic escalation thresholds for low-confidence outputs, expanded task scope, and irreversible actions. These thresholds are defined in contracts, not discovered at incident time." style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="290" y="602" width="420" height="82" as="geometry" />
+    </mxCell>
+    <mxCell id="r6f" value="System executes irreversible actions under uncertainty. Discovering this boundary in production rather than in design produces the highest-impact incidents." style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#7A6000;" vertex="1" parent="1">
+      <mxGeometry x="720" y="602" width="419" height="82" as="geometry" />
+    </mxCell>
+
+    <!-- Row 7: Green -->
+    <mxCell id="r7c" value="07  Graceful Degradation Modes" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;strokeWidth=1;fontSize=11;fontStyle=1;align=left;verticalAlign=middle;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="30" y="694" width="250" height="66" as="geometry" />
+    </mxCell>
+    <mxCell id="r7w" value="The system can produce partial, clearly-labelled outputs when one or more agents fail, rather than choosing between full success and full failure. Partial outputs are defined in the contract." style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#2E7D32;" vertex="1" parent="1">
+      <mxGeometry x="290" y="694" width="420" height="66" as="geometry" />
+    </mxCell>
+    <mxCell id="r7f" value="System either produces a complete output (which may be wrong) or crashes entirely. Neither is acceptable for workflows where partial correct output has value." style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#2E7D32;" vertex="1" parent="1">
+      <mxGeometry x="720" y="694" width="419" height="66" as="geometry" />
+    </mxCell>
+
+    <!-- Footer -->
+    <mxCell id="footer" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="10" y="769" width="1149" height="48" as="geometry" />
+    </mxCell>
+    <mxCell id="footertxt" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="700" y="769" width="440" height="48" as="geometry" />
+    </mxCell>
+    <mxCell id="footerurl" value="kranthib.github.io/tech-pulse" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" vertex="1" parent="1">
+      <mxGeometry x="30" y="769" width="400" height="48" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

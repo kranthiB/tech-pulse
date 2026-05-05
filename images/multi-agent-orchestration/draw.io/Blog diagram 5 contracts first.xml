@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="762" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <mxCell id="bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="10" y="10" width="1149" height="827" as="geometry" />
+    </mxCell>
+    <mxCell id="header" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="10" y="10" width="1149" height="62" as="geometry" />
+    </mxCell>
+    <mxCell id="htitle" value="The Contracts-First Design Pattern" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="28" y="10" width="650" height="62" as="geometry" />
+    </mxCell>
+    <mxCell id="hsub" value="Four components of every agent contract" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#AACCFF;" vertex="1" parent="1">
+      <mxGeometry x="680" y="10" width="460" height="62" as="geometry" />
+    </mxCell>
+
+    <!-- Build order section -->
+    <mxCell id="comphdr" value="" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="28" y="84" width="1111" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="comphdrt" value="Build Order: The Wrong Way vs. The Contracts-First Way" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="44" y="84" width="900" height="36" as="geometry" />
+    </mxCell>
+
+    <!-- Wrong path -->
+    <mxCell id="wronghdr" value="Most Teams: Logic First" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;fontSize=12;fontStyle=1;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="28" y="130" width="536" height="32" as="geometry" />
+    </mxCell>
+    <mxCell id="ws1" value="1. Build agent logic" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#FFCA2C;fontSize=11;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="28" y="172" width="158" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="wa1" value="→" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="190" y="172" width="28" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="ws2" value="2. Wire up orchestration" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#FFCA2C;fontSize=11;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="222" y="172" width="158" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="wa2" value="→" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="384" y="172" width="28" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="ws3" value="3. Handle errors in production" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#FFCA2C;fontSize=11;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="416" y="172" width="148" height="40" as="geometry" />
+    </mxCell>
+
+    <!-- Right path -->
+    <mxCell id="righthdr" value="Contracts-First: Interface Before Logic" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;strokeWidth=1;fontSize=12;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="603" y="130" width="536" height="32" as="geometry" />
+    </mxCell>
+    <mxCell id="rs1" value="1. Define input schema per agent" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;fontSize=11;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="603" y="172" width="158" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="ra1" value="→" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="765" y="172" width="28" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="rs2" value="2. Define output schema + failure outputs" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;fontSize=11;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="797" y="172" width="168" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="ra2" value="→" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="969" y="172" width="28" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="rs3" value="3. Validate contracts compose" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;fontSize=11;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="1001" y="172" width="138" height="40" as="geometry" />
+    </mxCell>
+
+    <!-- Four components header -->
+    <mxCell id="c4hdr" value="" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="28" y="226" width="1111" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="c4hdrt" value="The Four Components of Every Agent Contract" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="44" y="226" width="900" height="36" as="geometry" />
+    </mxCell>
+
+    <!-- Four equal component cards: total width 1111, 4 cards, 3 gaps of 8 = 1111-(3*8)=1087, each card=271.75 ~ 271/272 -->
+    <!-- x positions: 28, 307, 587, 867 widths: 271, 272, 272, 280 -->
+
+    <!-- Component 1: Input Schema — x=28, w=271 -->
+    <mxCell id="cmp1bg" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="28" y="272" width="271" height="256" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp1bar" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="28" y="272" width="271" height="5" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp1ic" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="44" y="286" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp1ict" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="44" y="286" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp1t" value="Input Schema" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="78" y="283" width="209" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp1d" value="" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="38" y="318" width="251" height="4" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp1body" value="Precise specification of what the agent accepts:&#xa;&#xa;• Field names and types&#xa;• Required vs. optional fields&#xa;• Valid value ranges&#xa;• Semantic constraints&#xa;&#xa;'Accepts a document' is not a contract. A JSON schema with field-level validation rules is a contract." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="38" y="326" width="251" height="192" as="geometry" />
+    </mxCell>
+
+    <!-- Component 2: Output Schema — x=307, w=272 -->
+    <mxCell id="cmp2bg" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="307" y="272" width="272" height="256" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp2bar" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="307" y="272" width="272" height="5" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp2ic" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="323" y="286" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp2ict" value="2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="323" y="286" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp2t" value="Output Schema" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="357" y="283" width="210" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp2d" value="" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="317" y="318" width="252" height="4" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp2body" value="What the agent produces — including:&#xa;&#xa;• Structure of successful outputs&#xa;• Structure of partial outputs&#xa;• Structure of error outputs&#xa;&#xa;If an agent can produce partial success, that partial structure must be defined. What downstream agents may assume is defined here." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="317" y="326" width="252" height="192" as="geometry" />
+    </mxCell>
+
+    <!-- Component 3: Preconditions — x=587, w=272 -->
+    <mxCell id="cmp3bg" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="587" y="272" width="272" height="256" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp3bar" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="587" y="272" width="272" height="5" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp3ic" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="603" y="286" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp3ict" value="3" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="603" y="286" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp3t" value="Preconditions" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="637" y="283" width="210" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp3d" value="" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="597" y="318" width="252" height="4" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp3body" value="Explicit statements of what must be true before the agent executes:&#xa;&#xa;• Upstream agent completion dependencies&#xa;• Required configuration in shared state&#xa;• External service availability requirements&#xa;&#xa;Preconditions that are implicit become assumptions that become production bugs. Every implicit dependency must be named." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="597" y="326" width="252" height="192" as="geometry" />
+    </mxCell>
+
+    <!-- Component 4: Failure Handling — x=867, w=272 -->
+    <mxCell id="cmp4bg" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="867" y="272" width="272" height="256" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp4bar" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="867" y="272" width="272" height="5" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp4ic" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="883" y="286" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp4ict" value="4" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="883" y="286" width="26" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp4t" value="Failure Handling Spec" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="917" y="283" width="210" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp4d" value="" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="877" y="318" width="252" height="4" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp4body" value="What the agent does when it cannot produce valid output:&#xa;&#xa;• Retry strategy and backoff&#xa;• Partial output production rules&#xa;• Escalation signal to orchestrator&#xa;• Graceful degradation path&#xa;&#xa;An agent without a defined failure contract will silently pass bad output downstream or raise an unhandled exception." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="877" y="326" width="252" height="192" as="geometry" />
+    </mxCell>
+
+    <!-- Warning -->
+    <mxCell id="wbg" value="" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="28" y="540" width="1111" height="106" as="geometry" />
+    </mxCell>
+    <mxCell id="wbar" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="28" y="540" width="1111" height="5" as="geometry" />
+    </mxCell>
+    <mxCell id="wlabel" value="Most Teams Get This Wrong: The Orchestrator Is a Router, Not a Contract Enforcer" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="44" y="547" width="900" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="wdiv" value="" style="line;strokeColor=#FFCA2C;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="38" y="569" width="1095" height="4" as="geometry" />
+    </mxCell>
+    <mxCell id="wbody" value="A router decides where to send something. A contract enforcer validates what it received before deciding where to send it — and escalates when what it received violates the contract. Teams that build sophisticated routing logic without contract validation are building the wrong thing with great precision." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="44" y="577" width="1089" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- Capabilities header -->
+    <mxCell id="dfhdr" value="" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="28" y="658" width="1111" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="dfhdrt" value="Contract Enforcer Capabilities (vs. Smart Router)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="44" y="658" width="900" height="36" as="geometry" />
+    </mxCell>
+
+    <mxCell id="df1" value="Schema validation at every inbound handoff" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;strokeWidth=1;fontSize=11;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="28" y="704" width="271" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="df2" value="Precondition verification before every agent invocation" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;strokeWidth=1;fontSize=11;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="307" y="704" width="272" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="df3" value="Defined escalation paths for contract violations" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;strokeWidth=1;fontSize=11;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="587" y="704" width="272" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="df4" value="Structured audit trail at every boundary" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;strokeWidth=1;fontSize=11;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="867" y="704" width="272" height="40" as="geometry" />
+    </mxCell>
+
+    <!-- Footer -->
+    <mxCell id="footer" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="10" y="759" width="1149" height="78" as="geometry" />
+    </mxCell>
+    <mxCell id="furl" value="kranthib.github.io/tech-pulse" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" vertex="1" parent="1">
+      <mxGeometry x="28" y="759" width="400" height="78" as="geometry" />
+    </mxCell>
+    <mxCell id="fname" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="700" y="759" width="440" height="78" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

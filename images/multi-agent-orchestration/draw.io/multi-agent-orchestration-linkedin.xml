@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1200" dy="627" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="0" pageScale="1" pageWidth="1200" pageHeight="627" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- Canvas background -->
+    <mxCell id="bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;pointerEvents=0;" vertex="1" parent="1">
+      <mxGeometry x="0" y="0" width="1200" height="627" as="geometry" />
+    </mxCell>
+
+    <!-- ── HEADER ── -->
+    <mxCell id="header" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="0" y="0" width="1200" height="64" as="geometry" />
+    </mxCell>
+    <mxCell id="header_title" value="Multi-Agent Orchestration Patterns" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="28" y="0" width="700" height="64" as="geometry" />
+    </mxCell>
+    <mxCell id="header_sub" value="Orchestration is contract design, not routing" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#AACCFF;" vertex="1" parent="1">
+      <mxGeometry x="500" y="0" width="672" height="64" as="geometry" />
+    </mxCell>
+
+    <!-- ══════════════════════════════════════════
+         ROW 1 — THREE CONCEPT CARDS
+    ══════════════════════════════════════════ -->
+
+    <!-- CARD 1: Why Single Agents Break -->
+    <mxCell id="c1_bg" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="16" y="74" width="376" height="196" as="geometry" />
+    </mxCell>
+    <mxCell id="c1_top" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="16" y="74" width="376" height="5" as="geometry" />
+    </mxCell>
+    <mxCell id="c1_icon" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="36" y="92" width="28" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="c1_icon_txt" value="✗" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="36" y="92" width="28" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="c1_title" value="Why Single Agents Break" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="72" y="88" width="308" height="18" as="geometry" />
+    </mxCell>
+    <mxCell id="c1_sub" value="Architectural ceilings, not model limits" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" vertex="1" parent="1">
+      <mxGeometry x="72" y="106" width="308" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c1_div" value="" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="28" y="126" width="352" height="4" as="geometry" />
+    </mxCell>
+    <mxCell id="c1_b1" value="• Domain overload degrades precision" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="36" y="134" width="344" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c1_b2" value="• Context saturation corrupts output quality" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="36" y="152" width="344" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c1_b3" value="• Sequential throughput caps performance" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="36" y="170" width="344" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c1_b4" value="• Better models do not raise these ceilings" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="36" y="188" width="344" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c1_pill" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="28" y="212" width="352" height="46" as="geometry" />
+    </mxCell>
+    <mxCell id="c1_pill_t" value="Design principle" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="28" y="216" width="352" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c1_pill_b" value="These are system design problems" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="28" y="234" width="352" height="16" as="geometry" />
+    </mxCell>
+
+    <!-- CARD 2: Three Orchestration Topologies -->
+    <mxCell id="c2_bg" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="412" y="74" width="376" height="196" as="geometry" />
+    </mxCell>
+    <mxCell id="c2_top" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="412" y="74" width="376" height="5" as="geometry" />
+    </mxCell>
+    <mxCell id="c2_icon" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="432" y="92" width="28" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="c2_icon_txt" value="⬡" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="432" y="92" width="28" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="c2_title" value="Three Orchestration Topologies" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="468" y="88" width="308" height="18" as="geometry" />
+    </mxCell>
+    <mxCell id="c2_sub" value="Each pattern fails in a specific way" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" vertex="1" parent="1">
+      <mxGeometry x="468" y="106" width="308" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c2_div" value="" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="424" y="126" width="352" height="4" as="geometry" />
+    </mxCell>
+
+    <!-- Topology pill 1 -->
+    <mxCell id="t1_bg" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="424" y="136" width="108" height="52" as="geometry" />
+    </mxCell>
+    <mxCell id="t1_title" value="Hierarchical" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="424" y="138" width="108" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="t1_sub" value="Supervisor + workers" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" vertex="1" parent="1">
+      <mxGeometry x="424" y="156" width="108" height="14" as="geometry" />
+    </mxCell>
+    <mxCell id="t1_fail" value="Fails: bottleneck" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="424" y="170" width="108" height="14" as="geometry" />
+    </mxCell>
+
+    <!-- Topology pill 2 -->
+    <mxCell id="t2_bg" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="546" y="136" width="108" height="52" as="geometry" />
+    </mxCell>
+    <mxCell id="t2_title" value="Peer-to-peer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="546" y="138" width="108" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="t2_sub" value="Self-organising" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" vertex="1" parent="1">
+      <mxGeometry x="546" y="156" width="108" height="14" as="geometry" />
+    </mxCell>
+    <mxCell id="t2_fail" value="Fails: no graph" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="546" y="170" width="108" height="14" as="geometry" />
+    </mxCell>
+
+    <!-- Topology pill 3 -->
+    <mxCell id="t3_bg" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="668" y="136" width="108" height="52" as="geometry" />
+    </mxCell>
+    <mxCell id="t3_title" value="Pipeline" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="668" y="138" width="108" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="t3_sub" value="Sequential handoff" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" vertex="1" parent="1">
+      <mxGeometry x="668" y="156" width="108" height="14" as="geometry" />
+    </mxCell>
+    <mxCell id="t3_fail" value="Fails: one blocks all" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="668" y="170" width="108" height="14" as="geometry" />
+    </mxCell>
+
+    <mxCell id="c2_pill" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="424" y="212" width="352" height="46" as="geometry" />
+    </mxCell>
+    <mxCell id="c2_pill_t" value="Design principle" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="424" y="216" width="352" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c2_pill_b" value="Choose topology by failure tolerance, not convenience" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="424" y="234" width="352" height="16" as="geometry" />
+    </mxCell>
+
+    <!-- CARD 3: Contracts-First -->
+    <mxCell id="c3_bg" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="808" y="74" width="376" height="196" as="geometry" />
+    </mxCell>
+    <mxCell id="c3_top" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="808" y="74" width="376" height="5" as="geometry" />
+    </mxCell>
+    <mxCell id="c3_icon" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="828" y="92" width="28" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="c3_icon_txt" value="◈" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="828" y="92" width="28" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="c3_title" value="The Contracts-First Principle" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="864" y="88" width="308" height="18" as="geometry" />
+    </mxCell>
+    <mxCell id="c3_sub" value="Define before you implement" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" vertex="1" parent="1">
+      <mxGeometry x="864" y="106" width="308" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c3_div" value="" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="820" y="126" width="352" height="4" as="geometry" />
+    </mxCell>
+    <mxCell id="c3_intro" value="Every agent contract defines four things:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="828" y="134" width="344" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c3_b1" value="• Input schema" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="828" y="152" width="344" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c3_b2" value="• Output schema (including error outputs)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="828" y="170" width="344" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c3_b3" value="• Preconditions + failure handling spec" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="828" y="188" width="344" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c3_pill" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="820" y="212" width="352" height="46" as="geometry" />
+    </mxCell>
+    <mxCell id="c3_pill_t" value="Design principle" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="820" y="216" width="352" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c3_pill_b" value="Contract is the artifact — code is constrained by it" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="820" y="234" width="352" height="16" as="geometry" />
+    </mxCell>
+
+    <!-- ══════════════════════════════════════════
+         ROW 2 — THREE DETAIL CARDS
+    ══════════════════════════════════════════ -->
+
+    <!-- CARD 4: Failure Modes (Amber/Warning) -->
+    <mxCell id="c4_bg" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="16" y="280" width="376" height="210" as="geometry" />
+    </mxCell>
+    <mxCell id="c4_top" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="16" y="280" width="376" height="5" as="geometry" />
+    </mxCell>
+    <mxCell id="c4_title" value="Four Failure Modes to Design For" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="28" y="285" width="352" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c4_div" value="" style="line;strokeColor=#FFCA2C;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="28" y="308" width="352" height="4" as="geometry" />
+    </mxCell>
+
+    <mxCell id="c4_sq1" value="" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="28" y="318" width="8" height="8" as="geometry" />
+    </mxCell>
+    <mxCell id="c4_f1t" value="Cascading failure" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="44" y="314" width="330" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c4_f1b" value="Invalid output propagates silently downstream" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#7A6000;" vertex="1" parent="1">
+      <mxGeometry x="44" y="330" width="330" height="16" as="geometry" />
+    </mxCell>
+
+    <mxCell id="c4_sq2" value="" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="28" y="350" width="8" height="8" as="geometry" />
+    </mxCell>
+    <mxCell id="c4_f2t" value="Circular delegation" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="44" y="346" width="330" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c4_f2b" value="Agents loop without circuit breakers" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#7A6000;" vertex="1" parent="1">
+      <mxGeometry x="44" y="362" width="330" height="16" as="geometry" />
+    </mxCell>
+
+    <mxCell id="c4_sq3" value="" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="28" y="382" width="8" height="8" as="geometry" />
+    </mxCell>
+    <mxCell id="c4_f3t" value="Context drift" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="44" y="378" width="330" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c4_f3b" value="Semantic shift accumulates across agent hops" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#7A6000;" vertex="1" parent="1">
+      <mxGeometry x="44" y="394" width="330" height="16" as="geometry" />
+    </mxCell>
+
+    <mxCell id="c4_sq4" value="" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="28" y="414" width="8" height="8" as="geometry" />
+    </mxCell>
+    <mxCell id="c4_f4t" value="Partial completion" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="44" y="410" width="330" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c4_f4b" value="Workflow appears successful but is incomplete" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#7A6000;" vertex="1" parent="1">
+      <mxGeometry x="44" y="426" width="330" height="16" as="geometry" />
+    </mxCell>
+
+    <mxCell id="c4_pill" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="28" y="452" width="352" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="c4_pill_t" value="None are model problems — all are contract gaps" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#856404;" vertex="1" parent="1">
+      <mxGeometry x="28" y="452" width="352" height="30" as="geometry" />
+    </mxCell>
+
+    <!-- CARD 5: Topology Selection (Green) -->
+    <mxCell id="c5_bg" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="412" y="280" width="376" height="210" as="geometry" />
+    </mxCell>
+    <mxCell id="c5_top" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="412" y="280" width="376" height="5" as="geometry" />
+    </mxCell>
+    <mxCell id="c5_title" value="Topology Selection: Three Questions" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="424" y="285" width="352" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c5_div" value="" style="line;strokeColor=#81C784;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="424" y="308" width="352" height="4" as="geometry" />
+    </mxCell>
+
+    <mxCell id="c5_q1" value="Q1  Shared evolving state or completed outputs?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="424" y="316" width="352" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c5_a1a" value="Shared state → Hierarchical or P2P" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#2E7D32;" vertex="1" parent="1">
+      <mxGeometry x="436" y="334" width="340" height="14" as="geometry" />
+    </mxCell>
+    <mxCell id="c5_a1b" value="Completed outputs → Pipeline" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#2E7D32;" vertex="1" parent="1">
+      <mxGeometry x="436" y="350" width="340" height="14" as="geometry" />
+    </mxCell>
+
+    <mxCell id="c5_q2" value="Q2  One coordinator or self-organising agents?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="424" y="370" width="352" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c5_a2a" value="Coordinator → Hierarchical" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#2E7D32;" vertex="1" parent="1">
+      <mxGeometry x="436" y="388" width="340" height="14" as="geometry" />
+    </mxCell>
+    <mxCell id="c5_a2b" value="Self-organising → P2P" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#2E7D32;" vertex="1" parent="1">
+      <mxGeometry x="436" y="404" width="340" height="14" as="geometry" />
+    </mxCell>
+
+    <mxCell id="c5_q3" value="Q3  What is the blast radius if one agent fails?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="424" y="420" width="352" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c5_a3" value="Determines isolation and fallback strategy" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#2E7D32;" vertex="1" parent="1">
+      <mxGeometry x="436" y="438" width="340" height="14" as="geometry" />
+    </mxCell>
+
+    <mxCell id="c5_pill" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="424" y="452" width="352" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="c5_pill_t" value="Answer all three before choosing a topology" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="424" y="452" width="352" height="30" as="geometry" />
+    </mxCell>
+
+    <!-- CARD 6: Production Readiness -->
+    <mxCell id="c6_bg" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="808" y="280" width="376" height="210" as="geometry" />
+    </mxCell>
+    <mxCell id="c6_top" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="808" y="280" width="376" height="5" as="geometry" />
+    </mxCell>
+    <mxCell id="c6_title" value="Production Readiness: 7 Checkpoints" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="820" y="285" width="352" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c6_div" value="" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="820" y="308" width="352" height="4" as="geometry" />
+    </mxCell>
+    <mxCell id="c6_r1" value="01  Observability across agent boundaries" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="828" y="316" width="344" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c6_r2" value="02  Runtime contract validation" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="828" y="334" width="344" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c6_r3" value="03  Explicit failure handling per agent" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="828" y="352" width="344" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c6_r4" value="04  Blast radius limits by orchestrator" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="828" y="370" width="344" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c6_r5" value="05  State conflict resolution rules defined" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="828" y="388" width="344" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c6_r6" value="06  Human escalation for irreversible actions" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="828" y="406" width="344" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c6_r7" value="07  Graceful degradation to partial outputs" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;" vertex="1" parent="1">
+      <mxGeometry x="828" y="424" width="344" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="c6_pill" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="820" y="452" width="352" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="c6_pill_t" value="All seven must pass before production deploy" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="820" y="452" width="352" height="30" as="geometry" />
+    </mxCell>
+
+    <!-- ══════════════════════════════════════════
+         FOOTER
+    ══════════════════════════════════════════ -->
+    <mxCell id="footer_bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="0" y="498" width="1200" height="129" as="geometry" />
+    </mxCell>
+
+    <!-- Footer divider line -->
+    <mxCell id="footer_div" value="" style="line;strokeColor=#2E5499;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="16" y="518" width="1168" height="4" as="geometry" />
+    </mxCell>
+
+    <!-- Pull-quote accent bar -->
+    <mxCell id="footer_accent" value="" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#AACCFF;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="16" y="528" width="4" height="58" as="geometry" />
+    </mxCell>
+
+    <!-- Pull-quote text -->
+    <mxCell id="footer_q1" value="Teams that design agent contracts before agent logic" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#AACCFF;" vertex="1" parent="1">
+      <mxGeometry x="32" y="528" width="550" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="footer_q2" value="ship systems that survive production." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#AACCFF;" vertex="1" parent="1">
+      <mxGeometry x="32" y="550" width="550" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="footer_q3" value="Teams that do not will keep debugging handoffs." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#7A9ACC;" vertex="1" parent="1">
+      <mxGeometry x="32" y="572" width="550" height="20" as="geometry" />
+    </mxCell>
+
+    <!-- Vertical divider between quote and stats -->
+    <mxCell id="footer_vdiv" value="" style="line;strokeColor=#2E5499;fillColor=none;strokeWidth=1;horizontal=0;" vertex="1" parent="1">
+      <mxGeometry x="600" y="520" width="4" height="90" as="geometry" />
+    </mxCell>
+
+    <!-- Stat pill 1: Topology Patterns -->
+    <mxCell id="stat1_bg" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#162E55;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="618" y="520" width="176" height="52" as="geometry" />
+    </mxCell>
+    <mxCell id="stat1_label" value="TOPOLOGY PATTERNS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#AACCFF;" vertex="1" parent="1">
+      <mxGeometry x="618" y="524" width="176" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="stat1_num" value="3" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="618" y="540" width="176" height="28" as="geometry" />
+    </mxCell>
+
+    <!-- Stat pill 2: Failure Modes -->
+    <mxCell id="stat2_bg" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#162E55;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="806" y="520" width="176" height="52" as="geometry" />
+    </mxCell>
+    <mxCell id="stat2_label" value="FAILURE MODES" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#AACCFF;" vertex="1" parent="1">
+      <mxGeometry x="806" y="524" width="176" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="stat2_num" value="4" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#FFCA2C;" vertex="1" parent="1">
+      <mxGeometry x="806" y="540" width="176" height="28" as="geometry" />
+    </mxCell>
+
+    <!-- Stat pill 3: Prod Checkpoints -->
+    <mxCell id="stat3_bg" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#162E55;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="994" y="520" width="176" height="52" as="geometry" />
+    </mxCell>
+    <mxCell id="stat3_label" value="PROD CHECKPOINTS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#AACCFF;" vertex="1" parent="1">
+      <mxGeometry x="994" y="524" width="176" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="stat3_num" value="7" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#81C784;" vertex="1" parent="1">
+      <mxGeometry x="994" y="540" width="176" height="28" as="geometry" />
+    </mxCell>
+
+    <!-- Footer bottom strip divider -->
+    <mxCell id="footer_bot_div" value="" style="line;strokeColor=#2E5499;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="16" y="582" width="1168" height="4" as="geometry" />
+    </mxCell>
+
+    <!-- Blog URL -->
+    <mxCell id="footer_url" value="kranthib.github.io/tech-pulse" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#7A9ACC;" vertex="1" parent="1">
+      <mxGeometry x="618" y="588" width="300" height="20" as="geometry" />
+    </mxCell>
+
+    <!-- Attribution -->
+    <mxCell id="footer_name" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="850" y="588" width="334" height="20" as="geometry" />
+    </mxCell>
+
+  </root>
+</mxGraphModel>

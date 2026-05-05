@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="762" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- Canvas -->
+    <mxCell id="bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="10" y="10" width="1149" height="807" as="geometry" />
+    </mxCell>
+
+    <!-- Header -->
+    <mxCell id="header" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="10" y="10" width="1149" height="68" as="geometry" />
+    </mxCell>
+    <mxCell id="title" value="Three Orchestration Topologies" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="30" y="10" width="700" height="68" as="geometry" />
+    </mxCell>
+    <mxCell id="subtitle" value="When each is appropriate — and when each breaks" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#AACCFF;" vertex="1" parent="1">
+      <mxGeometry x="700" y="10" width="440" height="68" as="geometry" />
+    </mxCell>
+
+    <!-- ── TOPOLOGY 1: HIERARCHICAL ── -->
+    <mxCell id="t1hdr" value="" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="30" y="96" width="1109" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="t1hdrtxt" value="Topology 1: Hierarchical (Supervisor-Worker)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="48" y="96" width="700" height="40" as="geometry" />
+    </mxCell>
+
+    <!-- Breaks when (left) -->
+    <mxCell id="t1break" value="Breaks when:&#xa;&#xa;Supervisor becomes the throughput bottleneck. Supervisor logic grows too complex to maintain independently." style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#7A6000;" vertex="1" parent="1">
+      <mxGeometry x="30" y="146" width="190" height="130" as="geometry" />
+    </mxCell>
+
+    <!-- Supervisor -->
+    <mxCell id="sup" value="SUPERVISOR AGENT&#xa;Coordinates · Decomposes · Synthesises" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="420" y="146" width="300" height="56" as="geometry" />
+    </mxCell>
+
+    <!-- Workers -->
+    <mxCell id="w1" value="Worker A&#xa;Domain 1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1B3A6B;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="240" y="246" width="130" height="52" as="geometry" />
+    </mxCell>
+    <mxCell id="w2" value="Worker B&#xa;Domain 2" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1B3A6B;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="390" y="246" width="130" height="52" as="geometry" />
+    </mxCell>
+    <mxCell id="w3" value="Worker C&#xa;Domain 3" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1B3A6B;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="540" y="246" width="130" height="52" as="geometry" />
+    </mxCell>
+    <mxCell id="w4" value="Worker D&#xa;Domain 4" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1B3A6B;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="690" y="246" width="130" height="52" as="geometry" />
+    </mxCell>
+
+    <mxCell id="sa1" value="" style="endArrow=block;endFill=1;strokeColor=#1B3A6B;strokeWidth=1;" edge="1" source="sup" target="w1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="sa2" value="" style="endArrow=block;endFill=1;strokeColor=#1B3A6B;strokeWidth=1;" edge="1" source="sup" target="w2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="sa3" value="" style="endArrow=block;endFill=1;strokeColor=#1B3A6B;strokeWidth=1;" edge="1" source="sup" target="w3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="sa4" value="" style="endArrow=block;endFill=1;strokeColor=#1B3A6B;strokeWidth=1;" edge="1" source="sup" target="w4" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+    <!-- Use when (right) -->
+    <mxCell id="t1use" value="Use when:&#xa;&#xa;Task is tree-structured. A single agent must integrate all partial outputs. Clear ownership of the final result is required." style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="920" y="146" width="200" height="130" as="geometry" />
+    </mxCell>
+
+    <!-- ── TOPOLOGY 2: PEER-TO-PEER ── -->
+    <mxCell id="t2hdr" value="" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="30" y="322" width="1109" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="t2hdrtxt" value="Topology 2: Peer-to-Peer (Lateral Delegation)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="48" y="322" width="700" height="40" as="geometry" />
+    </mxCell>
+
+    <mxCell id="t2break" value="Breaks when:&#xa;&#xa;No explicit delegation graph exists. Circular delegation risk without circuit breakers. Decision chains become untraceable." style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#7A6000;" vertex="1" parent="1">
+      <mxGeometry x="30" y="372" width="190" height="120" as="geometry" />
+    </mxCell>
+
+    <mxCell id="p1" value="Expert Agent A&#xa;Domain 1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1B3A6B;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="280" y="390" width="160" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="p2" value="Expert Agent B&#xa;Domain 2" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1B3A6B;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="560" y="390" width="160" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="p3" value="Expert Agent C&#xa;Domain 3" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1B3A6B;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="740" y="390" width="160" height="56" as="geometry" />
+    </mxCell>
+
+    <mxCell id="pa1" value="delegates" style="endArrow=block;endFill=1;strokeColor=#1B3A6B;fontSize=9;" edge="1" source="p1" target="p2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="pa2" value="delegates" style="endArrow=block;endFill=1;strokeColor=#1B3A6B;fontSize=9;" edge="1" source="p2" target="p3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="pa3" value="delegates back" style="endArrow=block;endFill=1;strokeColor=#856404;fontSize=9;dashed=1;" edge="1" source="p3" target="p1" parent="1"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="820" y="468"/><mxPoint x="360" y="468"/></Array></mxGeometry></mxCell>
+
+    <mxCell id="t2use" value="Use when:&#xa;&#xa;Agents hold genuinely distinct domain knowledge. System must evolve by adding agents without rewiring a central coordinator." style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="920" y="372" width="200" height="120" as="geometry" />
+    </mxCell>
+
+    <!-- ── TOPOLOGY 3: PIPELINE ── -->
+    <mxCell id="t3hdr" value="" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="30" y="514" width="1109" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="t3hdrtxt" value="Topology 3: Pipeline (Sequential Handoff)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="48" y="514" width="700" height="40" as="geometry" />
+    </mxCell>
+
+    <mxCell id="t3break" value="Breaks when:&#xa;&#xa;One failing agent blocks all downstream agents. Bad output at Stage 2 corrupts Stages 3, 4, and 5 with no branching." style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#7A6000;" vertex="1" parent="1">
+      <mxGeometry x="30" y="564" width="190" height="120" as="geometry" />
+    </mxCell>
+
+    <mxCell id="pipe1" value="Stage 1&#xa;Agent" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1B3A6B;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="248" y="580" width="120" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="pipe2" value="Stage 2&#xa;Agent" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1B3A6B;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="418" y="580" width="120" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="pipe3" value="Stage 3&#xa;Agent" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1B3A6B;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="588" y="580" width="120" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="pipe4" value="Stage 4&#xa;Agent" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1B3A6B;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="758" y="580" width="120" height="56" as="geometry" />
+    </mxCell>
+
+    <mxCell id="pia1" value="output" style="endArrow=block;endFill=1;strokeColor=#1B3A6B;fontSize=9;" edge="1" source="pipe1" target="pipe2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="pia2" value="output" style="endArrow=block;endFill=1;strokeColor=#1B3A6B;fontSize=9;" edge="1" source="pipe2" target="pipe3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="pia3" value="output" style="endArrow=block;endFill=1;strokeColor=#1B3A6B;fontSize=9;" edge="1" source="pipe3" target="pipe4" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+    <mxCell id="t3use" value="Use when:&#xa;&#xa;Workflow has natural linear structure. Each stage genuinely transforms the previous output. Reordering stages is not meaningful." style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#81C784;strokeWidth=1;fontSize=11;align=left;verticalAlign=top;fontColor=#1B5E20;" vertex="1" parent="1">
+      <mxGeometry x="920" y="564" width="200" height="120" as="geometry" />
+    </mxCell>
+
+    <!-- Decision principle -->
+    <mxCell id="principle" value="" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="30" y="700" width="1109" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="principletxt" value="Design principle: Choose topology based on three questions — does state evolve or get passed? Is there one coordinator or do agents self-organise? What is the blast radius if one agent fails?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#1B3A6B;" vertex="1" parent="1">
+      <mxGeometry x="48" y="700" width="1080" height="56" as="geometry" />
+    </mxCell>
+
+    <!-- Footer -->
+    <mxCell id="footer" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="10" y="769" width="1149" height="48" as="geometry" />
+    </mxCell>
+    <mxCell id="footertxt" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="700" y="769" width="440" height="48" as="geometry" />
+    </mxCell>
+    <mxCell id="footerurl" value="kranthib.github.io/tech-pulse" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" vertex="1" parent="1">
+      <mxGeometry x="30" y="769" width="400" height="48" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
