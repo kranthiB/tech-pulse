@@ -1,0 +1,199 @@
+<mxfile host="Electron">
+  <diagram id="tnY4qG_O0WTCSTqf0gO-" name="Page-1">
+    <mxGraphModel dx="1657" dy="1117" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="0" pageScale="1" pageWidth="1200" pageHeight="627" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="627" width="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="64" width="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#FFFFFF;" value="AI Gateway Architecture" vertex="1">
+          <mxGeometry height="64" width="700" x="16" as="geometry" />
+        </mxCell>
+        <mxCell id="p1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="196" width="386" x="8" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p1bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="386" x="8" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Why Direct LLM Calls Break" vertex="1">
+          <mxGeometry height="18" width="358" x="22" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="p1s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="The incident that was 5 minutes takes 4 hours" vertex="1">
+          <mxGeometry height="14" width="358" x="22" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p1div" parent="1" style="line;strokeColor=#FFCA2C;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="370" x="16" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="p1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="• 11+ services each with own retry logic and credentials&#xa;• Rate limit state not shared across callers&#xa;• Recovery requires updating every service individually&#xa;• Cost invisible until monthly billing arrives&#xa;• PII cannot be inspected before it leaves the perimeter&#xa;• Compliance controls unenforceable uniformly" vertex="1">
+          <mxGeometry height="134" width="362" x="22" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="p2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="196" width="388" x="406" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p2bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="388" x="406" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="What the Gateway Enforces" vertex="1">
+          <mxGeometry height="18" width="360" x="420" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="p2s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="One policy. Enforced on every call. No exceptions." vertex="1">
+          <mxGeometry height="14" width="360" x="420" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p2div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="372" x="414" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="p2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="• Cost contracts: per-caller budget limits in real time&#xa;• Latency contracts: timeout policies and fallback routing&#xa;• Quality contracts: benchmark-validated model selection&#xa;• Compliance contracts: PII masking, audit logging&#xa;&#xa;A system without a gateway has one per calling service, all different, none governed." vertex="1">
+          <mxGeometry height="134" width="364" x="420" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="p3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="196" width="386" x="806" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p3bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="386" x="806" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B5E20;" value="Intelligent Routing" vertex="1">
+          <mxGeometry height="18" width="358" x="820" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="p3s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Routing decisions made per-request, not per-week" vertex="1">
+          <mxGeometry height="14" width="358" x="820" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p3div" parent="1" style="line;strokeColor=#C8E6C9;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="370" x="814" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="p3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="• Benchmark-validated: cheapest model meeting quality threshold&#xa;• Latency-based failover: automatic when primary is slow&#xa;• Load balancing: distributes traffic across providers&#xa;• Canary routing: safe model version validation&#xa;&#xa;Upfront benchmarking investment pays back on every call." vertex="1">
+          <mxGeometry height="134" width="362" x="820" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="p4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="196" width="386" x="8" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p4bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="386" x="8" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Four-Stage Maturity Model" vertex="1">
+          <mxGeometry height="18" width="358" x="22" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="p4s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Stage 3 = minimum viable for production" vertex="1">
+          <mxGeometry height="14" width="358" x="22" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="p4div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="370" x="16" y="324" as="geometry" />
+        </mxCell>
+        <mxCell id="s1p" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=10;fontColor=#9E9E9E;" value="1: Direct Calls&#xa;No governance" vertex="1">
+          <mxGeometry height="44" width="82" x="22" y="334" as="geometry" />
+        </mxCell>
+        <mxCell id="s1arr" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#1B3A6B;" value="→" vertex="1">
+          <mxGeometry height="16" width="16" x="106" y="348" as="geometry" />
+        </mxCell>
+        <mxCell id="s2p" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=10;fontColor=#616161;" value="2: Shared Lib&#xa;Some consistency" vertex="1">
+          <mxGeometry height="44" width="82" x="124" y="334" as="geometry" />
+        </mxCell>
+        <mxCell id="s2arr" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#1B3A6B;" value="→" vertex="1">
+          <mxGeometry height="16" width="16" x="208" y="348" as="geometry" />
+        </mxCell>
+        <mxCell id="s3p" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;fontSize=10;fontColor=#1B5E20;fontStyle=1;" value="3: Centralized&#xa;Routing + Logging" vertex="1">
+          <mxGeometry height="44" width="82" x="226" y="334" as="geometry" />
+        </mxCell>
+        <mxCell id="s3arr" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#1B3A6B;" value="→" vertex="1">
+          <mxGeometry height="16" width="16" x="310" y="348" as="geometry" />
+        </mxCell>
+        <mxCell id="s4p" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;fontSize=10;fontColor=#0d5c2f;fontStyle=1;" value="4: Intelligent&#xa;Benchmark + Cache" vertex="1">
+          <mxGeometry height="44" width="58" x="328" y="334" as="geometry" />
+        </mxCell>
+        <mxCell id="mvpnote" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;fontSize=10;fontStyle=2;fontColor=#1B5E20;" value="Stage 3 is the minimum viable architecture for systems over 1,000 LLM calls/day." vertex="1">
+          <mxGeometry height="28" width="370" x="16" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="p4extra" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Build Stage 3 before you hit 1,000 calls/day. Retrofitting centralized control is always harder than building it in the first place." vertex="1">
+          <mxGeometry height="44" width="362" x="22" y="424" as="geometry" />
+        </mxCell>
+        <mxCell id="p5bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="196" width="388" x="406" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p5bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="388" x="406" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p5t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="When to Act" vertex="1">
+          <mxGeometry height="18" width="360" x="420" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="p5s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Build the gateway before you need it — not after" vertex="1">
+          <mxGeometry height="14" width="360" x="420" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="p5div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="372" x="414" y="324" as="geometry" />
+        </mxCell>
+        <mxCell id="p5b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="• More than 3 direct integrations exist: start gateway refactoring now&#xa;• LLM calls exceed 1,000/day: Stage 3 is not optional&#xa;• User data touches any prompt: PII inspection is not optional&#xa;• LLM cost visible in P&amp;L: Stage 4 investment pays back&#xa;&#xa;Trigger Stage 2: 2+ services call providers directly&#xa;Trigger Stage 3: 1,000+ calls/day or user data in prompts&#xa;Trigger Stage 4: LLM cost in P&amp;L or compliance audit" vertex="1">
+          <mxGeometry height="134" width="364" x="420" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="p6bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="196" width="386" x="806" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p6t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#AACCFF;" value="What to Instrument" vertex="1">
+          <mxGeometry height="18" width="358" x="820" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="p6div" parent="1" style="line;strokeColor=#2E5499;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="370" x="814" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="p6b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#EAF1FB;whiteSpace=wrap;" value="Alert on: provider error rate, rate limit breaches, cost spike, gateway latency p99&#xa;&#xa;Review daily: per-caller cost trends, cache hit rate, routing distribution&#xa;&#xa;Review weekly: team cost attribution, quality metric trends, benchmark results" vertex="1">
+          <mxGeometry height="100" width="362" x="820" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="p6close" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#FFCA2C;whiteSpace=wrap;" value="The teams shipping reliable AI systems in 2026 built the gateway before they needed it." vertex="1">
+          <mxGeometry height="46" width="362" x="820" y="422" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="143" width="1200" y="484" as="geometry" />
+        </mxCell>
+        <mxCell id="fdiv" parent="1" style="line;strokeColor=#2E5499;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="1168" x="16" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="facc" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#AACCFF;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="54" width="4" x="16" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="fq1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=2;fontColor=#AACCFF;" value="Direct calls feel fast at the start. The first rate limit incident proves why they aren&#39;t production architecture." vertex="1">
+          <mxGeometry height="28" width="700" x="30" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="fq2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=2;fontColor=#7A9ACC;" value="A 5-minute fix without a gateway takes 4 hours." vertex="1">
+          <mxGeometry height="26" width="700" x="30" y="542" as="geometry" />
+        </mxCell>
+        <mxCell id="s1bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#162E55;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="136" x="756" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="s1l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#AACCFF;" value="GATEWAY STAGES" vertex="1">
+          <mxGeometry height="14" width="136" x="756" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s1n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#FFFFFF;" value="4" vertex="1">
+          <mxGeometry height="26" width="136" x="756" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="s2bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#162E55;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="136" x="904" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="s2l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#AACCFF;" value="GATEWAY FUNCTIONS" vertex="1">
+          <mxGeometry height="14" width="136" x="904" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s2n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#81C784;" value="12+" vertex="1">
+          <mxGeometry height="26" width="136" x="904" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="s3bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#162E55;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="136" x="1052" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="s3l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#AACCFF;" value="PROD THRESHOLD" vertex="1">
+          <mxGeometry height="14" width="136" x="1052" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s3n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFCA2C;" value="1K/day" vertex="1">
+          <mxGeometry height="26" width="136" x="1052" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="fbdiv" parent="1" style="line;strokeColor=#2E5499;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="1168" x="16" y="572" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#7A9ACC;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="36" width="400" x="16" y="578" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="36" width="434" x="750" y="578" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

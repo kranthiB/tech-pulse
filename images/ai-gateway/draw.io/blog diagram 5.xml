@@ -1,0 +1,247 @@
+<mxfile host="Electron">
+  <diagram id="YGfyVfZjVoE1N7Yl0TeA" name="Page-1">
+    <mxGraphModel dx="1467" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="827" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="AI Gateway Architecture — Build vs. Buy Decision Framework" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="dqhdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="dqhdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="The Three Decision Questions" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="q1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="206" width="356" x="28" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="q1bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="356" x="28" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="q1lbl" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="26" width="26" x="44" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="q1lblt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" value="1" vertex="1">
+          <mxGeometry height="26" width="26" x="44" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="q1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Question 1" vertex="1">
+          <mxGeometry height="18" width="294" x="78" y="143" as="geometry" />
+        </mxCell>
+        <mxCell id="q1q" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="38" width="336" x="38" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="q1qt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Does your team&#39;s product differentiation come from gateway&amp;nbsp;&lt;div&gt;logic?&lt;/div&gt;" vertex="1">
+          <mxGeometry height="38" width="312" x="50" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="q1yesbg" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="68" width="336" x="38" y="222" as="geometry" />
+        </mxCell>
+        <mxCell id="q1yest" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="YES:" vertex="1">
+          <mxGeometry height="16" width="310" x="50" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="q1yesb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Still build as little custom code as possible. Gateway is infrastructure, not product. Differentiation comes from using the gateway effectively, not from building it." vertex="1">
+          <mxGeometry height="38" width="312" x="50" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="q1nobg" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="30" width="336" x="38" y="298" as="geometry" />
+        </mxCell>
+        <mxCell id="q1not" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="NO: Adopt an existing solution. Build extensions only for requirements not covered." vertex="1">
+          <mxGeometry height="30" width="312" x="50" y="298" as="geometry" />
+        </mxCell>
+        <mxCell id="q2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="206" width="356" x="405" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="q2bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="356" x="405" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="q2lbl" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="26" width="26" x="421" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="q2lblt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" value="2" vertex="1">
+          <mxGeometry height="26" width="26" x="421" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="q2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Question 2" vertex="1">
+          <mxGeometry height="18" width="294" x="455" y="143" as="geometry" />
+        </mxCell>
+        <mxCell id="q2q" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="38" width="336" x="415" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="q2qt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="What does compliance require about data handling and audit?" vertex="1">
+          <mxGeometry height="38" width="312" x="427" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="q2onbg" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="68" width="336" x="415" y="222" as="geometry" />
+        </mxCell>
+        <mxCell id="q2ont" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontStyle=1;fontColor=#856404;" value="On-premises required:" vertex="1">
+          <mxGeometry height="16" width="310" x="427" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="q2onb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Evaluate existing solutions before concluding a custom build is necessary. Most teams overestimate the uniqueness of compliance requirements." vertex="1">
+          <mxGeometry height="38" width="312" x="427" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="q2cloudbg" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="30" width="336" x="415" y="298" as="geometry" />
+        </mxCell>
+        <mxCell id="q2cloudt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Cloud acceptable: Existing solutions cover audit logs, data residency, and standard framework connectors." vertex="1">
+          <mxGeometry height="30" width="312" x="427" y="298" as="geometry" />
+        </mxCell>
+        <mxCell id="q3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="206" width="357" x="782" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="q3bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="357" x="782" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="q3lbl" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="26" width="26" x="798" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="q3lblt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" value="3" vertex="1">
+          <mxGeometry height="26" width="26" x="798" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="q3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Question 3" vertex="1">
+          <mxGeometry height="18" width="295" x="832" y="143" as="geometry" />
+        </mxCell>
+        <mxCell id="q3q" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="38" width="337" x="792" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="q3qt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="What is the 12-month total cost of ownership for each option?" vertex="1">
+          <mxGeometry height="38" width="313" x="804" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="q3buildbg" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="50" width="337" x="792" y="222" as="geometry" />
+        </mxCell>
+        <mxCell id="q3buildt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Custom build:" vertex="1">
+          <mxGeometry height="16" width="313" x="804" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="q3buildb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Initial engineering + ongoing maintenance (commonly underestimated). Every feature, patch, and scale requirement adds to the burden." vertex="1">
+          <mxGeometry height="24" width="313" x="804" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="q3buybg" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="48" width="337" x="792" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="q3buyt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="External solution:" vertex="1">
+          <mxGeometry height="16" width="313" x="804" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="q3buyb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Licensing + integration cost (both commonly underestimated). Model actual costs over 12 months before deciding." vertex="1">
+          <mxGeometry height="22" width="313" x="804" y="302" as="geometry" />
+        </mxCell>
+        <mxCell id="comphdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="comphdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Build vs. Buy Comparison Across Key Dimensions" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="thdim" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#2E5499;fontColor=#FFFFFF;fontSize=11;fontStyle=1;" value="Dimension" vertex="1">
+          <mxGeometry height="30" width="196" x="28" y="386" as="geometry" />
+        </mxCell>
+        <mxCell id="thbuild" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#2E5499;fontColor=#AACCFF;fontSize=11;fontStyle=1;" value="Build Internally" vertex="1">
+          <mxGeometry height="30" width="280" x="224" y="386" as="geometry" />
+        </mxCell>
+        <mxCell id="thbuy" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#2E5499;fontColor=#AACCFF;fontSize=11;fontStyle=1;" value="Adopt Existing Solution" vertex="1">
+          <mxGeometry height="30" width="280" x="504" y="386" as="geometry" />
+        </mxCell>
+        <mxCell id="threc" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=#2E5499;fontColor=#FFFFFF;fontSize=11;fontStyle=1;" value="Recommended When" vertex="1">
+          <mxGeometry height="30" width="355" x="784" y="386" as="geometry" />
+        </mxCell>
+        <mxCell id="r1dim" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Time to Stage 3" vertex="1">
+          <mxGeometry height="38" width="196" x="28" y="416" as="geometry" />
+        </mxCell>
+        <mxCell id="r1bu" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;fontSize=11;" value="Weeks to months (design + build + test)" vertex="1">
+          <mxGeometry height="38" width="280" x="224" y="416" as="geometry" />
+        </mxCell>
+        <mxCell id="r1by" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;fontSize=11;" value="Days to 2 weeks (integration + configuration)" vertex="1">
+          <mxGeometry height="38" width="280" x="504" y="416" as="geometry" />
+        </mxCell>
+        <mxCell id="r1re" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;" value="Most teams: adopt existing for speed" vertex="1">
+          <mxGeometry height="38" width="355" x="784" y="416" as="geometry" />
+        </mxCell>
+        <mxCell id="r2dim" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Ongoing Maintenance" vertex="1">
+          <mxGeometry height="38" width="196" x="28" y="454" as="geometry" />
+        </mxCell>
+        <mxCell id="r2bu" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;fontSize=11;" value="High: security patches, scale requirements, feature additions all fall to the team" vertex="1">
+          <mxGeometry height="38" width="280" x="224" y="454" as="geometry" />
+        </mxCell>
+        <mxCell id="r2by" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;fontSize=11;" value="Low: vendor handles infrastructure, security patches, and core feature evolution" vertex="1">
+          <mxGeometry height="38" width="280" x="504" y="454" as="geometry" />
+        </mxCell>
+        <mxCell id="r2re" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;" value="Teams under 5 engineers building AI features: adopt" vertex="1">
+          <mxGeometry height="38" width="355" x="784" y="454" as="geometry" />
+        </mxCell>
+        <mxCell id="r3dim" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Custom Routing Logic" vertex="1">
+          <mxGeometry height="38" width="196" x="28" y="492" as="geometry" />
+        </mxCell>
+        <mxCell id="r3bu" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;fontSize=11;" value="Unlimited: any routing logic can be implemented" vertex="1">
+          <mxGeometry height="38" width="280" x="224" y="492" as="geometry" />
+        </mxCell>
+        <mxCell id="r3by" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;fontSize=11;" value="Limited to supported routing modes; extensions possible via plugin API" vertex="1">
+          <mxGeometry height="38" width="280" x="504" y="492" as="geometry" />
+        </mxCell>
+        <mxCell id="r3re" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;" value="Unique routing requirements not covered by any existing solution: build" vertex="1">
+          <mxGeometry height="38" width="355" x="784" y="492" as="geometry" />
+        </mxCell>
+        <mxCell id="r4dim" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Compliance Coverage" vertex="1">
+          <mxGeometry height="38" width="196" x="28" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="r4bu" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;fontSize=11;" value="Fully controllable: every aspect designed to spec" vertex="1">
+          <mxGeometry height="38" width="280" x="224" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="r4by" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;fontSize=11;" value="SOC2/ISO27001 common; on-premises deployments available from most enterprise vendors" vertex="1">
+          <mxGeometry height="38" width="280" x="504" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="r4re" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;" value="Most regulated use cases: evaluate existing solutions first" vertex="1">
+          <mxGeometry height="38" width="355" x="784" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="r5dim" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Observability Stack Integration" vertex="1">
+          <mxGeometry height="38" width="196" x="28" y="568" as="geometry" />
+        </mxCell>
+        <mxCell id="r5bu" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;fontSize=11;" value="Deep: built to integrate with existing internal systems exactly as needed" vertex="1">
+          <mxGeometry height="38" width="280" x="224" y="568" as="geometry" />
+        </mxCell>
+        <mxCell id="r5by" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;fontSize=11;" value="Standard connectors for common stacks; custom export for others" vertex="1">
+          <mxGeometry height="38" width="280" x="504" y="568" as="geometry" />
+        </mxCell>
+        <mxCell id="r5re" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;" value="Heavily invested internal observability stack: build extensions on existing solution" vertex="1">
+          <mxGeometry height="38" width="355" x="784" y="568" as="geometry" />
+        </mxCell>
+        <mxCell id="rsbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="88" width="1111" x="28" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="rsbar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="rst" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B5E20;" value="Recommended Strategy for Most Teams" vertex="1">
+          <mxGeometry height="20" width="600" x="44" y="626" as="geometry" />
+        </mxCell>
+        <mxCell id="rsb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Adopt an existing gateway solution for core functions (authentication, rate limiting, logging, basic routing). Build internal extensions for specific requirements that are genuinely unique to your system. Full custom builds are appropriate for a minority of teams with requirements that no existing solution addresses." vertex="1">
+          <mxGeometry height="52" width="1083" x="44" y="648" as="geometry" />
+        </mxCell>
+        <mxCell id="wbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="68" width="1111" x="28" y="722" as="geometry" />
+        </mxCell>
+        <mxCell id="wbar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="722" as="geometry" />
+        </mxCell>
+        <mxCell id="wt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="400" x="44" y="728" as="geometry" />
+        </mxCell>
+        <mxCell id="wb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Treating the gateway as a DevOps problem rather than an engineering architecture decision. Gateways built by infrastructure teams without AI feature engineer involvement implement the forwarding and logging functions but miss the intelligent routing, caching, and compliance enforcement functions that deliver the actual value." vertex="1">
+          <mxGeometry height="36" width="1089" x="44" y="748" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="37" width="1149" x="10" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="37" width="400" x="28" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="37" width="440" x="700" y="800" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

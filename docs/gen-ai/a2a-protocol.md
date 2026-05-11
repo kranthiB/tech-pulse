@@ -3,7 +3,7 @@ id: gen-ai/a2a-protocol
 title: "Agent-to-Agent Protocols: Why MCP Alone Is Not Enough"
 sidebar_label: Agent2Agent (A2A) Protocol
 previous_page: gen-ai/mcp
-next_page: gen-ai/agent-memory
+next_page: gen-ai/ai-gateway-architecture
 ---
 
 <div style="text-align: right;">

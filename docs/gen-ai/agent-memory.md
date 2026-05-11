@@ -2,7 +2,7 @@
 id: gen-ai/agent-memory
 title: Agent Memory Architecture
 sidebar_label: Agent Memory Architecture
-previous_page: gen-ai/a2a-protocol
+previous_page: gen-ai/ai-gateway-architecture
 next_page: gen-ai/evaluation-engineering-for-llm-systems
 ---
 
