@@ -20,3 +20,7 @@ Additionally, I bring extensive experience in creating sustainable platforms tha
 - [LinkedIn](https://www.linkedin.com/in/kranthi-kumar-bitra/)
 - [TechPulse](https://kranthib.github.io/tech-pulse)
 
+# Articles (Tech Pulse)
+
+- [Claude Managed Agents: What a Managed Execution Layer Actually Changes for Engineering Teams](https://kranthib.github.io/tech-pulse/gen-ai/claude-managed-agents-execution-layer.html)
+

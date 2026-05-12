@@ -1,0 +1,190 @@
+<mxfile host="Electron">
+  <diagram id="Xp_K_RoARSLu_txDwoZ1" name="Page-1">
+    <mxGraphModel dx="1467" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="722" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="Managed Execution Layer: Decision Framework for Engineering Leaders" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="fhdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="fhdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Three Factors That Determine Fit for Managed Infrastructure" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="f1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="236" width="356" x="28" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="f1bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="356" x="28" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="f1ic" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="26" width="26" x="44" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="f1ict" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" value="1" vertex="1">
+          <mxGeometry height="26" width="26" x="44" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="f1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Task Length and Complexity" vertex="1">
+          <mxGeometry height="18" width="294" x="78" y="143" as="geometry" />
+        </mxCell>
+        <mxCell id="f1div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="336" x="38" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="f1nob" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="84" width="336" x="38" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="f1not" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Short tasks (single context window, 1–2 tool calls):" vertex="1">
+          <mxGeometry height="16" width="312" x="50" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="f1noc" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Managed layer adds overhead with minimal benefit. Session persistence and harness recovery address problems these tasks do not encounter." vertex="1">
+          <mxGeometry height="52" width="312" x="50" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="f1yesb" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="82" width="336" x="38" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="f1yest" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Long-horizon tasks (multi-session, context overflow likely):" vertex="1">
+          <mxGeometry height="16" width="312" x="50" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="f1yesc" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Managed layer provides direct value: session durability, context query flexibility, harness recovery without data loss." vertex="1">
+          <mxGeometry height="50" width="312" x="50" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="f2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="236" width="356" x="404" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="f2bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="356" x="404" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="f2ic" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="26" width="26" x="420" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="f2ict" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" value="2" vertex="1">
+          <mxGeometry height="26" width="26" x="420" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="f2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Credential Sensitivity" vertex="1">
+          <mxGeometry height="18" width="294" x="454" y="143" as="geometry" />
+        </mxCell>
+        <mxCell id="f2div" parent="1" style="line;strokeColor=#FFCA2C;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="336" x="414" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="f2nob" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="84" width="336" x="414" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="f2not" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Read access to public or low-sensitivity data:" vertex="1">
+          <mxGeometry height="16" width="312" x="426" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="f2noc" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Structural credential isolation provides marginal additional protection over narrowly scoped credentials. Managed layer benefit is limited on this dimension alone." vertex="1">
+          <mxGeometry height="52" width="312" x="426" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="f2yesb" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="82" width="336" x="414" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="f2yest" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontStyle=1;fontColor=#856404;" value="Production databases, financial systems, customer data:" vertex="1">
+          <mxGeometry height="16" width="312" x="426" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="f2yesc" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Structural isolation (sandbox cannot reach vault) is significant. Policy controls alone are insufficient under adversarial conditions." vertex="1">
+          <mxGeometry height="50" width="312" x="426" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="f3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="236" width="359" x="780" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="f3bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="359" x="780" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="f3ic" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="26" width="26" x="796" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="f3ict" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" value="3" vertex="1">
+          <mxGeometry height="26" width="26" x="796" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="f3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Infrastructure Differentiation" vertex="1">
+          <mxGeometry height="18" width="297" x="830" y="143" as="geometry" />
+        </mxCell>
+        <mxCell id="f3div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="339" x="790" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="f3nob" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="84" width="339" x="790" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="f3not" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Custom execution architecture as competitive advantage:" vertex="1">
+          <mxGeometry height="16" width="315" x="802" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="f3noc" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Managed layer may constrain rather than enable the specific architecture that provides differentiation." vertex="1">
+          <mxGeometry height="52" width="315" x="802" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="f3yesb" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="82" width="339" x="790" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="f3yest" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Agent logic and tool integrations as competitive advantage:" vertex="1">
+          <mxGeometry height="16" width="315" x="802" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="f3yesc" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Managed layer frees engineering capacity from infrastructure to the differentiated work. Maximum benefit." vertex="1">
+          <mxGeometry height="50" width="315" x="802" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="wbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="104" width="1111" x="28" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="wbar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="wt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong: Evaluating on Model Capability Instead of Infrastructure Properties" vertex="1">
+          <mxGeometry height="18" width="900" x="44" y="386" as="geometry" />
+        </mxCell>
+        <mxCell id="wb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Teams run accuracy benchmarks and compare them to self-hosted alternatives. Model capability is the wrong evaluation axis for an infrastructure decision. The correct criteria: session recovery behavior when harness fails mid-task. Credential isolation architecture under adversarial conditions. Context management at context window overflow. Tool error propagation semantics. Observability depth across the full execution trace. A team evaluating managed infrastructure on output quality will make infrastructure decisions that ignore infrastructure properties." vertex="1">
+          <mxGeometry height="72" width="1089" x="44" y="406" as="geometry" />
+        </mxCell>
+        <mxCell id="pchdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="pchdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Portability Checklist: Before Committing Production Workloads" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="pc1" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="50" width="356" x="28" y="544" as="geometry" />
+        </mxCell>
+        <mxCell id="pc1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Agent definitions portable, not locked to platform proprietary format" vertex="1">
+          <mxGeometry height="50" width="328" x="44" y="544" as="geometry" />
+        </mxCell>
+        <mxCell id="pc2" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="50" width="356" x="404" y="544" as="geometry" />
+        </mxCell>
+        <mxCell id="pc2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Tool integrations based on open standards (MCP, standard APIs) that survive migration" vertex="1">
+          <mxGeometry height="50" width="328" x="420" y="544" as="geometry" />
+        </mxCell>
+        <mxCell id="pc3" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="50" width="359" x="780" y="544" as="geometry" />
+        </mxCell>
+        <mxCell id="pc3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Session data format documented and exportable for migration or audit" vertex="1">
+          <mxGeometry height="50" width="331" x="796" y="544" as="geometry" />
+        </mxCell>
+        <mxCell id="pc4" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="50" width="356" x="28" y="604" as="geometry" />
+        </mxCell>
+        <mxCell id="pc4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Evaluation conducted on infrastructure properties, not only output quality" vertex="1">
+          <mxGeometry height="50" width="328" x="44" y="604" as="geometry" />
+        </mxCell>
+        <mxCell id="pc5" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="50" width="735" x="404" y="604" as="geometry" />
+        </mxCell>
+        <mxCell id="pc5t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Switching cost understood: session format, credential management, and harness interfaces all require rebuilding on migration" vertex="1">
+          <mxGeometry height="50" width="707" x="420" y="604" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="65" width="1149" x="10" y="667" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="63" width="400" x="28" y="667" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="63" width="440" x="700" y="667" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

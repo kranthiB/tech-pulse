@@ -2,7 +2,7 @@
 id: gen-ai/ai-driven-software-development
 title: AI-Driven Software Development
 sidebar_label: AI-Driven Software Development
-previous_page: gen-ai/multi-agent-orchestration-patterns
+previous_page: gen-ai/claude-managed-agents-execution-layer
 ---
 
 <div style="text-align: right;">

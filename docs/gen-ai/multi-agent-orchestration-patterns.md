@@ -3,7 +3,7 @@ id: gen-ai/multi-agent-orchestration-patterns
 title: "Multi-Agent Orchestration Patterns: Why Your System Fails at the Handoff, Not the Agent"
 sidebar_label: Multi-Agent Orchestration
 previous_page: gen-ai/agentic-ai
-next_page: gen-ai/ai-driven-software-development
+next_page: gen-ai/claude-managed-agents-execution-layer
 ---
 
 # Multi-Agent Orchestration Patterns: Why Your System Fails at the Handoff, Not the Agent
