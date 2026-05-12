@@ -53,6 +53,7 @@ A production agent is not a model call inside a loop. It is a system with at lea
 Each of these concerns demands explicit engineering work. Teams building agents from scratch are building all six simultaneously, usually while also trying to ship product features. The failure rate is high, and the failures are often invisible until a production incident surfaces them.
 
 ![0001](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/claude-managed-agents/0001.png)
+
 ---
 
 ## The Meta-Harness Architecture

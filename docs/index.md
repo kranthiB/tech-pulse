@@ -111,27 +111,13 @@ auto_title: false
   margin-bottom: 0; /* Remove any bottom margin */
 }
 
-/* Generative AI: themed sub-groups inside one card */
-.gen-ai-subheading {
-  color: #2054a6;
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin: 16px 0 6px 0;
-  padding-bottom: 4px;
-  border-bottom: 1px solid #e1e4e8;
-  line-height: 1.3;
-}
-.gen-ai-subheading:first-of-type {
-  margin-top: 2px;
-}
-.gen-ai-topic-links {
+/* Second knowledge row: Generative AI as four equal columns */
+.knowledge-grid--genai {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 8px;
-  margin-top: 8px;
-  margin-bottom: 0;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 40px;
+  align-items: start;
 }
 
 /* Original row layout for System Design & Platform Engineering */
@@ -255,6 +241,10 @@ auto_title: false
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .knowledge-grid--genai {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .frameworks-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -262,6 +252,10 @@ auto_title: false
 
 @media (max-width: 576px) {
   .knowledge-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .knowledge-grid--genai {
     grid-template-columns: 1fr;
   }
 
@@ -487,10 +481,10 @@ auto_title: false
   </div>
 </div>
 
-<!-- Main knowledge areas container with all four sections in one row -->
-<div class="knowledge-grid">
-  
-  <!-- Data & AI Column -->
+<!-- Knowledge areas: row 1 = Data & AI, Industrial IoT, Ops (two columns); row 2 = Generative AI in four columns -->
+<div class="knowledge-grid knowledge-grid--row1">
+
+  <!-- Data & AI -->
   <div class="knowledge-area">
     <div style="padding: 12px;">
       <h3 class="section-header">
@@ -505,46 +499,8 @@ auto_title: false
       </div>
     </div>
   </div>
-  
-  <!-- Generative AI Column (grouped: foundations → integration → agents → lifecycle) -->
-  <div class="knowledge-area">
-    <div style="padding: 12px;">
-      <h3 class="section-header">
-        <i class="fa fa-robot" style="margin-right: 10px;"></i>Generative AI
-      </h3>
-      <p style="margin: 8px 0 0 0; color: #586069; font-size: 12px; line-height: 1.4;">Topics grouped by how you typically progress: model inputs, connectivity, autonomous systems, then shipping and quality.</p>
 
-      <h4 class="gen-ai-subheading">LLM foundations</h4>
-      <div class="gen-ai-topic-links">
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/prompt-engineering.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-keyboard" style="margin-right: 5px;"></i>Prompt Engineering</a>
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/llm-tier.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-layer-group" style="margin-right: 5px;"></i>LLM Tiers</a>
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/rag.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-search" style="margin-right: 5px;"></i>RAG</a>
-      </div>
-
-      <h4 class="gen-ai-subheading">Protocols &amp; control plane</h4>
-      <div class="gen-ai-topic-links">
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/mcp.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-plug" style="margin-right: 5px;"></i>Model Context Protocol (MCP)</a>
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/a2a-protocol.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-project-diagram" style="margin-right: 5px;"></i>Agent2Agent (A2A) Protocol</a>
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/ai-gateway-architecture.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-exchange-alt" style="margin-right: 5px;"></i>AI Gateway Architecture</a>
-      </div>
-
-      <h4 class="gen-ai-subheading">Agents &amp; orchestration</h4>
-      <div class="gen-ai-topic-links">
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/agent-memory.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-brain" style="margin-right: 5px;"></i>Agent Memory</a>
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/agentic-ai.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-user-cog" style="margin-right: 5px;"></i>Agentic AI</a>
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/multi-agent-orchestration-patterns.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-sitemap" style="margin-right: 5px;"></i>Multi-Agent Orchestration</a>
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/claude-managed-agents-execution-layer.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-server" style="margin-right: 5px;"></i>Claude Managed Agents</a>
-      </div>
-
-      <h4 class="gen-ai-subheading">Quality &amp; engineering practice</h4>
-      <div class="gen-ai-topic-links">
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/evaluation-engineering-llm-systems.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-check-circle" style="margin-right: 5px;"></i>Evaluation Engineering for LLM Systems</a>
-        <a href="https://kranthib.github.io/tech-pulse/gen-ai/ai-driven-software-development.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-code" style="margin-right: 5px;"></i>AI-Enabled Development</a>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Industrial IoT Column -->
+  <!-- Industrial IoT -->
   <div class="knowledge-area">
     <div style="padding: 12px;">
       <h3 class="section-header">
@@ -561,21 +517,92 @@ auto_title: false
       </div>
     </div>
   </div>
-  
-  <!-- Ops Mastery Column -->
+
+  <!-- Ops Mastery — delivery & platforms -->
   <div class="knowledge-area">
     <div style="padding: 12px;">
       <h3 class="section-header">
         <i class="fa fa-wrench" style="margin-right: 10px;"></i>Ops Mastery
       </h3>
+      <p style="margin: 0 0 10px 0; color: #586069; font-size: 12px; line-height: 1.35;">Delivery, security, and platform economics</p>
       <div class="topic-links-container">
         <a href="https://kranthib.github.io/tech-pulse/ops-mastery/dev-sec-ops.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-shield-alt" style="margin-right: 5px;"></i>DevSecOps</a>
         <a href="https://kranthib.github.io/tech-pulse/ops-mastery/git-ops.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-code-branch" style="margin-right: 5px;"></i>GitOps</a>
         <a href="https://kranthib.github.io/tech-pulse/ops-mastery/fin-ops.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-money-bill" style="margin-right: 5px;"></i>FinOps</a>
         <a href="https://kranthib.github.io/tech-pulse/ops-mastery/ml-ops.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-cogs" style="margin-right: 5px;"></i>MLOps</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ops Mastery — run, observe, quality -->
+  <div class="knowledge-area">
+    <div style="padding: 12px;">
+      <h3 class="section-header">
+        <i class="fa fa-wrench" style="margin-right: 10px;"></i>Ops Mastery
+      </h3>
+      <p style="margin: 0 0 10px 0; color: #586069; font-size: 12px; line-height: 1.35;">Intelligent operations, sustainability, and test discipline</p>
+      <div class="topic-links-container">
         <a href="https://kranthib.github.io/tech-pulse/ops-mastery/ai-ops.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-robot" style="margin-right: 5px;"></i>AIOps</a>
         <a href="https://kranthib.github.io/tech-pulse/ops-mastery/green-ops.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-leaf" style="margin-right: 5px;"></i>GreenOps</a>
         <a href="https://kranthib.github.io/tech-pulse/ops-mastery/test-ops.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-vial" style="margin-right: 5px;"></i>TestOps</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 style="text-align: center; margin: 28px 0 10px; color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">Generative AI</h2>
+<p style="text-align: center; margin: 0 auto 14px; max-width: 52rem; color: #586069; font-size: 13px; line-height: 1.45;">Topics in this row run from model inputs and retrieval through protocols, autonomous systems, and how you ship and evaluate.</p>
+
+<div class="knowledge-grid knowledge-grid--genai">
+
+  <div class="knowledge-area">
+    <div style="padding: 12px;">
+      <h3 class="section-header">
+        <i class="fa fa-keyboard" style="margin-right: 10px;"></i>LLM foundations
+      </h3>
+      <div class="topic-links-container">
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/prompt-engineering.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-keyboard" style="margin-right: 5px;"></i>Prompt Engineering</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/llm-tier.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-layer-group" style="margin-right: 5px;"></i>LLM Tiers</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/rag.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-search" style="margin-right: 5px;"></i>RAG</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="knowledge-area">
+    <div style="padding: 12px;">
+      <h3 class="section-header">
+        <i class="fa fa-plug" style="margin-right: 10px;"></i>Protocols &amp; control plane
+      </h3>
+      <div class="topic-links-container">
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/mcp.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-plug" style="margin-right: 5px;"></i>Model Context Protocol (MCP)</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/a2a-protocol.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-project-diagram" style="margin-right: 5px;"></i>Agent2Agent (A2A) Protocol</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/ai-gateway-architecture.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-exchange-alt" style="margin-right: 5px;"></i>AI Gateway Architecture</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="knowledge-area">
+    <div style="padding: 12px;">
+      <h3 class="section-header">
+        <i class="fa fa-robot" style="margin-right: 10px;"></i>Agents &amp; orchestration
+      </h3>
+      <div class="topic-links-container">
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/agent-memory.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-brain" style="margin-right: 5px;"></i>Agent Memory</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/agentic-ai.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-user-cog" style="margin-right: 5px;"></i>Agentic AI</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/multi-agent-orchestration-patterns.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-sitemap" style="margin-right: 5px;"></i>Multi-Agent Orchestration</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/claude-managed-agents-execution-layer.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-server" style="margin-right: 5px;"></i>Claude Managed Agents</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="knowledge-area">
+    <div style="padding: 12px;">
+      <h3 class="section-header">
+        <i class="fa fa-check-circle" style="margin-right: 10px;"></i>Quality &amp; engineering practice
+      </h3>
+      <div class="topic-links-container">
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/evaluation-engineering-llm-systems.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-check-circle" style="margin-right: 5px;"></i>Evaluation Engineering for LLM Systems</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/ai-driven-software-development.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-code" style="margin-right: 5px;"></i>AI-Enabled Development</a>
       </div>
     </div>
   </div>
