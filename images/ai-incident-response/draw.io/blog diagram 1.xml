@@ -1,0 +1,109 @@
+<mxfile host="Electron">
+  <diagram id="Dzdl8bLcs_JsuxBAYK0p" name="Page-1">
+    <mxGraphModel dx="1420" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="712" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="Why AI Incidents Break Traditional Runbooks" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="rowlbl" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="32" width="140" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="ch1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;align=center;" value="Traditional Systems" vertex="1">
+          <mxGeometry height="32" width="436" x="168" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="vs" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#1B3A6B;" value="VS" vertex="1">
+          <mxGeometry height="32" width="44" x="604" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="ch2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;align=center;" value="AI Systems" vertex="1">
+          <mxGeometry height="32" width="491" x="648" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="r1lbl" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=center;" value="Failure Signal" vertex="1">
+          <mxGeometry height="60" width="140" x="28" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="r1t" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;align=left;verticalAlign=middle;" value="Exceptions, timeouts, crash reports, non-zero error codes. The system tells you it is broken." vertex="1">
+          <mxGeometry height="60" width="436" x="168" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="r1a" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;fontColor=#7A6000;fontSize=11;align=left;verticalAlign=middle;" value="Confident, well-formatted, plausible-sounding wrong outputs. The system does not tell you it is broken." vertex="1">
+          <mxGeometry height="60" width="491" x="648" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="r2lbl" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=center;" value="Detectability" vertex="1">
+          <mxGeometry height="60" width="140" x="28" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="r2t" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;align=left;verticalAlign=middle;" value="High. Infrastructure metrics (latency, error rate, uptime) surface failures immediately." vertex="1">
+          <mxGeometry height="60" width="436" x="168" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="r2a" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;fontColor=#7A6000;fontSize=11;align=left;verticalAlign=middle;" value="Low without AI-specific monitoring. Infrastructure metrics stay green while outputs degrade." vertex="1">
+          <mxGeometry height="60" width="491" x="648" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="r3lbl" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=center;" value="Causality" vertex="1">
+          <mxGeometry height="60" width="140" x="28" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="r3t" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;align=left;verticalAlign=middle;" value="Traceable to a specific code path. Reproducible deterministically with the same inputs." vertex="1">
+          <mxGeometry height="60" width="436" x="168" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="r3a" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;fontColor=#7A6000;fontSize=11;align=left;verticalAlign=middle;" value="Multi-hop, spanning agent calls, tool invocations, and memory retrievals. Probabilistic, not deterministic." vertex="1">
+          <mxGeometry height="60" width="491" x="648" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="r4lbl" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=center;" value="Rollback" vertex="1">
+          <mxGeometry height="60" width="140" x="28" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="r4t" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;align=left;verticalAlign=middle;" value="Deploy prior artifact. Single operation. Version is explicit and auditable." vertex="1">
+          <mxGeometry height="60" width="436" x="168" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="r4a" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;fontColor=#7A6000;fontSize=11;align=left;verticalAlign=middle;" value="Four interacting version axes: model, prompt, retrieval index, application code. Rolling back one without the others can worsen the incident." vertex="1">
+          <mxGeometry height="60" width="491" x="648" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="r5lbl" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=center;" value="Blast Radius" vertex="1">
+          <mxGeometry height="60" width="140" x="28" y="364" as="geometry" />
+        </mxCell>
+        <mxCell id="r5t" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;align=left;verticalAlign=middle;" value="Bounded by the incident window. Users know something was wrong. Recovery is verifiable." vertex="1">
+          <mxGeometry height="60" width="436" x="168" y="364" as="geometry" />
+        </mxCell>
+        <mxCell id="r5a" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;fontColor=#7A6000;fontSize=11;align=left;verticalAlign=middle;" value="Extends beyond the incident window. Users received and may have acted on incorrect outputs before detection." vertex="1">
+          <mxGeometry height="60" width="491" x="648" y="364" as="geometry" />
+        </mxCell>
+        <mxCell id="insightbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="60" width="1111" x="28" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="insightbar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="insightt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B5E20;" value="Key Insight" vertex="1">
+          <mxGeometry height="18" width="200" x="44" y="446" as="geometry" />
+        </mxCell>
+        <mxCell id="insightb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Traditional runbooks assume failures are detectable. AI systems break this assumption. A new class of runbook is required." vertex="1">
+          <mxGeometry height="30" width="1083" x="44" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="wbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="136" width="1111" x="28" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="wbar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="wt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="400" x="44" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="wb" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="AI systems present a fundamentally different failure surface than traditional software. Three failure properties make existing runbooks inadequate:  1. Silent failures — the system reports healthy while outputs are wrong 2. Probabilistic causality — the same input does not produce the same output 3. Multi-axis rollback — there is no single artifact to revert  Each of these properties requires a distinct operational response that traditional incident runbooks were never designed to handle." vertex="1">
+          <mxGeometry height="102" width="1083" x="44" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="60" width="1149" x="10" y="662" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="60" width="400" x="28" y="662" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="60" width="440" x="700" y="662" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

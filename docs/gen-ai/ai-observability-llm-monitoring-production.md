@@ -3,7 +3,7 @@ id: gen-ai/ai-observability-llm-monitoring-production
 title: "AI Observability and LLM Monitoring in Production: The Discipline Your Team Is Missing"
 sidebar_label: AI Observability and LLM Monitoring
 previous_page: gen-ai/synthetic-data-engineering-ai-systems
-next_page: gen-ai/ai-driven-software-development
+next_page: gen-ai/ai-incident-response-playbook
 ---
 
 <div style="text-align: right;">
