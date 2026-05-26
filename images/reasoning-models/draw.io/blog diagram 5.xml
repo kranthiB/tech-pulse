@@ -1,0 +1,139 @@
+<mxfile host="Electron">
+  <diagram id="E42pxyV34hFF4Ddoj2Hj" name="Page-1">
+    <mxGraphModel dx="1420" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="629" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="Reasoning Models: When to Use Them and When Not To" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="task" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=13;fontStyle=1;align=center;" value="Incoming Task" vertex="1">
+          <mxGeometry height="40" width="196" x="476" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="router" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=center;" value="Routing Classifier (lightweight&amp;nbsp;&lt;div&gt;classification&amp;nbsp;&lt;div&gt;model or rule-based)&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="320" x="414" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="a_tr" edge="1" parent="1" source="task" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=2;endArrow=block;endFill=1;" target="router" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="140" width="256" x="28" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="l1bar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="256" x="28" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="l1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Layer 1: Reasoning Models" vertex="1">
+          <mxGeometry height="16" width="224" x="44" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="l1b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;spacingLeft=4;spacingTop=2;whiteSpace=wrap;" value="Triggered by: Multi-constraint tasks, high-stakes decisions, adversarial inputs, planning phases.  Used sparingly. Targeted at exactly the tasks where extended compute produces measurable quality improvement.  Cost: Highest. Latency: 3-8 seconds." vertex="1">
+          <mxGeometry height="107" width="228" x="44" y="293" as="geometry" />
+        </mxCell>
+        <mxCell id="l2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="140" width="280" x="304" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="l2bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="280" x="304" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="l2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Layer 2: Full-Capability Standard Models" vertex="1">
+          <mxGeometry height="16" width="248" x="320" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="l2b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=2;whiteSpace=wrap;" value="Default for: Summarization, QA with defined domain scope, code generation at moderate complexity, multi-document synthesis where synthesis is straightforward.  Most tasks should land here. Fast and capable.  Cost: Medium. Latency: under 1 second." vertex="1">
+          <mxGeometry height="107" width="252" x="320" y="293" as="geometry" />
+        </mxCell>
+        <mxCell id="l3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="140" width="265" x="604" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="l3bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="265" x="604" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="l3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Layer 3: Small Language Models (SLMs)" vertex="1">
+          <mxGeometry height="16" width="233" x="620" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="l3b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=2;whiteSpace=wrap;" value="High-frequency tasks: Classification, structured extraction, format validation, pattern recognition.  Can run locally or at edge. 60-80% cost reduction vs. full API calls on appropriate task classes.  Cost: Low. Latency: under 100ms." vertex="1">
+          <mxGeometry height="107" width="237" x="620" y="293" as="geometry" />
+        </mxCell>
+        <mxCell id="l4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="140" width="250" x="889" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="l4bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="250" x="889" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="l4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Layer 4: Deterministic Functions" vertex="1">
+          <mxGeometry height="16" width="218" x="905" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="l4b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=2;whiteSpace=wrap;" value="Date parsing, schema validation, regex extraction, lookup operations.  Faster, cheaper, and more reliable than a model for deterministic tasks. Do not use a model here.  Cost: Minimal. Latency: milliseconds." vertex="1">
+          <mxGeometry height="107" width="222" x="905" y="293" as="geometry" />
+        </mxCell>
+        <mxCell id="ra1" edge="1" parent="1" source="router" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B5E20;strokeWidth=1.5;fontSize=9;fontColor=#1B5E20;endArrow=block;endFill=1;" target="l1bg" value="Multi-constraint / High-stakes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ra2" edge="1" parent="1" source="router" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=1.5;fontSize=9;endArrow=block;endFill=1;" target="l2bg" value="Standard generation">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ra3" edge="1" parent="1" source="router" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=1.5;fontSize=9;endArrow=block;endFill=1;" target="l3bg" value="High-frequency pattern tasks">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ra4" edge="1" parent="1" source="router" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=1.5;fontSize=9;endArrow=block;endFill=1;" target="l4bg" value="Deterministic tasks">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rihdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="860" x="28" y="424" as="geometry" />
+        </mxCell>
+        <mxCell id="rihdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Routing Infrastructure Requirements" vertex="1">
+          <mxGeometry height="36" width="700" x="44" y="424" as="geometry" />
+        </mxCell>
+        <mxCell id="ri1" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="54" width="210" x="28" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="ri1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Classify tasks accurately enough to route to the right layer" vertex="1">
+          <mxGeometry height="54" width="210" x="28" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="ri2" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="54" width="210" x="248" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="ri2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Handle misclassification gracefully with escalation paths" vertex="1">
+          <mxGeometry height="54" width="210" x="248" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="ri3" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="54" width="210" x="468" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="ri3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Track per-task quality metrics to identify routing errors empirically" vertex="1">
+          <mxGeometry height="54" width="210" x="468" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="ri4" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="54" width="200" x="688" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="ri4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Support reconfiguration without redeployment as task distributions shift" vertex="1">
+          <mxGeometry height="54" width="200" x="688" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="wbg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="134" width="231" x="908" y="424" as="geometry" />
+        </mxCell>
+        <mxCell id="wbar" parent="1" style="rounded=0;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="231" x="908" y="424" as="geometry" />
+        </mxCell>
+        <mxCell id="wt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="199" x="924" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="wb" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Teams sometimes use a model where a deterministic function is the right tool. Date parsing through an LLM is slower, more expensive, and less reliable than a regex. Reach for a model only when the task genuinely requires language understanding or generation." vertex="1">
+          <mxGeometry height="162" width="203" x="924" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="60" width="1149" x="10" y="578" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="60" width="400" x="28" y="578" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="60" width="440" x="700" y="578" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

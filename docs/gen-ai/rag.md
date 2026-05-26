@@ -2,7 +2,7 @@
 id: gen-ai/rag
 title: Retrieval-Augmented Generation (RAG)
 sidebar_label: Retrieval-Augmented Generation (RAG)
-previous_page: gen-ai/llm-tier
+previous_page: gen-ai/reasoning-models-when-to-use
 next_page: gen-ai/mcp
 ---
 

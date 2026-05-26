@@ -1,0 +1,175 @@
+<mxfile host="Electron">
+  <diagram id="A8Pms-7om9i-rOz8tZg-" name="Page-1">
+    <mxGraphModel dx="1420" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="597" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="Reasoning Models: When to Use Them and When Not To" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="p1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="148" width="264" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="p1bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="264" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="p1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Per-Task-Type Cost Ceilings" vertex="1">
+          <mxGeometry height="16" width="232" x="44" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="p1b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=2;whiteSpace=wrap;" value="Define acceptable cost per request per task type.  Soft ceiling: triggers alert when approached. Hard ceiling: routes to cheaper model or batch queue.  Define in terms of cost per correct outcome, not cost per request." vertex="1">
+          <mxGeometry height="116" width="236" x="44" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="p2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="148" width="264" x="304" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="p2bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="264" x="304" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="p2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Model-Tier Budget Allocation" vertex="1">
+          <mxGeometry height="16" width="232" x="320" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="p2b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=2;whiteSpace=wrap;" value="Define what fraction of total inference budget each model tier should consume.  Example: If reasoning model budget is 20% of total, alert fires at 25% before hitting 30%.  Budget drift is always easier to address early. Monitor tier spend weekly, not at billing cycle." vertex="1">
+          <mxGeometry height="116" width="236" x="320" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="p3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="148" width="264" x="580" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="p3bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="264" x="580" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="p3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Anomaly Detection on Usage Patterns" vertex="1">
+          <mxGeometry height="16" width="232" x="596" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="p3b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=2;whiteSpace=wrap;" value="A sudden spike in reasoning model usage without a corresponding spike in complex task types is a signal worth investigating.  Causes: routing classifier degraded, new feature routing incorrectly, client abusing high-complexity endpoint.  Alert on pattern anomalies, not just absolute spend." vertex="1">
+          <mxGeometry height="116" width="236" x="596" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="p4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="148" width="283" x="856" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="p4bar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="283" x="856" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="p4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Fine-Tuning as a Governance Lever" vertex="1">
+          <mxGeometry height="16" width="251" x="872" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="p4b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;spacingLeft=4;spacingTop=2;whiteSpace=wrap;" value="For stable, high-volume task types: fine-tune a smaller model on reasoning model outputs.  80-90% cost reduction relative to the reasoning model baseline while maintaining acceptable quality.  Decision criteria: volume above 10K requests/day, stable task definition, quality headroom in smaller model, maintainable re-tuning cadence." vertex="1">
+          <mxGeometry height="116" width="255" x="872" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="ephdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="ephdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Empirical Routing Process — The Six Steps" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="s1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="88" width="181" x="28" y="292" as="geometry" />
+        </mxCell>
+        <mxCell id="s1circ" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;align=center;" value="1" vertex="1">
+          <mxGeometry height="28" width="28" x="96" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="s1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Build task-specific evaluation dataset (100+ examples from production traffic, including edge cases)" vertex="1">
+          <mxGeometry height="44" width="165" x="36" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="s2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="88" width="181" x="219" y="292" as="geometry" />
+        </mxCell>
+        <mxCell id="s2circ" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;align=center;" value="2" vertex="1">
+          <mxGeometry height="28" width="28" x="287" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="s2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Define quality threshold — product and business decision, not technical. Get explicit agreement before benchmarking." vertex="1">
+          <mxGeometry height="44" width="165" x="227" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="s3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="88" width="181" x="410" y="292" as="geometry" />
+        </mxCell>
+        <mxCell id="s3circ" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;align=center;" value="3" vertex="1">
+          <mxGeometry height="28" width="28" x="478" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="s3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Run evaluation across model hierarchy from cheapest up. Stop at cheapest model meeting quality threshold." vertex="1">
+          <mxGeometry height="44" width="165" x="418" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="s4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="88" width="181" x="601" y="292" as="geometry" />
+        </mxCell>
+        <mxCell id="s4circ" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;align=center;" value="4" vertex="1">
+          <mxGeometry height="28" width="28" x="669" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="s4b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Calculate cost per correct outcome at production volume for each model option. This is your routing cost basis." vertex="1">
+          <mxGeometry height="44" width="165" x="609" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="s5bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="88" width="181" x="792" y="292" as="geometry" />
+        </mxCell>
+        <mxCell id="s5circ" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;align=center;" value="5" vertex="1">
+          <mxGeometry height="28" width="28" x="860" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="s5b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Set routing configuration with quality buffer above threshold. Monitor; escalate review when approaching threshold." vertex="1">
+          <mxGeometry height="44" width="165" x="800" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="s6bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="88" width="156" x="983" y="292" as="geometry" />
+        </mxCell>
+        <mxCell id="s6circ" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;align=center;" value="6" vertex="1">
+          <mxGeometry height="28" width="28" x="1047" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="s6b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Repeat when input distribution shifts, when models update, and at minimum quarterly." vertex="1">
+          <mxGeometry height="44" width="140" x="991" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="sa1" edge="1" parent="1" source="s1bg" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=1.5;endArrow=block;endFill=1;" target="s2bg" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sa2" edge="1" parent="1" source="s2bg" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=1.5;endArrow=block;endFill=1;" target="s3bg" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sa3" edge="1" parent="1" source="s3bg" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=1.5;endArrow=block;endFill=1;" target="s4bg" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sa4" edge="1" parent="1" source="s4bg" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=1.5;endArrow=block;endFill=1;" target="s5bg" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sa5" edge="1" parent="1" source="s5bg" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B5E20;strokeWidth=1.5;endArrow=block;endFill=1;" target="s6bg" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="130" width="540" x="28" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="wbar" parent="1" style="rounded=0;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="540" x="28" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="wt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="400" x="44" y="402" as="geometry" />
+        </mxCell>
+        <mxCell id="wb" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Three failure modes, in order of frequency: 1. Deploying the best model for everything and discovering the cost problem on a billing cycle — not in architecture review. 2. Optimizing token count instead of cost per correct outcome. A shorter prompt that increases error rate is more expensive, not cheaper. 3. Treating model routing as a static architecture decision rather than an empirical practice with ongoing measurement." vertex="1">
+          <mxGeometry height="96" width="512" x="44" y="422" as="geometry" />
+        </mxCell>
+        <mxCell id="mbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="130" width="555" x="584" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="mbar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="555" x="584" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="mt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B5E20;" value="The Correct Optimization Target" vertex="1">
+          <mxGeometry height="18" width="400" x="600" y="402" as="geometry" />
+        </mxCell>
+        <mxCell id="mb" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Wrong: Minimize token count per request Wrong: Minimize cost per request Wrong: Minimize model tier by default  Correct: Cost per correct outcome, measured at your quality threshold, at production volume, with escalation cost included.  A model that uses half the tokens but produces wrong answers twice as often is more expensive, not cheaper. Measure jointly." vertex="1">
+          <mxGeometry height="96" width="527" x="600" y="422" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="60" width="1149" x="10" y="547" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="60" width="400" x="28" y="547" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="60" width="440" x="700" y="547" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -563,6 +563,7 @@ auto_title: false
       <div class="topic-links-container">
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/prompt-engineering.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-keyboard" style="margin-right: 5px;"></i>Prompt Engineering</a>
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/llm-tier.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-layer-group" style="margin-right: 5px;"></i>LLM Tiers</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/reasoning-models-when-to-use.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-brain" style="margin-right: 5px;"></i>Reasoning Models</a>
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/rag.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-search" style="margin-right: 5px;"></i>RAG</a>
       </div>
     </div>

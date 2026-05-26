@@ -1,0 +1,229 @@
+<mxfile host="Electron">
+  <diagram id="fmhTdIlI2ar6vO8LsSiw" name="Page-1">
+    <mxGraphModel dx="1420" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="634" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="Reasoning Models: When to Use Them and When Not To" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="c1hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="356" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c1hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Category 1: Reasoning-Required Tasks" vertex="1">
+          <mxGeometry height="36" width="356" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_1" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="72" width="356" x="28" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_1bar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="356" x="28" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Multi-step planning under uncertainty" vertex="1">
+          <mxGeometry height="16" width="324" x="44" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Holding interdependencies across scenarios, evaluating trade-offs, resolving constraint conflicts in the plan." vertex="1">
+          <mxGeometry height="40" width="328" x="44" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_2" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="72" width="356" x="28" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_2bar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="356" x="28" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Ambiguous constraint satisfaction" vertex="1">
+          <mxGeometry height="16" width="324" x="44" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Legal interpretation, compliance analysis, contract review where clauses interact across sections." vertex="1">
+          <mxGeometry height="40" width="328" x="44" y="234" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_3" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="72" width="356" x="28" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_3bar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="356" x="28" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Adversarial and edge-case inputs" vertex="1">
+          <mxGeometry height="16" width="324" x="44" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Inputs designed to be ambiguous, containing conflicting information, or genuinely outside common distribution." vertex="1">
+          <mxGeometry height="40" width="328" x="44" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_4" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="72" width="356" x="28" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_4bar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="356" x="28" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Multi-hop information synthesis" vertex="1">
+          <mxGeometry height="16" width="324" x="44" y="376" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_4b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Connecting and synthesizing across multiple documents or reasoning chains where each step depends on prior results." vertex="1">
+          <mxGeometry height="40" width="328" x="44" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_5" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="72" width="356" x="28" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_5bar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="356" x="28" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_5t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="High-stakes, low-volume decisions" vertex="1">
+          <mxGeometry height="16" width="324" x="44" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_5b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="When error cost is high and volume is low enough that per-request cost is not the binding constraint." vertex="1">
+          <mxGeometry height="40" width="328" x="44" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="c1label" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#1B5E20;fontSize=11;fontStyle=1;fontColor=#1B5E20;align=center;" value="Use reasoning model" vertex="1">
+          <mxGeometry height="28" width="256" x="78" y="534" as="geometry" />
+        </mxCell>
+        <mxCell id="c2hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="356" x="398" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c2hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Category 2: Standard Model Tasks" vertex="1">
+          <mxGeometry height="36" width="356" x="398" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_1" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="72" width="356" x="398" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_1bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="356" x="398" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Structured data extraction" vertex="1">
+          <mxGeometry height="16" width="324" x="414" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Named entities, dates, amounts, addresses. Pattern-recognition task — standard models achieve high accuracy with schema guidance." vertex="1">
+          <mxGeometry height="40" width="328" x="414" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_2" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="72" width="356" x="398" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_2bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="356" x="398" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Classification at established categories" vertex="1">
+          <mxGeometry height="16" width="324" x="414" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Document type, intent, sentiment. Pattern-matching tasks with well-defined categories and clear examples." vertex="1">
+          <mxGeometry height="40" width="328" x="414" y="234" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_3" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="72" width="356" x="398" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_3bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="356" x="398" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Summarization with defined format" vertex="1">
+          <mxGeometry height="16" width="324" x="414" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Format adherence and key-point coverage are generation tasks well-handled by standard models with clear format instructions." vertex="1">
+          <mxGeometry height="40" width="328" x="414" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_4" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="72" width="356" x="398" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_4bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="356" x="398" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Translation and reformatting" vertex="1">
+          <mxGeometry height="16" width="324" x="414" y="376" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_4b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Converting between data formats, languages, structural representations. Transformation is correct or incorrect — no reasoning required." vertex="1">
+          <mxGeometry height="40" width="328" x="414" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_5" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="72" width="356" x="398" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_5bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="356" x="398" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_5t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="High-frequency, low-stakes operations" vertex="1">
+          <mxGeometry height="16" width="324" x="414" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_5b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Tasks running thousands of times per hour with acceptable error rate and downstream validation. Route to cheapest model meeting threshold." vertex="1">
+          <mxGeometry height="40" width="328" x="414" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="c2label" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1B3A6B;fontSize=11;fontStyle=1;fontColor=#1B3A6B;align=center;" value="Use cheapest model meeting threshold" vertex="1">
+          <mxGeometry height="28" width="256" x="448" y="534" as="geometry" />
+        </mxCell>
+        <mxCell id="c3hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="371" x="768" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c3hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Category 3: Borderline — Requires Empirical Routing" vertex="1">
+          <mxGeometry height="36" width="371" x="768" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c3note" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="36" width="371" x="768" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c3notet" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#7A6000;" value="These tasks cannot be pre-assigned.&amp;nbsp;&lt;div&gt;Routing requires complexity classification at request time.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="36" width="371" x="768" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c3_1" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="84" width="371" x="768" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="c3_1bar" parent="1" style="rounded=0;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="371" x="768" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="c3_1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#856404;" value="Domain-specific QA at variable complexity" vertex="1">
+          <mxGeometry height="16" width="339" x="784" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c3_1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Simple retrieval and complex constraint reasoning arrive through the same endpoint. Classification at request time routes each to the right model." vertex="1">
+          <mxGeometry height="52" width="343" x="784" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="c3_2" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="84" width="371" x="768" y="266" as="geometry" />
+        </mxCell>
+        <mxCell id="c3_2bar" parent="1" style="rounded=0;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="371" x="768" y="266" as="geometry" />
+        </mxCell>
+        <mxCell id="c3_2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#856404;" value="Code generation at variable complexity" vertex="1">
+          <mxGeometry height="16" width="339" x="784" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="c3_2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="A utility function is pattern-completion. An algorithm satisfying five specific performance constraints is reasoning. Same endpoint, different models." vertex="1">
+          <mxGeometry height="52" width="343" x="784" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="c3_3" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="84" width="371" x="768" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="c3_3bar" parent="1" style="rounded=0;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="371" x="768" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="c3_3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#856404;" value="Multi-document analysis where depth varies" vertex="1">
+          <mxGeometry height="16" width="339" x="784" y="364" as="geometry" />
+        </mxCell>
+        <mxCell id="c3_3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Standard checklist review vs. complex interaction-effect analysis across clauses. Input length and stated complexity are imperfect but useful routing signals." vertex="1">
+          <mxGeometry height="52" width="343" x="784" y="382" as="geometry" />
+        </mxCell>
+        <mxCell id="sigbg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="80" width="371" x="768" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="sigbar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="371" x="768" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="sigt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Complexity Signals for Routing Classification" vertex="1">
+          <mxGeometry height="16" width="339" x="784" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="sigb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Input length above threshold  |  Keywords: &#39;determine whether&#39;, &#39;given that&#39;, &#39;in conjunction with&#39;  |  Explicit conflict markers  |  Upstream complexity flags" vertex="1">
+          <mxGeometry height="48" width="343" x="784" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="c3label" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#856404;fontSize=11;fontStyle=1;fontColor=#856404;align=center;" value="Benchmark empirically, route by complexity signal" vertex="1">
+          <mxGeometry height="28" width="280" x="818" y="542" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="60" width="1149" x="10" y="583" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="60" width="400" x="28" y="583" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="60" width="440" x="700" y="583" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

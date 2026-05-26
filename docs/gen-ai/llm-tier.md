@@ -2,7 +2,7 @@
 id: gen-ai/llm-tier
 title: LLM Tiers
 sidebar_label: LLM Tiers
-next_page: gen-ai/rag
+next_page: gen-ai/reasoning-models-when-to-use
 previous_page: gen-ai/prompt-engineering
 ---
 

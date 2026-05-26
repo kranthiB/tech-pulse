@@ -1,0 +1,121 @@
+<mxfile host="Electron">
+  <diagram id="5sODs7qgNonAWLDK4fkO" name="Page-1">
+    <mxGraphModel dx="1420" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="605" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="Reasoning Models: When to Use Them and When Not To" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="sh" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="sht" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="What Reasoning Models Do Differently" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="smhdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;align=center;" value="Standard Model" vertex="1">
+          <mxGeometry height="36" width="380" x="28" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="smbg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="200" width="380" x="28" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="smb" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=12;spacingTop=8;whiteSpace=wrap;" value="Single forward pass Generates tokens by predicting what comes next conditioned on all prior context. No explicit intermediate reasoning steps. Fast and cost-efficient.  Implicit reasoning only If a task needs 20 reasoning steps, the model encodes them in weights — or fails. No self-correction mid-generation.  Compute cost Low. One pass = one response. Token cost is predictable." vertex="1">
+          <mxGeometry height="200" width="380" x="28" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="vs" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#1B3A6B;" value="vs" vertex="1">
+          <mxGeometry height="40" width="60" x="418" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="rmhdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;align=center;" value="Reasoning Model" vertex="1">
+          <mxGeometry height="36" width="380" x="490" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="rmbg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="200" width="380" x="490" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="rmb" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;spacingLeft=12;spacingTop=8;whiteSpace=wrap;" value="Extended inference compute Generates intermediate reasoning chain before final answer. Each reasoning token costs compute. You pay for the thinking, not just the output.  Self-verification loops Explicit chain-of-thought allows mid-generation self-correction. Catches contradictions and course-corrects before committing.  Compute cost 3x to 10x higher per request. Latency 3-8 seconds for non-trivial tasks." vertex="1">
+          <mxGeometry height="200" width="380" x="490" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="caphdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="840" x="28" y="382" as="geometry" />
+        </mxCell>
+        <mxCell id="caphdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Three Capabilities Reasoning Models Add" vertex="1">
+          <mxGeometry height="36" width="800" x="44" y="382" as="geometry" />
+        </mxCell>
+        <mxCell id="c1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="90" width="272" x="28" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="c1bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="272" x="28" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="c1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Multi-Constraint Satisfaction" vertex="1">
+          <mxGeometry height="16" width="240" x="44" y="434" as="geometry" />
+        </mxCell>
+        <mxCell id="c1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Holds multiple constraints in active consideration across the full generation. Identifies and resolves conflicts between constraints before committing to output." vertex="1">
+          <mxGeometry height="58" width="244" x="44" y="452" as="geometry" />
+        </mxCell>
+        <mxCell id="c2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="90" width="272" x="312" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="c2bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="272" x="312" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="c2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Multi-Hop Synthesis" vertex="1">
+          <mxGeometry height="16" width="240" x="328" y="434" as="geometry" />
+        </mxCell>
+        <mxCell id="c2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Chains inference steps where each step depends on the prior result. Maintains coherent reasoning state across many reasoning hops that exceed single-pass working memory." vertex="1">
+          <mxGeometry height="58" width="244" x="328" y="452" as="geometry" />
+        </mxCell>
+        <mxCell id="c3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="90" width="272" x="596" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="c3bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="272" x="596" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="c3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Adversarial Input Handling" vertex="1">
+          <mxGeometry height="16" width="240" x="612" y="434" as="geometry" />
+        </mxCell>
+        <mxCell id="c3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Handles ambiguous, conflicting, or edge-case inputs more gracefully. Self-verification catches pattern-matching failures before they appear in output." vertex="1">
+          <mxGeometry height="58" width="244" x="612" y="452" as="geometry" />
+        </mxCell>
+        <mxCell id="wbg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="250" width="255" x="884" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="wbar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="255" x="884" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="wt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="223" x="900" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="wb" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Reasoning model capabilities are only valuable when the task actually requires them. For tasks that do not require multi-step reasoning, self-verification, or multi-constraint satisfaction, the extended compute is pure waste.  The corollary is equally important: using a standard model for a genuinely complex reasoning task produces worse outputs — not marginally worse, but worse in ways that affect decisions and downstream systems.  The discipline is the taxonomy, not the preference." vertex="1">
+          <mxGeometry height="216" width="227" x="900" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="latbg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="141" width="255" x="884" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="latbar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="255" x="884" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="latt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Latency Reality" vertex="1">
+          <mxGeometry height="16" width="223" x="900" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="latb" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Standard model: under 1 second for most tasks Reasoning model: 3 to 8 seconds for non-trivial requests  For real-time user-facing applications with a latency budget under 2 seconds, treat the reasoning model as unavailable regardless of task complexity. Streaming reduces perceived latency but does not change total generation time." vertex="1">
+          <mxGeometry height="92" width="227" x="900" y="418" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="60" width="1149" x="10" y="557" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="60" width="400" x="28" y="557" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="60" width="440" x="700" y="557" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
