@@ -1,0 +1,106 @@
+<mxfile host="Electron">
+  <diagram id="zLDbSToJYbjf4ZcAPOgv" name="Page-1">
+    <mxGraphModel dx="1420" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="627" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="Synthetic Data Engineering — Quality Validation Framework: Four Independent Questions" vertex="1">
+          <mxGeometry height="62" width="900" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="wbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="72" width="1111" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="wbar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="wt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong: Distribution Coverage Failure" vertex="1">
+          <mxGeometry height="18" width="700" x="44" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Generating data that looks plausible but underrepresents tail cases. The model looks strong in evaluation and fails on the exact cases that matter most in production. Aggregate metrics hide the gap. Only four-question validation reveals it." vertex="1">
+          <mxGeometry height="40" width="1089" x="44" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="q1hdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="547" x="28" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="q1hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Question 1: Does the synthetic distribution match the real distribution?" vertex="1">
+          <mxGeometry height="36" width="519" x="44" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="q1mh" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" value="Measurement Methods" vertex="1">
+          <mxGeometry height="24" width="170" x="28" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="q1mb" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;align=left;verticalAlign=top;" value="Two-sample statistical tests across feature dimensions. Nearest-neighbor distance metrics. Classifier-based distinguishability test: train a binary classifier to separate synthetic from real — if it succeeds above chance, distributions differ detectably." vertex="1">
+          <mxGeometry height="80" width="377" x="198" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="q1pass" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;fontColor=#1B3A6B;align=left;verticalAlign=top;" value="Pass condition: classifier accuracy close to 50%. No statistically significant feature distribution divergence." vertex="1">
+          <mxGeometry height="42" width="547" x="28" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="q2hdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="547" x="592" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="q2hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Question 2: Does the synthetic data cover the target scenario space?" vertex="1">
+          <mxGeometry height="36" width="519" x="608" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="q2mh" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" value="Measurement Methods" vertex="1">
+          <mxGeometry height="24" width="170" x="592" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="q2mb" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;align=left;verticalAlign=top;" value="Define the scenario taxonomy explicitly. Verify each scenario class has sufficient representation. Embedding-space visualization reveals coverage gaps visually. Scenario checklist validation confirms completeness." vertex="1">
+          <mxGeometry height="80" width="377" x="762" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="q2pass" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;fontColor=#1B3A6B;align=left;verticalAlign=top;" value="Pass condition: all taxonomy scenario classes represented. No coverage gaps visible in embedding-space projection. Checklist completion above defined threshold." vertex="1">
+          <mxGeometry height="42" width="547" x="592" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="q3hdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="547" x="28" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="q3hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Question 3: Is downstream task performance on synthetic data predictive of real performance?" vertex="1">
+          <mxGeometry height="36" width="519" x="44" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="q3mh" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" value="Measurement Methods" vertex="1">
+          <mxGeometry height="24" width="170" x="28" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="q3mb" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;align=left;verticalAlign=top;" value="Train a model on the synthetic dataset. Evaluate on a small real holdout (200–500 examples). Measure the Pearson or Spearman correlation between synthetic-data performance and real-data performance across evaluation dimensions." vertex="1">
+          <mxGeometry height="80" width="377" x="198" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="q3note" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;fontSize=11;fontColor=#7A6000;align=left;verticalAlign=top;" value="This is the most important question and the one most teams skip. Low correlation means the synthetic data allows the model to succeed through a different mechanism than real data requires." vertex="1">
+          <mxGeometry height="52" width="547" x="28" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="q4hdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="547" x="592" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="q4hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Question 4: Has the synthetic data amplified or introduced bias?" vertex="1">
+          <mxGeometry height="36" width="519" x="608" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="q4mh" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" value="Measurement Methods" vertex="1">
+          <mxGeometry height="24" width="170" x="592" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="q4mb" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;align=left;verticalAlign=top;" value="Measure representation across protected attributes. Check label quality across demographic groups. Apply identical bias evaluation framework used for real data. Bias sources: generating model biases, specification author biases, simulation designer biases." vertex="1">
+          <mxGeometry height="80" width="377" x="762" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="q4note" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;fontSize=11;fontColor=#7A6000;align=left;verticalAlign=top;" value="Bias audit on synthetic data is not optional in regulated industries. Every generation method inherits the biases of its inputs. Synthetic generation can amplify those biases at scale." vertex="1">
+          <mxGeometry height="52" width="547" x="592" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="sumbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="1111" x="28" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="sumt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#FFFFFF;" value="Teams that only check Questions 1 and 2 are measuring synthetic data aesthetics, not quality. Questions 3 and 4 are the ones that determine production outcome." vertex="1">
+          <mxGeometry height="48" width="1083" x="44" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="1149" x="10" y="592" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="48" width="400" x="28" y="592" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="48" width="440" x="700" y="592" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

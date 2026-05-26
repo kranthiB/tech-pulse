@@ -1,0 +1,130 @@
+<mxfile host="Electron">
+  <diagram id="AXDJUCJTkDuqb_xVB09M" name="Page-1">
+    <mxGraphModel dx="1420" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="670" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="Synthetic Data Engineering — Generation Approaches and When to Use Each" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="h1bg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="362" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="h1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="LLM-Driven Generation" vertex="1">
+          <mxGeometry height="36" width="362" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="h2bg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="362" x="404" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="h2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Rule-Based Generation" vertex="1">
+          <mxGeometry height="36" width="362" x="404" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="h3bg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="359" x="780" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="h3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Simulation-Based Generation" vertex="1">
+          <mxGeometry height="36" width="359" x="780" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="hw1h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#1B3A6B;align=center;" value="How It Works" vertex="1">
+          <mxGeometry height="24" width="362" x="28" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hw1b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;fontSize=11;fontColor=#333D4D;align=left;verticalAlign=top;" value="Define a structured specification (entity, scenario, linguistic properties, ground truth label). Prompt the generating model. Collect and validate output at scale. Coverage steered through specification variation and few-shot examples." vertex="1">
+          <mxGeometry height="86" width="362" x="28" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="hw2h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#1B3A6B;align=center;" value="How It Works" vertex="1">
+          <mxGeometry height="24" width="362" x="404" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hw2b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;fontSize=11;fontColor=#333D4D;align=left;verticalAlign=top;" value="Define marginal distributions, correlation structures, and validity constraints explicitly. Populate parameterized templates from controlled vocabularies. Produces fully deterministic, auditable, reproducible output at any scale." vertex="1">
+          <mxGeometry height="86" width="362" x="404" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="hw3h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#1B3A6B;align=center;" value="How It Works" vertex="1">
+          <mxGeometry height="24" width="359" x="780" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hw3b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;fontSize=11;fontColor=#333D4D;align=left;verticalAlign=top;" value="Model the underlying process that generates real data, including dynamics, agent behaviors, and external forcing functions. Run the simulation forward. Output is data produced by the simulated process, not sampled from its distribution." vertex="1">
+          <mxGeometry height="86" width="359" x="780" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="bf1h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Best For" vertex="1">
+          <mxGeometry height="24" width="362" x="28" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="bf1b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;align=left;verticalAlign=top;" value="Text-based tasks, dialogue generation, code generation training data, NLP evaluation sets, domain-specific Q-A pairs." vertex="1">
+          <mxGeometry height="62" width="362" x="28" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="bf2h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Best For" vertex="1">
+          <mxGeometry height="24" width="362" x="404" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="bf2b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;align=left;verticalAlign=top;" value="Tabular data, structured records, compliance-bounded value generation, cases where the target distribution is well-characterized and stable." vertex="1">
+          <mxGeometry height="62" width="362" x="404" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="bf3h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Best For" vertex="1">
+          <mxGeometry height="24" width="359" x="780" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="bf3b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;align=left;verticalAlign=top;" value="Financial time series, industrial systems, user behavior modeling, supply chains. Any domain where temporal dynamics and feedback loops are central to the AI task." vertex="1">
+          <mxGeometry height="62" width="359" x="780" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="fm1h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Primary Failure Mode" vertex="1">
+          <mxGeometry height="24" width="362" x="28" y="316" as="geometry" />
+        </mxCell>
+        <mxCell id="fm1b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#CBD8EF;fontSize=11;fontColor=#7A6000;align=left;verticalAlign=top;" value="Hallucination in the generating model contaminates the dataset. Same-family generator and evaluator reduces evaluation independence. Specification coverage gaps produce silent scenario blind spots." vertex="1">
+          <mxGeometry height="72" width="362" x="28" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="fm2h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Primary Failure Mode" vertex="1">
+          <mxGeometry height="24" width="362" x="404" y="316" as="geometry" />
+        </mxCell>
+        <mxCell id="fm2b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#CBD8EF;fontSize=11;fontColor=#7A6000;align=left;verticalAlign=top;" value="Specification incompleteness: properties of the real distribution that the rules do not capture produce systematic gaps invisible until the model fails on those cases." vertex="1">
+          <mxGeometry height="72" width="362" x="404" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="fm3h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Primary Failure Mode" vertex="1">
+          <mxGeometry height="24" width="359" x="780" y="316" as="geometry" />
+        </mxCell>
+        <mxCell id="fm3b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#CBD8EF;fontSize=11;fontColor=#7A6000;align=left;verticalAlign=top;" value="Temporal leakage: simulation calibrated on the full historical period makes synthetic data artificially similar to all evaluation periods. Validation must use a held-out period the simulation has no knowledge of." vertex="1">
+          <mxGeometry height="72" width="359" x="780" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="dfhdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="dfhdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Decision Framework: Approach Selection Guide" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="dg1h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#1B5E20;align=center;" value="Task is text or dialogue based" vertex="1">
+          <mxGeometry height="28" width="362" x="28" y="472" as="geometry" />
+        </mxCell>
+        <mxCell id="dg1b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;align=left;verticalAlign=top;" value="Start with LLM-driven. Add a validator component. Ensure the generating model is a different family from the model under evaluation." vertex="1">
+          <mxGeometry height="56" width="362" x="28" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="dg2h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#1B5E20;align=center;" value="Task is tabular or structured record" vertex="1">
+          <mxGeometry height="28" width="362" x="404" y="472" as="geometry" />
+        </mxCell>
+        <mxCell id="dg2b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;align=left;verticalAlign=top;" value="Rule-based first. Document the specification completely. Validate specification completeness against a domain expert before generation begins." vertex="1">
+          <mxGeometry height="56" width="362" x="404" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="dg3h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontStyle=1;fontColor=#1B5E20;align=center;" value="Task involves temporal dynamics or feedback" vertex="1">
+          <mxGeometry height="28" width="359" x="780" y="472" as="geometry" />
+        </mxCell>
+        <mxCell id="dg3b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#CBD8EF;fontSize=11;fontColor=#2E7D32;align=left;verticalAlign=top;" value="Invest in simulation. Calibrate against training-period data only. Hold out the most recent period for validation to prevent temporal leakage." vertex="1">
+          <mxGeometry height="56" width="359" x="780" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="sumbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="1111" x="28" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="sumt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#FFFFFF;" value="Hybrid pipelines combining multiple approaches are the standard for production-grade synthetic data. Each component contributes distinct coverage properties." vertex="1">
+          <mxGeometry height="48" width="1083" x="44" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="1149" x="10" y="631" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="48" width="400" x="28" y="631" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="48" width="440" x="700" y="631" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

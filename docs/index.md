@@ -602,6 +602,7 @@ auto_title: false
       </h3>
       <div class="topic-links-container">
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/evaluation-engineering-llm-systems.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-check-circle" style="margin-right: 5px;"></i>Evaluation Engineering for LLM Systems</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/synthetic-data-engineering-ai-systems.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-database" style="margin-right: 5px;"></i>Synthetic Data Engineering</a>
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/ai-driven-software-development.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-code" style="margin-right: 5px;"></i>AI-Enabled Development</a>
       </div>
     </div>

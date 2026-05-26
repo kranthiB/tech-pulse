@@ -1,0 +1,196 @@
+<mxfile host="Electron">
+  <diagram id="RHT4mF5fFIjPjUykzvZp" name="Page-1">
+    <mxGraphModel dx="1420" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="637" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="Synthetic Data Engineering — Why Real Data Is Not Enough" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="c1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="176" width="268" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c1bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="268" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c1ic" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="26" width="26" x="44" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c1n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" value="1" vertex="1">
+          <mxGeometry height="26" width="26" x="44" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Tail Scarcity" vertex="1">
+          <mxGeometry height="18" width="206" x="78" y="97" as="geometry" />
+        </mxCell>
+        <mxCell id="c1s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Critical events are rare by definition" vertex="1">
+          <mxGeometry height="14" width="206" x="78" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="c1div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="248" x="38" y="133" as="geometry" />
+        </mxCell>
+        <mxCell id="c1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Business-critical events happen rarely by definition. Fraud attempts, failure modes, and regulatory exceptions may have fewer than 100 real examples. Volume required for reliable AI: 10,000 to 100,000+." vertex="1">
+          <mxGeometry height="111" width="240" x="44" y="141" as="geometry" />
+        </mxCell>
+        <mxCell id="c2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="176" width="268" x="310" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c2bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="268" x="310" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c2ic" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="26" width="26" x="326" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c2n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" value="2" vertex="1">
+          <mxGeometry height="26" width="26" x="326" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Privacy Constraints" vertex="1">
+          <mxGeometry height="18" width="206" x="360" y="97" as="geometry" />
+        </mxCell>
+        <mxCell id="c2s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Anonymization is always reversible in principle" vertex="1">
+          <mxGeometry height="14" width="206" x="360" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="c2div" parent="1" style="line;strokeColor=#FFCA2C;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="248" x="320" y="133" as="geometry" />
+        </mxCell>
+        <mxCell id="c2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Healthcare records, financial data, and PII cannot freely enter training pipelines without legal exposure. Anonymization of real records is always reversible in principle. Development environments cannot receive production data." vertex="1">
+          <mxGeometry height="111" width="240" x="326" y="141" as="geometry" />
+        </mxCell>
+        <mxCell id="c3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="176" width="268" x="592" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c3bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="268" x="592" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c3ic" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="26" width="26" x="608" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c3n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" value="3" vertex="1">
+          <mxGeometry height="26" width="26" x="608" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Label Scarcity" vertex="1">
+          <mxGeometry height="18" width="206" x="642" y="97" as="geometry" />
+        </mxCell>
+        <mxCell id="c3s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Domain expert time is the binding constraint" vertex="1">
+          <mxGeometry height="14" width="206" x="642" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="c3div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="248" x="602" y="133" as="geometry" />
+        </mxCell>
+        <mxCell id="c3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Human labeling is slow and expensive. At the volume production AI systems require, labeling costs become prohibitive. Inter-annotator disagreement reduces label quality. Domain expert time is the binding constraint." vertex="1">
+          <mxGeometry height="111" width="240" x="608" y="141" as="geometry" />
+        </mxCell>
+        <mxCell id="c4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="176" width="275" x="874" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c4bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="275" x="874" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c4ic" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="26" width="26" x="890" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c4n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" value="4" vertex="1">
+          <mxGeometry height="26" width="26" x="890" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Historical Bias" vertex="1">
+          <mxGeometry height="18" width="213" x="924" y="97" as="geometry" />
+        </mxCell>
+        <mxCell id="c4s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="AI systems inherit all historical biases structurally" vertex="1">
+          <mxGeometry height="14" width="213" x="924" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="c4div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="255" x="884" y="133" as="geometry" />
+        </mxCell>
+        <mxCell id="c4b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Real historical data reflects past decisions and distributions. New regulations, new products, and new user behaviors have no historical data yet. AI systems trained on historical data inherit all historical biases structurally." vertex="1">
+          <mxGeometry height="111" width="247" x="890" y="141" as="geometry" />
+        </mxCell>
+        <mxCell id="wbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="80" width="1111" x="28" y="274" as="geometry" />
+        </mxCell>
+        <mxCell id="wbar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="274" as="geometry" />
+        </mxCell>
+        <mxCell id="wt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="500" x="44" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="wb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Teams dismiss synthetic data as &quot;fake data&quot; — lower quality by assumption. The correct framing: synthetic data is engineered data, deliberately constructed to have statistical properties that real data cannot provide at sufficient volume or safety. Dismissing it means accepting the data gap as a permanent constraint." vertex="1">
+          <mxGeometry height="48" width="1089" x="44" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="dfhdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="dfhdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Decision Framework: When to Introduce Synthetic Data" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="d1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="106" width="268" x="28" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="d1bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="268" x="28" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="d1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Trigger 1" vertex="1">
+          <mxGeometry height="16" width="236" x="44" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="d1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Any class in your dataset has fewer than 1,000 labeled examples and is required for production evaluation." vertex="1">
+          <mxGeometry height="74" width="240" x="44" y="438" as="geometry" />
+        </mxCell>
+        <mxCell id="d2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="106" width="268" x="310" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="d2bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="268" x="310" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="d2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Trigger 2" vertex="1">
+          <mxGeometry height="16" width="236" x="326" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="d2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Real data carries HIPAA, GDPR, or PCI constraints that block use in development or evaluation pipelines." vertex="1">
+          <mxGeometry height="74" width="240" x="326" y="438" as="geometry" />
+        </mxCell>
+        <mxCell id="d3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="106" width="268" x="592" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="d3bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="268" x="592" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="d3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Trigger 3" vertex="1">
+          <mxGeometry height="16" width="236" x="608" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="d3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="New product or regulation has no historical data yet but AI system must be evaluated before launch." vertex="1">
+          <mxGeometry height="74" width="240" x="608" y="438" as="geometry" />
+        </mxCell>
+        <mxCell id="d4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="106" width="275" x="874" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="d4bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="275" x="874" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="d4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Trigger 4" vertex="1">
+          <mxGeometry height="16" width="243" x="890" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="d4b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Red-team coverage requires adversarial scenarios that have not yet occurred in production and cannot be sourced from real logs." vertex="1">
+          <mxGeometry height="74" width="247" x="890" y="438" as="geometry" />
+        </mxCell>
+        <mxCell id="sumbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="1111" x="28" y="534" as="geometry" />
+        </mxCell>
+        <mxCell id="sumt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#FFFFFF;" value="Synthetic data is not a substitute for real data. It is an engineering discipline for eliminating data constraints that would otherwise block production AI quality." vertex="1">
+          <mxGeometry height="48" width="1083" x="44" y="534" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="1149" x="10" y="599" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="48" width="400" x="28" y="599" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="48" width="440" x="700" y="599" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

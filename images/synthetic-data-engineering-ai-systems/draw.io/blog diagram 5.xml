@@ -1,0 +1,118 @@
+<mxfile host="Electron">
+  <diagram id="0uN9SD1SJtRrg8pHCSfH" name="Page-1">
+    <mxGraphModel dx="1420" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="835" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="Synthetic Data Engineering — Decision Matrix: Which Approach for Which Problem" vertex="1">
+          <mxGeometry height="62" width="900" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="yaxis" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;rotation=-90;" value="DATA SENSITIVITY&#xa;(Privacy / Regulatory Risk)" vertex="1">
+          <mxGeometry height="28" width="260" x="-29" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="yhi" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="HIGH ↑" vertex="1">
+          <mxGeometry height="22" width="70" x="46" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="ylo" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="LOW ↓" vertex="1">
+          <mxGeometry height="22" width="70" x="46" y="558" as="geometry" />
+        </mxCell>
+        <mxCell id="xaxis" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="VOLUME GAP (Scale of Data Needed vs. Real Data Available)" vertex="1">
+          <mxGeometry height="24" width="860" x="133" y="761" as="geometry" />
+        </mxCell>
+        <mxCell id="xlo" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="← LOW" vertex="1">
+          <mxGeometry height="22" width="80" x="120" y="746" as="geometry" />
+        </mxCell>
+        <mxCell id="xhi" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="HIGH →" vertex="1">
+          <mxGeometry height="22" width="100" x="880" y="746" as="geometry" />
+        </mxCell>
+        <mxCell id="q1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="286" width="490" x="120" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="q1lbl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=22;fontStyle=1;fontColor=#1B3A6B;" value="Q1" vertex="1">
+          <mxGeometry height="28" width="50" x="136" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="q1title" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="30" width="462" x="136" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="q1titlet" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Augmented Real Data" vertex="1">
+          <mxGeometry height="30" width="462" x="136" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="q1desc" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Real data is usable and you have a representative seed set. Apply targeted augmentation to expand volume and class balance. Validate that augmentation does not expand existing gaps. Lowest risk entry point into synthetic data." vertex="1">
+          <mxGeometry height="90" width="462" x="136" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="q1cond" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;fontSize=11;fontColor=#2E7D32;align=left;verticalAlign=top;" value="Condition: low privacy risk, modest volume gap relative to training target" vertex="1">
+          <mxGeometry height="106" width="462" x="136" y="256" as="geometry" />
+        </mxCell>
+        <mxCell id="q2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="354" width="490" x="120" y="386" as="geometry" />
+        </mxCell>
+        <mxCell id="q2lbl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=22;fontStyle=1;fontColor=#1B3A6B;" value="Q2" vertex="1">
+          <mxGeometry height="28" width="50" x="136" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="q2title" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="30" width="462" x="136" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="q2titlet" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Fully Synthetic or Simulation-Based" vertex="1">
+          <mxGeometry height="30" width="462" x="136" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="q2desc" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Real data can inform generation calibration but cannot meet volume requirements alone. Scale generation without privacy constraints. Real data serves as the distribution reference. Run downstream task correlation validation against small real holdout." vertex="1">
+          <mxGeometry height="90" width="462" x="136" y="462" as="geometry" />
+        </mxCell>
+        <mxCell id="q2cond" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;fontSize=11;fontColor=#2E7D32;align=left;verticalAlign=top;" value="Condition: low privacy risk, large volume gap requiring generation at 10x to 100x real data scale" vertex="1">
+          <mxGeometry height="174" width="462" x="136" y="558" as="geometry" />
+        </mxCell>
+        <mxCell id="q3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="286" width="501" x="628" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="q3lbl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=22;fontStyle=1;fontColor=#1B3A6B;" value="Q3" vertex="1">
+          <mxGeometry height="28" width="50" x="644" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="q3title" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="30" width="473" x="644" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="q3titlet" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Evaluation-Only Synthetic Data" vertex="1">
+          <mxGeometry height="30" width="473" x="644" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="q3desc" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Privacy constraints prevent real data use in evaluation pipelines, but real data volume is sufficient for training in controlled environments. Primary synthetic use case: build evaluation datasets with definitional ground truth outside the secure environment." vertex="1">
+          <mxGeometry height="90" width="473" x="644" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="q3cond" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;fontSize=11;fontColor=#2E7D32;align=left;verticalAlign=top;" value="Condition: high privacy risk, training volume acceptable, evaluation pipeline is the bottleneck" vertex="1">
+          <mxGeometry height="106" width="473" x="644" y="256" as="geometry" />
+        </mxCell>
+        <mxCell id="q4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="354" width="501" x="628" y="386" as="geometry" />
+        </mxCell>
+        <mxCell id="q4lbl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=22;fontStyle=1;fontColor=#856404;" value="Q4" vertex="1">
+          <mxGeometry height="28" width="50" x="644" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="q4title" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="30" width="473" x="644" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="q4titlet" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Hybrid Pipeline (Most Demanding — Most Common in Enterprise)" vertex="1">
+          <mxGeometry height="30" width="473" x="644" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="q4desc" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Cannot use real data freely. Do not have enough of it even if you could. Pipeline: calibrate a generative model on real data in a controlled consent-managed environment. Generate fully synthetic at scale. Validate against a small real holdout in secure compute. Deploy synthetic into the broader development and evaluation pipeline." vertex="1">
+          <mxGeometry height="90" width="473" x="644" y="462" as="geometry" />
+        </mxCell>
+        <mxCell id="q4cond" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#FFCA2C;fontSize=11;fontColor=#7A6000;align=left;verticalAlign=top;" value="Condition: high privacy risk AND large volume gap. Regulated industries: healthcare, finance, government. Most common enterprise AI data constraint." vertex="1">
+          <mxGeometry height="174" width="473" x="644" y="558" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="1149" x="10" y="797" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="48" width="400" x="28" y="797" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="48" width="440" x="700" y="797" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
