@@ -1,0 +1,175 @@
+<mxfile host="Electron">
+  <diagram id="_a12owOmBrZxYdbRuhU0" name="Page-1">
+    <mxGraphModel dx="1617" dy="1117" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="0" pageScale="1" pageWidth="1200" pageHeight="627" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="627" width="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="70" width="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#FFFFFF;" value="Human-in-the-Loop Design for Agentic Systems" vertex="1">
+          <mxGeometry height="70" width="860" x="16" as="geometry" />
+        </mxCell>
+        <mxCell id="p1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="196" width="384" x="8" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="p1bar" parent="1" style="rounded=0;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="384" x="8" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="p1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Why Blanket Human Review Fails" vertex="1">
+          <mxGeometry height="18" width="356" x="22" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="p1s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="98% approval rates in 2 seconds is liability theater, not oversight" vertex="1">
+          <mxGeometry height="14" width="356" x="22" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="p1div" parent="1" style="line;strokeColor=#FFCA2C;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="368" x="16" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="p1b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Volume: 500+ decisions/day produces rubber-stamping, not review.&#xa;&#xa;Velocity: Real-time pipelines cannot pause for human deliberation.&#xa;&#xa;Context collapse: An approve/reject button is not a review interface.&#xa;&#xa;Result: When humans approve 98% of agent decisions in under 2 seconds, errors pass through at full speed and the organization develops false confidence in a safety layer that is not functioning." vertex="1">
+          <mxGeometry height="134" width="362" x="22" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="p2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="196" width="392" x="404" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="p2bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="392" x="404" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="p2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="The Autonomy Spectrum: 3 Levels" vertex="1">
+          <mxGeometry height="18" width="364" x="418" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="p2s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Determined by criteria, not convenience" vertex="1">
+          <mxGeometry height="14" width="364" x="418" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="p2div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="376" x="412" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="p2b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="IN the loop: Human approves each decision. High consequence, low volume, pause-tolerant. &#xa;&#xa;ON the loop: Agents run autonomously, humans monitor and intervene on anomalies. High volume with bounded blast radius. &#xa;&#xa;OUT of the loop: Full automation. Humans own design and aggregate oversight. Requires the most engineering rigor — not the least." vertex="1">
+          <mxGeometry height="134" width="370" x="418" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="p3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="196" width="384" x="808" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="p3bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="384" x="808" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="p3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Five-Criteria Checkpoint Design" vertex="1">
+          <mxGeometry height="18" width="356" x="822" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="p3s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="A checkpoint earns its place only if it clears 3 of 5" vertex="1">
+          <mxGeometry height="14" width="356" x="822" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="p3div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="368" x="816" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="p3b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="1. Consequence: blast radius of agent error at this point &#xa;2. Frequency: deliberation feasible at this volume? &#xa;3. Human value: does human genuinely improve decision? &#xa;4. Latency tolerance: can the workflow pause? &#xa;5. Auditability: compliance requires human record? &#xa;&#xa;Auditability = HIGH always triggers checkpoint regardless of other scores." vertex="1">
+          <mxGeometry height="134" width="362" x="822" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="p4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="196" width="384" x="8" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="p4bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="384" x="8" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="p4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Escalation Path: 5 Required Components" vertex="1">
+          <mxGeometry height="18" width="356" x="22" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="p4s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Design all five before the checkpoint goes live" vertex="1">
+          <mxGeometry height="14" width="356" x="22" y="312" as="geometry" />
+        </mxCell>
+        <mxCell id="p4div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="368" x="16" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="p4b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="1. Routing: who is notified, which channel, what SLA &#xa;2. Context package: reasoning trace, confidence distribution, consequence map &#xa;3. Authority clarity: exactly what choices the human can make &#xa;4. Response handling: structured schema for agent to consume decision &#xa;5. Timeout and fallback: what happens when no response arrives  &#39;Wait indefinitely&#39; is not a valid production fallback." vertex="1">
+          <mxGeometry height="134" width="362" x="22" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="p5bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="196" width="392" x="404" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="p5bar" parent="1" style="rounded=0;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="392" x="404" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="p5t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="364" x="418" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="p5s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Adding checkpoints to feel safe, not to be safe" vertex="1">
+          <mxGeometry height="14" width="364" x="418" y="312" as="geometry" />
+        </mxCell>
+        <mxCell id="p5div" parent="1" style="line;strokeColor=#FFCA2C;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="376" x="412" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="p5b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Teams add a human approval step in the final week before launch — without designing context packages, escalation paths, effectiveness metrics, or instrumentation. &#xa;&#xa;A checkpoint where humans approve 98% of decisions in under 2 seconds is liability theater. &#xa;&#xa;Effective oversight requires: genuine decision authority + sufficient context + volume low enough for real deliberation." vertex="1">
+          <mxGeometry height="134" width="370" x="418" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="p6bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="196" width="384" x="808" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="p6t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#AACCFF;" value="The Right Design Principle" vertex="1">
+          <mxGeometry height="18" width="356" x="822" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="p6div" parent="1" style="line;strokeColor=#2E5499;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="368" x="816" y="316" as="geometry" />
+        </mxCell>
+        <mxCell id="p6b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#EAF1FB;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Instrument checkpoints from day one — not after the first incident.  Measure: decision time distribution, override rate trend, agent error rate at checkpoints, false safety indicator.  Human-in-the-Loop is an architecture decision. Design it deliberately." vertex="1">
+          <mxGeometry height="110" width="362" x="822" y="324" as="geometry" />
+        </mxCell>
+        <mxCell id="p6close" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#FFCA2C;whiteSpace=wrap;" value="Every checkpoint must be engineered to produce a decision only a human should make." vertex="1">
+          <mxGeometry height="36" width="362" x="822" y="438" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="137" width="1200" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="fdiv" parent="1" style="line;strokeColor=#2E5499;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="1168" x="16" y="506" as="geometry" />
+        </mxCell>
+        <mxCell id="facc" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#AACCFF;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="54" width="4" x="16" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="fq1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=2;fontColor=#AACCFF;" value="Presence of a human in the approval flow is not the same as oversight." vertex="1">
+          <mxGeometry height="28" width="720" x="30" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="fq2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=2;fontColor=#7A9ACC;" value="Design the checkpoint to produce a decision only a human should make." vertex="1">
+          <mxGeometry height="26" width="700" x="30" y="548" as="geometry" />
+        </mxCell>
+        <mxCell id="s1bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#162E55;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="136" x="756" y="516" as="geometry" />
+        </mxCell>
+        <mxCell id="s1l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#AACCFF;" value="AUTONOMY LEVELS" vertex="1">
+          <mxGeometry height="14" width="136" x="756" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="s1n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#FFFFFF;" value="3" vertex="1">
+          <mxGeometry height="26" width="136" x="756" y="534" as="geometry" />
+        </mxCell>
+        <mxCell id="s2bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#162E55;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="136" x="904" y="516" as="geometry" />
+        </mxCell>
+        <mxCell id="s2l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#AACCFF;" value="CHECKPOINT CRITERIA" vertex="1">
+          <mxGeometry height="14" width="136" x="904" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="s2n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#81C784;" value="5" vertex="1">
+          <mxGeometry height="26" width="136" x="904" y="534" as="geometry" />
+        </mxCell>
+        <mxCell id="s3bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#162E55;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="136" x="1052" y="516" as="geometry" />
+        </mxCell>
+        <mxCell id="s3l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#AACCFF;" value="ESCALATION COMPONENTS" vertex="1">
+          <mxGeometry height="14" width="136" x="1052" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="s3n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#FFCA2C;" value="5" vertex="1">
+          <mxGeometry height="26" width="136" x="1052" y="534" as="geometry" />
+        </mxCell>
+        <mxCell id="fbdiv" parent="1" style="line;strokeColor=#2E5499;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="1168" x="16" y="578" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#7A9ACC;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="36" width="400" x="16" y="584" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="36" width="434" x="750" y="584" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

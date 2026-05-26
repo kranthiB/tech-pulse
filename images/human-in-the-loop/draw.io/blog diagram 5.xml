@@ -1,0 +1,106 @@
+<mxfile host="Electron">
+  <diagram id="-f9iMRDeNlqz8yIgXq_C" name="Page-1">
+    <mxGraphModel dx="1420" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="807" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="Human-in-the-Loop Design for Agentic Systems" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="fhdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="1111" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="fhdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="The five-criteria framework applies universally. In high-stakes domains, these criteria reliably point toward human involvement as a structural requirement, not an option." vertex="1">
+          <mxGeometry height="40" width="1083" x="44" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="d1hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="32" width="535" x="28" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="d1hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Financial Decisions" vertex="1">
+          <mxGeometry height="32" width="535" x="28" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="d1crit" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#2D5AA0;strokeColor=none;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=center;" value="Consequence: HIGH     Auditability: HIGH (regulatory)" vertex="1">
+          <mxGeometry height="24" width="535" x="28" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="d1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="198" width="535" x="28" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="d1b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=8;spacingTop=6;whiteSpace=wrap;" value="Automated decisions above monetary thresholds carry regulatory obligations in most jurisdictions.  Design challenge: Build a review interface that captures a legally defensible decision record without creating a throughput bottleneck.  Specific considerations: - Customer balance decisions: full context package required - Credit determinations: auditability criterion alone triggers Level 1 - Large transaction approvals: structured decision record mandatory  Audit retention: Typically 7 years in financial services" vertex="1">
+          <mxGeometry height="198" width="535" x="28" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="d2hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="32" width="535" x="604" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="d2hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Healthcare Recommendations" vertex="1">
+          <mxGeometry height="32" width="535" x="604" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="d2crit" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#2D5AA0;strokeColor=none;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=center;" value="Consequence: HIGH     Auditability: HIGH (clinical documentation standards)" vertex="1">
+          <mxGeometry height="24" width="535" x="604" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="d2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="198" width="535" x="604" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="d2b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=8;spacingTop=6;whiteSpace=wrap;" value="Clinical decision support agents operate in a high-cognitive-load environment where the human reviewer is a clinician with limited review time.  Design challenge: Compress context without losing clinical relevance. Integrate escalation into existing clinical workflows, not a parallel notification channel.  Specific considerations: - Context packages must meet clinical documentation standards - Review interface must integrate with EHR workflow - Audit record must meet jurisdiction-specific requirements  Key difference from other domains: Reviewer expertise level is itself a design variable" vertex="1">
+          <mxGeometry height="198" width="535" x="604" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="d3hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="32" width="535" x="28" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="d3hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Legal Document Generation" vertex="1">
+          <mxGeometry height="32" width="535" x="28" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="d3crit" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#2D5AA0;strokeColor=none;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=center;" value="Consequence: HIGH (errors outlast the workflow)     Auditability: HIGH" vertex="1">
+          <mxGeometry height="24" width="535" x="28" y="436" as="geometry" />
+        </mxCell>
+        <mxCell id="d3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="176" width="535" x="28" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="d3b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=8;spacingTop=6;whiteSpace=wrap;" value="Contracts, compliance filings, and regulatory submissions carry legal consequences that outlast the workflow that generated them.  Design challenge: Ensure the reviewer has sufficient domain expertise to catch agent errors, not just sufficient time to approve the output.  Specific considerations: - Reviewer qualification must be tracked as part of the audit record - Version control of reviewed documents is an engineering requirement - Audit record must capture what version the human approved" vertex="1">
+          <mxGeometry height="176" width="535" x="28" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="d4hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="32" width="535" x="604" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="d4hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Hiring and Performance Decisions" vertex="1">
+          <mxGeometry height="32" width="535" x="604" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="d4crit" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#2D5AA0;strokeColor=none;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=center;" value="Consequence: HIGH (fairness/discrimination risk)     Human Value: CRITICAL beyond accuracy" vertex="1">
+          <mxGeometry height="24" width="535" x="604" y="436" as="geometry" />
+        </mxCell>
+        <mxCell id="d4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="176" width="535" x="604" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="d4b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=8;spacingTop=6;whiteSpace=wrap;" value="Agentic systems in talent decisions carry fairness and discrimination risk that a purely accuracy-based checkpoint framework can miss.  Design challenge: The human&#39;s role is not just to catch agent errors but to ensure the decision meets standards that go beyond the agent&#39;s optimization objective.  Specific considerations: - Checkpoint must include explicit diversity and bias review components - Not just output approval — process validation is required - Human Value criterion includes fairness dimensions not in accuracy metrics" vertex="1">
+          <mxGeometry height="176" width="535" x="604" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="pbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="70" width="1111" x="28" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="pbar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="pt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B5E20;" value="Universal Design Principle Across All High-Stakes Domains" vertex="1">
+          <mxGeometry height="18" width="900" x="44" y="656" as="geometry" />
+        </mxCell>
+        <mxCell id="pb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#2E7D32;whiteSpace=wrap;" value="The checkpoint must be engineered to capture a decision that would withstand scrutiny after the fact. Genuine human authority + sufficient context + complete audit record. Not an approval button at the end of a queue." vertex="1">
+          <mxGeometry height="40" width="1083" x="44" y="676" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="60" width="1149" x="10" y="757" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="60" width="400" x="28" y="757" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="60" width="440" x="700" y="757" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
