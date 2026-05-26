@@ -3,7 +3,7 @@ id: gen-ai/synthetic-data-engineering-ai-systems
 title: "Synthetic Data Engineering for AI Systems: The Discipline That Unblocks Everything Else"
 sidebar_label: Synthetic Data Engineering
 previous_page: gen-ai/evaluation-engineering-for-llm-systems
-next_page: gen-ai/ai-driven-software-development
+next_page: gen-ai/ai-observability-llm-monitoring-production
 ---
 
 <div style="text-align: right;">

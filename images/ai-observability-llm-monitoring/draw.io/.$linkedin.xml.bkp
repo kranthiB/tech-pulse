@@ -1,0 +1,175 @@
+<mxfile host="Electron">
+  <diagram id="eqEUfDKxqEpBwRNAQtk8" name="Page-1">
+    <mxGraphModel dx="1617" dy="1117" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="0" pageScale="1" pageWidth="1200" pageHeight="627" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="627" width="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="64" width="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#FFFFFF;" value="AI Observability and LLM Monitoring in Production" vertex="1">
+          <mxGeometry height="64" width="800" x="16" as="geometry" />
+        </mxCell>
+        <mxCell id="p1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="196" width="386" x="8" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p1bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="386" x="8" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Why Traditional APM Fails" vertex="1">
+          <mxGeometry height="18" width="358" x="22" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="p1s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="A service can be healthy and wrong at the same time" vertex="1">
+          <mxGeometry height="14" width="358" x="22" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p1div" parent="1" style="line;strokeColor=#FFCA2C;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="370" x="16" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="p1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="APM measures infrastructure. AI observability measures correctness.&#xa;&#xa;A service can be fully operational — correct latency, zero errors, 200 status — and producing wrong answers for every user. No alert fires.&#xa;&#xa;Traditional APM has no concept of semantic correctness." vertex="1">
+          <mxGeometry height="134" width="362" x="22" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="p2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="196" width="388" x="406" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p2bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="388" x="406" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="The Three Observability Layers" vertex="1">
+          <mxGeometry height="18" width="360" x="420" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="p2s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Each layer answers a different question" vertex="1">
+          <mxGeometry height="14" width="360" x="420" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p2div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="372" x="414" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="p2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Layer 1: Infrastructure Metrics — Is the service running? Is it fast? (necessary, not sufficient)&#xa;&#xa;Layer 2: Semantic Quality — Are the outputs correct? Judge model evaluation, drift detection, hallucination rate tracking.&#xa;&#xa;Layer 3: Behavioral and Lineage — Why did the agent do that? Which change caused this regression?" vertex="1">
+          <mxGeometry height="134" width="364" x="420" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="p3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="196" width="386" x="806" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p3bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="386" x="806" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="358" x="820" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="p3s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Three recurring mistakes" vertex="1">
+          <mxGeometry height="14" width="358" x="820" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p3div" parent="1" style="line;strokeColor=#FFCA2C;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="370" x="814" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="p3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Using the same model to evaluate its own outputs. Self-validation bias produces faithfulness scores of 0.90–0.95 on outputs with significant hallucination.&#xa;&#xa;Alerting on individual events instead of distributions. Creates fatigue, buries signal.&#xa;&#xa;Building observability last — after users discover regressions." vertex="1">
+          <mxGeometry height="134" width="362" x="820" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="p4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="196" width="386" x="8" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p4bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="386" x="8" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="AI Observability Maturity Model" vertex="1">
+          <mxGeometry height="18" width="358" x="22" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="p4s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Most teams are at Level 0 or 1" vertex="1">
+          <mxGeometry height="14" width="358" x="22" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="p4div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="370" x="16" y="324" as="geometry" />
+        </mxCell>
+        <mxCell id="p4b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Level 0: Latency and error rates only&#xa;Level 1: Token and cost tracking added&#xa;Level 2: Output sampling with human review&#xa;Level 3: Automated semantic quality + drift detection&#xa;Level 4: Full behavioral tracing + lineage + feedback loops&#xa;Level 5: Proactive quality prediction and self-healing" vertex="1">
+          <mxGeometry height="134" width="362" x="22" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="p5bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="196" width="388" x="406" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p5bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="388" x="406" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p5t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B5E20;" value="Alert Design: Rates and Distributions, Not Events" vertex="1">
+          <mxGeometry height="18" width="360" x="420" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="p5s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Alert fatigue is the most dangerous outcome of poor alert design" vertex="1">
+          <mxGeometry height="14" width="360" x="420" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="p5div" parent="1" style="line;strokeColor=#C8E6C9;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="372" x="414" y="324" as="geometry" />
+        </mxCell>
+        <mxCell id="p5b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="ALERT ON: Drift in quality score distributions, anomalous tool call frequency, cost spike rate, latency percentile shifts, hallucination rate above baseline.&#xa;&#xa;DO NOT alert on: Individual low-scoring outputs, single hallucination instances, score variance in evaluation pipeline. These are noise — not signal." vertex="1">
+          <mxGeometry height="134" width="364" x="420" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="p6bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="196" width="386" x="806" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p6t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#AACCFF;" value="Where to Start — Highest-ROI Sequence" vertex="1">
+          <mxGeometry height="18" width="358" x="820" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="p6div" parent="1" style="line;strokeColor=#2E5499;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="370" x="814" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="p6b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#EAF1FB;whiteSpace=wrap;" value="1. Token and cost tracking (1 sprint)&#xa;2. Judge model pipeline + 5–10% output sampling (2–3 sprints)&#xa;3. Semantic drift detection (1 sprint)&#xa;4. Agent trace propagation (2–3 sprints)&#xa;5. Feedback loop to evaluation dataset (ongoing)" vertex="1">
+          <mxGeometry height="110" width="362" x="820" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="p6close" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#FFCA2C;whiteSpace=wrap;" value="The teams that catch AI failures before users do build observability as infrastructure, not as an afterthought." vertex="1">
+          <mxGeometry height="36" width="362" x="820" y="432" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="143" width="1200" y="484" as="geometry" />
+        </mxCell>
+        <mxCell id="fdiv" parent="1" style="line;strokeColor=#2E5499;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="1168" x="16" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="facc" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#AACCFF;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="54" width="4" x="16" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="fq1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=2;fontColor=#AACCFF;" value="Semantic drift is the most dangerous AI production failure mode — invisible to traditional monitoring." vertex="1">
+          <mxGeometry height="28" width="700" x="30" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="fq2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=2;fontColor=#7A9ACC;" value="You cannot monitor semantic correctness with infrastructure tools." vertex="1">
+          <mxGeometry height="26" width="700" x="30" y="542" as="geometry" />
+        </mxCell>
+        <mxCell id="s1bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#162E55;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="136" x="756" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="s1l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#AACCFF;" value="OBSERVABILITY LAYERS" vertex="1">
+          <mxGeometry height="14" width="136" x="756" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s1n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#FFFFFF;" value="3" vertex="1">
+          <mxGeometry height="26" width="136" x="756" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="s2bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#162E55;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="136" x="904" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="s2l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#AACCFF;" value="MATURITY LEVELS" vertex="1">
+          <mxGeometry height="14" width="136" x="904" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s2n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#81C784;" value="5" vertex="1">
+          <mxGeometry height="26" width="136" x="904" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="s3bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#162E55;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="136" x="1052" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="s3l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#AACCFF;" value="DRIFT SIGNALS" vertex="1">
+          <mxGeometry height="14" width="136" x="1052" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s3n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#FFCA2C;" value="3" vertex="1">
+          <mxGeometry height="26" width="136" x="1052" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="fbdiv" parent="1" style="line;strokeColor=#2E5499;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="1168" x="16" y="572" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#7A9ACC;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="36" width="400" x="16" y="578" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="36" width="434" x="750" y="578" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

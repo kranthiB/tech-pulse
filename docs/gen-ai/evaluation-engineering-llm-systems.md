@@ -3,7 +3,7 @@ id: gen-ai/evaluation-engineering-for-llm-systems
 title: Agent Memory Architecture
 sidebar_label: Agent Memory Architecture
 previous_page: gen-ai/agent-memory
-next_page: gen-ai/agentic-ai
+next_page: gen-ai/synthetic-data-engineering-ai-systems
 ---
 
 <div style="text-align: right;">

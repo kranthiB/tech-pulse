@@ -1,0 +1,208 @@
+<mxfile host="Electron">
+  <diagram id="CXVA4r4twHxJkzJ-a13N" name="Page-1">
+    <mxGraphModel dx="1420" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="827" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="AI Observability — Alert Design: What to Watch vs. What to Ignore" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="princbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="40" width="1111" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="princ" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Core Design Principle: Alert on rates, distributions, and trends — never on individual events. Individual LLM outputs are stochastic; single-event alerting produces fatigue without actionable signal.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="1083" x="44" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="aohdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="aohdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="ALERT ON: These Signals Are Actionable" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="ao1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="116" width="268" x="28" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="ao1bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="268" x="28" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="ao1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Drift Alerts" vertex="1">
+          <mxGeometry height="16" width="236" x="44" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ao1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Statistical drift in output quality scores crossing threshold over rolling window. Not a single low score — the distribution moving. These are the highest-value alerts in the AI observability stack." vertex="1">
+          <mxGeometry height="84" width="240" x="44" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="ao2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="116" width="268" x="308" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="ao2bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="268" x="308" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="ao2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Anomalous Tool Call Frequency" vertex="1">
+          <mxGeometry height="16" width="236" x="324" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ao2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="An agent calling a specific tool more than 2 standard deviations above its baseline rate. Indicates an unexpected reasoning pattern — often precedes output quality degradation." vertex="1">
+          <mxGeometry height="84" width="240" x="324" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="ao3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="116" width="268" x="588" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="ao3bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="268" x="588" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="ao3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Cost Spike Alerts" vertex="1">
+          <mxGeometry height="16" width="236" x="604" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ao3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Token consumption crossing rate threshold (not total spend — rate of spend per unit time). A cost spike in an agentic system often indicates runaway loops, prompt injection, or unexpected generation volume." vertex="1">
+          <mxGeometry height="84" width="240" x="604" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="ao4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="116" width="271" x="868" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="ao4bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="271" x="868" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="ao4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Latency Percentile Shifts" vertex="1">
+          <mxGeometry height="16" width="239" x="884" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ao4b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Not absolute latency — shifts in p95 and p99 over a 24-hour baseline. A retrieval tier that was p95 at 200ms now at 800ms is a structural change that will produce user-facing degradation before absolute SLA breach." vertex="1">
+          <mxGeometry height="84" width="243" x="884" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="ao5bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="90" width="556" x="28" y="312" as="geometry" />
+        </mxCell>
+        <mxCell id="ao5bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="556" x="28" y="312" as="geometry" />
+        </mxCell>
+        <mxCell id="ao5t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Hallucination Rate Threshold" vertex="1">
+          <mxGeometry height="16" width="524" x="44" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="ao5b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Percentage of sampled outputs scoring below the faithfulness threshold tracked as a rate. Alert when the rate moves above baseline — not when any individual output scores low." vertex="1">
+          <mxGeometry height="58" width="528" x="44" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="ao6bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="90" width="541" x="598" y="312" as="geometry" />
+        </mxCell>
+        <mxCell id="ao6bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="541" x="598" y="312" as="geometry" />
+        </mxCell>
+        <mxCell id="ao6t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Retrieval Quality Degradation" vertex="1">
+          <mxGeometry height="16" width="509" x="614" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="ao6b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Mean relevance score of retrieved chunks dropping below threshold on the anchor pair set. Indicates retrieval index quality change without requiring output evaluation to confirm." vertex="1">
+          <mxGeometry height="58" width="513" x="614" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="dnahdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="416" as="geometry" />
+        </mxCell>
+        <mxCell id="dnahdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="DO NOT ALERT ON: These Signals Create Noise Without Actionable Signal" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="416" as="geometry" />
+        </mxCell>
+        <mxCell id="dna1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="90" width="356" x="28" y="462" as="geometry" />
+        </mxCell>
+        <mxCell id="dna1bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="356" x="28" y="462" as="geometry" />
+        </mxCell>
+        <mxCell id="dna1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#856404;" value="Individual Output Scores" vertex="1">
+          <mxGeometry height="16" width="324" x="44" y="468" as="geometry" />
+        </mxCell>
+        <mxCell id="dna1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="A single response scoring below faithfulness threshold is noise. LLMs are stochastic; low scores on individual outputs are expected at low frequencies. Alerting creates fatigue." vertex="1">
+          <mxGeometry height="58" width="328" x="44" y="486" as="geometry" />
+        </mxCell>
+        <mxCell id="dna2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="90" width="356" x="398" y="462" as="geometry" />
+        </mxCell>
+        <mxCell id="dna2bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="356" x="398" y="462" as="geometry" />
+        </mxCell>
+        <mxCell id="dna2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#856404;" value="Individual Hallucination Instances" vertex="1">
+          <mxGeometry height="16" width="324" x="414" y="468" as="geometry" />
+        </mxCell>
+        <mxCell id="dna2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="A single detected hallucination is not alertable. Sampling means detected hallucinations represent a fraction of total output. They are always present at some base rate." vertex="1">
+          <mxGeometry height="58" width="328" x="414" y="486" as="geometry" />
+        </mxCell>
+        <mxCell id="dna3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="90" width="371" x="768" y="462" as="geometry" />
+        </mxCell>
+        <mxCell id="dna3bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="371" x="768" y="462" as="geometry" />
+        </mxCell>
+        <mxCell id="dna3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#856404;" value="Score Variance in Evaluation" vertex="1">
+          <mxGeometry height="16" width="339" x="784" y="468" as="geometry" />
+        </mxCell>
+        <mxCell id="dna3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="The evaluation pipeline itself has variance. The same output evaluated twice by a judge model may receive different scores. This is measurement noise — not a system signal." vertex="1">
+          <mxGeometry height="58" width="343" x="784" y="486" as="geometry" />
+        </mxCell>
+        <mxCell id="sshdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="566" as="geometry" />
+        </mxCell>
+        <mxCell id="sshdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Recommended Sampling Strategy for Human Review" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="566" as="geometry" />
+        </mxCell>
+        <mxCell id="ss1" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="80" width="268" x="28" y="612" as="geometry" />
+        </mxCell>
+        <mxCell id="ss1bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="268" x="28" y="612" as="geometry" />
+        </mxCell>
+        <mxCell id="ss1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Simple Random Sampling" vertex="1">
+          <mxGeometry height="16" width="236" x="44" y="618" as="geometry" />
+        </mxCell>
+        <mxCell id="ss1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="5–10% of production outputs uniformly sampled. Provides stable population-level quality estimate for drift detection on high-volume systems." vertex="1">
+          <mxGeometry height="48" width="240" x="44" y="636" as="geometry" />
+        </mxCell>
+        <mxCell id="ss2" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="80" width="268" x="308" y="612" as="geometry" />
+        </mxCell>
+        <mxCell id="ss2bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="268" x="308" y="612" as="geometry" />
+        </mxCell>
+        <mxCell id="ss2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Failure-Triggered Sampling" vertex="1">
+          <mxGeometry height="16" width="236" x="324" y="618" as="geometry" />
+        </mxCell>
+        <mxCell id="ss2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="When user feedback fires (thumbs down, session abandon), automatically evaluate the preceding output. Captures user-flagged failures independent of random sample." vertex="1">
+          <mxGeometry height="48" width="240" x="324" y="636" as="geometry" />
+        </mxCell>
+        <mxCell id="ss3" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="80" width="268" x="588" y="612" as="geometry" />
+        </mxCell>
+        <mxCell id="ss3bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="268" x="588" y="612" as="geometry" />
+        </mxCell>
+        <mxCell id="ss3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Uncertainty-Weighted Sampling" vertex="1">
+          <mxGeometry height="16" width="236" x="604" y="618" as="geometry" />
+        </mxCell>
+        <mxCell id="ss3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Oversample outputs where system confidence is lower (short responses to complex queries, low retrieval similarity scores). Spends evaluation budget where quality issues are more likely." vertex="1">
+          <mxGeometry height="48" width="240" x="604" y="636" as="geometry" />
+        </mxCell>
+        <mxCell id="ss4" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="80" width="271" x="868" y="612" as="geometry" />
+        </mxCell>
+        <mxCell id="ss4bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="271" x="868" y="612" as="geometry" />
+        </mxCell>
+        <mxCell id="ss4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Adversarial Sampling" vertex="1">
+          <mxGeometry height="16" width="239" x="884" y="618" as="geometry" />
+        </mxCell>
+        <mxCell id="ss4b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="20–30 known-difficult queries included in every evaluation cycle at fixed rate. Provides stable quality anchor not subject to incoming query distribution shifts." vertex="1">
+          <mxGeometry height="48" width="243" x="884" y="636" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="80" width="1149" x="10" y="757" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="80" width="400" x="28" y="757" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="80" width="440" x="700" y="757" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,193 @@
+<mxfile host="Electron">
+  <diagram id="vICmMN64ESL2Y2DHdJIU" name="Page-1">
+    <mxGraphModel dx="1420" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="827" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="AI Observability — Semantic Drift Detection Framework" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="chhdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="chhdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Four Primary Causes of Semantic Drift" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="110" width="268" x="28" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c1bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="268" x="28" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#856404;" value="1. Retrieval Context Shift" vertex="1">
+          <mxGeometry height="16" width="236" x="44" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="c1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Knowledge base or vector index update changes content available for retrieval. Queries that previously retrieved highly relevant context may now retrieve less relevant content. Output quality drops without any generation model change." vertex="1">
+          <mxGeometry height="78" width="240" x="44" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="c2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="110" width="268" x="308" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c2bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="268" x="308" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#856404;" value="2. Prompt Template Evolution" vertex="1">
+          <mxGeometry height="16" width="236" x="324" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="c2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Small modifications to prompts can shift output distribution in ways invisible in staging on a small test set but visible in production across the full query distribution." vertex="1">
+          <mxGeometry height="78" width="240" x="324" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="c3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="110" width="268" x="588" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c3bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="268" x="588" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#856404;" value="3. Model Version Changes" vertex="1">
+          <mxGeometry height="16" width="236" x="604" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="c3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Model updates from providers change semantic behavior of generation. Conservative answers become verbose. Safety fine-tunes alter hallucination patterns. Model changes require full re-baselining of quality metrics." vertex="1">
+          <mxGeometry height="78" width="240" x="604" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="c4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="110" width="271" x="868" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c4bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="271" x="868" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#856404;" value="4. Query Distribution Shift" vertex="1">
+          <mxGeometry height="16" width="239" x="884" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="c4b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Incoming query distribution changes as user behavior evolves. A system optimized for one distribution may degrade on a new distribution without any change to the system itself." vertex="1">
+          <mxGeometry height="78" width="243" x="884" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="shhdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="shhdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Three Complementary Detection Signals" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="s1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="140" width="356" x="28" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="s1bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="356" x="28" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="s1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Signal A: Anchor Pair Scoring" vertex="1">
+          <mxGeometry height="18" width="324" x="44" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="s1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="50–100 query-response pairs with known correct answers. Evaluated nightly by judge model. If scores on this fixed set degrade over a 7-day rolling window, drift is occurring in the system — not in incoming query distribution." vertex="1">
+          <mxGeometry height="82" width="328" x="44" y="326" as="geometry" />
+        </mxCell>
+        <mxCell id="s1tag" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;fontSize=10;fontColor=#2E7D32;" value="Detects: System-internal regressions on known queries" vertex="1">
+          <mxGeometry height="28" width="356" x="28" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="s2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="140" width="356" x="398" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="s2bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="356" x="398" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="s2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Signal B: Live Output Distribution" vertex="1">
+          <mxGeometry height="18" width="324" x="414" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="s2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Semantic similarity scores from sampled output evaluation tracked as a distribution over time. Mean, variance, and tail behavior should be stable on a functioning system. CUSUM / EWMA statistical methods provide principled alerting on distribution shifts." vertex="1">
+          <mxGeometry height="82" width="328" x="414" y="326" as="geometry" />
+        </mxCell>
+        <mxCell id="s2tag" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;fontSize=10;fontColor=#2E7D32;" value="Detects: Population-level output quality shifts" vertex="1">
+          <mxGeometry height="28" width="356" x="398" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="s3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="140" width="371" x="768" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="s3bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="371" x="768" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="s3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Signal C: User Feedback Correlation" vertex="1">
+          <mxGeometry height="18" width="339" x="784" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="s3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Explicit and implicit user feedback (thumbs down, session abandonment, repeat queries) correlated with specific output batches. Correlation between feedback spikes and specific deployments or knowledge base updates is the strongest causal regression signal." vertex="1">
+          <mxGeometry height="82" width="343" x="784" y="326" as="geometry" />
+        </mxCell>
+        <mxCell id="s3tag" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;fontSize=10;fontColor=#2E7D32;" value="Detects: User-facing impact of quality degradation" vertex="1">
+          <mxGeometry height="28" width="371" x="768" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="wbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="60" width="1111" x="28" y="482" as="geometry" />
+        </mxCell>
+        <mxCell id="wbar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="482" as="geometry" />
+        </mxCell>
+        <mxCell id="wt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="400" x="44" y="488" as="geometry" />
+        </mxCell>
+        <mxCell id="wb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Monitoring only one drift signal. A team monitoring only anchor pairs can miss population-level shifts from query distribution changes. A team monitoring only user feedback detects regressions too late. All three signals are complementary." vertex="1">
+          <mxGeometry height="28" width="1089" x="44" y="508" as="geometry" />
+        </mxCell>
+        <mxCell id="dfhdr" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="556" as="geometry" />
+        </mxCell>
+        <mxCell id="dfhdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Decision Framework: When Drift Alert Fires — Diagnostic Sequence" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="556" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="110" width="356" x="28" y="602" as="geometry" />
+        </mxCell>
+        <mxCell id="d1bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="356" x="28" y="602" as="geometry" />
+        </mxCell>
+        <mxCell id="d1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Step 1" vertex="1">
+          <mxGeometry height="16" width="324" x="44" y="608" as="geometry" />
+        </mxCell>
+        <mxCell id="d1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Check which signal fired (A, B, C). If only A fires: system-internal change. If only B: query distribution shift. If A + B: significant regression. If C fires: user-facing impact confirmed." vertex="1">
+          <mxGeometry height="78" width="328" x="44" y="626" as="geometry" />
+        </mxCell>
+        <mxCell id="arr1" edge="1" parent="1" source="d1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B5E20;strokeWidth=2;endArrow=block;endFill=1;" target="d2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="110" width="356" x="398" y="602" as="geometry" />
+        </mxCell>
+        <mxCell id="d2bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="356" x="398" y="602" as="geometry" />
+        </mxCell>
+        <mxCell id="d2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Step 2" vertex="1">
+          <mxGeometry height="16" width="324" x="414" y="608" as="geometry" />
+        </mxCell>
+        <mxCell id="d2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Check prompt lineage for changes in the drift window. Was a prompt template modified? Was a model version updated? Was the knowledge base refreshed? The causal change is almost always one of these three." vertex="1">
+          <mxGeometry height="78" width="328" x="414" y="626" as="geometry" />
+        </mxCell>
+        <mxCell id="arr2" edge="1" parent="1" source="d2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B5E20;strokeWidth=2;endArrow=block;endFill=1;" target="d3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="110" width="371" x="768" y="602" as="geometry" />
+        </mxCell>
+        <mxCell id="d3bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="371" x="768" y="602" as="geometry" />
+        </mxCell>
+        <mxCell id="d3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Step 3" vertex="1">
+          <mxGeometry height="16" width="339" x="784" y="608" as="geometry" />
+        </mxCell>
+        <mxCell id="d3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Re-run anchor pair evaluation against the prior baseline state (prior prompt version, prior model, prior index snapshot) to confirm which change caused the regression. Roll back, fix forward, or accept with monitoring intensified." vertex="1">
+          <mxGeometry height="78" width="343" x="784" y="626" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="80" width="1149" x="10" y="757" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="80" width="400" x="28" y="757" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="80" width="440" x="700" y="757" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
