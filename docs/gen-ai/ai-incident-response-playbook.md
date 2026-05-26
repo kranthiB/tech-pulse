@@ -3,7 +3,7 @@ id: gen-ai/ai-incident-response-playbook
 title: "AI Incident Response: The Playbook Your Team Does Not Have"
 sidebar_label: AI Incident Response
 previous_page: gen-ai/ai-observability-llm-monitoring-production
-next_page: gen-ai/ai-driven-software-development
+next_page: gen-ai/ai-governance-engineering-leaders
 ---
 
 <div style="text-align: right;">

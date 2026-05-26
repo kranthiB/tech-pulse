@@ -1,0 +1,187 @@
+<mxfile host="Electron">
+  <diagram id="KNJi-ka1cK7hysNVAg5Q" name="Page-1">
+    <mxGraphModel dx="1617" dy="1117" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="0" pageScale="1" pageWidth="1200" pageHeight="627" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="627" width="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="72" width="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#FFFFFF;" value="AI Governance Framework for Engineering Leaders" vertex="1">
+          <mxGeometry height="36" width="840" x="16" y="4" as="geometry" />
+        </mxCell>
+        <mxCell id="hsub" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontColor=#AACCFF;" value="The EU AI Act enforcement deadline is August 2026. Governance is an engineering deliverable." vertex="1">
+          <mxGeometry height="26" width="840" x="16" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="p1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="196" width="384" x="8" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="p1bar" parent="1" style="rounded=0;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="384" x="8" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="p1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Why Policy-First Governance Fails" vertex="1">
+          <mxGeometry height="18" width="356" x="22" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="p1s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Policy velocity cannot match system velocity" vertex="1">
+          <mxGeometry height="14" width="356" x="22" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="p1div" parent="1" style="line;strokeColor=#FFCA2C;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="368" x="16" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="p1b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Compliance teams produce policy documents. AI systems change weekly. The gap between what the policy says and what the system does grows with every deployment, prompt change, and model update.  Static governance gates address 10% of the actual risk surface." vertex="1">
+          <mxGeometry height="134" width="362" x="22" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="p2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="196" width="392" x="404" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="p2bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="392" x="404" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="p2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Five Engineering-Owned Governance Artifacts" vertex="1">
+          <mxGeometry height="18" width="364" x="418" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="p2s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Each one answers a question regulators will ask" vertex="1">
+          <mxGeometry height="14" width="364" x="418" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="p2div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="376" x="412" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="p2b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="1. Model Registry — versioned, queryable, enables rollback &#xa;2. Prompt Version Control — prompts are executable logic &#xa;3. Data Lineage — what influenced this specific output? &#xa;4. Agent Identity and Access Control — zero-trust for agents &#xa;5. Audit Trail — convergence of the other four" vertex="1">
+          <mxGeometry height="134" width="370" x="418" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="p3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="196" width="384" x="808" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="p3bar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="384" x="808" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="p3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B5E20;" value="Compliance-as-Code" vertex="1">
+          <mxGeometry height="18" width="356" x="822" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="p3s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Governance runs at pipeline speed" vertex="1">
+          <mxGeometry height="14" width="356" x="822" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="p3div" parent="1" style="line;strokeColor=#C8E6C9;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="368" x="816" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="p3b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Governance checks embedded directly in CI/CD. &#xa;Pre-deployment checks block non-compliant model and prompt changes. Deployment checks verify configuration integrity. &#xa;Post-deployment checks monitor for drift continuously. &#xa;Blocking checks only. &#xa;Non-blocking governance is a suggestion." vertex="1">
+          <mxGeometry height="134" width="362" x="822" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="p4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="196" width="384" x="8" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="p4bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="384" x="8" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="p4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Agent Identity and Access Control" vertex="1">
+          <mxGeometry height="18" width="356" x="22" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="p4s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Zero-trust architecture for AI agents" vertex="1">
+          <mxGeometry height="14" width="356" x="22" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="p4div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="368" x="16" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="p4b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Traditional RBAC designed for human users with stable roles. Agents are dynamic — capabilities shift with every prompt change and tool grant. Zero-trust requires: cryptographic identity bound to config, capability scoping per invocation, continuous entitlement validation at each tool call." vertex="1">
+          <mxGeometry height="134" width="362" x="22" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="p5bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="196" width="392" x="404" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="p5bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="392" x="404" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="p5t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Governance Maturity Model" vertex="1">
+          <mxGeometry height="18" width="364" x="418" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="p5s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Where is your team today?" vertex="1">
+          <mxGeometry height="14" width="364" x="418" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="p5div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="376" x="412" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="p5r1" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=10;align=left;" value="Stage 1: Reactive / document-centric" vertex="1">
+          <mxGeometry height="22" width="376" x="412" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="p5r2" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;fontSize=10;align=left;" value="Stage 2: Systematic but manual review-dependent" vertex="1">
+          <mxGeometry height="22" width="376" x="412" y="364" as="geometry" />
+        </mxCell>
+        <mxCell id="p5r3" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;fontColor=#1B5E20;fontSize=10;align=left;" value="Stage 3: Automated CI/CD gates (EU AI Act mandate)" vertex="1">
+          <mxGeometry height="22" width="376" x="412" y="388" as="geometry" />
+        </mxCell>
+        <mxCell id="p5r4" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#1B5E20;fontColor=#1B5E20;fontSize=10;fontStyle=1;align=left;" value="Stage 4: Continuous governance across full lifecycle" vertex="1">
+          <mxGeometry height="28" width="376" x="412" y="412" as="geometry" />
+        </mxCell>
+        <mxCell id="p6bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="196" width="384" x="808" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="p6t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#AACCFF;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="356" x="822" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="p6div" parent="1" style="line;strokeColor=#2E5499;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="368" x="816" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="p6b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#EAF1FB;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Treating governance as a pre-deployment gate. Effective AI governance is continuous. It runs every time a model is updated, a prompt changes, a new data source is connected, or an agent gets new tool access.  A static gate addresses 10% of the risk surface." vertex="1">
+          <mxGeometry height="118" width="362" x="822" y="326" as="geometry" />
+        </mxCell>
+        <mxCell id="p6close" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#FFCA2C;whiteSpace=wrap;" value="Governance that lives in a policy document protects no one." vertex="1">
+          <mxGeometry height="30" width="362" x="822" y="448" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="135" width="1200" y="492" as="geometry" />
+        </mxCell>
+        <mxCell id="fdiv" parent="1" style="line;strokeColor=#2E5499;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="1168" x="16" y="508" as="geometry" />
+        </mxCell>
+        <mxCell id="facc" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#AACCFF;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="54" width="4" x="16" y="522" as="geometry" />
+        </mxCell>
+        <mxCell id="fq1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=2;fontColor=#AACCFF;" value="Governance that lives in the CI/CD pipeline protects everyone." vertex="1">
+          <mxGeometry height="28" width="720" x="30" y="522" as="geometry" />
+        </mxCell>
+        <mxCell id="fq2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=2;fontColor=#7A9ACC;" value="Governance velocity must equal deployment velocity." vertex="1">
+          <mxGeometry height="26" width="700" x="30" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="s1bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#162E55;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="136" x="756" y="518" as="geometry" />
+        </mxCell>
+        <mxCell id="s1l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#AACCFF;" value="GOVERNANCE ARTIFACTS" vertex="1">
+          <mxGeometry height="14" width="136" x="756" y="522" as="geometry" />
+        </mxCell>
+        <mxCell id="s1n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#FFFFFF;" value="5" vertex="1">
+          <mxGeometry height="26" width="136" x="756" y="536" as="geometry" />
+        </mxCell>
+        <mxCell id="s2bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#162E55;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="136" x="904" y="518" as="geometry" />
+        </mxCell>
+        <mxCell id="s2l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#AACCFF;" value="MATURITY STAGES" vertex="1">
+          <mxGeometry height="14" width="136" x="904" y="522" as="geometry" />
+        </mxCell>
+        <mxCell id="s2n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#81C784;" value="4" vertex="1">
+          <mxGeometry height="26" width="136" x="904" y="536" as="geometry" />
+        </mxCell>
+        <mxCell id="s3bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#162E55;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="136" x="1052" y="518" as="geometry" />
+        </mxCell>
+        <mxCell id="s3l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#AACCFF;" value="RISK SURFACE MISSED" vertex="1">
+          <mxGeometry height="14" width="136" x="1052" y="522" as="geometry" />
+        </mxCell>
+        <mxCell id="s3n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFCA2C;" value="90%" vertex="1">
+          <mxGeometry height="26" width="136" x="1052" y="536" as="geometry" />
+        </mxCell>
+        <mxCell id="fbdiv" parent="1" style="line;strokeColor=#2E5499;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="1168" x="16" y="578" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#7A9ACC;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="36" width="400" x="16" y="584" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="36" width="434" x="750" y="584" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

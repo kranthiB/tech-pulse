@@ -1,0 +1,135 @@
+<mxfile host="Electron">
+  <diagram id="WAKQkq3lNMxlWGbSwWwG" name="Page-1">
+    <mxGraphModel dx="1420" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="720" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="AI Governance Framework for Engineering Leaders" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hub" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=13;fontStyle=1;align=center;" value="AI System in Production" vertex="1">
+          <mxGeometry height="90" width="230" x="459" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="a1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="158" width="280" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="a1hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="32" width="280" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="a1hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="1. Model Registry" vertex="1">
+          <mxGeometry height="32" width="248" x="44" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="a1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Versioned, queryable record of every model in production. Tracks: model version, training data, benchmark results, approval chain, deployment timestamp. Enables rollback in minutes." vertex="1">
+          <mxGeometry height="82" width="248" x="44" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="a1k" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="32" width="280" x="28" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="a1kt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#2E7D32;whiteSpace=wrap;" value="Key question: Which model version produced this output?" vertex="1">
+          <mxGeometry height="32" width="248" x="44" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="a2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="158" width="298" x="841" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="a2hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="32" width="298" x="841" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="a2hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="2. Prompt Version Control" vertex="1">
+          <mxGeometry height="32" width="266" x="857" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="a2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Prompts treated as versioned executable logic, not informal config. Every system prompt, few-shot example, and chain instruction has a version, review record, and deployment log." vertex="1">
+          <mxGeometry height="82" width="266" x="857" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="a2k" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="32" width="298" x="841" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="a2kt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#2E7D32;whiteSpace=wrap;" value="Key question: What prompt was running when this decision was made?" vertex="1">
+          <mxGeometry height="32" width="266" x="857" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="a3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="158" width="280" x="28" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="a3hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="32" width="280" x="28" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="a3hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="3. Data Lineage for AI Systems" vertex="1">
+          <mxGeometry height="32" width="248" x="44" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="a3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Tracks what data influenced each inference, not just training data. Captures: RAG documents retrieved, context injected, tool results consumed. Structured log per consequential decision." vertex="1">
+          <mxGeometry height="82" width="248" x="44" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="a3k" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="32" width="280" x="28" y="616" as="geometry" />
+        </mxCell>
+        <mxCell id="a3kt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#2E7D32;whiteSpace=wrap;" value="Key question: What data influenced this specific output?" vertex="1">
+          <mxGeometry height="32" width="248" x="44" y="616" as="geometry" />
+        </mxCell>
+        <mxCell id="a4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="158" width="298" x="841" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="a4hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="32" width="298" x="841" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="a4hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="4. Agent Identity and Access Control" vertex="1">
+          <mxGeometry height="32" width="266" x="857" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="a4b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Cryptographic agent identity bound to deployment config. Capability scoping per invocation. Continuous entitlement validation at each tool call. Behavioral monitoring for anomaly detection." vertex="1">
+          <mxGeometry height="82" width="266" x="857" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="a4k" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="32" width="298" x="841" y="616" as="geometry" />
+        </mxCell>
+        <mxCell id="a4kt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#2E7D32;whiteSpace=wrap;" value="Key question: Which agent, with what permissions, took this action?" vertex="1">
+          <mxGeometry height="32" width="266" x="857" y="616" as="geometry" />
+        </mxCell>
+        <mxCell id="a5bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#1B5E20;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="108" width="400" x="384" y="536" as="geometry" />
+        </mxCell>
+        <mxCell id="a5hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="32" width="400" x="384" y="536" as="geometry" />
+        </mxCell>
+        <mxCell id="a5hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="5. Audit Trail for Agent Actions" vertex="1">
+          <mxGeometry height="32" width="368" x="400" y="536" as="geometry" />
+        </mxCell>
+        <mxCell id="a5b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Convergence point for all four artifacts. Append-only, tamper-evident record capturing: agent identity, model version, prompt version, inputs, tool calls, data accessed, output produced. Queryable by incident responders and regulators." vertex="1">
+          <mxGeometry height="62" width="368" x="400" y="574" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" edge="1" parent="1" source="hub" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=1.5;dashed=1;endArrow=block;endFill=1;" target="a1bg" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" edge="1" parent="1" source="hub" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=1.5;dashed=1;endArrow=block;endFill=1;" target="a2bg" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" edge="1" parent="1" source="hub" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=1.5;dashed=1;endArrow=block;endFill=1;" target="a3bg" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" edge="1" parent="1" source="hub" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=1.5;dashed=1;endArrow=block;endFill=1;" target="a4bg" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" edge="1" parent="1" source="hub" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B5E20;strokeWidth=2;endArrow=block;endFill=1;" target="a5hdr" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="574" y="510" />
+              <mxPoint x="574" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="60" width="1149" x="10" y="672" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="60" width="400" x="28" y="672" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="60" width="440" x="700" y="672" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

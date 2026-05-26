@@ -1,0 +1,215 @@
+<mxfile host="Electron">
+  <diagram id="U6Y5xk22QOppPJ6z_Zw9" name="Page-1">
+    <mxGraphModel dx="1420" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="720" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="AI Governance Framework for Engineering Leaders" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="ph1" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="ph1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="PHASE 1: PRE-DEPLOYMENT GOVERNANCE CHECKS (blocking)" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="48" width="120" x="28" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="t1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Model change proposed" vertex="1">
+          <mxGeometry height="48" width="120" x="28" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="48" width="120" x="28" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="t2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Prompt change proposed" vertex="1">
+          <mxGeometry height="48" width="120" x="28" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="t3" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="48" width="120" x="28" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="t3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Data source change proposed" vertex="1">
+          <mxGeometry height="48" width="120" x="28" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="chk" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="184" width="420" x="233" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="chkbar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="420" x="233" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="chkt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Pre-Deployment Check Engine" vertex="1">
+          <mxGeometry height="16" width="388" x="249" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="chkb" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="For model changes: benchmark eval passed? training data documented? model card updated? no prohibited data categories?  For prompt changes: review and approval on record? no capability expansion beyond defined scope? no safety guardrail bypass?  For data changes: privacy compliance verified? lineage documentation updated? bias impact assessed?" vertex="1">
+          <mxGeometry height="150" width="388" x="249" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="ca1" edge="1" parent="1" source="t1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=1.5;endArrow=block;endFill=1;" target="chk" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ca2" edge="1" parent="1" source="t2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=1.5;endArrow=block;endFill=1;" target="chk" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ca3" edge="1" parent="1" source="t3" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=1.5;endArrow=block;endFill=1;" target="chk" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pass" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="44" width="148" x="716" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="passt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="ALL CHECKS PASS" vertex="1">
+          <mxGeometry height="44" width="148" x="716" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="fail" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="44" width="148" x="716" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="failt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#856404;" value="ANY CHECK FAILS" vertex="1">
+          <mxGeometry height="44" width="148" x="716" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="passarr" edge="1" parent="1" source="chk" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B5E20;strokeWidth=2;endArrow=block;endFill=1;fontSize=10;fontColor=#1B5E20;fontStyle=1;" target="pass" value="PASS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="failarr" edge="1" parent="1" source="chk" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#856404;strokeWidth=2;endArrow=block;endFill=1;fontSize=10;fontColor=#856404;fontStyle=1;" target="fail" value="FAIL">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="proc" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="44" width="180" x="928" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="proct" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#2E7D32;" value="Proceed to deployment phase" vertex="1">
+          <mxGeometry height="44" width="180" x="928" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="blk" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="58" width="180" x="928" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="blkt" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#7A6000;" value="Deployment BLOCKED &#xa;Failure reason logged &#xa;Author notified" vertex="1">
+          <mxGeometry height="58" width="180" x="928" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="pa" edge="1" parent="1" source="passt" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B5E20;strokeWidth=1.5;endArrow=block;endFill=1;" target="proc" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="908" y="172" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fa" edge="1" parent="1" source="failt" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#856404;strokeWidth=1.5;endArrow=block;endFill=1;" target="blk" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="908" y="240.00000000000023" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ph2" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="ph2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="PHASE 2: DEPLOYMENT CONFIGURATION CHECKS (blocking)" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="dep1" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="52" width="355" x="28" y="364" as="geometry" />
+        </mxCell>
+        <mxCell id="dep1bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="355" x="28" y="364" as="geometry" />
+        </mxCell>
+        <mxCell id="dep1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Correct model version to correct environment? Verified against model registry." vertex="1">
+          <mxGeometry height="44" width="323" x="44" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="dep2" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="52" width="355" x="395" y="364" as="geometry" />
+        </mxCell>
+        <mxCell id="dep2bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="355" x="395" y="364" as="geometry" />
+        </mxCell>
+        <mxCell id="dep2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Access control config matches approved spec? Verified against identity policy store." vertex="1">
+          <mxGeometry height="44" width="323" x="411" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="dep3" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="52" width="377" x="762" y="364" as="geometry" />
+        </mxCell>
+        <mxCell id="dep3bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="377" x="762" y="364" as="geometry" />
+        </mxCell>
+        <mxCell id="dep3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Audit trail infrastructure available and configured? Verified before deployment completes." vertex="1">
+          <mxGeometry height="44" width="345" x="778" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="ph3" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="ph3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="PHASE 3: CONTINUOUS POST-DEPLOYMENT GOVERNANCE (non-blocking, alerting)" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="74" width="265" x="28" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="m1bar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="265" x="28" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="m1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Model Version Drift Check" vertex="1">
+          <mxGeometry height="14" width="233" x="44" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="m1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Running model = approved model? Checked: every deployment, every restart." vertex="1">
+          <mxGeometry height="44" width="233" x="44" y="496" as="geometry" />
+        </mxCell>
+        <mxCell id="m2" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="74" width="265" x="303" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="m2bar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="265" x="303" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="m2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Prompt Drift Check" vertex="1">
+          <mxGeometry height="14" width="233" x="319" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="m2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Running prompt = version-controlled prompt? Checked: every inference batch." vertex="1">
+          <mxGeometry height="44" width="233" x="319" y="496" as="geometry" />
+        </mxCell>
+        <mxCell id="m3" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="74" width="265" x="578" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="m3bar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="265" x="578" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="m3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Access Config Drift Check" vertex="1">
+          <mxGeometry height="14" width="233" x="594" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="m3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Agent entitlements = approved spec? Checked: on each tool call." vertex="1">
+          <mxGeometry height="44" width="233" x="594" y="496" as="geometry" />
+        </mxCell>
+        <mxCell id="m4" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="74" width="286" x="853" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="m4bar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="286" x="853" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="m4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Audit Trail Health Check" vertex="1">
+          <mxGeometry height="14" width="254" x="869" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="m4b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Logs writing correctly? Checked: every 60 seconds." vertex="1">
+          <mxGeometry height="44" width="254" x="869" y="496" as="geometry" />
+        </mxCell>
+        <mxCell id="da" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="44" width="1111" x="28" y="558" as="geometry" />
+        </mxCell>
+        <mxCell id="dabar" parent="1" style="rounded=0;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="558" as="geometry" />
+        </mxCell>
+        <mxCell id="dat" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#7A6000;fontStyle=1;whiteSpace=wrap;" value="DRIFT DETECTED: Automatic alert to engineering lead and compliance. Incident opened. Remediation SLA: 4 hours for high-risk systems, 24 hours for standard systems." vertex="1">
+          <mxGeometry height="34" width="1083" x="44" y="563" as="geometry" />
+        </mxCell>
+        <mxCell id="crit" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="44" width="1111" x="28" y="614" as="geometry" />
+        </mxCell>
+        <mxCell id="critt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#FFFFFF;whiteSpace=wrap;" value="CRITICAL ARCHITECTURAL DECISION: Governance checks in Phase 1 and Phase 2 are BLOCKING. A failed check prevents deployment. Non-blocking governance is not governance — it is a suggestion." vertex="1">
+          <mxGeometry height="36" width="1083" x="44" y="618" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="60" width="1149" x="10" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="60" width="400" x="28" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="60" width="440" x="700" y="670" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
