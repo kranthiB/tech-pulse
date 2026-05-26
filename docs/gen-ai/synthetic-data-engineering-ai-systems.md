@@ -6,15 +6,15 @@ previous_page: gen-ai/evaluation-engineering-for-llm-systems
 next_page: gen-ai/ai-driven-software-development
 ---
 
-# Synthetic Data Engineering for AI Systems: The Discipline That Unblocks Everything Else
-
-**The bottleneck in most enterprise AI projects is not compute, not model capability, and not engineering talent. It is data — specifically, the absence of enough labeled, domain-specific, privacy-safe data to train and evaluate production systems.**
-
----
-
 <div style="text-align: right;">
     <a href="https://kranthib.github.io/tech-pulse/" style="display: inline-block; padding: 6px 14px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">Back to Home →</a>
 </div>
+
+---
+
+# Synthetic Data Engineering for AI Systems: The Discipline That Unblocks Everything Else
+
+**The bottleneck in most enterprise AI projects is not compute, not model capability, and not engineering talent. It is data — specifically, the absence of enough labeled, domain-specific, privacy-safe data to train and evaluate production systems.**
 
 ---
 
