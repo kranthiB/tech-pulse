@@ -1,0 +1,109 @@
+<mxfile host="Electron">
+  <diagram id="qaQv3Xh7x_Z-GFfVlipQ" name="Page-1">
+    <mxGraphModel dx="1420" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="480" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="Agentic Commerce: The Payment Layer Nobody Designed For" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="s1hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="256" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s1hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Launch" vertex="1">
+          <mxGeometry height="36" width="256" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="110" width="256" x="28" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="s1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="A leading conversational assistant ships autonomous checkout. Recognizable retail brands sign on across categories. Coverage frames it as the arrival of agentic commerce." vertex="1">
+          <mxGeometry height="96" width="224" x="44" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="arr1" edge="1" parent="1" source="s1hdr" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=2;endArrow=block;endFill=1;" target="s2hdr" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="256" x="312" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s2hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Adoption Window" vertex="1">
+          <mxGeometry height="36" width="256" x="312" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="110" width="256" x="312" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="s2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Usage tracked by independent surveys stays low and flat from day one. Interest is concentrated in a narrow demographic slice, not broadening." vertex="1">
+          <mxGeometry height="96" width="224" x="328" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="arr2" edge="1" parent="1" source="s2hdr" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=2;endArrow=block;endFill=1;" target="s3hdr" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s3hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="256" x="596" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s3hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Discontinuation" vertex="1">
+          <mxGeometry height="36" width="256" x="596" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="110" width="256" x="596" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="s3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="The feature is quietly retired. Only a modest number of merchants had ever integrated it. The headline product becomes the category&#39;s first cautionary tale." vertex="1">
+          <mxGeometry height="96" width="224" x="612" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="arr3" edge="1" parent="1" source="s3hdr" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B5E20;strokeWidth=2;endArrow=block;endFill=1;" target="s4hdr" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="258" x="880" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s4hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Meanwhile, Underneath" vertex="1">
+          <mxGeometry height="36" width="258" x="880" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="110" width="258" x="880" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="s4b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Payment networks, commerce protocols, and machine-payment standards keep shipping the entire time, unaffected by the consumer product&#39;s fate." vertex="1">
+          <mxGeometry height="96" width="226" x="896" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="wbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="88" width="1111" x="28" y="252" as="geometry" />
+        </mxCell>
+        <mxCell id="wbar" parent="1" style="rounded=0;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="252" as="geometry" />
+        </mxCell>
+        <mxCell id="wt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="400" x="44" y="258" as="geometry" />
+        </mxCell>
+        <mxCell id="wb" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Reading this as agentic commerce failing as a category. What failed was one consumer checkout product bet. The infrastructure layer beneath it accelerated through the same window.  The story is not that agentic commerce is a hype cycle that already burst. It is that the layer where real engineering work is happening and the layer where consumer attention lives are currently two different layers, moving at two different speeds." vertex="1">
+          <mxGeometry height="54" width="1083" x="44" y="278" as="geometry" />
+        </mxCell>
+        <mxCell id="dfbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="64" width="1111" x="28" y="352" as="geometry" />
+        </mxCell>
+        <mxCell id="dfbar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="1111" x="28" y="352" as="geometry" />
+        </mxCell>
+        <mxCell id="dft" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Decision Framework Preview" vertex="1">
+          <mxGeometry height="14" width="400" x="44" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="dfb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Separate the product question (will consumers adopt conversational checkout) from the infrastructure question (is machine-initiated payment maturing). They are answered differently by the same evidence." vertex="1">
+          <mxGeometry height="36" width="1083" x="44" y="374" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="60" width="1149" x="10" y="431" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="60" width="400" x="28" y="431" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="60" width="440" x="700" y="431" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

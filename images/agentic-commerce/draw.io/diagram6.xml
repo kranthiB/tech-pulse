@@ -1,0 +1,88 @@
+<mxfile host="Electron">
+  <diagram id="omfBEhhBHqfCxBgGHADz" name="Page-1">
+    <mxGraphModel dx="1420" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="630" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="Agentic Commerce: The Payment Layer Nobody Designed For" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="c1hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="540" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c1hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="If You Are Consumer Retail" vertex="1">
+          <mxGeometry height="36" width="540" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="138" width="540" x="28" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="c1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Expose structured product and pricing data through commerce-description protocols. Treat it as a low-cost hedge, not a bet on conversational checkout demand.  Concretely: expose a standards-compliant integration surface through whichever protocol your largest customer segment is most likely to encounter. Measure actual agent-driven traffic against actual agent-driven conversion before investing further.  Do not build a bespoke conversational checkout experience before the data justifies it." vertex="1">
+          <mxGeometry height="124" width="508" x="44" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="c2hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="531" x="608" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c2hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="If You Are B2B or Machine-to-Machine" vertex="1">
+          <mxGeometry height="36" width="531" x="608" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="138" width="531" x="608" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="c2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Treat payment authorization as first-class agent architecture from the outset. Adopt the machine-payment protocol layer. This adoption curve is accelerating independent of consumer sentiment.  Concretely: scoped payment credentials with hard spend ceilings enforced at the credential level itself, not as a system-prompt instruction the agent&#39;s own reasoning is trusted to honor.  This segment is where the actual engineering substance is being rewarded right now." vertex="1">
+          <mxGeometry height="124" width="499" x="624" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="uhdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="278" as="geometry" />
+        </mxCell>
+        <mxCell id="uhdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Regardless of Which Side You Sit On" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="278" as="geometry" />
+        </mxCell>
+        <mxCell id="ubg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="64" width="1111" x="28" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="ub" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Spend control, attribution, and liability allocation are not optional homework. They need dedicated ownership and contractual clarity before the first real transaction, not retrofitted after the first dispute.  A useful forcing function: require a one-page document naming who owns each question, what the current answer is, and when it was last reviewed, as a condition of launch." vertex="1">
+          <mxGeometry height="56" width="1083" x="44" y="326" as="geometry" />
+        </mxCell>
+        <mxCell id="wbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="80" width="1111" x="28" y="398" as="geometry" />
+        </mxCell>
+        <mxCell id="wbar" parent="1" style="rounded=0;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="398" as="geometry" />
+        </mxCell>
+        <mxCell id="wt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="400" x="44" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="wb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Benchmarking success against did this displace traditional checkout. The more useful baseline is did this reduce integration friction for transactions that were already going to happen through some channel. Judged against that baseline, the protocol and authentication layer has already delivered real value, even while the consumer product built on top of it did not." vertex="1">
+          <mxGeometry height="46" width="1083" x="44" y="424" as="geometry" />
+        </mxCell>
+        <mxCell id="pbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="70" width="1111" x="28" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="pbar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="pt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B5E20;" value="Key Principle" vertex="1">
+          <mxGeometry height="18" width="400" x="44" y="496" as="geometry" />
+        </mxCell>
+        <mxCell id="pb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B5E20;whiteSpace=wrap;" value="The most valuable work in agentic commerce right now is not the checkout button. It is the plumbing underneath it, and the plumbing does not care whether the button gets used." vertex="1">
+          <mxGeometry height="40" width="1083" x="44" y="516" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="60" width="1149" x="10" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="60" width="400" x="28" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="60" width="440" x="700" y="580" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

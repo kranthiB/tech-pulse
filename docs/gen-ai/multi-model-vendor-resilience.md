@@ -3,7 +3,7 @@ id: gen-ai/multi-model-vendor-resilience
 title: Multi Model Vendor Resilience
 sidebar_label: Multi Model Vendor Resilience
 previous_page: gen-ai/ai-gateway-architecture
-next_page: gen-ai/agent-memory
+next_page: gen-ai/agentic-commerce
 ---
 
 <div style="text-align: right;">
