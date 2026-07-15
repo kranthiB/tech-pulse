@@ -3,7 +3,7 @@ id: gen-ai/ai-gateway-architecture
 title: AI Gateway Architecture
 sidebar_label: AI Gateway Architecture
 previous_page: gen-ai/a2a-protocol
-next_page: gen-ai/agent-memory
+next_page: gen-ai/multi-model-vendor-resilience
 ---
 
 <div style="text-align: right;">

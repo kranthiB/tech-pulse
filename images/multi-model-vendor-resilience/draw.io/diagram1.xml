@@ -1,0 +1,118 @@
+<mxfile host="Electron">
+  <diagram id="uvhObhr-TmMV5HnOvGeA" name="Page-1">
+    <mxGraphModel dx="1420" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="580" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="Multi-Model Vendor Resilience" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="s1hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="260" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s1hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Hour Zero" vertex="1">
+          <mxGeometry height="36" width="260" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="90" width="260" x="28" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="s1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Export-control directive issued. Two frontier models ordered suspended for all foreign nationals." vertex="1">
+          <mxGeometry height="76" width="228" x="44" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="arr1" edge="1" parent="1" source="s1hdr" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=2;endArrow=block;endFill=1;" target="s2hdr" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="260" x="316" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s2hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Same Evening" vertex="1">
+          <mxGeometry height="36" width="260" x="316" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="90" width="260" x="316" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="s2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Nationality cannot be verified in real time. Both models go offline globally, for every customer, not only foreign nationals." vertex="1">
+          <mxGeometry height="76" width="228" x="332" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="arr2" edge="1" parent="1" source="s2hdr" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=2;endArrow=block;endFill=1;" target="s3hdr" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s3hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="260" x="604" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s3hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Next Morning" vertex="1">
+          <mxGeometry height="36" width="260" x="604" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="90" width="260" x="604" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="s3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Teams with direct integrations discover the endpoint is gone. No degradation, no rate-limit signal, just absence." vertex="1">
+          <mxGeometry height="76" width="228" x="620" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="arr3" edge="1" parent="1" source="s3hdr" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=2;endArrow=block;endFill=1;" target="s4hdr" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="245" x="892" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s4hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Following Weeks" vertex="1">
+          <mxGeometry height="36" width="245" x="892" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="90" width="245" x="892" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="s4b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="No published restoration date. Teams without a fallback wait. Teams with a qualified second source fail over and continue operating." vertex="1">
+          <mxGeometry height="76" width="213" x="908" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="wbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="88" width="1111" x="28" y="232" as="geometry" />
+        </mxCell>
+        <mxCell id="wbar" parent="1" style="rounded=0;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="232" as="geometry" />
+        </mxCell>
+        <mxCell id="wt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="400" x="44" y="243" as="geometry" />
+        </mxCell>
+        <mxCell id="wb" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="This was treated as a hypothetical scenario by nearly every engineering team that had not already modeled it. It was not the vendor&#39;s reliability that failed. It was an assumption about permanence.  The failure mode was regulatory, not technical. It moved faster than any outage runbook most teams had written, and it targeted a dependency most architecture diagrams do not even show as a single point of failure." vertex="1">
+          <mxGeometry height="54" width="1083" x="44" y="263" as="geometry" />
+        </mxCell>
+        <mxCell id="fbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="80" width="1111" x="28" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="fbar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="1111" x="28" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="fb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontColor=#1B3A6B;whiteSpace=wrap;" value="The failure mode was regulatory, not technical. It moved faster than any outage runbook most teams had written, and it targeted a dependency most architecture diagrams do not show as a single point of failure." vertex="1">
+          <mxGeometry height="64" width="1083" x="44" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="dfbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="80" width="1111" x="28" y="424" as="geometry" />
+        </mxCell>
+        <mxCell id="dfbar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="1111" x="28" y="424" as="geometry" />
+        </mxCell>
+        <mxCell id="dft" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Decision Framework Preview" vertex="1">
+          <mxGeometry height="14" width="400" x="44" y="436" as="geometry" />
+        </mxCell>
+        <mxCell id="dfb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="The question is not whether a single-vendor failure can happen to you. It already happened, at scale, to teams that had never modeled it. The question is which stage of resilience maturity your architecture sits at today." vertex="1">
+          <mxGeometry height="50" width="1083" x="44" y="452" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="60" width="1149" x="10" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="60" width="400" x="28" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="60" width="440" x="700" y="530" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
