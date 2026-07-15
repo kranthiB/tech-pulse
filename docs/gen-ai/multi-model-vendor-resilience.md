@@ -52,6 +52,7 @@ Model vendor dependency is different along three dimensions that traditional ven
 Put together, these three differences mean that model vendor risk deserves its own resilience discipline rather than a copy-paste of your existing vendor management playbook. It behaves more like a critical infrastructure dependency than a commercial relationship, and it should be architected accordingly.
 
 ![0002](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/multi-model-vendor-resilience/0002.png)
+
 ---
 
 ## The Three Ways a Model Vendor Can Vanish
