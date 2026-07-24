@@ -2,7 +2,7 @@
 id: gen-ai/ai-governance-engineering-leaders
 title: "AI Governance for Engineering Leaders: Why Your Compliance Team Cannot Solve This Problem"
 sidebar_label: AI Governance for Engineering Leaders
-previous_page: gen-ai/ai-incident-response-playbook
+previous_page: gen-ai/ai-sre
 next_page: gen-ai/human-in-the-loop-agentic-systems
 ---
 

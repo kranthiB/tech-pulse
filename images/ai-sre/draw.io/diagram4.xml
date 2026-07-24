@@ -1,0 +1,106 @@
+<mxfile host="Electron">
+  <diagram id="FM7ZwcE8910-RaDqgsZL" name="Page-1">
+    <mxGraphModel dx="1420" dy="835" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="597" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="AI SRE: When the Agent Does Not Just Suggest the Fix, It Applies It" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="s1hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="46" width="350" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s1hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Stage 1: Read-Only Investigation" vertex="1">
+          <mxGeometry height="46" width="350" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="130" width="350" x="28" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="s1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Zero ability to modify production state. Captures a meaningful share of the value alone, since diagnosis, not the fix, is usually the slowest part of incident resolution. Safe to run broadly from day one." vertex="1">
+          <mxGeometry height="116" width="318" x="44" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="arr1" edge="1" parent="1" source="s1hdr" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B3A6B;strokeWidth=2;endArrow=block;endFill=1;" target="s2hdr" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="46" width="350" x="408" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s2hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Stage 2: Approval-Gated Action" vertex="1">
+          <mxGeometry height="46" width="350" x="408" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="130" width="350" x="408" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="s2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Agent prepares a remediation but a human must explicitly approve before anything changes in production. Trust in diagnostic quality gets tested here under real conditions rather than constructed scenarios." vertex="1">
+          <mxGeometry height="116" width="318" x="424" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="arr2" edge="1" parent="1" source="s2hdr" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1B5E20;strokeWidth=2;endArrow=block;endFill=1;" target="s3hdr" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s3hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="46" width="350" x="788" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s3hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Stage 3: Bounded Autonomous Remediation" vertex="1">
+          <mxGeometry height="46" width="350" x="788" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="130" width="350" x="788" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="s3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Only for specific, well-understood, deterministic failure classes with contained blast radius. Granted per class, never globally. Each grant remains reversible and is reviewed on a fixed schedule." vertex="1">
+          <mxGeometry height="116" width="318" x="804" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="portbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="88" width="1111" x="28" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="portbar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="1111" x="28" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="portt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;" value="Stage 3 Authority Is a Portfolio of Narrowly Scoped Grants, Not a Single Switch" vertex="1">
+          <mxGeometry height="16" width="900" x="44" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="portb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Each failure class earns autonomous authority independently. The three criteria: well-defined signature (the agent can reliably identify this failure type), deterministic fix (the correct remediation is not ambiguous), and contained blast radius (a wrong fix cannot cascade beyond a bounded scope). Meeting only one or two of these conditions means a longer stage 2 evaluation, not early promotion." vertex="1">
+          <mxGeometry height="56" width="1083" x="44" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="wbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="80" width="1111" x="28" y="382" as="geometry" />
+        </mxCell>
+        <mxCell id="wbar" parent="1" style="rounded=0;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="382" as="geometry" />
+        </mxCell>
+        <mxCell id="wt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="400" x="44" y="388" as="geometry" />
+        </mxCell>
+        <mxCell id="wb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Skipping the gradient because the demo looked good. Diagnostic quality and remediation safety are different properties of the same system. A system can produce excellent root-cause hypotheses and still execute remediations poorly. Skipping the gradient is how an engineering team ends up with an agent-caused incident in the first month of deployment." vertex="1">
+          <mxGeometry height="46" width="1083" x="44" y="408" as="geometry" />
+        </mxCell>
+        <mxCell id="dfbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="56" width="1111" x="28" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="dfbar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="1111" x="28" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="dft" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Decision Framework Preview" vertex="1">
+          <mxGeometry height="14" width="400" x="44" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="dfb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Use this model as both a runtime safety mechanism and an adoption roadmap. Start at stage 1 on the highest-volume, lowest-complexity alert category. Use the human-review data from stage 2 to build the case for each stage 3 grant, one failure class at a time." vertex="1">
+          <mxGeometry height="28" width="1083" x="44" y="496" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="60" width="1149" x="10" y="547" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="60" width="400" x="28" y="547" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="60" width="440" x="700" y="547" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
