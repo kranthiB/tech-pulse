@@ -3,7 +3,7 @@ id: gen-ai/ai-sre
 title: "AI SRE: When the Agent Does Not Just Suggest the Fix, It Applies It"
 sidebar_label: AI SRE
 previous_page: gen-ai/ai-incident-response-playbook
-next_page: gen-ai/ai-governance-engineering-leaders
+next_page: gen-ai/browser-computer-use-agents
 ---
 
 <div style="text-align: right;">
