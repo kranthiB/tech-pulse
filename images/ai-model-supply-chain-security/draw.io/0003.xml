@@ -1,0 +1,106 @@
+<mxfile host="Electron">
+  <diagram id="hLjySdKOd8WAeDY7kToJ" name="Page-1">
+    <mxGraphModel dx="1625" dy="826" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="677" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="AI Model Supply Chain Security: What Is Actually Inside Your Checkpoint" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="lhdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="540" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="lhdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Protocol and Runtime Security" vertex="1">
+          <mxGeometry height="36" width="540" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="rhdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="531" x="608" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="rhdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#FFFFFF;" value="Supply Chain Security" vertex="1">
+          <mxGeometry height="36" width="531" x="608" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="rl1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=center;" value="When" vertex="1">
+          <mxGeometry height="54" width="80" x="28" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="rl2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=center;" value="Surface" vertex="1">
+          <mxGeometry height="62" width="80" x="28" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="rl3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=center;" value="Attacker access point" vertex="1">
+          <mxGeometry height="54" width="80" x="28" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="rl4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=center;" value="Defenses" vertex="1">
+          <mxGeometry height="62" width="80" x="28" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;fontColor=#2E7D32;fontSize=11;align=left;verticalAlign=middle;" value="While the system is running." vertex="1">
+          <mxGeometry height="54" width="460" x="108" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;fontColor=#2E7D32;fontSize=11;align=left;verticalAlign=middle;" value="Tool calls, agent permissions, prompt injections through running interfaces, agent-to-agent trust." vertex="1">
+          <mxGeometry height="62" width="460" x="108" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;fontColor=#2E7D32;fontSize=11;align=left;verticalAlign=middle;" value="The interfaces the running system exposes." vertex="1">
+          <mxGeometry height="54" width="460" x="108" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="l4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;fontColor=#2E7D32;fontSize=11;align=left;verticalAlign=middle;" value="Access controls, tool permission scoping, behavioral monitoring of live activity." vertex="1">
+          <mxGeometry height="62" width="460" x="108" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;fontColor=#7A6000;fontSize=11;align=left;verticalAlign=middle;" value="Before the system runs, during assembly of the artifacts it will execute." vertex="1">
+          <mxGeometry height="54" width="531" x="608" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;fontColor=#7A6000;fontSize=11;align=left;verticalAlign=middle;" value="Checkpoint files, training datasets, adapters, quantization toolchains, package dependencies." vertex="1">
+          <mxGeometry height="62" width="531" x="608" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;fontColor=#7A6000;fontSize=11;align=left;verticalAlign=middle;" value="The distribution and preparation layer before deployment." vertex="1">
+          <mxGeometry height="54" width="531" x="608" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;fontColor=#7A6000;fontSize=11;align=left;verticalAlign=middle;" value="Artifact signing, hash pinning, provenance documentation, safe serialization formats." vertex="1">
+          <mxGeometry height="62" width="531" x="608" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="keybg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="56" width="1111" x="28" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="keyt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;whiteSpace=wrap;" value="A system with perfect runtime security running a poisoned checkpoint is still compromised. Runtime defenses cannot protect against a supply chain compromise already present inside the artifact being executed." vertex="1">
+          <mxGeometry height="56" width="1083" x="44" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="wbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="80" width="1111" x="28" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="wbar" parent="1" style="rounded=0;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="wt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="400" x="44" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="wb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Assuming MCP protocol security, agent permission scoping, and runtime monitoring constitute a complete AI security posture. They address one surface. The supply chain is a different surface that requires different controls at a different point in time." vertex="1">
+          <mxGeometry height="46" width="1083" x="44" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="dfbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="56" width="1111" x="28" y="556" as="geometry" />
+        </mxCell>
+        <mxCell id="dfbar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="1111" x="28" y="556" as="geometry" />
+        </mxCell>
+        <mxCell id="dft" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Decision Framework Preview" vertex="1">
+          <mxGeometry height="14" width="400" x="44" y="562" as="geometry" />
+        </mxCell>
+        <mxCell id="dfb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Both disciplines are necessary and neither is sufficient without the other. Map your security investments against both columns to identify which surface is currently unaddressed." vertex="1">
+          <mxGeometry height="28" width="1083" x="44" y="578" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="60" width="1149" x="10" y="627" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="60" width="400" x="28" y="627" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="60" width="440" x="700" y="627" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

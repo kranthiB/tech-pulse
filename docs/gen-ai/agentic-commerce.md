@@ -3,7 +3,7 @@ id: gen-ai/agentic-commerce
 title: Agentic Commerce
 sidebar_label: Agentic Commerce
 previous_page: gen-ai/multi-model-vendor-resilience
-next_page: gen-ai/agent-memory
+next_page: gen-ai/ai-model-supply-chain-security
 ---
 
 <div style="text-align: right;">

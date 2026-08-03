@@ -1,0 +1,181 @@
+<mxfile host="Electron">
+  <diagram id="JSsDgvTRcGBlo4BD4WXb" name="Page-1">
+    <mxGraphModel dx="2025" dy="1226" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="0" pageScale="1" pageWidth="1200" pageHeight="627" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="627" width="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="64" width="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#FFFFFF;" value="AI Model Supply Chain Security" vertex="1">
+          <mxGeometry height="40" width="860" x="16" as="geometry" />
+        </mxCell>
+        <mxCell id="hsubt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#AACCFF;" value="What is actually inside your checkpoint" vertex="1">
+          <mxGeometry height="22" width="860" x="16" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="196" width="384" x="8" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p1bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="384" x="8" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="The Serialization Risk" vertex="1">
+          <mxGeometry height="18" width="356" x="22" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="p1s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="The most widely used format executes Python at load time" vertex="1">
+          <mxGeometry height="14" width="356" x="22" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p1div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="368" x="16" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="p1b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="A malicious model file using the legacy serialization format executes arbitrary Python at load time, before inference, before logging, before any detection. &#xa;&#xa;The attacker&#39;s code runs first. What it does after that is not constrained by inference. &#xa;&#xa;Scanning helps, but bypass techniques are publicly documented." vertex="1">
+          <mxGeometry height="134" width="362" x="22" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="p2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="196" width="392" x="404" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p2bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="392" x="404" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Training Data Poisoning" vertex="1">
+          <mxGeometry height="18" width="364" x="418" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="p2s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="A backdoor embedded at training survives every downstream fine-tuning" vertex="1">
+          <mxGeometry height="14" width="364" x="418" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p2div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="376" x="412" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="p2b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Correct on 99.9% of inputs. &#xa;&#xa;Attacker-controlled on the trigger pattern. &#xa;&#xa;No scan catches it because the checkpoint is clean; the behavior was shaped by data. &#xa;&#xa;Standard evaluation passes. &#xa;&#xa;The trigger pattern is unknown to the defender." vertex="1">
+          <mxGeometry height="134" width="370" x="418" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="p3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="196" width="384" x="808" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p3bar" parent="1" style="rounded=0;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="384" x="808" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="356" x="822" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="p3s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="80% do not verify signatures or scan" vertex="1">
+          <mxGeometry height="14" width="356" x="822" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p3div" parent="1" style="line;strokeColor=#FFCA2C;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="368" x="816" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="p3b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Most record only a model name, not a hash. &#xa;&#xa;Most cannot confirm today&#39;s checkpoint matches the one deployed six months ago. &#xa;&#xa;Treating supply chain security as a registry scanning problem. &#xa;&#xa;Scanning helps with class one attacks. A clean checkpoint passes every scan and still carries a class two backdoor." vertex="1">
+          <mxGeometry height="134" width="362" x="822" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="p4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="196" width="384" x="8" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p4bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="384" x="8" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Adapter and Dependency Attacks" vertex="1">
+          <mxGeometry height="18" width="356" x="22" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="p4s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="A vetted base model with an unvetted adapter inherits nothing" vertex="1">
+          <mxGeometry height="14" width="356" x="22" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="p4div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="368" x="16" y="324" as="geometry" />
+        </mxCell>
+        <mxCell id="p4b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="A community LoRA adapter applied to a vetted base model inherits none of the base model&#39;s provenance guarantees. &#xa;&#xa;Compromised PyPI packages, quantization libraries, and inference frameworks exfiltrate credentials or data without touching model weights at all." vertex="1">
+          <mxGeometry height="134" width="362" x="22" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="p5bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="196" width="392" x="404" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p5bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="392" x="404" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p5t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="The ML-BOM" vertex="1">
+          <mxGeometry height="18" width="364" x="418" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="p5s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Technical artifact, not a policy document" vertex="1">
+          <mxGeometry height="14" width="364" x="418" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="p5div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="376" x="412" y="324" as="geometry" />
+        </mxCell>
+        <mxCell id="p5b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Registry source, download hash, training data provenance, adapter hash, quantization toolchain. &#xa;&#xa;Version-controlled. &#xa;&#xa;Updated on every component change. &#xa;&#xa;Queried during incident response to answer: what exact artifact is running and where did it come from." vertex="1">
+          <mxGeometry height="134" width="370" x="418" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="p6bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="196" width="384" x="808" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p6bar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="384" x="808" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p6t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B5E20;" value="Four-Layer Framework" vertex="1">
+          <mxGeometry height="18" width="356" x="822" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="p6s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Start at Layer 1, not Layer 4" vertex="1">
+          <mxGeometry height="14" width="356" x="822" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="p6div" parent="1" style="line;strokeColor=#C8E6C9;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="368" x="816" y="324" as="geometry" />
+        </mxCell>
+        <mxCell id="p6b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Layer 1: sha256 hash pinning at every load &#xa;&#xa;Layer 2: ML-BOM provenance documentation &#xa;&#xa;Layer 3: Pipeline integrity for fine-tuning data &#xa;&#xa;Layer 4: Safe serialization format adoption  Hash pinning is the fastest to implement and creates the baseline integrity record all other layers depend on." vertex="1">
+          <mxGeometry height="134" width="362" x="822" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#162E55;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="143" width="1200" y="484" as="geometry" />
+        </mxCell>
+        <mxCell id="fdiv" parent="1" style="line;strokeColor=#2E5499;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="1168" x="16" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="s1bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="220" x="16" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s1n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#FFCA2C;" value="1M+" vertex="1">
+          <mxGeometry height="28" width="220" x="16" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s1l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#AACCFF;" value="Model files on public registries" vertex="1">
+          <mxGeometry height="20" width="220" x="16" y="542" as="geometry" />
+        </mxCell>
+        <mxCell id="s2bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="220" x="252" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s2n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#E57373;" value="80%" vertex="1">
+          <mxGeometry height="28" width="220" x="252" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s2l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#AACCFF;" value="Do not verify signatures or scan" vertex="1">
+          <mxGeometry height="20" width="220" x="252" y="542" as="geometry" />
+        </mxCell>
+        <mxCell id="s3bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="256" x="488" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s3n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#64B5F6;" value="3 ATTACK CLASSES" vertex="1">
+          <mxGeometry height="28" width="256" x="488" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s3l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#AACCFF;" value="Serialization, data poisoning, dependencies" vertex="1">
+          <mxGeometry height="20" width="256" x="488" y="542" as="geometry" />
+        </mxCell>
+        <mxCell id="s4bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="220" x="760" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s4n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#81C784;" value="sha256" vertex="1">
+          <mxGeometry height="28" width="220" x="760" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s4l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#AACCFF;" value="The minimum viable first control" vertex="1">
+          <mxGeometry height="20" width="220" x="760" y="542" as="geometry" />
+        </mxCell>
+        <mxCell id="fbdiv" parent="1" style="line;strokeColor=#2E5499;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="1168" x="16" y="572" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#7A9ACC;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="36" width="400" x="16" y="578" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="36" width="434" x="750" y="578" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

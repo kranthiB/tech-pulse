@@ -580,6 +580,7 @@ auto_title: false
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/ai-gateway-architecture.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-exchange-alt" style="margin-right: 5px;"></i>AI Gateway Architecture</a>
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/multi-model-vendor-resilience.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-shield-alt" style="margin-right: 5px;"></i>Multi-Model Vendor Resilience</a>
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/agentic-commerce.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-credit-card" style="margin-right: 5px;"></i>Agentic Commerce</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/ai-model-supply-chain-security.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-lock" style="margin-right: 5px;"></i>AI Model Supply Chain Security</a>
       </div>
     </div>
   </div>

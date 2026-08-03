@@ -1,0 +1,100 @@
+<mxfile host="Electron">
+  <diagram id="VvmqbdnSWoNocZlZ7Ji6" name="Page-1">
+    <mxGraphModel dx="1625" dy="826" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="712" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="AI Model Supply Chain Security: What Is Actually Inside Your Checkpoint" vertex="1">
+          <mxGeometry height="62" width="820" x="28" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="f1num" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;fontColor=#FFFFFF;fontSize=14;fontStyle=1;align=center;" value="1" vertex="1">
+          <mxGeometry height="40" width="40" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="f1hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="1059" x="80" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="f1hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="The Model Card" vertex="1">
+          <mxGeometry height="40" width="900" x="96" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="f1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="64" width="1111" x="28" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="f1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Model cards are editable documents. The description of training data, licensing, and intended use at time of publication can be changed after the fact, including by parties other than the original publisher in some registry configurations. A team that bases provenance decisions on a model card has relied on a document that may not reflect the checkpoint they downloaded." vertex="1">
+          <mxGeometry height="56" width="1083" x="44" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="f2num" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;fontColor=#FFFFFF;fontSize=14;fontStyle=1;align=center;" value="2" vertex="1">
+          <mxGeometry height="40" width="40" x="28" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="f2hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="1059" x="80" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="f2hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="The Download" vertex="1">
+          <mxGeometry height="40" width="900" x="96" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="f2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="64" width="1111" x="28" y="256" as="geometry" />
+        </mxCell>
+        <mxCell id="f2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Without hash pinning, there is no record of what the expected artifact should look like. A checkpoint updated on the registry after download is silently loaded in its new form on the next deployment. Registry incidents where files were replaced after publication are documented." vertex="1">
+          <mxGeometry height="56" width="1083" x="44" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="f3num" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;fontColor=#FFFFFF;fontSize=14;fontStyle=1;align=center;" value="3" vertex="1">
+          <mxGeometry height="40" width="40" x="28" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="f3hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="1059" x="80" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="f3hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="The Quantization Step" vertex="1">
+          <mxGeometry height="40" width="900" x="96" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="f3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="64" width="1111" x="28" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="f3b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="A quantized checkpoint is a new artifact derived from two sources: the original checkpoint and the quantization toolchain. Verifying the original checkpoint hash does not verify the quantized variant. Compromised quantization tooling produces a different artifact from the same input." vertex="1">
+          <mxGeometry height="56" width="1083" x="44" y="384" as="geometry" />
+        </mxCell>
+        <mxCell id="f4num" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;fontColor=#FFFFFF;fontSize=14;fontStyle=1;align=center;" value="4" vertex="1">
+          <mxGeometry height="40" width="40" x="28" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="f4hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="1059" x="80" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="f4hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="The Adapter Application" vertex="1">
+          <mxGeometry height="40" width="900" x="96" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="f4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="64" width="1111" x="28" y="504" as="geometry" />
+        </mxCell>
+        <mxCell id="f4b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="A community LoRA adapter applied to a carefully vetted base model inherits none of the base model&#39;s provenance guarantees. The adapter population on public registries is larger, faster-changing, and less reviewed than the base model population." vertex="1">
+          <mxGeometry height="56" width="1083" x="44" y="508" as="geometry" />
+        </mxCell>
+        <mxCell id="dfbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="64" width="1111" x="28" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="dfbar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="1111" x="28" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="dft" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Decision Framework Preview" vertex="1">
+          <mxGeometry height="14" width="400" x="44" y="586" as="geometry" />
+        </mxCell>
+        <mxCell id="dfb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Each of these four failure points requires its own control. Artifact integrity verification at each step, not just at initial download, is the minimum that closes all four. The hash you pinned at download is not the hash you need at each subsequent transformation." vertex="1">
+          <mxGeometry height="36" width="1083" x="44" y="602" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="60" width="1149" x="10" y="662" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="60" width="400" x="28" y="662" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="60" width="440" x="700" y="662" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

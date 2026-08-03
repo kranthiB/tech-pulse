@@ -1,0 +1,151 @@
+---
+id: gen-ai/ai-model-supply-chain-security
+title: Agentic Commerce
+sidebar_label: Agentic Commerce
+previous_page: gen-ai/agentic-commerce
+next_page: gen-ai/agent-memory
+---
+
+<div style="text-align: right;">
+    <a href="https://kranthib.github.io/tech-pulse/" style="display: inline-block; padding: 6px 14px; background-color: #2054a6; color: white; text-decoration: none; border-radius: 3px; font-size: 14px; font-weight: 500; transition: background-color 0.3s;">Back to Home →</a>
+</div>
+
+# AI Model Supply Chain Security: What Is Actually Inside Your Checkpoint
+
+**A model file is not documentation. It is executable code. When an engineer runs a single command to load a model from a public registry, that command does not just read weights into memory. Depending on the serialization format, it executes arbitrary Python code on the loading machine, with the permissions of the process that called it, before a single inference has been run. Most engineering teams do not know this. Attackers do.**
+
+![0000](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-model-supply-chain-security/0000.png)
+
+---
+
+## The Attack Surface Nobody Mapped
+
+The software supply chain security discipline matured through a hard sequence of lessons: a single compromised dependency in a popular package registry could propagate malware to tens of thousands of downstream organizations before anyone noticed. The industry responded with SBOMs, dependency pinning, package signing, and vulnerability scanning. Those lessons were expensive to learn, and they took years to translate into standard practice. The organizations that adopted those practices early had functional defenses when major incidents hit. The ones that had not were the case studies.
+
+The AI supply chain is following the same arc, approximately three years behind and moving faster. The difference is that the attack surface is harder to see, the artifacts being distributed are more dangerous when compromised, and the organizations deploying them have less institutional experience with supply chain thinking than their software counterparts do.
+
+A traditional software dependency is a library: code that runs when called, with a defined interface, producing outputs that can be tested against a specification. A model checkpoint is a different kind of artifact entirely. It encodes learned behavior that will execute inside your production systems, influencing every inference, every tool call, every downstream decision that flows through it. Compromising a checkpoint does not give an attacker a foothold in your infrastructure the way a compromised library does. It gives them a persistent presence inside your reasoning layer, one that produces wrong or manipulated outputs on specific trigger inputs while behaving correctly on everything else, indefinitely, until someone notices that something is wrong and knows exactly where to look. Unlike a compromised library, which tends to produce obvious failures when it misbehaves, a well-designed checkpoint compromise is specifically engineered to produce correct behavior on the inputs that evaluations test and modified behavior only on the attacker's chosen trigger pattern.
+
+The first joint federal guidance to explicitly treat AI supply chain security as a discipline distinct from software supply chain security identified six components of the AI supply chain: training data, models, software, infrastructure, hardware, and third-party services. Each can introduce vulnerabilities that affect confidentiality, integrity, or availability in ways that are specific to the AI context. The most underappreciated of the six, in the sense that it is the one most organizations have thought least about, is the model itself: the checkpoint file that gets downloaded, loaded, and trusted to behave as its publisher described.
+
+Public model registries now host more than one million model files, making them, by any reasonable measure, the npm of AI. The analogy is instructive because npm's security history is precisely the roadmap for what happens when a large, fast-growing, loosely governed package ecosystem encounters determined attackers. The lesson from npm is not that the ecosystem failed and should have been abandoned. It is that the ecosystem matured through a series of painful incidents that drove the adoption of signing, scanning, and provenance practices that the community initially treated as optional overhead. That maturation cycle is now beginning for AI model registries, and the organizations that treat AI artifact provenance as optional overhead today are in the same position as the organizations that treated dependency pinning as optional overhead before the first major registry compromise.
+
+![0001](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-model-supply-chain-security/0001.png)
+
+---
+
+## Three Attack Classes and What Each One Actually Does
+
+Understanding the AI supply chain threat requires being specific about what each attack class targets, because they produce different effects, require different defenses, and carry different operational signatures. Treating them as a single undifferentiated "supply chain risk" produces governance that is too vague to implement.
+
+**Checkpoint poisoning through serialization exploits.** The most widely used serialization format for machine learning model files executes arbitrary Python code at load time. This is not a bug; it is a deliberate design choice made when the format was created, before it was deployed at the scale it operates at today. A malicious actor who publishes a model checkpoint using this format can embed code that executes on the loading machine the moment an engineer runs the standard load command. The execution happens before any inference, before any output, before any logging that would capture anomalous behavior. The code runs with the permissions of the calling process, which in many development and fine-tuning environments is broad enough to access credentials, configuration files, and network resources. Named vulnerabilities in widely used scanning tools have demonstrated that pickle-scanning approaches can be bypassed, and that the problem is not solved by the presence of a scanner in the pipeline if that scanner has known bypass techniques.
+
+This is not a theoretical risk. A named vulnerability in a popular AI framework, assigned a CVE designation, demonstrated remote code execution via a malicious model file hosted on a major public registry, exploiting exactly this mechanism. The proof-of-concept repository accumulated stars within days, indicating that the technique was immediately of interest to the broader security research community and that the window between disclosure and weaponization was very short.
+
+**Training data poisoning with persistent behavioral effects.** An attacker who can influence the data a model is trained on can embed persistent behavioral modifications that survive the training process and are present in every copy of the resulting checkpoint. The modification does not need to be visible in aggregate model performance; a well-designed poisoning attack produces a model that behaves correctly on the vast majority of inputs and produces a specific attacker-controlled output only when a specific trigger pattern is present. This is sometimes called a backdoor attack or a trojan, and the concerning property is that standard evaluation does not catch it: a model that is correct on 99.9 percent of inputs will pass nearly any evaluation suite, while still exhibiting the adversarially designed behavior on the one pattern the attacker embedded.
+
+The detectability problem is fundamental rather than a matter of insufficient scanning. Detecting a well-designed poisoning attack requires knowing what trigger pattern to look for, and the attacker designs the trigger to be something the defender would not think to test for. The practical implication is that provenance of training data matters more than scanning of trained checkpoints: the most effective defense against data poisoning is knowing where your training data came from, having audited controls over the pipeline that assembled it, and being able to answer the question "could this data have been tampered with between its source and our training run" with something more specific than "probably not."
+
+**Dependency and adapter attacks through the extended model ecosystem.** The model checkpoint itself is only one component of a production AI system. The fine-tuning adapters, the quantization libraries, the inference frameworks, the prompt templates, and the Python packages that wire all of these together represent an extended dependency surface that carries the same class of risk as traditional software dependencies, with the additional property that a compromise in any one of them can influence model behavior rather than just application behavior. A compromised fine-tuning adapter that is applied to a legitimate base model can introduce the same behavioral modifications that training data poisoning achieves, with a smaller investment by the attacker and a faster iteration cycle. A compromised PyPI package in the inference stack can execute at runtime and exfiltrate the model inputs and outputs it processes, without touching the model weights at all.
+
+A coordinated supply chain attack documented in the current year demonstrated how these attack classes combine in practice: malicious packages published to a developer package registry contained credential-stealing code that targeted API keys for major AI providers, affecting organizations that installed them as part of ordinary development workflows. The packages were stylistically indistinguishable from legitimate packages, used naming patterns designed to exploit common typos and tab-completion behaviors, and were live for long enough to accumulate real downloads before detection. The incident is instructive not because it was exotic or technically unprecedented, but because it demonstrated that the same attack patterns that compromised traditional software supply chains are already being applied to AI infrastructure with comparable effectiveness and equivalent absence of warning.
+
+![0002](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-model-supply-chain-security/0002.png)
+
+---
+
+## Why Post 4's Security Thinking Does Not Cover This
+
+Teams that have read prior work on AI security, including earlier writing in this series on MCP protocol security, may reasonably ask whether the supply chain security problem is just an extension of what was already covered there. It is not, and the distinction matters for how to build defenses.
+
+Protocol and runtime security, the subject of MCP security discussions, concerns itself with what happens when an agent or model is running in a production environment: what tool calls it makes, what permissions those tools carry, how trust is established between agent components, what happens when a tool attempts to override the agent's instructions. The attack surface is the running system, the threat is an attacker who has found a way to influence the agent's behavior through the interfaces it exposes, and the defenses are access controls, tool permission scoping, and behavioral monitoring of live agent activity.
+
+Supply chain security concerns itself with what the running system is made of before it runs: the artifacts that were assembled, the sources they came from, and the integrity of the pipeline that assembled them. The attack surface is the distribution and preparation layer, the threat is an attacker who has compromised an artifact before deployment so that the deployed system behaves maliciously from its first inference, and the defenses are provenance verification, artifact signing, integrity checking, and pipeline auditing.
+
+The practical difference is that runtime defenses cannot protect against a supply chain compromise, because the compromise is already present inside the artifact that the runtime is executing. An agent with carefully scoped tool permissions, running inside a well-monitored environment, that was loaded from a poisoned checkpoint, will still produce compromised outputs. The monitoring will observe the poisoned model behaving normally on routine inputs and producing attacker-controlled outputs on trigger inputs, without any anomalous tool calls or permission violations, because the compromise is in the model's reasoning layer, not in its external behavior.
+
+This is why supply chain security requires its own distinct investment rather than being absorbed into a broader AI security posture that focuses on runtime protection. The two disciplines are complementary and both necessary; neither is sufficient without the other.
+
+![0003](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-model-supply-chain-security/0003.png)
+
+---
+
+## The Provenance Problem: Most Teams Cannot Answer Basic Questions
+
+The most clarifying framing for the AI supply chain security problem is the SBOM analogy, which the AI security community has begun to develop into a named concept: the ML-BOM, or machine learning bill of materials. A software SBOM answers the question "what is this software made of" with enough specificity to enable vulnerability tracking, dependency auditing, and incident response. An ML-BOM extends this to model artifacts: what data was the model trained on, what was the base model if fine-tuned, what adapter was applied and from what source, what quantization was performed and by whom, and what is the cryptographic hash of the checkpoint that was deployed to production.
+
+The sobering finding from security assessments of organizations deploying third-party models is that the majority cannot answer these questions with any specificity. They can name the model they are using and the registry they downloaded it from. They frequently cannot confirm the cryptographic integrity of the checkpoint they downloaded, cannot verify that the checkpoint they are running today is the same artifact they loaded six months ago, cannot document the training data provenance beyond what the model card says, and cannot verify that the model card itself has not been altered since the model was published.
+
+This is not primarily a failure of diligence. It is a failure of tooling and practice. The software supply chain discipline developed SBOM tooling, signing infrastructure, and verification workflows because the industry built those tools and made them part of standard practice. The AI supply chain equivalent is earlier in its development, the tooling exists in nascent forms, the practices are not standardized, and most organizations are not yet applying even the most basic integrity checks because nobody told them those checks were necessary.
+
+The regulatory environment is beginning to close this gap from the compliance direction. Major AI governance frameworks require data governance and management practices that include provenance tracking for systems above certain risk thresholds. This means organizations deploying AI in regulated domains are facing provenance documentation requirements that they do not currently have the practices or tooling to satisfy, which is producing a useful forcing function for the development of ML-BOM practices even in the absence of organic security motivation.
+
+![0004](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-model-supply-chain-security/0004.png)
+
+---
+
+## A Worked Example: What Provenance Verification Actually Catches
+
+Abstractions are easier to agree with than to act on. Walking through a concrete example of what provenance verification catches, and what it misses, makes the investment case more tangible than any amount of general argument.
+
+Consider an engineering team deploying an open-weight model downloaded from a major public registry. The team follows the standard workflow: they visit the model's page on the registry, read the model card, download the checkpoint using the registry's CLI tool, and integrate it into their inference pipeline. This is the workflow that the vast majority of teams using open-weight models follow, and it contains four distinct points where a supply chain compromise could be present without detection.
+
+The first is the model card itself. Model cards on most registries are editable documents. A model card that described the training data, licensing, and intended use at the time of original publication can be edited after the fact, including by parties other than the original publisher in some registry configurations. A team that reads the model card and forms an opinion about the model's suitability based on its stated training data provenance has relied on a document that may not reflect the current state of the checkpoint they are about to download.
+
+The second is the download itself. The standard download command produces the checkpoint file on disk. Without hash pinning, the team has no record of what the expected hash of that file should be. A checkpoint file that is replaced on the registry after download, either through a legitimate update or a compromise, will be silently loaded in its new form on the next deployment without any indication that a change occurred. This is not hypothetical: major registries have reported incidents where model files were replaced after initial publication with versions containing malicious code.
+
+The third is the quantization step, if the team quantizes the model for deployment. Quantization tools are software dependencies with their own supply chain risks, and the process of quantizing a checkpoint produces a new artifact whose provenance is derived from both the original checkpoint and the quantization toolchain. A team that verifies the hash of the original checkpoint but not the quantized derivative has verified one step in a two-step pipeline, and the second step introduces its own exposure.
+
+The fourth is the adapter application, if the team applies a fine-tuning adapter to customize the base model. This is where the gap between perceived and actual provenance is widest, because LoRA adapters and similar fine-tuning outputs are significantly easier to produce and publish than full model checkpoints, meaning the population of adapters available on public registries is less rigorously reviewed than the base models they are applied to. An adapter applied to a well-vetted base model does not inherit any of the base model's provenance guarantees.
+
+A team that instruments all four of these points, verifies hashes at each step, documents the result in a structured ML-BOM, and treats any deviation as a security event to investigate, has a fundamentally different security posture than a team that names the model in a config file and moves on. The implementation cost of the former is measured in hours of initial setup and minutes per deployment. The detection value it provides is the difference between noticing a supply chain compromise before it reaches production and discovering it during a forensic investigation after an incident.
+
+---
+
+## What Most Teams Get Wrong
+
+The most common mistake is treating model provenance as a documentation exercise rather than a security control. Teams that have thought about this at all typically record which model they are using in a configuration file or model card, in the sense of its name and version string. Name and version string are the provenance equivalent of noting that a package is named "requests version 2.28" without pinning the hash, without verifying the download, and without checking whether the published version was updated after the download. In software supply chain terms, this is the state of practice from roughly a decade ago, and the AI supply chain is repeating that lesson.
+
+The concrete difference between documentation provenance and security provenance is the cryptographic hash. A model file's sha256 hash is computed from its binary content. If the content changes, the hash changes. An organization that pins the expected hash of its production model checkpoint and verifies the actual hash on every load has a control that detects tampering, substitution, and drift at negligible cost. An organization that records only the model name has no such control and would not detect a substituted checkpoint unless it happened to produce obviously wrong outputs.
+
+The second most common mistake is assuming that the presence of a scanning tool in the pipeline constitutes adequate supply chain security. Scanning tools for AI artifacts are useful and worth running. They are not sufficient, for two reasons. First, scanning tools that detect malicious pickle code can be bypassed by attackers who are aware of the scanner, and named vulnerabilities in the most widely deployed scanning tools have demonstrated exactly this. Second, scanning does not address data poisoning, behavioral backdoors, or adapter-level attacks, none of which leave signatures in the checkpoint file that a static scanner would detect. A model that was trained on poisoned data produces a clean checkpoint file that passes every available scan.
+
+The third mistake is treating third-party fine-tuning adapters and quantized variants as having the same provenance assurance as the base model they were derived from. A base model published by a well-resourced organization with a security team, integrity checking, and a documented release process carries a very different provenance profile than a community-contributed LoRA adapter uploaded by an anonymous account and applied to that base model. The adapter inherits none of the base model's provenance guarantees. An organization that has carefully vetted its base model selection but applies unvetted adapters from a public registry has not maintained the security posture it thinks it has.
+
+![0005](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-model-supply-chain-security/0005.png)
+
+---
+
+## A Supply Chain Security Framework for AI Systems
+
+The organizations building this discipline from scratch have converged on a set of practices that can be described as four sequential controls, each of which addresses a different point where the supply chain can be compromised.
+
+**Artifact integrity verification at every load.** The minimum viable supply chain security control for model artifacts is pinning and verifying the cryptographic hash of every checkpoint, adapter, and quantized variant used in production. This practice costs almost nothing operationally and catches substitution, tampering, and silent updates. The verification should happen at load time, not just at download time, because a file that passes integrity checking when downloaded can be replaced between download and the next load. Teams that implement this control for the first time frequently discover that they are running different artifact versions in different environments, because artifacts were updated without the version change being tracked anywhere accessible to the running system.
+
+The implementation pattern is straightforward: at the time of initial download, compute and record the sha256 hash of every downloaded artifact. Embed the expected hash in the deployment configuration. On every load, verify the actual hash of the file on disk against the expected hash before allowing it to be loaded. Any mismatch is treated as a security event requiring investigation, not a deployment failure to work around. This is identical in structure to the hash pinning practices that software supply chain tooling has implemented for libraries, and it can be implemented with standard cryptographic utilities in any language.
+
+**Provenance documentation as a structured artifact.** Every model in production should have a documented provenance record that captures, at minimum: the source registry and the hash of the downloaded checkpoint, the training data sources if available, the fine-tuning pipeline if applicable including which adapter was applied from what source at what hash, and the quantization method and toolchain if the model was quantized from a higher-precision original. This document is not a policy document; it is a technical artifact that gets version-controlled alongside the model deployment configuration and updated whenever any component changes. It should be specific enough that a new team member can reconstruct how the currently deployed model was assembled from its constituent sources.
+
+The structured form of this document, the ML-BOM, is analogous to a software SBOM: a machine-readable inventory of components with enough specificity to enable vulnerability tracking and incident response. AI governance frameworks in several jurisdictions now require documentation that maps to this concept, meaning organizations that build ML-BOM practices for security reasons will also satisfy emerging compliance requirements as a byproduct.
+
+**Pipeline integrity controls for fine-tuning and adaptation.** Organizations that run their own fine-tuning pipelines need to apply the same supply chain thinking to the data and tooling that enters those pipelines as to the checkpoints that come out of them. Training data that cannot be answered as to its provenance, the integrity of the pipeline that processed it, and whether it could have been tampered with between source and training run represents a data poisoning risk that downstream checkpoint scanning will not detect. This is the hardest of the four controls to implement in practice, because data provenance is a harder problem than artifact provenance, but it is the control that addresses the attack class with the most persistent effects.
+
+**Safe serialization format adoption.** For new model deployments, the choice of serialization format is a security decision. Formats that execute arbitrary code at load time are an unnecessary risk when alternatives exist that do not carry this property. The AI ML community has developed alternative serialization formats specifically designed to be safe for untrusted model files, and major hosting platforms have added support for these formats. Migration from legacy serialization formats for existing deployments requires effort and should be planned as a security investment rather than treated as a nice-to-have. The urgency of this migration increases proportionally with how broadly the checkpoint is distributed: a checkpoint that runs only on controlled infrastructure in a single organization is a smaller target than a checkpoint distributed to any external users.
+
+![0006](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/ai-model-supply-chain-security/0006.png)
+
+---
+
+## Where This Is Heading
+
+The trajectory here follows the software supply chain security arc with approximately a three-year lag and a compressed timeline. Software supply chain security went from a niche concern to a board-level mandate over roughly five years, driven by a series of high-profile incidents that made the risks concrete and the costs of inaction visible. The AI supply chain is following the same arc but at a faster pace, because the ecosystem is growing faster, the artifacts being distributed are more powerful, and the incidents that are already documented are beginning to make the risks concrete in the same way that earlier software supply chain incidents did.
+
+The regulatory pressure on this topic is real and increasing. Governance frameworks that require provenance tracking for high-risk AI systems are already in effect in some jurisdictions, and the documentation requirements they impose are ahead of the practices most organizations have built. This creates a compliance forcing function that will drive adoption of ML-BOM practices and artifact signing infrastructure even among organizations that have not yet experienced a supply chain incident directly. Organizations that build these practices in response to security reasoning will find, as a byproduct, that they are better prepared for the compliance audits that are coming regardless.
+
+The tooling is maturing. Registry platforms are adding model signing capabilities and scanning infrastructure. The AI security community is developing standardized formats for ML-BOMs. Frameworks for safe serialization are shipping with increasing coverage across model architectures. The gap between the tools available to software supply chain practitioners and the tools available to AI supply chain practitioners is closing, though it has not yet closed. The practical implication is that teams building supply chain security practices today may need to assemble some of their own tooling rather than configuring off-the-shelf solutions, but the component pieces are available and the integration work is modest compared to the security value delivered.
+
+A dimension of this problem that will grow in importance as the tooling matures is the question of trust transitivity: if organization A uses a model from provider B, and provider B trained that model on data that included outputs from models trained by provider C, what provenance guarantees does organization A actually have about the behavior of the model they are running? This question is already meaningful for RAG pipelines, where the retrieval corpus may include AI-generated content of unknown provenance, and it will become more significant as the AI ecosystem develops deeper dependencies between models, adapters, and fine-tuning datasets. The organizations that build ML-BOM practices now will be positioned to answer these questions when they become mandatory; the ones that wait will be auditing dependencies retroactively under timeline pressure.
+
+The model is not documentation. It is executable behavior. Treating it with the same security discipline that software artifacts have earned through painful experience is not excessive caution. It is the correct calibration of risk to the actual nature of what is being deployed. The organizations that make that calibration now, proactively, will have a security posture that their competitors who wait will spend the next several years trying to catch up to.
+
+---
