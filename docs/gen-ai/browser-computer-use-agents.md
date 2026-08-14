@@ -3,7 +3,7 @@ id: gen-ai/browser-computer-use-agents
 title: "Browser and Computer Use Agents"
 sidebar_label: Browser and Computer Use Agents
 previous_page: gen-ai/ai-sre
-next_page: gen-ai/ai-governance-engineering-leaders
+next_page: gen-ai/agentic-reliability-gap
 ---
 
 <div style="text-align: right;">
