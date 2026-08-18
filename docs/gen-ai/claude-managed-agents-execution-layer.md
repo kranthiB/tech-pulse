@@ -3,13 +3,7 @@ id: gen-ai/claude-managed-agents-execution-layer
 title: "Claude Managed Agents: What a Managed Execution Layer Actually Changes for Engineering Teams"
 sidebar_label: Claude Managed Agents
 previous_page: gen-ai/multi-agent-orchestration-patterns
-next_page: gen-ai/ai-driven-software-development
----
-
-# Claude Managed Agents: What a Managed Execution Layer Actually Changes for Engineering Teams
-
-**Most teams are still treating agent infrastructure as a build problem. It is an abstraction problem. And the abstraction just landed.**
-
+next_page: gen-ai/autonomous-software-engineering
 ---
 
 <div style="text-align: right;">
@@ -17,6 +11,10 @@ next_page: gen-ai/ai-driven-software-development
 </div>
 
 ---
+
+# Claude Managed Agents: What a Managed Execution Layer Actually Changes for Engineering Teams
+
+**Most teams are still treating agent infrastructure as a build problem. It is an abstraction problem. And the abstraction just landed.**
 
 ![0000](https://raw.githubusercontent.com/kranthiB/tech-pulse/main/images/claude-managed-agents/0000.png)
 

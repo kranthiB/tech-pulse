@@ -1,0 +1,138 @@
+<mxfile host="Electron">
+  <diagram id="autoSWEdiagram0003" name="Page-1">
+    <mxGraphModel dx="1488" dy="834" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="546" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="The Production Gap: What Enterprise Pipelines Were Not Designed For" vertex="1">
+          <mxGeometry height="62" width="1000" x="28" y="10" as="geometry" />
+        </mxCell>
+
+        <!-- Column headers -->
+        <mxCell id="h1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="200" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="h1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Pipeline Control" vertex="1">
+          <mxGeometry height="36" width="200" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="h2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="440" x="236" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="h2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Designed For (Human Contributors)" vertex="1">
+          <mxGeometry height="36" width="440" x="236" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="h3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="455" x="684" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="h3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Fails For (Agent Contributors)" vertex="1">
+          <mxGeometry height="36" width="455" x="684" y="84" as="geometry" />
+        </mxCell>
+
+        <!-- Row 1: Identity verification -->
+        <mxCell id="r1c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="60" width="200" x="28" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="r1ct" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;whiteSpace=wrap;" value="Identity verification" vertex="1">
+          <mxGeometry height="60" width="176" x="40" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="r1h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="60" width="440" x="236" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="r1ht" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#1B5E20;whiteSpace=wrap;" value="Author is a named human with an employment relationship and personal accountability." vertex="1">
+          <mxGeometry height="60" width="408" x="252" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="r1a" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="60" width="455" x="684" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="r1at" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Agent has no authenticated identity traceable to a responsible individual by default." vertex="1">
+          <mxGeometry height="60" width="423" x="700" y="128" as="geometry" />
+        </mxCell>
+
+        <!-- Row 2: Execution environment access -->
+        <mxCell id="r2c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="60" width="200" x="28" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="r2ct" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;whiteSpace=wrap;" value="Execution environment access" vertex="1">
+          <mxGeometry height="60" width="176" x="40" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="r2h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="60" width="440" x="236" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="r2ht" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#1B5E20;whiteSpace=wrap;" value="Developer accesses systems through personal credentials, governed by the employment relationship." vertex="1">
+          <mxGeometry height="60" width="408" x="252" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="r2a" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="60" width="455" x="684" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="r2at" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Agent requires a sandboxed execution environment with explicitly scoped permissions, not built into the standard pipeline." vertex="1">
+          <mxGeometry height="60" width="423" x="700" y="196" as="geometry" />
+        </mxCell>
+
+        <!-- Row 3: Code review basis -->
+        <mxCell id="r3c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="60" width="200" x="28" y="264" as="geometry" />
+        </mxCell>
+        <mxCell id="r3ct" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B3A6B;whiteSpace=wrap;" value="Code review basis" vertex="1">
+          <mxGeometry height="60" width="176" x="40" y="264" as="geometry" />
+        </mxCell>
+        <mxCell id="r3h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="60" width="440" x="236" y="264" as="geometry" />
+        </mxCell>
+        <mxCell id="r3ht" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#1B5E20;whiteSpace=wrap;" value="Reviewer evaluates author intent and implementation reasoning alongside code quality." vertex="1">
+          <mxGeometry height="60" width="408" x="252" y="264" as="geometry" />
+        </mxCell>
+        <mxCell id="r3a" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="60" width="455" x="684" y="264" as="geometry" />
+        </mxCell>
+        <mxCell id="r3at" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Agent carries no intent; reviewer must evaluate specification adherence, which requires the specification be part of the PR." vertex="1">
+          <mxGeometry height="60" width="423" x="700" y="264" as="geometry" />
+        </mxCell>
+
+        <!-- Most Teams Get This Wrong -->
+        <mxCell id="wbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="80" width="1111" x="28" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="wbar" parent="1" style="rounded=0;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="wt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="400" x="44" y="342" as="geometry" />
+        </mxCell>
+        <mxCell id="wb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Piloting autonomous agents with relaxed governance controls that match pilot convenience rather than production requirements. The pilot succeeds; the governance gaps become blockers at production scale." vertex="1">
+          <mxGeometry height="44" width="1083" x="44" y="362" as="geometry" />
+        </mxCell>
+
+        <!-- Decision Framework Preview -->
+        <mxCell id="dfbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="56" width="1111" x="28" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="dfbar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="1111" x="28" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="dft" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1B5E20;" value="Decision Framework Preview" vertex="1">
+          <mxGeometry height="14" width="400" x="44" y="434" as="geometry" />
+        </mxCell>
+        <mxCell id="dfb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Pilot agents under the same governance constraints that production will require. Blockers discovered in a controlled pilot are far cheaper to address than those discovered at production scale." vertex="1">
+          <mxGeometry height="24" width="1083" x="44" y="444" as="geometry" />
+        </mxCell>
+
+        <!-- Footer -->
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="60" width="1149" x="10" y="496" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="60" width="400" x="28" y="496" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="60" width="440" x="700" y="496" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

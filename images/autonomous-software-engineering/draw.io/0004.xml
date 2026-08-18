@@ -1,0 +1,114 @@
+<mxfile host="Electron">
+  <diagram id="autoSWEdiagram0004" name="Page-1">
+    <mxGraphModel dx="1488" dy="834" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="750" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="1149" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="The Review Tier Model for Agent-Generated Code" vertex="1">
+          <mxGeometry height="62" width="1000" x="28" y="10" as="geometry" />
+        </mxCell>
+
+        <!-- Stage 1 -->
+        <mxCell id="s1hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s1hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Stage 1: Agent Opens PR in a Sandboxed Environment" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="s1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="52" width="1111" x="28" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="s1b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="The agent executes its assigned task inside an isolated environment with scoped permissions, then opens a pull request for review." vertex="1">
+          <mxGeometry height="52" width="1083" x="44" y="128" as="geometry" />
+        </mxCell>
+
+        <!-- Stage 2 -->
+        <mxCell id="s2hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="s2hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Stage 2: Automated Tier 1, Standard CI (Same as Human PRs)" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="s2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="52" width="1111" x="28" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="s2b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#333D4D;whiteSpace=wrap;" value="Linting, unit tests, integration tests, security scanning, and coverage thresholds: the same gates applied to any other PR, without exception." vertex="1">
+          <mxGeometry height="52" width="1083" x="44" y="236" as="geometry" />
+        </mxCell>
+
+        <!-- Stage 3 -->
+        <mxCell id="s3hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="s3hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Stage 3: Automated Tier 2, Semantic Validation (Agent PRs Only)" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="s3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="72" width="1111" x="28" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="s3b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Scope check confirms no files outside the specified scope were modified. &#xa;&#xa;Specification adherence confirms changes are consistent with stated acceptance criteria. &#xa;&#xa;Sensitive pattern check flags hardcoded credentials or insecure code. Coverage threshold confirms agent-generated code meets the defined minimum." vertex="1">
+          <mxGeometry height="64" width="1083" x="44" y="348" as="geometry" />
+        </mxCell>
+
+        <!-- Stage 4 -->
+        <mxCell id="s4hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="1111" x="28" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="s4hdrt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#FFFFFF;" value="Stage 4: Human Review (Focused on Specification Adherence, Not Volume)" vertex="1">
+          <mxGeometry height="36" width="900" x="44" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="s4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="60" width="1111" x="28" y="472" as="geometry" />
+        </mxCell>
+        <mxCell id="s4b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Reviewer receives the PR with the task specification and Tier 2 validation results attached, and reviews the implementation against the specification rather than in isolation." vertex="1">
+          <mxGeometry height="60" width="1083" x="44" y="472" as="geometry" />
+        </mxCell>
+
+        <!-- Most Teams Get This Wrong -->
+        <mxCell id="wbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="80" width="1111" x="28" y="544" as="geometry" />
+        </mxCell>
+        <mxCell id="wbar" parent="1" style="rounded=0;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="1111" x="28" y="544" as="geometry" />
+        </mxCell>
+        <mxCell id="wt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="18" width="400" x="44" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="wb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;whiteSpace=wrap;" value="Omitting Tier 2 and relying on standard CI plus human review. Human reviewers cannot maintain review quality at agent throughput rates without the semantic validation filter." vertex="1">
+          <mxGeometry height="44" width="1083" x="44" y="570" as="geometry" />
+        </mxCell>
+
+        <!-- Decision Framework -->
+        <mxCell id="dfbg" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="52" width="1111" x="28" y="636" as="geometry" />
+        </mxCell>
+        <mxCell id="dfbar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="4" width="1111" x="28" y="636" as="geometry" />
+        </mxCell>
+        <mxCell id="dft" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B5E20;" value="Decision Framework" vertex="1">
+          <mxGeometry height="16" width="400" x="44" y="642" as="geometry" />
+        </mxCell>
+        <mxCell id="dfb" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;whiteSpace=wrap;" value="Build Tier 2 semantic validation before scaling agent PR volume. It is what keeps human review sustainable at agent throughput; without it, review quality degrades as volume increases." vertex="1">
+          <mxGeometry height="24" width="1083" x="44" y="660" as="geometry" />
+        </mxCell>
+
+        <!-- Footer -->
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="60" width="1149" x="10" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="60" width="400" x="28" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="60" width="440" x="700" y="700" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
