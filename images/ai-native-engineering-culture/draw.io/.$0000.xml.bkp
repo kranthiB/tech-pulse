@@ -1,0 +1,195 @@
+<mxfile host="Electron">
+  <diagram id="ainativecultureB0001" name="Page-1">
+    <mxGraphModel dx="1343" dy="928" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="0" pageScale="1" pageWidth="1200" pageHeight="627" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="627" width="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="64" width="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="htitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#FFFFFF;" value="AI-Native Engineering Culture" vertex="1">
+          <mxGeometry height="40" width="860" x="16" as="geometry" />
+        </mxCell>
+        <mxCell id="hsubt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#AACCFF;" value="The five characteristics that actually distinguish it" vertex="1">
+          <mxGeometry height="22" width="860" x="16" y="40" as="geometry" />
+        </mxCell>
+
+        <!-- Panel 1: The Definition Problem -->
+        <mxCell id="p1bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="196" width="384" x="8" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p1bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="384" x="8" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="The Definition Problem" vertex="1">
+          <mxGeometry height="18" width="356" x="22" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="p1s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="200+ leaders, 200+ definitions" vertex="1">
+          <mxGeometry height="14" width="356" x="22" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p1div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="368" x="16" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="p1b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="200+ engineering leaders surveyed, 200+ different definitions of AI-native. &#xa;&#xa;Organizations cannot build toward a destination nobody has defined." vertex="1">
+          <mxGeometry height="134" width="362" x="22" y="115" as="geometry" />
+        </mxCell>
+
+        <!-- Panel 2: AI-Augmented vs AI-Native -->
+        <mxCell id="p2bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="196" width="392" x="404" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p2bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="392" x="404" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Augmented vs. Native" vertex="1">
+          <mxGeometry height="18" width="364" x="418" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="p2s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Same tools, different system" vertex="1">
+          <mxGeometry height="14" width="364" x="418" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p2div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="376" x="412" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="p2b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Augmented: tools added to existing workflows. &#xa;&#xa;Native: operating model redesigned from first principles. &#xa;&#xa;Same tools, different system." vertex="1">
+          <mxGeometry height="134" width="370" x="418" y="126" as="geometry" />
+        </mxCell>
+
+        <!-- Panel 3: Amdahl's Law Applied -->
+        <mxCell id="p3bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="196" width="384" x="808" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p3bar" parent="1" style="rounded=0;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="384" x="808" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="p3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="Amdahl's Law Applied" vertex="1">
+          <mxGeometry height="18" width="356" x="822" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="p3s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Why the fast part is not the whole system" vertex="1">
+          <mxGeometry height="14" width="356" x="822" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p3div" parent="1" style="line;strokeColor=#FFCA2C;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="368" x="816" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="p3b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Code generation ten times faster, review capacity unchanged, creates a queue. &#xa;&#xa;AI-native redesigns the slow links. AI-augmented only accelerates the fast ones." vertex="1">
+          <mxGeometry height="134" width="362" x="822" y="126" as="geometry" />
+        </mxCell>
+
+        <!-- Panel 4: Five Characteristics -->
+        <mxCell id="p4bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;" value="" vertex="1">
+          <mxGeometry height="196" width="384" x="8" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p4bar" parent="1" style="rounded=0;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="384" x="8" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B3A6B;" value="Five Characteristics" vertex="1">
+          <mxGeometry height="18" width="356" x="22" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="p4s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="Observable, specific, measurable" vertex="1">
+          <mxGeometry height="14" width="356" x="22" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="p4div" parent="1" style="line;strokeColor=#E0E8F4;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="368" x="16" y="324" as="geometry" />
+        </mxCell>
+        <mxCell id="p4b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#333D4D;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Work decomposition, quality definition, knowledge sharing. &#xa;&#xa;Failure attribution, engineer development. &#xa;&#xa;Five specific, observable differences." vertex="1">
+          <mxGeometry height="134" width="362" x="22" y="321" as="geometry" />
+        </mxCell>
+
+        <!-- Panel 5: Three Leadership Behaviors -->
+        <mxCell id="p5bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;" value="" vertex="1">
+          <mxGeometry height="196" width="392" x="404" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p5bar" parent="1" style="rounded=0;fillColor=#1B5E20;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="392" x="404" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p5t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1B5E20;" value="Three Leadership Behaviors" vertex="1">
+          <mxGeometry height="18" width="364" x="418" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="p5s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="What leadership rewards becomes culture" vertex="1">
+          <mxGeometry height="14" width="364" x="418" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="p5div" parent="1" style="line;strokeColor=#C8E6C9;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="376" x="412" y="324" as="geometry" />
+        </mxCell>
+        <mxCell id="p5b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#2E7D32;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Reward orchestrator skills. &#xa;&#xa;Attribute failure at the system level. &#xa;&#xa;Invest visibly in shared infrastructure." vertex="1">
+          <mxGeometry height="134" width="370" x="418" y="328" as="geometry" />
+        </mxCell>
+
+        <!-- Panel 6: The Talent Risk -->
+        <mxCell id="p6bg" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;" value="" vertex="1">
+          <mxGeometry height="196" width="384" x="808" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p6bar" parent="1" style="rounded=0;fillColor=#856404;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="5" width="384" x="808" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p6t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#856404;" value="The Talent Risk" vertex="1">
+          <mxGeometry height="18" width="356" x="822" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="p6s" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#5A6A80;" value="The pipeline problem nobody is watching" vertex="1">
+          <mxGeometry height="14" width="356" x="822" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="p6div" parent="1" style="line;strokeColor=#FFCA2C;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="368" x="816" y="324" as="geometry" />
+        </mxCell>
+        <mxCell id="p6b" parent="1" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#7A6000;spacingLeft=4;spacingTop=4;whiteSpace=wrap;" value="Senior-only hiring cuts the pipeline for future senior engineers. &#xa;&#xa;The cohort in junior roles today becomes senior engineers in five to seven years." vertex="1">
+          <mxGeometry height="134" width="362" x="822" y="321" as="geometry" />
+        </mxCell>
+
+        <!-- Footer -->
+        <mxCell id="footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#162E55;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="143" width="1200" y="484" as="geometry" />
+        </mxCell>
+        <mxCell id="fdiv" parent="1" style="line;strokeColor=#2E5499;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="1168" x="16" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="s1bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="220" x="16" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s1n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#E57373;" value="200+" vertex="1">
+          <mxGeometry height="28" width="220" x="16" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s1l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#AACCFF;" value="Engineering leaders, 200+ different definitions" vertex="1">
+          <mxGeometry height="20" width="220" x="16" y="542" as="geometry" />
+        </mxCell>
+        <mxCell id="s2bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="240" x="252" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s2n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#FFCA2C;" value="5x" vertex="1">
+          <mxGeometry height="28" width="240" x="252" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s2l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#AACCFF;" value="Senior vs junior productivity gain from same tools" vertex="1">
+          <mxGeometry height="20" width="240" x="252" y="542" as="geometry" />
+        </mxCell>
+        <mxCell id="s3bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="220" x="508" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s3n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#64B5F6;" value="5 CHARACTERISTICS" vertex="1">
+          <mxGeometry height="28" width="220" x="508" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s3l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#AACCFF;" value="Observable, specific, measurable" vertex="1">
+          <mxGeometry height="20" width="220" x="508" y="542" as="geometry" />
+        </mxCell>
+        <mxCell id="s4bg" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="48" width="220" x="744" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s4n" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#81C784;" value="3 BEHAVIORS" vertex="1">
+          <mxGeometry height="28" width="220" x="744" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="s4l" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#AACCFF;" value="Reward, attribute, invest" vertex="1">
+          <mxGeometry height="20" width="220" x="744" y="542" as="geometry" />
+        </mxCell>
+        <mxCell id="fbdiv" parent="1" style="line;strokeColor=#2E5499;fillColor=none;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="1168" x="16" y="572" as="geometry" />
+        </mxCell>
+        <mxCell id="furl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#7A9ACC;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="36" width="400" x="16" y="578" as="geometry" />
+        </mxCell>
+        <mxCell id="fname" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra  |  VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="36" width="434" x="750" y="578" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

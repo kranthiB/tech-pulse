@@ -3,7 +3,7 @@ id: gen-ai/autonomous-software-engineering
 title: "Autonomous Software Engineering: From Coding Assistant to Agent Teams."
 sidebar_label: Autonomous Software Engineering
 previous_page: gen-ai/claude-managed-agents-execution-layer
-next_page: gen-ai/ai-driven-software-development
+next_page: gen-ai/ai-native-engineering-culture
 ---
 
 <div style="text-align: right;">
