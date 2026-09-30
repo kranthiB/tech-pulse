@@ -1,0 +1,175 @@
+<mxfile host="Electron">
+  <diagram id="d1" name="Page-1">
+    <mxGraphModel dx="1581" dy="1079" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="590" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="590" width="827" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="825" x="1" y="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=15;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Three Ceilings and Four Levels of Stop" vertex="1">
+          <mxGeometry height="62" width="480" x="16" y="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=11.5;fontStyle=1;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Three ceilings, enforced outside the agent" vertex="1">
+          <mxGeometry height="17" width="390" x="16" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=11.5;fontStyle=1;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Four levels of stop" vertex="1">
+          <mxGeometry height="17" width="391" x="420" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="390" x="16" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=none;fontColor=#1B3A6B;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="1" vertex="1">
+          <mxGeometry height="18" width="18" x="24" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Spend" vertex="1">
+          <mxGeometry height="26" width="348" x="50" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="48" width="390" x="16" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Model, tool and compute cost, per run and per day. A breach halts the run and alerts a person." vertex="1">
+          <mxGeometry height="30" width="370" x="26" y="133" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="390" x="16" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=none;fontColor=#1B3A6B;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="2" vertex="1">
+          <mxGeometry height="18" width="18" x="24" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Action count" vertex="1">
+          <mxGeometry height="26" width="348" x="50" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="48" width="390" x="16" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Maximum effectful actions per run and per hour. A sudden tenfold change is a malfunction or steering." vertex="1">
+          <mxGeometry height="30" width="370" x="26" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="390" x="16" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=none;fontColor=#1B3A6B;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="3" vertex="1">
+          <mxGeometry height="18" width="18" x="24" y="266" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Scope" vertex="1">
+          <mxGeometry height="26" width="348" x="50" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="48" width="390" x="16" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Maximum records, total value and distinct targets one run may touch. This is the blast radius in words a risk committee can approve." vertex="1">
+          <mxGeometry height="30" width="370" x="26" y="297" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="390" x="16" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="What the ceilings stop" vertex="1">
+          <mxGeometry height="26" width="372" x="26" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="75" width="390" x="16" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Retry storm: an error triggers a retry that triggers the same error. Re-trigger loop: the agent&#39;s own output fires its own trigger. Slow burn: a small steady overspend never trips a per-run limit but exhausts the daily one, which is why daily and hourly ceilings exist." vertex="1">
+          <mxGeometry height="57" width="370" x="26" y="379" as="geometry" />
+        </mxCell>
+        <mxCell id="27" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="391" x="420" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="28" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=none;fontColor=#1B3A6B;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="1" vertex="1">
+          <mxGeometry height="18" width="18" x="428" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="29" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Pause the trigger" vertex="1">
+          <mxGeometry height="26" width="349" x="454" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="30" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="48" width="391" x="420" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="31" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Stop new runs from starting. Nothing in flight is affected. The gentlest option and the first to reach for." vertex="1">
+          <mxGeometry height="30" width="371" x="430" y="133" as="geometry" />
+        </mxCell>
+        <mxCell id="32" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="391" x="420" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="33" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=none;fontColor=#1B3A6B;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="2" vertex="1">
+          <mxGeometry height="18" width="18" x="428" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="34" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Drain or cancel" vertex="1">
+          <mxGeometry height="26" width="349" x="454" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="35" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="48" width="391" x="420" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="36" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Decide what happens to runs in progress: finish them, or cancel at the next safe point." vertex="1">
+          <mxGeometry height="30" width="371" x="430" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="37" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="391" x="420" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="38" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=none;fontColor=#1B3A6B;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="3" vertex="1">
+          <mxGeometry height="18" width="18" x="428" y="266" as="geometry" />
+        </mxCell>
+        <mxCell id="39" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Revoke credentials" vertex="1">
+          <mxGeometry height="26" width="349" x="454" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="40" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="48" width="391" x="420" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="41" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Works even when the agent, scheduler and trigger are all misbehaving, because it depends on none of them." vertex="1">
+          <mxGeometry height="30" width="371" x="430" y="297" as="geometry" />
+        </mxCell>
+        <mxCell id="42" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="391" x="420" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="43" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=none;fontColor=#1B3A6B;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="4" vertex="1">
+          <mxGeometry height="18" width="18" x="428" y="348" as="geometry" />
+        </mxCell>
+        <mxCell id="44" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Quarantine" vertex="1">
+          <mxGeometry height="26" width="349" x="454" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="45" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="75" width="391" x="420" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="46" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Freeze state, manifests and ledger exactly as they were, so the investigation has evidence." vertex="1">
+          <mxGeometry height="30" width="371" x="430" y="379" as="geometry" />
+        </mxCell>
+        <mxCell id="47" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="87" width="391" x="16" y="457" as="geometry" />
+        </mxCell>
+        <mxCell id="48" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFCA2C;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="5" width="391" x="16" y="457" as="geometry" />
+        </mxCell>
+        <mxCell id="49" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="16" width="371" x="26" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="50" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#856404;" value="They build the kill switch and never use it. The first time it is exercised is during an incident, when on-call discovers it needs a credential they do not have." vertex="1">
+          <mxGeometry height="43" width="371" x="26" y="489" as="geometry" />
+        </mxCell>
+        <mxCell id="51" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="87" width="392" x="419" y="457" as="geometry" />
+        </mxCell>
+        <mxCell id="52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#81C784;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="392" x="419" y="457" as="geometry" />
+        </mxCell>
+        <mxCell id="53" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#1B5E20;" value="Decision Framework" vertex="1">
+          <mxGeometry height="16" width="372" x="429" y="469" as="geometry" />
+        </mxCell>
+        <mxCell id="54" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B5E20;" value="A limit in the prompt is a request. A limit in the executor is a fact. Drill the stop and measure the time from decision to stopped. On-call must be able to operate it without a deployment." vertex="1">
+          <mxGeometry height="43" width="372" x="429" y="488" as="geometry" />
+        </mxCell>
+        <mxCell id="55" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="32" width="825" x="1" y="557" as="geometry" />
+        </mxCell>
+        <mxCell id="56" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10;fontFamily=Helvetica;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="32" width="300" x="16" y="557" as="geometry" />
+        </mxCell>
+        <mxCell id="57" parent="1" style="text;html=1;whiteSpace=wrap;align=right;verticalAlign=middle;spacing=0;fontSize=10;fontStyle=2;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra | VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="32" width="380" x="431" y="557" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

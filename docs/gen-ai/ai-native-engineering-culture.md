@@ -3,7 +3,7 @@ id: gen-ai/ai-native-engineering-culture
 title: "AI-Native Engineering Culture: The Five Characteristics That Actually Distinguish It"
 sidebar_label: AI-Native Engineering Culture
 previous_page: gen-ai/autonomous-software-engineering
-next_page: gen-ai/ai-driven-software-development
+next_page: gen-ai/unattended-agents
 ---
 
 <div style="text-align: right;">

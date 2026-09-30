@@ -597,6 +597,7 @@ auto_title: false
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/claude-managed-agents-execution-layer.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-server" style="margin-right: 5px;"></i>Claude Managed Agents</a>
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/autonomous-software-engineering.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-code-branch" style="margin-right: 5px;"></i>Autonomous Software Engineering</a>
         <a href="https://kranthib.github.io/tech-pulse/gen-ai/ai-native-engineering-culture.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-users" style="margin-right: 5px;"></i>AI-Native Engineering Culture</a>
+        <a href="https://kranthib.github.io/tech-pulse/gen-ai/unattended-agents.html" style="padding: 10px; background-color: white; border-radius: 3px; text-decoration: none; color: #0366d6; text-align: center; border: 1px solid #e1e4e8; font-size: 13px;"><i class="fa fa-clock" style="margin-right: 5px;"></i>Unattended Agents</a>
       </div>
     </div>
   </div>

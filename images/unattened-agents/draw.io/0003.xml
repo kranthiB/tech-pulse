@@ -1,0 +1,166 @@
+<mxfile host="Electron">
+  <diagram id="d1" name="Page-1">
+    <mxGraphModel dx="1581" dy="1079" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="596" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="596" width="827" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="825" x="1" y="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=15;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Plan, Ledger, Apply: Making Unattended Effects Safe to Repeat" vertex="1">
+          <mxGeometry height="62" width="480" x="16" y="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="470" x="16" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=none;fontColor=#1B3A6B;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="1" vertex="1">
+          <mxGeometry height="18" width="18" x="24" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Trigger arrives with an event identity" vertex="1">
+          <mxGeometry height="26" width="428" x="50" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="48" width="470" x="16" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Authenticated, lease taken. Duplicate deliveries arrive here and are expected, not treated as errors." vertex="1">
+          <mxGeometry height="30" width="450" x="26" y="111" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="470" x="16" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=none;fontColor=#1B3A6B;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="2" vertex="1">
+          <mxGeometry height="18" width="18" x="24" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Agent produces a plan" vertex="1">
+          <mxGeometry height="26" width="428" x="50" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="48" width="470" x="16" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="All non-deterministic reasoning happens here and only here. The output is a structured list of intended actions. No side effects." vertex="1">
+          <mxGeometry height="30" width="450" x="26" y="193" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="470" x="16" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=none;fontColor=#1B3A6B;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="3" vertex="1">
+          <mxGeometry height="18" width="18" x="24" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Each action gets a key from the event" vertex="1">
+          <mxGeometry height="26" width="428" x="50" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="48" width="470" x="16" y="266" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Key = event identity + step number. Never generated text, because the same input can produce different wording on a retry." vertex="1">
+          <mxGeometry height="30" width="450" x="26" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="470" x="16" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=none;fontColor=#1B3A6B;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="4" vertex="1">
+          <mxGeometry height="18" width="18" x="24" y="326" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Deterministic executor checks the ledger" vertex="1">
+          <mxGeometry height="26" width="428" x="50" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="34" width="470" x="16" y="348" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Ordinary code, no model. Key present: skip. Key new: apply it." vertex="1">
+          <mxGeometry height="16" width="450" x="26" y="357" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="470" x="16" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="27" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=none;fontColor=#1B3A6B;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="5" vertex="1">
+          <mxGeometry height="18" width="18" x="24" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="28" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Apply the effect and record it together" vertex="1">
+          <mxGeometry height="26" width="428" x="50" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="29" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="48" width="470" x="16" y="416" as="geometry" />
+        </mxCell>
+        <mxCell id="30" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="One transaction, or ledger states planned, applied, confirmed with a reconciliation pass on restart." vertex="1">
+          <mxGeometry height="30" width="450" x="26" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="31" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="470" x="16" y="472" as="geometry" />
+        </mxCell>
+        <mxCell id="32" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=none;fontColor=#1B3A6B;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="6" vertex="1">
+          <mxGeometry height="18" width="18" x="24" y="476" as="geometry" />
+        </mxCell>
+        <mxCell id="33" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Write the run manifest" vertex="1">
+          <mxGeometry height="26" width="428" x="50" y="472" as="geometry" />
+        </mxCell>
+        <mxCell id="34" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="48" width="470" x="16" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="35" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Trigger, state version, model and config versions, the plan, and the effects actually applied." vertex="1">
+          <mxGeometry height="30" width="450" x="26" y="507" as="geometry" />
+        </mxCell>
+        <mxCell id="36" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="311" x="500" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="37" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Why the key comes from the event" vertex="1">
+          <mxGeometry height="26" width="293" x="510" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="38" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="89" width="311" x="500" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="39" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Attempt 1 writes: adjustment for invoice 4412, price variance. Attempt 2 words it differently. A key built from the text differs, so the duplicate slips through. A key built from event 77, step 3 is identical both times, so the second attempt is skipped." vertex="1">
+          <mxGeometry height="71" width="291" x="510" y="111" as="geometry" />
+        </mxCell>
+        <mxCell id="40" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="101" width="311" x="500" y="201" as="geometry" />
+        </mxCell>
+        <mxCell id="41" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFCA2C;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="5" width="311" x="500" y="201" as="geometry" />
+        </mxCell>
+        <mxCell id="42" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#856404;" value="Two failure windows" vertex="1">
+          <mxGeometry height="16" width="291" x="510" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="43" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#856404;" value="Record after the effect: a crash leaves an effect with no record, and the retry repeats it. Record before the effect: a crash leaves a record with no effect, and the retry skips work that never happened." vertex="1">
+          <mxGeometry height="57" width="291" x="510" y="233" as="geometry" />
+        </mxCell>
+        <mxCell id="44" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="87" width="311" x="500" y="312" as="geometry" />
+        </mxCell>
+        <mxCell id="45" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFCA2C;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="5" width="311" x="500" y="312" as="geometry" />
+        </mxCell>
+        <mxCell id="46" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="16" width="291" x="510" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="47" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#856404;" value="They treat retries as an infrastructure concern below the agent. For an agent with side effects, retry behavior is part of its correctness." vertex="1">
+          <mxGeometry height="43" width="291" x="510" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="48" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="137" width="311" x="500" y="409" as="geometry" />
+        </mxCell>
+        <mxCell id="49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#81C784;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="311" x="500" y="409" as="geometry" />
+        </mxCell>
+        <mxCell id="50" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#1B5E20;" value="Decision Framework" vertex="1">
+          <mxGeometry height="16" width="291" x="510" y="421" as="geometry" />
+        </mxCell>
+        <mxCell id="51" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B5E20;" value="Key from the event, never from output. Planning is non-deterministic, applying is deterministic. Dedupe window longer than the longest plausible redelivery, written down and monitored." vertex="1">
+          <mxGeometry height="57" width="291" x="510" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="32" width="825" x="1" y="563" as="geometry" />
+        </mxCell>
+        <mxCell id="53" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10;fontFamily=Helvetica;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="32" width="300" x="16" y="563" as="geometry" />
+        </mxCell>
+        <mxCell id="54" parent="1" style="text;html=1;whiteSpace=wrap;align=right;verticalAlign=middle;spacing=0;fontSize=10;fontStyle=2;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra | VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="32" width="380" x="431" y="563" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
