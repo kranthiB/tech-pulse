@@ -1,0 +1,187 @@
+<mxfile host="Electron">
+  <diagram id="d1" name="Page-1">
+    <mxGraphModel dx="1786" dy="1227" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="587" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="587" width="827" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="825" x="1" y="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=15;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="The Full Cost and Value Ledger" vertex="1">
+          <mxGeometry height="62" width="480" x="16" y="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=11.5;fontStyle=1;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Costs, in three classes" vertex="1">
+          <mxGeometry height="17" width="390" x="16" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=11.5;fontStyle=1;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Value, in three classes" vertex="1">
+          <mxGeometry height="17" width="391" x="420" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="390" x="16" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=none;fontColor=#1B3A6B;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="1" vertex="1">
+          <mxGeometry height="18" width="18" x="24" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Direct" vertex="1">
+          <mxGeometry height="26" width="348" x="50" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="48" width="390" x="16" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Seat licenses, inference and agent charges, platform and integration infrastructure, security review of the tools." vertex="1">
+          <mxGeometry height="30" width="370" x="26" y="133" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="390" x="16" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=none;fontColor=#1B3A6B;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="2" vertex="1">
+          <mxGeometry height="18" width="18" x="24" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Indirect, led by the verification tax" vertex="1">
+          <mxGeometry height="26" width="348" x="50" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="48" width="390" x="16" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Senior review and correction time, enablement, maintenance of prompts and rules, governance overhead, incidents traced to AI-involved changes." vertex="1">
+          <mxGeometry height="30" width="370" x="26" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="390" x="16" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=none;fontColor=#1B3A6B;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="3" vertex="1">
+          <mxGeometry height="18" width="18" x="24" y="266" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Transition" vertex="1">
+          <mxGeometry height="26" width="348" x="50" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="48" width="390" x="16" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="The temporary dip while teams learn and pipelines adapt. A real cost of the program, so it belongs in the ledger." vertex="1">
+          <mxGeometry height="30" width="370" x="26" y="297" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="391" x="420" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=none;fontColor=#1B3A6B;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="1" vertex="1">
+          <mxGeometry height="18" width="18" x="428" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Capacity converted" vertex="1">
+          <mxGeometry height="26" width="349" x="454" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="48" width="391" x="420" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="27" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Reclaimed time counts only when you can point to what it was spent on: finished items, a shorter roadmap, avoided hiring." vertex="1">
+          <mxGeometry height="30" width="371" x="430" y="133" as="geometry" />
+        </mxCell>
+        <mxCell id="28" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="391" x="420" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="29" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=none;fontColor=#1B3A6B;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="2" vertex="1">
+          <mxGeometry height="18" width="18" x="428" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="30" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Time to market" vertex="1">
+          <mxGeometry height="26" width="349" x="454" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="31" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="48" width="391" x="420" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="32" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="The value of the period gained on specific deliveries, tied to named releases and never assumed in aggregate." vertex="1">
+          <mxGeometry height="30" width="371" x="430" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="33" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="391" x="420" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="34" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=none;fontColor=#1B3A6B;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="3" vertex="1">
+          <mxGeometry height="18" width="18" x="428" y="266" as="geometry" />
+        </mxCell>
+        <mxCell id="35" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Quality cost avoided" vertex="1">
+          <mxGeometry height="26" width="349" x="454" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="36" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="48" width="391" x="420" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="37" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Fewer escaped defects and faster recovery, valued only against a measured baseline rate." vertex="1">
+          <mxGeometry height="30" width="371" x="430" y="297" as="geometry" />
+        </mxCell>
+        <mxCell id="38" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=11.5;fontStyle=1;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Illustrative arithmetic: why the indirect side decides the outcome" vertex="1">
+          <mxGeometry height="17" width="795" x="16" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="39" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="74" width="191" x="16" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="40" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=16;fontStyle=1;fontFamily=Helvetica;fontColor=#1B3A6B;" value="4.0 h" vertex="1">
+          <mxGeometry height="23" width="171" x="26" y="376" as="geometry" />
+        </mxCell>
+        <mxCell id="41" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Reclaimed in drafting, per engineer per week" vertex="1">
+          <mxGeometry height="30" width="171" x="26" y="402" as="geometry" />
+        </mxCell>
+        <mxCell id="42" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="74" width="191" x="217" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="43" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=16;fontStyle=1;fontFamily=Helvetica;fontColor=#856404;" value="- 1.5 h" vertex="1">
+          <mxGeometry height="23" width="171" x="227" y="376" as="geometry" />
+        </mxCell>
+        <mxCell id="44" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#856404;" value="Added review of the extra output" vertex="1">
+          <mxGeometry height="16" width="171" x="227" y="402" as="geometry" />
+        </mxCell>
+        <mxCell id="45" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="74" width="191" x="418" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="46" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=16;fontStyle=1;fontFamily=Helvetica;fontColor=#856404;" value="- 1.0 h" vertex="1">
+          <mxGeometry height="23" width="171" x="428" y="376" as="geometry" />
+        </mxCell>
+        <mxCell id="47" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#856404;" value="Correcting changes that came back for rework" vertex="1">
+          <mxGeometry height="30" width="171" x="428" y="402" as="geometry" />
+        </mxCell>
+        <mxCell id="48" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="74" width="191" x="619" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="49" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=16;fontStyle=1;fontFamily=Helvetica;fontColor=#1B5E20;" value="= 1.5 h" vertex="1">
+          <mxGeometry height="23" width="171" x="629" y="376" as="geometry" />
+        </mxCell>
+        <mxCell id="50" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B5E20;" value="Net gain, about a third of the headline" vertex="1">
+          <mxGeometry height="30" width="171" x="629" y="402" as="geometry" />
+        </mxCell>
+        <mxCell id="51" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="87" width="391" x="16" y="454" as="geometry" />
+        </mxCell>
+        <mxCell id="52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFCA2C;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="5" width="391" x="16" y="454" as="geometry" />
+        </mxCell>
+        <mxCell id="53" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="16" width="371" x="26" y="467" as="geometry" />
+        </mxCell>
+        <mxCell id="54" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#856404;" value="They put the verification tax on nobody&#39;s ledger. Reviewers absorb it inside existing time, so the program&#39;s cost is understated by exactly what its most senior people are quietly paying." vertex="1">
+          <mxGeometry height="43" width="371" x="26" y="486" as="geometry" />
+        </mxCell>
+        <mxCell id="55" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="87" width="392" x="419" y="454" as="geometry" />
+        </mxCell>
+        <mxCell id="56" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#81C784;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="392" x="419" y="454" as="geometry" />
+        </mxCell>
+        <mxCell id="57" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#1B5E20;" value="Decision Framework" vertex="1">
+          <mxGeometry height="16" width="372" x="429" y="466" as="geometry" />
+        </mxCell>
+        <mxCell id="58" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B5E20;" value="Hours saved are not dollars saved. Count reclaimed time as value only when the work it funded is visible, and always show the cost ledger beside the value ledger." vertex="1">
+          <mxGeometry height="43" width="372" x="429" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="59" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="32" width="825" x="1" y="554" as="geometry" />
+        </mxCell>
+        <mxCell id="60" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10;fontFamily=Helvetica;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="32" width="300" x="16" y="554" as="geometry" />
+        </mxCell>
+        <mxCell id="61" parent="1" style="text;html=1;whiteSpace=wrap;align=right;verticalAlign=middle;spacing=0;fontSize=10;fontStyle=2;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra | VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="32" width="380" x="431" y="554" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

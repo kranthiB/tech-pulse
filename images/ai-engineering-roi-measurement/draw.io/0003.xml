@@ -1,0 +1,208 @@
+<mxfile host="Electron">
+  <diagram id="d1" name="Page-1">
+    <mxGraphModel dx="1786" dy="1227" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="489" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F9FC;strokeColor=#1B3A6B;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="489" width="827" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="62" width="825" x="1" y="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=15;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Speed Metrics Paired With Quality Guardrails" vertex="1">
+          <mxGeometry height="62" width="480" x="16" y="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="66" width="191" x="16" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="1" vertex="1">
+          <mxGeometry height="18" width="18" x="27" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=11.5;fontStyle=1;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Flow" vertex="1">
+          <mxGeometry height="17" width="147" x="52" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="How fast finished work reaches production" vertex="1">
+          <mxGeometry height="30" width="171" x="26" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="66" width="191" x="217" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="2" vertex="1">
+          <mxGeometry height="18" width="18" x="228" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=11.5;fontStyle=1;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Quality" vertex="1">
+          <mxGeometry height="17" width="147" x="253" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="What happened to the work after it shipped" vertex="1">
+          <mxGeometry height="30" width="171" x="227" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="66" width="191" x="418" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="3" vertex="1">
+          <mxGeometry height="18" width="18" x="429" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=11.5;fontStyle=1;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Cost" vertex="1">
+          <mxGeometry height="17" width="147" x="454" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="The full ledger, including review time" vertex="1">
+          <mxGeometry height="30" width="171" x="428" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="66" width="191" x="619" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1B3A6B;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=10;fontFamily=Helvetica;" value="4" vertex="1">
+          <mxGeometry height="18" width="18" x="630" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=11.5;fontStyle=1;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Experience" vertex="1">
+          <mxGeometry height="17" width="147" x="655" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Friction and load. Context, not proof" vertex="1">
+          <mxGeometry height="30" width="171" x="629" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="230" x="16" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Speed metric" vertex="1">
+          <mxGeometry height="26" width="214" x="24" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="250" x="246" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Paired guardrail" vertex="1">
+          <mxGeometry height="26" width="234" x="254" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=#1B3A6B;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="26" width="315" x="496" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="27" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#FFFFFF;" value="What divergence means" vertex="1">
+          <mxGeometry height="26" width="299" x="504" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="30" width="230" x="16" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="29" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Lead time for changes" vertex="1">
+          <mxGeometry height="16" width="214" x="24" y="187" as="geometry" />
+        </mxCell>
+        <mxCell id="30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="30" width="250" x="246" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="31" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Change failure rate" vertex="1">
+          <mxGeometry height="16" width="234" x="254" y="187" as="geometry" />
+        </mxCell>
+        <mxCell id="32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="30" width="315" x="496" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="33" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#856404;" value="Speed is being bought with instability" vertex="1">
+          <mxGeometry height="16" width="299" x="504" y="187" as="geometry" />
+        </mxCell>
+        <mxCell id="34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="30" width="230" x="16" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="35" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Throughput of completed items" vertex="1">
+          <mxGeometry height="16" width="214" x="24" y="217" as="geometry" />
+        </mxCell>
+        <mxCell id="36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="30" width="250" x="246" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="37" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Rework rate within a fixed window" vertex="1">
+          <mxGeometry height="16" width="234" x="254" y="217" as="geometry" />
+        </mxCell>
+        <mxCell id="38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="30" width="315" x="496" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="39" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#856404;" value="Accepted quickly, understood shallowly, paid for later" vertex="1">
+          <mxGeometry height="16" width="299" x="504" y="217" as="geometry" />
+        </mxCell>
+        <mxCell id="40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="44" width="230" x="16" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="41" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Coding or draft time" vertex="1">
+          <mxGeometry height="30" width="214" x="24" y="247" as="geometry" />
+        </mxCell>
+        <mxCell id="42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="44" width="250" x="246" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="43" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Time to first review and review duration" vertex="1">
+          <mxGeometry height="30" width="234" x="254" y="247" as="geometry" />
+        </mxCell>
+        <mxCell id="44" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="44" width="315" x="496" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="45" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#856404;" value="The gain moved to the review queue instead of being created" vertex="1">
+          <mxGeometry height="30" width="299" x="504" y="247" as="geometry" />
+        </mxCell>
+        <mxCell id="46" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="30" width="230" x="16" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="47" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Pull request volume, if reported" vertex="1">
+          <mxGeometry height="16" width="214" x="24" y="291" as="geometry" />
+        </mxCell>
+        <mxCell id="48" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="30" width="250" x="246" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="49" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Review wait time and idle time" vertex="1">
+          <mxGeometry height="16" width="234" x="254" y="291" as="geometry" />
+        </mxCell>
+        <mxCell id="50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="30" width="315" x="496" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="51" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#856404;" value="More output and a longer line at the reviewer&#39;s desk" vertex="1">
+          <mxGeometry height="16" width="299" x="504" y="291" as="geometry" />
+        </mxCell>
+        <mxCell id="52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="30" width="230" x="16" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="53" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Deployment frequency" vertex="1">
+          <mxGeometry height="16" width="214" x="24" y="321" as="geometry" />
+        </mxCell>
+        <mxCell id="54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#CBD8EF;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="30" width="250" x="246" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="55" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B3A6B;" value="Incident rate and time to restore" vertex="1">
+          <mxGeometry height="16" width="234" x="254" y="321" as="geometry" />
+        </mxCell>
+        <mxCell id="56" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="30" width="315" x="496" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="57" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#856404;" value="Shipping faster than the system can absorb" vertex="1">
+          <mxGeometry height="16" width="299" x="504" y="321" as="geometry" />
+        </mxCell>
+        <mxCell id="58" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#FFFDF0;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="87" width="391" x="16" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="59" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFCA2C;strokeColor=#FFCA2C;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="5" width="391" x="16" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="60" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#856404;" value="Most Teams Get This Wrong" vertex="1">
+          <mxGeometry height="16" width="371" x="26" y="369" as="geometry" />
+        </mxCell>
+        <mxCell id="61" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#856404;" value="They pick the metrics the tools already emit. Tool telemetry describes the tool. The metrics that matter live in version control, review, build, deploy and incident data." vertex="1">
+          <mxGeometry height="43" width="371" x="26" y="388" as="geometry" />
+        </mxCell>
+        <mxCell id="62" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F2FBF4;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="87" width="392" x="419" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="63" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#81C784;strokeColor=#81C784;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="4" width="392" x="419" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="64" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=1;fontFamily=Helvetica;fontColor=#1B5E20;" value="Decision Framework" vertex="1">
+          <mxGeometry height="16" width="372" x="429" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="65" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=0;fontSize=10.5;fontStyle=0;fontFamily=Helvetica;fontColor=#1B5E20;" value="Speed with no guardrail is a loan. Publish every speed metric beside the quality metric that would reveal it was borrowed, and distrust any dashboard that shows only improvements." vertex="1">
+          <mxGeometry height="43" width="372" x="429" y="387" as="geometry" />
+        </mxCell>
+        <mxCell id="66" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B3A6B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="32" width="825" x="1" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="67" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontSize=10;fontFamily=Helvetica;fontColor=#AACCFF;" value="kranthib.github.io/tech-pulse" vertex="1">
+          <mxGeometry height="32" width="300" x="16" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="68" parent="1" style="text;html=1;whiteSpace=wrap;align=right;verticalAlign=middle;spacing=0;fontSize=10;fontStyle=2;fontFamily=Helvetica;fontColor=#FFFFFF;" value="Kranthi Kumar Bitra | VP Engineering, Gradera" vertex="1">
+          <mxGeometry height="32" width="380" x="431" y="456" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
